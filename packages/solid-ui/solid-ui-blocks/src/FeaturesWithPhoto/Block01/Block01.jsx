@@ -26,36 +26,20 @@ const FeaturesWithPhotoBlock01 = ({
         mx: [null, null, null, -4]
       }}
     >
-      <FlexImage reverse={reverse}>
-        <ContentImages content={{ images }} reverse={reverse} />
-      </FlexImage>
       <FlexContent reverse={reverse}>
         <Box sx={{ textAlign: ['center', 'left'] }}>
           <ContentText content={text} />
         </Box>
-        {collection && (
-          <>
-            <Divider space={3} />
-            <Reveal
-              effect={reverse ? 'fadeInRight' : 'fadeInLeft'}
-              duration={1.5}
-            >
-              {collection.map((props, index) => (
-                <Fragment key={`item-${index}`}>
-                  <ListItem {...props} />
-                  <Divider space={2} />
-                </Fragment>
-              ))}
-            </Reveal>
-          </>
-        )}
         {buttons && (
-          <>
+          <Box sx={{ textAlign: [`center`, `left`] }}>
             <Divider space={3} />
             <ContentButtons content={buttons} />
-          </>
+          </Box>
         )}
       </FlexContent>
+      <FlexImage reverse={reverse}>
+        <ContentImages content={{ images }} reverse={reverse} />
+      </FlexImage>
     </Flex>
     <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>

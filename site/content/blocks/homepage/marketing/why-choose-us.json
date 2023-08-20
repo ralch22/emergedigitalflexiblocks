@@ -1,12 +1,12 @@
 {
   "text": [
     {
-      "text": "Get access to unlimited resources",
+      "text": "OUR STRENGTHS",
       "color": "omegaDark",
       "variant": "h4"
     },
     {
-      "text": "Why Choose Us Over Competition?",
+      "text": "What Makes Us Different",
       "variant": "h2"
     }
   ],
@@ -14,97 +14,49 @@
     {
       "text": [
         {
-          "text": "Advanced Analytics",
+          "text": "Turn curiosity into sales",
           "variant": "h5"
         },
         {
-          "text": "At vero eos et accusamus et"
-        }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-analyse.svg",
-        "bg": "transparent",
-        "color": "omega"
-      }
-    },
-    {
-      "text": [
-        {
-          "text": "Expert Support",
-          "variant": "h5"
-        },
-        {
-          "text": "Et harum quidem rerum facilis"
+          "text": "Craft a unique marketing campaign that ‘gels’ with your ideal customer and turns their curiosity into bona-fide sales. "
         }
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-chat.svg",
         "bg": "transparent",
-        "color": "omega"
+        "color": "beta"
       }
     },
     {
       "text": [
         {
-          "text": "Lifetime Access",
+          "text": "Driven by data",
           "variant": "h5"
         },
         {
-          "text": "Itaque earum rerum hic tenetur"
+          "text": "Takeout guesswork. Make informed choices about your digital marketing strategy with privacy-centric first-party data solutions."
+        }
+      ],
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-analyse.svg",
+        "bg": "transparent",
+        "color": "beta"
+      }
+    },
+    {
+      "text": [
+        {
+          "text": "Trusted support network",
+          "variant": "h5"
+        },
+        {
+          "text": "You are guided every step of the way. Our focus on maintaining a friendly rapport and keeping things transparent means you can relax knowing you are in good hands. "
         }
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dna.svg",
         "bg": "transparent",
-        "color": "omega"
-      }
-    },
-    {
-      "text": [
-        {
-          "text": "Creative Solutions",
-          "variant": "h5"
-        },
-        {
-          "text": "Similique sunt in culpa officia"
-        }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-directions.svg",
-        "bg": "transparent",
-        "color": "omega"
-      }
-    },
-    {
-      "text": [
-        {
-          "text": "#1 Rated Agency",
-          "variant": "h5"
-        },
-        {
-          "text": "Sed ut perspiciatis unde omnis"
-        }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-crown.svg",
-        "bg": "transparent",
-        "color": "omega"
-      }
-    },
-    {
-      "text": [
-        {
-          "text": "Unlimited Resources",
-          "variant": "h5"
-        },
-        {
-          "text": "Nemo enim ipsam voluptatem"
-        }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-data.svg",
-        "bg": "transparent",
-        "color": "omega"
+        "color": "beta"
       }
     }
   ]

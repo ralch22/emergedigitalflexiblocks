@@ -1,12 +1,13 @@
 {
   "text": [
     {
-      "text": "Latest From Our Blog",
-      "variant": "h2"
+      "text": "OUR BLOG",
+      "variant": "h4",
+      "color": "alpha"
     },
     {
-      "text": "With FlexiBlog Theme, add a fully functional blog to your site.",
-      "variant": "medium"
+      "text": "Latest News & Updates",
+      "variant": "h2"
     }
   ],
   "collection": [

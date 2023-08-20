@@ -10,6 +10,7 @@ import FormHidden from '@solid-ui-components/ContentForm/FormHidden'
 import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi'
 import useForm from '@helpers/useForm'
 import { FormContext } from '@solid-ui-components/ContentForm'
+import Divider from '@solid-ui-components/Divider/Divider'
 
 const styles = {
   form: {
@@ -120,6 +121,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
         })}
       </Box>
       <Box sx={{ textAlign: `center` }}>
+        <Divider space="1" />
         <ContentButtons
           content={buttons}
           wrapperStyles={styles.buttonsWrapper}

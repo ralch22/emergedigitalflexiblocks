@@ -55,5 +55,11 @@
         "alt": "alt text"
       }
     }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/hero.png",
+      "alt": "alt text"
+    }
   ]
 }

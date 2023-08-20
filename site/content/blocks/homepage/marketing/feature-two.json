@@ -1,16 +1,16 @@
 {
   "text": [
     {
-      "text": "INNOVATIVE SOLUTIONS",
+      "text": "UNDERSTAND YOUR CUSTOMER BETTER",
       "color": "alpha",
       "variant": "h4"
     },
     {
-      "text": "The ultimate marketing resources. All in one place.",
+      "text": "Work with us to IGNITE the power of your first-party Data",
       "variant": "h2"
     },
     {
-      "text": "Lorem ipsum dolor sit amet, consectetur magna aliqua. Eaque ipsa quae ab illo inventore veritatis. Nemo enim ipsam voluptatem voluptas.",
+      "text": "BCG identified six technological and organizational enablers that empower brands to pull insights from their own data.",
       "variant": "medium"
     }
   ],
@@ -24,46 +24,81 @@
     {
       "text": [
         {
-          "text": "Analytics"
+          "text": "01.",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Strategic Parnerships",
+          "variant": "h4"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-analyse.svg",
-        "color": "beta"
-      }
+      ]
     },
     {
       "text": [
         {
-          "text": "Consultation"
+          "text": "02.",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Specialist Skills",
+          "variant": "h4"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-calendar-check.svg",
-        "color": "beta"
-      }
+      ]
     },
     {
       "text": [
         {
-          "text": "Reports"
+          "text": "03.",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Agile Teaming & Fail Fast Culture",
+          "variant": "h4"
+          
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-bar-chart-alt.svg",
-        "color": "beta"
-      }
+      ]
     },
     {
       "text": [
         {
-          "text": "Live Support"
+          "text": "04.",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Automation & Integrated Tech",
+          "variant": "h4"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-chat.svg",
-        "color": "beta"
-      }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "05.",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Connected Data",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "06.",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Actionable Measurement",
+          "variant": "h4"
+        }
+      ]
     }
   ]
 }

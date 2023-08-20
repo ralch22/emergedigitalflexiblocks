@@ -1,0 +1,59 @@
+{
+    "collection": [
+      {
+        "text": [
+          {
+            "text": "Subscribe to Stay Up to Date",
+            "variant": "h5",
+            "color": "white"
+          },
+          {
+            "text": "Grow Your Business with our insights to the Digital Landscape",
+            "color": "white"
+          }
+        ],
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/bx-chat.svg",
+          "bg": "transparent",
+          "color": "white"
+        }
+      }
+    ],
+    "form": {
+        "fields": [
+          {
+            "identifier": "name",
+            "type": "TEXT",
+            "placeholder": {
+              "text": "Full Name"
+            },
+            "width": "200px",
+            "icon": {
+              "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "color": "alpha"
+            }
+          },
+          {
+            "identifier": "email",
+            "type": "EMAIL",
+            "placeholder": {
+              "text": "Email Address"
+            },
+            "icon": {
+              "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+              "color": "alpha"
+            }
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Send Message",
+            "type": "SUBMIT",
+            "variant": "secondary",
+            "width": "200px"
+          }
+        ]
+    }
+
+}
+  
