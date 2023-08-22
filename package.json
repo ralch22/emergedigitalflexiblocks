@@ -5,7 +5,8 @@
   "workspaces": ["packages/**", "site"],
   "scripts": {
     "clean": "lerna clean",
-    "release": "lerna version"
+    "release": "lerna version",
+    "site-build":  "cd site && npm run build"
   },
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^4.6.3"
