@@ -4,6 +4,7 @@ import ContentText from '@solid-ui-components/ContentText';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import Divider from '@solid-ui-components/Divider/Divider';
+import ContentImages from '@solid-ui-components/ContentImages/ContentImages';
 
 const styles = {
   wrapper: {
@@ -30,7 +31,6 @@ const styles = {
 };
 
 const FooterBlock01 = ({ content: { text, collection } }) => {
-  const [plan, setPlan] = useState(0);
 
   return (
     <div style={styles.wrapper}>
@@ -42,21 +42,30 @@ const FooterBlock01 = ({ content: { text, collection } }) => {
           <Divider spaceX="50px" />
           <Flex sx={{ flexWrap: 'wrap', flexBasis: '70%' }}>
             {collection?.map(
-              ({ text, buttons }, index) =>
-                buttons && (
-                  <Box key={`item-${index}`} sx={styles.columnButtons}>
-                    <ContentText content={text} variant="h5" />
-                    <ContentButtons
-                      content={buttons}
-                      variant="vertical"
-                      wrapperStyles={{
-                        flexDirection: 'column',
-                        alignItems: 'flex-start',
-                      }}
-                    />
-                  </Box>
-                )
-            )}
+              ({ text, buttons, images }, index) =>
+              buttons && (
+                <Box key={`item-${index}`} sx={styles.columnButtons}>
+               
+                  <Flex>
+                  {images && images.map((img, index) => (
+                     <ContentImages
+                     content={img}
+                     
+                   />
+                  ))}
+                  </Flex>
+                   
+                  <ContentText content={text} variant="h5" />
+                  <ContentButtons
+                    content={buttons}
+                    variant="vertical"
+                    wrapperStyles={{
+                      flexDirection: 'column',
+                      alignItems: 'flex-start',
+                    }}
+                  />
+                </Box>
+              ))}
           </Flex>
         </Flex>
       </Container>

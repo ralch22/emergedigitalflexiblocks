@@ -1,167 +1,170 @@
 {
-    "strategy": [
-      "Audience Identification & Matching Strategy",
-      "Audience Segmentation Strategy",
-      "Branding Strategy",
-      "Business Development Strategy",
-      "Creative Strategy",
-      "CRM Strategy",
-      "Customer Experience Strategy",
-      "Customer Journey Strategy",
-      "Digital Media Strategy",
-      "Content Strategy",
-      "DXP Strategy",
-      "eCommerce Marketing Strategy",
-      "First-Party Data Strategy"
-    ],
-    "create": {
-      "design": [
-        "Brand Identity",
-        "Creative Strategy",
-        "Digital Display Production",
-        "Digital First Creative",
-        "Dynamic Creative Production",
-        "Rich Media Creative",
-        "User Experience (UX) Design",
-        "User Interface Design (UI)",
-        "Website Design"
+
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "Strategy",
+          "color": "black",
+          "variant": "h3"
+        }
       ],
-      "development": [
-        "Custom Software Development",
-        "Digital Experience Platforms",
-        "DXP Strategy",
-        "eCommerce Implementation",
-        "Mobile App Development",
-        "Online Bot Development",
-        "Website Development",
-        "Website Maintenance"
-      ],
-      "content": [
-        "Article Writing",
-        "Ask Me Anything",
-        "Cinemagraphs",
-        "Content Strategy",
-        "Data Visualisation",
-        "Digital Annual Reports",
-        "eBook and Whitepapers",
-        "Infographic Design",
-        "Live Video Production",
-        "Newsletter Content",
-        "Online Game Programming",
-        "Podcasts",
-        "Social Content Creation",
-        "Video Production"
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-chat.svg",
+        "bg": "transparent",
+        "color": "beta"
+      },
+      "collection": [
+        {
+          "text": [
+            {
+              "text": "With our digital strategy services, you can stay ahead of constant change",
+              
+              "variant": "medium"
+            }
+          ]
+        }
       ]
     },
-    "connect": {
-      "media": [
-        "Affiliate Marketing",
-        "Data Led Media Buying",
-        "Digital Media Planning",
-        "eCommerce Advertising",
-        "eCommerce Marketplace Advertising",
-        "Native Advertising",
-        "Online Advertising",
-        "Paid Social Media Advertising",
-        "Performance Media Management",
-        "Programmatic Display Advertising",
-        "Programmatic Video Advertising",
-        "Search Engine Marketing (SEM)"
+    {
+      "text": [
+        {
+          "text": "Create",
+          "color": "black",
+          "variant": "h3"
+        }
       ],
-      "seo": [
-        "App Store Optimisation",
-        "eCommerce SEO",
-        "Enterprise SEO",
-        "Intelligent Content Solutions",
-        "Local SEO",
-        "Mobile SEO",
-        "OneSearch",
-        "Outreach & Backlink Strategy",
-        "SEO Analysis & Insights",
-        "SEO Audit & Assessment",
-        "SEO Strategy",
-        "Voice Search Optimisation"
-      ],
-      "social": [
-        "Paid Social Media Advertising",
-        "Social Influencer Strategy & Management",
-        "Social Media Content Creation",
-        "Social Media Management",
-        "Social Media Strategy"
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-hive.svg",
+        "bg": "transparent",
+        "color": "beta"
+      },
+      "collection": [
+        {
+          "text": [
+            {
+              "text": "01.",
+              "variant": "h4",
+              "color": "beta"
+            },
+            {
+              "text": "Design",
+              "variant": "h4"
+            },
+            {
+              "text": "Our digital-first design services inspire consumers with emotive and engaging creative.",
+              
+              "variant": "medium"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "01.",
+              "variant": "h4",
+              "color": "beta"
+            },
+            {
+              "text": "Design",
+              "variant": "h4"
+            },
+            {
+              "text": "Our digital-first design services inspire consumers with emotive and engaging creative.",
+              
+              "variant": "medium"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "01.",
+              "variant": "h4",
+              "color": "beta"
+            },
+            {
+              "text": "Design",
+              "variant": "h4"
+            },
+            {
+              "text": "Our digital-first design services inspire consumers with emotive and engaging creative.",
+              
+              "variant": "medium"
+            }
+          ]
+        }
       ]
     },
-    "convert": {
-      "ecommerce": [
-        "eCommerce Advertising",
-        "eCommerce Implementation",
-        "eCommerce Marketing Advertising",
-        "eCommerce Marketing Strategy",
-        "eCommerce Marketplace Optimisation",
-        "eCommerce PlatForm Selection",
-        "e-Retailer Growth and Strategy",
-        "Flightdeck e-retail Analytics",
-        "Shopify e-commerce"
+    {
+      "text": [
+        {
+          "text": "Connect",
+          "color": "black",
+          "variant": "h3"
+        }
       ],
-      "measure": [
-        "App & Website Analytics",
-        "Digital Attribution Modelling",
-        "Marketing Reporting & Dashboards",
-        "Dynamic Creative Optimisation"
-      ],
-      "optimize": [
-        "Deductive Conversion Audit",
-        "A/B/n and Multivariate Testing",
-        "Symmetric Messaging",
-        "Personalisation"
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-phone.svg",
+        "bg": "transparent",
+        "color": "beta"
+      },
+      "collection": [
+        {
+          "text": [
+            {
+              "text": "01.",
+              "variant": "h4",
+              "color": "beta"
+            },
+            {
+              "text": "Design",
+              "variant": "h4"
+            },
+            {
+              "text": "Our digital-first design services inspire consumers with emotive and engaging creative.",
+              
+              "variant": "medium"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "01.",
+              "variant": "h4",
+              "color": "beta"
+            },
+            {
+              "text": "Design",
+              "variant": "h4"
+            },
+            {
+              "text": "Our digital-first design services inspire consumers with emotive and engaging creative.",
+              
+              "variant": "medium"
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "01.",
+              "variant": "h4",
+              "color": "beta"
+            },
+            {
+              "text": "Design",
+              "variant": "h4"
+            },
+            {
+              "text": "Our digital-first design services inspire consumers with emotive and engaging creative.",
+              
+              "variant": "medium"
+            }
+          ]
+        }
       ]
     }
-  }
-  
-
-
-
-
-Strategy
-
-With our digital strategy services, you can stay ahead of constant change
-
-
-Create
-    01
-    Design
-
-    Our digital-first design services inspire consumers with emotive and engaging creative.
-    02
-    Development
-
-    We provide digital development services that deliver ROI.
-    03
-    Content
-
-    Our digital content services deliver engaging, multi-format content.
-Connect
-    01
-    Media
-
-    With our paid media services, you can drive relevant and effective traffic to your site.
-    02
-    SEO
-
-    We offer market-leading search engine optimization (SEO) services to help you grow your organic traffic.
-    03
-    Social
-
-    With our social media services, we deliver compelling and engaging social experiences.
-Convert
-    01
-    eCommerce
-
-    Our eCommerce services will help you grow your online sales.
-    02
-    Measure
-
-    Our digital analytics and measurement services will help you track and measure your digital marketing efforts.
-    03
-    Optimize
-
-    Improve conversion rates with our comprehensive Conversion Rate Optimization (CRO) services.
+  ]
+}

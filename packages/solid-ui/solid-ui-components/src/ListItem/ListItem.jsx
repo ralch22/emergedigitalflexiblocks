@@ -11,6 +11,7 @@ const ListItem = ({
   compact,
   vertical,
   center,
+  full,
   middle //Centering for horizontal layout
 }) => (
   <Flex
@@ -38,7 +39,7 @@ const ListItem = ({
         />
       </Box>
     )}
-    <Box sx={{ alignSelf: vertical ? `auto` : `center` }}>
+    <Box sx={{ alignSelf: vertical ? `auto` : `center`, width: full ? '100%': '' }}>
       <ContentText content={text} />
     </Box>
   </Flex>

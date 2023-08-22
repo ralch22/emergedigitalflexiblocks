@@ -49,6 +49,9 @@ const styles = {
     minWidth: `auto`,
     flexGrow: 1
   },
+  image: {
+    width: 150
+  },
   mobileMenu: {
     display: [`block`, null, `none`]
   }

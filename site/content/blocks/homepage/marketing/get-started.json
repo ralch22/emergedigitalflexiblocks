@@ -20,7 +20,7 @@
       "text": "Get Started",
       "type": "MODAL",
       "link": "contact",
-      "bg": "beta"
+      "variant": "secondary"
     }
   ]
 }

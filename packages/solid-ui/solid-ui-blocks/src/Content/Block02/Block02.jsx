@@ -7,17 +7,19 @@ import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
 const ContentBlock02 = ({ content: { text } }) => (
-  <Container variant="wide" sx={{ background: "#rrr" }}>
-    <Flex
+
+    <Box sx={{ height: "50vh" }}>
+      <Flex
       sx={{
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        height: "100%"
       }}
     >
       <ContentText content={text} />
     </Flex>
-  </Container>
+    </Box>
 )
 
 export default WithDefaultContent(ContentBlock02)

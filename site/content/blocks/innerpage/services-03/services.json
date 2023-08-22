@@ -2,7 +2,7 @@
   "text": [
     {
       "text": "Our Services",
-      "variant": "h1"
+      "variant": "h2"
     },
     {
       "text": "Building great customer relationships is just a step away",
@@ -14,53 +14,205 @@
       "text": [
         {
           "text": "Strategy",
-          "color": "alpha",
+          "color": "black",
           "variant": "h3"
         }
       ],
       "collection": [
-        {
-          "icon": {
-            "src": "icon-path",
-            "bg": "omegaLighter",
-            "color": "omegaDark"
+       {
+        "text": [
+          {
+            "text": "Strategy",
+            "color": "transparent",
+            "variant": "small",
+            "display": "none"
+          }
+        ],
+        "collection": [
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Audience Identification & Matching Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
           },
-          "text": [
-            {
-              "text": "Audience Identification & Matching Strategy",
-              "color": "omegaDark",
-              "variant": "h4"
-            }
-          ]
-        },
-        {
-          "icon": {
-            "src": "icon-path",
-            "bg": "omegaLighter",
-            "color": "omegaDark"
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Audience Segmentation Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
           },
-          "text": [
-            {
-              "text": "Audience Segmentation Strategy",
-              "color": "omegaDark",
-              "variant": "h4"
-            }
-          ]
-        },
-        {
-          "icon": {
-            "src": "icon-path",
-            "bg": "omegaLighter",
-            "color": "omegaDark"
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Branding Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
           },
-          "text": [
-            {
-              "text": "Branding Strategy",
-              "color": "omegaDark",
-              "variant": "h4"
-            }
-          ]
-        }
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Business Development Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Creative Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "CRM Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Customer Experience Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Customer Journey Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Digital Media Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "Content Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "DXP Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "eCommerce Marketing Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+              "bg": "omegaLighter",
+              "color": "omegaDark"
+            },
+            "text": [
+              {
+                "text": "First-Party Data Strategy",
+                "color": "omegaDark",
+                "variant": "h6"
+              }
+            ]
+          }
+        ]
+       }
       
       ]
     },
@@ -68,7 +220,7 @@
       "text": [
         {
           "text": "Create",
-          "color": "beta",
+          "color": "black",
           "variant": "h3"
         }
       ],
@@ -78,13 +230,13 @@
             {
               "text": "Design",
               "color": "omegaDark",
-              "variant": "h4"
+              "variant": "h5"
             }
           ],
           "collection": [
             {
               "icon": {
-                "src": "icon-path",
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
                 "bg": "omegaLighter",
                 "color": "omegaDark"
               },
@@ -92,13 +244,13 @@
                 {
                   "text": "Brand Identity",
                   "color": "omegaDark",
-                  "variant": "h4"
+                  "variant": "h6"
                 }
               ]
             },
             {
               "icon": {
-                "src": "icon-path",
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
                 "bg": "omegaLighter",
                 "color": "omegaDark"
               },
@@ -106,7 +258,105 @@
                 {
                   "text": "Creative Strategy",
                   "color": "omegaDark",
-                  "variant": "h4"
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Digital Display Productiony",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Digital First Creative",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Dynamic Creative Production",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Rich Media Creative",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "User Experience (UX) Design",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "User Interface Design (UI)",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Website Design",
+                  "color": "omegaDark",
+                  "variant": "h6"
                 }
               ]
             }
@@ -116,14 +366,14 @@
           "text": [
             {
               "text": "Development",
-              "color": "omega",
-              "variant": "h4"
+              "color": "omegaDark",
+              "variant": "h5"
             }
           ],
           "collection": [
             {
               "icon": {
-                "src": "icon-path",
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
                 "bg": "omegaLighter",
                 "color": "omegaDark"
               },
@@ -131,13 +381,13 @@
                 {
                   "text": "Custom Software Development",
                   "color": "omegaDark",
-                  "variant": "h4"
+                  "variant": "h6"
                 }
               ]
             },
             {
               "icon": {
-                "src": "icon-path",
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
                 "bg": "omegaLighter",
                 "color": "omegaDark"
               },
@@ -145,13 +395,1030 @@
                 {
                   "text": "Digital Experience Platforms",
                   "color": "omegaDark",
-                  "variant": "h4"
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "DXP Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Implementation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Mobile App Development",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Online Bot Development",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Website Development",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Website Maintenance",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "Content",
+              "color": "omegaDark",
+              "variant": "h5"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Article Writing",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Ask Me Anything",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Cinemagraphs",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Content Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Data Visualisation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Digital Annual Reports",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eBook and Whitepapers",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Live Video Production",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Newsletter Content",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Online Game Programming",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Podcasts",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Social Content Creation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Video Production",
+                  "color": "omegaDark",
+                  "variant": "h6"
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "text": [
+        {
+          "text": "Connect",
+          "color": "black",
+          "variant": "h3"
+        }
+      ],
+      "collection": [
+        {
+          "text": [
+            {
+              "text": "Media",
+              "color": "omegaDark",
+              "variant": "h4"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Affiliate Marketing",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Data Led Media Buying",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Digital Media Planning",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Marketplace Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Native Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Online Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Paid Social Media Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Performance Media Management",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Programmatic Display Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Programmatic Video Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Search Engine Marketing (SEM)",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "SEO",
+              "color": "omegaDark",
+              "variant": "h5"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "App Store Optimisation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce SEO",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Enterprise SEO",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Intelligent Content Solutions",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Local SEO",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Mobile SEO",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "OneSearch",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Outreach & Backlink Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "SEO Analysis & Insights",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "SEO Audit & Assessment",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "SEO Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Voice Search Optimisation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "Social",
+              "color": "omegaDark",
+              "variant": "h5"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Paid Social Media Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Social Influencer Strategy & Management",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Social Media Content Creation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Social Media Management",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Social Media Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Convert",
+          "color": "black",
+          "variant": "h3"
+        }
+      ],
+      "collection": [
+        {
+          "text": [
+            {
+              "text": "Ecommerce",
+              "color": "omegaDark",
+              "variant": "h4"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Implementation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Marketing Advertising",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Marketing Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Marketplace Optimisation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce PlatForm Selection",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "e-Retailer Growth and Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Flightdeck e-retail Analytics",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Shopify e-commerce",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "Measure",
+              "color": "omegaDark",
+              "variant": "h5"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "App & Website Analytics",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Digital Attribution Modelling",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Marketing Reporting & Dashboards",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Dynamic Creative Optimisation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "Optimize",
+              "color": "omegaDark",
+              "variant": "h5"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Deductive Conversion Audit",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "A/B/n and Multivariate Testing",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Symmetric Messaging",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            },
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Personalisation",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "gradient"
     }
   ]
 }

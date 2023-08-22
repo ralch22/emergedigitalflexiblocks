@@ -3,15 +3,15 @@
     {
       "text": [
         {
-          "text": "We Guarantee a Stable Work Process",
-          "color": "omegaDark",
-          "variant": "h4"
-        },
-        {
-          "text": "Listening, Planning, Making.",
-          "color": "beta",
+          "text": "Our DMS Services",
+          "color": "black",
           "variant": "h2",
           "space": 0
+        },
+        {
+          "text": "We Guarantee a Stable Work Process",
+          "color": "With our digital strategy services, you can stay ahead of constant change",
+          "variant": "p"
         }
       ]
     }
