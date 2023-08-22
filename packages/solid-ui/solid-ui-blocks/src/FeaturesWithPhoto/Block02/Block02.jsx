@@ -26,13 +26,16 @@ const FeaturesWithPhotoBlock02 = ({
         mx: [null, null, null, -4]
       }}
     >
+      <Box sx={{ flexBasis: "80%" }}>
+
       <FlexImage reverse={reverse}>
-        <ContentImages content={{ images }} reverse={reverse} />
-      </FlexImage>
-      <FlexContent reverse={reverse}>
-        <Box sx={{ textAlign: ['center', 'left'] }}>
+      <Box sx={{ textAlign: ['center', 'left'] }}>
           <ContentText content={text} />
         </Box>
+        <ContentImages content={{ images }} reverse={reverse} />
+      </FlexImage>
+      </Box>
+      <FlexContent reverse={reverse}>
         {collection && (
           <>
             <Divider space={3} />
@@ -44,9 +47,9 @@ const FeaturesWithPhotoBlock02 = ({
                   delay={1 + 0.2 * (index + 1)}
                   css={css({ flexBasis: [`1`, `1/2`] })}
                 >
-                  <Card py='3' m='2'>
+                  <Box py='3' m='2' px='3'>
                     <ListItem {...props} compact middle p='2' />
-                  </Card>
+                  </Box>
                 </Reveal>
               ))}
             </Flex>

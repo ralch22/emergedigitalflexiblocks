@@ -1,23 +1,12 @@
 {
-  "collection": [
+  
+  "text": [
     {
-      "text": [
-        {
-          "text": "Our Services",
-          "color": "white",
-          "variant": "h3"
-        },
-        {
-          "text": "Unleashing the true power of Gatsby sites.",
-          "color": "betaLight",
-          "variant": "h1"
-        },
-        {
-          "text": "Flexible blocks with unlimited variants and pre-designed multi purpose layouts.",
-          "color": "omega",
-          "variant": "medium"
-        }
-      ]
+      "text": "Digital Marketing Services",
+      "color": "black",
+      "variant": "h3"
     }
   ]
+    
 }
+

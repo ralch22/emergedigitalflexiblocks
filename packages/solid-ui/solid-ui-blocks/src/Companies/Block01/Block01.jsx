@@ -4,6 +4,7 @@ import { Container, Flex, Box, css } from 'theme-ui'
 import Reveal from '@solid-ui-components/Reveal'
 import Divider from '@solid-ui-components/Divider'
 import ContentText from '@solid-ui-components/ContentText'
+import ContentImages from '@solid-ui-components/ContentImages'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
@@ -15,7 +16,7 @@ const styles = {
 }
 
 const CompaniesBlock01 = ({ content }) => {
-  const { text, collection, buttons } = content
+  const { text, collection, buttons, images } = content
 
   return (
     <Container sx={{ textAlign: `center` }}>
@@ -44,6 +45,9 @@ const CompaniesBlock01 = ({ content }) => {
           <ContentButtons content={buttons} />
         </>
       )}
+      <Divider space='5' />
+      <Divider space='5' />
+      <ContentImages content={{ images }} />
     </Container>
   )
 }

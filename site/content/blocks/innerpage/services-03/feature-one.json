@@ -1,0 +1,38 @@
+{
+    "text": [
+      {
+        "text": "DIGITAL MARKETING SERVICES (DMS)",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Integrated digital marketing services including strategy, creative, connection, and conversion",
+        "variant": "h2"
+      },
+      {
+        "text": "Experienced subject matter experts deliver tailored services across all digital marketing channels to help you achieve remarkable results.",
+            "variant": "medium",
+            "color": "black"
+          },
+          {
+            "text": "Through single-service engagements or a mix of digital marketing services with one partner, our digital marketing services help clients rapidly evolve through continuous performance and results improvement.",
+            "variant": "medium",
+            "color": "black"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/feature-one.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

@@ -9,8 +9,8 @@ import ModalSimple from '@solid-ui-blocks/Modal/Block02'
 import Header from '@solid-ui-blocks/Header/Block01'
 import Hero from '@solid-ui-blocks/Hero/Block02'
 import Companies from '@solid-ui-blocks/Companies/Block01'
-import Services from '@solid-ui-blocks/Features/Block05'
-import FeatureOne from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
+import Services from '@solid-ui-blocks/Features/Block06'
+import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
 import WhyChooseUs from '@solid-ui-blocks/Features/Block01'
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block02'
 import Strategies from '@solid-ui-blocks/Stats/Block01'
@@ -44,10 +44,10 @@ const IndexPage = props => {
       <Companies content={content['companies']} />
       <Divider space='5' />
       <Divider space='5' />
+      <FeatureThree content={content['feature-one']} />
+      <Divider space='5' />
+      <Divider space='5' />
       <Services content={content['services']} />
-      <Divider space='5' />
-      <Divider space='5' />
-      <FeatureOne content={content['feature-one']} />
       <Divider space='5' />
       <Divider space='5' />
       <Container variant='wide' sx={styles.whyChooseUsContainer}>
@@ -55,7 +55,7 @@ const IndexPage = props => {
       </Container>
       <Divider space='5' />
       <Divider space='5' />
-      <FeatureTwo content={content['feature-two']} />
+      <FeatureTwo reverse content={content['feature-two']} />
       <Divider space='6' />
       <Divider space='6' />
       <Container variant='full' sx={styles.strategiesContainer}>

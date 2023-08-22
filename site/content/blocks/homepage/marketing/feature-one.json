@@ -1,18 +1,30 @@
 {
   "text": [
     {
-      "text": "GROW YOUR BUSINESS",
+      "text": "Personalised. Reliable. Effective.",
       "color": "alpha",
       "variant": "h4"
     },
     {
-      "text": "Tap into our unique insights to identify the right leads",
+      "text": "Enjoy Full-Service Digital Marketing Expertise",
       "variant": "h2"
     },
     {
-      "text": "Target your audience based on their interests. Lorem ipsum dolor sit amet, consectetur magna aliqua.",
-      "variant": "medium"
-    }
+      "text": "Digital media strives to transparently reach people—not personas—through tech.",
+          "variant": "medium",
+          "color": "black"
+        },
+        {
+          "text": "We are willing to decipher the crux of your organization and understand all the moving pieces in combination of hard-working communication, extensive design, and technology smarts to unlock your growth potential.",
+          "variant": "medium",
+          "color": "black"
+        },
+        {
+      
+          "text": "We enhance our partner’s delivery of customer experience to their customers by delivering personalized messaging activating the right message at the right time to the right touchpoint.",
+          "variant": "medium",
+          "color": "black"
+        }
   ],
   "images": [
     {
@@ -20,40 +32,36 @@
       "alt": "alt text"
     }
   ],
+  "buttons": [
+    {
+      "text": "Get Started",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ],
   "collection": [
     {
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-check-circle.svg",
-        "color": "beta"
-      },
       "text": [
         {
-          "text": "Automatic interest detection",
-          "variant": "h5"
+          "text": "Digital media strives to transparently reach people—not personas—through tech.",
+          "variant": "medium"
         }
       ]
     },
     {
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-check-circle.svg",
-        "color": "beta"
-      },
       "text": [
         {
-          "text": "Daily email reports",
-          "variant": "h5"
+          "text": "We are willing to decipher the crux of your organization and understand all the moving pieces in combination of hard-working communication, extensive design, and technology smarts to unlock your growth potential.",
+          "variant": "medium"
         }
       ]
     },
     {
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-check-circle.svg",
-        "color": "beta"
-      },
       "text": [
         {
-          "text": "Create & manage campaigns",
-          "variant": "h5"
+          "text": "We enhance our partner’s delivery of customer experience to their customers by delivering personalized messaging activating the right message at the right time to the right touchpoint.",
+          "variant": "medium"
         }
       ]
     }

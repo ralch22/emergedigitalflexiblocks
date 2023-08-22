@@ -1,72 +1,71 @@
-import React from 'react'
-import { Link as GLink } from 'gatsby'
-import { Container, Box, Flex } from 'theme-ui'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import PoweredByGatsby from '@solid-ui-components/PoweredByGatsby'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React, { useState } from 'react';
+import { Container, Box, Flex, Link } from 'theme-ui';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
+import Divider from '@solid-ui-components/Divider/Divider';
 
 const styles = {
   wrapper: {
-    position: `relative`,
-    bg: `footerBg`
+    position: 'relative',
+    backgroundImage: "linear-gradient(280deg, #402C50 0%, #336667 62%)",
+    color: 'white',
   },
   footer: {
-    flexDirection: [`column-reverse`, `row`],
-    justifyContent: `space-between`,
-    alignItems: [`center`, `flex-start`],
-    py: 5
-  }
-}
+    flexDirection: ['column-reverse', 'row'],
+    width: '100%',
+    py: 5,
+  },
+  column: {
+    flexBasis: '30%',
+    minWidth: 200,
+    p: 4,
+  },
+  columnButtons: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    p: 3,
+  },
+};
 
-const FooterBlock01 = ({ content: { images, collection } }) => {
+const FooterBlock01 = ({ content: { text, collection } }) => {
+  const [plan, setPlan] = useState(0);
+
   return (
-    <Box sx={styles.wrapper}>
-      <Container px='4'>
+    <div style={styles.wrapper}>
+      <Container px="5" sx={{ position: 'relative' }}>
         <Flex sx={styles.footer}>
-          <Box sx={{ minWidth: 200 }}>
-            <Box pb='1' mb='2' mt={[4, 0]}>
-              <GLink to='/'>
-                <ContentImages content={{ images }} imageEffect='fadeIn' />
-              </GLink>
-            </Box>
-            <Box pt='2' mb={[2, 4]}>
-              © {new Date().getFullYear()}, All Rights Reserved.
-            </Box>
-            <Box>
-              <PoweredByGatsby />
-            </Box>
+          <Box sx={styles.column}>
+            <ContentText content={text} />
           </Box>
-          {collection?.map(
-            ({ text, buttons }, index) =>
-              buttons && (
-                <Box key={`item-${index}`} mb='3'>
-                  <ContentText
-                    content={text?.[0]}
-                    variant='h5'
-                    sx={{ display: [`none`, `block`] }}
-                  />
-                  <ContentButtons
-                    content={buttons}
-                    variant='vertical'
-                    wrapperStyles={{
-                      flexDirection: [null, `column`],
-                      flexWrap: `wrap`,
-                      justifyContent: `center`
-                    }}
-                  />
-                </Box>
-              )
-          )}
+          <Divider spaceX="50px" />
+          <Flex sx={{ flexWrap: 'wrap', flexBasis: '70%' }}>
+            {collection?.map(
+              ({ text, buttons }, index) =>
+                buttons && (
+                  <Box key={`item-${index}`} sx={styles.columnButtons}>
+                    <ContentText content={text} variant="h5" />
+                    <ContentButtons
+                      content={buttons}
+                      variant="vertical"
+                      wrapperStyles={{
+                        flexDirection: 'column',
+                        alignItems: 'flex-start',
+                      }}
+                    />
+                  </Box>
+                )
+            )}
+          </Flex>
         </Flex>
       </Container>
-    </Box>
-  )
-}
+    </div>
+  );
+};
 
 FooterBlock01.defaultProps = {
-  menuJustify: `flex-end`
-}
+  menuJustify: 'flex-end',
+};
 
-export default WithDefaultContent(FooterBlock01)
+export default WithDefaultContent(FooterBlock01);

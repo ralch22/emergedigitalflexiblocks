@@ -2,11 +2,11 @@ import colors from './color-preset'
 
 //Primary
 const alpha = {
-  alphaLighter: colors.brandPink[100],
-  alphaLight: colors.brandPink[200],
-  alpha: colors.brandPink[300],
-  alphaDark: colors.brandPink[400],
-  alphaDarker: colors.brandPink[500]
+  alphaLighter: colors.black[100],
+  alphaLight: colors.black[200],
+  alpha: colors.black[300],
+  alphaDark: colors.black[400],
+  alphaDarker: colors.black[500]
 }
 
 // Secondary
@@ -16,6 +16,15 @@ const beta = {
   beta: colors.brandPink[500],
   betaDark: colors.brandPink[600],
   betaDarker: colors.brandPink[800]
+}
+
+//Blue
+const blue = {
+  blueLighter: colors.brandBlue[100],
+  blueLight: colors.brandBlue[200],
+  blue: colors.brandBlue[300],
+  blueDark: colors.brandBlue[400],
+  blueDarker: colors.brandBlue[500]
 }
 
 // Reserved
@@ -43,6 +52,7 @@ export default {
   ...gamma,
   ...psi,
   ...omega,
+  ...blue,
 
   successLight: colors.green[100],
   success: colors.green[500],
@@ -55,7 +65,7 @@ export default {
   headerBg: `transparent`,
   headerActiveBg: colors.white,
   headerActiveColor: omega.omegaDarker,
-  footerBg: colors.white,
+  footerBg: colors.gradiant,
 
   mute: colors.blueGray[300],
   highlight: colors.blueGray[200],

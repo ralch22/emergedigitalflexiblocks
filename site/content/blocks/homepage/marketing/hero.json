@@ -1,22 +1,22 @@
 {
   "text": [
     {
-      "text": "Modern Solutions",
+      "text": "our experiences boost your business",
       "variant": "h4",
       "color": "omegaDarker"
     },
     {
-      "text": "Your Partner in Creating and Growing Brands",
+      "text": "Data-Driven Marketing Solutions",
       "variant": "h2"
     },
     {
-      "text": "Hassle-free platform and specialists to help you with your marketing campaigns.",
+      "text": "We envision serving as an all-in-one partner across content, data, and digital media in an ever-evolving combination of digital expertise.",
       "variant": "medium"
     }
   ],
   "images": [
     {
-      "src": "../../../assets/flexiblocks/homepage/marketing/hero.png",
+      "src": "../../../assets/flexiblocks/homepage/marketing/feature-one.png",
       "alt": "alt text"
     }
   ],
@@ -31,7 +31,7 @@
       "text": "Case Studies",
       "type": "PAGE",
       "link": "",
-      "variant": "white"
+      "variant": "gradient"
     }
   ]
 }

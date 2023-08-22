@@ -1,69 +1,124 @@
 {
-  "images": [
+  "text": [
     {
-      "src": "../../assets/flexiblocks/shared/logo.png",
-      "alt": "alt text"
+      "text": "Get in Touch with Us",
+      "color": "white",
+      "variant": "h5",
+      "space": 3
+    },
+    {
+      "text": "Email: hello@emergedigital.ae",
+      "color": "white",
+      "variant": "h6",
+      "space": 3
     }
   ],
+ 
   "collection": [
+   
     {
       "text": [
         {
-          "text": "Quick Links"
+          "text": "Services",
+          "color": "white"
         }
       ],
       "buttons": [
         {
-          "text": "Home",
+          "text": "Google Analytics 4 Training",
           "type": "ANCHOR",
           "link": "#hero",
-          "variant": "links.nav-light"
+          "variant": "links.nav-white",
+          "color": "white"
         },
         {
-          "text": "Blog",
-          "type": "MODAL",
+          "text": "Google Analytics 4 Audits",
+          "type": "ANCHOR",
           "link": "advertisement",
-          "variant": "links.nav-light"
+          "variant": "links.nav-white",
+          "color": "white"
         },
         {
-          "text": "Contact Us",
-          "type": "MODAL",
+          "text": "Google Tag Manager Audits",
+          "type": "ANCHOR",
           "link": "contact",
-          "variant": "links.nav-light"
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Search Engine Marketing (SEM)",
+          "type": "ANCHOR",
+          "link": "#hero",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Search Engine Optimization",
+          "type": "ANCHOR",
+          "link": "advertisement",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "App Development",
+          "type": "ANCHOR",
+          "link": "contact",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "B2B Demand Generation Services",
+          "type": "ANCHOR",
+          "link": "contact",
+          "variant": "links.nav-white",
+          "color": "white"
         }
       ]
     },
     {
       "text": [
         {
-          "text": "Legal Stuff"
+          "text": "Technologies",
+          "color": "white"
         }
       ],
       "buttons": [
         {
-          "text": "Privacy Notice",
+          "text": "Google Marketing Platform",
           "type": "PAGE",
           "link": "",
-          "variant": "links.nav-light"
+          "variant": "links.nav-white",
+          "color": "white"
         },
         {
-          "text": "Cookie Policy",
+          "text": "Google Cloud Platform",
           "type": "PAGE",
           "link": "",
-          "variant": "links.nav-light"
+          "variant": "links.nav-white",
+          "color": "white"
         },
         {
-          "text": "Terms Of Use",
+          "text": "3CX",
           "type": "PAGE",
           "link": "",
-          "variant": "links.nav-light"
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "WP Engine",
+          "type": "PAGE",
+          "link": "",
+          "variant": "links.nav-white",
+          "color": "white"
         }
       ]
     },
     {
+
       "text": [
         {
-          "text": "Social Media"
+          "text": "Social Media",
+          "color": "white"
         }
       ],
       "buttons": [
@@ -71,7 +126,7 @@
           "text": "Github",
           "type": "PAGE",
           "link": "https://github.com/gatsby",
-          "variant": "links.nav-light",
+          "variant": "links.nav-white",
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-github.svg",
             "color": "#2f4f4f"
@@ -81,7 +136,7 @@
           "text": "Twitter",
           "type": "PAGE",
           "link": "https://twitter.com/gatsby",
-          "variant": "links.nav-light",
+          "variant": "links.nav-white",
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
             "color": "#1da1f2"
@@ -91,13 +146,102 @@
           "text": "Instagram",
           "type": "PAGE",
           "link": "https://instagram.com/gatsby",
-          "variant": "links.nav-light",
+          "variant": "links.nav-white",
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
             "color": "#c13584"
           }
         }
       ]
+    },
+    {
+      "text": [
+        {
+          "text": "Solutions",
+          "color": "white"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Advertisers",
+          "type": "ANCHOR",
+          "link": "#hero",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Contact Centres",
+          "type": "ANCHOR",
+          "link": "advertisement",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Martech & Adtech",
+          "type": "ANCHOR",
+          "link": "contact",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Data & Analytics",
+          "type": "ANCHOR",
+          "link": "#hero",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Web3 & Payments",
+          "type": "ANCHOR",
+          "link": "advertisement",
+          "variant": "links.nav-white",
+          "color": "white"
+        },
+        {
+          "text": "Managed Hosting",
+          "type": "ANCHOR",
+          "link": "contact",
+          "variant": "links.nav-white",
+          "color": "white"
+        }
+      ]
+    },
+    {
+
+      "text": [
+        {
+          "text": "Accepted Payment Methods",
+          "color": "white"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Privacy Policy",
+          "type": "PAGE",
+          "link": "https://github.com/gatsby",
+          "variant": "links.nav-white",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-github.svg",
+            "color": "#2f4f4f"
+          }
+        },
+        {
+          "text": "Terms & Conditions",
+          "type": "PAGE",
+          "link": "https://twitter.com/gatsby",
+          "variant": "links.nav-white",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
+            "color": "#1da1f2"
+          }
+        }
+      ]
     }
   ]
 }
+
+
+
+    
+    
+    

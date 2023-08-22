@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from 'theme-ui'
 
-const Divider = ({ space, color, ...props }) => (
+const Divider = ({ space, spaceX, color, ...props }) => (
   <Box
     sx={{
       minWidth: `auto`,
@@ -10,6 +10,10 @@ const Divider = ({ space, color, ...props }) => (
       borderTopWidth: 2,
       height: 0,
       my: [space < 0 ? space + 1 : space - 1, space],
+      '& + &': {
+        my: space
+      },
+      mx: [space < 0 ? space + 1 : space - 1, space],
       '& + &': {
         my: space
       },
