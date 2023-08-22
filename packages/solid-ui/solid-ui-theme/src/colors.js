@@ -20,11 +20,11 @@ const beta = {
 
 //Blue
 const blue = {
-  blueLighter: colors.brandBlue[100],
-  blueLight: colors.brandBlue[200],
-  blue: colors.brandBlue[300],
-  blueDark: colors.brandBlue[400],
-  blueDarker: colors.brandBlue[500]
+  blueLighter: colors.brandGreen[100],
+  blueLight: colors.brandGreen[200],
+  blue: colors.brandGreen[300],
+  blueDark: colors.brandGreen[400],
+  blueDarker: colors.brandGreen[500]
 }
 
 // Reserved

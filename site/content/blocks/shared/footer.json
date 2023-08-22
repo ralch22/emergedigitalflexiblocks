@@ -214,26 +214,40 @@
           "color": "white"
         }
       ],
+      "images": [
+        {
+          "src": "../../assets/flexiblocks/shared/visa.webp",
+          "alt": "alt text"
+        },
+        {
+          "src": "../../assets/flexiblocks/shared/master-card.webp",
+          "alt": "alt text"
+        },
+        {
+          "src": "../../assets/flexiblocks/shared/wechatpay.jpg",
+          "alt": "alt text"
+        },
+        {
+          "src": "../../assets/flexiblocks/shared/crypto_com.png",
+          "alt": "alt text"
+        },
+        {
+          "src": "../../assets/flexiblocks/shared/stripe.png",
+          "alt": "alt text"
+        }
+      ],
       "buttons": [
         {
           "text": "Privacy Policy",
           "type": "PAGE",
           "link": "https://github.com/gatsby",
-          "variant": "links.nav-white",
-          "icon": {
-            "src": "../../assets/flexiblocks/icons/bxl-github.svg",
-            "color": "#2f4f4f"
-          }
+          "variant": "links.nav-white"
         },
         {
           "text": "Terms & Conditions",
           "type": "PAGE",
           "link": "https://twitter.com/gatsby",
-          "variant": "links.nav-white",
-          "icon": {
-            "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
-            "color": "#1da1f2"
-          }
+          "variant": "links.nav-white"
         }
       ]
     }

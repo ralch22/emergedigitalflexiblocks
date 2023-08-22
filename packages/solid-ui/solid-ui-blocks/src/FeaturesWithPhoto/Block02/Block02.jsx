@@ -12,7 +12,7 @@ import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
 const FeaturesWithPhotoBlock02 = ({
-  content: { text, images, collection, buttons },
+  content: { text, images, collection, buttons, full },
   reverse
 }) => (
   <Container sx={{ position: `relative` }}>
@@ -48,7 +48,7 @@ const FeaturesWithPhotoBlock02 = ({
                   css={css({ flexBasis: [`1`, `1/2`] })}
                 >
                   <Box py='3' m='2' px='3'>
-                    <ListItem {...props} compact middle p='2' />
+                    <ListItem {...props} full compact middle p='2' />
                   </Box>
                 </Reveal>
               ))}

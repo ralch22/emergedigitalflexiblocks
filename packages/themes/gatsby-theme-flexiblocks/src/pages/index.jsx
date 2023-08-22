@@ -8,7 +8,7 @@ import Calendly from '@solid-ui-components/Calendly'
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
 import ModalSimple from '@solid-ui-blocks/Modal/Block02'
 import Header from '@solid-ui-blocks/Header/Block01'
-import Hero from '@solid-ui-blocks/Hero/Block01'
+import Hero from '@solid-ui-blocks/Hero/Block01' 
 import Companies from '@solid-ui-blocks/Companies/Block01'
 import Services from '@solid-ui-blocks/Features/Block02'
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
@@ -75,7 +75,7 @@ const IndexPage = props => {
       <Testimonials content={content['testimonials']} />
       <Divider space='5' />
       <Divider space='5' />
-      <Calendly />
+      <Calendly content={content['calendar']} />
       <Divider space='5' />
       <Divider space='5' />
       <GetStarted content={content['get-started']} />
