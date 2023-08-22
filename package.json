@@ -2,15 +2,19 @@
   "name": "elegantstack",
   "private": true,
   "license": "",
-  "workspaces": ["packages/**", "site"],
+  "workspaces": [
+    "packages/**",
+    "site"
+  ],
   "scripts": {
     "clean": "lerna clean",
     "release": "lerna version",
     "start-dev": "cd site && npm run develop",
-    "wpe-build":  "cd site && npm run build"
+    "wpe-build": "cd site && npm run build"
   },
   "devDependencies": {
-    "conventional-changelog-conventionalcommits": "^4.6.3"
+    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "rsync": "^0.6.1"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -5,7 +5,7 @@
 	"scripts": {
 		"develop": "gatsby develop",
 		"start": "gatsby develop",
-		"build": "gatsby build",
+		"build": "gatsby build && rsync -av --delete public/ ../public/",
 		"clean": "gatsby clean",
 		"serve": "gatsby serve"
 	},
