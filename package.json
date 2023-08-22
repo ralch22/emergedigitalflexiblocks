@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "lerna clean",
     "release": "lerna version",
+    "start-dev": "cd site && npm run develop",
     "wpe-build":  "cd site && npm run build"
   },
   "devDependencies": {
