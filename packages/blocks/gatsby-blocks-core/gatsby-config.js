@@ -17,6 +17,12 @@ module.exports = options => {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-plugin-fastify`,
+      options: {
+        /* discussed below */
+      }, // All options are optional
+    },
+    {
       resolve: 'gatsby-transformer-sharp',
       options: {
         checkSupportedExtensions: false

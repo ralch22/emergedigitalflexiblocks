@@ -4,7 +4,7 @@
 	"version": "4.0.0",
 	"scripts": {
 		"develop": "gatsby develop",
-		"start": "gatsby develop",
+		"start": "gserve",
 		"build": "gatsby build && rsync -av --delete public/ ../public/",
 		"clean": "gatsby clean",
 		"serve": "gatsby serve"

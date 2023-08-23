@@ -6,6 +6,12 @@ module.exports = options => {
       resolve: '@elegantstack/gatsby-blocks-core',
       options
     },
+    {
+      resolve: `gatsby-plugin-fastify`,
+      options: {
+        /* discussed below */
+      }, // All options are optional
+    },
     '@elegantstack/gatsby-blocks-helpers',
     '@elegantstack/gatsby-common-helpers',
     {
