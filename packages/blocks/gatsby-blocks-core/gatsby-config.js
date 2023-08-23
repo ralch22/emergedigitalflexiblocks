@@ -23,6 +23,13 @@ module.exports = options => {
       }, // All options are optional
     },
     {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: `https://emergedigital.ae/graphql`,
+        restApiRoutePrefix: `wp-json`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-sharp',
       options: {
         checkSupportedExtensions: false

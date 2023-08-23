@@ -74,118 +74,121 @@ const styles = {
   }
 }
 
-const BlogBlock01 = ({ content: { text, collection, buttons } }) => (
-  <Container>
-    {collection && (
-      <Reveal effect='fadeIn'>
-        <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
-          {collection.map(
-            ({ container, text, images, avatar, buttons }, index) => (
-              <Box key={`item-${index}`} sx={styles.wrapper}>
-                <ContentContainer
-                  content={container}
-                  variant='cards.interactive'
-                  sx={styles.card}
-                >
-                  <Flex as='article' sx={styles.content}>
-                    {/* Image */}
-                    <Box sx={{ flex: [0, 1], m: 2, mb: [null, null, null, 0] }}>
-                      <Box sx={styles.imageWrapper}>
-                        <ContentImages
-                          content={{ images }}
-                          sx={styles.image}
-                          imageEffect='fadeIn'
-                        />
-                      </Box>
-                    </Box>
-                    <Box sx={styles.body}>
-                      {/* Category */}
-                      {text?.[0]?.text && (
-                        <Box sx={{ display: `inline-block` }}>
-                          <Box mb='3'>
-                            <Badge
-                              variant='tag'
-                              sx={{ bg: `alphaLighter` }}
-                              color={text[0]?.color}
-                            >
-                              {text[0].text}
-                            </Badge>
-                          </Box>
-                        </Box>
-                      )}
-                      {/* Title */}
-                      <ContentText
-                        content={text?.[1]}
-                        sx={{ flex: [0, 0, `auto`] }}
-                      />
-                      {/* Excerpt */}
-                      <ContentText
-                        content={text?.[2]}
-                        variant='small'
-                        sx={{ flex: `auto`, mb: 3 }}
-                      />
-                      {/* Footer */}
-                      <Box sx={{ variant: `text.small` }}>
-                        <Flex sx={styles.footerWrapper}>
+const BlogBlock01 = ({ content: { text, collection, buttons }, posts }) => {
+  console.log("posts:", posts)
+  return (
+    <Container>
+      {collection && (
+        <Reveal effect='fadeIn'>
+          <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
+            {collection.map(
+              ({ container, text, images, avatar, buttons }, index) => (
+                <Box key={`item-${index}`} sx={styles.wrapper}>
+                  <ContentContainer
+                    content={container}
+                    variant='cards.interactive'
+                    sx={styles.card}
+                  >
+                    <Flex as='article' sx={styles.content}>
+                      {/* Image */}
+                      <Box sx={{ flex: [0, 1], m: 2, mb: [null, null, null, 0] }}>
+                        <Box sx={styles.imageWrapper}>
                           <ContentImages
-                            content={{ images: [avatar] }}
-                            sx={styles.avatar}
+                            content={{ images }}
+                            sx={styles.image}
                             imageEffect='fadeIn'
                           />
-                          <Flex sx={styles.postInfo}>
-                            {/* Author */}
-                            <ContentText
-                              content={text?.[3]}
-                              sx={{
-                                display: `inline-block`,
-                                flexBasis: `full`
-                              }}
-                            >
-                              <Link color={text?.[3]?.color}>
-                                <strong>{text?.[3]?.text}</strong>
-                              </Link>
-                            </ContentText>
-                            {/* Info */}
-                            <Flex sx={{ alignItems: `center` }}>
-                              <ContentText
-                                content={text?.[4]}
-                                sx={{ display: `inline-block` }}
-                                mr='2'
+                        </Box>
+                      </Box>
+                      <Box sx={styles.body}>
+                        {/* Category */}
+                        {text?.[0]?.text && (
+                          <Box sx={{ display: `inline-block` }}>
+                            <Box mb='3'>
+                              <Badge
+                                variant='tag'
+                                sx={{ bg: `alphaLighter` }}
+                                color={text[0]?.color}
                               >
-                                {text?.[4]?.textGroup?.[0]}
-                              </ContentText>
-                              {text?.[5] && <FaRegClock />}
+                                {text[0].text}
+                              </Badge>
+                            </Box>
+                          </Box>
+                        )}
+                        {/* Title */}
+                        <ContentText
+                          content={text?.[1]}
+                          sx={{ flex: [0, 0, `auto`] }}
+                        />
+                        {/* Excerpt */}
+                        <ContentText
+                          content={text?.[2]}
+                          variant='small'
+                          sx={{ flex: `auto`, mb: 3 }}
+                        />
+                        {/* Footer */}
+                        <Box sx={{ variant: `text.small` }}>
+                          <Flex sx={styles.footerWrapper}>
+                            <ContentImages
+                              content={{ images: [avatar] }}
+                              sx={styles.avatar}
+                              imageEffect='fadeIn'
+                            />
+                            <Flex sx={styles.postInfo}>
+                              {/* Author */}
                               <ContentText
-                                content={text?.[5]}
-                                sx={{ display: `inline-block` }}
-                                ml='2'
-                              />
+                                content={text?.[3]}
+                                sx={{
+                                  display: `inline-block`,
+                                  flexBasis: `full`
+                                }}
+                              >
+                                <Link color={text?.[3]?.color}>
+                                  <strong>{text?.[3]?.text}</strong>
+                                </Link>
+                              </ContentText>
+                              {/* Info */}
+                              <Flex sx={{ alignItems: `center` }}>
+                                <ContentText
+                                  content={text?.[4]}
+                                  sx={{ display: `inline-block` }}
+                                  mr='2'
+                                >
+                                  {text?.[4]?.textGroup?.[0]}
+                                </ContentText>
+                                {text?.[5] && <FaRegClock />}
+                                <ContentText
+                                  content={text?.[5]}
+                                  sx={{ display: `inline-block` }}
+                                  ml='2'
+                                />
+                              </Flex>
                             </Flex>
                           </Flex>
-                        </Flex>
+                        </Box>
+                        {buttons && (
+                          <>
+                            <Divider space={2} />
+                            <ContentButtons content={buttons} />
+                          </>
+                        )}
                       </Box>
-                      {buttons && (
-                        <>
-                          <Divider space={2} />
-                          <ContentButtons content={buttons} />
-                        </>
-                      )}
-                    </Box>
-                  </Flex>
-                </ContentContainer>
-              </Box>
-            )
-          )}
-        </Flex>
-      </Reveal>
-    )}
-    {buttons && (
-      <>
-        <Divider space={3} />
-        <ContentButtons content={buttons} />
-      </>
-    )}
-  </Container>
-)
+                    </Flex>
+                  </ContentContainer>
+                </Box>
+              )
+            )}
+          </Flex>
+        </Reveal>
+      )}
+      {buttons && (
+        <>
+          <Divider space={3} />
+          <ContentButtons content={buttons} />
+        </>
+      )}
+    </Container>
+  )
+}
 
 export default WithDefaultContent(BlogBlock01)
