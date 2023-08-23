@@ -1,20 +1,20 @@
 import React from 'react';
-import { graphql } from 'gatsby'
-import { Container } from 'theme-ui'
-import Layout from '@solid-ui-layout/Layout'
-import Seo from '@solid-ui-components/Seo'
-import Divider from '@solid-ui-components/Divider'
-import Header from '@solid-ui-blocks/Header/Block01'
-import Content from '@solid-ui-blocks/Content/Block02'
-import BlogPage from '@solid-ui-blocks/BlogPage/Block01'
-import Footer from '@solid-ui-blocks/Footer/Block01'
-import { normalizeBlockContentNodes } from '@blocks-helpers'
+import { graphql } from 'gatsby';
+import { Container } from 'theme-ui';
+import Layout from '@solid-ui-layout/Layout';
+import Seo from '@solid-ui-components/Seo';
+import Divider from '@solid-ui-components/Divider';
+import Header from '@solid-ui-blocks/Header/Block01';
+import Content from '@solid-ui-blocks/Content/Block02';
+import BlogPage from '@solid-ui-blocks/BlogPage/Block01';
+import Footer from '@solid-ui-blocks/Footer/Block01';
+import { normalizeBlockContentNodes } from '@blocks-helpers';
 import styles from './_styles';
 
 const Blog = props => {
-  const { allBlockContent } = props.data
-  const content = normalizeBlockContentNodes(allBlockContent?.nodes)
+  const { allBlockContent, allWpPost } = props.data; // Fetch posts from GraphQL query
 
+  const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 
   return (
     <Layout {...props}>
@@ -26,13 +26,13 @@ const Blog = props => {
       </Container>
       <Divider space='5' />
       <Container>
-        <BlogPage content={content['blog']} />
-       </Container>
+        <BlogPage content={content['blog']} posts={allWpPost.nodes} /> {/* Pass fetched posts */}
+      </Container>
       <Divider space='5' />
       <Footer content={content['footer']} />
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query innerpageBlogBlockContent {
@@ -43,7 +43,16 @@ export const query = graphql`
         ...BlockContent
       }
     }
+    allWpPost {
+      nodes {
+        id
+        title
+        excerpt
+        date
+        slug
+      }
+    }
   }
-`
+`;
 
-export default Blog
+export default Blog;
