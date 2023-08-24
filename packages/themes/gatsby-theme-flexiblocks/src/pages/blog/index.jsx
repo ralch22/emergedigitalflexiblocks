@@ -47,9 +47,31 @@ export const query = graphql`
       nodes {
         id
         title
-        excerpt
         date
-        slug
+        content
+        excerpt
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        author {
+          node {
+            id
+            avatar {
+              url
+            }
+            name
+          }
+        }
+        
       }
     }
   }
