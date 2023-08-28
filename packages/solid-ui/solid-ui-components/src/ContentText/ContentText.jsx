@@ -15,7 +15,7 @@ const gradient = {
 
 const headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 
-const ContentText = ({ as: CustomComponent, content, customText, children, ...props }) => {
+const ContentText = ({ as: CustomComponent, content, center, children, ...props }) => {
   if (!content || content.length < 1) return null
 
   const contentArray = Array.isArray(content) ? content : [content]
@@ -57,7 +57,7 @@ const ContentText = ({ as: CustomComponent, content, customText, children, ...pr
         sx={color === 'gradient' ? gradient : {}}
         {...mergedProps}
       >
-        {children || textWithSpecial || customText ? customText : text}
+        {children || textWithSpecial || text}
       </Heading>
     ) : (
       <Text
@@ -65,8 +65,9 @@ const ContentText = ({ as: CustomComponent, content, customText, children, ...pr
         variant={variant}
         color={color}
         {...mergedProps}
+        sx={{ textAlign: center ? `center` : `` }}
       >
-        {children || customText ? customText : text}
+        {children || text}
       </Text>
     )
   })

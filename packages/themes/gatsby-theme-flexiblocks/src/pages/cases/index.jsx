@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { graphql } from 'gatsby'
 import { Container } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
@@ -12,10 +12,26 @@ import { normalizeBlockContentNodes } from '@blocks-helpers'
 import styles from './_styles';
 
 const Blog = props => {
+  const [cases, setCases] = useState(null)
   const { allBlockContent } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
-
-
+  useEffect(() => {
+    fetchCases()
+  }, [])
+  
+  function fetchCases() {
+    // Fetch Use Cases from the WordPress REST API
+    fetch('https://emergedigital.ae/wp-json/wp/v2/case-studies')
+    .then(response => response.json())
+    .then(data => {
+     
+      setCases(data)
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+  }
+  console.log("id", cases)
   return (
     <Layout {...props}>
       <Seo title='Home' />
@@ -26,7 +42,7 @@ const Blog = props => {
       </Container>
       <Divider space='5' />
       <Container>
-        <Cases content={content['cases']} />
+        <Cases cases={cases} />
        </Container>
       <Divider space='5' />
       <Footer content={content['footer']} />

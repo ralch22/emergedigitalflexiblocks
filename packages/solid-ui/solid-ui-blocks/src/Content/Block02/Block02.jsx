@@ -6,21 +6,23 @@ import ContentText from '@solid-ui-components/ContentText'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
-const ContentBlock02 = ({ content: { text } }) => (
-
-    <Box sx={{ height: "50vh" }}>
-      <Flex
-      sx={{
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100%"
-      }}
-    >
-      <ContentText content={text} />
-    </Flex>
-    </Box>
-)
+const ContentBlock02 = ({ content, pageTitle }) => {
+  console.log(pageTitle)
+  return (
+      <Box sx={{ height: "50vh" }}>
+        <Flex
+        sx={{
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%"
+        }}
+      >
+        <h2>{pageTitle}</h2>
+      </Flex>
+      </Box>
+  )
+}
 
 export default WithDefaultContent(ContentBlock02)
 

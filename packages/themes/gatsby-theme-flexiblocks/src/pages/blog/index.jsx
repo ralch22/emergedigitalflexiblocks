@@ -12,6 +12,7 @@ import { normalizeBlockContentNodes } from '@blocks-helpers';
 import styles from './_styles';
 
 const Blog = props => {
+ 
   const { allBlockContent, allWpPost } = props.data; // Fetch posts from GraphQL query
 
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
@@ -47,6 +48,7 @@ export const query = graphql`
       nodes {
         id
         title
+        slug
         date
         content
         excerpt

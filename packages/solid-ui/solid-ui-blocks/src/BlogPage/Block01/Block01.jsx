@@ -64,171 +64,18 @@ const styles = {
     }
   },
   avatar: {
-    size: 42,
-    bg: `omegaLighter`,
-    borderRadius: `full`,
-    borderStyle: `solid`,
-    borderWidth: `md`,
-    borderColor: `omegaLighter`,
-    boxSizing: `content-box`,
-    img: {
-      objectPosition: 'top center !important'
-    }
+    width: `50px`,
+    height: `50px`,
+    borderRadius: `50%`
   }
 }
-
-// const BlogBlock01 = ({ content: { text, collection, buttons }, posts }) => {
-//   console.log("posts:", posts)
-  
-//   return (
-//     // <Container>
-//     //   {collection && (
-//     //     <Reveal effect='fadeIn'>
-//     //       <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
-//     //         {collection.map(({ container, text, images, avatar, buttons }) => {
-//     //              return (
-//     //               <>
-//     //                  {posts.map(
-//     //                 ({ id, content, date, author, excerpt, title, categories, featuredImage }, index) => {
-//     //                   const imageData = featuredImage.node.sourceUrl
-//     //                   const formatDate = (dateString) => {
-//     //                     const date = new Date(dateString);
-//     //                     return format(date, "MMMM dd, yyyy");
-//     //                   };
-                      
-//     //                   const calculateReadingPeriod = (content) => {
-//     //                     // Assuming average reading speed of 200 words per minute
-//     //                     const words = content.split(" ").length;
-//     //                     const readingSpeed = 200; // words per minute
-//     //                     const readingTimeInMinutes = words / readingSpeed;
-//     //                     return Math.ceil(readingTimeInMinutes);
-//     //                   }
-      
-//     //                   const readingTime = calculateReadingPeriod(content)
-//     //                   const dateFormat = formatDate(date)
-//     //                   return (
-//     //                     <Box key={`item-${id}`} sx={styles.wrapper}>
-//     //                       <ContentContainer
-//     //                         content={container}
-//     //                         variant='cards.interactive'
-//     //                         sx={styles.card}
-//     //                       >
-//     //                         <Flex as='article' sx={styles.content}>
-//     //                           {/* Image */}
-//     //                           <Box sx={{ flex: [0, 1], m: 2, mb: [null, null, null, 0] }}>
-//     //                             <Box sx={styles.imageWrapper}>
-//     //                             <StaticImage
-//     //                                 src={imageData}
-//     //                                 alt={featuredImage.node.alt}
-//     //                                 style={styles.image}
-//     //                                 placeholder="blurred"
-//     //                                 layout="fixed"
-//     //                               />
-//     //                             </Box>
-//     //                           </Box>
-//     //                           <Box sx={styles.body}>
-//     //                             {/* Category */}
-//     //                             {categories?.nodes?.map(({ name, id }) => (
-//     //                               <Box sx={{ display: `inline-block` }} key={id}>
-//     //                               <Box mb='3'>
-//     //                                 <Badge
-//     //                                   variant='tag'
-//     //                                   sx={{ bg: `alphaLighter` }}
-//     //                                   color={text[0]?.color}
-//     //                                 >
-//     //                                   {name}
-//     //                                 </Badge>
-//     //                               </Box>
-//     //                             </Box>
-//     //                             ))}
-//     //                             {/* Title */}
-//     //                             <Text
-//     //                               sx={{ flex: [0, 0, `auto`] }}>{title}</Text>
-//     //                             {/* Excerpt */}
-//     //                             <Text
-//     //                               content={text?.[2]}
-//     //                               variant='small'
-//     //                               sx={{ flex: `auto`, mb: 3 }}
-//     //                             >{excerpt}</Text>
-//     //                             {/* Footer */}
-//     //                             <Box sx={{ variant: `text.small` }}>
-//     //                               <Flex sx={styles.footerWrapper}>
-//     //                               <StaticImage
-//     //                                 src={author?.node?.avatar.url}
-//     //                                 alt={featuredImage.node.alt}
-//     //                                 style={styles.avatar}
-//     //                                 placeholder="blurred"
-//     //                                 layout="fixed"
-//     //                               />
-//     //                                 <Flex sx={styles.postInfo}>
-//     //                                   {/* Author */}
-//     //                                   <Text
-//     //                                     content={text?.[3]}
-//     //                                     sx={{
-//     //                                       display: `inline-block`,
-//     //                                       flexBasis: `full`
-//     //                                     }}
-//     //                                   >
-//     //                                     <Link color={text?.[3]?.color}>
-//     //                                       <strong>{author?.node?.name}</strong>
-//     //                                     </Link>
-//     //                                   </Text>
-//     //                                   {/* Info */}
-//     //                                   <Flex sx={{ alignItems: `center` }}>
-//     //                                     <Text
-//     //                                       sx={{ display: `inline-block` }}
-//     //                                       mr='2'
-//     //                                     >
-//     //                                       {formatDate}
-//     //                                     </Text>
-//     //                                     {readingTime && <FaRegClock />}
-//     //                                     <Text
-//     //                                       sx={{ display: `inline-block` }}
-//     //                                       ml='2'
-//     //                                     >{readingTime}</Text>
-//     //                                   </Flex>
-//     //                                 </Flex>
-//     //                               </Flex>
-//     //                             </Box>
-//     //                             {buttons && (
-//     //                               <>
-//     //                                 <Divider space={2} />
-//     //                                 <ContentButtons content={buttons} />
-//     //                               </>
-//     //                             )}
-//     //                           </Box>
-//     //                         </Flex>
-//     //                       </ContentContainer>
-//     //                     </Box>
-//     //                   )
-//     //                 }
-//     //               )}
-//     //               </>
-//     //              )
-//     //         })}
-//     //       </Flex>
-//     //     </Reveal>
-//     //   )}
-//     //   {buttons && (
-//     //     <>
-//     //       <Divider space={3} />
-//     //       <ContentButtons content={buttons} />
-//     //     </>
-//     //   )}
-//     // </Container>
-    
-//   )
-// }
-
-
-// export default WithDefaultContent(BlogBlock01)
 
 const Posts = ({ posts }) => {
 
   return (
     <Grid columns={[1, 2]} gap={4}>
       {posts.map(
-        ({ id, content, date, author, excerpt, title, categories, featuredImage }, index) => {
+        ({ id, content, date, author, excerpt, title, categories, featuredImage, slug }, index) => {
           const imageData = featuredImage?.node?.sourceUrl
           console.log(excerpt)
           const formatDate = (dateString) => {
@@ -247,7 +94,8 @@ const Posts = ({ posts }) => {
           const readingTime = calculateReadingPeriod(content)
           const dateFormat = formatDate(date)
           return (
-            <Box
+            <Link sx={{ color: `black`, TextDecoration: `none` }} href={`/blog/${slug}`}>
+             <Box
             key={id}
             p={4}
             bg="white"
@@ -323,7 +171,8 @@ const Posts = ({ posts }) => {
               
 
       
-          </Box>
+          </Box> 
+           </Link>
           )
         }
       )}
