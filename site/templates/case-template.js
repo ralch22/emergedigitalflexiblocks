@@ -35,16 +35,3 @@ function SinglePost(props) {
 
 
 export default SinglePost
-
-
-export const query = graphql`
-  query innerpageCasesBlockContent {
-    allBlockContent(
-      filter: { page: { in: ["innerpage/cases", "shared"] } }
-    ) {
-      nodes {
-        ...BlockContent
-      }
-    }
-  }
-`
