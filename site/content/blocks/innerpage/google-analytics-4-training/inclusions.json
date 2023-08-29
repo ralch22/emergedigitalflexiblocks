@@ -1,0 +1,133 @@
+{
+  "text": [
+    {
+      "text": "What's Included in our Training for Google Analytics 4",
+      "variant": "h2"
+    },
+    {
+      "text": "Setting up your Google Analytics 4 account is one thing, but knowing how to use it is quite another. With tailored GA4 training sessions for your marketing and business teams, Emerge Digital fills the gap. Our personalized classes will cover everything you need to know, including:",
+      "variant": "medium",
+      "color": "alphaDark"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "01",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Metrics and data comparison between UA and GA4",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "02",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Explorations and Standard reports in GA4",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "03",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Predicting audience behavior with GA4",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "04",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Using GA4 data in Looker Studio to build detailed reports",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "05",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Analyzing and optimizing GA4 data",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "06",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Analyzing eCommerce purchases with GA4",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "07",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "With GTM, you can create custom events",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "06",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "The list goes on and on",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/ga4-analytics-training2.webp",
+      "alt": "alt text"
+    }
+  ]
+}

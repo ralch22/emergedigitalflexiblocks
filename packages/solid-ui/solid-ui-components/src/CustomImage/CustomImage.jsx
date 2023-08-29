@@ -6,41 +6,19 @@ import { ModalContext } from '@solid-ui-components/Modal'
 import { TabsContext } from '@solid-ui-components/Tabs'
 import { buildLinkProps } from '@solid-ui-components/ContentButtons'
 
-const ImageComponent = ({ image, sx, ...props }) => {
+const ImageComponent = ({ image, alt, sx, ...props }) => {
   if (!image?.src) return null
 
-  // SVG Asset
-  const isSVG = image.src.extension === 'svg'
-  if (isSVG) {
-    return (
-      <img
-        src={image.src.publicURL}
-        style={{
-          width: image.width || `100%`,
-          maxWidth: image.maxWidth || `none`
-        }}
-        {...props}
-      />
-    )
-  }
 
   // Image Asset
-  const imageData = getImage(image.src)
+  const imageData = getImage(image)
   if (imageData) {
     return (
       <GatsbyImage
         image={imageData}
         alt={image.alt}
-        css={css({
-          verticalAlign: `middle`,
-          borderStyle: image.border ? `solid` : `none`,
-          borderWidth: image.border || 0,
-          borderColor: `white`,
-          boxShadow: image.shadow || `unset`,
-          borderRadius: image.radius || `unset`,
-          ...sx
-        })}
-        {...props}
+        
+
       />
     )
   }
@@ -60,7 +38,7 @@ const ContentImages = ({
 }) => {
   const { setActiveModal } = useContext(ModalContext)
   const { setActiveTab } = useContext(TabsContext)
-  console.log("images", images)
+
   if (!images) return null
 
   const { link } = images[0] || {}
