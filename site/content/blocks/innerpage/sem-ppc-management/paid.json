@@ -1,0 +1,95 @@
+{
+  "text": [
+   
+    {
+      "text": "Why Search Engine Marketing Is Beneficial?",
+      "variant": "h2"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Enhance your search coverage with market-leading, proprietary keyword research tools",
+          "variant": "medium",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Drive optimal efficiency and reduce budget waste with our integrated search approach",
+          "variant": "medium",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Boost conversion rates with data-driven testing and expert insights",
+          "variant": "medium",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Maintain a consistent presence in search results to build brand awareness",
+          "variant": "medium",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Create an innovative, personalised search experience for relevant audiences",
+          "variant": "medium",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "We partner with all major SEM platforms to achieve the best results possible",
+          "variant": "medium",
+          "color": "black"
+        }
+      ]
+    }
+  ]
+}

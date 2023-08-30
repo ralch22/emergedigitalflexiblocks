@@ -1,0 +1,64 @@
+{
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/user-tie-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Entrepreneur",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "With us, your vision comes to life just how you imagined. It's easy, cost-effective, and you get expert support every step of the way.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/store-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+          {
+            "text": "Small Businesses",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "From the free prototype to visualize what you'll get before you start, all the way to owning and maintaining your code, we have your back.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/building-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Enterprises",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            
+                "text": "Whether it's finding the right solution or building it fast, our specialists do everything for you. You own everything, including the code.",
+                "variant": "medium",
+                "color": "alpha"
+            }
+          
+        ]
+      }
+    ]
+  }
+  

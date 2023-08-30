@@ -1,0 +1,40 @@
+{
+    "text": [
+      {
+        "text": "Paid Media Services (PMS)",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "We offer advertising marketing services that drive relevant and effective traffic ",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "A market leader in paid media advertising marketing services, Emerge Digital provides a full range of paid media solutions.",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "We offer an integrated approach across programmatic, SEM, and Paid Social, and are certified on all major platforms. We are a performance focused Google Partner advertising agency in Dubai.",
+            "variant": "medium",
+            "color": "alpha",
+            "fontWeight": "bold"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/paid-media-marketing.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

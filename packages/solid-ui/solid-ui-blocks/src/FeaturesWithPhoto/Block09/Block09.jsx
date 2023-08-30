@@ -15,11 +15,12 @@ const FeaturesWithPhotoBlock01 = ({
   content: { text, images, collection, buttons, gradient },
   reverse
 }) => (
-  <Box sx={{ background: gradient ? "linear-gradient(90deg, #336567 0%, #3F2B56 100%)" : '', width: '100%' }}>
+  <Box>
     <Container wide sx={{ position: `relative` }}>
       <Flex
           sx={{
             alignItems: [null, `center`],
+            justifyContent: "space-between",
             flexDirection: [
               reverse ? `column-reverse` : `column`,
               reverse ? `row-reverse` : `row`

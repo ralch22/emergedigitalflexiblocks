@@ -1,0 +1,266 @@
+{
+    "text": [
+     
+      {
+        "text": "Our Advertising Marketing Services",
+        "variant": "h2"
+      },
+      {
+        "text": "Emerge Digital offers a range of excellent advertising marketing services. As we are the best advertising agency in Dubai, we provide expert Paid Media services across all channels, including Programmatic, Paid Search, and Paid Social.",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/layer-group-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Programmatic Display",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Make sure you are spending your display advertising dollars in the right places.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/photo-film-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+          {
+            "text": "Programmatic Video Advertising",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "With highly targeted programmatic video advertising, you will be able to reach your ideal audience.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/maximize-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Paid Social Ads",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            
+                "text": "- Solution automation - Analyses driven by data - Review of competitors - Insights that are actionable",
+                "variant": "medium",
+                "color": "alpha"
+            }
+          
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Search Engine Marketing (SEM)",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Find out what your audience is looking for as they actively search for your brand's products and services.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/arrow-pointer-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Affiliate Marketing",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Keep a close eye on your customer's purchase journey in order to ensure you are an integral part of it",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/computer-mouse-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Online Ads",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "With a successful online advertising strategy, you'll be able to get ahead of the competition.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/laptop-medical-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Native Ads",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Using resolution as part of your native advertising campaign can help you maximize the effectiveness of your campaign.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/database-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Buying Media based on Data",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Do you use data and insights to guide your media buying decisions?",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Marketplace Ads for eCommerce",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Performance eCommerce marketplace advertising on Amazon and eBay can help you sell more.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/desktop-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "eCommerce Ads",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Our market-leading paid performance team will help you dominate eCommerce advertising across all channels.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/tachograph-digital-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Planning Digital Media",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "You will be able to grow and sell more by adopting a thorough cross-channel digital media planning strategy.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "One Search Strategy",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Efficiencies and incremental performance are delivered by an integrated SEO and SEM strategy.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+        },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/gears-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Management of Performance Media",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Performance Media's data-driven and ROAS-oriented approach will help you achieve remarkable results from your paid media.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      }
+    ]
+  }
+  
