@@ -1,0 +1,26 @@
+{
+    "text": [
+        {
+            "text": "04",
+            "color": "beta",
+            "variant": "h4"
+          },
+      {
+        "text": "Innovating Search Marketing",
+        "color": "black",
+        "variant": "h3"
+      },
+      {
+        "text": "To ensure we are at the forefront of experimentation, we work closely with our technology partners and have launched both Australian-first and global-first initiatives.",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/04-sem-innovative.search.png",
+        "alt": "alt text"
+      }
+    ]
+  }
+  

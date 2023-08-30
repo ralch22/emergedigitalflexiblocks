@@ -1,0 +1,45 @@
+{
+    "text": [
+      {
+        "text": "Google Tag Manager Audit",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Streamline Your Website's Tracking with Google Tag Manager",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "Is your Google Tag Manager cluttered with unrecognized tags and triggers?",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "Then it’s time to conduct a GTM audit.",
+            "variant": "medium",
+            "color": "alpha",
+            "fontWeight": "bold"
+          },
+          {
+            "text": "Improve tracking efficiency with a customized Emerge Digital audit today. Our team of experienced analytics professionals can help you optimize your configuration, improve your site speed, and gain back valuable reporting insights.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/google-tag-manager-audit.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

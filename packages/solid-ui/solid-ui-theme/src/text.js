@@ -39,7 +39,7 @@ export default {
     mb: 0
   },
   medium: {
-    fontSize: 3,
+    fontSize: 2,
     mb: 3
   },
   small: {

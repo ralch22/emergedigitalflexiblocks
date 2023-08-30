@@ -1,0 +1,28 @@
+{
+    "text": [
+      {
+        "text": "App Development",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "You dream it, we build it.",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "Our software makes it so easy for anyone to build software",
+            "variant": "medium",
+            "color": "alpha"
+          }
+    ],
+    "buttons": [
+        {
+          "text": "CONTACT US",
+          "type": "MODAL",
+          "link": "contact",
+          "variant": "secondary"
+        }
+      ]
+  }
+  

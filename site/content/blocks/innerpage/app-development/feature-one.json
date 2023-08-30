@@ -1,0 +1,44 @@
+{
+    "text": [
+      {
+        "text": "G4A Audits",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Ensure a correct setup with a Google Analytics 4 Audit",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "Your Google Analytics 4 data is only as good as the configuration of your account.",
+            "variant": "medium",
+            "color": "black"
+          },
+          {
+            "text": "Your analytics reporting and marketing strategy are at risk if you rely on Google’s automation or an inexperienced developer to set up your GA4 accounts.",
+            "variant": "medium",
+            "color": "black"
+          },
+          {
+            "text": "With a comprehensive account audit from our experts, you can make the most of Google Analytics 4 and prevent inaccurate or missing data.",
+            "variant": "medium",
+            "color": "black"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/google-analytics-audits.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

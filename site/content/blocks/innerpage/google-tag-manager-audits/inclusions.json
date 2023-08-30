@@ -1,0 +1,124 @@
+{
+  "text": [
+    {
+      "text": "What's Included in our GTM Audits?",
+      "variant": "h2"
+    },
+    {
+      "text": "As analytics experts for more than a decade, we know how complicated a Google Tag Manager setup can be. We'll ensure your tracking runs as efficiently — and accurately — as possible by combing through every tag, trigger, and variable in your audit.",
+      "variant": "medium",
+      "color": "alphaDark"
+    },
+    {
+      "text": "Our team will review the following items:",
+      "variant": "medium",
+      "color": "alphaDark"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "01",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "GTM account inventory",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "02",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Event tracking",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "03",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Conversion triggers, tags, and variables",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "04",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Google Analytics integration",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "05",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Naming conventions",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "06",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Folder structure",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "07",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "The list goes on and on",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/google-tag-manager-audit2.webp",
+      "alt": "alt text"
+    }
+  ]
+}

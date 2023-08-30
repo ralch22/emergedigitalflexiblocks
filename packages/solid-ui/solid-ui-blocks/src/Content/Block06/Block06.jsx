@@ -26,12 +26,12 @@ const ContentBlock01 = ({ content: { text, collection, buttons } }) => {
   console.log("collection", collection)
   return (
     <Container>
-        <Box sx={{ width: '100%', textAligin: "center", display: 'flex', justifyContent: `center`, alignItems: 'center', flexDirection: 'column' }}>
+        <Box sx={{ width: '100%', textAlign: "center", display: 'flex', justifyContent: `center`, alignItems: 'center', flexDirection: 'column' }}>
         <ContentText sx={{ textAligin: 'center' }} center content={text} />
         </Box>
         <Divider />
         <Grid columns={[1, 2]} gap={2}>
-        {collection.map(({text}, index) => {
+        {collection && collection.map(({text}, index) => {
         console.log("chunk", collection)
         return (
             <ServiceColumn text={text} />

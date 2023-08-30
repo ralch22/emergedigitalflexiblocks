@@ -1,0 +1,75 @@
+{
+    "text": [
+     
+      {
+        "text": "Delivering laser-focused campaigns.",
+        "variant": "h2"
+      },
+      {
+        "text": "Here's what you can expect from our PPC services:",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/horse-head-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Plan with a hard edge",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Make sure you're targeting the right customers, at the right time, on the right platform with a carefully planned and researched PPC campaign. Our use of keywords, messaging, and strategic timing is driven by data. In order to influence your key demographic, we must understand their needs, intentions, behaviours, and emotional triggers.",
+            "variant": "medium",
+            "color": "black"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/puzzle-piece-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+            {
+                "text": "A proactive management style",
+                "variant": "h4",
+                "color": "black"
+              },
+              {
+                "text": "Improve your quality score, reduce your cost per click, and raise your revenue by weeding out non-performing keywords. Once an ad is turned on in a PPC campaign, it's often left to its own devices. PPC isn't as effective if you 'set and forget'. In order to achieve results, we continuously monitor, analyze, and adjust your campaign.",
+                "variant": "medium",
+                "color": "black"
+              }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/hourglass-end-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+            {
+              "text": "Transparency in reporting",
+              "variant": "h4",
+              "color": "black"
+            },
+            {
+              "text": "Make sure you know what works for you. Ensure that every paid search campaign is performing well in terms of bottom line results. Google Ads and other platforms collect statistics such as impressions, clicks, and post-click activity. These data are compiled into custom reports so that you know exactly what's happening.",
+              "variant": "medium",
+              "color": "black"
+            }
+          ]
+      }
+      
+    ]
+  }
+  

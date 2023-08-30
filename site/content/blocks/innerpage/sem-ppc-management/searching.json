@@ -1,0 +1,26 @@
+{
+    "text": [
+        {
+            "text": "03",
+            "color": "beta",
+            "variant": "h4"
+          },
+      {
+        "text": "Reports on SEM",
+        "color": "black",
+        "variant": "h3"
+      },
+      {
+        "text": "By using automated tools, we can create real-time dashboards tailored to your needs and KPIs, enabling our SEM specialists to deliver actionable insights.",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/03-sem-reporting.png",
+        "alt": "alt text"
+      }
+    ]
+  }
+  
