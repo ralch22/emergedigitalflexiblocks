@@ -113,7 +113,7 @@ const Cases = ({ cases }) => {
   return (
     <Grid columns={[1, 2]} gap={4} style={{  }}>
       {cases && cases.map(
-         ({ id, content, title, featured_media, slug }, index) => {
+         ({ id, content, title, featured_media }, index) => {
           const trimedText = createExcerpt(content.rendered)
           const image = getFeaturedMediaUrl(featured_media)
           

@@ -9,6 +9,7 @@ import ContentText from '@solid-ui-components/ContentText'
 import ContentImages from '@solid-ui-components/ContentImages'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import ContentIcon from '@solid-ui-components/ContentIcon/ContentIcon'
 
 const styles = {
   items: {
@@ -47,24 +48,20 @@ const FeaturesWithPhotoBlock05 = ({
         {collection && (
           <>
             <Divider space={3} />
-            <Flex sx={styles.items}>
-              {collection.map(({ text }, index) => (
-                <Reveal
-                  key={`item-${index}`}
-                  effect='fadeInPop'
-                  delay={0.3 * (index + 1)}
-                >
-                  <Flex
-                    sx={{
-                      flexDirection: `column`,
-                      height: `full`
-                    }}
-                  >
-                    <ContentText content={text} ml={0} />
-                  </Flex>
-                </Reveal>
-              ))}
-            </Flex>
+           
+            {collection.map(({ text, icon }, index) => (
+              <Reveal
+                key={`item-${index}`}
+                effect='fadeInPop'
+                delay={0.3 * (index + 1)}
+              >
+                <Flex sx={{ alignItems: `center`, mb: 3 }}>
+                  <ContentIcon  content={icon} size='sm' mr='3' />
+                  <ContentText content={text[0]} mb='0' />
+                </Flex>
+              </Reveal>
+            ))}
+
           </>
         )}
         {buttons && (

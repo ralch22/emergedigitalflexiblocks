@@ -1,0 +1,82 @@
+{
+    "text": [
+     
+      {
+        "text": "Our Values",
+        "variant": "h2"
+      },
+      {
+        "text": "At Emerge Digital, we treat our clients with integrity and the highest levels of customer care.",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/award-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Clients Always Come First",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Our approach to creating B2B demand generation campaigns is key to our success. We make a concerted effort to learn about your business and what you hope to achieve with the campaign.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/chart-area-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+            {
+                "text": "Analytics and Reporting",
+                "variant": "h4",
+                "color": "black"
+              },
+              {
+                "text": "Our dedicated team monitors every aspect of your campaign's performance. We provide you with detailed analytics every step of the way. You'll always be in the loop, knowing exactly what's happening",
+                "variant": "medium",
+                "color": "alpha"
+              }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/business-time-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+            {
+              "text": "We Meet Deadlines",
+              "variant": "h4",
+              "color": "black"
+            },
+            {
+              "text": "We offer excellent customer service, and adhering to deadlines is a fundamental aspect of that. You can count on us to meet your campaign deadlines while providing a friendly and enjoyable customer experience.",
+              "variant": "medium",
+              "color": "alpha"
+            }
+          ]
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Contact Us Now",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

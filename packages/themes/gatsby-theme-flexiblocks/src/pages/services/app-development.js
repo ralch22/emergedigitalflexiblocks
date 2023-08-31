@@ -46,12 +46,12 @@ const AppDevelopment = props => {
       <Divider space='5' />
       <Container>
         <Flex sx={{ flexDirection: [`column`, null, `row`], m: [0, -4] }}>
-        <div style={{ flexBasis: "50%" }}>
-            <FeatureThree content={content['feature-three']} />
-        </div>
-        <div style={{ flexBasis: "50%" }}>
-            <FeatureFour content={content['feature-four']} />
-        </div>
+          <div style={{ flexBasis: "50%" }}>
+              <FeatureThree content={content['feature-three']} />
+          </div>
+          <div style={{ flexBasis: "50%" }}>
+              <FeatureFour content={content['feature-four']} />
+          </div>
         </Flex>
       </Container>
       <Divider space='5' />

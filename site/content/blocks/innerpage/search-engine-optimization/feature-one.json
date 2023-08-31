@@ -1,0 +1,34 @@
+{
+    "text": [
+      {
+        "text": "Search Engine Optimisation (SEO) Services",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "With our Best SEO Services, you can improve your website's Google ranking & organic traffic ",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "A good SEO strategy can boost your brand’s online presence, increase website traffic, and lead to more conversions. All of this makes SEO a vital part of your brand’s digital marketing strategy. We can help you grow your business with our expert SEO services & decades of collective experience.",
+            "variant": "medium",
+            "color": "black"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/search-engine-optimization.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

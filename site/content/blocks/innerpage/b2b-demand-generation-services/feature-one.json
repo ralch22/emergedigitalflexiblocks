@@ -1,0 +1,46 @@
+{
+    "text": [
+      {
+        "text": "B2B Demand Generation Services That Work",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Achieve Greater Growth With B2B Demand Generation Services",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "At Emerge Digital, we offer a full range of digital marketing solutions, including the latest B2B demand generation services. We work with clients in Dubai and around the world.",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "Stay Ahead of the Curve With B2B Demand Generation",
+            "variant": "medium",
+            "color": "alphaDark",
+            "fontWeight": "bold"
+          },
+          {
+            "text": "If you want to succeed, your business needs to stay ahead of the curve. Contact us today to discover how Emerge Digital can help your business reach and engage your target audience.",
+            "variant": "medium",
+            "color": "alphaDark",
+            "fontWeight": "bold"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/business-to-business-generation.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  
