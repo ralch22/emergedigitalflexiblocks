@@ -10,13 +10,12 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/laptop-code-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "color": "white"
       },
       "text": [
         {
           "text": "Flexible - we can build anything regardless of the complexity",
-          "variant": "h4",
+          "variant": "lg",
           "color": "white"
         }
       ]
@@ -24,27 +23,25 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "color": "white"
       },
       "text": [
         {
           "text": "Guaranteed pricing and set timelines upfront using AI",
-          "variant": "h4",
+          "variant": "lg",
           "color": "white"
         }
       ]
     },
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/hand-holding-heart.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "src": "../../../assets/flexiblocks/icons/hand-holding-heart-solid.svg",
+        "color": "white"
       },
       "text": [
         {
           "text": "Aftercare - keeps your software up to date with no fuss",
-          "variant": "h4",
+          "variant": "lg",
           "color": "white"
         }
       ]

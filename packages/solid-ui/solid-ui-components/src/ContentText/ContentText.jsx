@@ -54,7 +54,7 @@ const ContentText = ({ as: CustomComponent, content, center, children, ...props 
         variant={variant}
         as={variant}
         color={color}
-        sx={{ textAlign: 'center' }}
+        sx={{ textAlign: center ? `center` : `none` }}
         {...mergedProps}
       >
         {children || textWithSpecial || text}
@@ -65,7 +65,7 @@ const ContentText = ({ as: CustomComponent, content, center, children, ...props 
         variant={variant}
         color={color}
         {...mergedProps}
-        sx={{ textAlign: center ? `center` : `` }}
+        sx={{ textAlign: center ? `center` : `none` }}
       >
         {children || text}
       </Text>

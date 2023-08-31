@@ -1,0 +1,31 @@
+{
+    "text": [
+      {
+        "text": "Why Chose Emerge Digital? ",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "With more than 40 GA4 migrations completed, both eCommerce and non-eCommerce, we are one of the most experienced digital marketing agencies working with Google Analytics 4.",
+            "variant": "medium",
+            "color": "black"
+          },
+          {
+            "text": "Thus, we know exactly what your Google Analytics 4 configuration should look like, and how to align it with your search engine optimization (SEO), paid search advertising, and other digital marketing strategies.",
+            "variant": "medium",
+            "color": "black"
+          },
+          {
+            "text": "As a result, we provide you with a comprehensive, customized audit that quickly and efficiently identifies your opportunities for improvement – and the solutions you need to get there.",
+            "variant": "medium",
+            "color": "black"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/google-analytics-audit2.png",
+        "alt": "alt text"
+      }
+    ]
+}
+  

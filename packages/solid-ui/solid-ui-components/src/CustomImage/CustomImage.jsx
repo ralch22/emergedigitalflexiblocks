@@ -17,8 +17,16 @@ const ImageComponent = ({ image, alt, sx, ...props }) => {
       <GatsbyImage
         image={imageData}
         alt={image.alt}
-        
-
+        css={css({
+          verticalAlign: `middle`,
+          borderStyle: image.border ? `solid` : `none`,
+          borderWidth: image.border || 0,
+          borderColor: `white`,
+          boxShadow: image.shadow || `unset`,
+          borderRadius: image.radius || `unset`,
+          ...sx
+        })}
+        {...props}
       />
     )
   }

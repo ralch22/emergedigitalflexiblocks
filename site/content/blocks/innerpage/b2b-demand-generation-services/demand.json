@@ -1,0 +1,155 @@
+{
+    "text": [
+     
+      {
+        "text": "What Is Demand Generation in B2B?",
+        "variant": "h2"
+      },
+      {
+        "text": "Demand generation in B2B is the process of generating interest in your products and services. It combines various strategies. These strategies include account-based marketing (ABM), content marketing, and lead generation. Combining methods in this way can attract and convert potential customers.",
+        "variant": "medium",
+        "color": "alpha"
+      },
+      {
+        "text": "With ABM, you target specific high-value accounts and provide next-level service to the client.",
+        "variant": "medium",
+        "color": "alpha"
+      },
+      {
+        "text": "Content marketing creates engaging content to help your audience find the solutions they need faster.",
+        "variant": "medium",
+        "color": "alpha"
+      },
+      {
+        "text": "Lead generation captures information from potential customers, like contact details and company information.",
+        "variant": "medium",
+        "color": "alpha"
+      },
+      {
+        "text": "B2B Services",
+        "variant": "h4",
+        "color": "alpha"
+      },
+      {
+        "text": "What Is Demand Generation in B2B?",
+        "variant": "h2"
+      },
+      {
+        "text": "For a B2B demand generation strategy to succeed, you need to understand your target audience. You also need to appreciate their pain points and recognize how the solutions you offer can help.",
+        "variant": "medium",
+        "color": "alpha"
+      },
+      {
+        "text": "Our B2B demand generation services help you identify, target, and engage with those potential customers.",
+        "variant": "medium",
+        "color": "alpha"
+      },
+      {
+        "text": "B2B Lead Generation Examples",
+        "variant": "h2"
+      },
+      {
+        "text": "Here are some examples of the strategies we use for lead generation:",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/file-lines-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Content Marketing",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Creating valuable and informative content helps you attract prospects. By generating high-quality blog posts, web copy, and whitepapers, you provide value to your audience. You also position yourself as an industry expert. This encourages potential customers to engage with your brand.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/envelope-open-text-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+            {
+                "text": "Email Marketing",
+                "variant": "h4",
+                "color": "black"
+              },
+              {
+                "text": "Sending personalized emails allows you to target specific industries. With a well-crafted subject line and catchy content, your email campaigns can generate interest. That gives you the opportunity to stimulate conversations with potential leads.",
+                "variant": "medium",
+                "color": "omega"
+              }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/linkedin-in.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "LinkedIn Advertising",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Running targeted LinkedIn ad campaigns help you reach decision-makers. By leveraging LinkedIn's data, you can narrow your target audience on job title, company size, and industry. This increases the chances of generating high-quality leads.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/people-arrows-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Account-Based Marketing (ABM)",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "ABM involves identifying and targeting select companies that meet your ideal customer profiles. With ABM, you create targeted content and campaigns for each account. This focused approach saves time and resources.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Trade Shows and Conferences",
+            "variant": "h4",
+            "color": "black"
+          },
+          {
+            "text": "Industry-related trade shows and conferences allow you to interact with potential leads. You can build rapport and trust by showcasing your products and services. Face-to-face conversations with prospects can lead to long-lasting business relationships. When you partner with Emerge Digital, we experiment, optimize, and adapt to find the best mix for your organization.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Flex, Box, css } from 'theme-ui'
+import { Container, Flex, Box, css, Grid } from 'theme-ui'
 import Divider from '@solid-ui-components/Divider'
 import Reveal from '@solid-ui-components/Reveal'
 import ListItem from '@solid-ui-components/ListItem'
@@ -23,7 +23,7 @@ const styles = {
   }
 }
 
-const FeaturesBlock05 = ({ content: { text, collection } }) => (
+const FeaturesBlock05 = ({ content: { text, collection, buttons } }) => (
   <Container as={Reveal}>
     <Box sx={{ textAlign: `center` }}>
       <ContentText content={text} />
@@ -31,7 +31,7 @@ const FeaturesBlock05 = ({ content: { text, collection } }) => (
     {collection && (
       <>
         <Divider />
-        <Flex sx={{ flexWrap: `wrap` }} m={-3}>
+        <Grid columns={[1, 3]} gap={3}>
           {collection.map(
             ({ text, icon, collection, buttons, container }, index) => (
               <Reveal
@@ -71,9 +71,17 @@ const FeaturesBlock05 = ({ content: { text, collection } }) => (
               </Reveal>
             )
           )}
-        </Flex>
+        </Grid>
       </>
     )}
+    <Flex sx={{ width: '100%', justifyContent: "center", alignItems: "center", flexDirection: 'column' }}>
+    {buttons && (
+        <>
+          <Divider space={3} />
+          <ContentButtons content={buttons} />
+        </>
+      )}
+    </Flex>
   </Container>
 )
 

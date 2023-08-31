@@ -91,7 +91,7 @@
           "text": "Contact Us Now",
           "type": "MODAL",
           "link": "contact",
-          "variant": "primary"
+          "variant": "secondary"
         }
       ]
   }
