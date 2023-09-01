@@ -71,6 +71,9 @@ const buildLinkProps = ({
     case 'SUB':
       linkProps = { as: 'div' }
       break
+    case 'INNERSUB':
+      linkProps = { as: 'div' }
+      break
     default:
       linkProps = {}
       break

@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import { Container, Box, Flex, Link } from 'theme-ui';
+import { Container, Box, Flex, Link, Grid } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import Divider from '@solid-ui-components/Divider/Divider';
+import CustomTabSwitcher from '@solid-ui-blocks/Content/Tabs'
 import ContentImages from '@solid-ui-components/ContentImages/ContentImages';
+import address1 from '../../../../../../site/content/blocks/shared/address1.json'
+import address2 from '../../../../../../site/content/blocks/shared/address2.json'
+import ClutchWidget from '@solid-ui-components/Widget/Widget';
 
 const styles = {
   wrapper: {
@@ -30,7 +34,26 @@ const styles = {
   },
 };
 
-const FooterBlock01 = ({ content: { text, collection } }) => {
+function Uae({ content: { text } }) {
+  return (
+    <ContentText content={text} />
+  )
+}
+
+function Usr({ content: { text } }) {
+  return (
+    <ContentText content={text} />
+  )
+}
+
+  
+const tabs = [
+  { title: 'UAE', content: <Uae content={address1} /> },
+  { title: 'AUS', content: <Usr content={address2} /> },
+];
+
+
+const FooterBlock01 = ({ content: { text, collection, images } }) => {
 
   return (
     <div style={styles.wrapper}>
@@ -38,9 +61,16 @@ const FooterBlock01 = ({ content: { text, collection } }) => {
         <Flex sx={styles.footer}>
           <Box sx={styles.column}>
             <ContentText content={text} />
+            <CustomTabSwitcher tabs={tabs} />
+
+            <ClutchWidget />
+            {images && <ContentImages
+                     content={images[5]}
+                     
+                   />}
           </Box>
           <Divider spaceX="50px" />
-          <Flex sx={{ flexWrap: 'wrap', flexBasis: '70%' }}>
+          <Grid columns={[1, 3]} gap={4} sx={{ flexWrap: 'wrap', flexBasis: '70%' }}>
             {collection?.map(
               ({ text, buttons, images }, index) =>
               buttons && (
@@ -66,7 +96,11 @@ const FooterBlock01 = ({ content: { text, collection } }) => {
                   />
                 </Box>
               ))}
-          </Flex>
+          </Grid>
+        </Flex>
+        <Divider spaceY={5} />
+        <Flex sx={{ justifyContent: "center", alignItems: "center", textAlign: "center" }}>
+          <p>Copyright © 2023 Emerge Digital. All Rights Reserved. </p>
         </Flex>
       </Container>
     </div>

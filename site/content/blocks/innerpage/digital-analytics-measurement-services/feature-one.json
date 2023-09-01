@@ -1,0 +1,39 @@
+{
+    "text": [
+      {
+        "text": "Digital Marketing Services",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Ensure a correct setup with a Google Analytics 4 Audit",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "Digital analytics and measurement services are offered by Emerge Digital, a market leader in analytics.",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "The norm is to know what happened to your brand. We go one step further and tell you why it happened. Using precise measurement solutions, our analysts can take your results to the next level.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/digital-marketing-services.png",
+        "alt": "alt text"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "CONTACT US",
+        "type": "MODAL",
+        "link": "contact",
+        "variant": "secondary"
+      }
+    ]
+  }
+  
