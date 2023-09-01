@@ -64,10 +64,10 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
             <CustomTabSwitcher tabs={tabs} />
 
             <ClutchWidget />
-            {images && <ContentImages
+            {/* {images && <ContentImages
                      content={images[5]}
                      
-                   />}
+                   />} */}
           </Box>
           <Divider spaceX="50px" />
           <Grid columns={[1, 3]} gap={4} sx={{ flexWrap: 'wrap', flexBasis: '70%' }}>
