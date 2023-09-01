@@ -9,251 +9,112 @@
     {
       "buttons": [
         {
-          "text": "Landing Pages",
+          "text": "Services",
           "type": "SUB",
           "variant": "links.nav-dark",
           "buttons": [
             {
-              "text": "Software",
+              "text": "Digital Analytics & Measurement",
               "type": "PAGE",
-              "link": "/homepage/saas/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#276BF0"
-              }
+              "link": "/services/digital-analytics-measurement-services/",
+              "variant": "links.nav-dark"
             },
             {
-              "text": "Software v2",
+              "text": "Google Analytics 4 Training",
               "type": "PAGE",
-              "link": "/homepage/saas-v2/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#FE7245"
-              }
+              "link": "/services/google-analytics-4-training/",
+              "variant": "links.nav-dark"
             },
             {
-              "text": "Fintech Startup",
+              "text": "Google Analytics 4 Audit",
               "type": "PAGE",
-              "link": "/homepage/fintech/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#000000"
-              }
+              "link": "/services/google-analytics-4-audits/",
+              "variant": "links.nav-dark"
             },
             {
-              "text": "Consulting",
+              "text": "Google Tag Manager Audit",
               "type": "PAGE",
-              "link": "/homepage/consulting/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#6E5BD8"
-              }
+              "link": "/services/google-tag-manager-audits/",
+              "variant": "links.nav-dark"
             },
             {
-              "text": "Mobile App",
+              "text": "Search Engine Optimization",
               "type": "PAGE",
-              "link": "/homepage/app/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#FF4A32"
-              }
+              "link": "/services/search-engine-optimization/",
+              "variant": "links.nav-dark"
             },
             {
-              "text": "Marketing",
+              "text": "Paid Media Services",
               "type": "PAGE",
-              "link": "/homepage/marketing/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#3D8DFF"
-              }
+              "link": "/services/paid-media-services/",
+              "variant": "links.nav-dark"
+            },
+            {
+              "text": "Sem PPC Management",
+              "type": "PAGE",
+              "link": "/services/sem-ppc-management/",
+              "variant": "links.nav-dark"
+            },
+            {
+              "text": "App Development",
+              "type": "PAGE",
+              "link": "/services/app-development/",
+              "variant": "links.nav-dark"
+            },
+            {
+              "text": "Sem PPC Management",
+              "type": "PAGE",
+              "link": "/services/b2b-demand-generation-services/",
+              "variant": "links.nav-dark"
             }
           ]
         },
         {
-          "text": "Pages",
+          "text": "Technologies",
           "variant": "links.nav-dark",
           "type": "SUB",
-          "collection": [
+         
+          "buttons": [
+            
             {
-              "buttons": [
-                {
-                  "text": "LANDING PAGES",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "buttons": [
-                    {
-                      "text": "Software",
-                      "type": "PAGE",
-                      "link": "/homepage/saas/",
-                      "variant": "links.nav-dark",
-                      "icon": {
-                        "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                        "color": "omegaDark"
-                      }
-                    },
-                    {
-                      "text": "Software v2",
-                      "type": "PAGE",
-                      "link": "/homepage/saas-v2/",
-                      "variant": "links.nav-dark",
-                      "icon": {
-                        "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                        "color": "omegaDark"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "_",
-                  "type": "SUB",
-                  "variant": "links.hidden",
-                  "buttons": [
-                    {
-                      "text": "Fintech Startup",
-                      "type": "PAGE",
-                      "link": "/homepage/fintech/",
-                      "variant": "links.nav-dark",
-                      "icon": {
-                        "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                        "color": "omegaDark"
-                      }
-                    },
-                    {
-                      "text": "Consulting",
-                      "type": "PAGE",
-                      "link": "/homepage/consulting/",
-                      "variant": "links.nav-dark",
-                      "icon": {
-                        "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                        "color": "omegaDark"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": "_",
-                  "type": "SUB",
-                  "variant": "links.hidden",
-                  "buttons": [
-                    {
-                      "text": "Mobile App",
-                      "type": "PAGE",
-                      "link": "/homepage/app/",
-                      "variant": "links.nav-dark",
-                      "icon": {
-                        "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                        "color": "omegaDark"
-                      }
-                    },
-                    {
-                      "text": "Marketing",
-                      "type": "PAGE",
-                      "link": "/homepage/marketing/",
-                      "variant": "links.nav-dark",
-                      "icon": {
-                        "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                        "color": "omegaDark"
-                      }
-                    }
-                  ]
-                }
-              ]
+              "text": "Google Marketing Plartform",
+              "type": "PAGE",
+              "link": "/services/google-marketing-platform/",
+              "variant": "links.nav-dark"
             },
             {
-              "container": {
-                "bg": "omegaLighter"
-              },
-              "buttons": [
-                {
-                  "text": "PRICING",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "icon": {
-                    "src": "../../assets/flexiblocks/icons/bx-dollar-circle.svg",
-                    "color": "alpha"
-                  },
-                  "buttons": [
-                    {
-                      "text": "Pricing 01",
-                      "type": "PAGE",
-                      "link": "/innerpage/pricing-01/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Pricing 02",
-                      "type": "PAGE",
-                      "link": "/innerpage/pricing-02/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Pricing 03",
-                      "type": "PAGE",
-                      "link": "/innerpage/pricing-03/",
-                      "variant": "links.nav-dark"
-                    }
-                  ]
-                },
-                {
-                  "text": "SERVICES",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "icon": {
-                    "src": "../../assets/flexiblocks/icons/bxs-component.svg",
-                    "color": "alpha"
-                  },
-                  "buttons": [
-                    {
-                      "text": "Services 01",
-                      "type": "PAGE",
-                      "link": "/innerpage/services-01/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Services 02",
-                      "type": "PAGE",
-                      "link": "/innerpage/services-02/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Services 03",
-                      "type": "PAGE",
-                      "link": "/innerpage/services-03/",
-                      "variant": "links.nav-dark"
-                    }
-                  ]
-                },
-                {
-                  "text": "ABOUT US",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "icon": {
-                    "src": "../../assets/flexiblocks/icons/bxs-component.svg",
-                    "color": "alpha"
-                  },
-                  "buttons": [
-                    {
-                      "text": "About 01",
-                      "type": "PAGE",
-                      "link": "/innerpage/about-us-01",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "About 02",
-                      "type": "PAGE",
-                      "link": "/innerpage/about-us-02",
-                      "variant": "links.nav-dark"
-                    }
-                  ]
-                }
-              ]
+              "text": "WP Engine",
+              "type": "PAGE",
+              "link": "/services/wp-engine/",
+              "variant": "links.nav-dark"
+            },
+            {
+              "text": "3CX",
+              "type": "PAGE",
+              "link": "/services/3cx/",
+              "variant": "links.nav-dark"
             }
+              
           ]
+           
+        },
+        {
+          "text": "Case Studies",
+          "type": "PAGE",
+          "link": "/cases/",
+          "variant": "links.nav-dark"
+        },
+        {
+          "text": "Blog",
+          "type": "PAGE",
+          "link": "/blog/",
+          "variant": "links.nav-dark"
+        },
+        {
+          "text": "Contact Form",
+          "type": "MODAL",
+          "link": "contact",
+          "variant": "links.nav-dark"
         },
         {
           "text": "Modals",

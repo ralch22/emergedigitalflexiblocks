@@ -1,0 +1,127 @@
+{
+  "text": [
+    {
+      "text": "INCLUSIONS",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "We Care About Our Customers",
+      "variant": "h2"
+    },
+    {
+      "text": "Since we’ve been experts in analytics for more than a decade, we know just how easy it can be to make a mistake with Google Analytics 4.",
+      "variant": "medium",
+      "color": "alphaDark"
+    },
+    {
+      "text": "In our experience, we have seen eCommerce (and non-eCommerce!) businesses leaving crucial data tracking out in their GA4 setups. Some of these errors have been left undiscovered for months and require an expert’s eye to fix.",
+      "variant": "medium",
+      "color": "alphaDark"
+    },
+    {
+      "text": "That’s where we can help!",
+      "variant": "medium",
+      "color": "alphaDark"
+    },
+    {
+      "text": "As part of our GA4 audit, we will examine every aspect of your configuration, including:",
+      "variant": "medium",
+      "color": "alphaDark"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "01",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Event Tracking",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "02",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Conversion triggers, tags, and variables",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "03",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "GTM Account Audit",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "04",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Google Ads Integration",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "05",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Report Configuration",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "06",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "And much more...",
+          "variant": "h4",
+          "color": "black"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "gradient"
+    }
+  ]
+}
