@@ -4,7 +4,7 @@ module.exports = {
       resolve: '@elegantstack/gatsby-theme-flexiblocks',
       options: {
         createDemoPages: false,
-        colorMode: true
+        colorMode: false
       }
     },
     {

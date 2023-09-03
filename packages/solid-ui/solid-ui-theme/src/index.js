@@ -16,6 +16,10 @@ import badges from './badges'
 import forms from './forms'
 import layout from './layout'
 import global from './global'
+import initialColorModeName from './initialColorModeName'
+import prism from './prism'
+import lists from './lists'
+import messages from './messages'
 
 export default merge(typography, {
   colors,
@@ -33,5 +37,9 @@ export default merge(typography, {
   badges,
   forms,
   layout,
-  global
+  global,
+  initialColorModeName,
+  prism,
+  lists,
+  messages
 })

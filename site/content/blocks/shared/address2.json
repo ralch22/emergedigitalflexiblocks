@@ -1,22 +1,14 @@
 {
-    "text": [
-        {
-          "text": "Questions 2"
-        },
-        {
-          "text": "Get in Touch",
-          "color": "omegaDarker",
-          "variant": "h2",
-          "space": 3
-        },
-        {
-          "text": "Any questions or remarks?",
-          "color": "omegaDark"
-        },
-        {
-          "text": "We'll get back you within 24 hours.",
-          "color": "omega"
-        }
-      ]
-  }
-  
+  "text": [
+      {
+        "text": "Address: Levels 41 & 42, Emirates Towers - Sheikh Zayed Rd - Dubai - United Arab Emirates",
+        "variant": "medium",
+        "color": "white"
+      },
+      {
+        "text": "Phone: +97145813606",
+        "variant": "medium",
+        "color": "white"
+      }
+    ]
+}

@@ -4,6 +4,7 @@ import { ThemeProvider, merge, Flex, Box, css } from 'theme-ui'
 import baseTheme from '@solid-ui-theme'
 import pageContextProvider from '@helpers/pageContextProvider'
 import { FormContextProvider } from '@solid-ui-components/ContentForm'
+import ThreeCX from '@solid-ui-components/ThreeCX'
 import { ModalContextProvider } from '@solid-ui-components/Modal'
 import { TabsContextProvider } from '@solid-ui-components/Tabs'
 import ColorMode from '@solid-ui-components/ColorMode'
@@ -19,7 +20,10 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
               <Flex variant='layout.layout'>
                 <Global styles={css(theme => theme.global)} />
                 <ColorMode />
-                <Box variant='layout.body'>{children}</Box>
+                <Box variant='layout.body'>
+                  {children}
+                  <ThreeCX />
+                </Box>
               </Flex>
             </TabsContextProvider>
           </ModalContextProvider>

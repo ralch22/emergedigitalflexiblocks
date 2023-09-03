@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
-import { useRecentPosts } from '@helpers-blog'
-import getImageVariant from '@components/utils/getImageVariant'
+import { useRecentPosts } from '@blocks-helpers'
+import getImageVariant from '@solid-ui-components/utils/getImageVariant'
 
 const WithRecentPosts = ({ children, limit = 3 }) => {
   const recentPosts = useRecentPosts()
