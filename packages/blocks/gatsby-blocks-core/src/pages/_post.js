@@ -1,5 +1,3 @@
-const queryMobileMenu = require('../utils/queryMobileMenu')
-
 module.exports = async (
   { graphql, actions, reporter },
   pluginOptions,
@@ -7,8 +5,6 @@ module.exports = async (
 ) => {
   const { createPage } = actions
   const { pageContextOptions } = pluginOptions
-
-  pageContextOptions.mobileMenu = await queryMobileMenu({ graphql })
 
   const result = await graphql(`
     {

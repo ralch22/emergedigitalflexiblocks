@@ -1,6 +1,5 @@
 const urljoin = require('url-join')
 const normalizeSlug = require('../utils/normalizeSlug')
-const queryMobileMenu = require('../utils/queryMobileMenu')
 
 module.exports = async (
   { graphql, actions, reporter },
@@ -16,7 +15,6 @@ module.exports = async (
     pageContextOptions
   } = pluginOptions
 
-  pageContextOptions.mobileMenu = await queryMobileMenu({ graphql })
 
   createPage({
     path: "/dashboard",
