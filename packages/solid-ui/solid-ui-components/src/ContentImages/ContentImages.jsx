@@ -60,7 +60,6 @@ const ContentImages = ({
 }) => {
   const { setActiveModal } = useContext(ModalContext)
   const { setActiveTab } = useContext(TabsContext)
-  console.log("images", images)
   if (!images) return null
 
   const { link } = images[0] || {}

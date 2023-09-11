@@ -2,7 +2,6 @@ import React from "react";
 
 
 const Blog = ({ post }) => {
-  console.log(post)
   return (
     <>
       <div>

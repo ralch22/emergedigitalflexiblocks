@@ -7,9 +7,6 @@ const l = require('lodash')
 const path = require('path')
 const withDefaults = require('./src/utils/default.options')
 
-
-console.log("algolia:", process.env.ALGOLIA_SEARCH_KEY)
-
 module.exports = options => {
   options = withDefaults(options)
   

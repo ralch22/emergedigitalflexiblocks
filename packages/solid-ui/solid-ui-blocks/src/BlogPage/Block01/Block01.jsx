@@ -77,7 +77,6 @@ const Posts = ({ posts }) => {
       {posts.map(
         ({ id, content, date, author, excerpt, title, categories, featuredImage, slug }, index) => {
           const imageData = featuredImage?.node?.sourceUrl
-          console.log(excerpt)
           const formatDate = (dateString) => {
             const date = new Date(dateString);
             return format(date, "MMMM dd, yyyy");

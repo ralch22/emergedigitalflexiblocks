@@ -7,7 +7,6 @@ import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
 const ContentBlock02 = ({ content, pageTitle }) => {
-  console.log(pageTitle)
   return (
       <Box sx={{ height: "50vh" }}>
         <Flex

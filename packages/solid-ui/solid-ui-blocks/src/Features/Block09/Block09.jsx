@@ -11,7 +11,6 @@ import ContentText from '@solid-ui-components/ContentText'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
 const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
-  console.log("hh", text)
   const [post, setPost] = useState(null)
   const [postImage, setPostImage] = useState(null)
   useEffect(() => {
@@ -41,7 +40,6 @@ const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
       // Assuming there's only one case study with the provided slug
       
         setPostImage(caseImage)
-        console.log("imagesss", caseImage)
         
       
     } catch (error) {
@@ -50,7 +48,6 @@ const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
     }
   };
 
-  console.log("imagesss", post)
   
   return (
     <Container>

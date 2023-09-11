@@ -23,7 +23,6 @@ const ServiceColumn = ({ text }) => {
 }
 
 const ContentBlock01 = ({ content: { text, collection, buttons } }) => {
-  console.log("collection", collection)
   return (
     <Container>
         <Box sx={{ width: '100%', textAlign: "center", display: 'flex', justifyContent: `center`, alignItems: 'center', flexDirection: 'column' }}>
@@ -32,7 +31,6 @@ const ContentBlock01 = ({ content: { text, collection, buttons } }) => {
         <Divider />
         <Grid columns={[1, 2]} gap={2}>
         {collection && collection.map(({text}, index) => {
-        console.log("chunk", collection)
         return (
             <ServiceColumn text={text} />
         )

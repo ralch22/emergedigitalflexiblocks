@@ -32,7 +32,7 @@ const Services03 = props => {
     { title: 'Our Services', content: <Content3 content={servicesData} /> },
   ];
   
-  console.log(servicesData);
+ 
 
 
   return (

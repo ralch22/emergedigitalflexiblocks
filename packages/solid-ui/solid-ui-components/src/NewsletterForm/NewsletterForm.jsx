@@ -63,7 +63,6 @@ const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [success, submitting, setFormValues])
 
-  console.log("fd", formValues?.[formId])
   const onSubmit = async (e) => {
     await handleSubmit(e, { action })
     const hubspot_response = await submit_hubspot_form();

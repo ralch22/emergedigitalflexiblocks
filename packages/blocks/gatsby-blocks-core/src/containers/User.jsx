@@ -26,7 +26,6 @@ const parsedData = JSON.parse(auth);
 
 export default function DashboardPage({ data: { allBlockContent }, ...props }) {
   // Fetch the user's information
-  console.log("auth", parsedData)
 //   const [userResult] = useQuery({
 //     query: USER_QUERY,
 //     variables: { userId: parsedData.user.id }

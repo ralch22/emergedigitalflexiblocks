@@ -124,7 +124,6 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
       }
     },
   });
-  console.log("formik", formik)
   const handleLogin = async (values) => {
     const loginInput = {
       username: values.username,

@@ -10,13 +10,11 @@ import Buttons from '@solid-ui-theme/buttons/index'
 import ContentIcon from '@solid-ui-components/ContentIcon/ContentIcon'
 
 const ServiceColumn = ({ text, collection, icon }) => {
-  console.log("title", text)
   return  (
     <Box sx={{ width: '100%', px: [3, 4] }}>
       <ContentIcon content={icon} />
       <ContentText content={text} />
       {collection.map(({text}, index) => {
-        console.log("chunk", collection)
         return (
           <Card sx={{ width: "100%", p: 4, mb: 4, borderRadius: '8px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
             <ContentText content={text} />

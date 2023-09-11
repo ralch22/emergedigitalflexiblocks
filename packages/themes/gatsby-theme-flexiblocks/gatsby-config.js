@@ -31,7 +31,7 @@ module.exports = options => {
       resolve: `gatsby-plugin-algolia`,
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_SEARCH_KEY,
+        apiKey: process.env.ALGOLIA_API_KEY,
         queries: require("../../blocks/gatsby-blog-algolia/src/queries"),
       },
     }

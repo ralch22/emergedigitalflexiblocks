@@ -13,7 +13,6 @@ const ServiceColumn = ({ title, collection }) => {
   const chunks = Array.from({ length: 3 }, (_, i) =>
     collection.slice(i * chunkSize, (i + 1) * chunkSize)
   );
-  console.log("chunk", chunks)
   return  (
     <Box sx={{ width: ['100%', '33%'], px: [3, 4] }}>
       <Box>
@@ -25,7 +24,6 @@ const ServiceColumn = ({ title, collection }) => {
         return (
           <>
             {chunk.map(({ icon, text }, index) => {
-              console.log("cll", icon)
               return (
                 (
                   <Flex sx={{ alignItems: 'center', mb: 2 }} key={index}>

@@ -60,7 +60,6 @@ const posts = data.allWpPost.nodes.map((node) => ({
 }));
 
 
-console.log("posts", posts)
   const searchClient = {
     search(requests) {
       const shouldSearch = requests.some(

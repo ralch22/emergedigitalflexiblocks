@@ -19,7 +19,6 @@ const ModalBlock01 = ({ content, reverse }) => {
   } = useContext(TabsContext)
 
   const { identifier, text } = content
-  console.log("iden:", activeModal)
   if (activeModal && activeModal !== identifier) return null
 
   const images = content?.collection[index]?.images || content.images

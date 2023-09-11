@@ -31,13 +31,11 @@ export default function Post({
     data: { post, tagCategoryPosts, tagPosts, categoryPosts, previous, next, allBlockContent },
     ...props
   }) {
-    console.log("ds", post)
     const relatedPosts = [
         ...(tagCategoryPosts ? tagCategoryPosts.nodes : []),
         ...(tagPosts ? tagPosts.nodes : []),
         ...(categoryPosts ? categoryPosts.nodes : [])
       ]
-      console.log("related", tagPosts)
       const { pageContext: { services = {}, siteUrl } = {} } = props
 
       const content = normalizeBlockContentNodes(allBlockContent?.nodes);

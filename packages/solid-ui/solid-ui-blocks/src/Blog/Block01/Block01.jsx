@@ -76,7 +76,6 @@ const styles = {
 }
 
 const BlogBlock01 = ({ posts, content: { text, collection, buttons } }) => {
-  console.log("single", posts)
   return (
     <Container>
       <Box sx={{ textAlign: `center` }}>

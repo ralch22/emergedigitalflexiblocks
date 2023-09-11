@@ -19,8 +19,6 @@ const Hits = ({ searchState, searchResults }) => {
 
   const hits = searchResults.hits;
 
-  console.log("hits", searchResults)
-
   if (!hits || hits.length === 0) {
     return `No results for '${searchResults.query}'`;
   } else {

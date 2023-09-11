@@ -61,7 +61,6 @@ module.exports = async (
 
   const { allWpPost } = result.data
   const posts = allWpPost.edges
-  console.log("singlePost", posts)
   posts.forEach(({ node }, index) => {
     const { id, slug, categories, tags, link } = node
 

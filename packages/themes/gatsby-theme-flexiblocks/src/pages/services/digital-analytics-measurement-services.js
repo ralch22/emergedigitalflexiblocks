@@ -35,7 +35,7 @@ const GAnalyticsAudit = props => {
     { title: 'Our Services', content: <Content3 content={servicesData} /> },
   ];
   
-  console.log(servicesData);
+ 
 
 
   return (

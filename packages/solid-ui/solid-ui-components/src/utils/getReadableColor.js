@@ -7,7 +7,6 @@ const getReadableColor = hex => {
     hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2]
   }
   if (hex.length !== 6) {
-    console.log('Invalid HEX color.')
     return
   }
   var r = parseInt(hex.slice(0, 2), 16),

@@ -22,13 +22,11 @@ import messages from '@solid-ui-theme/messages';
 
 const ContactForm = ({ handleSubmit, submitting, success }) => {
   const form = useContext(FormContext)
-  console.log("form:", form)
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
-console.log("name", name)
  
   return (
     <form

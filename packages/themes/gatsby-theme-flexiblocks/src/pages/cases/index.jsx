@@ -31,7 +31,6 @@ const Blog = props => {
       console.error('Error fetching data:', error);
     });
   }
-  console.log("id", cases)
   return (
     <Layout {...props}>
       <Seo title='Home' />
