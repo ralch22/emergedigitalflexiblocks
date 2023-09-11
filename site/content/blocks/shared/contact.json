@@ -29,10 +29,21 @@
       "form": {
         "fields": [
           {
-            "identifier": "name",
+            "identifier": "firstName",
             "type": "TEXT",
             "placeholder": {
-              "text": "Full Name"
+              "text": "First Name"
+            },
+            "icon": {
+              "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "color": "alpha"
+            }
+          },
+          {
+            "identifier": "lastName",
+            "type": "TEXT",
+            "placeholder": {
+              "text": "Last Name"
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-user.svg",
@@ -47,17 +58,6 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
-              "color": "alpha"
-            }
-          },
-          {
-            "identifier": "subject",
-            "type": "TEXT",
-            "placeholder": {
-              "text": "Subject"
-            },
-            "icon": {
-              "src": "../../assets/flexiblocks/icons/bx-comment-detail.svg",
               "color": "alpha"
             }
           },

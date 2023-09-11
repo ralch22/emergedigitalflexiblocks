@@ -2,17 +2,20 @@ import { useStaticQuery, graphql } from 'gatsby'
 import dedupe from 'dedupe'
 
 export const useBlogCategories = () => {
-  const { allArticleCategory } = useStaticQuery(categoriesQuery)
-  return allArticleCategory.nodes
-    ? dedupe(allArticleCategory.nodes, node => node.slug)
+  const { allWpCategory } = useStaticQuery(categoriesQuery)
+  const value = allWpCategory
+    ? dedupe(allWpCategory.nodes, node => node.slug)
     : null
+  return value
 }
 
 const categoriesQuery = graphql`
   query allArticleCategoryQuery {
-    allArticleCategory {
+    allWpCategory {
       nodes {
-        ...ArticleCategory
+        id
+        name
+        slug
       }
     }
   }

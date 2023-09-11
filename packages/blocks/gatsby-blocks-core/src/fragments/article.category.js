@@ -5,7 +5,5 @@ export const query = graphql`
     id
     name
     slug
-    color
-    icon
   }
 `

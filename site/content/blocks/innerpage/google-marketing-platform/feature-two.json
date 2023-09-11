@@ -1,0 +1,26 @@
+{
+  "text": [
+    {
+      "text": "What is Google Marketing Platform?",
+      "variant": "h2",
+      "color": "black"
+    },
+    {
+        "text": "Nowadays, digital media plays a significant role in everyday digital experiences and advertising campaigns.",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "The Google Marketing Platform is an enterprise-class marketing suite that combines and unifies the capabilities of DoubleClick and GA 360 into one single suite.",
+          "variant": "medium",
+          "color": "alphaDark",
+          "fontWeight": "bold"
+        }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/plartform.webp",
+      "alt": "alt text"
+    }
+  ]
+}

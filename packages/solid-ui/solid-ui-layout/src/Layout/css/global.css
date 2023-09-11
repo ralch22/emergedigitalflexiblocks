@@ -3,3 +3,11 @@
 a {
   text-decoration: none !important;
 }
+
+.comments {
+  display: none;
+}
+
+img {
+  width: 100%;
+}

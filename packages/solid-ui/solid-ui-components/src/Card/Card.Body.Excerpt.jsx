@@ -30,9 +30,9 @@ const CardBodyExcerpt = ({ variant, excerpt, omitExcerpt }) => {
         ...styles.excerpt,
         variant: responsiveVariant
       }}
-    >
-      {excerpt}
-    </Text>
+      dangerouslySetInnerHTML={{ __html: excerpt }}
+    />
+      
   ) : null
 }
 

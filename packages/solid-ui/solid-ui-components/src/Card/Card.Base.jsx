@@ -17,7 +17,7 @@ const styles = {
   }
 }
 
-const CardBase = ({ columns, onMouseOver, ...props }) => (
+const CardBase = ({ columns, withModerate, onMouseOver, ...props }) => (
   <Box
     className='blog_card'
     sx={columnSizeMatcher(columns)}
@@ -38,7 +38,7 @@ const CardBase = ({ columns, onMouseOver, ...props }) => (
           variant: rv(props.variant, 'content')
         }}
       >
-        <Media {...props} />
+        <Media withModerate {...props} />
         <Body {...props}>
           <Footer {...props} />
         </Body>

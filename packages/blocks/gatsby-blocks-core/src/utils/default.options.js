@@ -3,22 +3,14 @@ const typesDefs = require('../types')
 
 module.exports = pluginOptions => {
   const services = {
-    algolia: getValue(pluginOptions, 'services.algolia', false),
+    algolia: getValue(pluginOptions, 'services.algolia', true),
     mailchimp: getValue(pluginOptions, 'services.mailchimp', false),
-    disqus: getValue(pluginOptions, 'services.disqus', false),
+    disqus: getValue(pluginOptions, 'services.disqus', true),
     graphComment: getValue(pluginOptions, 'services.graphComment', false),
     facebookComment: getValue(pluginOptions, 'services.facebookComment', false)
   }
 
   const sources = [
-    {
-      name: 'mdx',
-      enabled: getValue(pluginOptions, 'sources.local', true),
-      extensions: getValue(pluginOptions, 'mdx.extensions', ['.mdx', '.md']),
-      sourceInstanceName: 'article',
-      imageNodeType: 'ImageSharp',
-      typeDefs: typesDefs.file
-    },
     {
       name: 'contentful',
       enabled: getValue(pluginOptions, 'sources.contentful', false),
@@ -80,7 +72,6 @@ module.exports = pluginOptions => {
   ]
 
   const sitePaths = {
-    MdxArticleProxy: getValue(pluginOptions, 'sitePaths.article', ''),
     SanityArticleProxy: getValue(pluginOptions, 'sitePaths.article', ''),
     ContentfulArticleProxy: getValue(pluginOptions, 'sitePaths.article', ''),
     StrapiArticleProxy: getValue(pluginOptions, 'sitePaths.article', ''),
@@ -112,7 +103,7 @@ module.exports = pluginOptions => {
   }
 
   const pagingParam = pluginOptions.pagingParam || 'page'
-  const paginatePostsPage = pluginOptions.paginatePostsPage || false
+  const paginatePostsPage = pluginOptions.paginatePostsPage || true
   const homePostsPerPage = pluginOptions.homePostsPerPage || 6
   const collectionPostsPerPage = pluginOptions.collectionPostsPerPage || 6
 

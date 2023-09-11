@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { GatsbyImage as Img } from 'gatsby-plugin-image'
 import { css } from 'theme-ui'
 import Divider from '@solid-ui-components/Divider'
-import getImageVariant from '@solid-ui-components/utils/getImageVariant'
 
 const styles = {
   regular: {
@@ -35,22 +33,20 @@ const styles = {
 
 export const PostImage = ({
   title,
-  thumbnail,
+  featuredImage: { node: { sourceUrl, alt } },
   wide,
   full,
   inCard,
   inCardLarge
 }) => {
-  if (!thumbnail) return null
-
+  if (!sourceUrl) return null
   const variant = (wide && 'wide') || (full && 'full') || 'regular'
-  const image = getImageVariant(thumbnail, 'hero')
-
   return (
     <>
-      <Img
-        image={image}
-        alt={title}
+      <img
+        src={sourceUrl}
+        alt={alt}
+        style={{ width: "100%" }}
         css={css({
           ...styles[variant],
           ...(inCard && styles.inCard),

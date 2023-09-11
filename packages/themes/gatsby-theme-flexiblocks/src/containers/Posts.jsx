@@ -25,7 +25,7 @@ const Posts = ({
       </Stack>
       <Divider />
       <Stack effectProps={{ effect: false }}>
-        {/* <Main>
+        <Main>
           <CardList
             nodes={featuredPosts.nodes}
             limit={3}
@@ -45,7 +45,7 @@ const Posts = ({
             loading='eager'
           />
         </Main>
-         */}
+        
         <Sidebar sx={{ pl: `3`, flexBasis: `1/4` }}>
           <BannerVertical />
         </Sidebar>
@@ -70,6 +70,7 @@ const Posts = ({
                       'horizontal',
                       'vertical'
                     ]}
+                    
                   />
                   <Divider space={2} />
                   <CardList

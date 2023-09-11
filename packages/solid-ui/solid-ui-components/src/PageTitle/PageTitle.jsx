@@ -20,8 +20,7 @@ const styles = {
 const PageTitle = ({ header, subheader, running, totalCount }) => {
   return (
     <div>
-      <Heading variant='h1' as='h1'>
-        {header}{' '}
+      <Heading variant='h1' as='h1' dangerouslySetInnerHTML={{ __html: header }} >
         {totalCount && (
           <Badge variant='tag-white' sx={styles.count}>
             {' '}

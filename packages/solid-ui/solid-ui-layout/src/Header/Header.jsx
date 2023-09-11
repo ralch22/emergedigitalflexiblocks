@@ -41,14 +41,13 @@ export const Header = ({ children }) => {
   const { services, mobileMenu, darkMode } = context.pageContext
 
   const algolia = services && services.algolia
-  console.log("search:", services.algolia)
 
   return (
     <Box sx={styles.wrapper}>
       <Container variant='compact' sx={styles.container}>
         <Flex variant='layout.header'>
           <Box sx={styles.logoContainer}>
-            <HeaderLogo />
+            <HeaderLogo /> 
           </Box>
           <Box sx={styles.searchContainer}>{algolia && <Search />}</Box>
           <Box sx={styles.menuContainer}>

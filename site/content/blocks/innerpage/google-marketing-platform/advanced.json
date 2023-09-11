@@ -1,0 +1,106 @@
+{
+    "text": [
+      {
+        "text": "How Advanced Marketing Analytics can help your business grow?",
+        "variant": "h2"
+      },
+      {
+        "text": "Analytics delivers the knowledge your business needs to make better decisions by enhancing your understanding of your unique landscape. You can spot new leads, identify future growth opportunities, and make the most of your data. We have detailed these strategies below:",
+        "variant": "medium",
+        "color": "alphaDark"
+      }
+    ],
+    "collection": [
+      {
+        "text": [
+          {
+            "text": "01",
+            "variant": "h4",
+            "color": "beta"
+          },
+          {
+            "text": "Activate First-Party Data Using Customer Match",
+            "variant": "h4"
+          },
+          {
+            "text": "In the past, marketers were able to rely on third-party cookies to collect information and reach their prospects or existing customers. This helped them to optimize their marketing spend and increase conversions by tailoring messaging and retargeting audiences. Today, the use of third-party cookies is becoming increasingly restricted. New privacy regulations and browser policies govern how marketers must gain consent and what personally identifiable information they can access. First-party data collected in a privacy-safe manner is becoming increasingly important for marketers and customers. Organizations need to adopt cookie-less solutions to continue to engage with new and existing customer while respecting user privacy. ",
+            "variant": "medium",
+            "color": "alphaDark"
+          }
+        ]
+      },
+      {
+        "text": [
+          {
+            "text": "02",
+            "variant": "h4",
+            "color": "beta"
+          },
+          {
+            "text": "Use predictive modeling techniques to improve your marketing experiences",
+            "variant": "h4"
+          },
+          {
+            "text": "Predictive modeling is a process that uses data mining and probability to forecast outcomes. These techniques can be used to create highly specific customer identities from analyzing data in your Marketing Data Warehouse. Marketers can use these audiences to understand the effectiveness of their campaigns and enhance performance. Use Cases include Predicting Lifetime Value and Churn and Forecasting Impact of Marketing Objectives",
+            "variant": "medium",
+            "color": "alphaDark"
+          }
+        ]
+      },
+      {
+        "text": [
+          {
+            "text": "03",
+            "variant": "h4",
+            "color": "beta"
+          },
+          {
+            "text": "Activate machine learning models on various channels to target audiences",
+            "variant": "h4"
+          },
+          {
+            "text": "Propensity modeling is an advanced analytical technique used to identify value-based audience segments. These high-value audience segments can be applied to marketing campaigns to increase efficiency. Machine learning models can be activated across different channels (Search, YouTube, display, discovery etc.) via Google Ads / Display & Video 360 and in the client's ecosystem using onsite banners, email, and SMS.",
+            "variant": "medium",
+            "color": "alphaDark"
+          }
+        ]
+      },
+      {
+        "text": [
+          {
+            "text": "04",
+            "variant": "h4",
+            "color": "beta"
+          },
+          {
+            "text": "Distinguish high value audiences and reach them effectively",
+            "variant": "h4"
+          },
+          {
+            "text": "Execute on insights gleaned from campaign data by combining media delivery, purchase behavior, and CRM data. Use Cases include Reaching the Right Customers with the Right Messaging. Segmenting Audiences, Leverage Data Management Platform for Audience Creation and Segmenting Audiences Based on Customer Behavior",
+            "variant": "medium",
+            "color": "alphaDark"
+          }
+        ]
+      },
+      {
+        "text": [
+          {
+            "text": "05",
+            "variant": "h4",
+            "color": "beta"
+          },
+          {
+            "text": "Understand how ad frequency impacts consumer purchase behavior",
+            "variant": "h4"
+          },
+          {
+            "text": "Marketers often have to deal with complex processes & numerous technologies in order to answer critical questions. Data analyses performed can inform marketers and partners to address those critical questions about the impact of advertising on in-store and online business results using Campaign Manager, Google Analytics, and even Marketing & Cloud. Use Cases include, Understanding Ad Delivery, Understanding Digital Response to Frequency and Understanding In-Store Response to Frequency",
+            "variant": "medium",
+            "color": "alphaDark"
+          }
+        ]
+      }
+    ]
+  }
+  

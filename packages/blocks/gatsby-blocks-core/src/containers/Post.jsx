@@ -3,14 +3,12 @@
  */
 
 import React from 'react'
-import { Card as CardComponent } from 'theme-ui'
+import { Card, Box  } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
 import Main from '@solid-ui-layout/Main/Main'
-import Sidebar from '@solid-ui-layout/Sidebar/Sidebar'
-import { Header } from '@solid-ui-layout/Header/Header';
 import Footer from '@solid-ui-blocks/Footer/Block01';
-import { Box } from 'theme-ui'
+import Header from '@solid-ui-blocks/Header/Block01';
 import CardList from '@solid-ui-components/CardList'
 import Divider from '@solid-ui-components/Divider'
 import Sticky from '@solid-ui-components/Sticky'
@@ -27,29 +25,34 @@ import {
   PostTagsShare,
   PostFooter
 } from '@solid-ui-blocks/Post'
+import { normalizeBlockContentNodes } from '@blocks-helpers';
 
 export default function Post({
-    data: { post, tagCategoryPosts, tagPosts, categoryPosts, previous, next },
+    data: { post, tagCategoryPosts, tagPosts, categoryPosts, previous, next, allBlockContent },
     ...props
   }) {
+    console.log("ds", post)
     const relatedPosts = [
         ...(tagCategoryPosts ? tagCategoryPosts.nodes : []),
         ...(tagPosts ? tagPosts.nodes : []),
         ...(categoryPosts ? categoryPosts.nodes : [])
       ]
+      console.log("related", tagPosts)
       const { pageContext: { services = {}, siteUrl } = {} } = props
-    
+
+      const content = normalizeBlockContentNodes(allBlockContent?.nodes);
       return (
         <Layout {...props}>
           <Seo {...post} siteUrl={siteUrl} />
-          <Divider />
+          <Header search content={content['header']} />
+          <Divider spaceY={10} />
           <Stack effectProps={{ effect: 'fadeInDown' }}>
             <PostHead {...post} />
           </Stack>
           <Divider />
           <Stack effectProps={{ fraction: 0 }}>
             <Main>
-              <CardComponent variant='paper'>
+              <Card variant='paper'>
                 <PostImage {...post} inCard />
                 <PostBody {...post} />
                 <PostTagsShare {...post} location={props.location} />
@@ -59,10 +62,10 @@ export default function Post({
                   <PostCommentsFacebook {...post} siteUrl={siteUrl} />
                 )}
                 <PostFooter {...{ previous, next }} />
-              </CardComponent>
+              </Card>
             </Main>
-            <Sidebar>
-              <AuthorCompact author={post.author} omitTitle />
+            <Box sx={{ pl: `3`, flexBasis: `1/4` }}>
+              <AuthorCompact author={post.author.node} omitTitle />
               <Divider />
               <Sticky>
                 {post.tableOfContents?.items && (
@@ -71,21 +74,23 @@ export default function Post({
                     <Divider />
                   </>
                 )}
-                {post.category && (
-                  <CardList
-                    title='Related Posts'
-                    nodes={relatedPosts}
-                    variant='horizontal-aside'
-                    limit={6}
-                    omitMedia
-                    omitCategory
-                    distinct
-                    aside
-                  />
-                )}
+               
+                <CardList
+                  title='Related Posts'
+                  nodes={relatedPosts}
+                  variant='horizontal-aside'
+                  limit={6}
+                  omitMedia
+                  omitCategory
+                  distinct
+                  aside
+                />
+        
               </Sticky>
-            </Sidebar>
+            </Box>
           </Stack>
+          <Divider />
+          <Footer content={content['footer']} />
         </Layout>
       )
 }

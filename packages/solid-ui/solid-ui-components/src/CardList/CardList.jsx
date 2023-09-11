@@ -21,6 +21,7 @@ const CardList = React.forwardRef((props, ref) => {
     skip,
     distinct,
     slider,
+    simple,
     aside,
     asNavFor,
     loading,
@@ -32,7 +33,7 @@ const CardList = React.forwardRef((props, ref) => {
 
   //Section title link for viewing more posts from same category
   const titleLink = withTitleLink
-    ? reducedNodes[0].category && reducedNodes[0].category.slug
+    ? reducedNodes[0].category && reducedNodes[0].categories[0].slug
     : ''
 
   //Unique key for section
@@ -66,6 +67,19 @@ const CardList = React.forwardRef((props, ref) => {
     />
   ))
 
+  const cardSimple = nodes.map((node, index) => (
+    <Card
+      key={node.id}
+      variant={variant}
+      onMouseOver={() => changeSlide(index)}
+      onFocus={() => changeSlide(index)}
+      //In sliders with fade effect apply loading to the first card only
+      loading={props.fade ? (index === 0 ? loading : undefined) : loading}
+      {...node}
+      {...rest}
+    />
+  ))
+
   //Cards List (Fixed or Slider)
   const CardList = () => (
     <Box sx={{ variant: cardListVariant }}>
@@ -75,10 +89,10 @@ const CardList = React.forwardRef((props, ref) => {
           // beforeChange={index => changeSlide(index)}
           {...rest}
         >
-          {cards}
+          {simple ? cardSimple : cards}
         </CardListSlider>
       ) : (
-        cards
+        simple ? cardSimple : cards
       )}
     </Box>
   )

@@ -6,9 +6,8 @@ import React from 'react'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
 import Main from '@solid-ui-layout/Main/Main'
-import Sidebar from '@solid-ui-layout/Sidebar/Sidebar'
-import { Header } from '@solid-ui-layout/Header/Header';
 import Footer from '@solid-ui-blocks/Footer/Block01';
+import Header from '@solid-ui-blocks/Header/Block01';
 import { Box } from 'theme-ui'
 import CardList from '@solid-ui-components/CardList'
 import Divider from '@solid-ui-components/Divider'
@@ -29,20 +28,18 @@ export default function RenderPost({
 
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 
-  console.log("posts", posts)
-
   return (
     <Layout {...props}>
       <Seo title='Home' />
-      <Header />
+      <Header search content={content['header']} />
       <Divider />
       <Stack effectProps={{ effect: false }}>
-        <Categories categories={categories} variant='horizontal' omitTitle />
+        {/* <Categories categories={categories} variant='horizontal' omitTitle /> */}
       </Stack>
       <Divider />
       <Stack effectProps={{ effect: false }}>
         <Main>
-          <CardList
+          {/* <CardList
             nodes={featuredPosts.nodes}
             limit={3}
             variant='horizontal-cover'
@@ -51,7 +48,7 @@ export default function RenderPost({
             controlPosition='over'
             loading='eager'
             omitCategory
-          />
+          /> */}
           <Divider space={2} />
           <CardList
             nodes={recentPosts.nodes}
@@ -59,20 +56,20 @@ export default function RenderPost({
             columns={[1, 2]}
             variant='horizontal-aside'
             loading='eager'
+            withModerate
           />
         </Main>
         <Box sx={{ pl: `3`, flexBasis: `1/4` }}>
-          <BannerVertical />
+          <BannerVertical content={content['posts']} />
         </Box>
       </Stack>
       <Divider space={5} />
       {posts.group.length &&
         posts.group.map((group, index) => (
           <React.Fragment key={`${group.categoryName}.list`}>
-            {index % 2 === 0 ? (
+            {index % 1 === 0 ? (
               <Stack
                 title={group.categoryName}
-                titleLink={group.nodes[0].category.slug}
               >
                 <Main>
                   <CardList
@@ -94,16 +91,16 @@ export default function RenderPost({
                     columns={[1, 2, 3, 3]}
                     variant={['horizontal-md', 'horizontal-aside']}
                     omitMedia
+                    
                   />
                 </Main>
               </Stack>
             ) : (
               <Stack
                 title={group.categoryName}
-                titleLink={group.nodes[0].category.slug}
                 direction={['column', 'column', 'column', 'row']}
               >
-                <Sidebar
+                <Box
                   sx={{
                     pl: 0,
                     pr: [0, null, null, 3],
@@ -123,7 +120,7 @@ export default function RenderPost({
                     ]}
                     omitCategory
                   />
-                </Sidebar>
+                </Box>
                 <Main
                   sx={{
                     display: [null, `flex`],
@@ -146,7 +143,7 @@ export default function RenderPost({
                   />
                   <Divider space={2} />
                 </Main>
-                <Sidebar
+                <Box
                   sx={{
                     pl: [0, null, null, 3],
                     display: [null, `flex`],
@@ -166,7 +163,7 @@ export default function RenderPost({
                     ]}
                     omitCategory
                   />
-                </Sidebar>
+                </Box>
               </Stack>
             )}
             {index === 0 && (

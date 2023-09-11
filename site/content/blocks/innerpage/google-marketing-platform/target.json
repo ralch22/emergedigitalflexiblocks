@@ -1,0 +1,71 @@
+{
+  "text": [
+    {
+      "text": "Search Ads 360 gives you the workflow tools, robust reporting, and strategic bid optimization you need to get more value from your search campaigns. Respond faster to an ever-changing market — in real-time and at scale — using native integrations with other Google Marketing Platform products.",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/mockup.jpg",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Drive Performance using Automation",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Drive performance for advertisers with automation and optimization. Implement automated bidding powered by machine learning to increase return on ad spend.",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/blend.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Blend Data Sources",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Bring together your own business insights with external signals. Use them to optimize media across channels, improve ad management, and expand reporting capabilities.",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/search.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Leverage Automation",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Centralize your search marketing with combined insights and reporting across multiple engines including Google, Bing, Baidu, and Yahoo! Japan, as well as search and social channels.",
+          "variant": "h4"
+          
+        }
+      ]
+    }
+  ]
+}

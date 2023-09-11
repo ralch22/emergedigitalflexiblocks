@@ -13,7 +13,8 @@ import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
 const FeaturesWithPhotoBlock01 = ({
   content: { text, images, collection, buttons, gradient },
-  reverse
+  reverse,
+  dangerously
 }) => (
   <Box>
     <Container wide sx={{ position: `relative` }}>
@@ -29,9 +30,16 @@ const FeaturesWithPhotoBlock01 = ({
           }}
         >
           <FlexContent reverse={reverse}>
-            <Box sx={{ textAlign: ['center', 'left'] }}>
-              <ContentText content={text} />
-            </Box>
+          {dangerously ? (
+              <Box sx={{ textAlign: ['center', 'left'] }}>
+                <ContentText content={text?.[0]} />
+                <ContentText dangerously content={text?.[1]} />
+              </Box>
+            ) : (
+              <Box sx={{ textAlign: ['center', 'left'] }}>
+                <ContentText content={text} />
+              </Box>
+            )}
             {buttons && (
               <Box sx={{ textAlign: [`center`, `left`] }}>
                 <Divider space={3} />

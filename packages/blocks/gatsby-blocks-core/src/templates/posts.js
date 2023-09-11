@@ -4,14 +4,7 @@ import PostsPage from '../containers/Posts'
 export default PostsPage   
 
 export const pageQuery = graphql`
-  query PostsPageQuery(
-    $paginatePostsPage: Boolean!
-    $skip: Int
-    $limit: Int
-    $includeExcerpt: Boolean!
-    $includeTimeToRead: Boolean!
-    $imageQuality: Int!
-  ) {
+  query PostsPageQuery {
     allBlockContent(
       filter: { page: { in: ["innerpage/blog", "shared"] } }
     ) {
@@ -19,54 +12,75 @@ export const pageQuery = graphql`
         ...BlockContent
       }
     }
-    featuredPosts: allArticle(
-      filter: {
-        private: { ne: true }
-        draft: { ne: true }
-        featured: { eq: true }
-      }
-      sort: { date: DESC }
-      limit: 10
-    ) {
+    recentPosts: allWpPost(sort: { date: DESC } limit: 6) {
+      
       nodes {
-        ...ArticlePreview
-        ...ArticleThumbnailFeatured
-      }
-    }
-    recentPosts: allArticle(
-      filter: { private: { ne: true }, draft: { ne: true } }
-      sort: { date: DESC }
-      limit: 6
-    ) {
+     id
+     title
+     slug
+     date(formatString: "MMMM DD, YYYY")
+     excerpt
+     featuredImage {
+       node {
+         altText
+         id
+         sourceUrl
+       }
+     }
+     categories {
+       nodes {
+         name
+       }
+     }
+     author {
+       node {
+         id
+         slug
+         avatar {
+           url
+         }
+         name
+       }
+     }
+     
+   }
+   }
+
+ posts: allWpPost(sort: { date: DESC } limit: 1000) {
+    group(field: { categories: {  nodes: { name: SELECT } } }, limit: 10) {
+   categoryName: fieldValue
       nodes {
-        ...ArticlePreview
-        ...ArticleThumbnailRegular
-      }
-    }
-    posts: allArticle(
-      filter: { private: { ne: true }, draft: { ne: true } }
-      sort: { date: DESC }
-      limit: 1000
-    ) @skip(if: $paginatePostsPage) {
-      group(field: { category: { name: SELECT } }, limit: 10) {
-        categoryName: fieldValue
-        nodes {
-          ...ArticlePreview
-          ...ArticleThumbnailRegular
-        }
-      }
-    }
-    paginatedPosts: allArticle(
-      filter: { private: { ne: true }, draft: { ne: true } }
-      sort: { date: DESC }
-      limit: $limit
-      skip: $skip
-    ) @include(if: $paginatePostsPage) {
-      nodes {
-        ...ArticlePreview
-        ...ArticleThumbnailRegular
-      }
-      ...ArticlePagination
-    }
+     id
+     title
+     slug
+     date(formatString: "MMMM DD, YYYY")
+     excerpt
+     featuredImage {
+       node {
+         altText
+         id
+         sourceUrl
+       }
+     }
+     categories {
+       nodes {
+         name
+         slug
+       }
+     }
+     author {
+       node {
+         id
+         avatar {
+           url
+         }
+         name
+       }
+     }
+     
+   }
+ }
+   
   }
+}
 `

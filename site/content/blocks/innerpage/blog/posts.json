@@ -1,0 +1,10 @@
+{
+  "buttons": [
+    {
+      "text": "Learn More",
+      "type": "PAGE",
+      "link": "",
+      "variant": "secondary"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import ContentImages from '@solid-ui-components/ContentImages'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import ContentText from '@solid-ui-components/ContentText'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import CardListSlider from './CardList.Slider'
 
 const FeaturesWithPhotoBlock00 = ({
   content: { text, images, collection, buttons },
@@ -26,12 +27,11 @@ const FeaturesWithPhotoBlock00 = ({
         mx: [null, null, null, -4]
       }}
     >
-      <FlexImage reverse={reverse}>
-        <ContentImages content={{ images }} reverse={reverse} />
-      </FlexImage>
+      
       <FlexContent reverse={reverse}>
         <Box sx={{ textAlign: ['center', 'left'] }}>
-          <ContentText content={text} />
+          <ContentText content={text?.[0]} />
+          <ContentText dangerously content={text?.[1]} />
         </Box>
         {buttons && (
           <>
@@ -40,6 +40,10 @@ const FeaturesWithPhotoBlock00 = ({
           </>
         )}
       </FlexContent>
+      <FlexImage reverse={reverse}>
+        <CardListSlider />
+        
+      </FlexImage>
     </Flex>
     <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>

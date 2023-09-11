@@ -1,0 +1,49 @@
+{
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "What is the Google Marketing Platform used for?",
+          "variant": "h5"
+        },
+        {
+          "text": "<div><p>On the platform, teams can integrate and access data from advertising and analytics. Teams can integrate data from tools such as Google Analytics and Google advertising products in one environment to discover trends and gain new insights into customer experiences.</p><p>This process in turn acts as a feedback mechanism and is referred to as re-activating owned data into marketing.</p><p>Google Marketing Platform will remain media agnostic and will continue to support integrations with a variety of third-party data and measurement platforms and service providers across the ecosystem.</p></div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Who uses the Google Marketing Platform?​",
+          "variant": "h5"
+        },
+        {
+          "text": "The Google Marketing platform is specifically designed for enterprise marketers and data analysts. Google created the GMP to target all customers of their Google marketing products, namely businesses of all sizes relying on Google Analytics and Google advertising as part of their ad and search campaigns."
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Why upgrade to Google Marketing Platform?",
+          "variant": "h5"
+        },
+        {
+          "text": "<div><p>It may seem like an obvious question to ask, especially for marketers who already use the advertising and analytics products provided by Google. The products the Google Marketing platform features work together to plan, buy, measure, and optimize digital media and customer experiences in a single platform.</p><p>By tying all the Google tools together, marketers can enjoy the benefits of a multi-purpose platform enabling advantageous insights into consumers activities and the efficiency of ad and search campaigns. The business can get gain advantage from the platform through:</p><ul><li>A unified user interface and user experience</li><li>Enhanced collaboration across marketing functions</li><li>A unified view of channels, campaigns, audience, performance, and insights</li><li>Seamless integrations between media channels, product features, audiences, data, and targeting</li></ul></div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Why upgrade to Google Marketing Platform?",
+          "variant": "h5"
+        },
+        {
+          "text": "<div><p>The Google marketing platform includes marketing products that are part of the analytics branch, and products belonging to the advertising branch of Google marketing.</p><p><strong>*Products in bold</strong>&nbsp;require a license via a GMP Sales Partner.</p><span style='text-decoration: underline;'><strong>Analytics products:</strong></span><ul><li>Google Analytics</li><li><strong>Analytics 360*</strong></li><li>Google Tag Manager</li><li><strong>Tag Manager 360*</strong></li><li>Google Optimize</li><li><strong>Optimize 360*</strong></li><li>Google Surveys</li><li><strong>Surveys 360*</strong></li><li>Google Data Studio</li></ul><span style='text-decoration: underline;'><strong>Advertising products:</strong></span><ul><li>Google Ads</li><li><strong>Campaign manager 360*</strong></li><li><strong>Display and video 360*</strong></li><li><strong>Search ads 360*</strong></li></ul></div>"
+
+        }
+      ]
+    }
+  ]
+}

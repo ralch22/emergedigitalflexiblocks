@@ -6,6 +6,7 @@
   "author": "ElegantStack Team",
   "license": "",
   "dependencies": {
+    "rc-switch": "^4.0.0",
     "@elegantstack/gatsby-plugin-alias-imports": "^3.0.0",
     "theme-ui": "^0.3.4"
   }

@@ -1,0 +1,37 @@
+{
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "What are the differences between GA4 & Analytics 360",
+          "variant": "h5"
+        },
+        {
+          "text": "<div class='acc-content active' style='display: block;'><p data-pm-slice='1 1 []'>Google announced <a href='https://emergedigital.ae/everything-you-need-to-know-about-ga4-migration-and-why-it-is-crucial/' target='_blank' rel='noopener noreferrer'>Google Analytics 4 (GA4) in 2021</a>, and designed Analytics 360 in the same vision. Just as with the other 360 products, Analytics 360 is a subscription solution with improved features, offering enterprise-level support, and service level agreement.</p><p>The key differences between Analytics and Analytics 360 are:</p><ul><li><p>More collaborative properties with setting customization and product line sub-properties that can be linked to Google Marketing platform (or GA only).</p></li><li><p>Higher data limits: up to 125 custom dimensions, 400 audiences, and 50 conversion types</p></li><li><p>Enhanced flexibility and scalability in reporting and data visualization, which is beneficial for advertisers and creative professionals.</p></li></ul></div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Where can I learn more about SA360? ​",
+          "variant": "h5"
+        },
+        {
+          "text": "To learn more about SA360 and its capabilities we would advice you to visit the following: Search Ads 360 - Smarter search campaigns"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Why use data-driven attribution?​",
+          "variant": "h5"
+        },
+        {
+          "text": "Data-driven attribution gives credit for the recorded conversions, showing you with adverts or content pieces turned visitors into customers. Understanding what works best means you can focus on the activities that perform. Data-driven attributions are already available in free tools such as Ads and Analytics. For enhanced and more insightful attribution models, you should check the paid-for 360 range."
+        }
+      ]
+    }
+  ]
+}

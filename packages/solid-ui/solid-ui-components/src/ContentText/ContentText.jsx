@@ -15,7 +15,7 @@ const gradient = {
 
 const headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 
-const ContentText = ({ as: CustomComponent, content, center, children, ...props }) => {
+const ContentText = ({ as: CustomComponent, content, dangerously, center, children, ...props }) => {
   if (!content || content.length < 1) return null
 
   const contentArray = Array.isArray(content) ? content : [content]
@@ -48,28 +48,57 @@ const ContentText = ({ as: CustomComponent, content, center, children, ...props 
       }
     }
 
-    return isHeading ? (
-      <Heading
-        key={`item-${index}`}
-        variant={variant}
-        as={variant}
-        color={color}
-        sx={{ textAlign: center ? `center` : `none` }}
-        {...mergedProps}
-      >
-        {children || textWithSpecial || text}
-      </Heading>
-    ) : (
-      <Text
-        key={`item-${index}`}
-        variant={variant}
-        color={color}
-        {...mergedProps}
-        sx={{ textAlign: center ? `center` : `none` }}
-      >
-        {children || text}
-      </Text>
-    )
+    if(dangerously) {
+      return isHeading ? (
+        <Heading
+          key={`item-${index}`}
+          variant={variant}
+          as={variant}
+          color={color}
+          sx={{ textAlign: center ? `center` : `none` }}
+          dangerouslySetInnerHTML={{ __html: text }}
+          {...mergedProps}
+        >
+          {children || textWithSpecial}
+        </Heading>
+      ) : (
+        <Text
+          key={`item-${index}`}
+          variant={variant}
+          color={color}
+          {...mergedProps}
+          sx={{ textAlign: center ? `center` : `none` }}
+          dangerouslySetInnerHTML={{ __html: text }}
+        >
+          {children}
+        </Text>
+      )
+    } else {
+      return isHeading ? (
+        <Heading
+          key={`item-${index}`}
+          variant={variant}
+          as={variant}
+          color={color}
+          sx={{ textAlign: center ? `center` : `none` }}
+          {...mergedProps}
+        >
+          {children || textWithSpecial || text}
+        </Heading>
+      ) : (
+        <Text
+          key={`item-${index}`}
+          variant={variant}
+          color={color}
+          {...mergedProps}
+          sx={{ textAlign: center ? `center` : `none` }}
+        >
+          {children || text}
+        </Text>
+      )
+    }
+
+   
   })
 }
 

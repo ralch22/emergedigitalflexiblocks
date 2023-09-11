@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
+import { FormContext } from '@solid-ui-components/ContentForm/FormContext'
+import axios from 'axios';
+import messages from '@solid-ui-theme/messages';
 
 /**
  * How to enable form integration:
@@ -17,72 +20,84 @@ import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
  *
  */
 
-const ContactForm = ({ handleSubmit, submitting, success }) => (
-  <form
-    onSubmit={handleSubmit}
-    method='POST'
-    action='YOUR_ACTION_END_POINT'
-    demo='demo'
-  >
-    {success === true && (
-      <Message variant='success'>
-        Thank you for contacting us. We'll get back to you soon!
-      </Message>
-    )}
-    {success === false && (
-      <Message variant='error'>
-        Something went wrong. Please try again later!
-      </Message>
-    )}
-    <Box variant='forms.row'>
-      <Box variant='forms.column'>
-        <Label htmlFor='contact-form-name'>Name</Label>
-        <Input type='text' id='contact-form-name' name='name' required />
-      </Box>
-      <Box variant='forms.column'>
-        <Label htmlFor='contact-form-company'>Company Name</Label>
-        <Input type='text' id='contact-form-company' name='company' />
-      </Box>
-    </Box>
-    <Box variant='forms.row'>
-      <Box variant='forms.column'>
-        <Label htmlFor='contact-form-email'>Email</Label>
-        <Input
-          type='email'
-          placeholder='email@example.com'
-          id='contact-form-email'
-          name='email'
-          required
-        />
-      </Box>
-      <Box variant='forms.column'>
-        <Label htmlFor='contact-form-phone'>Phone Number</Label>
-        <Input
-          type='tel'
-          placeholder='(xxx) xxx-xxxx'
-          id='contact-form-phone'
-          name='phone'
-        />
-      </Box>
-    </Box>
-    <Box variant='forms.row'>
-      <Label htmlFor='contact-form-subject'>Subject</Label>
-      <Input type='text' id='contact-form-subject' name='subject' required />
-    </Box>
-    <Box variant='forms.row'>
-      <Label htmlFor='contact-form-message'>Your Message</Label>
-      <Textarea name='message' id='contact-form-message' />
-    </Box>
-    <Button
-      variant={success || submitting ? 'disabled' : 'primary'}
-      disabled={success || submitting}
-      type='submit'
-      required
+const ContactForm = ({ handleSubmit, submitting, success }) => {
+  const form = useContext(FormContext)
+  console.log("form:", form)
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+console.log("name", name)
+ 
+  return (
+    <form
+      onSubmit={handleSubmit}
+      method='POST'
+      action='YOUR_ACTION_END_POINT'
     >
-      Submit {submitting && <Spinner size='20' />}
-    </Button>
-  </form>
-)
+      {success === true && (
+        <Message variant='success'>
+          Thank you for contacting us. We'll get back to you soon!
+        </Message>
+      )}
+      {success === false && (
+        <Message variant='error'>
+          Something went wrong. Please try again later!
+        </Message>
+      )}
+      <Box variant='forms.row'>
+        <Box variant='forms.column'>
+          <Label htmlFor='contact-form-name'>Name</Label>
+          <Input onChange={(e) => setName(e.target.value)} type='text' id='contact-form-name' name='name' required />
+        </Box>
+        <Box variant='forms.column'>
+          <Label htmlFor='contact-form-company'>Company Name</Label>
+          <Input onChange={(e) => setCompany(e.target.value)} type='text' id='contact-form-company' name='company' />
+        </Box>
+      </Box>
+      <Box variant='forms.row'>
+        <Box variant='forms.column'>
+          <Label htmlFor='contact-form-email'>Email</Label>
+          <Input
+            type='email'
+            placeholder='email@example.com'
+            id='contact-form-email'
+            name='email'
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Box>
+        {/* <Box variant='forms.column'>
+          <Label htmlFor='contact-form-phone'>Phone Number</Label>
+          <Input
+            type='tel'
+            placeholder='(xxx) xxx-xxxx'
+            id='contact-form-phone'
+            name='phone'
+            onChange={(e) => setTel(e.target.value)}
+          />
+        </Box> */}
+      </Box>
+      <Box variant='forms.row'>
+        <Label htmlFor='contact-form-subject'>Subject</Label>
+        <Input onChange={(e) => setSubject(e.target.value)} type='text' id='contact-form-subject' name='subject' required />
+      </Box>
+      <Box variant='forms.row'>
+        <Label htmlFor='contact-form-message'>Your Message</Label>
+        <Textarea onChange={(e) => setMessage(e.target.value)} name='message' id='contact-form-message' />
+      </Box>
+      <Button
+        variant={success || submitting ? 'disabled' : 'primary'}
+        disabled={success || submitting}
+        type='submit'
+        required
+      >
+        Submit {submitting && <Spinner size='20' />}
+      </Button>
+    </form>
+  )
+}
 
 export default ContactForm
 

@@ -12,7 +12,7 @@ export const query = graphql`
     thumbnailText
     date(formatString: "MMMM DD, YYYY")
     category {
-      ...ArticleCategory
+        ...ArticleCategory
     }
     author {
       ...ArticleAuthor

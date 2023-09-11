@@ -32,10 +32,8 @@ const styles = {
 
 const PostLink = ({ title, post }) => (
   <>
-    <Text sx={styles.guide}>{title}</Text>
-    <Heading variant='h4' as={Link} to={post.slug}>
-      {post.title}
-    </Heading>
+    <Text sx={styles.guide} dangerouslySetInnerHTML={{ __html: title }} />
+    <Heading variant='h4' as={Link} to={`/posts/${post.slug}`} dangerouslySetInnerHTML={{ __html: post.title }}  />
   </>
 )
 

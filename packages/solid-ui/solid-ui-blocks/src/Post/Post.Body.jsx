@@ -1,12 +1,23 @@
 import React from 'react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from '@theme-ui/mdx'
-import components from '@solid-ui-components/Mdx'
+import { Box, Text } from 'theme-ui'
 
-export const PostBody = ({ body }) => {
+const styles = {
+  excerpt: {
+    flex: `auto`,
+    mb: 3
+  }
+}
+
+export const PostBody = ({ content }) => {
   return (
-    <MDXProvider components={components}>
-      <MDXRenderer>{body}</MDXRenderer>
-    </MDXProvider>
+    <Box>
+      <Text
+        variant='medium'
+        sx={{
+          ...styles.excerpt
+        }}
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    </Box>
   )
 }

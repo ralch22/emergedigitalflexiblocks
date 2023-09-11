@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Flex, Button, Heading, Text } from 'theme-ui'
 import { FaRegHandshake } from 'react-icons/fa'
+import ContentButtons from '@solid-ui-components/ContentButtons'
+import Divider from '@solid-ui-components/Divider'
 
 const styles = {
   wrapper: {
@@ -51,7 +53,7 @@ const styles = {
   },
 }
 
-const BannerVertical = () => (
+const BannerVertical = ({ content: { buttons } }) => (
   <Flex sx={styles.wrapper}>
     <Heading variant='h2' sx={styles.heading}>
       <FaRegHandshake />
@@ -66,15 +68,12 @@ const BannerVertical = () => (
       <li>Practice modern tips for effective networking</li>
       <li>Understand the steps towards building your own network</li>
     </Text>
-    <Button
-      variant='primary'
-      as={Link}
-      to='/'
-      sx={styles.button}
-      aria-label='Learn More'
-    >
-      Learn More
-    </Button>
+    {buttons && (
+      <>
+        <Divider space={2} />
+        <ContentButtons content={buttons} />
+      </>
+    )}
   </Flex>
 )
 

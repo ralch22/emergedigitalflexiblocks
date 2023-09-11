@@ -17,17 +17,17 @@ import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block02'
 import Strategies from '@solid-ui-blocks/Stats/Block01'
 import Testimonials from '@solid-ui-blocks/Testimonials/Block01'
 import GetStarted from '@solid-ui-blocks/CallToAction/Block01'
-import Newsletter from '@solid-ui-blocks/Features/Block07'
+import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded'
 import Blog from '@solid-ui-blocks/Blog/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 import theme from './_theme'
 import styles from './_styles'
 
-
 const IndexPage = props => {
-  const { allBlockContent } = props.data
+  const { allBlockContent, posts } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
+ 
 
   return (
     <Layout theme={theme} {...props}>
@@ -61,9 +61,9 @@ const IndexPage = props => {
       <FeatureTwo content={content['feature-two']} />
       <Divider space='5' />
       <Divider space='5' />
-      <Newsletter content={content['newsletter']}/>
+      <NewsletterExpanded content={content['newsletter']}/>
       <Divider space='5' />
-      <Blog content={content['latest-blogs']} />
+      <Blog posts={posts} content={content['latest-blogs']} />
       <Divider space='6' />
       <Divider space='6' />
       <Container variant='full' sx={styles.strategiesContainer}>
@@ -82,7 +82,7 @@ const IndexPage = props => {
       <Divider space='5' />
       <Footer content={content['footer']} />
     </Layout>
-  )
+  ) 
 }
 
 export const query = graphql`
@@ -94,6 +94,39 @@ export const query = graphql`
         ...BlockContent
       }
     }
+    posts: allWpPost(sort: { date: DESC } limit: 3) {
+        nodes {
+       id
+       title
+       slug
+       date(formatString: "MMMM DD, YYYY")
+       excerpt
+       featuredImage {
+         node {
+           altText
+           id
+           sourceUrl
+         }
+       }
+       categories {
+         nodes {
+           name
+           slug
+         }
+       }
+       author {
+         node {
+           id
+           avatar {
+             url
+           }
+           name
+         }
+       }
+       
+     }
+   }
+     
   }
 `
 export default IndexPage

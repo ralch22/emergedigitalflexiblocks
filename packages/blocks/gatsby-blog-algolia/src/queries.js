@@ -1,24 +1,35 @@
 const postQuery = `{
-  posts: allArticle(
-    filter: {
-      private: {ne: true}
-      draft: {ne: true}
-    }
-  ) {
+  posts: allWpPost {
     edges {
-      node {
+      nodes {
         id
-				title
+        title
         slug
-        link
-				excerpt(pruneLength: 5000)
-				category {
-					name
-					slug
-				}
-        internal {
-          contentDigest
+        date(formatString: "MMMM DD, YYYY")
+        excerpt
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
         }
+        categories {
+          nodes {
+            name
+          }
+        }
+        author {
+          node {
+            id
+            slug
+            avatar {
+              url
+            }
+            name
+          }
+        }
+        
       }
     }
   }

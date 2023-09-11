@@ -9,13 +9,11 @@ const styles = {
   }
 }
 
-const CardFooterAuthorName = ({ variant, omitAuthor, author }) =>
-  !omitAuthor && author && author.slug ? (
+const CardFooterAuthorName = ({ variant, omitAuthor, author: { node } }) => (
     <Text sx={{ ...styles.author, variant: rv(variant, 'author') }}>
-      <Link variant='mute' as={GLink} to={author.slug}>
-        <strong>{author.name}</strong>
+      <Link variant='mute' as={GLink} to={node.slug}>
+        <strong>{node.name}</strong>
       </Link>
     </Text>
-  ) : null
-
+  )
 export default CardFooterAuthorName

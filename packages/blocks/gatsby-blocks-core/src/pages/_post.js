@@ -12,21 +12,46 @@ module.exports = async (
 
   const result = await graphql(`
     {
-      allArticle(
-        filter: { draft: { ne: true } }
+      allWpPost(
         sort: [{ date: DESC }, { title: ASC }]
         limit: 1000
       ) {
         edges {
           node {
             id
+            title
             slug
-            link
-            category {
-              id
+            date(formatString: "MMMM DD, YYYY")
+            excerpt
+            featuredImage {
+              node {
+                altText
+                id
+                sourceUrl
+              }
+            }
+            categories {
+              nodes {
+                name
+              }
+            }
+            author {
+              node {
+                id
+                slug
+                avatar {
+                  url
+                }
+                description
+                name
+              }
             }
             tags {
-              id
+              nodes {
+                name
+                slug
+                id
+              }
             }
           }
         }
@@ -38,11 +63,11 @@ module.exports = async (
     reporter.panic(result.errors)
   }
 
-  const { allArticle } = result.data
-  const posts = allArticle.edges
-
+  const { allWpPost } = result.data
+  const posts = allWpPost.edges
+  console.log("singlePost", posts)
   posts.forEach(({ node }, index) => {
-    const { id, slug, category, tags, link } = node
+    const { id, slug, categories, tags, link } = node
 
     if (link) return //skip creating pages for nodes linking to external sites
 
@@ -50,16 +75,16 @@ module.exports = async (
     const next = index === 0 ? null : posts[index - 1]
 
     //For querying related posts based on tags and category
-    const categoryId = category && category.id
-    const tagsIds = (tags && tags.map(tag => tag && tag.id)) || []
+    const categoriesId = (categories && categories.nodes.map(category => category && category.id))
+    const tagsIds = (tags && tags.nodes.map(tag => tag && tag.id))
     const hasTags = tagsIds.length > 0
 
     createPage({
-      path: slug,
+      path: `/posts/${slug}`,
       component: template,
       context: {
         id,
-        categoryId,
+        categoriesId,
         tagsIds,
         hasTags,
         previousId: previous ? previous.node.id : undefined,

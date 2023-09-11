@@ -7,7 +7,6 @@ module.exports = (
   const { type } = node.internal
 
   const ARTICLE_TYPES = [
-    'Mdx',
     'ContentfulArticle',
     'SanityArticle',
     'STRAPI_ARTICLE'
@@ -15,11 +14,7 @@ module.exports = (
   const newNodeType = 'ArticleTag'
 
   if (ARTICLE_TYPES.includes(type)) {
-    if (type === 'Mdx') {
-      const fileNode = getNode(node.parent)
-      const source = fileNode && fileNode.sourceInstanceName
-      if (!localPaths.find(path => path.name === source)) return
-    }
+  
 
     const { tags, tags_array } = node.frontmatter || node
 

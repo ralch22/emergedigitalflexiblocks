@@ -13,7 +13,9 @@ const styles = {
     userSelect: `none`,
     textAlign: `center`,
     position: `relative`,
-    display: `block`
+    display: `block`,
+    width: `100%`,
+    height: `full`
   }
 }
 
@@ -24,20 +26,21 @@ const CardMedia = ({
   title,
   slug,
   link,
+  withModerate,
   ...props
 }) => {
   const context = useThemeUI()
 
   if (omitMedia) return null
 
-  const { variant, thumbnail, thumbnailText } = props
+  const { variant, featuredImage, thumbnailText } = props
 
   const imageVar =
     imageVariant ||
     get(context.theme, rv(variant, 'imageVariant')[0]) ||
     DEFAULT_IMAGE_VARIANT
 
-  const image = getImageVariant(thumbnail, imageVar)
+  // const image = getImageVariant(thumbnail, imageVar)
 
   const linkProps = link
     ? {
@@ -58,11 +61,11 @@ const CardMedia = ({
       sx={{ variant: rv(variant, 'media') }}
       aria-label={title}
     >
-      {mediaType === 'image' && image && (
-        <CardMediaImage image={image} title={title} {...props} />
+      {mediaType === 'image' && featuredImage && (
+        <CardMediaImage small={withModerate ? true : false} image={featuredImage} title={title} {...props} />
       )}
-      {(mediaType === 'icon' || (!image && thumbnailText)) && (
-        <CardMediaIcon {...props} />
+      {(mediaType === 'icon' || (!featuredImage && thumbnailText)) && (
+        <CardMediaImage moderate image={featuredImage} title={title} {...props} />
       )}
     </Link>
   )

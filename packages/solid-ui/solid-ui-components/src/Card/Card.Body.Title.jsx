@@ -16,9 +16,7 @@ const CardBodyTitle = ({ variant, title, slug, link }) => {
         to: slug
       }
   return (
-    <Heading {...linkProps} sx={{ variant: rv(variant, 'title') }}>
-      {title}
-    </Heading>
+    <Heading {...linkProps} dangerouslySetInnerHTML={{ __html: title }} sx={{ variant: rv(variant, 'title') }} />
   )
 }
 

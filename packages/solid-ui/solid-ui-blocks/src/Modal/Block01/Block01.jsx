@@ -19,12 +19,14 @@ const ModalBlock01 = ({ content, reverse }) => {
   } = useContext(TabsContext)
 
   const { identifier, text } = content
-
+  console.log("iden:", activeModal)
   if (activeModal && activeModal !== identifier) return null
 
   const images = content?.collection[index]?.images || content.images
   const map = content?.collection[index]?.map || content.map
   const hasMedia = images || map
+
+ 
 
   return (
     <Modal
@@ -97,7 +99,7 @@ const ModalBlock01 = ({ content, reverse }) => {
                       <ListItem key={`item-${index}`} {...props} compact />
                     ))}
                     {form && (
-                      <ContentForm
+                      <ContentForm 
                         form={form}
                         id={`form.${identifier}.${
                           form.multiStep ? 'multi' : index

@@ -1,11 +1,17 @@
-const _ = require('lodash')
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
+const l = require('lodash')
 const path = require('path')
 const withDefaults = require('./src/utils/default.options')
 
+
+console.log("algolia:", process.env.ALGOLIA_SEARCH_KEY)
+
 module.exports = options => {
   options = withDefaults(options)
-  const mdxSource = options.sources.find(source => source.name == 'mdx')
-  const mdxExtensions = mdxSource && mdxSource.extensions
   
   const plugins = [
     {
@@ -24,6 +30,12 @@ module.exports = options => {
       resolve: '@elegantstack/gatsby-plugin-mkdir',
       options
     },
+    { 
+      resolve: `gatsby-plugin-disqus`, 
+      options: { 
+        shortname: `emerge-digital` 
+      } 
+    }, 
     'gatsby-plugin-catch-links',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -34,39 +46,40 @@ module.exports = options => {
       }, // All options are optional
     },
     {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        extensions: mdxExtensions,
-        gatsbyRemarkPlugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1140,
-              quality: options.imageQuality,
-              showCaptions: true,
-              linkImagesToOriginal: false,
-              disableBgImageOnAlpha: true
-            }
-          },
-          {
-            resolve: 'gatsby-remark-embed-video',
-            options: {
-              width: 800
-            }
-          },
-          { resolve: 'gatsby-remark-responsive-iframe' },
-          { resolve: 'gatsby-remark-copy-linked-files' },
-          { resolve: 'gatsby-remark-smartypants' },
-          ...options.gatsbyRemarkPlugins
-        ],
-        remarkPlugins: [require('remark-slug'), ...options.remarkPlugins]
-      }
-    },
-    {
       resolve: `gatsby-source-wordpress`,
       options: {
         url: `https://emergedigital.ae/graphql`,
         restApiRoutePrefix: `wp-json`,
+        production: {
+          allow401Images: true,
+          allow404Images: true,
+        },
+        excludeFieldNames: [
+          "contentNodes",
+          "seo",
+          "ancestors",
+          "author",
+          "template",
+          "lastEditedBy",
+          "authorDatabaseId",
+          "authorId",
+          "contentTypeName",
+          "dateGmt",
+          "desiredSlug",
+          "enclosure",
+          "isContentNode",
+          "isTermNode",
+          "modified",
+          "modifiedGmt",
+          "parentDatabaseId",
+          "parentId",
+          "srcSet",
+          "parent",
+          "children"
+        ],
+        html: {
+          useGatsbyImage: true,
+        },
       },
     },
     {
@@ -84,7 +97,7 @@ module.exports = options => {
       typeName: ({ node }) =>
         node.sourceInstanceName === 'block'
           ? 'BlockContent'
-          : _.upperFirst(_.camelCase(`${path.basename(node.dir)} Json`))
+          : l.upperFirst(l.camelCase(`${path.basename(node.dir)} Json`))
     }
   })
 

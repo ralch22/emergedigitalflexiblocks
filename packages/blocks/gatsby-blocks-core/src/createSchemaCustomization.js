@@ -1,34 +1,9 @@
 const types = require('./types')
-const withDefaults = require('./utils/default.options')
 
-module.exports = async ({ actions, schema }, pluginOptions) => {
+module.exports = async ({ actions }) => {
   const { createTypes } = actions
-  pluginOptions = withDefaults(pluginOptions)
 
-  const imageNodeTypes = []
-  pluginOptions.sources.forEach(({ imageNodeType }) => {
-    imageNodeType && imageNodeTypes.push(imageNodeType)
-  })
-
-  const allTypeDefs = [
-    /**
-     * Schema Interfaces
-     *
-     * For a semantic schema we define an interface for file and
-     * api sources of data
-     */
-    types.interfaces,
-    /**
-     * Image Asset Type
-     *
-     * Union type for image assets from file or api locations
-     */
-    schema.buildUnionType({
-      name: 'ImageAsset',
-      types: imageNodeTypes,
-      resolveType: node => node.internal && node.internal.type
-    })
-  ]
+  const allTypeDefs = [types.file]
 
   createTypes(allTypeDefs)
 }

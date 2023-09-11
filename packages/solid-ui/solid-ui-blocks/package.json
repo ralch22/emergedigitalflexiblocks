@@ -11,6 +11,15 @@
     "react-icons": "^4.7.1",
     "react-sticky-el": "^2.0.9",
     "react-tabs": "^6.0.0",
+    "algoliasearch": "^4.14.3",
+    "gatsby-plugin-disqus": "^1.2.4",
+    "gatsby-plugin-mdx": "3.20.0",
+    "gatsby-plugin-react-helmet": "^6.6.0",
+    "group-array": "^1.0.0",
+    "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.39.0",
+    "react-schemaorg": "^2.0.0",
+    "react-share": "^4.4.1",
     "theme-ui": "^0.3.4"
   }
 }

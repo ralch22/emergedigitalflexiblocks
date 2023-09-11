@@ -20,7 +20,6 @@ export const query = graphql`
       ...ArticleAuthor
     }
     body
-    keywords
     tags {
       id
       name

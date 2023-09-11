@@ -8,70 +8,163 @@ export const pageQuery = graphql`
     $id: String!
     $previousId: String
     $nextId: String
-    $categoryId: String
+    $categoriesId: [String]
     $tagsIds: [String]
     $hasTags: Boolean!
-    $includeExcerpt: Boolean!
-    $includeTimeToRead: Boolean!
-    $includeTableOfContents: Boolean!
-    $imageQuality: Int!
   ) {
-    post: article(id: { eq: $id }) {
-      ...ArticleInformation
-      ...ArticleThumbnailRegular
+    allBlockContent(
+      filter: { page: { in: ["innerpage/blog", "shared"] } }
+    ) {
+      nodes {
+        ...BlockContent
+      }
     }
-    tagCategoryPosts: allArticle(
+    post: wpPost(id: { eq: $id }) {
+      id
+      title
+      slug
+      date(formatString: "MMMM DD, YYYY")
+      content
+      featuredImage {
+        node {
+          altText
+          id
+          sourceUrl
+        }
+      }
+      categories {
+        nodes {
+          name
+        }
+      }
+      author {
+        node {
+          id
+          avatar {
+            url
+          }
+          name
+        }
+      }
+  }
+    tagCategoryPosts: allWpPost(
       filter: {
-        private: { ne: true }
-        draft: { ne: true }
-        tags: { elemMatch: { id: { in: $tagsIds } } }
-        category: { id: { eq: $categoryId } }
+        tags: { nodes: { elemMatch: { id: { in: $tagsIds } } } }
+        categories: { nodes: { elemMatch: { id: { in: $categoriesId } } } }
         id: { ne: $id }
       }
       sort: { date: DESC }
       limit: 6
     ) @include(if: $hasTags) {
       nodes {
-        ...ArticlePreview
-        ...ArticleThumbnailRegular
+        id
+        title
+        slug
+        date(formatString: "MMMM DD, YYYY")
+        content
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        author {
+          node {
+            id
+            avatar {
+              url
+            }
+            name
+          }
+        }
       }
     }
-    tagPosts: allArticle(
+    tagPosts: allWpPost(
       filter: {
-        private: { ne: true }
-        draft: { ne: true }
-        tags: { elemMatch: { id: { in: $tagsIds } } }
+        tags: { nodes: { elemMatch: { id: { in: $tagsIds } } } }
         id: { ne: $id }
       }
       sort: { date: DESC }
       limit: 6
     ) @include(if: $hasTags) {
-      nodes {
-        ...ArticlePreview
-        ...ArticleThumbnailRegular
+        nodes {
+        id
+        title
+        slug
+        date(formatString: "MMMM DD, YYYY")
+        content
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        author {
+          node {
+            id
+            avatar {
+              url
+            }
+            name
+          }
+        }
       }
     }
-    categoryPosts: allArticle(
+    categoryPosts: allWpPost(
       filter: {
-        private: { ne: true }
-        draft: { ne: true }
-        category: { id: { eq: $categoryId } }
+        categories: { nodes: { elemMatch: { id: { in: $categoriesId } } } }
         id: { ne: $id }
       }
       sort: { date: DESC }
       limit: 6
     ) {
-      nodes {
-        ...ArticlePreview
-        ...ArticleThumbnailRegular
+        nodes {
+        id
+        title
+        slug
+        date(formatString: "MMMM DD, YYYY")
+        content
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        author {
+          node {
+            id
+            avatar {
+              url
+            }
+            name
+          }
+        }
       }
     }
-    previous: article(id: { eq: $previousId }) {
+    previous: wpPost(id: { eq: $previousId }) {
       id
       slug
       title
     }
-    next: article(id: { eq: $nextId }) {
+    next: wpPost(id: { eq: $nextId }) {
       id
       slug
       title

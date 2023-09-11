@@ -29,13 +29,13 @@ const styles = {
 }
 
 const AvatarSimple = ({ avatar, size, alt }) => {
-  const image = avatar && getImageVariant(avatar, size)
+  // const image = avatar && getImageVariant(avatar, size)
 
   if (!image) return null
 
   return (
     <Box sx={styles.imageWrapperSimple}>
-      <Img image={image} alt={alt} />
+      <img src={avatar.url} alt={alt} />
     </Box>
   )
 }

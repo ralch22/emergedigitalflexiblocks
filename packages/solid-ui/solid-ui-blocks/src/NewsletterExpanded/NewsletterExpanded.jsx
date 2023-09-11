@@ -42,7 +42,7 @@ const styles = {
   }
 }
 
-const NewsletterExpanded = ({ simple }) => {
+const NewsletterExpanded = ({ simple, content: { collection, form }  }) => {
   const {
     handleSubmit,
     canSubmit,
@@ -66,13 +66,7 @@ const NewsletterExpanded = ({ simple }) => {
         </Text>
         <Box sx={styles.form}>
           <NewsletterForm
-            {...{
-              handleSubmit,
-              canSubmit,
-              submitting,
-              message,
-              success
-            }}
+            form={form}
           />
         </Box>
       </Box>

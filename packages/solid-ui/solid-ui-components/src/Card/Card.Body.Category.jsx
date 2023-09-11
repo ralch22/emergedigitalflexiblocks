@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Box, Badge, css } from 'theme-ui'
+import { Box, Badge, css, Flex } from 'theme-ui'
 import rv from '@solid-ui-components/utils/buildResponsiveVariant'
 import getReadableColor from '@solid-ui-components/utils/getReadableColor'
 
@@ -10,23 +10,23 @@ const styles = {
   }
 }
 
-const CardBodyCategory = ({ variant, category, omitCategory }) =>
-  !omitCategory && category && category.slug ? (
-    <Box css={css(styles.badge)} sx={{ variant: rv(variant, 'category') }}>
-      <Badge
-        variant='tag'
-        as={Link}
-        to={category.slug}
-        sx={
-          category.color && {
-            bg: category.color,
-            color: getReadableColor(category.color)
-          }
-        }
-      >
-        {category.name}
-      </Badge>
-    </Box>
-  ) : null
+const CardBodyCategory = ({ variant, categories, omitCategory }) =>
+   (
+    <Flex>
+      {categories.nodes.map(({ name, slug }) => {
+        return(
+          <Box css={css(styles.badge)} sx={{ variant: rv(variant, 'category'), mr: 2 }}>
+            <Badge
+              variant='tag'
+              as={Link}
+              to={slug}
+            >
+              {name}
+            </Badge>
+          </Box>
+        )
+      })}
+    </Flex>
+  ) 
 
 export default CardBodyCategory

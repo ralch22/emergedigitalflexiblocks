@@ -1,0 +1,110 @@
+{
+  "text": [
+    {
+      "text": "Manage, measure, optimize, with Campaign Manager 360",
+      "variant": "h2"
+    },
+    {
+      "text": "Get a complete view of all your digital media campaigns with trusted ad serving and measurement. Campaign Manager 360 helps you save time with cross-channel ad management to maximize insights and optimize media and creative performance across all your digital campaigns.",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/automated.svg",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/laptop.svg",
+        "bg": "omegaLighter"
+      },  
+      "text": [
+        {
+          "text": "Centralized Ad Serving",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Manage all your video and display across the web, apps, YouTube, and emerging environments like connected TV.",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/tool.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Flexibility and Control",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Customizable settings and direct integrations with third-parties give you the flexibility to choose how you manage and measure your campaigns.",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/native.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Streamlined Workflows",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Native integrations with other Google products as well as third parties enable your media, creative and analytics teams to work faster.",
+          "variant": "h4"
+          
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/modal.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      }, 
+      "text": [
+        {
+          "text": "Modeled Conversions",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Get a more complete view of campaign performance with machine learning that fills the conversion measurement gaps introduced by browser restrictions on third-party cookies.",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/cog.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      }, 
+      "text": [
+        {
+          "text": "Automated third-party verification",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Fully automate the process of wrapping tags for verification with Integral Ad Science. Learn how you can save time and streamline your campaign setup, without having to send spreadsheets back and forth.",
+          "variant": "h4"
+        }
+      ]
+    }
+  ]
+}

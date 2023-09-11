@@ -3,7 +3,7 @@
     {
       "text": "Get in Touch with Us",
       "color": "white",
-      "variant": "h5",
+      "variant": "h3",
       "space": 3
     },
     {
@@ -20,58 +20,64 @@
       "text": [
         {
           "text": "Services",
-          "color": "white"
+          "color": "white",
+          "variant": "h3"
         }
       ],
       "buttons": [
         {
+          "text": "Digital Analytics & Measurement",
+          "type": "PAGE",
+          "link": "/services/digital-analytics-measurement-services/",
+          "variant": "links.nav-white"
+        },
+        {
           "text": "Google Analytics 4 Training",
-          "type": "ANCHOR",
-          "link": "#hero",
-          "variant": "links.nav-white",
-          "color": "white"
+          "type": "PAGE",
+          "link": "/services/google-analytics-4-training/",
+          "variant": "links.nav-white"
         },
         {
-          "text": "Google Analytics 4 Audits",
-          "type": "ANCHOR",
-          "link": "advertisement",
-          "variant": "links.nav-white",
-          "color": "white"
+          "text": "Google Analytics 4 Audit",
+          "type": "PAGE",
+          "link": "/services/google-analytics-4-audits/",
+          "variant": "links.nav-white"
         },
         {
-          "text": "Google Tag Manager Audits",
-          "type": "ANCHOR",
-          "link": "contact",
-          "variant": "links.nav-white",
-          "color": "white"
-        },
-        {
-          "text": "Search Engine Marketing (SEM)",
-          "type": "ANCHOR",
-          "link": "#hero",
-          "variant": "links.nav-white",
-          "color": "white"
+          "text": "Google Tag Manager Audit",
+          "type": "PAGE",
+          "link": "/services/google-tag-manager-audits/",
+          "variant": "links.nav-white"
         },
         {
           "text": "Search Engine Optimization",
-          "type": "ANCHOR",
-          "link": "advertisement",
-          "variant": "links.nav-white",
-          "color": "white"
+          "type": "PAGE",
+          "link": "/services/search-engine-optimization/",
+          "variant": "links.nav-white"
+        },
+        {
+          "text": "Paid Media Services",
+          "type": "PAGE",
+          "link": "/services/paid-media-services/",
+          "variant": "links.nav-white"
+        },
+        {
+          "text": "Sem PPC Management",
+          "type": "PAGE",
+          "link": "/services/sem-ppc-management/",
+          "variant": "links.nav-white"
         },
         {
           "text": "App Development",
-          "type": "ANCHOR",
-          "link": "contact",
-          "variant": "links.nav-white",
-          "color": "white"
+          "type": "PAGE",
+          "link": "/services/app-development/",
+          "variant": "links.nav-white"
         },
         {
           "text": "B2B Demand Generation Services",
-          "type": "ANCHOR",
-          "link": "contact",
-          "variant": "links.nav-white",
-          "color": "white"
+          "type": "PAGE",
+          "link": "/services/b2b-demand-generation-services/",
+          "variant": "links.nav-white"
         }
       ]
     },
@@ -79,7 +85,8 @@
       "text": [
         {
           "text": "Technologies",
-          "color": "white"
+          "color": "white",
+          "variant": "h3"
         }
       ],
       "buttons": [
@@ -118,7 +125,8 @@
       "text": [
         {
           "text": "Social Media",
-          "color": "white"
+          "color": "white",
+          "variant": "h3"
         }
       ],
       "buttons": [
@@ -158,7 +166,8 @@
       "text": [
         {
           "text": "Solutions",
-          "color": "white"
+          "color": "white",
+          "variant": "h3"
         }
       ],
       "buttons": [
@@ -211,7 +220,8 @@
       "text": [
         {
           "text": "Accepted Payment Methods",
-          "color": "white"
+          "color": "white",
+          "variant": "h3"
         }
       ],
       "images": [

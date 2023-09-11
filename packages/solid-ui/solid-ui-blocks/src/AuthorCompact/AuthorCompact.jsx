@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link as GLink } from 'gatsby'
-import { Box, Heading, Card, Link } from 'theme-ui'
+import { Box, Heading, Card, Link, Text } from 'theme-ui'
 import Navigation from '@solid-ui-components/Navigation'
 import Section from '@solid-ui-components/Section'
 import Avatar from '@solid-ui-components/Avatar'
@@ -25,11 +25,11 @@ const AuthorCompact = ({ author, omitSocial, ...props }) => {
     <Section aside title='The Author' {...props}>
       <Card variant='paper'>
         <Box sx={styles.wrapper}>
-          {author.thumbnail && (
+          {author.url && (
             <Box sx={styles.avatarWrapper}>
               <Link as={GLink} to={author.slug} aria-label={author.name}>
                 <Avatar
-                  avatar={author.thumbnail}
+                  avatar={author.url}
                   alt={author.name}
                   withPattern
                 />
@@ -39,9 +39,9 @@ const AuthorCompact = ({ author, omitSocial, ...props }) => {
           <Link as={GLink} to={author.slug}>
             <Heading variant='h3'>{author.name}</Heading>
           </Link>
-          <Heading variant='h4' sx={styles.title}>
-            {author.title}
-          </Heading>
+          <Text variant='h4' sx={styles.title}>
+            {author.description}
+          </Text>
           {!omitSocial && author.social && (
             <Navigation
               variant='horizontal'

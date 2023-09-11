@@ -30,7 +30,8 @@ export default {
     display: [`block`, null, `none`]
   },
   input: {
-    ml: 1
+    ml: 1,
+    bg: 'transparent'
   },
   poweredBy: {
     position: `absolute`,
@@ -66,7 +67,7 @@ export default {
     WebkitOverflowScrolling: `touch`,
     width: `90vw`,
     maxWidth: `40em`,
-    maxHeight: [`70vh`, `50vh`],
+    maxHeight: [`50vh`, `40vh`],
     boxShadow: `
 		0 15px 35px 0 rgba(50,50,93,.1),
 		0 5px 15px 0 rgba(0,0,0,.07)
