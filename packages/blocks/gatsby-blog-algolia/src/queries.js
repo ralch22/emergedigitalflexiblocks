@@ -1,7 +1,7 @@
 const postQuery = `{
   posts: allWpPost {
     edges {
-      nodes {
+      node {
         id
         title
         slug

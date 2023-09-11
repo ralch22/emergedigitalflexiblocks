@@ -18,7 +18,6 @@ const createElementFromJson = (jsonNode, index) => {
 };
 
 const ParsedHtmlComponent = ({ parsedJson }) => {
-  console.log("persed:", parsedJson.type)
   const elements = parsedJson.children.map((childNode, index) =>
     createElementFromJson(childNode, index)
   );
