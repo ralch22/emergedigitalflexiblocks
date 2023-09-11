@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react'
 import PropTypes from 'prop-types'
 import { Box, css, Spinner } from 'theme-ui'
+import { navigate } from 'gatsby';
 import Reveal from '@solid-ui-components/Reveal'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox'
@@ -9,8 +10,14 @@ import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea'
 import FormHidden from '@solid-ui-components/ContentForm/FormHidden'
 import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi'
 import useForm from '@helpers/useForm'
+import { useFormik } from 'formik'; // Import Formik
+import * as Yup from 'yup'; // Import Yup for validation
 import { FormContext } from '@solid-ui-components/ContentForm'
 import Divider from '@solid-ui-components/Divider/Divider'
+import { useMutation } from '@apollo/client'
+import { v4 as uuidv4 } from 'uuid';
+import LOGIN from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/login'
+import REGISTER from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/register'
 
 const styles = {
   form: {
@@ -40,68 +47,170 @@ const styles = {
       flex: `100%`,
       ml: 0,
       mt: 3
-    }
+    } 
   }
 }
 
+
+// ... (previous imports and code)
+
 const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
-  const { handleSubmit, submitting, success } = useForm()
-  const { formValues, setFormValues } = useContext(FormContext)
-  const formId = id
+  const [register] = useMutation(REGISTER); // Use register mutation from Apollo Client
+  const [login] = useMutation(LOGIN);
 
-  useEffect(() => {
-    return () =>
-      success !== undefined &&
-      submitting === false &&
-      setFormValues({
-        ...formValues,
-        [formId]: {}
-      })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [success, submitting, setFormValues])
+  // const validationSchema = Yup.object().shape({
+  //   // username: Yup.string().required('Invalid Username').required('Required')
+  //   password: Yup.string().required('Required'),
+  //   email: Yup.string().email('Invalid email').required('Email is required'),
+  //   password: Yup.string().min(8, 'Password must be at least 8 characters').required('Password is required'),
+  //   confirmPassword: Yup.string()
+  //   .oneOf([Yup.ref('password'), null], 'Passwords must match')
+  //   .required('Confirm Password is required'),
+  //   // Add validation for other fields as needed
+  // });
 
-  const onChange = e => {
-    setFormValues({
-      ...formValues,
-      [formId]: {
-        ...formValues?.[formId],
-        [e.target.name]: e.target.checked || e.target.value
+  // Initialize different initialValues objects based on button text
+  let initialValues = {};
+  const buttonValue = buttons[0].text;
+  
+  switch (buttonValue) {
+    case 'Contact':
+      initialValues = {
+        // Define initialValues for the contact form
+        name: '',
+        email: '',
+        message: '',
+        // Add other fields as needed
+      };
+      break;
+    case 'Login':
+      initialValues = {
+        // Define initialValues for the login form
+        username: '',
+        password: '',
+        // Add other fields as needed
+      };
+      break;
+    case 'Create Account':
+      initialValues = {
+        username: '',
+        email: '',
+        password: '',
+        confirmPassword: '',
+      };
+      break;
+    default:
+      // Handle unknown button text or any other action
+      break;
+  }
+
+  const formik = useFormik({
+    initialValues,
+    onSubmit: async (values) => {
+
+      switch (buttonValue) {
+        case 'Contact': // Handle contact form submission
+          await submitContactForm(values);
+          break;
+        case 'Login': // Handle login form submission
+          await handleLogin(values);
+          break;
+        case 'Create Account': // Handle register form submission
+          await submitRegisterForm(values);
+          break;
+        default:
+          // Handle unknown button text or any other action
+          break;
       }
-    })
-  }
+    },
+  });
+  console.log("formik", formik)
+  const handleLogin = async (values) => {
+    const loginInput = {
+      username: values.username,
+      password: values.password,
+    };
 
-  const onSubmit = e => {
-    handleSubmit(e, { action })
-  }
+    try {
+      const response = await login({ variables: { input: loginInput } });
+
+      if (response.data && response.data.login && response.data.login.authToken) {
+        // Successful login, handle authToken or redirect to a new page
+        const auth = response.data.login;
+        localStorage.setItem('auth', JSON.stringify(auth)); // Store the token in localStorage
+
+        // Redirect to the dashboard or another page
+        navigate('/dashboard');
+      } else {
+        // Handle login error, display a message to the user
+        console.error('Login error:', response.errors[0].message);
+      }
+    } catch (error) {
+      console.error('Login error:', error.message);
+    }
+  };
+  const submitContactForm = async (values) => {
+    // ... your contact form submission logic using values
+  };
+
+  const submitRegisterForm = async (values) => {
+    const clientMutationId = uuidv4();
+
+    const registerInput = {
+      clientMutationId,
+      password: values.password,
+      email: values.email,
+      username: values.username,
+    };
+
+    try {
+      const response = await register({ variables: { input: registerInput } });
+
+      if (
+        response.data &&
+        response.data.register &&
+        response.data.register.authToken
+      ) {
+        // Successful registration, handle authToken or redirect to a new page
+        const auth = response.data.register;
+        localStorage.setItem('auth', JSON.stringify(auth)); // Store the token in localStorage
+
+        // Redirect to the dashboard or another page
+        navigate('/dashboard');
+      } else {
+        // Handle registration error and display a message to the user
+        console.error('Registration error:', response.errors[0].message);
+      }
+    } catch (error) {
+      console.error('Registration error:', error.message);
+    }
+  };
 
   return (
     <form
       css={css(styles.form)}
-      onSubmit={onSubmit}
-      method='POST'
-      action={action}
-      demo={action ? undefined : 'demo'}
+      onSubmit={formik.handleSubmit}
     >
-      <Box variant='forms.row'>
+      <Box variant="forms.row">
         {fields?.map(({ identifier, value, ...props }, index) => {
-          let Component
+          let Component;
           switch (props.type) {
             case 'PASSWORD':
             case 'EMAIL':
             case 'TEXT':
-              Component = FormInput
-              break
+              Component = FormInput;
+              break;
             case 'TEXTAREA':
-              Component = FormTextarea
-              break
+              Component = FormTextarea;
+              break;
             case 'CHECKBOX':
-              Component = FormCheckbox
-              break
+              Component = FormCheckbox;
+              break;
             case 'HIDDEN':
-              Component = FormHidden
-              break
+              Component = FormHidden;
+              break;
             default:
-              break
+              break;
           }
 
           return (
@@ -111,23 +220,29 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
             >
               <Component
                 {...props}
-                onChange={onChange}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 name={identifier}
-                id={`${formId}.${identifier}`}
-                value={formValues?.[formId]?.[identifier] || value || undefined}
+                id={`${id}.${identifier}`}
+                value={formik.values[identifier] || value || ''}
+                // Add other Formik-related props as needed
               />
             </Box>
-          )
+          );
         })}
       </Box>
+       {/* Error messages */}
+       {formik.errors.password && formik.touched.password && (
+        <div>{formik.errors.password}</div>
+      )}
+      {formik.errors.confirmPassword && formik.touched.confirmPassword && (
+        <div>{formik.errors.confirmPassword}</div>
+      )}
       <Box sx={{ textAlign: `center` }}>
-        <Divider space="1" />
-        <ContentButtons
-          content={buttons}
-          wrapperStyles={styles.buttonsWrapper}
-        />
+        
+        <button type='submit'>{buttons[0].text}</button>
       </Box>
-      <Box
+      {/* <Box
         sx={styles.responseOverlay}
         css={(submitting || success) && styles.responseOverlay.active}
       >
@@ -144,15 +259,16 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
         {success === false && (
           <BiErrorCircle size='64' css={css({ color: `error` })} />
         )}
-      </Box>
+      </Box> */}
     </form>
-  )
-}
-
-export default ContentForm
+  );
+};
 
 ContentForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
   success: PropTypes.bool
 }
+
+export default ContentForm;
+

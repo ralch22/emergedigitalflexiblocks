@@ -1,0 +1,32 @@
+{
+    "text": [
+      {
+        "text": "Google Marketing Plartform",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Introducing Google Marketing Platform, a unified advertising and analytics platform for smarter marketing and better results.",
+        "variant": "h2",
+        "color": "black"
+      },
+      {
+          "text": "Back in 2018 when Google advertising team first announced the Google Marketing platform, the idea was to create a single platform for businesses to manage their digital marketing in a constantly changing environment. Indeed, Brad Bender, then Vice President of Display and Video Advertising products, refers to how much technology has changed since the introduction of Doubleclick products in 1996. Therefore, it was the right time for Google to improve its solutions and support the growing challenges posed by technological advances. Google Marketing unified DoubleClick advertiser products and the Google Analytics 360 Suite under a single brand: Google Marketing Platform.",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "Below, we explain more in detail what to expect from the Google Marketing Platform.",
+            "variant": "medium",
+            "color": "alphaDark",
+            "fontWeight": "bold"
+          }
+    ],
+    "images": [
+      {
+        "src": "https://emergedigital.ae/wp-content/uploads/2022/07/GMP_Logo_Animation_Loop_kqdSyht.gif",
+        "alt": "alt text"
+      }
+    ]
+  }
+  

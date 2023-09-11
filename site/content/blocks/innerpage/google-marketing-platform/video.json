@@ -1,0 +1,20 @@
+{
+  "text": [
+   
+    {
+      "text": "Introduction to Analytics 360 Put customer insights at the center of your marketing strategy",
+      "variant": "h2"
+    },
+    {
+      "text": "Customers today are using multiple devices and following many paths to purchase. Turning those interactions into insights and then using them to drive better results can be a real challenge. Analytics 360 was created to address this challenge. It gives you customer analytics that reveals insights about how people interact with your brand —whether they’re online or offline.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/analytics-360.png",
+      "alt": "alt text"
+    }
+  ]
+}

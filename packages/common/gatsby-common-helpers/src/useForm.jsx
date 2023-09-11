@@ -5,7 +5,7 @@ const useForm = () => {
   const [target, setTarget] = useState({})
   const [success, setSuccess] = useState()
   const [values, setValues] = useState()
-  const [action, setAction] = useState()
+  const [action, setAction] = useState() 
 
   const handleSubmit = (e, { values, action } = {}) => {
     e.preventDefault()
@@ -19,7 +19,7 @@ const useForm = () => {
     const form = new FormData(target)
     const formData = new URLSearchParams(values || form).toString()
     const isDemo = target.getAttribute('demo')
-
+    
     // Mimicking form submission for demos
     if (isDemo) {
       setTimeout(() => {

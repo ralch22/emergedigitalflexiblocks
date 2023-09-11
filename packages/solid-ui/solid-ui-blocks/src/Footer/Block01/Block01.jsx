@@ -62,7 +62,7 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
           <Box sx={styles.column}>
             <ContentText content={text} />
             <CustomTabSwitcher tabs={tabs} />
-
+            <img src="https://emergedigital.ae/wp-content/uploads/2019/10/WPEngine_Member-Badge.png" alt="" />
             <ClutchWidget />
             {/* {images && <ContentImages
                      content={images[5]}
@@ -98,10 +98,12 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
               ))}
           </Grid>
         </Flex>
-        <Divider spaceY={5} />
+        
         <Flex sx={{ justifyContent: "center", alignItems: "center", textAlign: "center" }}>
           <p>Copyright © 2023 Emerge Digital. All Rights Reserved. </p>
+          <Divider spaceY={2} />
         </Flex>
+        
       </Container>
     </div>
   );

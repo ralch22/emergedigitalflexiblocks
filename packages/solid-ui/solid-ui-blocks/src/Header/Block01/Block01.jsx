@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link as GLink } from 'gatsby'
 import Sticky from 'react-sticky-el'
+import pageContextProvider from '@helpers/pageContextProvider'
 import { Container, Box, Flex, css } from 'theme-ui'
 import Reveal from '@solid-ui-components/Reveal'
+import Search from '@solid-ui-blocks/Search'
 import Drawer from '@solid-ui-components/Drawer'
 import ContentImages from '@solid-ui-components/ContentImages'
 import ContentButtons from '@solid-ui-components/ContentButtons'
@@ -40,6 +42,12 @@ const styles = {
     alignItems: `center`
     // height: [`6rem`, `7rem`], //prevent layout shift
   },
+  searchContainer: {
+    flexBasis: [`auto`, null, `1/3`],
+    minWidth: `auto`,
+    order: [3, null, `unset`],
+    mx: 3
+  },
   logoContainer: {
     flexShrink: 0,
     mr: [null, null, 3, 5]
@@ -57,7 +65,12 @@ const styles = {
   }
 }
 
-const HeaderBlock01 = ({ content: { images, collection }, menuJustify }) => {
+const HeaderBlock01 = ({ search, content: { images, collection }, menuJustify }) => {
+  const context = useContext(pageContextProvider)
+
+  const { services, mobileMenu, darkMode } = context.pageContext
+
+  const algolia = services && services.algolia
   return (
     <>
       <Sticky
@@ -77,7 +90,10 @@ const HeaderBlock01 = ({ content: { images, collection }, menuJustify }) => {
                   />
                 </GLink>
               </Box>
-              {collection && (
+              {search && (<Box sx={styles.searchContainer}>{algolia && <Search />}</Box>)}
+             {!search && (
+              <>
+                 {collection && (
                 <>
                   <Box sx={styles.desktopMenu}>
                     <Reveal effect='fadeInDown'>
@@ -109,7 +125,7 @@ const HeaderBlock01 = ({ content: { images, collection }, menuJustify }) => {
                     <Drawer buttonStyle={{ svg: { size: 32 } }}>
                       {collection.map(
                         ({ buttons }, index) =>
-                          buttons && (
+                          buttons  && (
                             <Box
                               key={`item-${index}`}
                               sx={{
@@ -130,6 +146,9 @@ const HeaderBlock01 = ({ content: { images, collection }, menuJustify }) => {
                   </Box>
                 </>
               )}
+              </>
+             )}
+             
             </Flex>
           </Container>
         </Container>

@@ -52,7 +52,6 @@ enum BlockContentButtonType {
   TAB
   SUBMIT
   SUB
-  INNERSUB
 }
 
 type BlockContentButton {

@@ -9,7 +9,7 @@ import ContentText from '@solid-ui-components/ContentText'
 import ContentImages from '@solid-ui-components/ContentImages'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
-import ContentIcon from '@solid-ui-components/ContentIcon/ContentIcon'
+import ListItem from '@solid-ui-components/ListItem'
 
 const styles = {
   items: {
@@ -23,9 +23,17 @@ const styles = {
   }
 }
 
+const textArray = [
+  {
+    text: "Analytics 360 is a complete enterprise analytics solution that gives you a deeper understanding of your customers so you can deliver better experiences and improve your marketing results.​",
+    variant: "medium"
+  }
+]
+
 const FeaturesWithPhotoBlock05 = ({
   content: { text, images, collection, buttons },
-  reverse
+  reverse,
+  bottomText
 }) => (
   <Container sx={{ position: `relative` }}>
     <Flex
@@ -39,26 +47,30 @@ const FeaturesWithPhotoBlock05 = ({
       }}
     >
       <FlexImage reverse={reverse}>
-        <ContentImages content={{ images }} reverse={reverse} />
-      </FlexImage>
-      <FlexContent reverse={reverse}>
-        <Box sx={{ textAlign: [`center`, `left`] }}>
+      <Box sx={{ textAlign: [`center`, `left`] }}>
           <ContentText content={text} />
         </Box>
+        <ContentImages content={{ images }} reverse={reverse} />
+        <ContentText content={text} />
+        {bottomText && <ContentText content={textArray} />}
+      </FlexImage>
+      <FlexContent reverse={reverse}>
+        
         {collection && (
           <>
             <Divider space={3} />
            
-            {collection.map(({ text, icon }, index) => (
+            {collection.map((props, index) => (
               <Reveal
                 key={`item-${index}`}
                 effect='fadeInPop'
                 delay={0.3 * (index + 1)}
               >
-                <Flex sx={{ alignItems: `center`, mb: 3 }}>
+                <ListItem {...props} iconProps={{ size: 'md' }} center />
+                {/* <Flex sx={{ alignItems: `center`, mb: 3 }}>
                   <ContentIcon  content={icon} size='sm' mr='3' />
                   <ContentText content={text[0]} mb='0' />
-                </Flex>
+                </Flex> */}
               </Reveal>
             ))}
 

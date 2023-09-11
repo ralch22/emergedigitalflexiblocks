@@ -11,10 +11,7 @@ import ContentButtons from '@solid-ui-components/ContentButtons'
 import ContentText from '@solid-ui-components/ContentText'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
-const FeaturesWithPhotoBlock01 = ({
-  content: { text, images, collection, buttons, gradient },
-  reverse
-}) => (
+const FeaturesWithPhotoBlock01 = ({ content: { text, images, simpleImg, collection, buttons, gradient }, reverse, dangerously, column}) => (
   <Box sx={{ background: gradient ? "linear-gradient(90deg, #336567 0%, #3F2B56 100%)" : '', width: '100%' }}>
     <Container wide sx={{ position: `relative` }}>
       <Flex
@@ -22,15 +19,23 @@ const FeaturesWithPhotoBlock01 = ({
             alignItems: [null, `center`],
             flexDirection: [
               reverse ? `column-reverse` : `column`,
-              reverse ? `row-reverse` : `row`
+              reverse ? `${column ? 'column-reverse' : 'row-reverse'}` : `${column ? 'column' : 'row'}`
             ],
             mx: [null, null, null, -4]
           }}
         >
           <FlexContent reverse={reverse}>
-            <Box sx={{ textAlign: ['center', 'left'] }}>
-              <ContentText content={text} />
-            </Box>
+            {dangerously ? (
+              <Box sx={{ textAlign: ['center', 'left'] }}>
+                <ContentText content={text?.[0]} />
+                <ContentText dangerously content={text?.[1]} />
+              </Box>
+            ) : (
+              <Box sx={{ textAlign: ['center', 'left'] }}>
+                <ContentText content={text} />
+              </Box>
+            )}
+            
             {buttons && (
               <Box sx={{ textAlign: [`center`, `left`] }}>
                 <Divider space={3} />
@@ -39,7 +44,8 @@ const FeaturesWithPhotoBlock01 = ({
             )}
           </FlexContent>
           <FlexImage reverse={reverse}>
-            <ContentImages content={{ images }} reverse={reverse} />
+            {!simpleImg && <ContentImages content={{ images }} reverse={reverse} />}
+            {simpleImg && <img style={{ width: '100%' }} src="https://emergedigital.ae/wp-content/uploads/2022/07/GMP_Logo_Animation_Loop_kqdSyht.gif" alt={images[0].alt} />}
           </FlexImage>
         </Flex>
       

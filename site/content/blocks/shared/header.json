@@ -62,7 +62,7 @@
               "variant": "links.nav-dark"
             },
             {
-              "text": "Sem PPC Management",
+              "text": "B2B Demand Generation Services",
               "type": "PAGE",
               "link": "/services/b2b-demand-generation-services/",
               "variant": "links.nav-dark"
@@ -107,7 +107,7 @@
         {
           "text": "Blog",
           "type": "PAGE",
-          "link": "/blog/",
+          "link": "/posts/",
           "variant": "links.nav-dark"
         },
         {
@@ -152,11 +152,7 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "buttons": [
+        },
         {
           "text": "Contact Us",
           "type": "MODAL",
@@ -166,4 +162,5 @@
       ]
     }
   ]
+  
 }

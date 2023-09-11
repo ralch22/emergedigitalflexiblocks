@@ -8,14 +8,11 @@ const styles = {
     display: `inline-flex`,
     color: `heading`,
     fontWeight: `medium`,
-    textDecoration: `none`,
     ':visited': {
       color: `heading`
     },
-    ':hover': {
-      color: `#663399`
-    },
     svg: {
+      fill: `omegaDarker`,
       height: 24,
       ml: 2
     }
@@ -24,6 +21,7 @@ const styles = {
 
 const PoweredByGatsby = () => (
   <Link
+    variant='mute'
     target='_blank'
     title='Gatsby'
     href='https://www.gatsbyjs.org'

@@ -1,0 +1,75 @@
+{
+  "text": [
+    {
+      "text": "A consolidated tool for collaborative marketing",
+      "variant": "h2"
+    },
+    {
+      "text": "Display & Video 360 enables marketers to manage their reservation, programmatic, and programmatic guaranteed campaigns across display, video, TV, audio, and other channels, all in one place. It is organized around five integrated modules that work together: Campaigns, Audiences, Creatives, Inventory, and Insights.",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/insight.svg",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/homepage/marketing/users.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Collaborate Effectively",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Collaborate more efficiently across teams, so you can align media, data, and creative inputs and deliver better ad experiences for your customers.",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Take Control of Spend",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Maintain control over your marketing investments - manage all your spending in one place, across both reserved and open auction buys",
+          "variant": "h4"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Leverage Automation",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Deliver faster, smarter marketing powered by Google's latest machine learning, with capabilities like automated bidding and inventory recommendations",
+          "variant": "h4"
+          
+        }
+      ]
+    }
+  ]
+}

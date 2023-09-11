@@ -89,7 +89,7 @@ const FaqBlock01 = ({ content: { text, collection } }) => (
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <ContentText content={text?.[1]} pt='0' pb='4' px='5' ml='2' />
+                <ContentText dangerously content={text?.[1]} pt='0' pb='4' px='5' ml='2' />
               </AccordionItemPanel>
             </AccordionItem>
           </ContentContainer>

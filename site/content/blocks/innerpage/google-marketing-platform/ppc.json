@@ -1,0 +1,25 @@
+{
+  "text": [
+   
+    {
+      "text": "Programmatic deal buys happen in Marketplace",
+      "variant": "h2"
+    },
+    {
+      "text": "<ul><li><span style='font-weight: 300;'>Access leading premium publishers’ digital inventories.</span></li><li><p><span style='font-weight: 300;'>Partnerships with leading TV publishers as CTV demand grows.</span></p></li><li><p><span style='font-weight: 300;'>Highlights newest and greatest inventories.</span></p></li><li><p><span style='font-weight: 300;'>Turnkey, easy-to-activate pre-curated media packages by exchanges</span></p></li><li><p><span style='font-weight: 300;'>Negotiate and execute deals directly in the interface</span></p></li></ul>",
+      "variant": "medium",
+      "color": "alphaDark",
+      "fontWeight": "bold"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/marketplace1.jpg",
+      "alt": "alt text"
+    },
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/markeplace1.jpg",
+      "alt": "alt text"
+    }
+  ]
+}
