@@ -16,9 +16,6 @@
     "conventional-changelog-conventionalcommits": "^4.6.3",
     "rsync": "^0.6.1"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "packageManager": "yarn@1.22.16",
   "dependencies": {
     "@apollo/client": "^3.8.3",
