@@ -16,7 +16,6 @@ import Categories from '@solid-ui-blocks/Categories'
 import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded'
 import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal'
 import BannerVertical from '@solid-ui-blocks/BannerVertical'
-import { useBlogCategories } from '@blocks-helpers'
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 
 export default function RenderPost({
@@ -24,7 +23,6 @@ export default function RenderPost({
     ...props
   }) {
     const { pageContext: { services = {} } = {} } = props
-  const categories = useBlogCategories()
 
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 

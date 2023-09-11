@@ -4,10 +4,9 @@ import PageTitle from '@solid-ui-components/PageTitle'
 import Divider from '@solid-ui-components/Divider'
 import Seo from '@solid-ui-blocks/Seo'
 import AuthorExpanded from '@solid-ui-blocks/AuthorExpanded'
-import { useBlogAuthors } from '@blocks-helpers'
 
 const PageAuthors = props => {
-  const authors = useBlogAuthors()
+
 
   return (
     <Layout {...props}>
