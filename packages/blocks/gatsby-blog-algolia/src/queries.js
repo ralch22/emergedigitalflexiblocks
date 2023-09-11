@@ -9,8 +9,8 @@ const postQuery = `{
         excerpt
         featuredImage {
           node {
-            altText
             id
+            altText
             sourceUrl
           }
         }
