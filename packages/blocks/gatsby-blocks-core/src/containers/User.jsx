@@ -9,8 +9,9 @@ import Header from '@solid-ui-blocks/Header/Block01';
 import { Box, Flex, Link, Text, Heading } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider'
 import { gql } from 'urql';
-import { isUserLoggedIn } from '../../../../solid-ui/solid-ui-components/src/utils/functions'
+import { navigate } from 'gatsby'
 import { normalizeBlockContentNodes } from '@blocks-helpers';
+import { handleLogout } from '../utils/functions'
 
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
@@ -25,11 +26,17 @@ const parsedData = JSON.parse(auth);
 // `;
 
 export default function DashboardPage({ data: { allBlockContent }, ...props }) {
-  // Fetch the user's information
-//   const [userResult] = useQuery({
-//     query: USER_QUERY,
-//     variables: { userId: parsedData.user.id }
-//   });
+  useEffect(() => {
+    // Check if the token is expired
+    if (parsedData && parsedData.user.jwtAuthExpiration) {
+      const currentTime = Date.now() / 1000; // Get current timestamp in seconds
+      if (currentTime >= parsedData.user.jwtAuthExpiration) {
+        // Token has expired, log out the user and redirect
+        handleLogout(); // Implement your logout function
+        navigate('/'); // Redirect to the homepage
+      }
+    }
+  }, []);
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 //   const { data: userData } = userResult;
 
@@ -54,6 +61,7 @@ export default function DashboardPage({ data: { allBlockContent }, ...props }) {
                 </Text>
                 <Text>
                 <Link to="/dashboard/orders">Orders</Link>
+                <Box onClick={handleLogout}>Logout</Box>
                 </Text>
             </Box>
             

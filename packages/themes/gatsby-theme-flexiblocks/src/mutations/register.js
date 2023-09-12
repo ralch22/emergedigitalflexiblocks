@@ -14,6 +14,7 @@ const REGISTER = gql`
         email
         jwtAuthToken
         jwtRefreshToken
+        jwtAuthExpiration
       }
     }
   }

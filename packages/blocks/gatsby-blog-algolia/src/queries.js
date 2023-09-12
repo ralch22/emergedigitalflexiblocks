@@ -16,6 +16,7 @@ const postQuery = `{
         }
         categories {
           nodes {
+            id
             name
           }
         }
@@ -41,10 +42,10 @@ const flatten = arr =>
     ...rest
   }))
 
-const settings = {
-  attributesToSnippet: ['excerpt:20'],
-  attributeForDistinct: 'category.name'
-}
+// const settings = {
+//   attributesToSnippet: ['excerpt:20'],
+//   attributeForDistinct: 'categories.nodes.name'
+// }
 
 const queries = [
   {

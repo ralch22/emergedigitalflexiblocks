@@ -1,6 +1,7 @@
 import { v4 } from "uuid";
 import { isEmpty, remove } from 'lodash';
 import DOMPurify from 'dompurify';
+import { navigate } from 'gatsby';
 
 export const normalizePath = (path) => {
   const pathStr = path.split("/");
@@ -54,6 +55,18 @@ export const getFloatVal = (string) => {
     ? parseFloat(parseFloat(floatValue).toFixed(2))
     : "";
 };
+
+
+
+export function handleLogout() {
+  // Remove the authentication-related data from local storage
+  localStorage.removeItem('auth');
+  localStorage.removeItem('woo-session');
+
+  // Redirect the user to the homepage or the login page
+  navigate('/');
+}
+
 
 /**
  * Add first product.
