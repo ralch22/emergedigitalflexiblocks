@@ -214,11 +214,11 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
 
       if (
         response.data &&
-        response.data.register &&
-        response.data.register.authToken
+        response.data.registerUser &&
+        response.data.registerUser.jwtAuthToken
       ) {
         // Successful registration, handle authToken or redirect to a new page
-        const auth = response.data.register;
+        const auth = response.data.registerUser;
         localStorage.setItem('auth', JSON.stringify(auth)); // Store the token in localStorage
 
         // Redirect to the dashboard or another page
