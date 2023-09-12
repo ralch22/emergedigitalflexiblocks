@@ -62,7 +62,7 @@ export default function Post({
                 <PostFooter {...{ previous, next }} />
               </Card>
             </Main>
-            <Box sx={{ pl: `3`, flexBasis: `1/4` }}>
+            <Box sx={{ pl: `3`, flexBasis: `1/4`, display: [null, `block`]}}>
               <AuthorCompact author={post.author.node} omitTitle />
               <Divider />
               <Sticky>

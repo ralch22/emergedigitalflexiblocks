@@ -6,6 +6,7 @@ import { FaTimes } from 'react-icons/fa'
 import SearchBox from './Search.Box'
 import Results from './Search.Results'
 import styles from './Search.styles'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const indexName = process.env.GATSBY_ALGOLIA_INDEX_NAME || 'Posts'
 const searchDistinctLimit = 4
@@ -22,9 +23,35 @@ const Overlay = ({ onClick }) => (
   </>
 )
 
+
+
 const Search = ({ isFocused = false }) => {
   const [focus, setFocus] = useState(isFocused)
-
+  const data = useStaticQuery(graphql`
+  query {
+    allWpPost {
+      nodes {
+        objectID: id
+        title
+        content
+        slug
+        categories {
+          nodes {
+            name
+          }
+        }
+      }
+    }
+  }
+`);
+  const posts = data.allWpPost.nodes.map((node) => ({
+    objectID: node.objectID,
+    title: node.title,
+    excerpt: node.content,
+    slug: node.slug,
+    category: node.categories.nodes.map((category) => category.name).join(', '),
+  }));
+  
   const algoliaClient = algoliasearch(
     process.env.GATSBY_ALGOLIA_APP_ID,
     process.env.GATSBY_ALGOLIA_SEARCH_KEY
@@ -56,7 +83,7 @@ const Search = ({ isFocused = false }) => {
           handleFocus={handleFocus}
           handleClose={handleClose}
         />
-        {focus && <Results />}
+        {focus && <Results posts={posts} />}
       </InstantSearch>
       {focus && (
         <>

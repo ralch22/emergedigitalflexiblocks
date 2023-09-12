@@ -7,8 +7,8 @@ import {
   PoweredBy
 } from 'react-instantsearch-dom'
 import { Heading, Box, Spinner } from 'theme-ui'
-import Card from '@components/Card'
-import useScrollDisabler from '@components/useScrollDisabler'
+import Card from '@solid-ui-components/Card'
+import useScrollDisabler from '@solid-ui-components/useScrollDisabler'
 import styles from './Search.styles'
 
 const Hits = ({ searchState, searchResults }) => {

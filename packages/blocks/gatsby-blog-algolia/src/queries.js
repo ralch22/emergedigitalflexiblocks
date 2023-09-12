@@ -42,10 +42,10 @@ const flatten = arr =>
     ...rest
   }))
 
-// const settings = {
-//   attributesToSnippet: ['excerpt:20'],
-//   attributeForDistinct: 'categories.nodes.name'
-// }
+const settings = {
+  attributesToSnippet: ['excerpt:20'],
+  attributeForDistinct: 'categories.nodes.name'
+}
 
 const queries = [
   {

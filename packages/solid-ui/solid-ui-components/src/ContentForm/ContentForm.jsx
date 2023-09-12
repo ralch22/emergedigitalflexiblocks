@@ -109,7 +109,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
     onSubmit: async (values) => {
 
       switch (buttonValue) {
-        case 'Contact': // Handle contact form submission
+        case 'Send Message': // Handle contact form submission
           await submitContactForm(values);
           break;
         case 'Login': // Handle login form submission

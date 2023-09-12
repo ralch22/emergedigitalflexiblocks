@@ -30,3 +30,5 @@ const ParsedHtmlComponent = ({ parsedJson }) => {
 };
 
 export default ParsedHtmlComponent;
+
+
