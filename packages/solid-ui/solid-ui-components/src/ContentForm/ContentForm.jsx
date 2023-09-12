@@ -149,7 +149,54 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
     }
   };
   const submitContactForm = async (values) => {
-    // ... your contact form submission logic using values
+    const portalId = GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
+    const formGuid = GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
+    const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
+  
+    const requestBody = {
+      portalId,
+      formGuid,
+      fields: [
+        {
+          name: 'email',
+          value: values,
+        },
+        {
+          name: 'firstName',
+          value: values.firstName,
+        },
+        {
+          name: 'lastName',
+          value: values.lastName,
+        },
+        {
+          name: 'message',
+          value: values.message,
+        }
+      ],
+    };
+  
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    };
+  
+    try {
+      const response = await fetch(apiUrl, requestOptions);
+      
+      if (response.ok) {
+        const responseData = await response.json();
+        return responseData;
+      } else {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      throw error;
+    }
   };
 
   const submitRegisterForm = async (values) => {
@@ -239,7 +286,12 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
       )}
       <Box sx={{ textAlign: `center` }}>
         
-        <button type='submit'>{buttons[0].text}</button>
+        <button type='submit'>
+        <ContentButtons
+          content={buttons}
+          wrapperStyles={styles.buttonsWrapper}
+        />
+        </button>
       </Box>
       {/* <Box
         sx={styles.responseOverlay}
