@@ -57,7 +57,7 @@ export default function RenderPost({
             withModerate
           />
         </Main>
-        <Box sx={{ pl: `3`, flexBasis: `1/4`, display: [null, `block`] }}>
+        <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>
           <BannerVertical content={content['posts']} />
         </Box>
       </Stack>

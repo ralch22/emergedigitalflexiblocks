@@ -1,36 +1,13 @@
+
 const postQuery = `{
   posts: allWpPost {
     edges {
       node {
-        id
+        objectID: id
         title
         slug
         date(formatString: "MMMM DD, YYYY")
         excerpt
-        featuredImage {
-          node {
-            id
-            altText
-            sourceUrl
-          }
-        }
-        categories {
-          nodes {
-            id
-            name
-          }
-        }
-        author {
-          node {
-            id
-            slug
-            avatar {
-              url
-            }
-            name
-          }
-        }
-        
       }
     }
   }
@@ -44,7 +21,6 @@ const flatten = arr =>
 
 const settings = {
   attributesToSnippet: ['excerpt:20'],
-  attributeForDistinct: 'categories.nodes.name'
 }
 
 const queries = [

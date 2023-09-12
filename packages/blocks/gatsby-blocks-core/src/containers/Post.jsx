@@ -2,7 +2,7 @@
  * Placeholder component to shadow
  */
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Card, Box  } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
@@ -27,10 +27,15 @@ import {
 } from '@solid-ui-blocks/Post'
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 
+
+
 export default function Post({
     data: { post, tagCategoryPosts, tagPosts, categoryPosts, previous, next, allBlockContent },
     ...props
   }) {
+    // useEffect(() => {
+    //   typeof document !== 'undefined' ? document.location.reload() : null
+    // }, []);
     const relatedPosts = [
         ...(tagCategoryPosts ? tagCategoryPosts.nodes : []),
         ...(tagPosts ? tagPosts.nodes : []),
@@ -43,12 +48,15 @@ export default function Post({
         <Layout {...props}>
           <Seo {...post} siteUrl={siteUrl} />
           <Header search content={content['header']} />
-          <Divider spaceY={10} />
-          <Stack effectProps={{ effect: 'fadeInDown' }}>
-            <PostHead {...post} />
-          </Stack>
+          <div style={{ marginTop: `5rem` }}>
+
+            <Stack  effectProps={{ effect: 'fadeInDown' }}>
+            
+              <PostHead {...post} />
+            </Stack>
+          </div>
           <Divider />
-          <Stack effectProps={{ fraction: 0 }}>
+          <Stack effectProps={{ effect: 'fadeInUp' }}>
             <Main>
               <Card variant='paper'>
                 <PostImage {...post} inCard />
@@ -62,7 +70,7 @@ export default function Post({
                 <PostFooter {...{ previous, next }} />
               </Card>
             </Main>
-            <Box sx={{ pl: `3`, flexBasis: `1/4`, display: [null, `block`]}}>
+            <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`]}}>
               <AuthorCompact author={post.author.node} omitTitle />
               <Divider />
               <Sticky>

@@ -214,8 +214,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
 
       if (
         response.data &&
-        response.data.registerUser &&
-        response.data.registerUser.jwtAuthToken
+        response.data.registerUser
       ) {
         // Successful registration, handle authToken or redirect to a new page
         const auth = response.data.registerUser;
@@ -286,7 +285,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
       )}
       <Box sx={{ textAlign: `center` }}>
         
-        <button type='submit'>
+        <button type='submit' style={{ background: 'transparent', border: 'none' }}>
         <ContentButtons
           content={buttons}
           wrapperStyles={styles.buttonsWrapper}
