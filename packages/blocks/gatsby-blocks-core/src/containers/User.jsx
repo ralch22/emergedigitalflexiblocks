@@ -1,5 +1,4 @@
-import React from 'react';
-import { useQuery } from 'urql';
+import React, { useEffect } from 'react';
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
 import Main from '@solid-ui-layout/Main/Main'
