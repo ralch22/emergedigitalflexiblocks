@@ -6,7 +6,7 @@ import { gql } from '@apollo/client'
 // Define your GraphQL mutation for user registration
 const REGISTER = gql`
   mutation REGISTER ($input: RegisterUserInput!) {
-    register(input: $input) {
+    registerUser(input: $input) {
       authToken
       clientMutationId
       user {
