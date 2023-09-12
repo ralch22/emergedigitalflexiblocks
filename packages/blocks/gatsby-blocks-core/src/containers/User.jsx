@@ -8,10 +8,9 @@ import Seo from '@solid-ui-blocks/Seo'
 import Header from '@solid-ui-blocks/Header/Block01';
 import { Box, Flex, Link, Text, Heading } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider'
-import { gql } from 'urql';
 import { navigate } from 'gatsby'
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { handleLogout } from '../utils/functions'
+import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions'
 
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
