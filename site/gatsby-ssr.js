@@ -1,9 +1,1 @@
-import React from 'react';
-import { Provider } from 'urql';
-import { client } from '../packages/themes/gatsby-theme-flexiblocks/src/apollo/client'; // Import your urql client
-
-export const wrapRootElement = ({ element }) => (
-  <Provider value={client}>
-    {element}
-  </Provider>
-);
+export { wrapRootElement } from '../packages/themes/gatsby-theme-flexiblocks/src/apollo/wrap-root-element'
