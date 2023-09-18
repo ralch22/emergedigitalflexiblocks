@@ -188,7 +188,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
         />
         </button>
       </Box>
-      <Box
+      {/* <Box
         sx={styles.responseOverlay}
         css={isVisible ? styles.responseOverlay.active : null}
       >
@@ -205,7 +205,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
         {status === "failed" && (
           <BiErrorCircle size='64' css={css({ color: `error` })} />
         )}
-      </Box>
+      </Box> */}
     </form>
   );
 };

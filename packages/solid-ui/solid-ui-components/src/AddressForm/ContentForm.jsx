@@ -275,7 +275,7 @@ if (Object.keys(shipping).length !== 0) {
         />
         </button>
       </Box>
-      <Box
+      {/* <Box
         sx={styles.responseOverlay}
         css={isVisible ? styles.responseOverlay.active : null}
       >
@@ -292,7 +292,7 @@ if (Object.keys(shipping).length !== 0) {
         {status === "failed" && (
           <BiErrorCircle size='64' css={css({ color: `error` })} />
         )}
-      </Box>
+      </Box> */}
     </form>
   );
 };
