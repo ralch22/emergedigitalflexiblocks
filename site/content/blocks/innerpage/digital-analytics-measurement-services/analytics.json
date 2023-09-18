@@ -22,7 +22,7 @@
           {
             "text": "Digital Attribution Modelling",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "By using the right digital attribution model, you can find out what really happened on the customer journey.",
@@ -41,7 +41,7 @@
             {
                 "text": "App & Website Analytics",
                 "variant": "h4",
-                "color": "black"
+                 "color": ""
               },
               {
                 "text": "Analyze your data to gain a deeper understanding of customer experiences, brand performance, and marketing ROI.",
@@ -60,7 +60,7 @@
             {
                 "text": "Dynamic Creative Optimisation",
                 "variant": "h4",
-                "color": "black"
+                 "color": ""
               },
               {
                 "text": "There are a number of ways in which display advertising can be optimized and personalized",
@@ -79,7 +79,7 @@
             {
               "text": "Marketing Mix Modelling MMM",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             },
             {
               "text": "Media performance measurement and optimization made simple and intuitive.",
@@ -98,7 +98,7 @@
             {
               "text": "Marketing Reporting & Dashboards",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             },
             {
               "text": "With intelligent reporting, you can harness the power of your data.",
@@ -117,7 +117,7 @@
             {
               "text": "Google Analytics 4 Agency",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             },
             {
               "text": "Upgrading to Google Analytics 4 will help you future-proof your digital analytics",
@@ -136,7 +136,7 @@
             {
               "text": "Propensity Modelling",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             },
             {
               "text": "Learn how machine learning can be used to predict customer behavior",

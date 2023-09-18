@@ -1,0 +1,79 @@
+{
+    "text": [
+      {
+        "text": "Chat With Your Customers At Any Time, From Anywhere",
+        "color": "alpha",
+        "variant": "h4"
+      },
+      {
+        "text": "Why Choose Emerge Digital?",
+        "variant": "h2"
+      },
+      {
+        "text": "Whether your employees prefer to work from a remote location or have to tie ends after-hours, the 3CX system allows professional communication with customers, who don’t give away that you are contacting them while away from the office.",
+        "color": "alpha"
+      },
+      {
+        "text": "So, your customer service can interact with your users on the go!",
+        "color": "alpha"
+      },
+      {
+        "text": "What’s more, 3CX allows for multiple communication channels, including media and document transfer, live chat, phone calls, and voice mails – the entire toolkit you need to level up your customer service!",
+        "color": "alpha"
+      },
+      {
+        "text": "And, thanks to the native CRM integrations supported by 3CX, you can now collect and review essential customer data and information!",
+        "color": "alpha"
+      }
+    ],
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/blender-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "Using your Deskphone with 3CX",
+            "variant": "h4",
+             "color": ""
+          },
+          {
+            "text": "Deskphones - or Voice Over Internet Protocol Devices - have played a critical role in helping companies streamline communications and improve their customer experience. But what is the next step? Integrating your Deskphone with 3CX is a great compromise to upgrade your hardware and access all the features of a cutting-edge software",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/headset-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+          {
+            "text": "PBX: Reinvented for a Remote Workforce",
+            "variant": "h4",
+             "color": ""
+          },
+          {
+            "text": "At Emerge Digital, we have seen the great impact that the right phone system can have on a company’s customer experience and internal communication. Unsure about the best system for your needs? Get in touch with our team of experts to learn more about 3CX.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      }
+    ],
+    "buttons": [
+      {
+        "text": "GET 3CX FREE",
+        "type": "PAGE",
+        "link": "https://www.3cx.com/phone-system/download-phone-system/?resellerId=226359",
+        "target": "_blank",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

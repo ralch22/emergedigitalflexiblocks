@@ -79,19 +79,19 @@
             {
               "text": "Google Marketing Plartform",
               "type": "PAGE",
-              "link": "/services/google-marketing-platform/",
+              "link": "/technologies/google-marketing-platform/",
               "variant": "links.nav-dark"
             },
             {
               "text": "WP Engine",
               "type": "PAGE",
-              "link": "/services/wp-engine/",
+              "link": "/technologies/wp-engine/",
               "variant": "links.nav-dark"
             },
             {
               "text": "3CX",
               "type": "PAGE",
-              "link": "/services/3cx/",
+              "link": "/technologies/3cx/",
               "variant": "links.nav-dark"
             }
               
@@ -154,10 +154,13 @@
           ]
         },
         {
-          "text": "Contact Us",
           "type": "MODAL",
-          "link": "contact",
-          "variant": "secondary"
+          "link": "cart",
+          "variant": "links.nav-dark",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/cart-shopping-solid.svg",
+            "color": "alphaLight"
+          }
         }
       ]
     }

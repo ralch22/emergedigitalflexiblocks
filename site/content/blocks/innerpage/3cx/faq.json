@@ -1,0 +1,72 @@
+{
+  "text": [
+    {
+      "text": "We Are Here To Help You",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "Frequently Asked Questions",
+      "variant": "h2"
+    },
+    {
+      "text": "We help startups, corporations and nonprofits.",
+      "variant": "medium"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "What is a 3CX phone system?",
+          "variant": "h5"
+        },
+        {
+          "text": "<div class='acc-content active' style='display: block;'><p><img decoding='async' class='alignnone size-medium wp-image-2965 entered lazyloaded' src='https://emergedigital.ae/wp-content/uploads/2022/07/nx32-side-graphics-img_grandebfe8-300x105.png' alt='nx32' width='300' height='105' style='width: inherit;' /></p><p>Developed by international VoIP software developer 3CX, the 3CX phone system is a private branch exchange (PBX).</p><p>The software-based system is based on the Session Initiation Protocol (SIP) standard and offers an all-in-one communication solution for entire businesses.&nbsp;</p><p>Thanks to the public switched telephone network (PSTN) and Voice over Internet Protocol (VoIP) extension, 3CX offers a wide range of capabilities and features.</p><p>3cx Phone System is the <strong>Best Communication App for Business</strong> that includes video conferencing, instant messaging, media and audio sharing, phone calls, voicemail services, and fax transfers.</p><p>While extremely powerful and efficient to streamline your entire office communications, 3CX is also created to be incredibly user-friendly, and the proprietary app can be accessed via desktop or mobile devices (including Windows, iOS, and Android devices).</p></div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Can You Use 3CX For Free?​",
+          "variant": "h5"
+        },
+        {
+          "text": "<div class='acc-content active' style='display: block;'><p>It’s understandable – you need to find a phone and communication system for your business that is both efficient and affordable.</p><p>Luckily, when introducing 3CX, you can enjoy all the benefits of improved communications without having to worry about making a dent in your budget!</p><p>Today, 3CX is free for unlimited users for the first year with the Trial License. This Free STD key is valid for up to a year and allows for up to 8 Simultaneous Calls (SC).</p><p>Currently, once the year ends, the trial licence is automatically converted into a free standard licence lasting up to one year.</p><p>With the free version, you and your team will be able to enjoy the entire range of services offered by 3CX including VoIP features, instant or live chats, web conferencing, social media (i.e.: Facebook) integrations, and business SMS service.</p><p>You’ll be able to manage your licence, options, and features in the proprietary 3CX app – meaning that you can setup a full-scale phone and collaboration system for your business within minutes!</p><p>Depending on your business needs, you can also opt for a 3CX StartUp solution, which is available for up to 10 users and free forever.</p></div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Why upgrade to Google Marketing Platform?",
+          "variant": "h5"
+        },
+        {
+          "text": "<div class='acc-content active' style='display: block;'><p>Choosing the <strong>Best Communication App and phone system for Business</strong> can be overwhelming – especially if you are not a tech wizard or are new to modern solutions.</p><p>So, how can you be sure that the <strong>3cx Phone System</strong> is a good system to elevate your company’s communications, streamline productivity, and enhance the customer experience?</p><p><strong>The 3CX Experience</strong></p><p>The 3CX phone system has been collecting stellar reviews and has been awarded a multitude of prizes including the prestigious WIN MAG Pro Award. In 2021, 3CX was also named the “Best Business Phone System” by GetApp and the “Top Business Phone Service Provider” by Software Advice.</p><p>What’s more, the 3CX phone system is the communication software of choice for a wide range of large multinational corporations, like McDonald’s and American Express.</p><p>But thanks to the unparalleled scalability and customisation potential of 3CX, it also serves well the needs of small businesses and start-ups.</p></div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Is 3CX Better Than FreePBX?",
+          "variant": "h5"
+        },
+        {
+          "text": "<div class='acc-content active' style='display: block;'><p>If you are on the verge of choosing a Best Communication App for your business, you’ll have to make an important choice: opting for 3CX or Free PBX.</p><p>When working with our experts at Emerging Digital, we can guide you in the choice of finding the best phone system for you – start with the key differences below.</p><p><strong>3CX vs FreePBX</strong></p><p>FreePBX is one of the most prominent players in the information technology sub-section concerned with the design and implementation of business communication systems.</p><p>FreePBX is an open-source IP PBX that offers a wide range of built-in communication features and add-ons powered by Sangoma Technologies.</p><p>While also being an open-source IP PBX management tool, 3CX is fully customizable and gives you the chance to build a Unified Communication (UC) platform around the unique needs and features of your company.</p><p>So, which one should you opt for? With such an unparalleled customization potential, a wealth of native CRM integration, and a user-friendly interface, 3CX is the clear winner!</p></div>"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "GET 3CX FREE",
+      "type": "ANCHOR",
+      "link": "https://www.3cx.com/phone-system/download-phone-system/?resellerId=226359",
+      "target": "_blank",
+      "variant": "secondary"
+    }
+  ]
+}

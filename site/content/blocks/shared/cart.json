@@ -1,0 +1,103 @@
+{
+  "text": [
+    {
+      "text": "Your Cart",
+      "variant": "h2",
+      "space": 3
+    },
+    {
+      "text": "You can continue shopping or proceed to checkout",
+      "color": "omegaDark"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../assets/flexiblocks/icons/bx-layer-plus.svg",
+        "color": "#805AD5",
+        "bg": "transparent"
+      },
+      "text": [
+        {
+          "text": "FlexiBlog + FlexiBlocks",
+          "variant": "h6",
+          "space": 1
+        },
+        {
+          "text": "Install both themes on a site with Gatsby Theme Composition. It's a perfect match.",
+          "space": 1
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../assets/flexiblocks/icons/bx-pen.svg",
+        "color": "#805AD5",
+        "bg": "transparent"
+      },
+      "text": [
+        {
+          "text": "CMS Integrated: Strapi, Contentful, Sanity, Netlify CMS and MDX",
+          "variant": "h6",
+          "space": 1
+        },
+        {
+          "text": "FlexiBlog supports cloud-based or self-hosted CMSes for writing blog posts.",
+          "space": 1
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../assets/flexiblocks/icons/bx-rocket.svg",
+        "color": "#805AD5",
+        "bg": "transparent"
+      },
+      "text": [
+        {
+          "text": "Search + Comments + Newsletter",
+          "variant": "h6",
+          "space": 1
+        },
+        {
+          "text": "FlexiBlog delivers maximum functionality with value-added serverless APIs.",
+          "space": 1
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Checkout",
+      "type": "PAGE",
+      "link": "/checkout",
+      "variant": "secondary"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/visa.png",
+      "alt": "Visa"
+    },
+    {
+      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/master-card.png",
+      "alt": "master"
+    },
+    {
+      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/american.png",
+      "alt": "American"
+    },
+    {
+      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/stripe.png",
+      "alt": "Stripe"
+    },
+    {
+      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/crypto_com.png",
+      "alt": "Crypto"
+    },
+    {
+      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/wechatpay.jpg",
+      "alt": "We chat"
+    }
+  ]
+}

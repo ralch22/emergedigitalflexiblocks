@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Box, css, Spinner } from 'theme-ui'
 import { navigate } from 'gatsby';
@@ -55,9 +55,44 @@ const styles = {
 // ... (previous imports and code)
 
 const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
-  const [register] = useMutation(REGISTER); // Use register mutation from Apollo Client
-  const [login] = useMutation(LOGIN);
+  const [register, { data: registerData, loading: registerLoading, error: registerError }] = useMutation(REGISTER);
+const [login, { data: loginData, loading: loginLoading, error: loginError }] = useMutation(LOGIN);
 
+const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (registerError) {
+      // Show the Reveal element
+      setIsVisible(true);
+
+      // Hide the Reveal element after a delay (e.g., 3 seconds)
+      const hideTimeout = setTimeout(() => {
+        setIsVisible(false);
+      }, 1000); // Adjust the delay as needed (in milliseconds)
+
+      return () => {
+        // Clear the timeout when the component unmounts
+        clearTimeout(hideTimeout);
+      };
+    }
+  }, [registerError]);
+
+  useEffect(() => {
+    if (loginError) {
+      // Show the Reveal element
+      setIsVisible(true);
+
+      // Hide the Reveal element after a delay (e.g., 3 seconds)
+      const hideTimeout = setTimeout(() => {
+        setIsVisible(false);
+      }, 1000); // Adjust the delay as needed (in milliseconds)
+
+      return () => {
+        // Clear the timeout when the component unmounts
+        clearTimeout(hideTimeout);
+      };
+    }
+  }, [loginError]);
   // const validationSchema = Yup.object().shape({
   //   // username: Yup.string().required('Invalid Username').required('Required')
   //   password: Yup.string().required('Required'),
@@ -230,7 +265,6 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
       console.error('Registration error:', error.message);
     }
   };
-
   return (
     <form
       css={css(styles.form)}
@@ -292,24 +326,46 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
         />
         </button>
       </Box>
-      {/* <Box
+      {buttonValue === "Create Account" ? (
+        <Box
         sx={styles.responseOverlay}
-        css={(submitting || success) && styles.responseOverlay.active}
+        css={isVisible || registerLoading || registerData ? styles.responseOverlay.active : null}
       >
-        {submitting && (
+        {registerLoading && (
           <Reveal effect='fadeInDown'>
             <Spinner size='64' color='alpha' />
           </Reveal>
         )}
-        {success === true && (
+        {registerData && (
           <Reveal effect='fadeInDown'>
             <BiCheckCircle size='64' css={css({ color: `success` })} />
           </Reveal>
         )}
-        {success === false && (
+        {registerError && isVisible && (
           <BiErrorCircle size='64' css={css({ color: `error` })} />
         )}
-      </Box> */}
+      </Box> 
+      ) : buttonValue === "Login" ? (
+        <Box
+        sx={styles.responseOverlay}
+        css={isVisible || loginLoading || loginData ? styles.responseOverlay.active : null}
+      >
+        {loginLoading && (
+          <Reveal effect='fadeInDown'>
+            <Spinner size='64' color='alpha' />
+          </Reveal>
+        )}
+        {loginData && (
+          <Reveal effect='fadeInDown'>
+            <BiCheckCircle size='64' css={css({ color: `success` })} />
+          </Reveal>
+        )}
+        {loginError && isVisible && (
+          <BiErrorCircle size='64' css={css({ color: `error` })} />
+        )}
+      </Box> 
+      ) : null}
+      {/* */}
     </form>
   );
 };

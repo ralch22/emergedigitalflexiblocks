@@ -6,6 +6,7 @@
  */
 
 import heroBg from './assets/contour-pattern.svg'
+import bg from './assets/3CX.jpg'
 
 export default {
   heroContainer: {
@@ -17,7 +18,20 @@ export default {
       left: 0,
       zIndex: -1,
       background: t =>
-        `url(${heroBg}) no-repeat center 0, linear-gradient(
+        `url(${heroBg}) no-repeat center 0`,
+      backgroundSize: `100%`
+    }
+  },
+  heroContainer3CX: {
+    '::before': {
+      content: `" "`,
+      size: `full`,
+      position: `absolute`,
+      top: `-10%`,
+      left: 0,
+      zIndex: -1,
+      background: t =>
+        `url(${bg}) no-repeat center 0, linear-gradient(
           180deg,
           ${t.colors.alphaLighter} 0%,
           ${t.colors.background} 100%

@@ -1,0 +1,48 @@
+{
+    "text": [
+      {
+        "text": "We offer advertising marketing services that drive relevant and effective traffic ",
+        "variant": "h2",
+         "color": ""
+      },
+      {
+          "text": "As your company continues to grow and evolve, efficient business communications are a lifeline – and they are also one of the greatest challenges for entrepreneurs.",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "But thanks to advances in information technology, today you can count on tailored, efficient, and affordable services like 3cx Phone System.",
+            "variant": "medium",
+            "color": "alpha",
+            "fontWeight": "bold"
+          },
+          {
+            "text": "3cx Phone System designed to streamline communications and collaboration among unlimited users, providing employees with a cutting-edge VoIP system, and offering clients a stellar customer experience. Our certified professionals will install your 3cx Phone System and provide ongoing support and maintenance so you can concentrate on your business. We can install 3CX in your private cloud or on your premises.",
+            "variant": "medium",
+            "color": "alpha",
+            "fontWeight": "bold"
+          },
+          {
+            "text": "Looking for a phone system with all the features to support a branded customer chat, video calls, and document sharing?",
+            "variant": "medium",
+            "color": "alpha",
+            "fontWeight": "bold"
+          },
+          {
+            "text": "Learn more about the 3cx Phone System by getting in touch with our team at Emerge Digital.",
+            "variant": "medium",
+            "color": "alpha",
+            "fontWeight": "bold"
+          }
+    ],
+    "buttons": [
+      {
+        "text": "GET 3CX FREE",
+        "type": "ANCHOR",
+        "link": "https://www.3cx.com/phone-system/download-phone-system/?resellerId=226359",
+        "target": "_blank",
+        "variant": "secondary"
+      }
+    ]
+  }
+  

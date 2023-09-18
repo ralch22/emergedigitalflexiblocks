@@ -3,7 +3,7 @@
       {
         "text": "What makes us the right choice for your Analytics & Measurement needs?",
         "variant": "h2",
-        "color": "black"
+         "color": ""
       }
     ],
     "collection": [
@@ -17,7 +17,7 @@
           {
             "text": "Marketers with a deep understanding of media data and use cases",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           }
         ]
       },
@@ -31,7 +31,7 @@
             {
                 "text": "As a global testing partner, you will have exclusive access to alphas and betas",
                 "variant": "h4",
-                "color": "black"
+                 "color": ""
               }
         ]
       },
@@ -45,7 +45,7 @@
             {
               "text": "Expertise locally adapted for UAE & Australia and the APAC & MENA regions",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             }
           ]
       },
@@ -59,7 +59,7 @@
             {
               "text": "Planning and strategy are based on measurement recommendations",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             }
           ]
       },
@@ -73,7 +73,7 @@
             {
               "text": "To maximize efficiency and effectiveness for our clients, we build proprietary tools globally and locally",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             }
           ]
       },
@@ -87,7 +87,7 @@
             {
               "text": "Emerge Digital's proprietary data lakes provide offline and online media data access",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             }
           ]
       },
@@ -101,7 +101,7 @@
             {
               "text": "Hundreds of clients and 10+ years of experience across many verticals",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             }
           ]
       },
@@ -115,7 +115,7 @@
             {
               "text": "A measurement model built for commercial outcomes, not just for media metrics",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             }
           ]
       }

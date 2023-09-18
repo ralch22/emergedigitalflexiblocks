@@ -3,7 +3,7 @@
         {
           "text": "What makes us the right choice for your App Development requirements?",
           "variant": "h2",
-          "color": "black"
+           "color": ""
         }
       ],
     "collection": [
@@ -17,7 +17,7 @@
           {
             "text": "No tech knowledge needed",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "The only limit to what you can build with us is your imagination. Just tell us your idea and we'll build it for you according to your exact specifications.",
@@ -36,7 +36,7 @@
           {
             "text": "A unique AI-powered platform",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "By automating manual processes, you'll get a quicker build, fewer errors, fewer developer mistakes, and better pricing based on the features you choose.",
@@ -55,7 +55,7 @@
           {
             "text": "Providing continuous support",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             
@@ -76,7 +76,7 @@
           {
             "text": "A set price and timeline",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "It is important that you know exactly what you are paying for and how long it will take before you start. You only pay for the features that you need.",

@@ -1,0 +1,70 @@
+{
+    "text": [
+     
+      {
+        "text": "Connect your Team and Customers with Best Communication App",
+        "variant": "h2"
+      },
+      {
+        "text": "No matter whether you are managing a small team or you are looking to connect several internal departments within your corporation: the 3CX phone system is a must-have for any modern office looking to increase productivity, communication, and collaboration.",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "collection": [
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/cloudsmith.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },
+        "text": [
+          {
+            "text": "3CX Telephone Communication System",
+            "variant": "h4",
+             "color": ""
+          },
+          {
+            "text": "As your company grows, it is likely for your communication expenses to rise and add to the already-high overhead costs of maintaining a cloud system and several communication lines.",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "With 3CX, you can cut back on unnecessary costs and implement an all-in-one, affordable telephone system.",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      },
+      {
+        "icon": {
+          "src": "../../../assets/flexiblocks/icons/phone-volume-solid.svg",
+          "bg": "omegaLighter",
+          "color": "omegaDark"
+        },  
+        "text": [
+          {
+            "text": "PBX: Reinvented for a Remote Workforce",
+            "variant": "h4",
+             "color": ""
+          },
+          {
+            "text": "Private branch exchange (PBX) systems have long been a lifeline for physical offices and workplaces. But what if you are shifting towards a remote workforce?",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "3CX is the PBX created with the needs of remote work in mind. ",
+            "variant": "medium",
+            "color": "alpha"
+          },
+          {
+            "text": "The system allows your employees to communicate through a secure, private line, while also interacting with customers and stakeholders from a professional phone communication line. ",
+            "variant": "medium",
+            "color": "alpha"
+          }
+        ]
+      }
+    ]
+  }
+  

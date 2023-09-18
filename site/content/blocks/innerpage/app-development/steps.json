@@ -31,7 +31,7 @@
           {
             "text": "Select a category",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Start by selecting an app template that is similar to your idea or our AI product manager",
@@ -50,7 +50,7 @@
           {
             "text": "Build your app with AI",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Our AI assembles features (like Lego blocks) to form your app.",
@@ -69,7 +69,7 @@
           {
             "text": "Develop a delivery plan",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Determine the timeline and price for your project and how fast you want it delivered",
@@ -88,7 +88,7 @@
           {
             "text": "Find an expert to help you",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Dedicated specialists take care of everything from kick-off to delivery.",

@@ -22,7 +22,7 @@
           {
             "text": "Clients Always Come First",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Our approach to creating B2B demand generation campaigns is key to our success. We make a concerted effort to learn about your business and what you hope to achieve with the campaign.",
@@ -41,7 +41,7 @@
             {
                 "text": "Analytics and Reporting",
                 "variant": "h4",
-                "color": "black"
+                 "color": ""
               },
               {
                 "text": "Our dedicated team monitors every aspect of your campaign's performance. We provide you with detailed analytics every step of the way. You'll always be in the loop, knowing exactly what's happening",
@@ -60,7 +60,7 @@
             {
               "text": "We Meet Deadlines",
               "variant": "h4",
-              "color": "black"
+               "color": ""
             },
             {
               "text": "We offer excellent customer service, and adhering to deadlines is a fundamental aspect of that. You can count on us to meet your campaign deadlines while providing a friendly and enjoyable customer experience.",

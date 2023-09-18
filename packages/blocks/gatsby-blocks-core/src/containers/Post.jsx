@@ -80,7 +80,6 @@ export default function Post({
                     <Divider />
                   </>
                 )}
-               
                 <CardList
                   title='Related Posts'
                   nodes={relatedPosts}

@@ -23,7 +23,7 @@ const styles = {
   }
 }
 
-const FeaturesBlock05 = ({ content: { text, collection, buttons } }) => (
+const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
   <Container as={Reveal}>
     <Box sx={{ textAlign: `center` }}>
       <ContentText content={text} />
@@ -31,7 +31,7 @@ const FeaturesBlock05 = ({ content: { text, collection, buttons } }) => (
     {collection && (
       <>
         <Divider />
-        <Grid columns={[1, 3]} gap={3}>
+        <Grid columns={col2 ? [1, 2] : [1, 3]} gap={3}>
           {collection.map(
             ({ text, icon, collection, buttons, container }, index) => (
               <Reveal

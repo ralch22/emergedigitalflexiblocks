@@ -6,7 +6,7 @@ import ContentText from '@solid-ui-components/ContentText'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
-const ContentBlock01 = ({ content: { text } }) => (
+const ContentBlock01 = ({ content: { text, buttons } }) => (
   <Container>
 
     <Box
@@ -17,6 +17,12 @@ const ContentBlock01 = ({ content: { text } }) => (
       }}
     >
       <ContentText content={text} />
+      {buttons && (
+        <>
+          <Divider space={2} />
+          <ContentButtons content={buttons} />
+        </>
+      )}
     </Box>
     
   </Container>

@@ -1,0 +1,46 @@
+{
+    "collection": [
+      {
+        "text": [
+          {
+            "text": "Your Account",
+            "variant": "h4"
+          },
+          {
+            "text": "Edit your Acount Details",
+            "color": "omegaDarker",
+            "variant": "h2",
+            "space": 2
+          }
+        ],
+        "form": {
+          "fields": [
+            {
+              "identifier": "first_name",
+              "type": "TEXT",
+              "placeholder": {
+                "text": "First Name"
+              }
+            },
+            {
+                "identifier": "last_name",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "Last Name"
+                }
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Update Shipping",
+              "type": "PAGE",
+              "link": "",
+              "variant": "secondary",
+              "width": "200px"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

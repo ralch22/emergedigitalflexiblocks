@@ -10,7 +10,7 @@
           {
             "text": "Entrepreneur",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "With us, your vision comes to life just how you imagined. It's easy, cost-effective, and you get expert support every step of the way.",
@@ -29,7 +29,7 @@
           {
             "text": "Small Businesses",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "From the free prototype to visualize what you'll get before you start, all the way to owning and maintaining your code, we have your back.",
@@ -48,7 +48,7 @@
           {
             "text": "Enterprises",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             

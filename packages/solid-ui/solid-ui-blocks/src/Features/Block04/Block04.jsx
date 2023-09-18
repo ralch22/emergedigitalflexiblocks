@@ -28,10 +28,11 @@ const styles = {
 }
 
 const FeaturesBlock04 = ({
-  content: { container, text, collection, buttons }
+  content: { container, text, collection, buttons, eachbuttons }
 }) => (
   <Container>
-    <Box sx={{ textAlign: `center` }}>
+   <Flex sx={{ alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+   <Box sx={{ textAlign: `center` }}>
       <ContentText content={text} />
     </Box>
     {collection && (
@@ -49,7 +50,7 @@ const FeaturesBlock04 = ({
                 )}
                 <Box ml={2}>
                   <ContentText content={text?.[1]} />
-                  {buttons && (
+                  {eachbuttons && (
                     <>
                       <Divider space={2} />
                       <ContentButtons content={buttons} />
@@ -68,6 +69,7 @@ const FeaturesBlock04 = ({
         <ContentButtons content={buttons} />
       </>
     )}
+   </Flex>
   </Container>
 )
 

@@ -27,7 +27,7 @@
           {
             "text": "Content creation",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Producing engaging and informative content that attracts potential clients.",
@@ -46,7 +46,7 @@
           {
             "text": "SEO",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Ensuring your website ranks high in search engine results for relevant keywords.",
@@ -65,7 +65,7 @@
           {
             "text": "Email Marketing",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Targeting email campaigns to promote your products and services.",
@@ -84,7 +84,7 @@
           {
             "text": "Social Media Management",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Maintaining and growing your brand presence across social platforms.",
@@ -103,7 +103,7 @@
           {
             "text": "Analytics and Insights",
             "variant": "h4",
-            "color": "black"
+             "color": ""
           },
           {
             "text": "Providing comprehensive reporting on your marketing and recommending improvements.",

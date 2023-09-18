@@ -7,6 +7,7 @@ import Divider from '@solid-ui-components/Divider'
 import Calendly from '@solid-ui-components/Calendly'
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
 import ModalSimple from '@solid-ui-blocks/Modal/Block02'
+import ModalCart from '@solid-ui-blocks/Modal/Block03'
 import Header from '@solid-ui-blocks/Header/Block01'
 import Hero from '@solid-ui-blocks/Hero/Block01' 
 import Companies from '@solid-ui-blocks/Companies/Block01'
@@ -36,6 +37,7 @@ const IndexPage = props => {
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
       {/* Blocks */}
       <Header content={content['header']} />
       <Divider space='5' />

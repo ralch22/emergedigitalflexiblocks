@@ -5,7 +5,7 @@
       "text": [
         {
           "text": "Strategy",
-          "color": "black",
+           "color": "",
           "variant": "h3"
         }
       ],
@@ -30,7 +30,7 @@
       "text": [
         {
           "text": "Create",
-          "color": "black",
+           "color": "",
           "variant": "h3"
         }
       ],
@@ -100,7 +100,7 @@
       "text": [
         {
           "text": "Connect",
-          "color": "black",
+           "color": "",
           "variant": "h3"
         }
       ],

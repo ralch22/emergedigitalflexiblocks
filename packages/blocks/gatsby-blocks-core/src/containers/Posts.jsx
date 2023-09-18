@@ -25,7 +25,7 @@ export default function RenderPost({
     const { pageContext: { services = {} } = {} } = props
 
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-
+  console.log(posts.group)
   return (
     <Layout {...props}>
       <Seo title='Home' />
