@@ -1,0 +1,60 @@
+{
+    "collection": [
+      {
+        "text": [
+          {
+            "text": "Basic Info",
+            "variant": "h4"
+          },
+          {
+            "text": "Enter Your Basic Infomation",
+            "color": "omegaDarker",
+            "variant": "h2",
+            "space": 2
+          }
+        ],
+        "form": {
+          "fields": [
+            {
+              "identifier": "first_name",
+              "type": "TEXT",
+              "placeholder": {
+                "text": "First Name"
+              }
+            },
+            {
+                "identifier": "last_name",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "Last Name"
+                }
+            },
+            {
+              "identifier": "username",
+              "type": "TEXT",
+              "placeholder": {
+                "text": "UserName"
+              }
+            },
+            {
+                "identifier": "email",
+                "type": "EMAIL",
+                "placeholder": {
+                  "text": "Email"
+                }
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Update Shipping",
+              "type": "PAGE",
+              "link": "",
+              "variant": "secondary",
+              "width": "200px"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

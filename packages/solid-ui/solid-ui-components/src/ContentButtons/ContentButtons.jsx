@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Box } from 'theme-ui'
+import { Box } from 'theme-ui' 
 import Icon from '@solid-ui-components/ContentIcon'
 import ContentContainer from '@solid-ui-components/ContentContainer'
 import { ModalContext } from '@solid-ui-components/Modal'

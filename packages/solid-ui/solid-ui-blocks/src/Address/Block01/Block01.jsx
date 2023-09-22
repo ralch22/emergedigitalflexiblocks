@@ -12,7 +12,7 @@ import ContentMap from '@solid-ui-components/ContentMap'
 import ContentForm from '@solid-ui-components/AddressForm'
 import { ModalContext } from '@solid-ui-components/Modal'
 
-const Address = ({ content, reverse }) => {
+const Address = ({ content, reverse, checkout }) => {
   const {
     activeTab: { index = 0 }
   } = useContext(TabsContext)
@@ -92,6 +92,7 @@ const Address = ({ content, reverse }) => {
                     {form && (
                       <ContentForm 
                         form={form}
+                        checkout
                         id={`form.${identifier}.${
                           form.multiStep ? 'multi' : index
                         }`}

@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
-import { decodeId } from '../../utils/tools';
 
 const WooCommerce = new WooCommerceRestApi({
   url: process.env.GATSBY_WEBSITE_URL,
@@ -10,23 +9,14 @@ const WooCommerce = new WooCommerceRestApi({
   version: 'wc/v3', // Adjust the API version as needed
 });
 // Define an async thunk for fetching orders from the API
-export const fetchOrders = createAsyncThunk('orders/fetchOrders', async ({ id }) => {
-  
-
-
-// Convert the UTF-8 string to an integer (assuming it's an integer)
-    const userId = decodeId(id)
+export const fetchPaymentMethods = createAsyncThunk('payment/fetchPaymentMethods', async () => {
+    // Convert the UTF-8 string to an integer (assuming it's an integer)
       try {
-        const response = await WooCommerce.get("orders", {
-          customer: 7
-        });
-        
+        const response = await WooCommerce.get(`payment_gateways`);
     
-        console.log("Response Status:", response.status);
-        console.log("Response Headers:", response.headers);
-        console.log("Response Data:", response.data);
-    
-        return response.data; 
+        // Assuming the API response contains an array of orders
+   
+        return response.data
       } catch (error) {
         // Invalid request, for 4xx and 5xx statuses
         // console.log("Response Status:", error.response.status);
@@ -40,13 +30,14 @@ export const fetchOrders = createAsyncThunk('orders/fetchOrders', async ({ id })
  
 });
 
-export const createOrder = createAsyncThunk('order/createOrder', async ({ data }) => {
+// Define an async thunk for fetching orders from the API
+export const fetchShipmentMethods = createAsyncThunk('shipment/fetchShipmentMethods', async () => {
   // Convert the UTF-8 string to an integer (assuming it's an integer)
     try {
-      const response = await WooCommerce.post(`orders`, data);
+      const response = await WooCommerce.get(`shipping_methods`);
   
       // Assuming the API response contains an array of orders
-  
+ 
       return response.data;
     } catch (error) {
       // Invalid request, for 4xx and 5xx statuses
@@ -57,52 +48,45 @@ export const createOrder = createAsyncThunk('order/createOrder', async ({ data }
     } finally {
       // Always executed.
     }
-  
-  
-  });
-  
 
-const ordersSlice = createSlice({
-  name: 'orders',
+
+});
+
+
+const methodSlice = createSlice({
+  name: 'method',
   initialState: {
-    allOrders: [],
-    confirmOrder: null,
-    orderResponse: [],
+    payment: [],
+    shipment: [],
     status: 'idle',
     error: null,
   },
-  reducers: {
-    addOrder: (state, action) => {
-      state.confirmOrder = action.payload
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchOrders.pending, (state) => {
+      .addCase(fetchPaymentMethods.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchOrders.fulfilled, (state, action) => {
+      .addCase(fetchPaymentMethods.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        state.allOrders = action.payload;
+        state.payment = action.payload;
       })
-      .addCase(fetchOrders.rejected, (state, action) => {
+      .addCase(fetchPaymentMethods.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
       })
-      .addCase(createOrder.pending, (state) => {
+      .addCase(fetchShipmentMethods.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(createOrder.fulfilled, (state, action) => {
+      .addCase(fetchShipmentMethods.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        state.orderResponse = action.payload;
+        state.shipment = action.payload;
       })
-      .addCase(createOrder.rejected, (state, action) => {
+      .addCase(fetchShipmentMethods.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
       });
   },
 });
 
-export const { addOrder } = ordersSlice.actions;
-
-export default ordersSlice.reducer;
+export default methodSlice.reducer;

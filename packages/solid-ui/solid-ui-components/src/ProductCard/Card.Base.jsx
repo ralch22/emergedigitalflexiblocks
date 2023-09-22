@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Card, Flex, Button } from 'theme-ui'
 import rv from '@solid-ui-components/utils/buildResponsiveVariant'
 import columnSizeMatcher from '@solid-ui-components/utils/columnSizeMatcher'
@@ -7,6 +7,8 @@ import Footer from './Card.Footer'
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart, removeFromCart, clearCart } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
 import Media from './Card.Media'
+import { ModalContext } from '@solid-ui-components/Modal'
+
 
 const styles = {
   card: {
@@ -21,11 +23,15 @@ const styles = {
 }
 
 const CardBase = ({ columns, withModerate, onMouseOver, ...props }) => {
-  const cartItems = useSelector((state) => state.cart.items);
+  const { setActiveModal } = useContext(ModalContext)
+
+  const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
-
+    if (cartItems.length === 0) {
+      setActiveModal("cart")
+    }
     // Cart data will be automatically saved to local storage
   };
   return(

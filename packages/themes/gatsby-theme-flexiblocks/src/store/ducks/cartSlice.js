@@ -35,28 +35,23 @@ const cartSlice = createSlice({
       saveCartToLocalStorage(state);
     },
     removeFromCart: (state, action) => {
-      const index = state.findIndex((item) => item.id === action.payload);
-
-      if (index !== -1) {
-        state.splice(index, 1);
-      }
-      saveCartToLocalStorage(state);
+      return state.filter(item => item.id !== action.payload);
     },
     increaseQuantity: (state, action) => {
-      const item = state.find((item) => item.id === action.payload);
-
-      if (item) {
-        item.quantity += 1;
-      }
-      saveCartToLocalStorage(state);
+      return state.map(item => {
+        if (item.id === action.payload) {
+          return { ...item, quantity: item.quantity + 1 };
+        }
+        return item;
+      });
     },
     decreaseQuantity: (state, action) => {
-      const item = state.find((item) => item.id === action.payload);
-
-      if (item && item.quantity > 1) {
-        item.quantity -= 1;
-      }
-      saveCartToLocalStorage(state);
+      return state.map(item => {
+        if (item.id === action.payload && item.quantity > 1) {
+          return { ...item, quantity: item.quantity - 1 };
+        }
+        return item;
+      });
     },
     clearCart: () => {
       return [];

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Flex, Box, Grid, Heading, Text, Card } from 'theme-ui'
+import React, { useEffect } from 'react'
+import { Flex, Box, Grid, Heading, Text, Card, Select } from 'theme-ui'
 import Reveal from '@solid-ui-components/Reveal'
 import Divider from '@solid-ui-components/Divider'
 import Modal from '@solid-ui-components/Modal'
@@ -10,8 +10,10 @@ import ContentButtons from '@solid-ui-components/ContentButtons'
 import rv from '@solid-ui-components/utils/buildResponsiveVariant'
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart, removeFromCart, decreaseQuantity, increaseQuantity } from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
+import { fetchShipmentMethods } from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/methodSlice';
 import { FaTimes, FaPlus, FaMinus } from 'react-icons/fa'
 import CartTable from '@solid-ui-blocks/CartTable/Block01'
+import { addLineShipping, getShippingMethod } from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice'
 
 const calculateTotalPrice = (cartItems) => {
   return cartItems.reduce((total, item) => {
@@ -25,7 +27,13 @@ const calculateTotalPrice = (cartItems) => {
 
 const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
   const cartItems = useSelector((state) => state.cart);
+  const shipmentMethod = useSelector((state) => state.method.shipment);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchShipmentMethods());
+    // dispatch(addLineShipping(shipmentMethod));
+  }, [dispatch])
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
     // Cart data will be automatically saved to local storage
@@ -44,6 +52,18 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
     dispatch(increaseQuantity(itemId));
   }
 
+  function handleSelect(event) {
+    const selectedMethod = event.target.value;
+    const filtered = shipmentMethod.filter((product) => {
+      return product.id === selectedMethod;
+    })
+    const items = filtered.map((node) => ({
+      method_id: node.id,
+      method_title: node.title
+    }));
+    
+    dispatch(addLineShipping(items));
+  }
 
   const totalPrice = calculateTotalPrice(cartItems);
 
@@ -105,7 +125,6 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
               </Box>
                 )
               })}
-         
         </Grid> */}
         <CartTable increaseCartQuantity={increaseCartQuantity} decreaseCartQuantity={decreaseCartQuantity} cartItems={cartItems} handleRemoveFromCart={handleRemoveFromCart} />
         <Box sx={{ flexBasis: "30%", p: 3 }}>
@@ -114,8 +133,36 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
               <Heading>Total</Heading>
               <Text variant="large">$ {totalPrice}</Text>
             </Flex>
+            <Select
+              id="shipmentMethod"
+              defaultValue="Select a method"
+              sx={{ mb: 5 }}
+              onChange={handleSelect}
+              arrow={
+                <Box
+                  as="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentcolor"
+                  sx={{
+                    ml: -28,
+                    alignSelf: 'center',
+                    pointerEvents: 'none',
+                  }}>
+                  <path d="M7.41 7.84l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z" />
+                </Box>
+              }
+            >
+              {shipmentMethod.map((method) => (
+                <option sx={{ width: '200px' }} key={method.id} value={method.id}>
+                  {method.title}
+                </option>
+              ))}
+            </Select>
             <ContentButtons content={buttons} />
-            <Divider spaceY="3" />
+            <Divider spaceY="3" /> 
             <Text>We Accept: </Text>
             {images.map((image, index) => (
               <img key={index} src={image.src} alt={image.alt} />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import { Box, css, Spinner } from 'theme-ui'
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,11 +8,12 @@ import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox'
 import FormInput from '@solid-ui-components/ContentForm/FormInput'
 import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea'
 import FormHidden from '@solid-ui-components/ContentForm/FormHidden'
+import { TabsContext } from '@solid-ui-components/Tabs'
 import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi'
 import { useFormik } from 'formik'; // Import Formik
 import * as Yup from 'yup'; // Import Yup for validation
 import Reveal from '@solid-ui-components/Reveal/Reveal';
-
+import { addUserShipping, addUserBilling  } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice'; 
 
 const styles = {
   form: {
@@ -52,8 +53,10 @@ const styles = {
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
 
-const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
-  
+const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) => {
+  const {
+    activeTab
+  } = useContext(TabsContext)
   // const validationSchema = Yup.object().shape({
   //   // username: Yup.string().required('Invalid Username').required('Required')
   //   password: Yup.string().required('Required'),
@@ -67,6 +70,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
 
   // Initialize different initialValues objects based on button text
   const dispatch = useDispatch();
+  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout);
   const { shipping, status, billing } = useSelector((state) => state.address);
   useEffect(() => {
     dispatch(fetchShipping({ id: parsedData && parsedData.user.id }));
@@ -105,38 +109,71 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
   }, []);
   let initialValues = {};
   const buttonValue = buttons[0].text;
-  console.log("initial:", initialValues)
+  console.log("active:", activeTab)
   console.log(buttonValue)
   // Check if the shipping array is empty
-if (Object.keys(shipping).length !== 0) {
-  if (buttonValue === 'Update Shipping') {
-    initialValues = {
-      first_name: shipping.first_name,
-      last_name: shipping.last_name,
-      company: shipping.company,
-      address_1: shipping.address_1,
-      address_2: shipping.address_2,
-      city: shipping.city,
-      state: shipping.state,
-      postcode: shipping.postcode,
-      country: shipping.country,
-    };
+
+  if(checkout) {
+    if (Object.keys(userShipping).length !== 0) {
+      if (buttonValue === 'Update Shipping') {
+        initialValues = {
+          first_name: userShipping.first_name,
+          last_name: userShipping.last_name,
+          company: userShipping.company,
+          address_1: userShipping.address_1,
+          address_2: userShipping.address_2,
+          city: userShipping.city,
+          state: userShipping.state,
+          postcode: userShipping.postcode,
+          country: userShipping.country,
+        };
+      } else {
+        initialValues = {
+          first_name: userBilling.first_name,
+          last_name: userBilling.last_name,
+          company: userBilling.company,
+          address_1: userBilling.address_1,
+          address_2: userBilling.address_2,
+          city: userBilling.city,
+          state: userBilling.state,
+          postcode: userBilling.postcode,
+          country: userBilling.country,
+          email: userBilling.email,
+          phone: userBilling.phone,
+        };
+      }
+    }
   } else {
-    initialValues = {
-      first_name: billing.first_name,
-      last_name: billing.last_name,
-      company: billing.company,
-      address_1: billing.address_1,
-      address_2: billing.address_2,
-      city: billing.city,
-      state: billing.state,
-      postcode: billing.postcode,
-      country: billing.country,
-      email: billing.email,
-      phone: billing.phone,
-    };
+    if (Object.keys(shipping).length !== 0 ) {
+      if (buttonValue === 'Update Shipping') {
+        initialValues = {
+          first_name: shipping.first_name,
+          last_name: shipping.last_name,
+          company: shipping.company,
+          address_1: shipping.address_1,
+          address_2: shipping.address_2,
+          city: shipping.city,
+          state: shipping.state,
+          postcode: shipping.postcode,
+          country: shipping.country,
+        };
+      } else {
+        initialValues = {
+          first_name: billing.first_name,
+          last_name: billing.last_name,
+          company: billing.company,
+          address_1: billing.address_1,
+          address_2: billing.address_2,
+          city: billing.city,
+          state: billing.state,
+          postcode: billing.postcode,
+          country: billing.country,
+          email: billing.email,
+          phone: billing.phone,
+        };
+      }
+    }
   }
-}
  
 
   const formik = useFormik({
@@ -186,6 +223,18 @@ if (Object.keys(shipping).length !== 0) {
    }
    dispatch(updateBilling({ id: parsedData && parsedData.user.id, data }));
   };
+
+  function handleFieldChange(e) {
+    const { name, value } = e.target
+    formik.handleChange(e)
+    if(activeTab.index === 1) {
+      dispatch(addUserBilling({ ...userBilling, [name]: value }));
+    } else {
+      dispatch(addUserShipping({ ...userShipping, [name]: value }));
+    }
+    
+  }
+
   const handleShippingForm = async ({
     first_name,
     last_name,
@@ -195,7 +244,8 @@ if (Object.keys(shipping).length !== 0) {
     city,
     state,
     postcode,
-    country
+    country,
+    email
   }) => {
    const data = {
     shipping: {
@@ -207,7 +257,8 @@ if (Object.keys(shipping).length !== 0) {
       city,
       state,
       postcode,
-      country
+      country,
+      email
     }
    }
    dispatch(updateShipping({ id: parsedData && parsedData.user.id, data }));
@@ -248,7 +299,7 @@ if (Object.keys(shipping).length !== 0) {
             >
               <Component
                 {...props}
-                onChange={formik.handleChange}
+                onChange={checkout ? handleFieldChange : formik.handleChange}
                 onBlur={formik.handleBlur}
                 name={identifier}
                 id={`${id}.${identifier}`}
@@ -266,7 +317,8 @@ if (Object.keys(shipping).length !== 0) {
       {formik.errors.confirmPassword && formik.touched.confirmPassword && (
         <div>{formik.errors.confirmPassword}</div>
       )}
-      <Box sx={{ textAlign: `center` }}>
+      {!checkout && (
+        <Box sx={{ textAlign: `center` }}>
         
         <button type='submit' style={{ background: 'transparent', border: 'none' }}>
         <ContentButtons
@@ -275,6 +327,7 @@ if (Object.keys(shipping).length !== 0) {
         />
         </button>
       </Box>
+      )}
       {/* <Box
         sx={styles.responseOverlay}
         css={isVisible ? styles.responseOverlay.active : null}

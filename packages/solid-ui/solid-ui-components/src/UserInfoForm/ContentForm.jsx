@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Box, css, Spinner } from 'theme-ui'
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchUser, updateUser,  } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/userSlice'; 
+import { addUserInfo  } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice'; 
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox'
 import FormInput from '@solid-ui-components/ContentForm/FormInput'
@@ -53,7 +54,7 @@ const styles = {
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
 
-const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
+const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) => {
 
   // const validationSchema = Yup.object().shape({
   //   // username: Yup.string().required('Invalid Username').required('Required')
@@ -69,6 +70,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
   // Initialize different initialValues objects based on button text
   const dispatch = useDispatch();
   const { user, status } = useSelector((state) => state.user);
+  const userInfo = useSelector((state) => state.checkout.userInfo);
   useEffect(() => {
     dispatch(fetchUser({ id: parsedData && parsedData.user.id }));
     // Dispatch actions for other entities here
@@ -113,8 +115,17 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
     onSubmit: async (values) => {
 
       handleUserForm(values);
-    },
+    }
   });
+
+
+  function handleFieldChange(e) {
+    const { name, value } = e.target
+    formik.handleChange(e)
+    dispatch(addUserInfo({ ...userInfo, [name]: value }));
+  
+  }
+    
   const handleUserForm = async ({
     first_name,
     last_name,
@@ -125,7 +136,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
    }
    dispatch(updateUser({ id: parsedData && parsedData.user.id, data }));
   };
-    
+
 
 
   return (
@@ -161,7 +172,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
             >
               <Component
                 {...props}
-                onChange={formik.handleChange}
+                onChange={checkout ? handleFieldChange : formik.handleChange}
                 onBlur={formik.handleBlur}
                 name={identifier}
                 id={`${id}.${identifier}`}
@@ -179,7 +190,8 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
       {formik.errors.confirmPassword && formik.touched.confirmPassword && (
         <div>{formik.errors.confirmPassword}</div>
       )}
-      <Box sx={{ textAlign: `center` }}>
+      {!checkout && (
+        <Box sx={{ textAlign: `center` }}>
         
         <button type='submit' style={{ background: 'transparent', border: 'none' }}>
         <ContentButtons
@@ -188,6 +200,8 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
         />
         </button>
       </Box>
+      )}
+      
       {/* <Box
         sx={styles.responseOverlay}
         css={isVisible ? styles.responseOverlay.active : null}
