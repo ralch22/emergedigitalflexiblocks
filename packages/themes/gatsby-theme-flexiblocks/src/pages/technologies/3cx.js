@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { graphql } from 'gatsby'
 import { Container, Flex, Box } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
