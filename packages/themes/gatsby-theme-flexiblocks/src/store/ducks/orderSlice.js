@@ -18,7 +18,7 @@ export const fetchOrders = createAsyncThunk('orders/fetchOrders', async ({ id })
     const userId = decodeId(id)
       try {
         const response = await WooCommerce.get("orders", {
-          customer: 7
+          customer: userId
         });
         
     

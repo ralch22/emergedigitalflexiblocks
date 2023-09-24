@@ -9,7 +9,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { navigate } from 'gatsby'
 import { createOrder } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/orderSlice';
 import { clearCart } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
-import Loadable from "@loadable/component"
+import Element from "./Element"
 
 const steps = [
   'Shipping Information',
@@ -18,10 +18,19 @@ const steps = [
   'Review and Confirm',
 ];
 
-const Element = Loadable(() => import("./Element"))
+const calculateTotalPrice = (cartItems) => {
+  return cartItems.reduce((total, item) => {
+    // Calculate the subtotal for each item (price * quantity)
+    const itemSubtotal = item.price * item.quantity;
+    
+    // Add the item's subtotal to the total
+    return total + itemSubtotal;
+  }, 0); // Initialize total to 0
+};
 
 const CheckoutForm = ({ allBlockContent }) => {
   const order = useSelector((state) => state.checkout.order);
+  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const [step, setStep] = useState(1);
   function callbackFunc(response) {    
@@ -58,7 +67,7 @@ const CheckoutForm = ({ allBlockContent }) => {
         );
       case 3:
         return (
-         <Element />
+         <Element total={() => calculateTotalPrice(cart)} />
         );
       default:
         return null;

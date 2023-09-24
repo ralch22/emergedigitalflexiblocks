@@ -9,7 +9,7 @@ import { navigate } from 'gatsby'
 import { createSub } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/subsSlice';
 import { clearSubscription } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/subscriptionSlice';
 
-import Loadable from "@loadable/component"
+import Element from "./Element"
 
 const steps = [
   'Shipping Information',
@@ -21,7 +21,6 @@ const steps = [
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
 
-const Element = Loadable(() => import("./Element"))
 
 const CheckoutForm = ({ allBlockContent }) => {
   const order = useSelector((state) => state.checkout.order);
@@ -63,7 +62,7 @@ const CheckoutForm = ({ allBlockContent }) => {
         );
       case 3:
         return (
-          <Element />
+          <Element order={order} />
         );
       default:
         return null;
