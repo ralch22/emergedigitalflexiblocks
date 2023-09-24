@@ -61,6 +61,7 @@ const CheckoutForm = ({ allBlockContent }) => {
         return (
           <Box>
             {typeof window !== 'undefined' ? (
+              <>
               <GoSellElements
               gateway={{
                 publicKey: "pk_test_J0yAKjFBHwPS8atf2DTx5q6Y",
@@ -118,9 +119,11 @@ const CheckoutForm = ({ allBlockContent }) => {
                 hashstring: "",
               }}
             />
+            <p id="msg"></p>
+              </>
             ) : ""}
               
-            <p id="msg"></p>
+            
           </Box>
         );
       default:
