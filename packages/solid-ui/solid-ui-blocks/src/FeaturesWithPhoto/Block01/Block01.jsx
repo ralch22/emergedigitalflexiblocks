@@ -11,14 +11,14 @@ import ContentButtons from '@solid-ui-components/ContentButtons'
 import ContentText from '@solid-ui-components/ContentText'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
-const FeaturesWithPhotoBlock01 = ({ content: { text, images, simpleImg, collection, buttons, gradient }, reverse, dangerously, column}) => (
+const FeaturesWithPhotoBlock01 = ({ content: { text, images, simpleImg, collection, buttons, gradient }, reverse, reverseSm, dangerously, column}) => (
   <Box sx={{ background: gradient ? "linear-gradient(90deg, #336567 0%, #3F2B56 100%)" : '', width: '100%' }}>
     <Container wide sx={{ position: `relative` }}>
       <Flex
           sx={{
             alignItems: [null, `center`],
             flexDirection: [
-              reverse ? `column-reverse` : `column`,
+              reverse || reverseSm ? `column-reverse` : `column`,
               reverse ? `${column ? 'column-reverse' : 'row-reverse'}` : `${column ? 'column' : 'row'}`
             ],
             mx: [null, null, null, -4]

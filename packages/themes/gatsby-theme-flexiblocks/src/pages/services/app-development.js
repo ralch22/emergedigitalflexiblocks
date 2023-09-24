@@ -23,7 +23,7 @@ import Steps from '@solid-ui-blocks/Content/Block06'
 import Choice from '@solid-ui-blocks/Features/Block02'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import styles from "./_styles"
+import styles from "../_styles"
 
 
 const AppDevelopment = props => {

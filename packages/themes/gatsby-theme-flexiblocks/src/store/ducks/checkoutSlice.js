@@ -6,26 +6,37 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const checkoutSlice = createSlice({
   name: 'checkout',
   initialState: {
-    payment_method: "tap",
-    payment_method_title: "Tap",
-    set_paid: true,
-    shipping: [],
-    billing: [],
-    line_items: [],
-    shipping_lines: [],
+    order: {
+      payment_method: "tap",
+      payment_method_title: "Tap",
+      set_paid: true,
+      shipping: [],
+      billing: [],
+      line_items: [],
+      shipping_lines: [],
+    },
+    subscription: {
+      payment_method: "tap",
+      payment_method_title: "Tap",
+      set_paid: true,
+      shipping: [],
+      billing: [],
+      line_items: [],
+      shipping_lines: [],
+    }
   },
   reducers: {
     addUserShipping: (state, action) => {
-      state.shipping = action.payload
+      state.order.shipping = action.payload
     },
     addUserBilling: (state, action) => {
-      state.billing = action.payload
+      state.order.billing = action.payload
     },
     addLineItems: (state, action) => {
-      state.line_items = action.payload
+      state.order.line_items = action.payload
     },
     addLineShipping: (state, action) => {
-      state.shipping_lines = action.payload
+      state.order.shipping_lines = action.payload
     }
   },
 });

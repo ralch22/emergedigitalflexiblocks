@@ -8,6 +8,7 @@ import downloadsReducer from './ducks/downloadSlice';
 import addressReducer from './ducks/addressSlice';
 import userReducer from './ducks/userSlice';
 import methodReducer from './ducks/methodSlice';
+import subscriptionReducer from './ducks/subscriptionSlice';
 
 const rootReducer = combineReducers({
     orders: ordersReducer,
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
     address: addressReducer,
     user: userReducer,
     method: methodReducer,
+    subscription: subscriptionReducer,
 });
   
 

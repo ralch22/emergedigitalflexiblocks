@@ -8,7 +8,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addToCart, removeFromCart, clearCart } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
 import { addToSubscription } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/subscriptionSlice';
 import Media from './Card.Media'
-import { navigate } from 'gatsby'
 import { ModalContext } from '@solid-ui-components/Modal'
 
 
@@ -28,7 +27,6 @@ const CardBase = ({ columns, withModerate, onMouseOver, subscription, ...props }
   const { setActiveModal } = useContext(ModalContext)
 
   const cartItems = useSelector((state) => state.cart);
-  const sub = useSelector((state) => state.subscription);
   const dispatch = useDispatch();
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));

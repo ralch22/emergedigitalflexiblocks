@@ -54,6 +54,7 @@ const cartSlice = createSlice({
       });
     },
     clearCart: () => {
+      localStorage.removeItem("cart")
       return [];
       // saveCartToLocalStorage([]);
     },

@@ -3,96 +3,6 @@
       {
         "text": [
           {
-            "text": "Shipping",
-            "variant": "h4"
-          },
-          {
-            "text": "Edit your shipping address",
-            "color": "omegaDarker",
-            "variant": "h2",
-            "space": 2
-          }
-        ],
-        "form": {
-          "fields": [
-            {
-              "identifier": "first_name",
-              "type": "TEXT",
-              "placeholder": {
-                "text": "First Name"
-              }
-            },
-            {
-                "identifier": "last_name",
-                "type": "TEXT",
-                "placeholder": {
-                  "text": "Last Name"
-                }
-            },
-            {
-              "identifier": "company",
-              "type": "TEXT",
-              "placeholder": {
-                "text": "Company"
-              }
-            },
-            {
-              "identifier": "address_1",
-              "type": "TEXT",
-              "placeholder": {
-                "text": "Address 1"
-              }
-            },
-            {
-                "identifier": "address_2",
-                "type": "TEXT",
-                "placeholder": {
-                  "text": "Address 2"
-                }
-            },
-            {
-                "identifier": "city",
-                "type": "TEXT",
-                "placeholder": {
-                  "text": "City"
-                }
-            },
-            {
-                "identifier": "state",
-                "type": "TEXT",
-                "placeholder": {
-                  "text": "State"
-                }
-            },
-            {
-                "identifier": "postcode",
-                "type": "TEXT",
-                "placeholder": {
-                  "text": "Postcode"
-                }
-            },
-            {
-                "identifier": "country",
-                "type": "TEXT",
-                "placeholder": {
-                  "text": "Country"
-                }
-            }
-          ],
-          "buttons": [
-            {
-              "text": "Update Shipping",
-              "type": "PAGE",
-              "link": "",
-              "variant": "secondary",
-              "width": "200px"
-            }
-          ]
-        }
-      },
-      {
-        "text": [
-          {
             "text": "Billing"
           },
           {
@@ -186,6 +96,96 @@
             {
               "text": "Update Billing",
               "type": "SUBMIT",
+              "link": "",
+              "variant": "secondary",
+              "width": "200px"
+            }
+          ]
+        }
+      },
+      {
+        "text": [
+          {
+            "text": "Shipping",
+            "variant": "h4"
+          },
+          {
+            "text": "Edit your shipping address",
+            "color": "omegaDarker",
+            "variant": "h2",
+            "space": 2
+          }
+        ],
+        "form": {
+          "fields": [
+            {
+              "identifier": "first_name",
+              "type": "TEXT",
+              "placeholder": {
+                "text": "First Name"
+              }
+            },
+            {
+                "identifier": "last_name",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "Last Name"
+                }
+            },
+            {
+              "identifier": "company",
+              "type": "TEXT",
+              "placeholder": {
+                "text": "Company"
+              }
+            },
+            {
+              "identifier": "address_1",
+              "type": "TEXT",
+              "placeholder": {
+                "text": "Address 1"
+              }
+            },
+            {
+                "identifier": "address_2",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "Address 2"
+                }
+            },
+            {
+                "identifier": "city",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "City"
+                }
+            },
+            {
+                "identifier": "state",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "State"
+                }
+            },
+            {
+                "identifier": "postcode",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "Postcode"
+                }
+            },
+            {
+                "identifier": "country",
+                "type": "TEXT",
+                "placeholder": {
+                  "text": "Country"
+                }
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Update Shipping",
+              "type": "PAGE",
               "link": "",
               "variant": "secondary",
               "width": "200px"

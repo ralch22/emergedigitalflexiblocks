@@ -74,14 +74,26 @@ export default function DashboardPage({ data: { allBlockContent }, ...props }) {
           <Heading as="h2">Dashboard</Heading>
           <Divider spaceY="5" />
           <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/dashboard">Profile</Link>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/user">Profile</Link>
           </Text>
           <Box sx={{ mt: 3 }} />
           <Text>
           <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/orders">Orders</Link>
-          <Box sx={{ mt: 3 }} />
-          <Box onClick={handleLogout}>Logout</Box>
           </Text>
+          <Box sx={{ mt: 3 }} />
+          <Text>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/subscription">Subscriptions</Link>
+          </Text>
+          <Box sx={{ mt: 3 }} />
+          <Text>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/address">Address</Link>
+          </Text>
+          <Box sx={{ mt: 3 }} />
+          <Text>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/downloads">Download</Link>
+          </Text>
+          <Box sx={{ mt: 3 }} />
+          <Box style={{ cursor: 'pointer' }} onClick={handleLogout}>Logout</Box>
         </Card>
             
         </Box>

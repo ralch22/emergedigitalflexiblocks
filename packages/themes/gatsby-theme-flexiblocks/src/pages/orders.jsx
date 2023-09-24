@@ -67,23 +67,31 @@ export default function Orders({ data: { allBlockContent }, ...props }) {
           <Heading as="h2">Dashboard</Heading>
           <Divider spaceY="5" />
           <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/dashboard">Profile</Link>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/user">Profile</Link>
           </Text>
           <Box sx={{ mt: 3 }} />
           <Text>
           <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/orders">Orders</Link>
-          <Box sx={{ mt: 3 }} />
-          <Box onClick={handleLogout}>Logout</Box>
           </Text>
+          <Box sx={{ mt: 3 }} />
+          <Text>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/subscription">Subscriptions</Link>
+          </Text>
+          <Box sx={{ mt: 3 }} />
+          <Text>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/address">Address</Link>
+          </Text>
+          <Box sx={{ mt: 3 }} />
+          <Text>
+          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/downloads">Download</Link>
+          </Text>
+          <Box sx={{ mt: 3 }} />
+          <Box style={{ cursor: 'pointer' }} onClick={handleLogout}>Logout</Box>
         </Card>
             
         </Box>
         <Main sx={{ height: '100%' }}>
         <Flex sx={{ height: '100%' }}>
-          
-            
-
-          {/* Main Content */}
           <Card sx={{ flex: 1, p: 2, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
             {orders.length !== 0 ? <OrdersTable orders={orders} /> : (
               <>

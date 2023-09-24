@@ -194,7 +194,7 @@ const [isVisible, setIsVisible] = useState(false);
       fields: [
         {
           name: 'email',
-          value: values,
+          value: values.email,
         },
         {
           name: 'firstName',

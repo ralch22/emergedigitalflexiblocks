@@ -21,19 +21,19 @@ import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
 import Inclusions from '@solid-ui-blocks/Content/Block06'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import styles from "./_styles"
-import servicesData from '../../../../../../site/content/blocks/innerpage/services-03/services.json';
-import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
+import styles from "../_styles"
+// import servicesData from '../../../../../../site/content/blocks/innerpage/services-03/services.json';
+// import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
 
 const GAnalyticsAudit = props => {
   const { allBlockContent } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
 
   
-  const tabs = [
-    { title: 'Overview', content: <Content4 content={servicesData1} /> },
-    { title: 'Our Services', content: <Content3 content={servicesData} /> },
-  ];
+  // const tabs = [
+  //   { title: 'Overview', content: <Content4 content={servicesData1} /> },
+  //   { title: 'Our Services', content: <Content3 content={servicesData} /> },
+  // ];
   
  
 
@@ -53,7 +53,7 @@ const GAnalyticsAudit = props => {
       </Container>
       <Divider space='5' />
       <Container>
-        <FeatureThree content={content['feature-one']} />
+        <FeatureThree reverseSm content={content['feature-one']} />
       </Container>
       <Divider space='5' />
       <Container>

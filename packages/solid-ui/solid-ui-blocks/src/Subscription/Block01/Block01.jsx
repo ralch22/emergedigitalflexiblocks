@@ -89,7 +89,7 @@ const BlogBlock01 = ({ products, subscription, content: { text, collection, butt
               nodes={products}
               limit={3}
               simple
-              subscription={subscription}
+              subscription
               columns={[3]}
               variant={[
                 'horizontal-md',

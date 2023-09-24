@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Flex, Box, Badge, Link } from 'theme-ui'
+import { Container, Flex, Box, Grid, Link } from 'theme-ui'
 import ContentContainer from '@solid-ui-components/ContentContainer'
 import Reveal from '@solid-ui-components/Reveal'
 import Divider from '@solid-ui-components/Divider'
@@ -83,7 +83,7 @@ const BlogBlock01 = ({ posts, content: { text, collection, buttons } }) => {
       </Box>
       <Divider />
       <Reveal effect='fadeIn'>
-          <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
+          <Grid columns={[1, 2]} gap={4} sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
             <CardList
               nodes={posts.nodes}
               limit={3}
@@ -98,7 +98,7 @@ const BlogBlock01 = ({ posts, content: { text, collection, buttons } }) => {
               omitCategory
             />
                     
-          </Flex>
+          </Grid>
         </Reveal>
       {buttons && (
         <>

@@ -70,7 +70,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
   // Initialize different initialValues objects based on button text
   const dispatch = useDispatch();
   const { user, status } = useSelector((state) => state.user);
-  const userInfo = useSelector((state) => state.checkout.userInfo);
+  const userInfo = useSelector((state) => state.checkout.order.userInfo);
   useEffect(() => {
     dispatch(fetchUser({ id: parsedData && parsedData.user.id }));
     // Dispatch actions for other entities here

@@ -14,9 +14,10 @@ const calculateTotalPrice = (cartItems) => {
   }, 0); // Initialize total to 0
 };
 
-function OrderConfirmationPage() {
+function OrderConfirmationPage({ subscription }) {
   const cartItems = useSelector((state) => state.cart);
-  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout);
+  const sub = useSelector((state) => state.subscription);
+  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout.order);
   const totalPrice = calculateTotalPrice(cartItems);
 
   return (
@@ -28,7 +29,24 @@ function OrderConfirmationPage() {
         <Heading as="h2" sx={{ fontSize: 3, mb: 3 }}>
           Products
         </Heading>
-       {cartItems.map((p, index) => {
+       {subscription ? sub.map((p, index) => {
+        return (
+          <Flex sx={{ flexDirection: 'column', width: `full`, mt: '4' }}>
+            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>Name:</strong> {p.name}
+            </Text>
+            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>Quantity:</strong> {p.quantity}
+            </Text>
+            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>Price:</strong> ${p.price}
+            </Text>
+            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
+              <strong>${calculateTotalPrice(cartItems)}</strong> 
+            </Text>
+          </Flex>
+        )
+       }) : cartItems.map((p, index) => {
         return (
           <Flex sx={{ flexDirection: 'column', width: `full`, mt: '4' }}>
             <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>

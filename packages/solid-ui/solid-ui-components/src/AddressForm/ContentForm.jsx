@@ -70,7 +70,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
 
   // Initialize different initialValues objects based on button text
   const dispatch = useDispatch();
-  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout);
+  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout.order);
   const { shipping, status, billing } = useSelector((state) => state.address);
   useEffect(() => {
     dispatch(fetchShipping({ id: parsedData && parsedData.user.id }));
@@ -228,9 +228,9 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
     const { name, value } = e.target
     formik.handleChange(e)
     if(activeTab.index === 1) {
-      dispatch(addUserBilling({ ...userBilling, [name]: value }));
-    } else {
       dispatch(addUserShipping({ ...userShipping, [name]: value }));
+    } else {
+      dispatch(addUserBilling({ ...userBilling, [name]: value }));
     }
     
   }
