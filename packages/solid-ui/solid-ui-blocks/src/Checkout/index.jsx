@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { navigate } from 'gatsby'
 import { createOrder } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/orderSlice';
 import { clearCart } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
+import Loadable from "@loadable/component"
 
 const steps = [
   'Shipping Information',
@@ -16,6 +17,8 @@ const steps = [
   'Payment Information',
   'Review and Confirm',
 ];
+
+const Element = Loadable(() => import("./Element"))
 
 const CheckoutForm = ({ allBlockContent }) => {
   const order = useSelector((state) => state.checkout.order);
@@ -55,62 +58,7 @@ const CheckoutForm = ({ allBlockContent }) => {
         );
       case 3:
         return (
-          <Box>
-             {typeof window !== 'undefined' ? (
-               <>
-                <GoSellElements
-               gateway={{
-                 publicKey: "pk_test_J0yAKjFBHwPS8atf2DTx5q6Y",
-                 secretKey: "sk_test_daBsQDPzn43TrCWXxFlGIq2A",
-                 language: "en",
-                 supportedCurrencies: "all",
-                 supportedPaymentMethods: "all",
-                 notifications: "msg",
-                 callback: callbackFunc,
-                 labels: {
-                   cardNumber: "Card Number",
-                   expirationDate: "MM/YY",
-                   cvv: "CVV",
-                   cardHolder: "Name on Card",
-                   actionButton: "Pay",
-                 },
-                 style: {
-                   base: {
-                     color: "#535353",
-                     lineHeight: "18px",
-                     fontFamily: "sans-serif",
-                     fontSmoothing: "antialiased",
-                     fontSize: "16px",
-                     "::placeholder": {
-                       color: "rgba(0, 0, 0, 0.26)",
-                       fontSize: "15px",
-                     },
-                   },
-                   invalid: {
-                     color: "red",
-                     iconColor: "#fa755a ",
-                   },
-                 },
-               }}
-               order={{
-                 amount: "100",
-                 currency: "BHD",
-               }}
-               transaction={{
-                 mode: "charge",
-               }}
-               charge={{
-                 threeDSecure: false,
-                 redirect: "/",
-                 post: "/",
-                 hashstring: "",
-               }}
-             />
-             <p id="msg"></p>
-               </>
-             ) : ""}
-            
-          </Box>
+         <Element />
         );
       default:
         return null;
