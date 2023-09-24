@@ -91,7 +91,7 @@ const CheckoutForm = ({ allBlockContent }) => {
             Continue
           </Button>
         ) : (
-          <Button variant="secondary" onClick={() => GoSellElements.submit()} ml={2}>
+          <Button variant="secondary" onClick={() => typeof window === undefined ? window.goSell.submit() : null} ml={2}>
             Complete Purchase
           </Button>
         )}
