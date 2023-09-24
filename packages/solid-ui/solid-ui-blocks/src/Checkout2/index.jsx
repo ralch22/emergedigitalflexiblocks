@@ -62,7 +62,8 @@ const CheckoutForm = ({ allBlockContent }) => {
         );
       case 3:
         return (
-          <Element order={order} />
+          // <Element order={order} />
+          <></>
         );
       default:
         return null;
