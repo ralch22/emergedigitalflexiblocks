@@ -67,8 +67,7 @@ const CheckoutForm = ({ allBlockContent }) => {
         );
       case 3:
         return (
-        //  <Element total={() => calculateTotalPrice(cart)} />
-        <></>
+         <Element total={() => calculateTotalPrice(cart)} />
         );
       default:
         return null;
