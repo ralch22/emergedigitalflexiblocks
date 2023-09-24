@@ -4,7 +4,7 @@ import SearchInput from './Search.Input'
 const SearchComponent = React.lazy(() => import('./Search'))
 
 const Search = () => {
-  const [transition, startTransition] = useTransition()
+  const [transition, startTransition] = React.useTransition()
   const [searchLoaded, setSearchLoaded] = useState()
 
   const loadSearchModule = useCallback(() => {
