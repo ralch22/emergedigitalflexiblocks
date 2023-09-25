@@ -31,3 +31,19 @@ const fetch = require('node-fetch');
 //   });
 // };
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === "build-html") {
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: "@tap-payments/gosell",
+              use: loaders.null(),
+            },
+          ],
+        },
+      })
+    }
+  }
+  
+
