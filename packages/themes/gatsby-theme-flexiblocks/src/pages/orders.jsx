@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchOrders } from '../../../gatsby-theme-flexiblocks/src/store/ducks/orderSlice'; 
 import Header from '@solid-ui-blocks/Header/Block01';
 import OrdersTable from '@solid-ui-blocks/OrdersTable';
-import { Box, Flex, Text, Heading, Card, Button } from 'theme-ui';
+import { Box, Flex, Text, Heading, Card, Button, Container } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider'
 import { navigate, graphql, Link } from 'gatsby'
 import { normalizeBlockContentNodes } from '@blocks-helpers';
