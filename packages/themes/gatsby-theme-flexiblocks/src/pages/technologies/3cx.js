@@ -101,11 +101,11 @@ const AppDevelopment = props => {
       <Divider space='5' />
       <Chat col2 content={content['chat']} />
       <Divider space='5' />
-      <Products products={filtered} />
+      <Products products={filtered} content={content['products_1']} />
       <Divider space='5' />
-      <Products subscription products={filtered2WithSubscription} />
+      <Products subscription products={filtered2WithSubscription} content={content['products_2']} />
       <Divider space='5' />
-      <Products subscription products={filtered3} />
+      <Products subscription products={filtered3} content={content['products_3']} />
       <Divider space='5' />
       <Pricing content={content['pricing']} />
       <Divider space='5' />
