@@ -84,7 +84,7 @@ const BlogBlock01 = ({ products, subscription, content: { text, collection, butt
       </Box>
       <Divider />
       <Reveal effect='fadeIn'>
-          <Grid columns={[1, 2]} gap={4} sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
+          <Grid columns={[1, 4]} gap={4} sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
             <CardList
               nodes={products}
               limit={3}

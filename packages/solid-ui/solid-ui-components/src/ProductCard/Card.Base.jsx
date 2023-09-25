@@ -41,7 +41,7 @@ const CardBase = ({ columns, withModerate, onMouseOver, subscription, ...props }
   function subCheckout(item) {
     if(subscription) {
       dispatch(addToSubscription(item))
-     navigate("/checkout")
+     navigate("/checkout2")
     } else {
      handleAddToCart(item)
     }
