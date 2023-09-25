@@ -92,6 +92,7 @@ export default function Orders({ data: { allBlockContent }, ...props }) {
         </Box>
         <Main sx={{ height: '100%' }}>
         <Flex sx={{ height: '100%' }}>
+          <Container>
           <Card sx={{ flex: 1, p: 2, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
             {orders.length !== 0 ? <OrdersTable orders={orders} /> : (
               <>
@@ -101,6 +102,7 @@ export default function Orders({ data: { allBlockContent }, ...props }) {
               </>
             )}
           </Card>
+          </Container>
           </Flex>
         </Main>
         

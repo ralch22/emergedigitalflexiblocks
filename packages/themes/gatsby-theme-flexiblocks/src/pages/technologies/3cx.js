@@ -23,9 +23,9 @@ import Choice from '@solid-ui-blocks/Features/Block02'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../../store/ducks/productSlice';
+import { fetchProducts } from '../store/ducks/productSlice';
 import Products from "@solid-ui-blocks/Products/Block01"
-import styles from "../_styles"
+import styles from "./_styles"
 
 
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
@@ -37,7 +37,9 @@ const AppDevelopment = props => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.allProducts);
   const filteredProducts = useSelector((state) => state.products.filteredProducts);
-  const categoryId = 57; // Replace with the category ID you want to filter by
+  const regularId = 57; // Replace with the category ID you want to filter by
+  const feeId = 69;
+  const aspid = 70;
 
   useEffect(() => {
     dispatch(fetchProducts({ token: parsedData && parsedData.authToken })); // Fetch products from WooCommerce when the component mounts
@@ -46,7 +48,24 @@ const AppDevelopment = props => {
 
   const filtered = products.filter((product) => {
     const firstCategory = product.categories[0]; // Assuming the first category is the one you want
-    return firstCategory.id === categoryId;
+    return firstCategory.id === regularId;
+  })
+
+  const filtered2 = products.filter((product) => {
+    const firstCategory = product.categories[0]; // Assuming the first category is the one you want
+    return firstCategory.id === feeId;
+  })
+
+  const filtered2WithSubscription = filtered2.map((product) => ({
+    ...product,
+    subscription: true,
+    plan: "Yearly",
+  }));
+  
+
+  const filtered3 = products.filter((product) => {
+    const firstCategory = product.categories[0]; // Assuming the first category is the one you want
+    return firstCategory.id === aspid;
   })
 
   const downloadables = products.filter((product) => {
@@ -81,7 +100,12 @@ const AppDevelopment = props => {
       <Content col2 content={content['target']} />
       <Divider space='5' />
       <Chat col2 content={content['chat']} />
+      <Divider space='5' />
       <Products products={filtered} />
+      <Divider space='5' />
+      <Products subscription products={filtered2WithSubscription} />
+      <Divider space='5' />
+      <Products subscription products={filtered3} />
       <Divider space='5' />
       <Contact content={content['cta']} />
       <Divider space='5' />

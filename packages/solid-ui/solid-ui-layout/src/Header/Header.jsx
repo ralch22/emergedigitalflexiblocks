@@ -49,7 +49,7 @@ export const Header = ({ children }) => {
           <Box sx={styles.logoContainer}>
             <HeaderLogo /> 
           </Box>
-          {/* <Box sx={styles.searchContainer}>{algolia && <Search />}</Box> */}
+          <Box sx={styles.searchContainer}>{algolia && <Search />}</Box>
           <Box sx={styles.menuContainer}>
             <HeaderMenu mobileMenu={mobileMenu} />
           </Box>

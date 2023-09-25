@@ -117,41 +117,10 @@
           "variant": "links.nav-dark"
         },
         {
-          "text": "Modals",
-          "type": "SUB",
-          "variant": "links.nav-dark",
-          "buttons": [
-            {
-              "text": "Register/Login",
-              "type": "MODAL",
-              "link": "authentication",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
-                "color": "alphaLight"
-              }
-            },
-            {
-              "text": "Contact Form",
-              "type": "MODAL",
-              "link": "contact",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
-                "color": "alphaLight"
-              }
-            },
-            {
-              "text": "Advertisement",
-              "type": "MODAL",
-              "link": "advertisement",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bx-target-lock.svg",
-                "color": "alphaLight"
-              }
-            }
-          ]
+          "text": "Sign In",
+          "type": "MODAL",
+          "link": "authentication",
+          "variant": "links.nav-dark"
         },
         {
           "type": "MODAL",
