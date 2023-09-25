@@ -37,7 +37,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         module: {
           rules: [
             {
-              test: "@tap-payments/gosell",
+              test: /@tap-payments\/gosell/,
               use: loaders.null(),
             },
           ],
