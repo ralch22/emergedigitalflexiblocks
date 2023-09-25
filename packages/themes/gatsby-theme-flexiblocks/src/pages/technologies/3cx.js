@@ -14,7 +14,7 @@ import Chat from '@solid-ui-blocks/Features/Block04'
 import Contact from '@solid-ui-blocks/CallToAction/Block02'
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block10'
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block05'
-import FeatureFour from '@solid-ui-blocks/Features/Block10'
+import Pricing from '@solid-ui-blocks/Pricing/Block01'
 import Industries from '@solid-ui-blocks/Features/Block11'
 import List from '@solid-ui-blocks/Features/Block04'
 import Steps from '@solid-ui-blocks/Content/Block06'
@@ -106,6 +106,8 @@ const AppDevelopment = props => {
       <Products subscription products={filtered2WithSubscription} />
       <Divider space='5' />
       <Products subscription products={filtered3} />
+      <Divider space='5' />
+      <Pricing content={content['pricing']} />
       <Divider space='5' />
       <Contact content={content['cta']} />
       <Divider space='5' />
