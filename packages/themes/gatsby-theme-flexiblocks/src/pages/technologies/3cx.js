@@ -23,9 +23,9 @@ import Choice from '@solid-ui-blocks/Features/Block02'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../store/ducks/productSlice';
+import { fetchProducts } from '../../store/ducks/productSlice';
 import Products from "@solid-ui-blocks/Products/Block01"
-import styles from "./_styles"
+import styles from "../_styles"
 
 
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
