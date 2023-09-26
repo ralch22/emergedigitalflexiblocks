@@ -30,7 +30,7 @@ import SingleText from '@solid-ui-blocks/Content/Block07'
 import Pricing from '@solid-ui-blocks/Pricing/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import styles from "./_styles"
+import styles from "../_styles"
 
 
 const WpEngine = props => {
