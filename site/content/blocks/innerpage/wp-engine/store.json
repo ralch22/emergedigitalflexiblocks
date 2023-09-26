@@ -1,0 +1,53 @@
+{
+  "text": [
+    {
+      "text": "Hosting for WooCommerce stores with WordPress",
+      "variant": "h4",
+      "color": "alpha"
+    },
+    {
+      "text": "Take your eCommerce business to the next level with a platform built specifically for WooCommerce",
+      "variant": "h2"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/gears-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Optimize your WooCommerce store to outperform your competitors",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Create new eCommerce landing pages and shopping experiences with our customizable themes and WooCommerce blocks.",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Get the best-in-class performance from your store",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "On the fastest WordPress host for WooCommerce stores, you will experience a dramatic increase in website speed.",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    }
+  ]
+}

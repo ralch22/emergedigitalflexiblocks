@@ -1,0 +1,53 @@
+{
+  "text": [
+    {
+      "text": "Agency-specific WordPress hosting tools",
+      "variant": "h4",
+      "color": "alpha"
+    },
+    {
+      "text": "Grow your business by building and optimizing your clients' sites",
+      "variant": "h2"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/people-arrows-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Manage your clients all in one place",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "You can manage your clients' sites in one place with Flywheel Growth Suite while generating recurring revenue.",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Use Instant Store Search to increase sales",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Provide customers with accurate search results. ElasticPress, the leader in WordPress search, powers Instant Store Search.",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    }
+  ]
+}

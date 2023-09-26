@@ -8,7 +8,7 @@ import Icon from '@solid-ui-components/ContentIcon'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
 
-const FeaturesBlock02 = ({ col, content: { text, collection, buttons } }) => (
+const FeaturesBlock02 = ({ col, double, content: { text, collection, buttons } }) => (
   <Container sx={{ textAlign: `center` }}>
     <ContentText content={text} />
     <Reveal effect='fadeInUp'>
@@ -20,7 +20,7 @@ const FeaturesBlock02 = ({ col, content: { text, collection, buttons } }) => (
               <Box
                 key={`item-${index}`}
                 sx={{
-                  flexBasis: [`1`, null, `1/2`],
+                  flexBasis: [`1`, null, double ? '1/2' : `1/3`],
                   textAlign: `left`,
                   p: 3
                 }}

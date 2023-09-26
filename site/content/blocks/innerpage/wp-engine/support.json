@@ -1,0 +1,29 @@
+{
+  "text": [
+    {
+      "text": "WP Engine typically improves site speed by 40%.",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "Secure your site & focus on your business",
+      "variant": "h2"
+    },
+    {
+      "text": "Utilize automated WordPress updates, managed upgrades, daily backups, and continuous website monitoring. Keeping your site secure allows you to focus on running your business.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "The number of attacks blocked by WP Engine customers each year exceeds 25 billion.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/foundation-support.png.png",
+      "alt": "alt text"
+    }
+  ]
+}

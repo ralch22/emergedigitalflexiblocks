@@ -12,50 +12,41 @@ import useScrollDisabler from '@solid-ui-components/useScrollDisabler'
 import styles from './Search.styles'
 
 const Hits = ({ searchState, searchResults }) => {
-  useScrollDisabler()
+  useScrollDisabler();
 
   if (!searchResults || !searchState.query) {
-    return 'What are you looking for?'
+    return 'What are you looking for?';
   }
 
   if (searchResults.query !== searchState.query) {
     // Waiting for search request to return results from the server
-    return <Spinner strokeWidth={2} duration={700} sx={styles.spinner} />
+    return <Spinner strokeWidth={2} duration={700} sx={styles.spinner} />;
   }
 
   if (searchResults && searchResults.nbHits < 1) {
-    return `No results for '${searchResults.query}'`
+    return `No results for '${searchResults.query}'`;
   } else {
-    const hitsByCategory = groupArray(searchResults.hits, 'category.name')
-    const categories = Object.keys(hitsByCategory)
-
-    return categories.map(name => (
-      <Box
-        variant='lists.cards.fixed.search'
-        sx={styles.hitGroup}
-        key={`search-${name}`}
-      >
-        <Heading variant='h4'>{name}</Heading>
-        {hitsByCategory[name].map(hit => {
+    return (
+      <Box variant='lists.cards.fixed.search'>
+        {searchResults.hits.map(hit => {
           const node = {
             ...hit,
             key: hit.objectID,
             title: <Highlight hit={hit} tagName='mark' attribute='title' />,
-            excerpt: <Snippet hit={hit} tagName='mark' attribute='excerpt' />
-          }
-          console.log(node)
+            excerpt: <Snippet hit={hit} tagName='mark' attribute='excerpt' />,
+          };
+          console.log(node);
           return (
             <Card
               variant='search'
               {...node}
-             
             />
-          )
+          );
         })}
       </Box>
-    ))
+    );
   }
-}
+};
 
 const ConnectedHits = connectStateResults(Hits)
 

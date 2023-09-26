@@ -10,6 +10,7 @@ import address1 from '../../../../../../site/content/blocks/shared/address1.json
 import address2 from '../../../../../../site/content/blocks/shared/address2.json'
 import ClutchWidget from '@solid-ui-components/Widget/Widget';
 
+
 const styles = {
   wrapper: {
     position: 'relative',
@@ -17,7 +18,7 @@ const styles = {
     color: 'white',
   },
   footer: {
-    flexDirection: ['column-reverse', 'row'],
+    flexDirection: ['column', 'row'],
     width: '100%',
     py: 5,
   },
@@ -54,15 +55,14 @@ const tabs = [
 
 
 const FooterBlock01 = ({ content: { text, collection, images } }) => {
-
   return (
     <div style={styles.wrapper}>
-      <Container px="5" sx={{ position: 'relative' }}>
+      <Container sx={{ position: 'relative' }}>
         <Flex sx={styles.footer}>
           <Box sx={styles.column}>
             <ContentText content={text} />
-            <CustomTabSwitcher tabs={tabs} />
-            <img src="https://emergedigital.ae/wp-content/uploads/2019/10/WPEngine_Member-Badge.png" alt="" />
+            <CustomTabSwitcher tabs={tabs} /> 
+            <img style={{ width: 'inherit' }} src="https://emergedigital.ae/wp-content/uploads/2019/10/WPEngine_Member-Badge.png" alt="" />
             <ClutchWidget />
             {/* {images && <ContentImages
                      content={images[5]}
@@ -70,7 +70,7 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
                    />} */}
           </Box>
           <Divider spaceX="50px" />
-          <Grid columns={[1, 3]} gap={4} sx={{ flexWrap: 'wrap', flexBasis: '70%' }}>
+          <Grid columns={[1, 3]} sx={{ flexWrap: 'wrap', flexBasis: '70%', columnGap: [null, '6em'] }}>
             {collection?.map(
               ({ text, buttons, images }, index) =>
               buttons && (

@@ -1,0 +1,24 @@
+{
+  "text": [
+    {
+      "text": "Power your website on the fastest WordPress hosting for businesses",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "Your WordPress site will run faster than ever",
+      "variant": "h2"
+    },
+    {
+      "text": "Do you want more visitors, higher conversion rates, and better SEO rankings? The highly optimized platform we use dramatically increases the speed of your site. It’s better for you, and it’s better for your customers!",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/foundation-speed.png",
+      "alt": "alt text"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "text": [
+        {
+            "text": "02",
+            "color": "beta",
+            "variant": "h4"
+          },
+      {
+        "text": "Expertise in Searching",
+         "color": "",
+        "variant": "h3"
+      },
+      {
+        "text": "We ensure that your search engine marketing campaigns are designed with your marketing goals in mind, reflecting the most current best practices.",
+        "variant": "medium",
+        "color": "alpha"
+      }
+    ],
+    "images": [
+      {
+        "src": "../../../assets/flexiblocks/homepage/marketing/02-sem-searching.webp",
+        "alt": "alt text"
+      }
+    ]
+  }
+  

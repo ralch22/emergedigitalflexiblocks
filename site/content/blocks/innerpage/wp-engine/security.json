@@ -1,0 +1,24 @@
+{
+  "text": [
+    {
+      "text": "We are always available!",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "Dedicated support is available 24x7x365",
+      "variant": "h2"
+    },
+    {
+      "text": "A passion for your business’s success drives our team of experts. As you build, launch, and beyond, we’ll guide you every step of the way.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/foundation-security.png",
+      "alt": "alt text"
+    }
+  ]
+}

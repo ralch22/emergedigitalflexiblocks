@@ -1,0 +1,29 @@
+{
+  "text": [
+    {
+      "text": "It is easier than you think to migrate your WordPress website",
+      "variant": "h2",
+       "color": ""
+    },
+    {
+      "text": "Over 500k sites have been migrated using the automated migration plugin in less than an hour on aveage.",
+      "variant": "medium",
+       "color": ""
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/developer.png",
+      "alt": "Wp Engine"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Become A Wordpress Creator",
+      "type": "ANCHOR",
+      "link": "https://wpengine.com/more/partnerspecialoffer/?w_agcid=xzUnBBU3",
+      "target": "_blank",
+      "variant": "secondary"
+    }
+  ]
+}

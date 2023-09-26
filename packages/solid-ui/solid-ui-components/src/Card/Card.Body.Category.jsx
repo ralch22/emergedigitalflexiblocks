@@ -19,7 +19,7 @@ const CardBodyCategory = ({ variant, categories, omitCategory }) =>
             <Badge
               variant='tag'
               as={Link}
-              to={slug}
+              to={`posts/${slug}`}
             >
               {name}
             </Badge>

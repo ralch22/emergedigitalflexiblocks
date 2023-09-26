@@ -13,7 +13,7 @@ const CardBodyTitle = ({ variant, title, slug, link }) => {
       }
     : {
         as: GLink,
-        to: slug
+        to: `posts/${slug}`
       }
   return (
     <Heading {...linkProps} dangerouslySetInnerHTML={{ __html: title }} sx={{ variant: rv(variant, 'title') }} />

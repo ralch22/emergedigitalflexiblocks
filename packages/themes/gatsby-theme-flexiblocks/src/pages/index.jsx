@@ -49,7 +49,7 @@ const IndexPage = props => {
       <Companies content={content['companies']} />
       <Divider space='5' />
       <Divider space='5' />
-      <FeatureThree content={content['feature-one']} />
+      <FeatureThree reverseSm content={content['feature-one']} />
       <Divider space='5' />
       <Divider space='5' />
       <Container variant='wide' sx={styles.whyChooseUsContainer}>

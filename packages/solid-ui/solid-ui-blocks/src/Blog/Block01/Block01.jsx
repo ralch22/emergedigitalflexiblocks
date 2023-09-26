@@ -83,22 +83,20 @@ const BlogBlock01 = ({ posts, content: { text, collection, buttons } }) => {
       </Box>
       <Divider />
       <Reveal effect='fadeIn'>
-          <Grid columns={[1, 2]} gap={4} sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
-            <CardList
-              nodes={posts.nodes}
-              limit={3}
-              simple
-              columns={[3]}
-              variant={[
-                'horizontal-md',
-                'horizontal',
-                'horizontal',
-                'vertical'
-              ]}
-              omitCategory
-            />
+          <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
+          <CardList
+            nodes={posts.nodes}
+            limit={3}
+            columns={[1, 1, 1, 3]}
+            variant={[
+              'horizontal-md',
+              'horizontal',
+              'horizontal',
+              'vertical'
+            ]}
+          />
                     
-          </Grid>
+          </Flex>
         </Reveal>
       {buttons && (
         <>

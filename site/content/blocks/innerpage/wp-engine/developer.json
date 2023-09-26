@@ -1,0 +1,72 @@
+{
+  "text": [
+    {
+      "text": "For enterprises",
+      "variant": "h4",
+      "color": "alpha"
+    },
+    {
+      "text": "Scale, transform, and automate with a trusted enterprise platform",
+      "variant": "h2"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/arrow-right-arrow-left-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Make the migration process seamless",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Easily migrate multiple WordPress sites to our managed hosting service. We have an automated migration plugin and a team of support experts to ensure a seamless transition.",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Ensure enterprise-grade performance​",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "It is important to ensure that high traffic does not slow down performance. You can optimize your WordPress website experience while accommodating large traffic spikes.​",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/network-wired-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },  
+      "text": [
+        {
+          "text": "Developing an effective, scalable network",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "WP Engine’s business-class web hosting platform allows businesses to reduce their time-to-market by hand by scaling with them as they grow.",
+          "variant": "medium", 
+          "color": "omega"
+        }
+      ]
+    }
+  ]
+}

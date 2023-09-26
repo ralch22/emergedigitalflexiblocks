@@ -9,6 +9,7 @@ import { ModalContextProvider } from '@solid-ui-components/Modal'
 import { TabsContextProvider } from '@solid-ui-components/Tabs'
 import ColorMode from '@solid-ui-components/ColorMode'
 import './css/global.css'
+import 'react-tabs/style/react-tabs.css';
 
 const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
   return (
