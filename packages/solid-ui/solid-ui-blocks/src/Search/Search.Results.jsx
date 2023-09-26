@@ -6,8 +6,7 @@ import {
   connectStateResults,
   PoweredBy
 } from 'react-instantsearch-dom'
-import { Heading, Box, Spinner } from 'theme-ui'
-import Card from '@solid-ui-components/Card'
+import { Text, Box, Spinner, Card } from 'theme-ui'
 import useScrollDisabler from '@solid-ui-components/useScrollDisabler'
 import styles from './Search.styles'
 
@@ -35,12 +34,15 @@ const Hits = ({ searchState, searchResults }) => {
             title: <Highlight hit={hit} tagName='mark' attribute='title' />,
             excerpt: <Snippet hit={hit} tagName='mark' attribute='excerpt' />,
           };
-          console.log(node);
           return (
-            <Card
-              variant='search'
-              {...node}
-            />
+            <Card key={hit.objectID} variant='search'>
+              <Text as='h3'>
+                <Highlight hit={hit} tagName='mark' attribute='title' />
+              </Text>
+              <Text as='p'>
+                <Snippet hit={hit} tagName='mark' attribute='excerpt' />
+              </Text>
+            </Card>
           );
         })}
       </Box>
