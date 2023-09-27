@@ -90,7 +90,7 @@ const WpEngine = props => {
       <SingleText content={content['intro']} />
       <Divider space='5' />
       <Container>
-        <FeatureThree content={content['feature-two']} />
+        <FeatureThree reverseSm content={content['feature-two']} />
       </Container>
       <Divider space='5' />
       

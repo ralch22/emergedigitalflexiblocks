@@ -86,18 +86,16 @@ const BlogBlock01 = ({ products, subscription, content: { text, collection, butt
       <Reveal effect='fadeIn'>
           <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
             <CardList
-              nodes={products}
+              nodes={posts.nodes}
               limit={3}
-              simple
               subscription={subscription}
-              columns={[3]}
+              columns={[1, 1, 1, 3]}
               variant={[
                 'horizontal-md',
                 'horizontal',
                 'horizontal',
                 'vertical'
               ]}
-              omitCategory
             />
                     
           </Flex>
