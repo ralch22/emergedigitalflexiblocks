@@ -39,7 +39,7 @@ const SearchEngine = props => {
         <Content2 reverse content={content['seo']} />
       <Divider space='5' />
       <Container>
-        <FeatureThree content={content['feature-one']} />
+        <FeatureThree reverseSm content={content['feature-one']} />
       </Container>
       <Divider space='5' />
       <Specialist content={content['specialist']} />

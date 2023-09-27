@@ -55,7 +55,7 @@ const PaidMediaPag = props => {
       </Container>
       <Divider space='5' />
       <Container>
-        <FeatureThree content={content['feature-one']} />
+        <FeatureThree reverseSm content={content['feature-one']} />
       </Container>
       <Divider space='5' />
       <Paid content={content['paid']} />

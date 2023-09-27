@@ -75,7 +75,7 @@ const styles = {
   }
 }
 
-const BlogBlock01 = ({ posts, content: { text, collection, buttons } }) => {
+const BlogBlock01 = ({ posts, single, content: { text, collection, buttons } }) => {
   return (
     <Container>
       <Box sx={{ textAlign: `center` }}>
@@ -87,6 +87,7 @@ const BlogBlock01 = ({ posts, content: { text, collection, buttons } }) => {
           <CardList
             nodes={posts.nodes}
             limit={3}
+            single={single}
             columns={[1, 1, 1, 3]}
             variant={[
               'horizontal-md',

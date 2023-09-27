@@ -3,7 +3,7 @@ import { Link as GLink } from 'gatsby'
 import { Heading } from 'theme-ui'
 import rv from '@solid-ui-components/utils/buildResponsiveVariant'
 
-const CardBodyTitle = ({ variant, title, slug, link }) => {
+const CardBodyTitle = ({ variant, title, slug, link, single }) => {
   const linkProps = link
     ? {
         as: 'a',
@@ -13,7 +13,7 @@ const CardBodyTitle = ({ variant, title, slug, link }) => {
       }
     : {
         as: GLink,
-        to: `posts/${slug}`
+        to: single ? `posts/${slug}` : slug
       }
   return (
     <Heading {...linkProps} dangerouslySetInnerHTML={{ __html: title }} sx={{ variant: rv(variant, 'title') }} />
