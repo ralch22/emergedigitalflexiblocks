@@ -27,6 +27,7 @@ const CardMedia = ({
   slug,
   link,
   withModerate,
+  single,
   ...props
 }) => {
   const context = useThemeUI()
