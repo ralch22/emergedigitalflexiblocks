@@ -13,6 +13,7 @@ import { Box } from 'theme-ui'
 import ProductList from '@solid-ui-components/ProductList'
 import Divider from '@solid-ui-components/Divider'
 import Seo from '@solid-ui-blocks/Seo'
+import { useDispatch, useSelector } from 'react-redux';
 import Products from '@solid-ui-blocks/Products/Block01'
 
 import { normalizeBlockContentNodes } from '@blocks-helpers';
@@ -20,28 +21,29 @@ import { normalizeBlockContentNodes } from '@blocks-helpers';
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
 
-const RenderProduct = ({ data: { allBlockContent }, ...props}) => {
+import React, { useEffect } from 'react';
+import { fetchCaseStudies } from '../store/ducks/caseSlice';
 
-  const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-  const [caseStudy, setCaseStudy] = useState(null);
-    
-      useEffect(() => {
-        async function fetchCaseStudy() {
-          try {
-            const response = await fetch(
-              `https://emergedigital.ae/wp-json/wp/v2/case-studies`
-            );
-            setCaseStudy(response.data);
-          } catch (error) {
-            console.error('Error fetching case study:', error);
-          }
-        }
-    
-        fetchCaseStudy();
-      }, []);
+const CaseStudiesList = (props) => {
+  const dispatch = useDispatch();
+  const caseStudies = useSelector((state) => state.case.caseStudies);
+  const status = useSelector((state) => state.caseStudies.status);
+  const error = useSelector((state) => state.caseStudies.error);
+  console.log("studies", caseStudies)
+  useEffect(() => {
+    if (status === 'idle') {
+      dispatch(fetchCaseStudies());
+    }
+  }, [status, dispatch]);
 
-      console.log("studies", caseStudy)
-  
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
+
+  if (status === 'failed') {
+    return <div>Error: {error}</div>;
+  }
+
   return (
     <Layout {...props}>
     <Seo title='Home' />
@@ -51,8 +53,10 @@ const RenderProduct = ({ data: { allBlockContent }, ...props}) => {
    
     <Footer content={content['footer']} />
   </Layout>
-  )
-}
+  );
+};
+
+export default CaseStudiesList;
 
 
 export const pageQuery = graphql`
@@ -64,44 +68,6 @@ export const pageQuery = graphql`
         ...BlockContent
       }
     }
- allWpPage {
-      nodes {
-        nodeType
-        slug
-      title
-      uri
-      seo {
-          title
-          metaDesc
-          focuskw
-          metaKeywords
-          metaRobotsNoindex
-          metaRobotsNofollow
-          opengraphTitle
-          opengraphDescription
-          opengraphImage {
-              altText
-              sourceUrl
-              srcSet
-          }
-          twitterTitle
-          twitterDescription
-          twitterImage {
-              altText
-              sourceUrl
-              srcSet
-          }
-          canonical
-          cornerstone
-          schema {
-              articleType
-              pageType
-              raw
-          }
-      }
-      }
-    }
+ 
 }
 `
-
-export default RenderProduct
