@@ -60,14 +60,14 @@ const CaseStudiesList = ({ data: { allBlockContent }, ...props}) => {
 export const pageQuery = graphql`
   query PostsPageQuery {
     allBlockContent(
-      filter: { page: { in: ["innerpage/products", "shared"] } }
+      filter: { page: { in: ["innerpage/blog", "shared"] } }
    ) {
       nodes {
         ...BlockContent
       }
     }
  
-}
+  }
 `
 
 export default CaseStudiesList;
