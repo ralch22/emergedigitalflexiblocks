@@ -26,9 +26,8 @@ const parsedData = JSON.parse(auth);
 const CaseStudiesList = ({ data: { allBlockContent }, ...props}) => {
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
   const dispatch = useDispatch();
-  const caseStudies = useSelector((state) => state.case.caseStudies);
-  const status = useSelector((state) => state.caseStudies.status);
-  const error = useSelector((state) => state.caseStudies.error);
+  const { caseStudies, status, error } = useSelector((state) => state.case);
+
   console.log("studies", caseStudies)
   useEffect(() => {
    
