@@ -24,16 +24,17 @@ const parsedData = JSON.parse(auth);
 import React, { useEffect } from 'react';
 import { fetchCaseStudies } from '../store/ducks/caseSlice';
 
-const CaseStudiesList = (props) => {
+const CaseStudiesList = ({ data: { allBlockContent }, ...props}) => {
+  const content = normalizeBlockContentNodes(allBlockContent?.nodes);
   const dispatch = useDispatch();
   const caseStudies = useSelector((state) => state.case.caseStudies);
   const status = useSelector((state) => state.caseStudies.status);
   const error = useSelector((state) => state.caseStudies.error);
   console.log("studies", caseStudies)
   useEffect(() => {
-    if (status === 'idle') {
+   
       dispatch(fetchCaseStudies());
-    }
+  
   }, [status, dispatch]);
 
   if (status === 'loading') {
