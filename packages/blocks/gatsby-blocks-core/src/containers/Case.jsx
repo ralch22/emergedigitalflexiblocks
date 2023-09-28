@@ -2,7 +2,7 @@
  * Placeholder component to shadow
  */
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card, Box  } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
