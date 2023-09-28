@@ -23,7 +23,7 @@ exports.createPages = async ({ actions }) => {
   postData.forEach(post => {
     createPage({
       path: `/cases/${post.slug}`,
-      component: require.resolve('./templates/case'),
+      component: require.resolve('./src/templates/case'),
       context: {
         post,
       },
