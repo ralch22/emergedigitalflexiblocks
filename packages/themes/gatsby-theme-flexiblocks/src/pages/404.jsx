@@ -8,7 +8,7 @@ import Message from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 
 const NotFoundPage = props => {
-  const { allBlockContent } = props.data
+  const { allBlockContent, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
 
   return (

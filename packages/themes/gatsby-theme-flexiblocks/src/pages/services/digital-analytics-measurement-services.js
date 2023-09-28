@@ -26,7 +26,7 @@ import styles from "../_styles"
 // import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
 
 const GAnalyticsAudit = props => {
-  const { allBlockContent } = props.data
+  const { allBlockContent, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
 
   
@@ -74,9 +74,46 @@ export const query = graphql`
   query innerpageGAnalyticsAuditBlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/digital-analytics-measurement-services", "shared"] } }
-    ) {
+   ) {
       nodes {
         ...BlockContent
+      }
+    }
+ allWpPage {
+      nodes {
+        nodeType
+        slug
+      title
+      uri
+      seo {
+          title
+          metaDesc
+          focuskw
+          metaKeywords
+          metaRobotsNoindex
+          metaRobotsNofollow
+          opengraphTitle
+          opengraphDescription
+          opengraphImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          twitterTitle
+          twitterDescription
+          twitterImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          canonical
+          cornerstone
+          schema {
+              articleType
+              pageType
+              raw
+          }
+      }
       }
     }
   }

@@ -7,7 +7,7 @@ export const pageQuery = graphql`
   query PostsPageQuery {
     allBlockContent(
       filter: { page: { in: ["innerpage/blog", "shared"] } }
-    ) {
+   ) {
       nodes {
         ...BlockContent
       }

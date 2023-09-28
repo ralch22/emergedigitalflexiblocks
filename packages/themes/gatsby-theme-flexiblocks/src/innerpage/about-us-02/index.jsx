@@ -16,7 +16,7 @@ import Team from '@solid-ui-blocks/Teams/Block02'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 
 const AboutUs02 = props => {
-  const { allBlockContent } = props.data
+  const { allBlockContent, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
 
   return (
@@ -51,9 +51,46 @@ export const query = graphql`
   query innerpageAboutUs02BlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/about-us-02", "shared"] } }
-    ) {
+   ) {
       nodes {
         ...BlockContent
+      }
+    }
+ allWpPage {
+      nodes {
+        nodeType
+        slug
+      title
+      uri
+      seo {
+          title
+          metaDesc
+          focuskw
+          metaKeywords
+          metaRobotsNoindex
+          metaRobotsNofollow
+          opengraphTitle
+          opengraphDescription
+          opengraphImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          twitterTitle
+          twitterDescription
+          twitterImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          canonical
+          cornerstone
+          schema {
+              articleType
+              pageType
+              raw
+          }
+      }
       }
     }
   }

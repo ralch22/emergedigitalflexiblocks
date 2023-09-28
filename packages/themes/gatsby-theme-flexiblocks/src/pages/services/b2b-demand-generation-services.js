@@ -22,7 +22,7 @@ import { normalizeBlockContentNodes } from '@blocks-helpers'
 import styles from "./_styles"
 
 const SearchEngine = props => {
-  const { allBlockContent } = props.data
+  const { allBlockContent, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
 
   return (
@@ -96,9 +96,46 @@ export const query = graphql`
   query innerpageGAnalyticsAuditBlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/b2b-demand-generation-services", "shared"] } }
-    ) {
+   ) {
       nodes {
         ...BlockContent
+      }
+    }
+ allWpPage {
+      nodes {
+        nodeType
+        slug
+      title
+      uri
+      seo {
+          title
+          metaDesc
+          focuskw
+          metaKeywords
+          metaRobotsNoindex
+          metaRobotsNofollow
+          opengraphTitle
+          opengraphDescription
+          opengraphImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          twitterTitle
+          twitterDescription
+          twitterImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          canonical
+          cornerstone
+          schema {
+              articleType
+              pageType
+              raw
+          }
+      }
       }
     }
   }

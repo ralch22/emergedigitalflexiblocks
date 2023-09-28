@@ -7,10 +7,60 @@ const l = require('lodash')
 const path = require('path')
 const withDefaults = require('./src/utils/default.options')
 
+const siteUrl = process.env.URL || `https://fallback.net`
+
 module.exports = options => {
   options = withDefaults(options)
   
   const plugins = [
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
+            nodes {
+              ... on WpPost {
+                uri
+                modifiedGmt
+              }
+              ... on WpPage {
+                uri
+                modifiedGmt
+              }
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+          allWpContentNode: { nodes: allWpNodes },
+        }) => {
+          const wpNodeMap = allWpNodes.reduce((acc, node) => {
+            const { uri } = node
+            acc[uri] = node
+
+            return acc
+          }, {})
+
+          return allPages.map(page => {
+            return { ...page, ...wpNodeMap[page.path] }
+          })
+        },
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          }
+        },
+      },
+    },
     {
       resolve: '@elegantstack/gatsby-plugin-proxy-directives',
       options
@@ -35,6 +85,7 @@ module.exports = options => {
     }, 
     'gatsby-plugin-catch-links',
     'gatsby-plugin-image',
+    'gatsby-plugin-next-seo',
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-fastify`,

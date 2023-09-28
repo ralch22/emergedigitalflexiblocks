@@ -23,7 +23,7 @@ import servicesData from '../../../../../../site/content/blocks/innerpage/servic
 import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
 
 const Services03 = props => {
-  const { allBlockContent } = props.data
+  const { allBlockContent, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
 
   
@@ -68,9 +68,46 @@ export const query = graphql`
   query innerpageServices03BlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/services-03", "shared"] } }
-    ) {
+   ) {
       nodes {
         ...BlockContent
+      }
+    }
+ allWpPage {
+      nodes {
+        nodeType
+        slug
+      title
+      uri
+      seo {
+          title
+          metaDesc
+          focuskw
+          metaKeywords
+          metaRobotsNoindex
+          metaRobotsNofollow
+          opengraphTitle
+          opengraphDescription
+          opengraphImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          twitterTitle
+          twitterDescription
+          twitterImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          canonical
+          cornerstone
+          schema {
+              articleType
+              pageType
+              raw
+          }
+      }
       }
     }
   }

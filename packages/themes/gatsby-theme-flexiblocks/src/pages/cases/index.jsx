@@ -13,7 +13,7 @@ import styles from './_styles';
 
 const Blog = props => {
   const [cases, setCases] = useState(null)
-  const { allBlockContent } = props.data
+  const { allBlockContent, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
   useEffect(() => {
     fetchCases()
@@ -53,9 +53,46 @@ export const query = graphql`
   query innerpageCasesBlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/cases", "shared"] } }
-    ) {
+   ) {
       nodes {
         ...BlockContent
+      }
+    }
+ allWpPage {
+      nodes {
+        nodeType
+        slug
+      title
+      uri
+      seo {
+          title
+          metaDesc
+          focuskw
+          metaKeywords
+          metaRobotsNoindex
+          metaRobotsNofollow
+          opengraphTitle
+          opengraphDescription
+          opengraphImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          twitterTitle
+          twitterDescription
+          twitterImage {
+              altText
+              sourceUrl
+              srcSet
+          }
+          canonical
+          cornerstone
+          schema {
+              articleType
+              pageType
+              raw
+          }
+      }
       }
     }
   }
