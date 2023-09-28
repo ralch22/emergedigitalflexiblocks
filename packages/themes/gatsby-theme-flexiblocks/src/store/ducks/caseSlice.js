@@ -2,13 +2,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Define the initial state
-const initialState = {
-  caseStudies: [],
-  status: 'idle',
-  error: null,
-};
-
 // Define the asynchronous thunk to fetch case studies and images
+
 export const fetchCaseStudies = createAsyncThunk('caseStudies/fetchCaseStudies', async () => {
   try {
     // Fetch case studies from the first URL
@@ -42,7 +37,11 @@ export const fetchCaseStudies = createAsyncThunk('caseStudies/fetchCaseStudies',
 // Create the slice
 const caseStudiesSlice = createSlice({
   name: 'caseStudies',
-  initialState,
+  initialState: {
+    caseStudies: [],
+    status: 'idle',
+    error: null,
+  },
   reducers: {},
   extraReducers: (builder) => {
     builder
@@ -61,8 +60,3 @@ const caseStudiesSlice = createSlice({
 });
 
 export default caseStudiesSlice.reducer;
-
-// Export the async thunk for use in components
-export { fetchCaseStudies };
-
-

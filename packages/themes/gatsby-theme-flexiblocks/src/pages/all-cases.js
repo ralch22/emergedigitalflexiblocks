@@ -56,9 +56,6 @@ const CaseStudiesList = (props) => {
   );
 };
 
-export default CaseStudiesList;
-
-
 export const pageQuery = graphql`
   query PostsPageQuery {
     allBlockContent(
@@ -71,3 +68,5 @@ export const pageQuery = graphql`
  
 }
 `
+
+export default CaseStudiesList;
