@@ -2,7 +2,7 @@
  * Placeholder component to shadow
  */
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
 import { graphql } from 'gatsby'
@@ -15,14 +15,13 @@ import Divider from '@solid-ui-components/Divider'
 import Seo from '@solid-ui-blocks/Seo'
 import { useDispatch, useSelector } from 'react-redux';
 import Products from '@solid-ui-blocks/Products/Block01'
+import { fetchCaseStudies } from '../store/ducks/caseSlice';
+
 
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 
 const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
 const parsedData = JSON.parse(auth);
-
-import React, { useEffect } from 'react';
-import { fetchCaseStudies } from '../store/ducks/caseSlice';
 
 const CaseStudiesList = ({ data: { allBlockContent }, ...props}) => {
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
@@ -59,14 +58,11 @@ const CaseStudiesList = ({ data: { allBlockContent }, ...props}) => {
 
 export const pageQuery = graphql`
   query PostsPageQuery {
-    allBlockContent(
-      filter: { page: { in: ["innerpage/blog", "shared"] } }
-   ) {
+    allBlockContent(filter: { page: { in: ["innerpage/blog", "shared"] } }) {
       nodes {
         ...BlockContent
       }
     }
- 
   }
 `
 
