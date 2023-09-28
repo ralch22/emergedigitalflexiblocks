@@ -86,7 +86,7 @@ const BlogBlock01 = ({ products, subscription, content: { text, collection, butt
       <Reveal effect='fadeIn'>
           <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
             <CardList
-              nodes={posts.nodes}
+              nodes={products}
               limit={3}
               subscription={subscription}
               columns={[1, 1, 1, 3]}
