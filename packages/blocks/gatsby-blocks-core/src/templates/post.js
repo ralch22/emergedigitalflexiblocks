@@ -12,9 +12,7 @@ export const pageQuery = graphql`
     $tagsIds: [String]
     $hasTags: Boolean!
   ) {
-    allBlockContent(
-      filter: { page: { in: ["innerpage/blog", "shared"] } }
-   ) {
+    allBlockContent(filter: { page: { in: ["innerpage/blog", "shared"] } }) {
       nodes {
         ...BlockContent
       }
@@ -27,7 +25,7 @@ export const pageQuery = graphql`
       sort: { date: DESC }
       limit: 6
     ) @include(if: $hasTags) {
-        nodes {
+      nodes {
         id
         title
         slug
@@ -64,7 +62,7 @@ export const pageQuery = graphql`
       sort: { date: DESC }
       limit: 6
     ) {
-        nodes {
+      nodes {
         id
         title
         slug
@@ -90,6 +88,41 @@ export const pageQuery = graphql`
             }
             name
           }
+        }
+      }
+    }
+    wpPost(id: { eq: $id }) {
+      nodeType
+      slug
+      title
+      uri
+      seo {
+        title
+        metaDesc
+        focuskw
+        metaKeywords
+        metaRobotsNoindex
+        metaRobotsNofollow
+        opengraphTitle
+        opengraphDescription
+        opengraphImage {
+          altText
+          sourceUrl
+          srcSet
+        }
+        twitterTitle
+        twitterDescription
+        twitterImage {
+          altText
+          sourceUrl
+          srcSet
+        }
+        canonical
+        cornerstone
+        schema {
+          articleType
+          pageType
+          raw
         }
       }
     }

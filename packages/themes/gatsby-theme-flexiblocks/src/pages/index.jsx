@@ -2,14 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Container } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
-import Seo from '@solid-ui-components/Seo'
+import Seo from 'gatsby-plugin-wpgraphql-seo'
 import Divider from '@solid-ui-components/Divider'
 import Calendly from '@solid-ui-components/Calendly'
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
 import ModalSimple from '@solid-ui-blocks/Modal/Block02'
 import ModalCart from '@solid-ui-blocks/Modal/Block03'
 import Header from '@solid-ui-blocks/Header/Block01'
-import Hero from '@solid-ui-blocks/Hero/Block01' 
+import Hero from '@solid-ui-blocks/Hero/Block01'
 import Companies from '@solid-ui-blocks/Companies/Block01'
 import Services from '@solid-ui-blocks/Features/Block02'
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
@@ -22,17 +22,20 @@ import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded'
 import Blog from '@solid-ui-blocks/Blog/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import theme from './_theme'
 import styles from './_styles'
+import { regexString } from '../utils/filter'
 
 const IndexPage = props => {
-  const { allBlockContent, posts } = props.data
+  const { allBlockContent, posts, allWpPage } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
- 
-
+  const uri = regexString(props.uri)
+  const filter = allWpPage.nodes.filter(page => {
+    return page.slug === 'home'
+  })
+  const post = filter[0]
   return (
-    <Layout theme={theme} {...props}>
-      <Seo title='Home' />
+    <Layout {...props}>
+      <Seo post={post} />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
@@ -63,7 +66,7 @@ const IndexPage = props => {
       <FeatureTwo content={content['feature-two']} />
       <Divider space='5' />
       <Divider space='5' />
-      <NewsletterExpanded content={content['newsletter']}/>
+      <NewsletterExpanded content={content['newsletter']} />
       <Divider space='5' />
       <Blog posts={posts} content={content['latest-blogs']} />
       <Divider space='6' />
@@ -84,25 +87,25 @@ const IndexPage = props => {
       <Divider space='5' />
       <Footer content={content['footer']} />
     </Layout>
-  ) 
+  )
 }
 
 export const query = graphql`
   query homepageMarketingBlockContent {
     allBlockContent(
       filter: { page: { in: ["homepage/marketing", "shared"] } }
-   ) {
+    ) {
       nodes {
         ...BlockContent
       }
     }
- allWpPage {
+    allWpPage {
       nodes {
         nodeType
         slug
-      title
-      uri
-      seo {
+        title
+        uri
+        seo {
           title
           metaDesc
           focuskw
@@ -112,60 +115,58 @@ export const query = graphql`
           opengraphTitle
           opengraphDescription
           opengraphImage {
-              altText
-              sourceUrl
-              srcSet
+            altText
+            sourceUrl
+            srcSet
           }
           twitterTitle
           twitterDescription
           twitterImage {
-              altText
-              sourceUrl
-              srcSet
+            altText
+            sourceUrl
+            srcSet
           }
           canonical
           cornerstone
           schema {
-              articleType
-              pageType
-              raw
+            articleType
+            pageType
+            raw
           }
-      }
+        }
       }
     }
-    posts: allWpPost(sort: { date: DESC } limit: 3) {
-        nodes {
-       id
-       title
-       slug
-       date(formatString: "MMMM DD, YYYY")
-       excerpt
-       featuredImage {
-         node {
-           altText
-           id
-           sourceUrl
-         }
-       }
-       categories {
-         nodes {
-           name
-           slug
-         }
-       }
-       author {
-         node {
-           id
-           avatar {
-             url
-           }
-           name
-         }
-       }
-       
-     }
-   }
-     
+    posts: allWpPost(sort: { date: DESC }, limit: 3) {
+      nodes {
+        id
+        title
+        slug
+        date(formatString: "MMMM DD, YYYY")
+        excerpt
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+            slug
+          }
+        }
+        author {
+          node {
+            id
+            avatar {
+              url
+            }
+            name
+          }
+        }
+      }
+    }
   }
 `
 export default IndexPage
