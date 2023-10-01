@@ -3,30 +3,23 @@
  */
 
 import React, { useEffect, useState } from 'react'
-import { Card, Box } from 'theme-ui'
-import { graphql } from 'gatsby'
+import { Box, Card } from 'theme-ui'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
 import Main from '@solid-ui-layout/Main/Main'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import Header from '@solid-ui-blocks/Header/Block01'
-import CardList from '@solid-ui-components/CardList'
 import Divider from '@solid-ui-components/Divider'
-import Sticky from '@solid-ui-components/Sticky'
-import Seo from '@solid-ui-blocks/Seo'
-import AuthorCompact from '@solid-ui-blocks/AuthorCompact'
-import TableOfContentsCompact from '@solid-ui-blocks/TableOfContentsCompact'
 import {
-  PostHead,
-  PostImage,
   PostBody,
   PostComments,
-  PostCommentsFacebook,
-  PostCommentsGraph,
-  PostTagsShare,
-  PostFooter
+  PostHead,
+  PostImage,
+  PostTagsShare
 } from '@solid-ui-blocks/Case'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
+import { ArticleJsonLd } from 'gatsby-plugin-next-seo'
+import Head from '@solid-ui-blocks/Head'
 
 export default function Case({
   pageContext,
@@ -87,7 +80,18 @@ export default function Case({
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
   return (
     <Layout {...props}>
-      <Seo {...caseStudy} siteUrl={siteUrl} />
+      <Head>{caseStudy.yoast_head}</Head>
+      <ArticleJsonLd
+        url={caseStudy.link}
+        headline={caseStudy.title.rendered}
+        images={[caseStudy.imageUrl]}
+        datePublished={caseStudy.date}
+        dateModified={caseStudy.modified}
+        description={caseStudy.content.rendered}
+        overrides={{
+          '@type': 'BlogPosting' // set's this as a blog post.
+        }}
+      />
       <Header search content={content['header']} />
       {caseStudy && (
         <>

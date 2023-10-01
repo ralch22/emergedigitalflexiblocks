@@ -6,29 +6,40 @@ import React from 'react'
 import Layout from '@solid-ui-layout/Layout'
 import Stack from '@solid-ui-layout/Stack/Stack'
 import Main from '@solid-ui-layout/Main/Main'
-import Footer from '@solid-ui-blocks/Footer/Block01';
-import Header from '@solid-ui-blocks/Header/Block01';
+import Footer from '@solid-ui-blocks/Footer/Block01'
+import Header from '@solid-ui-blocks/Header/Block01'
 import { Box } from 'theme-ui'
 import CardList from '@solid-ui-components/CardList'
 import Divider from '@solid-ui-components/Divider'
-import Seo from '@solid-ui-blocks/Seo'
-import Categories from '@solid-ui-blocks/Categories'
+import Seo from 'gatsby-plugin-wpgraphql-seo'
 import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded'
 import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal'
 import BannerVertical from '@solid-ui-blocks/BannerVertical'
-import { normalizeBlockContentNodes } from '@blocks-helpers';
+import { normalizeBlockContentNodes } from '@blocks-helpers'
+import { regexString } from '@elegantstack/gatsby-theme-flexiblocks/src/utils/filter'
 
 export default function RenderPost({
-    data: { posts = {}, featuredPosts = {}, recentPosts = {}, allBlockContent },
-    ...props
-  }) {
-    const { pageContext: { services = {} } = {} } = props
+  data: {
+    posts = {},
+    featuredPosts = {},
+    recentPosts = {},
+    allBlockContent,
+    allWpPage
+  },
+  ...props
+}) {
+  const { pageContext: { services = {} } = {} } = props
 
-  const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-  console.log(posts.group)
+  const content = normalizeBlockContentNodes(allBlockContent?.nodes)
+  const uri = regexString(props.uri)
+  const filter = allWpPage.nodes.filter(page => {
+    return page.slug === uri
+  })
+  const post = filter[0]
+
   return (
     <Layout {...props}>
-      <Seo title='Home' />
+      <Seo post={post} />
       <Header search content={content['header']} />
       <Divider />
       <Stack effectProps={{ effect: false }}>
@@ -66,9 +77,7 @@ export default function RenderPost({
         posts.group.map((group, index) => (
           <React.Fragment key={`${group.categoryName}.list`}>
             {index % 1 === 0 ? (
-              <Stack
-                title={group.categoryName}
-              >
+              <Stack title={group.categoryName}>
                 <Main>
                   <CardList
                     nodes={group.nodes}
@@ -89,7 +98,6 @@ export default function RenderPost({
                     columns={[1, 2, 3, 3]}
                     variant={['horizontal-md', 'horizontal-aside']}
                     omitMedia
-                    
                   />
                 </Main>
               </Stack>

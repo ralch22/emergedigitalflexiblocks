@@ -70,6 +70,7 @@ const AppDevelopment = props => {
     return page.slug === uri
   })
   const post = filter[0]
+
   return (
     <Layout {...props}>
       <Seo post={post} />
