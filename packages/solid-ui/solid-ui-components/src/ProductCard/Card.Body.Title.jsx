@@ -13,12 +13,21 @@ const CardBodyTitle = ({ variant, name, price_html, slug, link }) => {
       }
     : {
         as: GLink,
-        to: slug
+        to: `/products/${slug}`
       }
   return (
     <>
-      <Heading {...linkProps} dangerouslySetInnerHTML={{ __html: name }} sx={{ variant: rv(variant, 'title') }} />
-    <Heading {...linkProps} dangerouslySetInnerHTML={{ __html: price_html }} variant="h4" sx={{ variant: rv(variant, 'h4') }} />
+      <Heading
+        {...linkProps}
+        dangerouslySetInnerHTML={{ __html: name }}
+        sx={{ variant: rv(variant, 'title') }}
+      />
+      <Heading
+        {...linkProps}
+        dangerouslySetInnerHTML={{ __html: price_html }}
+        variant='h4'
+        sx={{ variant: rv(variant, 'h4') }}
+      />
     </>
   )
 }

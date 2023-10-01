@@ -1,14 +1,18 @@
 import React, { useContext } from 'react'
-import { Link as GLink } from 'gatsby'
+import { Link as GLink, navigate } from 'gatsby'
 import Sticky from 'react-sticky-el'
 import pageContextProvider from '@helpers/pageContextProvider'
-import { Container, Box, Flex, css } from 'theme-ui'
+import { Box, Container, css, Flex } from 'theme-ui'
 import Reveal from '@solid-ui-components/Reveal'
 import Search from '@solid-ui-blocks/Search'
 import Drawer from '@solid-ui-components/Drawer'
 import ContentImages from '@solid-ui-components/ContentImages'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import { FaUser } from 'react-icons/fa'
+
+const auth = typeof window !== 'undefined' ? localStorage.getItem('auth') : null
+const parsedData = JSON.parse(auth)
 
 const styles = {
   wrapper: {
@@ -65,7 +69,11 @@ const styles = {
   }
 }
 
-const HeaderBlock01 = ({ search, content: { images, collection }, menuJustify }) => {
+const HeaderBlock01 = ({
+  search,
+  content: { images, collection, buttons },
+  menuJustify
+}) => {
   const context = useContext(pageContextProvider)
 
   const { services, mobileMenu, darkMode } = context.pageContext
@@ -90,65 +98,122 @@ const HeaderBlock01 = ({ search, content: { images, collection }, menuJustify })
                   />
                 </GLink>
               </Box>
-              {search && (<Box sx={styles.searchContainer}>{algolia && <Search />}</Box>)}
-             {!search && (
-              <>
-                 {collection && (
+              {search && (
+                <Box sx={styles.searchContainer}>{algolia && <Search />}</Box>
+              )}
+              {!search && (
                 <>
-                  <Box sx={styles.desktopMenu}>
-                    <Reveal effect='fadeInDown'>
-                      <Flex
-                        sx={{
-                          alignItems: `center`,
-                          justifyContent: menuJustify
-                        }}
-                      >
-                        {collection.map(
-                          ({ buttons }, index) =>
-                            buttons && (
+                  {collection && (
+                    <>
+                      <Box sx={styles.desktopMenu}>
+                        <Reveal effect='fadeInDown'>
+                          <Flex
+                            sx={{
+                              alignItems: `center`,
+                              justifyContent: menuJustify
+                            }}
+                          >
+                            {collection.map(
+                              ({ buttons }, index) =>
+                                buttons && (
+                                  <Box
+                                    key={`item-${index}`}
+                                    sx={{
+                                      '& + &': {
+                                        ml: 4
+                                      }
+                                    }}
+                                  >
+                                    <ContentButtons content={buttons} />
+                                  </Box>
+                                )
+                            )}
+                            {parsedData ? (
                               <Box
-                                key={`item-${index}`}
+                                onClick={() => navigate('/dashboard')}
                                 sx={{
                                   '& + &': {
                                     ml: 4
-                                  }
+                                  },
+                                  px: 4,
+                                  cursor: 'pointer'
                                 }}
                               >
-                                <ContentButtons content={buttons} />
+                                <FaUser size='20px' />
                               </Box>
-                            )
-                        )}
-                      </Flex>
-                    </Reveal>
-                  </Box>
-                  <Box sx={styles.mobileMenu}>
-                    <Drawer buttonStyle={{ svg: { size: 32 } }}>
-                      {collection.map(
-                        ({ buttons }, index) =>
-                          buttons  && (
+                            ) : (
+                              <>
+                                {buttons && (
+                                  <Box
+                                    sx={{
+                                      '& + &': {
+                                        ml: 4
+                                      }
+                                    }}
+                                  >
+                                    <ContentButtons content={buttons} />
+                                  </Box>
+                                )}
+                              </>
+                            )}
+                          </Flex>
+                        </Reveal>
+                      </Box>
+                      <Box sx={styles.mobileMenu}>
+                        <Drawer buttonStyle={{ svg: { size: 32 } }}>
+                          {collection.map(
+                            ({ buttons }, index) =>
+                              buttons && (
+                                <Box
+                                  key={`item-${index}`}
+                                  sx={{
+                                    fontSize: 3,
+                                    '.button-group-link.level-1, button-group-link.level-1:visited':
+                                      {
+                                        color: `headerActiveColor`
+                                      }
+                                  }}
+                                >
+                                  <ContentButtons
+                                    content={buttons}
+                                    variant='vertical'
+                                  />
+                                </Box>
+                              )
+                          )}
+                          {parsedData ? (
                             <Box
-                              key={`item-${index}`}
+                              onClick={() => navigate('/dashboard')}
                               sx={{
-                                fontSize: 3,
-                                '.button-group-link.level-1, button-group-link.level-1:visited': {
-                                  color: `headerActiveColor`
-                                }
+                                '& + &': {
+                                  ml: 4
+                                },
+                                cursor: 'pointer'
                               }}
                             >
-                              <ContentButtons
-                                content={buttons}
-                                variant='vertical'
-                              />
+                              <FaUser size='20px' />
                             </Box>
-                          )
-                      )}
-                    </Drawer>
-                  </Box>
+                          ) : (
+                            <>
+                              {buttons && (
+                                <Box
+                                  sx={{
+                                    '& + &': {
+                                      ml: 4
+                                    }
+                                  }}
+                                >
+                                  <ContentButtons content={buttons} />
+                                </Box>
+                              )}
+                            </>
+                          )}
+                        </Drawer>
+                      </Box>
+                    </>
+                  )}
                 </>
               )}
-              </>
-             )}
-             
             </Flex>
           </Container>
         </Container>

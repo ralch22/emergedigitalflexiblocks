@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link as GLink } from 'gatsby'
-import { get, Link, useThemeUI } from 'theme-ui'
+import { Link, useThemeUI, get } from 'theme-ui'
 import rv from '@solid-ui-components/utils/buildResponsiveVariant'
+import getImageVariant from '@solid-ui-components/utils/getImageVariant'
+import CardMediaIcon from './Card.Media.Icon'
 import CardMediaImage from './Card.Media.Image'
 
 const DEFAULT_IMAGE_VARIANT = 'vertical'
@@ -40,17 +42,10 @@ const CardMedia = ({
 
   // const image = getImageVariant(thumbnail, imageVar)
 
-  const linkProps = link
-    ? {
-        as: 'a',
-        href: link,
-        target: '_blank',
-        rel: 'noopener noreferrer'
-      }
-    : {
-        as: GLink,
-        to: `/products/${slug}`
-      }
+  const linkProps = {
+    as: GLink,
+    to: `/cases/${slug}`
+  }
 
   return (
     <Link

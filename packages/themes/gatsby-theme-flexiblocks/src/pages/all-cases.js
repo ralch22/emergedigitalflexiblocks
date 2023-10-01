@@ -4,56 +4,55 @@
 
 import React, { useEffect } from 'react'
 import Layout from '@solid-ui-layout/Layout'
-import Stack from '@solid-ui-layout/Stack/Stack'
 import { graphql } from 'gatsby'
-import Main from '@solid-ui-layout/Main/Main'
-import Footer from '@solid-ui-blocks/Footer/Block01';
-import Header from '@solid-ui-blocks/Header/Block01';
-import { Box } from 'theme-ui'
-import ProductList from '@solid-ui-components/ProductList'
+import { Container } from 'theme-ui'
+import Footer from '@solid-ui-blocks/Footer/Block01'
+import Header from '@solid-ui-blocks/Header/Block01'
 import Divider from '@solid-ui-components/Divider'
+import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
+import ModalSimple from '@solid-ui-blocks/Modal/Block02'
+import ModalCart from '@solid-ui-blocks/Modal/Block03'
 import Seo from '@solid-ui-blocks/Seo'
-import { useDispatch, useSelector } from 'react-redux';
-import Products from '@solid-ui-blocks/Products/Block01'
-import { fetchCaseStudies } from '../store/ducks/caseSlice';
+import Cases from '@solid-ui-blocks/Cases/Block01'
+import Content from '@solid-ui-blocks/Content/Block01'
+import styles from './_styles'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchCaseStudies } from '../store/ducks/caseSlice'
 
-import { normalizeBlockContentNodes } from '@blocks-helpers';
+import { normalizeBlockContentNodes } from '@blocks-helpers'
 
-const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
-const parsedData = JSON.parse(auth);
+const auth = typeof window !== 'undefined' ? localStorage.getItem('auth') : null
+const parsedData = JSON.parse(auth)
 
-const CaseStudiesList = ({ data: { allBlockContent }, ...props}) => {
-  const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-  const dispatch = useDispatch();
-  const { caseStudies, status, error } = useSelector((state) => state.case);
+const CaseStudiesList = ({ data: { allBlockContent }, ...props }) => {
+  const content = normalizeBlockContentNodes(allBlockContent?.nodes)
+  const dispatch = useDispatch()
+  const { caseStudies, status, error } = useSelector(state => state.case)
 
-  console.log("studies", caseStudies)
   useEffect(() => {
-   
-      dispatch(fetchCaseStudies());
-  
-  }, [status, dispatch]);
-
-  if (status === 'loading') {
-    return <div>Loading...</div>;
-  }
-
-  if (status === 'failed') {
-    return <div>Error: {error}</div>;
-  }
+    dispatch(fetchCaseStudies())
+  }, [dispatch])
 
   return (
     <Layout {...props}>
-    <Seo title='Home' />
-    <Header content={content['header']} />
-    <Divider />
-    {/* <Products products={products} content={content['latest-blogs']} /> */}
-   
-    <Footer content={content['footer']} />
-  </Layout>
-  );
-};
+      <Seo title='Home' />
+      <Header content={content['header']} />
+      <ModalWithTabs content={content['authentication']} reverse />
+      <ModalWithTabs content={content['contact']} />
+      <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
+      <Container variant='wide' sx={styles.heroContainer}>
+        <Content pageTitle='hello' content={content['hero']} />
+      </Container>
+      <Divider />
+      <Divider spaceY='5' />
+      <Cases cases={caseStudies} content={content['all-cases']} />
+
+      <Footer content={content['footer']} />
+    </Layout>
+  )
+}
 
 export const pageQuery = graphql`
   query PostsPageQuery {
@@ -65,4 +64,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default CaseStudiesList;
+export default CaseStudiesList
