@@ -18,7 +18,7 @@ module.exports = async (helpers, pluginOptions) => {
     template: require.resolve('./templates/case')
   })
 
-  await createProductPage()(helpers, pluginOptions, {
+  await createProductPage(helpers, pluginOptions, {
     template: require.resolve('./templates/product')
   })
 
