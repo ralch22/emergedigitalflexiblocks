@@ -17,6 +17,34 @@ export const pageQuery = graphql`
         ...BlockContent
       }
     }
+    post: wpPost(id: { eq: $id }) {
+      id
+      title
+      slug
+      date(formatString: "MMMM DD, YYYY")
+      content
+      featuredImage {
+        node {
+          altText
+          id
+          sourceUrl
+        }
+      }
+      categories {
+        nodes {
+          name
+        }
+      }
+      author {
+        node {
+          id
+          avatar {
+            url
+          }
+          name
+        }
+      }
+    }
     tagPosts: allWpPost(
       filter: {
         tags: { nodes: { elemMatch: { id: { in: $tagsIds } } } }
