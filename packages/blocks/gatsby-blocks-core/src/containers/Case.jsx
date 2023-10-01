@@ -80,21 +80,22 @@ export default function Case({
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
   return (
     <Layout {...props}>
-      <Head>{caseStudy.yoast_head}</Head>
-      <ArticleJsonLd
-        url={caseStudy.link}
-        headline={caseStudy.title.rendered}
-        images={[caseStudy.imageUrl]}
-        datePublished={caseStudy.date}
-        dateModified={caseStudy.modified}
-        description={caseStudy.content.rendered}
-        overrides={{
-          '@type': 'BlogPosting' // set's this as a blog post.
-        }}
-      />
-      <Header search content={content['header']} />
       {caseStudy && (
         <>
+          <Head>{caseStudy.yoast_head}</Head>
+          <ArticleJsonLd
+            url={caseStudy.link}
+            headline={caseStudy.title.rendered}
+            images={[caseStudy.imageUrl]}
+            datePublished={caseStudy.date}
+            dateModified={caseStudy.modified}
+            description={caseStudy.content.rendered}
+            overrides={{
+              '@type': 'BlogPosting' // set's this as a blog post.
+            }}
+          />
+          <Header search content={content['header']} />
+
           <div style={{ marginTop: `5rem` }}>
             <Stack effectProps={{ effect: 'fadeInDown' }}>
               <PostHead {...caseStudy} />
