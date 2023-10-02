@@ -56,7 +56,7 @@ const Privacy = ({ data: { allBlockContent, allWpPage }, ...props }) => {
       <Divider />
       <Divider spaceY='5' />
       <Container>
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        {post && <div dangerouslySetInnerHTML={{ __html: post.content }} />}
         <Script src='https://cdn.iubenda.com/iubenda_i_badge.js'></Script>
       </Container>
 
