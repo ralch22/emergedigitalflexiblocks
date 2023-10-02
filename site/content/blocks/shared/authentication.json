@@ -25,7 +25,7 @@
       "images": [
         {
           "src": "../../assets/flexiblocks/shared/login.jpg",
-          "alt": "alt text"
+          "alt": "Register Image"
         }
       ],
       "form": {
@@ -38,6 +38,8 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "alt": "Auth Icon",
+              "alt": "User Login",
               "color": "alpha"
             }
           },
@@ -49,6 +51,8 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "alt": "Auth Icon",
+              "alt": "User Name",
               "color": "alpha"
             }
           },
@@ -60,6 +64,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           },
@@ -71,6 +76,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           },
@@ -82,6 +88,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           },
@@ -93,6 +100,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           }
@@ -127,7 +135,7 @@
       "images": [
         {
           "src": "../../assets/flexiblocks/shared/login.jpg",
-          "alt": "alt text"
+          "alt": "Login Image"
         }
       ],
       "form": {
@@ -140,6 +148,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           },
@@ -151,6 +160,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           },
@@ -162,6 +172,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           }
@@ -199,7 +210,7 @@
       "images": [
         {
           "src": "../../assets/flexiblocks/homepage/saas/login.jpg",
-          "alt": "alt text"
+          "alt": "Recover Image"
         }
       ],
       "form": {
@@ -212,6 +223,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+              "alt": "Auth Icon",
               "color": "alpha"
             }
           }

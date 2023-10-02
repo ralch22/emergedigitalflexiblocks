@@ -20,12 +20,7 @@
         {
           "text": "As an Internet marketing strategy, SEO considers how search engines work, the computer-programmed algorithms that dictate search engine behavior."
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-phone.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     },
     {
       "text": [
@@ -36,12 +31,7 @@
         {
           "text": "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular."
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-mobile-alt.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     },
     {
       "text": [
@@ -52,12 +42,7 @@
         {
           "text": "Content marketing is a form of marketing focused on creating, publishing, and distributing content for a targeted audience online."
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-mail-send.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     },
     {
       "text": [
@@ -68,12 +53,7 @@
         {
           "text": "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular."
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-directions.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     }
   ]
 }

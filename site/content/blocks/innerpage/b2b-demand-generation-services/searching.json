@@ -1,26 +1,26 @@
 {
-    "text": [
-        {
-            "text": "03",
-            "color": "beta",
-            "variant": "h4"
-          },
-      {
-        "text": "Promote and Distribute Your Content",
-         "color": "",
-        "variant": "h3"
-      },
-      {
-        "text": "After creating your content, we'll work to get it in front of your target audience. We may use various marketing channels to promote your business. Our channels include social media, email campaigns, paid advertising, and public relations. We can adjust your strategy to maximize reach and engagement as we go along.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/b2b-03.png",
-        "alt": "alt text"
-      }
-    ]
-  }
+  "text": [
+    {
+      "text": "03",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "Promote and Distribute Your Content",
+      "color": "",
+      "variant": "h3"
+    },
+    {
+      "text": "After creating your content, we'll work to get it in front of your target audience. We may use various marketing channels to promote your business. Our channels include social media, email campaigns, paid advertising, and public relations. We can adjust your strategy to maximize reach and engagement as we go along.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/b2b-03.png",
+      "alt": "B2B Searching"
+    }
+  ]
+}
   

@@ -1,6 +1,5 @@
 {
   "text": [
-   
     {
       "text": "As your Paid Media Advertising Agency, why should you choose us?",
       "variant": "h2"
@@ -10,6 +9,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/globe-solid.svg",
+        "alt": "Globe",
         "bg": "omegaLighter",
         "color": "omegaDark"
       },
@@ -17,27 +17,29 @@
         {
           "text": "Expertise recognition at local and global levels",
           "variant": "medium",
-           "color": ""
+          "color": ""
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/laptop-code-solid.svg",
+        "alt": "Laptop",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Access our network of more than 60 paid media specialists.",
           "variant": "medium",
-           "color": ""
+          "color": ""
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/hand-point-right-solid.svg",
+        "alt": "Hand Point",
         "bg": "omegaLighter",
         "color": "omegaDark"
       },
@@ -45,13 +47,14 @@
         {
           "text": "All paid channels can be used for integrated team buying",
           "variant": "medium",
-           "color": ""
+          "color": ""
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/clipboard-solid.svg",
+        "alt": "Clipboard",
         "bg": "omegaLighter",
         "color": "omegaDark"
       },
@@ -59,13 +62,14 @@
         {
           "text": "We are fully certified across all major platforms for buying",
           "variant": "medium",
-           "color": ""
+          "color": ""
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
+        "alt": "Handshake",
         "bg": "omegaLighter",
         "color": "omegaDark"
       },
@@ -73,7 +77,7 @@
         {
           "text": "All key vendors are part of trusted, premier partnerships",
           "variant": "medium",
-           "color": ""
+          "color": ""
         }
       ]
     },
@@ -81,13 +85,14 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/hand-holding-dollar-solid.svg",
         "bg": "omegaLighter",
+        "alt": "Dollar",
         "color": "omegaDark"
       },
       "text": [
         {
           "text": "Our rates are among the most competitive on the market",
           "variant": "medium",
-           "color": ""
+          "color": ""
         }
       ]
     }

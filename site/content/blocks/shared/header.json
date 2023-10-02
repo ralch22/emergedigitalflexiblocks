@@ -2,7 +2,7 @@
   "images": [
     {
       "src": "../../assets/flexiblocks/shared/logo_header.png",
-      "alt": "Site Logo"
+      "alt": "Emerge Digital Logo"
     }
   ],
   "collection": [
@@ -73,9 +73,7 @@
           "text": "Technologies",
           "variant": "links.nav-dark",
           "type": "SUB",
-         
           "buttons": [
-            
             {
               "text": "Google Marketing Plartform",
               "type": "PAGE",
@@ -94,14 +92,12 @@
               "link": "/technologies/3cx/",
               "variant": "links.nav-dark"
             }
-              
           ]
-           
         },
         {
           "text": "Case Studies",
           "type": "PAGE",
-          "link": "/cases/",
+          "link": "/all-cases/",
           "variant": "links.nav-dark"
         },
         {
@@ -128,7 +124,6 @@
       ]
     }
   ],
-
   "buttons": [
     {
       "text": "Sign In",

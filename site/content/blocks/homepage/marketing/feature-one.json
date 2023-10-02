@@ -11,25 +11,24 @@
     },
     {
       "text": "Digital media strives to transparently reach people—not personas—through tech.",
-          "variant": "medium",
-           "color": ""
-        },
-        {
-          "text": "We are willing to decipher the crux of your organization and understand all the moving pieces in combination of hard-working communication, extensive design, and technology smarts to unlock your growth potential.",
-          "variant": "medium",
-           "color": ""
-        },
-        {
-      
-          "text": "We enhance our partner’s delivery of customer experience to their customers by delivering personalized messaging activating the right message at the right time to the right touchpoint.",
-          "variant": "medium",
-           "color": ""
-        }
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "We are willing to decipher the crux of your organization and understand all the moving pieces in combination of hard-working communication, extensive design, and technology smarts to unlock your growth potential.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "We enhance our partner’s delivery of customer experience to their customers by delivering personalized messaging activating the right message at the right time to the right touchpoint.",
+      "variant": "medium",
+      "color": ""
+    }
   ],
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/image-enjoy.webp",
-      "alt": "alt text"
+      "alt": "Image Enjoy"
     }
   ],
   "buttons": [

@@ -14,6 +14,7 @@
     {
       "icon": {
         "src": "../../assets/flexiblocks/icons/bx-layer-plus.svg",
+        "alt": "Cart Icon",
         "color": "#805AD5",
         "bg": "transparent"
       },
@@ -32,6 +33,7 @@
     {
       "icon": {
         "src": "../../assets/flexiblocks/icons/bx-pen.svg",
+        "alt": "Cart Icon",
         "color": "#805AD5",
         "bg": "transparent"
       },
@@ -50,6 +52,7 @@
     {
       "icon": {
         "src": "../../assets/flexiblocks/icons/bx-rocket.svg",
+        "alt": "Cart Icon",
         "color": "#805AD5",
         "bg": "transparent"
       },

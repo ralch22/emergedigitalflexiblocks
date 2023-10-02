@@ -10,6 +10,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/laptop-code-solid.svg",
+        "alt": "Laptop Code Icon",
         "color": "white"
       },
       "text": [
@@ -23,6 +24,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
+        "alt": "Dollar Sign Icon",
         "color": "white"
       },
       "text": [
@@ -36,6 +38,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/hand-holding-heart-solid.svg",
+        "alt": "Heart Icon",
         "color": "white"
       },
       "text": [
@@ -50,7 +53,7 @@
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/app-hand.png",
-      "alt": "alt text"
+      "alt": "App Hand"
     }
   ]
 }

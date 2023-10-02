@@ -1,31 +1,31 @@
 {
-    "text": [
-      {
-        "text": "Why Emerge Digital? ",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-          "text": "With more than 15 years of experience in eCommerce digital marketing, we know the importance of web analytics and reporting.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "To meet our clients’ growing needs, we’ve created a Google Analytics and Google Tag Manager team that’s constantly updated on the latest industry trends and news. Our goal is to provide our valued clients with only the best solutions, including reporting templates and dashboards for evaluating your brand’s performance.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "Since we believe in data-driven omnichannel marketing, you’ll always be the first to hear about opportunities we discover for your business in search engine optimization (SEO), paid search advertising (Google Ads), and more.",
-            "variant": "medium",
-             "color": ""
-          }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/gtm.webp",
-        "alt": "alt text"
-      }
-    ]
+  "text": [
+    {
+      "text": "Why Emerge Digital? ",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "With more than 15 years of experience in eCommerce digital marketing, we know the importance of web analytics and reporting.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "To meet our clients’ growing needs, we’ve created a Google Analytics and Google Tag Manager team that’s constantly updated on the latest industry trends and news. Our goal is to provide our valued clients with only the best solutions, including reporting templates and dashboards for evaluating your brand’s performance.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "Since we believe in data-driven omnichannel marketing, you’ll always be the first to hear about opportunities we discover for your business in search engine optimization (SEO), paid search advertising (Google Ads), and more.",
+      "variant": "medium",
+      "color": ""
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/gtm.webp",
+      "alt": "GOOGLE TAG MANAGER"
+    }
+  ]
 }
   

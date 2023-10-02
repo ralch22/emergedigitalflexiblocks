@@ -1,26 +1,26 @@
 {
-    "text": [
-        {
-            "text": "04",
-            "color": "beta",
-            "variant": "h4"
-          },
-      {
-        "text": "Nurture Leads and Convert Them into Customers",
-         "color": "",
-        "variant": "h3"
-      },
-      {
-        "text": "We help you to nurture the leads generated through your content and marketing. This could include things like a targeted email campaign or follow-up information. We want to guide your prospects through the buyer's journey and convert them into customers. By following these stages, we can create a successful B2B demand generation and drive growth for your business.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/04-b2b.webp",
-        "alt": "alt text"
-      }
-    ]
-  }
+  "text": [
+    {
+      "text": "04",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "Nurture Leads and Convert Them into Customers",
+      "color": "",
+      "variant": "h3"
+    },
+    {
+      "text": "We help you to nurture the leads generated through your content and marketing. This could include things like a targeted email campaign or follow-up information. We want to guide your prospects through the buyer's journey and convert them into customers. By following these stages, we can create a successful B2B demand generation and drive growth for your business.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/04-b2b.webp",
+      "alt": "B2B Innovating"
+    }
+  ]
+}
   

@@ -1,6 +1,5 @@
 {
   "text": [
-   
     {
       "text": "Programmatic deal buys happen in Marketplace",
       "variant": "h2"
@@ -15,11 +14,11 @@
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/marketplace1.jpg",
-      "alt": "alt text"
+      "alt": "Market Place 1"
     },
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/markeplace1.jpg",
-      "alt": "alt text"
+      "alt": "Market Place 2"
     }
   ]
 }

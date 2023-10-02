@@ -1,41 +1,41 @@
 {
-    "text": [
-      {
-        "text": "For GA4 needs, why choose Emerge Digital? ",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-          "text": "As a digital marketing agency, Emerge Digital has been at the forefront of Google Analytics 4.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "Educating and preparing our clients for the platform changeover has taken two years, and now that it’s here, our experts are miles ahead of those playing catch-up.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "With more than 100+ Google Analytics 4 audits and migrations completed, we’ve seen the most common mistakes and pain points for today’s businesses working in this platform.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "Our team of GA4-certified experts will bring that knowledge to your training.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "And, because we customize every single training session to fit our client’s needs, you’re guaranteed to get all the answers and education you need to move forward, armed for everything GA4 can offer.",
-            "variant": "medium",
-             "color": ""
-          }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/ga4.png",
-        "alt": "alt text"
-      }
-    ]
+  "text": [
+    {
+      "text": "For GA4 needs, why choose Emerge Digital? ",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "As a digital marketing agency, Emerge Digital has been at the forefront of Google Analytics 4.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "Educating and preparing our clients for the platform changeover has taken two years, and now that it’s here, our experts are miles ahead of those playing catch-up.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "With more than 100+ Google Analytics 4 audits and migrations completed, we’ve seen the most common mistakes and pain points for today’s businesses working in this platform.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "Our team of GA4-certified experts will bring that knowledge to your training.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "And, because we customize every single training session to fit our client’s needs, you’re guaranteed to get all the answers and education you need to move forward, armed for everything GA4 can offer.",
+      "variant": "medium",
+      "color": ""
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/ga4.png",
+      "alt": "GA4"
+    }
+  ]
 }
   

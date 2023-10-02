@@ -24,17 +24,18 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-target-lock.svg",
+        "alt": "Target",
         "bg": "omegaLighter",
         "color": "beta"
       },
       "buttons": [
-    {
-      "text": "Case Studies",
-      "type": "PAGE",
-      "link": "",
-      "variant": "secondary"
-    }
-  ]
+        {
+          "text": "Case Studies",
+          "type": "PAGE",
+          "link": "",
+          "variant": "secondary"
+        }
+      ]
     },
     {
       "text": [
@@ -49,17 +50,18 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-user-voice.svg",
+        "alt": "Voice",
         "bg": "omegaLighter",
         "color": "beta"
       },
       "buttons": [
-    {
-      "text": "Case Studies",
-      "type": "PAGE",
-      "link": "",
-      "variant": "secondary"
-    }
-  ]
+        {
+          "text": "Case Studies",
+          "type": "PAGE",
+          "link": "",
+          "variant": "secondary"
+        }
+      ]
     },
     {
       "text": [
@@ -74,17 +76,18 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-pen.svg",
+        "alt": "Pen",
         "bg": "omegaLighter",
         "color": "beta"
       },
       "buttons": [
-    {
-      "text": "Case Studies",
-      "type": "PAGE",
-      "link": "",
-      "variant": "secondary"
-    }
-  ]
+        {
+          "text": "Case Studies",
+          "type": "PAGE",
+          "link": "",
+          "variant": "secondary"
+        }
+      ]
     },
     {
       "text": [
@@ -99,17 +102,18 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-user-voice.svg",
+        "alt": "Voice",
         "bg": "omegaLighter",
         "color": "beta"
       },
       "buttons": [
-    {
-      "text": "Case Studies",
-      "type": "PAGE",
-      "link": "",
-      "variant": "secondary"
-    }
-  ]
+        {
+          "text": "Case Studies",
+          "type": "PAGE",
+          "link": "",
+          "variant": "secondary"
+        }
+      ]
     },
     {
       "text": [
@@ -124,18 +128,18 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-pen.svg",
+        "alt": "Pen",
         "bg": "omegaLighter",
         "color": "beta"
       },
       "buttons": [
-    {
-      "text": "Case Studies",
-      "type": "PAGE",
-      "link": "",
-      "variant": "secondary"
+        {
+          "text": "Case Studies",
+          "type": "PAGE",
+          "link": "",
+          "variant": "secondary"
+        }
+      ]
     }
-  ]
-    }
-    
   ]
 }

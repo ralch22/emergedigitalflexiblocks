@@ -1,134 +1,141 @@
 {
-    "text": [
-     
-      {
-        "text": "Why Choose Emerge Digital as your SEO Specialist",
-        "variant": "h2"
+  "text": [
+    {
+      "text": "Why Choose Emerge Digital as your SEO Specialist",
+      "variant": "h2"
+    },
+    {
+      "text": "When your target audience is actively searching for your brand, or your products & services, you can gain a lot of potential customers. In Google, the first three search results receive over 75% of clicks, so ranking higher for relevant keywords is crucial for achieving your business goals.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "For your website to rank higher in search results, you need to optimize over 200 on-page, off-site, and technical ranking factors. With our Best SEO services in Dubai, we can help you navigate these challenges and grow your organic traffic.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/thumbs-up-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "When your target audience is actively searching for your brand, or your products & services, you can gain a lot of potential customers. In Google, the first three search results receive over 75% of clicks, so ranking higher for relevant keywords is crucial for achieving your business goals.",
-        "variant": "medium",
-        "color": "alpha"
+      "text": [
+        {
+          "text": "10 years+ of delivering remarkable SEO results",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/face-laugh-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "For your website to rank higher in search results, you need to optimize over 200 on-page, off-site, and technical ranking factors. With our Best SEO services in Dubai, we can help you navigate these challenges and grow your organic traffic.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/thumbs-up-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "10 years+ of delivering remarkable SEO results",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+      "text": [
+        {
+          "text": "Experienced SEO team of 50+",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/searchengin.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/face-laugh-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Experienced SEO team of 50+",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+      "text": [
+        {
+          "text": "Platform for SEO reporting and insights",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/flag-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/searchengin.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Platform for SEO reporting and insights",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+      "text": [
+        {
+          "text": "SEO methodology that leads the market",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/pencil-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/flag-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "SEO methodology that leads the market",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+      "text": [
+        {
+          "text": "Audit & optimize the consumer experience",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/pencil-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Audit & optimize the consumer experience",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+      "text": [
+        {
+          "text": "Performance & insights solution for SEO & SEM",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/gear-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Performance & insights solution for SEO & SEM",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+      "text": [
+        {
+          "text": "Solution for advanced SEO content strategy",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/earth-americas-solid.svg",
+        "alt": "Spetialist Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/gear-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Solution for advanced SEO content strategy",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/earth-americas-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Clients with local and global SEO needs",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
-      }
-    ]
-  }
+      "text": [
+        {
+          "text": "Clients with local and global SEO needs",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    }
+  ]
+}
   

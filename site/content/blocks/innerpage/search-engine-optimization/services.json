@@ -1,253 +1,264 @@
 {
-    "text": [
-     
-      {
-        "text": "Best SEO Services",
-        "variant": "h2"
+  "text": [
+    {
+      "text": "Best SEO Services",
+      "variant": "h2"
+    },
+    {
+      "text": "Emerge Digital provides excellent search engine optimization services to increase the visibility of your website and help it rank higher in search results. We are the best SEO Company in Dubai because of our proven experience and expertise in the field. We provide the following services to our clients.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "Emerge Digital provides excellent search engine optimization services to increase the visibility of your website and help it rank higher in search results. We are the best SEO Company in Dubai because of our proven experience and expertise in the field. We provide the following services to our clients.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "SEO Strategy",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Grow organic traffic and revenue with a best-in-class SEO strategy.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/file-signature-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "SEO Audit & Accessment",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "No matter how good your content is, your website's accessibility to search engines determines whether it ranks. ",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/searchengin.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "SEO Analysis & Insights",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Improve your website's technical SEO setup with a comprehensive SEO audit and assessment.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/map-location-dot-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Local SEO",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Enhance your local search presence and increase your earned media exposure ",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/head-side-virus-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Intelligent Content Solutions",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "A data-driven content strategy that works.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/bullhorn-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Outreach & Backlink Strategy",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "You are one step closer to expanding your earned assets by identifying and outreaching to bloggers.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "OneSearch",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "An integrated SEO and SEM strategy that delivers efficiencies and incremental results.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/mobile-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Mobile SEO",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Optimize your website for mobile-first search engines with a mobile-first SEO strategy.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/app-store.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "App Store Optimisation",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Get more people to discover your app by optimizing it for the app store",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/microphone-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Voice Search Optimisation",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Voice search adoption is on the rise, so it's time to put together a voice strategy for your brand.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/building-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Enterprise SEO",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "We help you dominate across multiple sites, locations, and languages with professional enterprise SEO. ",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "eCommerce SEO",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Market-leading eCommerce SEO services help you dominate the digital shelf and reach more buyers.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      }
-    ],
-    "buttons": [
+      "text": [
         {
-          "text": "Contact Us",
-          "type": "MODAL",
-          "link": "contact",
-          "variant": "secondary"
+          "text": "SEO Strategy",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Grow organic traffic and revenue with a best-in-class SEO strategy.",
+          "variant": "medium",
+          "color": "alpha"
         }
       ]
-  }
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/file-signature-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "SEO Audit & Accessment",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "No matter how good your content is, your website's accessibility to search engines determines whether it ranks. ",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/searchengin.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "SEO Analysis & Insights",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Improve your website's technical SEO setup with a comprehensive SEO audit and assessment.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/map-location-dot-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Local SEO",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Enhance your local search presence and increase your earned media exposure ",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/head-side-virus-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Intelligent Content Solutions",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "A data-driven content strategy that works.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bullhorn-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Outreach & Backlink Strategy",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "You are one step closer to expanding your earned assets by identifying and outreaching to bloggers.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "OneSearch",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "An integrated SEO and SEM strategy that delivers efficiencies and incremental results.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/mobile-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Mobile SEO",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Optimize your website for mobile-first search engines with a mobile-first SEO strategy.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/app-store.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "App Store Optimisation",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Get more people to discover your app by optimizing it for the app store",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/microphone-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Voice Search Optimisation",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Voice search adoption is on the rise, so it's time to put together a voice strategy for your brand.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/building-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Enterprise SEO",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "We help you dominate across multiple sites, locations, and languages with professional enterprise SEO. ",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
+        "alt": "SEO Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "eCommerce SEO",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Market-leading eCommerce SEO services help you dominate the digital shelf and reach more buyers.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}
   

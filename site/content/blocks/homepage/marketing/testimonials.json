@@ -29,7 +29,7 @@
       ],
       "avatar": {
         "src": "../../../assets/flexiblocks/testimonials/john-doe.png",
-        "alt": "alt text"
+        "alt": "John Doe"
       }
     },
     {
@@ -49,7 +49,7 @@
       ],
       "avatar": {
         "src": "../../../assets/flexiblocks/testimonials/jane-smith.png",
-        "alt": "alt text"
+        "alt": "Jane Smith"
       }
     },
     {
@@ -69,7 +69,7 @@
       ],
       "avatar": {
         "src": "../../../assets/flexiblocks/testimonials/sarah-doe.png",
-        "alt": "alt text"
+        "alt": "Sarah"
       }
     }
   ]

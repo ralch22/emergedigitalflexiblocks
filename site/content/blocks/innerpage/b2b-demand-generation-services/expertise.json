@@ -1,26 +1,26 @@
 {
-    "text": [
-        {
-            "text": "02",
-            "color": "beta",
-            "variant": "h4"
-          },
-      {
-        "text": "Create Valuable Content",
-         "color": "",
-        "variant": "h3"
-      },
-      {
-        "text": "Once we know your target audience, we can create content that addresses their needs and desires. We develop engaging, informative, and relevant content that resonates with your prospects. This can include blog posts, webinars, white papers, and more. By providing value to your audience, we establish your credibility and position your company as a thought leader.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/b2b-02.png",
-        "alt": "alt text"
-      }
-    ]
-  }
+  "text": [
+    {
+      "text": "02",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "Create Valuable Content",
+      "color": "",
+      "variant": "h3"
+    },
+    {
+      "text": "Once we know your target audience, we can create content that addresses their needs and desires. We develop engaging, informative, and relevant content that resonates with your prospects. This can include blog posts, webinars, white papers, and more. By providing value to your audience, we establish your credibility and position your company as a thought leader.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/b2b-02.png",
+      "alt": "B2B Expertise"
+    }
+  ]
+}
   

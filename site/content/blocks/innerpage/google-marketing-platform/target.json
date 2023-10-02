@@ -8,16 +8,17 @@
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/mockup.jpg",
-      "alt": "alt text"
+      "alt": "Mockup"
     }
   ],
   "collection": [
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
+        "alt": "Search Ads Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Drive Performance using Automation",
@@ -33,9 +34,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/blend.svg",
+        "alt": "Search Ads Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Blend Data Sources",
@@ -51,9 +53,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/search.svg",
+        "alt": "Search Ads Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Leverage Automation",
@@ -63,7 +66,6 @@
         {
           "text": "Centralize your search marketing with combined insights and reporting across multiple engines including Google, Bing, Baidu, and Yahoo! Japan, as well as search and social channels.",
           "variant": "h4"
-          
         }
       ]
     }

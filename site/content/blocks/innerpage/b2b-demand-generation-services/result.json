@@ -1,26 +1,26 @@
 {
-    "text": [
-        {
-            "text": "01",
-            "color": "beta",
-            "variant": "h4"
-          },
-      {
-        "text": "Identify Your Target Audience",
-         "color": "",
-        "variant": "h3"
-      },
-      {
-        "text": "We need to determine your ideal prospects and target market to get started. We analyze your existing customer base. We also identify common characteristics and use that information to develop a buyer persona. This helps us focus our marketing efforts and better understand your audience's needs.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/01-b2b.webp",
-        "alt": "alt text"
-      }
-    ]
-  }
+  "text": [
+    {
+      "text": "01",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "Identify Your Target Audience",
+      "color": "",
+      "variant": "h3"
+    },
+    {
+      "text": "We need to determine your ideal prospects and target market to get started. We analyze your existing customer base. We also identify common characteristics and use that information to develop a buyer persona. This helps us focus our marketing efforts and better understand your audience's needs.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/01-b2b.webp",
+      "alt": "B2B Result"
+    }
+  ]
+}
   

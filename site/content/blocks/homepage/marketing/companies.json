@@ -8,7 +8,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/companies/company-airbnb.svg",
-        "alt": "alt text"
+        "alt": "Airbnb"
       }
     },
     {
@@ -19,7 +19,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/companies/company-amazon-web-services.svg",
-        "alt": "alt text"
+        "alt": "AWS"
       }
     },
     {
@@ -30,7 +30,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/companies/company-shopify.svg",
-        "alt": "alt text"
+        "alt": "Cisco"
       }
     },
     {
@@ -41,7 +41,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/companies/company-confluence.svg",
-        "alt": "alt text"
+        "alt": "Confluence"
       }
     },
     {
@@ -52,14 +52,14 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/companies/company-linkedin.svg",
-        "alt": "alt text"
+        "alt": "Linkedin"
       }
     }
   ],
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/art_work.svg",
-      "alt": "alt text"
+      "alt": "Art Work"
     }
   ]
 }

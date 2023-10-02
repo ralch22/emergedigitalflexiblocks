@@ -1,66 +1,66 @@
 {
-    "text": [
-      {
-        "text": "App Development Company",
-        "variant": "h2",
-         "color": ""
+  "text": [
+    {
+      "text": "App Development Company",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "We build mobile app development solutions to help start-ups, SMBs, enterprises and brands realize their ideas. Emerge Digital is a leading mobile app development company in Dubai, helping businesses transform their ideas into reality. Known for offering a full range of app development services under one roof.",
+      "variant": "medium",
+      "color": ""
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/app-development.png",
+      "alt": "App Development",
+      "maxWidth": 5
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
+      "text": [
         {
-          "text": "We build mobile app development solutions to help start-ups, SMBs, enterprises and brands realize their ideas. Emerge Digital is a leading mobile app development company in Dubai, helping businesses transform their ideas into reality. Known for offering a full range of app development services under one roof.",
-            "variant": "medium",
-             "color": ""
-          }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/app-development.png",
-        "alt": "alt text",
-        "maxWidth": 5
-      }
-    ],
-    "collection": [
-        {
-            "icon": {
-                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-                "bg": "omegaLighter",
-                "color": "omegaDark"
-            },
-            "text": [
-                {
-                "text": "We can build more quickly and cost-effectively with AI",
-                "variant": "medium",
-                 "color": ""
-                }
-            ]
-        },
-        {
-            "icon": {
-                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-                "bg": "omegaLighter",
-                "color": "omegaDark"
-            },
-            "text": [
-                {
-                "text": "Every step of the way, your Product Expert is with you",
-                "variant": "medium",
-                 "color": ""
-                }
-            ]
-        },
-        {
-            "icon": {
-                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-                "bg": "omegaLighter",
-                "color": "omegaDark"
-            },
-            "text": [
-                {
-                "text": "There is no need for technical knowledge",
-                "variant": "medium",
-                 "color": ""
-                }
-            ]
+          "text": "We can build more quickly and cost-effectively with AI",
+          "variant": "medium",
+          "color": ""
         }
       ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Every step of the way, your Product Expert is with you",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "There is no need for technical knowledge",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    }
+  ]
 }
   

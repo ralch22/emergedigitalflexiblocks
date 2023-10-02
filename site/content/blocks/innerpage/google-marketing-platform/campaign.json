@@ -1,21 +1,20 @@
 {
-    "text": [
-     
-      {
-        "text": "Introduction to Campaign Manager 360 CM360 and its Uses (DoubleClick Campaign Manager DCM)",
-        "variant": "h2"
-      },
-      {
-        "text": "CM360 replaces the former DoubleClick Manager. This tool acts as an ad server providing hosting and creatives, as well as reporting, tracking and planning features. Unifying reporting from a variety of different ad platforms benefits business strategy and delivers better insights and results.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/campaign.svg",
-        "alt": "alt text"
-      }
-    ]
-  }
+  "text": [
+    {
+      "text": "Introduction to Campaign Manager 360 CM360 and its Uses (DoubleClick Campaign Manager DCM)",
+      "variant": "h2"
+    },
+    {
+      "text": "CM360 replaces the former DoubleClick Manager. This tool acts as an ad server providing hosting and creatives, as well as reporting, tracking and planning features. Unifying reporting from a variety of different ad platforms benefits business strategy and delivers better insights and results.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/campaign.svg",
+      "alt": "Campaign"
+    }
+  ]
+}
   

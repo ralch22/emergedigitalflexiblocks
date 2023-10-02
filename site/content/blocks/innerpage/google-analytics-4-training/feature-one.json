@@ -1,44 +1,44 @@
 {
-    "text": [
-      {
-        "text": "G4A AUDITS",
-        "color": "alpha",
-        "variant": "h4"
-      },
-      {
-        "text": "Discover the Power of GA4 With Personalized Analytics 4 Training",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-          "text": "Logging into your GA4 account is the only part of the platform you understand, you need Google Analytics 4 training.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "As luck would have it, Emerge Digital has your back.",
-            "variant": "medium",
-             "color": ""
-          },
-          {
-            "text": "If you would like our team of GA4-certified experts to build the perfect training course for your team – one that helps you unlock the full potential of Google Analytics 4 – then contact us today.",
-            "variant": "medium",
-             "color": ""
-          }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/google-analytics-training.webp",
-        "alt": "alt text"
-      }
-    ],
-    "buttons": [
-      {
-        "text": "CONTACT US",
-        "type": "MODAL",
-        "link": "contact",
-        "variant": "secondary"
-      }
-    ]
-  }
+  "text": [
+    {
+      "text": "G4A AUDITS",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "Discover the Power of GA4 With Personalized Analytics 4 Training",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "Logging into your GA4 account is the only part of the platform you understand, you need Google Analytics 4 training.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "As luck would have it, Emerge Digital has your back.",
+      "variant": "medium",
+      "color": ""
+    },
+    {
+      "text": "If you would like our team of GA4-certified experts to build the perfect training course for your team – one that helps you unlock the full potential of Google Analytics 4 – then contact us today.",
+      "variant": "medium",
+      "color": ""
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/google-analytics-training.webp",
+      "alt": "Google Analytics Training"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "CONTACT US",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}
   

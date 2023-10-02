@@ -12,6 +12,7 @@
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/automated.svg",
+      "alt": "Innovating Icon",
       "alt": "alt text"
     }
   ],
@@ -19,8 +20,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/laptop.svg",
+        "alt": "Innovating Icon",
         "bg": "omegaLighter"
-      },  
+      },
       "text": [
         {
           "text": "Centralized Ad Serving",
@@ -36,9 +38,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/tool.svg",
+        "alt": "Innovating Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Flexibility and Control",
@@ -54,9 +57,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/native.svg",
+        "alt": "Innovating Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Streamlined Workflows",
@@ -66,16 +70,16 @@
         {
           "text": "Native integrations with other Google products as well as third parties enable your media, creative and analytics teams to work faster.",
           "variant": "h4"
-          
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/modal.svg",
+        "alt": "Innovating Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      }, 
+      },
       "text": [
         {
           "text": "Modeled Conversions",
@@ -91,9 +95,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/cog.svg",
+        "alt": "Innovating Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      }, 
+      },
       "text": [
         {
           "text": "Automated third-party verification",

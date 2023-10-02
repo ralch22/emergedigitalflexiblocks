@@ -1,98 +1,100 @@
 {
-    "text": [
+  "text": [
+    {
+      "text": "What makes us the right choice for your App Development requirements?",
+      "variant": "h2",
+      "color": ""
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/code-solid.svg",
+        "alt": "Code Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
         {
-          "text": "What makes us the right choice for your App Development requirements?",
-          "variant": "h2",
-           "color": ""
-        }
-      ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/code-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+          "text": "No tech knowledge needed",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "No tech knowledge needed",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "The only limit to what you can build with us is your imagination. Just tell us your idea and we'll build it for you according to your exact specifications.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/brain-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-          {
-            "text": "A unique AI-powered platform",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "By automating manual processes, you'll get a quicker build, fewer errors, fewer developer mistakes, and better pricing based on the features you choose.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "Providing continuous support",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            
-                "text": "In addition to our AI, we have experts who guide you through the whole app building process. From the first call to delivery, they handle everything for you.",
-                "variant": "medium",
-                "color": "alpha"
-            }
-          
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/file-invoice-dollar-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },
-        "text": [
-          {
-            "text": "A set price and timeline",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "It is important that you know exactly what you are paying for and how long it will take before you start. You only pay for the features that you need.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      }
-    ],
-    "buttons": [
         {
-          "text": "Contact Us Now",
-          "type": "MODAL",
-          "link": "contact",
-          "variant": "secondary"
+          "text": "The only limit to what you can build with us is your imagination. Just tell us your idea and we'll build it for you according to your exact specifications.",
+          "variant": "medium",
+          "color": "alpha"
         }
       ]
-  }
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/brain-solid.svg",
+        "alt": "Brain Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "A unique AI-powered platform",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "By automating manual processes, you'll get a quicker build, fewer errors, fewer developer mistakes, and better pricing based on the features you choose.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
+        "alt": "Handshake Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Providing continuous support",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "In addition to our AI, we have experts who guide you through the whole app building process. From the first call to delivery, they handle everything for you.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/file-invoice-dollar-solid.svg",
+        "alt": "Invoice Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "A set price and timeline",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "It is important that you know exactly what you are paying for and how long it will take before you start. You only pay for the features that you need.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}
   

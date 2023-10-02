@@ -1,9 +1,7 @@
-import ProductPage from '../containers/Product'
+import Product from '../containers/Product'
 import { graphql } from 'gatsby'
 
-export default function Product(props) {
-  return <ProductPage {...props} />
-}
+export default Product
 
 export const pageQuery = graphql`
   query CasePageQuery {

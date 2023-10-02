@@ -23,7 +23,7 @@
       "images": [
         {
           "src": "../../assets/flexiblocks/shared/contact.jpg",
-          "alt": "alt text"
+          "alt": "Contact Us Image"
         }
       ],
       "form": {
@@ -36,6 +36,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "alt": "Contact Icon",
               "color": "alpha"
             }
           },
@@ -47,6 +48,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-user.svg",
+              "alt": "Contact Icon",
               "color": "alpha"
             }
           },
@@ -58,6 +60,7 @@
             },
             "icon": {
               "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+              "alt": "Contact Icon",
               "color": "alpha"
             }
           },
@@ -120,6 +123,7 @@
           ],
           "icon": {
             "src": "../../assets/flexiblocks/icons/bx-phone.svg",
+            "alt": "Contact Icon",
             "color": "alpha",
             "bg": "transaprent"
           }
@@ -134,6 +138,7 @@
           ],
           "icon": {
             "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+            "alt": "Contact Icon",
             "color": "alpha",
             "bg": "transaprent"
           }
@@ -148,6 +153,7 @@
           ],
           "icon": {
             "src": "../../assets/flexiblocks/icons/bx-building-house.svg",
+            "alt": "Contact Icon",
             "color": "alpha",
             "bg": "transaprent"
           }

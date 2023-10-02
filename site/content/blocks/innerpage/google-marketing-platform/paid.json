@@ -12,16 +12,18 @@
   "images": [
     {
       "src": "../../../assets/flexiblocks/homepage/marketing/insight.svg",
-      "alt": "alt text"
+      "alt": "Paid Icon",
+      "alt": "Insight"
     }
   ],
   "collection": [
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/users.svg",
+        "alt": "Paid Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Collaborate Effectively",
@@ -37,9 +39,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
+        "alt": "Paid Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Take Control of Spend",
@@ -55,9 +58,10 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
+        "alt": "Paid Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Leverage Automation",
@@ -67,7 +71,6 @@
         {
           "text": "Deliver faster, smarter marketing powered by Google's latest machine learning, with capabilities like automated bidding and inventory recommendations",
           "variant": "h4"
-          
         }
       ]
     }

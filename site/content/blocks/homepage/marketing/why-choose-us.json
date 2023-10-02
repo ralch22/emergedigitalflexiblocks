@@ -23,6 +23,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-chat.svg",
+        "alt": "Chat",
         "bg": "transparent",
         "color": "beta"
       }
@@ -39,6 +40,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-analyse.svg",
+        "alt": "Analyse",
         "bg": "transparent",
         "color": "beta"
       }
@@ -55,6 +57,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dna.svg",
+        "alt": "Dna",
         "bg": "transparent",
         "color": "beta"
       }

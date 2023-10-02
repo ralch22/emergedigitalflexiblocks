@@ -1,39 +1,38 @@
 {
-    "text": [
-     
-      {
-        "text": "We can service clients across the full stack",
-        "variant": "h2"
-      },
-      {
-        "text": "Do you feel overwhelmed by the possibility of Google Marketing platform or are unsure how to switch and manage it all? ",
-        "variant": "medium",
-        "color": "alpha"
-      },
-      {
-        "text": "Don’t panic! At Emerge Digital, we are a specialist digital marketing ally for our client certified to service across the full stack.",
-        "variant": "medium",
-        "color": "alpha"
-      },
-      {
-        "text": "Reach out today to find out how our ad tech solutions and end-to-end management services can improve your business.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/certified.png",
-        "alt": "alt text"
-      }
-    ],
-    "buttons": [
-        {
-          "text": "Contact Us Now",
-          "type": "MODAL",
-          "link": "contact",
-          "variant": "secondary"
-        }
-      ]
-  }
+  "text": [
+    {
+      "text": "We can service clients across the full stack",
+      "variant": "h2"
+    },
+    {
+      "text": "Do you feel overwhelmed by the possibility of Google Marketing platform or are unsure how to switch and manage it all? ",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "Don’t panic! At Emerge Digital, we are a specialist digital marketing ally for our client certified to service across the full stack.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "Reach out today to find out how our ad tech solutions and end-to-end management services can improve your business.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/certified.png",
+      "alt": "Certified"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}
   

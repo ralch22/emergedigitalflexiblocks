@@ -13,9 +13,7 @@
       "space": 3
     }
   ],
- 
   "collection": [
-   
     {
       "text": [
         {
@@ -93,35 +91,27 @@
         {
           "text": "Google Marketing Platform",
           "type": "PAGE",
-          "link": "",
-          "variant": "links.nav-white",
-          "color": "white"
-        },
-        {
-          "text": "Google Cloud Platform",
-          "type": "PAGE",
-          "link": "",
+          "link": "/technologies/google-marketing-platform",
           "variant": "links.nav-white",
           "color": "white"
         },
         {
           "text": "3CX",
           "type": "PAGE",
-          "link": "",
+          "link": "/technologies/3cx",
           "variant": "links.nav-white",
           "color": "white"
         },
         {
           "text": "WP Engine",
           "type": "PAGE",
-          "link": "",
+          "link": "/technologies/wp-engine",
           "variant": "links.nav-white",
           "color": "white"
         }
       ]
     },
     {
-
       "text": [
         {
           "text": "Social Media",
@@ -131,32 +121,57 @@
       ],
       "buttons": [
         {
-          "text": "Github",
+          "text": "Linkedin",
           "type": "PAGE",
-          "link": "https://github.com/gatsby",
+          "link": "https://www.linkedin.com/company/emerge-digital-ae/#",
           "variant": "links.nav-white",
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-github.svg",
+            "alt": "Linkedin Icon",
             "color": "#2f4f4f"
           }
         },
         {
           "text": "Twitter",
           "type": "PAGE",
-          "link": "https://twitter.com/gatsby",
+          "link": "https://twitter.com/EmergeDigitalae",
           "variant": "links.nav-white",
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
+            "alt": "Twitter Icon",
             "color": "#1da1f2"
           }
         },
         {
           "text": "Instagram",
           "type": "PAGE",
-          "link": "https://instagram.com/gatsby",
+          "link": "https://www.instagram.com/emergedigitalae/",
           "variant": "links.nav-white",
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
+            "alt": "instagram Icon",
+            "color": "#c13584"
+          }
+        },
+        {
+          "text": "Facebook",
+          "type": "PAGE",
+          "link": "https://facebook.com/emergedigitalae/",
+          "variant": "links.nav-white",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
+            "alt": "Facebook Icon",
+            "color": "#c13584"
+          }
+        },
+        {
+          "text": "TikTok",
+          "type": "PAGE",
+          "link": "http://www.tiktok.com/@emergedigital",
+          "variant": "links.nav-white",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
+            "alt": "TikTok Icon",
             "color": "#c13584"
           }
         }
@@ -216,7 +231,6 @@
       ]
     },
     {
-
       "text": [
         {
           "text": "Accepted Payment Methods",
@@ -227,40 +241,40 @@
       "images": [
         {
           "src": "../../assets/flexiblocks/shared/visa.webp",
-          "alt": "alt text"
+          "alt": "Visa Card"
         },
         {
           "src": "../../assets/flexiblocks/shared/master-card.webp",
-          "alt": "alt text"
+          "alt": "Master Card"
         },
         {
           "src": "../../assets/flexiblocks/shared/wechatpay.jpg",
-          "alt": "alt text"
+          "alt": "WeChat"
         },
         {
           "src": "../../assets/flexiblocks/shared/crypto_com.png",
-          "alt": "alt text"
+          "alt": "Crypto.Com"
         },
         {
           "src": "../../assets/flexiblocks/shared/stripe.png",
-          "alt": "alt text"
+          "alt": "Stripe"
         },
         {
           "src": "../../assets/flexiblocks/shared/WPEngine_Member-Badge.webp",
-          "alt": "alt text"
+          "alt": "WPMEMber"
         }
       ],
       "buttons": [
         {
           "text": "Privacy Policy",
           "type": "PAGE",
-          "link": "https://github.com/gatsby",
+          "link": "/privacy-policy",
           "variant": "links.nav-white"
         },
         {
           "text": "Terms & Conditions",
           "type": "PAGE",
-          "link": "https://twitter.com/gatsby",
+          "link": "/terms-condition",
           "variant": "links.nav-white"
         }
       ]

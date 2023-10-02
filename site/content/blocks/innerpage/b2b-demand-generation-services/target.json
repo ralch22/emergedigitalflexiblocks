@@ -1,117 +1,121 @@
 {
-    "text": [
-     
-      {
-        "text": "What Is a B2B Lead Generation Agency?",
-        "variant": "h2"
+  "text": [
+    {
+      "text": "What Is a B2B Lead Generation Agency?",
+      "variant": "h2"
+    },
+    {
+      "text": "A B2B lead generation agency helps your business attract and engage potential clients. B2B lead generation identifies and nurtures high-quality business-to-business (B2B) leads.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "The services provided by a B2B lead generation agency like Emerge Digital may include the following:",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
+        "alt": "Target Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "A B2B lead generation agency helps your business attract and engage potential clients. B2B lead generation identifies and nurtures high-quality business-to-business (B2B) leads.",
-        "variant": "medium",
-        "color": "alpha"
-      },
-      {
-        "text": "The services provided by a B2B lead generation agency like Emerge Digital may include the following:",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Content creation",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Content creation",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Producing engaging and informative content that attracts potential clients.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "Producing engaging and informative content that attracts potential clients.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/paintbrush-solid.svg",
+        "alt": "Target Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/paintbrush-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "SEO",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "SEO",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Ensuring your website ranks high in search engine results for relevant keywords.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "Ensuring your website ranks high in search engine results for relevant keywords.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
+        "alt": "Target Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Email Marketing",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Email Marketing",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Targeting email campaigns to promote your products and services.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "Targeting email campaigns to promote your products and services.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/eye-solid.svg",
+        "alt": "Target Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/eye-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Social Media Management",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Social Media Management",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Maintaining and growing your brand presence across social platforms.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "Maintaining and growing your brand presence across social platforms.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/comment-dots-solid.svg",
+        "alt": "Target Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/comment-dots-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Analytics and Insights",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Analytics and Insights",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Providing comprehensive reporting on your marketing and recommending improvements.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      }
-    ]
-  }
+        {
+          "text": "Providing comprehensive reporting on your marketing and recommending improvements.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ]
+}
   

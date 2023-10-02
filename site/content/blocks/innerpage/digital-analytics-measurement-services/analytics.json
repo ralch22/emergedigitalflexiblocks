@@ -1,158 +1,163 @@
 {
-    "text": [
-     
-      {
-        "text": "Our Digital Analytics Services ",
-        "variant": "h2"
+  "text": [
+    {
+      "text": "Our Digital Analytics Services ",
+      "variant": "h2"
+    },
+    {
+      "text": "Emerge Digital offers a range of excellent digital marketing services. Compared to other digital marketing agencies in Dubai, our packages ensure that your company receives the best return on investment, and you only pay for the outcomes you get. Additionally, we are dedicated to offering our customers outstanding customer service that provides the support they require at every turn.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-bar.svg",
+        "alt": "Chart Bar Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "Emerge Digital offers a range of excellent digital marketing services. Compared to other digital marketing agencies in Dubai, our packages ensure that your company receives the best return on investment, and you only pay for the outcomes you get. Additionally, we are dedicated to offering our customers outstanding customer service that provides the support they require at every turn.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/chart-bar.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Digital Attribution Modelling",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Digital Attribution Modelling",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "By using the right digital attribution model, you can find out what really happened on the customer journey.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "By using the right digital attribution model, you can find out what really happened on the customer journey.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-            {
-                "text": "App & Website Analytics",
-                "variant": "h4",
-                 "color": ""
-              },
-              {
-                "text": "Analyze your data to gain a deeper understanding of customer experiences, brand performance, and marketing ROI.",
-                "variant": "medium",
-                "color": "alpha"
-              }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/network-wired-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-            {
-                "text": "Dynamic Creative Optimisation",
-                "variant": "h4",
-                 "color": ""
-              },
-              {
-                "text": "There are a number of ways in which display advertising can be optimized and personalized",
-                "variant": "medium",
-                "color": "alpha"
-              }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/comments-dollar-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "App & Website Analytics",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-            {
-              "text": "Marketing Mix Modelling MMM",
-              "variant": "h4",
-               "color": ""
-            },
-            {
-              "text": "Media performance measurement and optimization made simple and intuitive.",
-              "variant": "medium",
-              "color": "alpha"
-            }
-          ]
+        {
+          "text": "Analyze your data to gain a deeper understanding of customer experiences, brand performance, and marketing ROI.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/network-wired-solid.svg",
+        "alt": "Wired Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/file-lines-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Dynamic Creative Optimisation",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-            {
-              "text": "Marketing Reporting & Dashboards",
-              "variant": "h4",
-               "color": ""
-            },
-            {
-              "text": "With intelligent reporting, you can harness the power of your data.",
-              "variant": "medium",
-              "color": "alpha"
-            }
-          ]
+        {
+          "text": "There are a number of ways in which display advertising can be optimized and personalized",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/comments-dollar-solid.svg",
+        "alt": "Comment Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/poll-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Marketing Mix Modelling MMM",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-            {
-              "text": "Google Analytics 4 Agency",
-              "variant": "h4",
-               "color": ""
-            },
-            {
-              "text": "Upgrading to Google Analytics 4 will help you future-proof your digital analytics",
-              "variant": "medium",
-              "color": "alpha"
-            }
-          ]
+        {
+          "text": "Media performance measurement and optimization made simple and intuitive.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/file-lines-solid.svg",
+        "alt": "File Lines Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/users-cog-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Marketing Reporting & Dashboards",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-            {
-              "text": "Propensity Modelling",
-              "variant": "h4",
-               "color": ""
-            },
-            {
-              "text": "Learn how machine learning can be used to predict customer behavior",
-              "variant": "medium",
-              "color": "alpha"
-            }
-          ]
-      }
-    ],
-    "buttons": [
-      {
-        "text": "Contact Us Now",
-        "type": "MODAL",
-        "link": "contact",
-        "variant": "secondary"
-      }
-    ]
-  }
+        {
+          "text": "With intelligent reporting, you can harness the power of your data.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/poll-solid.svg",
+        "alt": "Poll Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Google Analytics 4 Agency",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Upgrading to Google Analytics 4 will help you future-proof your digital analytics",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/users-cog-solid.svg",
+        "alt": "Cog Icon",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Propensity Modelling",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Learn how machine learning can be used to predict customer behavior",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}
   
