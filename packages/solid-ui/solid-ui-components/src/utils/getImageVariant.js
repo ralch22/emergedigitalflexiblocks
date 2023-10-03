@@ -3,4 +3,4 @@ export default (image, variant) =>
     ? image.__typename
       ? image[`${image.__typename}_${variant}`]
       : image[variant]
-    : null
+    : null;

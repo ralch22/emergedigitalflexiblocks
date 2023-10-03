@@ -1,1 +1,1 @@
-export { default } from './HeroBoxed'
+export { default } from './HeroBoxed';

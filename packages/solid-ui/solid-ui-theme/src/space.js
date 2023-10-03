@@ -7,5 +7,5 @@ export default [
   '4rem',
   '8rem',
   '16rem',
-  '32rem'
-]
+  '32rem',
+];

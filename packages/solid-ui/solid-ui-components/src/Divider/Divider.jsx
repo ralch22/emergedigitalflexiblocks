@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box } from 'theme-ui'
+import React from 'react';
+import { Box } from 'theme-ui';
 
 const Divider = ({ space, spaceX, color, ...props }) => (
   <Box
@@ -11,20 +11,20 @@ const Divider = ({ space, spaceX, color, ...props }) => (
       height: 0,
       my: [space < 0 ? space + 1 : space - 1, space],
       '& + &': {
-        my: space
+        my: space,
       },
       mx: [space < 0 ? space + 1 : space - 1, space],
       '& + &': {
-        my: space
+        my: space,
       },
-      ...props
+      ...props,
     }}
   />
-)
+);
 
-export default Divider
+export default Divider;
 
 Divider.defaultProps = {
   space: 4,
-  color: `transparent`
-}
+  color: `transparent`,
+};

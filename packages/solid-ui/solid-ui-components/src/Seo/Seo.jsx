@@ -1,6 +1,6 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import useSiteMetadata from '@blocks-helpers/useSiteMetadata'
+import React from 'react';
+import Helmet from 'react-helmet';
+import useSiteMetadata from '@blocks-helpers/useSiteMetadata';
 
 const Seo = ({
   title,
@@ -10,22 +10,22 @@ const Seo = ({
   keywords,
   author,
   thumbnail,
-  siteUrl
+  siteUrl,
 }) => {
-  const site = useSiteMetadata()
+  const site = useSiteMetadata();
 
-  const social = (author && author.social) || site.social || []
+  const social = (author && author.social) || site.social || [];
   const twitter =
-    social.find(s => s.name && s.name.toLowerCase() === 'twitter') || {}
+    social.find(s => s.name && s.name.toLowerCase() === 'twitter') || {};
 
-  description = excerpt || description || site.description
+  description = excerpt || description || site.description;
 
-  thumbnail = thumbnail && thumbnail.hero && thumbnail.hero.src
+  thumbnail = thumbnail && thumbnail.hero && thumbnail.hero.src;
   const thumbnailUrl =
     thumbnail &&
     (thumbnail.startsWith('//')
       ? thumbnail
-      : siteUrl && `${siteUrl}${thumbnail}`)
+      : siteUrl && `${siteUrl}${thumbnail}`);
 
   /**
    * Meta Tags
@@ -46,29 +46,29 @@ const Seo = ({
     { name: 'twitter:site', content: site.name },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
-    { name: 'twitter:creator', content: twitter.url }
-  ]
+    { name: 'twitter:creator', content: twitter.url },
+  ];
 
   if (keywords && keywords.length > 0) {
-    metaTags.push({ name: 'keywords', content: keywords.join(', ') })
+    metaTags.push({ name: 'keywords', content: keywords.join(', ') });
   }
 
   if (meta) {
-    metaTags.push(meta)
+    metaTags.push(meta);
   }
 
-  metaTags.push({ name: 'initial-scale', content: '1.0' })
+  metaTags.push({ name: 'initial-scale', content: '1.0' });
 
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'en'
+        lang: 'en',
       }}
       title={title}
       titleTemplate={`%s | ${site.title}`}
       meta={metaTags}
     />
-  )
-}
+  );
+};
 
-export default Seo
+export default Seo;

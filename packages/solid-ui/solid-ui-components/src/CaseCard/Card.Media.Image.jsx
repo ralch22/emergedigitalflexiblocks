@@ -1,6 +1,6 @@
-import React from 'react'
-import { css } from 'theme-ui'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
+import React from 'react';
+import { css } from 'theme-ui';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
 const CardMediaImage = ({
   variant,
@@ -8,27 +8,27 @@ const CardMediaImage = ({
   small,
   loading,
   imageUrl,
-  title
+  title,
 }) => {
   return (
     <img
       src={imageUrl}
       loading={loading}
-      alt={title}
+      alt={title.rendered}
       css={css({
         height: `full`,
         width: `100%`,
         verticalAlign: `middle`, //avoid baseline gap
         img: {
-          bg: `omegaLighter`
+          bg: `omegaLighter`,
         },
-        variant: rv(variant, 'image')
+        variant: rv(variant, 'image'),
       })}
     />
-  )
-}
+  );
+};
 CardMediaImage.defaultProps = {
-  loading: 'lazy'
-}
+  loading: 'lazy',
+};
 
-export default CardMediaImage
+export default CardMediaImage;

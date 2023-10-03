@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import SVG from 'react-inlinesvg'
-import { Button, Box, Heading } from 'theme-ui'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import SVG from 'react-inlinesvg';
+import { Button, Box, Heading } from 'theme-ui';
 
 const styles = {
   button: {
@@ -18,30 +18,30 @@ const styles = {
       svg: {
         color: `omegaDark`,
         verticalAlign: `middle`,
-        size: `icon.xs`
+        size: `icon.xs`,
       },
       ':hover': {
         svg: {
-          color: `white`
+          color: `white`,
         },
         'div:first-of-type': {
-          bg: `alpha`
-        }
-      }
+          bg: `alpha`,
+        },
+      },
     },
     horizontal: {
       variant: `cards.interactive`,
       p: 0,
       svg: {
         color: `alpha`,
-        size: `icon.sm`
+        size: `icon.sm`,
       },
       ':hover': {
         svg: {
-          color: `omegaDark`
-        }
-      }
-    }
+          color: `omegaDark`,
+        },
+      },
+    },
   },
   icon: {
     vertical: {
@@ -51,7 +51,7 @@ const styles = {
       justifyContent: `center`,
       alignSelf: `stretch`,
       bg: `omegaLight`,
-      width: 70
+      width: 70,
     },
     horizontal: {
       display: [`block`, `none`, `block`],
@@ -61,17 +61,17 @@ const styles = {
       width: `1/3`,
       height: `icon.sm`,
       mx: `auto`,
-      pt: 3
-    }
+      pt: 3,
+    },
   },
   text: {
     flex: `auto`,
     color: `omegaDark`,
     whiteSpace: `nowrap`,
     p: 3,
-    m: 0
-  }
-}
+    m: 0,
+  },
+};
 
 export const IconButton = ({
   variant,
@@ -79,27 +79,27 @@ export const IconButton = ({
   Icon,
   iconPath,
   iconColor,
-  to
+  to,
 }) => (
-  <Button variant='none' as={to && Link} to={to} sx={styles.button[variant]}>
+  <Button variant="none" as={to && Link} to={to} sx={styles.button[variant]}>
     {(Icon || iconPath) && (
       <Box sx={styles.icon[variant]}>
         {iconPath && <SVG src={iconPath} />}
         {Icon && <Icon color={iconColor} />}
       </Box>
     )}
-    <Heading variant='h4' as='span' sx={styles.text}>
+    <Heading variant="h4" as="span" sx={styles.text}>
       {name}
     </Heading>
   </Button>
-)
+);
 
-export default IconButton
+export default IconButton;
 
 IconButton.defaultProps = {
   variant: 'horizontal',
-  number: undefined
-}
+  number: undefined,
+};
 
 IconButton.propTypes = {
   variant: PropTypes.oneOf(['horizontal', 'vertical']),
@@ -107,5 +107,5 @@ IconButton.propTypes = {
   number: PropTypes.number,
   Icon: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
   iconPath: PropTypes.string,
-  to: PropTypes.string
-}
+  to: PropTypes.string,
+};

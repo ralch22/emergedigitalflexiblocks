@@ -5,12 +5,12 @@
  *
  */
 
-import tornado from './assets/bg-page-header.jpg'
+import tornado from './assets/bg-page-header.jpg';
 
 export default {
   heroContainer: {
     background: `url(${tornado}) no-repeat`,
-    width: "100%",
-    height: "50vh"
-    }
-}
+    width: '100%',
+    height: '50vh',
+  },
+};

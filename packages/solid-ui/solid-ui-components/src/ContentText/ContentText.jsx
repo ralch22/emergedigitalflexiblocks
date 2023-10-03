@@ -1,6 +1,6 @@
-import React from 'react'
-import mergeWith from 'lodash.mergewith'
-import { Text, Heading } from 'theme-ui'
+import React from 'react';
+import mergeWith from 'lodash.mergewith';
+import { Text, Heading } from 'theme-ui';
 
 const gradient = {
   background: t => `
@@ -10,45 +10,52 @@ const gradient = {
       ${t.colors.alphaDarker} 50.5%)
   `,
   WebkitBackgroundClip: `text`,
-  WebkitTextFillColor: `transparent`
-}
+  WebkitTextFillColor: `transparent`,
+};
 
-const headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+const headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 
-const ContentText = ({ as: CustomComponent, content, dangerously, center, children, ...props }) => {
-  if (!content || content.length < 1) return null
+const ContentText = ({
+  as: CustomComponent,
+  content,
+  dangerously,
+  center,
+  children,
+  ...props
+}) => {
+  if (!content || content.length < 1) return null;
 
-  const contentArray = Array.isArray(content) ? content : [content]
+  const contentArray = Array.isArray(content) ? content : [content];
 
   return contentArray.map(({ text, ...contentRest }, index) => {
-    if (!text) return null
+    if (!text) return null;
 
-    contentRest.mb = contentRest.space
+    contentRest.mb = contentRest.space;
 
     const { variant, color, ...mergedProps } = mergeWith(
       {},
       props,
       contentRest,
-      (a, b) => (b === null ? a : undefined)
-    )
+      (a, b) => (b === null ? a : undefined),
+    );
 
-    const isHeading = headings.includes(variant)
+    const isHeading = headings.includes(variant);
 
     // Replace special colored parts in headings
-    let textWithSpecial = null
+    let textWithSpecial = null;
 
     if (isHeading && !children) {
-      textWithSpecial = text.split(/\*{2}(.*?)\*{2}/gi)
+      textWithSpecial = text.split(/\*{2}(.*?)\*{2}/gi);
       for (var i = 1; i < textWithSpecial.length; i += 2) {
         textWithSpecial[i] = (
-          <Text key={`item-${i}`} as='span' color='alpha'>
+          <Text key={`item-${i}`} as="span" color="alpha">
             {textWithSpecial[i]}
           </Text>
-        )
+        );
       }
     }
 
-    if(dangerously) {
+    if (dangerously) {
       return isHeading ? (
         <Heading
           key={`item-${index}`}
@@ -72,7 +79,7 @@ const ContentText = ({ as: CustomComponent, content, dangerously, center, childr
         >
           {children}
         </Text>
-      )
+      );
     } else {
       return isHeading ? (
         <Heading
@@ -95,11 +102,9 @@ const ContentText = ({ as: CustomComponent, content, dangerously, center, childr
         >
           {children || text}
         </Text>
-      )
+      );
     }
+  });
+};
 
-   
-  })
-}
-
-export default ContentText
+export default ContentText;

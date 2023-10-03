@@ -4,36 +4,36 @@ export default {
   card: {
     ':hover': {
       transform: `none`,
-      boxShadow: `none`
-    }
+      boxShadow: `none`,
+    },
   },
   content: {
     flexDirection: [`column`, `row`],
     position: `relative`,
-    maxHeight: `30rem`
+    maxHeight: `30rem`,
   },
   media: {
     flexBasis: `full`,
-    m: 0
+    m: 0,
   },
   image: {
     minHeight: `auto`,
     maxHeight: `none`,
     img: {
-      borderRadius: `lg`
-    }
+      borderRadius: `lg`,
+    },
   },
   iconBox: {
     borderRadius: `lg`,
-    minHeight: `20rem`
+    minHeight: `20rem`,
   },
   iconText: {
-    display: `none`
+    display: `none`,
   },
   icon: {
     size: `5/6`,
     ml: `40%`,
-    opacity: 0.5
+    opacity: 0.5,
   },
   body: {
     bg: `contentBg`,
@@ -46,34 +46,34 @@ export default {
     left: `50%`,
     top: `50%`,
     zIndex: 3,
-    p: 4
+    p: 4,
   },
   category: {
-    display: [`none`, `block`]
+    display: [`none`, `block`],
   },
   title: {
     variant: `text.h2`,
     textAlign: `center`,
     color: `omegaDark`,
-    mb: [0, 2, 3]
+    mb: [0, 2, 3],
   },
   excerpt: {
-    display: `none`
+    display: `none`,
   },
   footer: {
-    variant: `text.small`
+    variant: `text.small`,
   },
   authorPhoto: {
-    display: [`none`, null, `block`]
+    display: [`none`, null, `block`],
   },
   author: {
     display: [`none`, `inline-block`],
-    pr: [0, 0]
+    pr: [0, 0],
   },
   date: {
-    display: `none`
+    display: `none`,
   },
   timeToRead: {
-    display: `none`
-  }
-}
+    display: `none`,
+  },
+};

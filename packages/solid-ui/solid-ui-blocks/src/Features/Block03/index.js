@@ -1,1 +1,1 @@
-export { default } from './Block03'
+export { default } from './Block03';

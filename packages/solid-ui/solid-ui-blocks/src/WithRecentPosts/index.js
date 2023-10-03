@@ -1,1 +1,1 @@
-export { default } from './WithRecentPosts'
+export { default } from './WithRecentPosts';

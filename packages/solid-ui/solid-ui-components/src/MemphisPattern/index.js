@@ -1,1 +1,1 @@
-export { default } from './MemphisPattern'
+export { default } from './MemphisPattern';

@@ -1,4 +1,4 @@
-import common from './common'
+import common from './common';
 
 export default {
   ...common.button,
@@ -7,6 +7,6 @@ export default {
   backgroundSize: `200% auto`,
   py: t => `calc(${t.space[2]} + ${t.borderWidths.md}px)`,
   ':hover': {
-    backgroundPosition: `right center`
-  }
-}
+    backgroundPosition: `right center`,
+  },
+};

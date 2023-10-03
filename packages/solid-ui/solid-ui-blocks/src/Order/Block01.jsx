@@ -4,20 +4,22 @@ import React from 'react';
 import { Box, Heading, Text, Button, Flex } from 'theme-ui';
 import { useSelector } from 'react-redux';
 
-const calculateTotalPrice = (cartItems) => {
+const calculateTotalPrice = cartItems => {
   return cartItems.reduce((total, item) => {
     // Calculate the subtotal for each item (price * quantity)
     const itemSubtotal = item.price * item.quantity;
-    
+
     // Add the item's subtotal to the total
     return total + itemSubtotal;
   }, 0); // Initialize total to 0
 };
 
 function OrderConfirmationPage({ subscription }) {
-  const cartItems = useSelector((state) => state.cart);
-  const sub = useSelector((state) => state.subscription);
-  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout.order);
+  const cartItems = useSelector(state => state.cart);
+  const sub = useSelector(state => state.subscription);
+  const { billing: userBilling, shipping: userShipping } = useSelector(
+    state => state.checkout.order,
+  );
   const totalPrice = calculateTotalPrice(cartItems);
 
   return (
@@ -25,48 +27,82 @@ function OrderConfirmationPage({ subscription }) {
       <Heading as="h1" sx={{ fontSize: 4, mb: 3 }}>
         Order Confirmation
       </Heading>
-      <Box sx={{ bg: 'background', p: 3, mt: 4, borderRadius: 'default', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+      <Box
+        sx={{
+          bg: 'background',
+          p: 3,
+          mt: 4,
+          borderRadius: 'default',
+          boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+        }}
+      >
         <Heading as="h2" sx={{ fontSize: 3, mb: 3 }}>
           Products
         </Heading>
-       {subscription ? sub.map((p, index) => {
-        return (
-          <Flex sx={{ flexDirection: 'column', width: `full`, mt: '4' }}>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>Name:</strong> {p.name}
-            </Text>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>Quantity:</strong> {p.quantity}
-            </Text>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>Price:</strong> ${p.price}
-            </Text>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>${calculateTotalPrice(cartItems)}</strong> 
-            </Text>
-          </Flex>
-        )
-       }) : cartItems.map((p, index) => {
-        return (
-          <Flex sx={{ flexDirection: 'column', width: `full`, mt: '4' }}>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>Name:</strong> {p.name}
-            </Text>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>Quantity:</strong> {p.quantity}
-            </Text>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>Price:</strong> ${p.price}
-            </Text>
-            <Text sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <strong>${calculateTotalPrice(cartItems)}</strong> 
-            </Text>
-          </Flex>
-        )
-       })}
+        {subscription
+          ? sub.map((p, index) => {
+              return (
+                <Flex sx={{ flexDirection: 'column', width: `full`, mt: '4' }}>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>Name:</strong> {p.name}
+                  </Text>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>Quantity:</strong> {p.quantity}
+                  </Text>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>Price:</strong> ${p.price}
+                  </Text>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>${calculateTotalPrice(cartItems)}</strong>
+                  </Text>
+                </Flex>
+              );
+            })
+          : cartItems.map((p, index) => {
+              return (
+                <Flex sx={{ flexDirection: 'column', width: `full`, mt: '4' }}>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>Name:</strong> {p.name}
+                  </Text>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>Quantity:</strong> {p.quantity}
+                  </Text>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>Price:</strong> ${p.price}
+                  </Text>
+                  <Text
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                  >
+                    <strong>${calculateTotalPrice(cartItems)}</strong>
+                  </Text>
+                </Flex>
+              );
+            })}
         {/* Add more billing information here */}
       </Box>
-      <Box sx={{ bg: 'background', p: 3, mt: 4, borderRadius: 'default', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+      <Box
+        sx={{
+          bg: 'background',
+          p: 3,
+          mt: 4,
+          borderRadius: 'default',
+          boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+        }}
+      >
         <Heading as="h2" sx={{ fontSize: 3, mb: 3 }}>
           Billing Information
         </Heading>
@@ -105,7 +141,15 @@ function OrderConfirmationPage({ subscription }) {
         </Text>
         {/* Add more billing information here */}
       </Box>
-      <Box sx={{ bg: 'background', p: 3, mt: 4, borderRadius: 'default', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+      <Box
+        sx={{
+          bg: 'background',
+          p: 3,
+          mt: 4,
+          borderRadius: 'default',
+          boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+        }}
+      >
         <Heading as="h2" sx={{ fontSize: 3, mb: 3 }}>
           Shipping Information
         </Heading>

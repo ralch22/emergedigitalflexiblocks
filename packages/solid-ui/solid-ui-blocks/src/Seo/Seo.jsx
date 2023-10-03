@@ -1,9 +1,9 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { helmetJsonLdProp } from 'react-schemaorg'
-import { getSrc } from 'gatsby-plugin-image'
-import useSiteMetadata from '@blocks-helpers/useSiteMetadata'
-import getImageVariant from '@solid-ui-components/utils/getImageVariant'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { helmetJsonLdProp } from 'react-schemaorg';
+import { getSrc } from 'gatsby-plugin-image';
+import useSiteMetadata from '@blocks-helpers/useSiteMetadata';
+import getImageVariant from '@solid-ui-components/utils/getImageVariant';
 
 const Seo = ({
   title,
@@ -18,22 +18,22 @@ const Seo = ({
   children,
   thumbnail,
   siteUrl,
-  locale
+  locale,
 }) => {
-  const site = useSiteMetadata()
+  const site = useSiteMetadata();
 
-  const social = (author && author.social) || site.social || []
+  const social = (author && author.social) || site.social || [];
   const twitter =
-    social.find(s => s.name && s.name.toLowerCase() === 'twitter') || {}
+    social.find(s => s.name && s.name.toLowerCase() === 'twitter') || {};
 
-  description = excerpt || description || site.description
+  description = excerpt || description || site.description;
 
-  const imageSrc = getSrc(getImageVariant(thumbnail, 'hero'))
+  const imageSrc = getSrc(getImageVariant(thumbnail, 'hero'));
   const imageUrl =
     imageSrc &&
     (imageSrc.startsWith('//')
       ? 'https:' + imageSrc
-      : siteUrl && `${siteUrl}${imageSrc}`)
+      : siteUrl && `${siteUrl}${imageSrc}`);
 
   /**
    * Meta Tags
@@ -55,34 +55,34 @@ const Seo = ({
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:creator', content: twitter.url },
-    { name: 'twitter:image', content: imageUrl }
-  ]
+    { name: 'twitter:image', content: imageUrl },
+  ];
 
   if (keywords && keywords.length > 0) {
-    metaTags.push({ name: 'keywords', content: keywords.join(', ') })
+    metaTags.push({ name: 'keywords', content: keywords.join(', ') });
   }
 
   if (date) {
-    metaTags.push({ name: 'article:published_time', content: date })
+    metaTags.push({ name: 'article:published_time', content: date });
   }
 
   if (timeToRead) {
-    metaTags.push({ name: 'twitter:label1', value: 'Reading time' })
+    metaTags.push({ name: 'twitter:label1', value: 'Reading time' });
     metaTags.push({
       name: 'twitter:data1',
-      value: `${timeToRead} min read`
-    })
+      value: `${timeToRead} min read`,
+    });
   }
 
   if (meta) {
-    metaTags.push(meta)
+    metaTags.push(meta);
   }
 
   /**
    * Structured Data (JSON-LD)
    */
 
-  const scripts = []
+  const scripts = [];
 
   // Article
   if (title && author) {
@@ -95,10 +95,10 @@ const Seo = ({
       author: {
         '@type': 'Person',
         name: author.name,
-        url: author.slug
-      }
-    })
-    scripts.push(articleJsonLd)
+        url: author.slug,
+      },
+    });
+    scripts.push(articleJsonLd);
   }
 
   // Breadcrumb
@@ -111,23 +111,23 @@ const Seo = ({
           '@type': 'ListItem',
           position: 1,
           name: site.name,
-          item: siteUrl
+          item: siteUrl,
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: category.name,
-          item: `${siteUrl}${category.slug}`
-        }
-      ]
-    })
-    scripts.push(breadcrumbJsonLd)
+          item: `${siteUrl}${category.slug}`,
+        },
+      ],
+    });
+    scripts.push(breadcrumbJsonLd);
   }
 
   return (
     <Helmet
       htmlAttributes={{
-        lang: locale || 'en'
+        lang: locale || 'en',
       }}
       title={title}
       titleTemplate={`%s | ${site.title}`}
@@ -136,7 +136,7 @@ const Seo = ({
     >
       {children}
     </Helmet>
-  )
-}
+  );
+};
 
-export default Seo
+export default Seo;

@@ -1,1 +1,1 @@
-export { default } from './useScrollDisabler'
+export { default } from './useScrollDisabler';

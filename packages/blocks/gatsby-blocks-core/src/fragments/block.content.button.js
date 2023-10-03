@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const query = graphql`
   fragment BlockContentButton on BlockContentButton {
@@ -13,4 +13,4 @@ export const query = graphql`
       ...BlockContentIcon
     }
   }
-`
+`;

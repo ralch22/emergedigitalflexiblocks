@@ -1,18 +1,18 @@
-import React from 'react'
-import { Text, useThemeUI, get } from 'theme-ui'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
+import React from 'react';
+import { Text, useThemeUI, get } from 'theme-ui';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
 const styles = {
   excerpt: {
     flex: `auto`,
-    mb: 3
-  }
-}
+    mb: 3,
+  },
+};
 
 const CardBodyExcerpt = ({ variant, excerpt, omitExcerpt }) => {
-  const context = useThemeUI()
+  const context = useThemeUI();
 
-  const responsiveVariant = rv(variant, 'excerpt')
+  const responsiveVariant = rv(variant, 'excerpt');
 
   const visibility = responsiveVariant.reduce(
     (mobileVisibility, variant) =>
@@ -20,20 +20,19 @@ const CardBodyExcerpt = ({ variant, excerpt, omitExcerpt }) => {
       get(context.theme, variant, {}).display === 'none'
         ? false
         : true,
-    false
-  )
+    false,
+  );
 
   return !omitExcerpt && visibility ? (
     <Text
-      variant='small'
+      variant="small"
       sx={{
         ...styles.excerpt,
-        variant: responsiveVariant
+        variant: responsiveVariant,
       }}
       dangerouslySetInnerHTML={{ __html: excerpt }}
     />
-      
-  ) : null
-}
+  ) : null;
+};
 
-export default CardBodyExcerpt
+export default CardBodyExcerpt;

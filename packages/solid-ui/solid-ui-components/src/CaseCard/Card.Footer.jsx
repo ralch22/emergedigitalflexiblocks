@@ -1,21 +1,21 @@
-import React from 'react'
-import { Flex } from 'theme-ui'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
-import AuthorAvatar from './Card.Footer.Author.Avatar'
-import AuthorName from './Card.Footer.Author.Name'
-import Info from './Card.Footer.Info'
+import React from 'react';
+import { Flex } from 'theme-ui';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
+import AuthorAvatar from './Card.Footer.Author.Avatar';
+import AuthorName from './Card.Footer.Author.Name';
+import Info from './Card.Footer.Info';
 
 const styles = {
   wrapper: {
-    alignItems: `center`
+    alignItems: `center`,
   },
   postInfo: {
     flex: 1,
     flexWrap: `wrap`,
     justifyContent: `space-between`,
-    color: `omega`
-  }
-}
+    color: `omega`,
+  },
+};
 
 const CardFooter = ({ omitFooter, ...props }) =>
   !omitFooter && (
@@ -24,5 +24,5 @@ const CardFooter = ({ omitFooter, ...props }) =>
         <Info {...props} />
       </Flex>
     </Flex>
-  )
-export default CardFooter
+  );
+export default CardFooter;

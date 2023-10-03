@@ -1,19 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
-import Base from './Card.Base'
+import React from 'react';
+import PropTypes from 'prop-types';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
+import Base from './Card.Base';
 
 const Card = ({ variantGroup, variant, aside, ...props }) => {
-  const responsiveVariant = rv(variantGroup, variant)
-  return <Base variant={responsiveVariant} {...props} />
-}
+  const responsiveVariant = rv(variantGroup, variant);
+  return <Base variant={responsiveVariant} {...props} />;
+};
 
-export default Card
+export default Card;
 
 Card.defaultProps = {
   variantGroup: 'cards',
-  variant: 'vertical'
-}
+  variant: 'vertical',
+};
 
 Card.propTypes = {
   variant: PropTypes.oneOfType([
@@ -29,8 +29,8 @@ Card.propTypes = {
       'horizontal-hero',
       'vertical-cover',
       'vertical',
-      'search'
-    ])
+      'search',
+    ]),
   ]),
   omitMedia: PropTypes.bool,
   omitCategory: PropTypes.bool,
@@ -42,7 +42,7 @@ Card.propTypes = {
   columns: PropTypes.array,
   mediaType: PropTypes.oneOfType([
     PropTypes.bool,
-    PropTypes.oneOf(['icon', 'image'])
+    PropTypes.oneOf(['icon', 'image']),
   ]),
   imageVariant: PropTypes.string,
   loading: PropTypes.oneOf(['lazy', 'auto', 'eager']),
@@ -53,16 +53,16 @@ Card.propTypes = {
     name: PropTypes.string,
     color: PropTypes.string,
     slug: PropTypes.string,
-    icon: PropTypes.string
+    icon: PropTypes.string,
   }),
   author: PropTypes.shape({
     name: PropTypes.string,
     slug: PropTypes.string,
-    thumbnail: PropTypes.object
+    thumbnail: PropTypes.object,
   }),
   date: PropTypes.string,
   timeToRead: PropTypes.number,
   excerpt: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   thumbnail: PropTypes.object,
-  thumbnailText: PropTypes.string
-}
+  thumbnailText: PropTypes.string,
+};

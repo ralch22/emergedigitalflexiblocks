@@ -1,25 +1,25 @@
-import React from 'react'
-import { Box, Input } from 'theme-ui'
-import Divider from '@solid-ui-components/Divider'
-import ContentButtons from '@solid-ui-components/ContentButtons'
+import React from 'react';
+import { Box, Input } from 'theme-ui';
+import Divider from '@solid-ui-components/Divider';
+import ContentButtons from '@solid-ui-components/ContentButtons';
 
 const QuickSignupForm = ({ space, fields, buttons }) =>
   fields?.[0] && (
     <>
       <Divider space={space} />
       <Box
-        variant='cards.primary'
+        variant="cards.primary"
         sx={{
           display: `inline-flex`,
           alignContent: `space-between`,
           bg: `contentBg`,
           borderRadius: `xl`,
           minWidth: [`auto`, 400],
-          p: 2
+          p: 2,
         }}
       >
         <Input
-          type='text'
+          type="text"
           name={fields[0].identifier}
           placeholder={fields[0].placeholder?.text}
           sx={{
@@ -27,8 +27,8 @@ const QuickSignupForm = ({ space, fields, buttons }) =>
             px: 3,
             py: 0,
             '::placeholder': {
-              color: fields[0].placeholder?.color || `omegaDark`
-            }
+              color: fields[0].placeholder?.color || `omegaDark`,
+            },
           }}
         />
         {buttons?.[0] && (
@@ -39,6 +39,6 @@ const QuickSignupForm = ({ space, fields, buttons }) =>
         )}
       </Box>
     </>
-  )
+  );
 
-export default QuickSignupForm
+export default QuickSignupForm;

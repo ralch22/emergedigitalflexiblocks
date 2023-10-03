@@ -1,24 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
-import { Box, css, Spinner } from 'theme-ui'
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { Box, css, Spinner } from 'theme-ui';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchUser, updateUser,  } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/userSlice'; 
-import { addUserInfo  } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice'; 
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox'
-import FormInput from '@solid-ui-components/ContentForm/FormInput'
-import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea'
-import FormHidden from '@solid-ui-components/ContentForm/FormHidden'
-import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi'
+import {
+  fetchUser,
+  updateUser,
+} from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/userSlice';
+import { addUserInfo } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox';
+import FormInput from '@solid-ui-components/ContentForm/FormInput';
+import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea';
+import FormHidden from '@solid-ui-components/ContentForm/FormHidden';
+import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi';
 import Reveal from '@solid-ui-components/Reveal/Reveal';
 
 import { useFormik } from 'formik'; // Import Formik
 import * as Yup from 'yup'; // Import Yup for validation
 
-
 const styles = {
   form: {
-    position: `relative`
+    position: `relative`,
   },
   responseOverlay: {
     position: `absolute`,
@@ -33,8 +35,8 @@ const styles = {
     left: 0,
     active: {
       zIndex: 0,
-      backgroundColor: `rgba(255,255,255,0.85)`
-    }
+      backgroundColor: `rgba(255,255,255,0.85)`,
+    },
   },
   buttonsWrapper: {
     display: `inline-flex`,
@@ -43,19 +45,22 @@ const styles = {
     '.button-group-button + .button-group-link': {
       flex: `100%`,
       ml: 0,
-      mt: 3
-    } 
-  }
-}
-
+      mt: 3,
+    },
+  },
+};
 
 // ... (previous imports and code)
 
-const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
+const auth =
+  typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
 const parsedData = JSON.parse(auth);
 
-const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) => {
-
+const ContentForm = ({
+  id,
+  form: { action, fields, buttons } = {},
+  checkout,
+}) => {
   // const validationSchema = Yup.object().shape({
   //   // username: Yup.string().required('Invalid Username').required('Required')
   //   password: Yup.string().required('Required'),
@@ -69,8 +74,8 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
 
   // Initialize different initialValues objects based on button text
   const dispatch = useDispatch();
-  const { user, status } = useSelector((state) => state.user);
-  const userInfo = useSelector((state) => state.checkout.order.userInfo);
+  const { user, status } = useSelector(state => state.user);
+  const userInfo = useSelector(state => state.checkout.order.userInfo);
   useEffect(() => {
     dispatch(fetchUser({ id: parsedData && parsedData.user.id }));
     // Dispatch actions for other entities here
@@ -108,42 +113,30 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
     first_name: user.first_name,
     last_name: user.last_name,
   };
- 
 
   const formik = useFormik({
     initialValues,
-    onSubmit: async (values) => {
-
+    onSubmit: async values => {
       handleUserForm(values);
-    }
+    },
   });
 
-
   function handleFieldChange(e) {
-    const { name, value } = e.target
-    formik.handleChange(e)
+    const { name, value } = e.target;
+    formik.handleChange(e);
     dispatch(addUserInfo({ ...userInfo, [name]: value }));
-  
   }
-    
-  const handleUserForm = async ({
-    first_name,
-    last_name,
-  }) => {
-   const data = {
-    first_name,
-    last_name,
-   }
-   dispatch(updateUser({ id: parsedData && parsedData.user.id, data }));
+
+  const handleUserForm = async ({ first_name, last_name }) => {
+    const data = {
+      first_name,
+      last_name,
+    };
+    dispatch(updateUser({ id: parsedData && parsedData.user.id, data }));
   };
 
-
-
   return (
-    <form
-      css={css(styles.form)}
-      onSubmit={formik.handleSubmit}
-    >
+    <form css={css(styles.form)} onSubmit={formik.handleSubmit}>
       <Box variant="forms.row">
         {fields?.map(({ identifier, value, ...props }, index) => {
           let Component;
@@ -183,8 +176,8 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
           );
         })}
       </Box>
-       {/* Error messages */}
-       {formik.errors.password && formik.touched.password && (
+      {/* Error messages */}
+      {formik.errors.password && formik.touched.password && (
         <div>{formik.errors.password}</div>
       )}
       {formik.errors.confirmPassword && formik.touched.confirmPassword && (
@@ -192,16 +185,18 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
       )}
       {!checkout && (
         <Box sx={{ textAlign: `center` }}>
-        
-        <button type='submit' style={{ background: 'transparent', border: 'none' }}>
-        <ContentButtons
-          content={buttons}
-          wrapperStyles={styles.buttonsWrapper}
-        />
-        </button>
-      </Box>
+          <button
+            type="submit"
+            style={{ background: 'transparent', border: 'none' }}
+          >
+            <ContentButtons
+              content={buttons}
+              wrapperStyles={styles.buttonsWrapper}
+            />
+          </button>
+        </Box>
       )}
-      
+
       {/* <Box
         sx={styles.responseOverlay}
         css={isVisible ? styles.responseOverlay.active : null}
@@ -227,8 +222,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
 ContentForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
-  success: PropTypes.bool
-}
+  success: PropTypes.bool,
+};
 
 export default ContentForm;
-

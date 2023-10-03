@@ -1,10 +1,10 @@
-import React from 'react'
-import { Layout, Stack, Main, PreFooter } from '@solid-ui-layout'
-import PageTitle from '@solid-ui-components/PageTitle'
-import Pagination from '@solid-ui-components/Pagination'
-import CardList from '@solid-ui-components/CardList'
-import Divider from '@solid-ui-components/Divider'
-import Seo from '@solid-ui-blocks/Seo'
+import React from 'react';
+import { Layout, Stack, Main, PreFooter } from '@solid-ui-layout';
+import PageTitle from '@solid-ui-components/PageTitle';
+import Pagination from '@solid-ui-components/Pagination';
+import CardList from '@solid-ui-components/CardList';
+import Divider from '@solid-ui-components/Divider';
+import Seo from '@solid-ui-blocks/Seo';
 
 const PageCollection = ({ data: { posts, collectionInfo }, ...props }) => (
   <Layout {...props}>
@@ -39,6 +39,6 @@ const PageCollection = ({ data: { posts, collectionInfo }, ...props }) => (
       <Pagination {...posts.pageInfo} {...collectionInfo} />
     </PreFooter>
   </Layout>
-)
+);
 
-export default PageCollection
+export default PageCollection;

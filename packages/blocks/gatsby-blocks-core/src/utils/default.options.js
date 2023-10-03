@@ -1,5 +1,5 @@
-const getValue = require('get-value')
-const typesDefs = require('../types')
+const getValue = require('get-value');
+const typesDefs = require('../types');
 
 module.exports = pluginOptions => {
   const services = {
@@ -7,8 +7,8 @@ module.exports = pluginOptions => {
     mailchimp: getValue(pluginOptions, 'services.mailchimp', false),
     disqus: getValue(pluginOptions, 'services.disqus', true),
     graphComment: getValue(pluginOptions, 'services.graphComment', false),
-    facebookComment: getValue(pluginOptions, 'services.facebookComment', false)
-  }
+    facebookComment: getValue(pluginOptions, 'services.facebookComment', false),
+  };
 
   const sources = [
     {
@@ -17,7 +17,7 @@ module.exports = pluginOptions => {
       sourcePlugin: 'gatsby-source-contentful',
       imageNodeType: 'ContentfulAsset',
       typeDefs: typesDefs.contentful,
-      typeDefsFallback: typesDefs.contentfulFallback
+      typeDefsFallback: typesDefs.contentfulFallback,
     },
     {
       name: 'sanity',
@@ -25,7 +25,7 @@ module.exports = pluginOptions => {
       sourcePlugin: 'gatsby-source-sanity',
       imageNodeType: 'SanityImageAsset',
       typeDefs: typesDefs.sanity,
-      typeDefsFallback: typesDefs.sanityFallback
+      typeDefsFallback: typesDefs.sanityFallback,
     },
     {
       name: 'strapi',
@@ -35,41 +35,45 @@ module.exports = pluginOptions => {
       sourcePluginUpgradeDocs:
         'https://elegantstack.netlify.app/flexiblog/sourcing-data/strapi-cms/#migrating-from-strapi-v3-to-v4',
       imageNodeType: 'ImageSharp',
-      typeDefs: typesDefs.strapi
-    }
-  ]
+      typeDefs: typesDefs.strapi,
+    },
+  ];
 
   const siteUrl = pluginOptions.siteUrl
     ? pluginOptions.siteUrl.replace(/\/$/, '')
-    : null
+    : null;
 
-  const basePath = pluginOptions.basePath || '/'
+  const basePath = pluginOptions.basePath || '/';
 
   const localPaths = [
     {
       name: 'article',
-      path: getValue(pluginOptions, 'localPaths.post', 'content/posts')
+      path: getValue(pluginOptions, 'localPaths.post', 'content/posts'),
     },
     {
       name: 'author',
-      path: getValue(pluginOptions, 'localPaths.author', 'content/authors')
+      path: getValue(pluginOptions, 'localPaths.author', 'content/authors'),
     },
     {
       name: 'category',
-      path: getValue(pluginOptions, 'localPaths.category', 'content/categories')
+      path: getValue(
+        pluginOptions,
+        'localPaths.category',
+        'content/categories',
+      ),
     },
     {
       name: 'block',
-      path: getValue(pluginOptions, 'localPaths.block', 'content/blocks')
-    }
-  ]
+      path: getValue(pluginOptions, 'localPaths.block', 'content/blocks'),
+    },
+  ];
 
   const staticPaths = [
     {
       name: 'asset',
-      path: getValue(pluginOptions, 'localPaths.asset', 'content/assets')
-    }
-  ]
+      path: getValue(pluginOptions, 'localPaths.asset', 'content/assets'),
+    },
+  ];
 
   const sitePaths = {
     SanityArticleProxy: getValue(pluginOptions, 'sitePaths.article', ''),
@@ -80,7 +84,7 @@ module.exports = pluginOptions => {
     ContentfulAuthorProxy: getValue(
       pluginOptions,
       'sitePaths.author',
-      '/author'
+      '/author',
     ),
     StrapiAuthorProxy: getValue(pluginOptions, 'sitePaths.author', '/author'),
     ArticleTag: getValue(pluginOptions, 'sitePaths.tag', '/tag'),
@@ -88,48 +92,51 @@ module.exports = pluginOptions => {
     SanityCategoryProxy: getValue(
       pluginOptions,
       'sitePaths.category',
-      '/category'
+      '/category',
     ),
     ContentfulCategoryProxy: getValue(
       pluginOptions,
       'sitePaths.category',
-      '/category'
+      '/category',
     ),
     StrapiCategoryProxy: getValue(
       pluginOptions,
       'sitePaths.category',
-      '/category'
-    )
-  }
+      '/category',
+    ),
+  };
 
-  const pagingParam = pluginOptions.pagingParam || 'page'
-  const paginatePostsPage = pluginOptions.paginatePostsPage || true
-  const homePostsPerPage = pluginOptions.homePostsPerPage || 6
-  const collectionPostsPerPage = pluginOptions.collectionPostsPerPage || 6
+  const pagingParam = pluginOptions.pagingParam || 'page';
+  const paginatePostsPage = pluginOptions.paginatePostsPage || true;
+  const homePostsPerPage = pluginOptions.homePostsPerPage || 6;
+  const collectionPostsPerPage = pluginOptions.collectionPostsPerPage || 6;
 
-  const mobileMenu = null // Will populate by: utils/queryMobileMenu.js
+  const mobileMenu = null; // Will populate by: utils/queryMobileMenu.js
 
-  const darkMode = getValue(pluginOptions, 'darkMode', true)
+  const darkMode = getValue(pluginOptions, 'darkMode', true);
 
-  const slugSanitizeRegex = getValue(pluginOptions, 'slugSanitizeRegex', null)
+  const slugSanitizeRegex = getValue(pluginOptions, 'slugSanitizeRegex', null);
 
-  const includeExcerpt = getValue(pluginOptions, 'includeExcerpt', true)
-  const includeTimeToRead = getValue(pluginOptions, 'includeTimeToRead', true)
+  const includeExcerpt = getValue(pluginOptions, 'includeExcerpt', true);
+  const includeTimeToRead = getValue(pluginOptions, 'includeTimeToRead', true);
   const includeTableOfContents = getValue(
     pluginOptions,
     'includeTableOfContents',
-    true
-  )
-  const imageQuality = getValue(pluginOptions, 'imageQuality', 75)
+    true,
+  );
+  const imageQuality = getValue(pluginOptions, 'imageQuality', 75);
 
-  const gatsbyRemarkPlugins = getValue(pluginOptions, 'gatsbyRemarkPlugins', [])
-  const remarkPlugins = getValue(pluginOptions, 'remarkPlugins', [])
+  const gatsbyRemarkPlugins = getValue(
+    pluginOptions,
+    'gatsbyRemarkPlugins',
+    [],
+  );
+  const remarkPlugins = getValue(pluginOptions, 'remarkPlugins', []);
 
+  const createDemoPages = getValue(pluginOptions, 'createDemoPages', true);
+  const colorMode = getValue(pluginOptions, 'colorMode', true);
 
-  const createDemoPages = getValue(pluginOptions, 'createDemoPages', true)
-  const colorMode = getValue(pluginOptions, 'colorMode', true)
-
-  const isDevelopment = process?.env?.NODE_ENV === 'development'
+  const isDevelopment = process?.env?.NODE_ENV === 'development';
 
   const pageContextOptions = {
     paginatePostsPage,
@@ -144,10 +151,8 @@ module.exports = pluginOptions => {
     imageQuality,
     createDemoPages,
     colorMode,
-    isDevelopment
-  }
-
-
+    isDevelopment,
+  };
 
   return {
     services,
@@ -165,6 +170,6 @@ module.exports = pluginOptions => {
     pageContextOptions,
     gatsbyRemarkPlugins,
     remarkPlugins,
-    pageContextOptions
-  }
-}
+    pageContextOptions,
+  };
+};

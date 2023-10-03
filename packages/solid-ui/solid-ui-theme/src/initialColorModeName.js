@@ -1,1 +1,1 @@
-export default 'light'
+export default 'light';

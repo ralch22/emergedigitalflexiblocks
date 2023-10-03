@@ -1,52 +1,56 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Heading, Text, Badge } from 'theme-ui'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Heading, Text, Badge } from 'theme-ui';
 
 const styles = {
   count: {
-    fontSize: 4
+    fontSize: 4,
   },
   subheader: {
     fontWeight: `body`,
-    color: `omegaDark`
+    color: `omegaDark`,
   },
   runninghead: {
     fontWeight: `body`,
     color: `omegaDark`,
-    mb: 0
-  }
-}
+    mb: 0,
+  },
+};
 
 const PageTitle = ({ header, subheader, running, totalCount }) => {
   return (
     <div>
-      <Heading variant='h1' as='h1' dangerouslySetInnerHTML={{ __html: header }} >
+      <Heading
+        variant="h1"
+        as="h1"
+        dangerouslySetInnerHTML={{ __html: header }}
+      >
         {totalCount && (
-          <Badge variant='tag-white' sx={styles.count}>
+          <Badge variant="tag-white" sx={styles.count}>
             {' '}
             {totalCount}
           </Badge>
         )}
       </Heading>
       {subheader && (
-        <Text variant='h3' sx={styles.subheader}>
+        <Text variant="h3" sx={styles.subheader}>
           {subheader}
         </Text>
       )}
       {running && (
-        <Text variant='h4' sx={styles.runninghead}>
+        <Text variant="h4" sx={styles.runninghead}>
           {running}
         </Text>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default PageTitle
+export default PageTitle;
 
 PageTitle.propTypes = {
   title: PropTypes.string,
   subheader: PropTypes.string,
   running: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-  totalCount: PropTypes.number
-}
+  totalCount: PropTypes.number,
+};

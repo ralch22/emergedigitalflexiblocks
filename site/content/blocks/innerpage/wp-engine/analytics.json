@@ -21,7 +21,7 @@
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Create a Complete Picture & see which digital channels are performing best",
@@ -39,7 +39,7 @@
         "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Advanced Reporting Capabalities",
@@ -57,7 +57,7 @@
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Take action to drive better marketing results",
@@ -67,7 +67,6 @@
         {
           "text": "With all of this information in one place, you can immediately get a clear view of your customer. Easy-to-use yet powerful reporting and analysis capabilities help you understand customer behavior in a holistic way through demographics, devices, channels, and much more.",
           "variant": "h4"
-          
         }
       ]
     }

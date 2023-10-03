@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export const ModalContext = React.createContext({
   activeModal: {},
-  setActiveModal: () => {}
-})
+  setActiveModal: () => {},
+});
 
 export const ModalContextProvider = props => {
   const setActiveModal = activeModal => {
-    setState({ ...state, activeModal: activeModal })
-  }
+    setState({ ...state, activeModal: activeModal });
+  };
 
   const initState = {
     activeModal: {},
-    setActiveModal: setActiveModal
-  }
+    setActiveModal: setActiveModal,
+  };
 
-  const [state, setState] = useState(initState)
+  const [state, setState] = useState(initState);
 
   return (
     <ModalContext.Provider value={state}>
       {props.children}
     </ModalContext.Provider>
-  )
-}
+  );
+};

@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Flex, Button, Heading, Text } from 'theme-ui'
-import { FaRegHandshake } from 'react-icons/fa'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import Divider from '@solid-ui-components/Divider'
+import React from 'react';
+import { Link } from 'gatsby';
+import { Flex, Button, Heading, Text } from 'theme-ui';
+import { FaRegHandshake } from 'react-icons/fa';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import Divider from '@solid-ui-components/Divider';
 
 const styles = {
   wrapper: {
@@ -51,19 +51,19 @@ const styles = {
     display: `block`,
     mt: `auto`,
   },
-}
+};
 
 const BannerVertical = ({ content: { buttons } }) => (
   <Flex sx={styles.wrapper}>
-    <Heading variant='h2' sx={styles.heading}>
+    <Heading variant="h2" sx={styles.heading}>
       <FaRegHandshake />
       Best Networking Workshops
     </Heading>
-    <Heading variant='h4' sx={styles.subheading}>
+    <Heading variant="h4" sx={styles.subheading}>
       In this workshop, learn when and how to network with modern best
       practices.
     </Heading>
-    <Text as='ul' variant='small' sx={styles.list}>
+    <Text as="ul" variant="small" sx={styles.list}>
       <li>Explain the importance of networking for career-building</li>
       <li>Practice modern tips for effective networking</li>
       <li>Understand the steps towards building your own network</li>
@@ -75,6 +75,6 @@ const BannerVertical = ({ content: { buttons } }) => (
       </>
     )}
   </Flex>
-)
+);
 
-export default BannerVertical
+export default BannerVertical;

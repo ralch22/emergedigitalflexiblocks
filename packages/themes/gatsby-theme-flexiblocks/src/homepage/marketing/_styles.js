@@ -5,7 +5,7 @@
  *
  */
 
-import heroBg from './assets/contour-pattern.svg'
+import heroBg from './assets/contour-pattern.svg';
 
 export default {
   heroContainer: {
@@ -22,8 +22,8 @@ export default {
           ${t.colors.alphaLighter} 0%,
           ${t.colors.background} 100%
         )`,
-      backgroundSize: `100%`
-    }
+      backgroundSize: `100%`,
+    },
   },
   strategiesContainer: {
     position: `relative`,
@@ -41,13 +41,13 @@ export default {
           ${t.colors.alphaLighter} 0%,
           ${t.colors.background} 100%
         )`,
-      backgroundSize: `100%`
-    }
+      backgroundSize: `100%`,
+    },
   },
   whyChooseUsContainer: {
     bg: `omegaLighter`,
     borderRadius: `xl`,
     py: 5,
-    px: [4, 0]
-  }
-}
+    px: [4, 0],
+  },
+};

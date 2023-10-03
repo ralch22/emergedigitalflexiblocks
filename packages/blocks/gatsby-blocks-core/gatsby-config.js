@@ -1,20 +1,19 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
+const l = require('lodash');
+const path = require('path');
+const withDefaults = require('./src/utils/default.options');
 
-const l = require('lodash')
-const path = require('path')
-const withDefaults = require('./src/utils/default.options')
-
-const siteUrl = process.env.URL || `https://fallback.net`
+const siteUrl = process.env.URL || `https://fallback.net`;
 
 module.exports = options => {
-  options = withDefaults(options)
-  
+  options = withDefaults(options);
+
   const plugins = [
     {
-      resolve: "gatsby-plugin-sitemap",
+      resolve: 'gatsby-plugin-sitemap',
       options: {
         query: `
         {
@@ -43,46 +42,46 @@ module.exports = options => {
           allWpContentNode: { nodes: allWpNodes },
         }) => {
           const wpNodeMap = allWpNodes.reduce((acc, node) => {
-            const { uri } = node
-            acc[uri] = node
+            const { uri } = node;
+            acc[uri] = node;
 
-            return acc
-          }, {})
+            return acc;
+          }, {});
 
           return allPages.map(page => {
-            return { ...page, ...wpNodeMap[page.path] }
-          })
+            return { ...page, ...wpNodeMap[page.path] };
+          });
         },
         serialize: ({ path, modifiedGmt }) => {
           return {
             url: path,
             lastmod: modifiedGmt,
-          }
+          };
         },
       },
     },
     {
       resolve: '@elegantstack/gatsby-plugin-proxy-directives',
-      options
+      options,
     },
     {
       resolve: '@elegantstack/gatsby-plugin-proxy-schema',
-      options
+      options,
     },
     {
       resolve: '@elegantstack/gatsby-plugin-utility-directives',
-      options
+      options,
     },
     {
       resolve: '@elegantstack/gatsby-plugin-mkdir',
-      options
+      options,
     },
-    { 
-      resolve: `gatsby-plugin-disqus`, 
-      options: { 
-        shortname: `emerge-digital` 
-      } 
-    }, 
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `emerge-digital`,
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-image',
     'gatsby-plugin-next-seo',
@@ -103,27 +102,27 @@ module.exports = options => {
           allow404Images: true,
         },
         excludeFieldNames: [
-          "contentNodes",
-          "seo",
-          "ancestors",
-          "author",
-          "template",
-          "lastEditedBy",
-          "authorDatabaseId",
-          "authorId",
-          "contentTypeName",
-          "dateGmt",
-          "desiredSlug",
-          "enclosure",
-          "isContentNode",
-          "isTermNode",
-          "modified",
-          "modifiedGmt",
-          "parentDatabaseId",
-          "parentId",
-          "srcSet",
-          "parent",
-          "children"
+          'contentNodes',
+          'seo',
+          'ancestors',
+          'author',
+          'template',
+          'lastEditedBy',
+          'authorDatabaseId',
+          'authorId',
+          'contentTypeName',
+          'dateGmt',
+          'desiredSlug',
+          'enclosure',
+          'isContentNode',
+          'isTermNode',
+          'modified',
+          'modifiedGmt',
+          'parentDatabaseId',
+          'parentId',
+          'srcSet',
+          'parent',
+          'children',
         ],
         html: {
           useGatsbyImage: true,
@@ -133,10 +132,10 @@ module.exports = options => {
     {
       resolve: 'gatsby-transformer-sharp',
       options: {
-        checkSupportedExtensions: false
-      }
-    }
-  ].filter(Boolean)
+        checkSupportedExtensions: false,
+      },
+    },
+  ].filter(Boolean);
 
   // Resolve local paths
   plugins.push({
@@ -145,26 +144,26 @@ module.exports = options => {
       typeName: ({ node }) =>
         node.sourceInstanceName === 'block'
           ? 'BlockContent'
-          : l.upperFirst(l.camelCase(`${path.basename(node.dir)} Json`))
-    }
-  })
+          : l.upperFirst(l.camelCase(`${path.basename(node.dir)} Json`)),
+    },
+  });
 
   options.localPaths.forEach(localPath =>
     plugins.push({
       resolve: 'gatsby-source-filesystem',
-      options: localPath
-    })
-  )
+      options: localPath,
+    }),
+  );
 
   // Resolve static paths (ie. assets)
   options.staticPaths.forEach(localPath =>
     plugins.push({
       resolve: 'gatsby-source-filesystem',
-      options: localPath
-    })
-  )
+      options: localPath,
+    }),
+  );
 
   return {
-    plugins
-  }
-}
+    plugins,
+  };
+};

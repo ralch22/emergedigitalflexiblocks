@@ -1,6 +1,6 @@
-import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
-import { Flex, Box, Button, Heading, Text } from 'theme-ui'
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { Flex, Box, Button, Heading, Text } from 'theme-ui';
 
 const styles = {
   wrapper: src => ({
@@ -12,47 +12,47 @@ const styles = {
     backgroundPosition: `70% bottom`,
     borderRadius: `default`,
     width: `full`,
-    p: 4
+    p: 4,
   }),
   left: {
-    flexBasis: `2/3`
+    flexBasis: `2/3`,
   },
   right: {
     flexBasis: `1/3`,
-    textAlign: `right`
+    textAlign: `right`,
   },
   heading: {
     color: `betaLight`,
-    fontWeight: `normal`
+    fontWeight: `normal`,
   },
   subheading: {
     color: `omega`,
-    mb: [3, 0]
-  }
-}
+    mb: [3, 0],
+  },
+};
 
 const BannerHorizontal = () => {
-  const data = useStaticQuery(bannerHorizontalQuery)
-  const { file } = data
+  const data = useStaticQuery(bannerHorizontalQuery);
+  const { file } = data;
 
-  const banner = file && file.banner && file.banner.regular
+  const banner = file && file.banner && file.banner.regular;
 
   return (
     <Flex sx={styles.wrapper(banner && banner.src)}>
       <Box sx={styles.left}>
-        <Heading variant='h3' sx={styles.heading}>
+        <Heading variant="h3" sx={styles.heading}>
           The latest IT market analysis report - May 2020
         </Heading>
         <Text sx={styles.subheading}>This month's analysis is a must see.</Text>
       </Box>
       <Box sx={styles.right}>
-        <Button as={Link} to='/' variant='primary' aria-label='Download Report'>
+        <Button as={Link} to="/" variant="primary" aria-label="Download Report">
           Download Report
         </Button>
       </Box>
     </Flex>
-  )
-}
+  );
+};
 
 const bannerHorizontalQuery = graphql`
   query BannerHorizontalQuery {
@@ -64,6 +64,6 @@ const bannerHorizontalQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default BannerHorizontal
+export default BannerHorizontal;

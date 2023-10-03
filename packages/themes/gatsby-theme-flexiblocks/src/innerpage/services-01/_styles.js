@@ -17,7 +17,7 @@ export default {
       top: 0,
       right: 0,
       zIndex: -1,
-      bg: `white`
-    }
-  }
-}
+      bg: `white`,
+    },
+  },
+};

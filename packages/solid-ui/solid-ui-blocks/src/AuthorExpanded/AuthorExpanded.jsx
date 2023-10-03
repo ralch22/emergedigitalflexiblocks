@@ -1,56 +1,56 @@
-import React from 'react'
-import { Link as GLink } from 'gatsby'
-import { Flex, Box, Text, Heading, Card, Badge, Link } from 'theme-ui'
-import MemphisPattern from '@solid-ui-components/MemphisPattern'
-import Avatar from '@solid-ui-components/Avatar'
-import Navigation from '@solid-ui-components/Navigation'
-import attachSocialIcons from '@helpers/attachSocialIcons'
+import React from 'react';
+import { Link as GLink } from 'gatsby';
+import { Flex, Box, Text, Heading, Card, Badge, Link } from 'theme-ui';
+import MemphisPattern from '@solid-ui-components/MemphisPattern';
+import Avatar from '@solid-ui-components/Avatar';
+import Navigation from '@solid-ui-components/Navigation';
+import attachSocialIcons from '@helpers/attachSocialIcons';
 
 const styles = {
   card: {
-    position: `relative`
+    position: `relative`,
   },
   wrapper: {
     flexDirection: [`column`, `row`],
     position: `relative`,
-    zIndex: 3
+    zIndex: 3,
   },
   avatarColumn: {
-    flexBasis: `1/3`
+    flexBasis: `1/3`,
   },
   infoColumn: {
-    flexBasis: `2/3`
+    flexBasis: `2/3`,
   },
   innerBox: {
     flexBasis: `1/2`,
     flexGrow: 1,
     px: [0, 3],
-    mt: [3, 0]
+    mt: [3, 0],
   },
   subheader: {
-    color: `omegaDark`
+    color: `omegaDark`,
   },
   name: {
     textAlign: [`center`, `left`],
     mt: [3, 0],
-    px: 3
+    px: 3,
   },
   bio: {
-    textAlign: [`center`, `left`]
+    textAlign: [`center`, `left`],
   },
   socialList: {
     a: {
-      m: 0
-    }
+      m: 0,
+    },
   },
   link: {
     position: `absolute`,
     top: 10,
     right: 10,
-    zIndex: 3
+    zIndex: 3,
   },
   pattern: {
-    borderRadius: `lg`
+    borderRadius: `lg`,
   },
   gradient: {
     size: `full`,
@@ -63,16 +63,16 @@ const styles = {
       t =>
         `linear-gradient(0deg, ${t.colors.contentBg} 20%, rgba(255, 255, 255, 0) 80%)`,
       t =>
-        `linear-gradient(270deg, ${t.colors.contentBg} 20%, rgba(255, 255, 255, 0) 100%)`
-    ]
-  }
-}
+        `linear-gradient(270deg, ${t.colors.contentBg} 20%, rgba(255, 255, 255, 0) 100%)`,
+    ],
+  },
+};
 
 const Subheader = ({ children }) => (
-  <Heading variant='h4' sx={styles.subheader}>
+  <Heading variant="h4" sx={styles.subheader}>
     {children}
   </Heading>
-)
+);
 
 const AuthorAvatar = ({ name, thumbnail, slug }) =>
   thumbnail ? (
@@ -81,24 +81,24 @@ const AuthorAvatar = ({ name, thumbnail, slug }) =>
         <Avatar avatar={thumbnail} alt={name} />
       </Link>
     </Box>
-  ) : null
+  ) : null;
 
 const AuthorName = ({ name, slug }) => (
   <Box sx={styles.name}>
-    <Heading variant='h3'>
+    <Heading variant="h3">
       <Link as={GLink} to={slug}>
         {name}
       </Link>
     </Heading>
   </Box>
-)
+);
 
 const AuthorBio = ({ title, description }) => (
   <Box sx={styles.bio}>
     <Subheader>{title}</Subheader>
     <Text>{description}</Text>
   </Box>
-)
+);
 
 const AuthorSkills = ({ skills }) =>
   skills ? (
@@ -108,27 +108,27 @@ const AuthorSkills = ({ skills }) =>
         <Text key={`skill-${skill}`}>{skill}</Text>
       ))}
     </Box>
-  ) : null
+  ) : null;
 
 const AuthorSocialMedia = ({ social }) =>
   social ? (
     <Box sx={styles.innerBox}>
       <Subheader>Social Media</Subheader>
       <Navigation
-        variant='vertical'
+        variant="vertical"
         items={attachSocialIcons(social)}
         wrapperStyle={styles.socialList}
       />
     </Box>
-  ) : null
+  ) : null;
 
 const AuthorExpanded = ({ author, withLink }) => {
-  if (!author) return null
+  if (!author) return null;
 
-  const { skills, social } = author
+  const { skills, social } = author;
 
   return (
-    <Card variant='paper' sx={styles.card}>
+    <Card variant="paper" sx={styles.card}>
       <Flex sx={styles.wrapper}>
         <Box sx={styles.avatarColumn}>
           <AuthorAvatar {...author} />
@@ -151,14 +151,14 @@ const AuthorExpanded = ({ author, withLink }) => {
         </Box>
       </Flex>
       {withLink && (
-        <Badge variant='tag' as={GLink} to={author.slug} sx={styles.link}>
+        <Badge variant="tag" as={GLink} to={author.slug} sx={styles.link}>
           View Posts
         </Badge>
       )}
       <Box sx={styles.gradient} />
       <MemphisPattern sx={styles.pattern} />
     </Card>
-  )
-}
+  );
+};
 
-export default AuthorExpanded
+export default AuthorExpanded;

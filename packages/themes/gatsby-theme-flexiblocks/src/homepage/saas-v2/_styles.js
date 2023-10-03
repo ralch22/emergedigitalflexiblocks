@@ -5,7 +5,7 @@
  *
  */
 
-import circle from './assets/circle.png'
+import circle from './assets/circle.png';
 
 export default {
   heroContainer: {
@@ -27,7 +27,7 @@ export default {
           ${t.colors.alpha} 100%
         )`,
       backgroundSize: `100%`,
-      backgroundPosition: `650px bottom`
+      backgroundPosition: `650px bottom`,
     },
     '::after': {
       content: `" "`,
@@ -41,8 +41,8 @@ export default {
       maxHeight: 600,
       background: `url(${circle}) no-repeat center center`,
       backgroundSize: `contain`,
-      opacity: 0.1
-    }
+      opacity: 0.1,
+    },
   },
   featuresContainer: {
     position: `relative`,
@@ -63,7 +63,7 @@ export default {
           ${t.colors.alpha} 100%
         )`,
       backgroundSize: `100%`,
-      backgroundPosition: `650px bottom`
+      backgroundPosition: `650px bottom`,
     },
     '::after': {
       display: [`none`, `block`],
@@ -77,8 +77,8 @@ export default {
       background: `url(${circle}) no-repeat center center`,
       backgroundSize: `cover`,
       filter: `brightness(60%) sepia(100) saturate(100) hue-rotate(25deg)`,
-      opacity: 0.1
-    }
+      opacity: 0.1,
+    },
   },
   socialProofContainer: {
     position: `relative`,
@@ -90,7 +90,7 @@ export default {
       top: 0,
       left: 0,
       zIndex: -2,
-      bg: `#F6F7FA`
-    }
-  }
-}
+      bg: `#F6F7FA`,
+    },
+  },
+};

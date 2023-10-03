@@ -5,7 +5,7 @@
  *
  */
 
-import sprinkle from './assets/sprinkle-pattern.svg'
+import sprinkle from './assets/sprinkle-pattern.svg';
 
 export default {
   heroContainer: {
@@ -17,7 +17,7 @@ export default {
       width: `full`,
       height: `3/5`,
       top: 0,
-      right: 0
+      right: 0,
     },
     '::before': {
       zIndex: -3,
@@ -26,15 +26,15 @@ export default {
         145deg,
         ${t.colors.alpha} 0%,
         ${t.colors.alphaDarker} 100%
-      )`
+      )`,
     },
     '::after': {
       zIndex: -2,
       background: `url(${sprinkle}) repeat right top`,
-      opacity: 0.3
-    }
+      opacity: 0.3,
+    },
   },
   servicesContainer: {
-    px: [3, 4]
-  }
-}
+    px: [3, 4],
+  },
+};

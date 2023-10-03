@@ -1,11 +1,11 @@
-import { gql } from '@apollo/client'
+import { gql } from '@apollo/client';
 
 /**
  * Register customer mutation query.
  */
 // Define your GraphQL mutation for user registration
 const REGISTER = gql`
-  mutation REGISTER ($input: RegisterUserInput!) {
+  mutation REGISTER($input: RegisterUserInput!) {
     registerUser(input: $input) {
       user {
         id
@@ -19,6 +19,5 @@ const REGISTER = gql`
     }
   }
 `;
-
 
 export default REGISTER;

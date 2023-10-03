@@ -1,7 +1,5 @@
-const withDefaults = require('./utils/default.options')
+const withDefaults = require('./utils/default.options');
 
 module.exports = async (helpers, pluginOptions) => {
-  pluginOptions = withDefaults(pluginOptions)
-
- 
-}
+  pluginOptions = withDefaults(pluginOptions);
+};

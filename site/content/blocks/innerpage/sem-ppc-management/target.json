@@ -1,187 +1,185 @@
 {
-    "text": [
-     
-      {
-        "text": "Capabilities in Search Engine Marketing",
-        "variant": "h2"
+  "text": [
+    {
+      "text": "Capabilities in Search Engine Marketing",
+      "variant": "h2"
+    },
+    {
+      "text": "Our SEM specialists are results-driven and strive for continuous improvement for clients. Here's what you can expect from our SEM Services:",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "Our SEM specialists are results-driven and strive for continuous improvement for clients. Here's what you can expect from our SEM Services:",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Innovative Searches",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Innovative Searches",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "- Aligned with best practices",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Goal-oriented optimization",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Automating strategically",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Measures for brand safety",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Certified experts",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "- Aligned with best practices",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Goal-oriented optimization",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Automating strategically",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Measures for brand safety",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Certified experts",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/paintbrush-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/paintbrush-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Effortless Creativity",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Effortless Creativity",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "- Customized search ads",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Testing formats and feature",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- A customer-centric approach",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Analyzing ads regularly",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "- Customized search ads",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Testing formats and feature",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- A customer-centric approach",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Analyzing ads regularly",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "SEM Reporting Customized",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "SEM Reporting Customized",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "- Solution automation",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Analyses driven by data",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Review of competitors",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Insights that are actionable",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "- Solution automation",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Analyses driven by data",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Review of competitors",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Insights that are actionable",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/eye-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/eye-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Innovative Searches",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Innovative Searches",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "- Exclusive market access",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Comprehensive testing plans",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Integration of APIs and feeds",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Segmenting audiences",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
+        {
+          "text": "- Exclusive market access",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Comprehensive testing plans",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Integration of APIs and feeds",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Segmenting audiences",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/comment-dots-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/comment-dots-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Transparency",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Transparency",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "- Access to platforms",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Reporting in real time",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "- Consistent communication",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      }
-    ]
-  }
-  
+        {
+          "text": "- Access to platforms",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Reporting in real time",
+          "variant": "medium",
+          "color": "alpha"
+        },
+        {
+          "text": "- Consistent communication",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ]
+}

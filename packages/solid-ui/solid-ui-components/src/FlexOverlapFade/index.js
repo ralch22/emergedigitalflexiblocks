@@ -1,1 +1,1 @@
-export { default } from './FlexOverlapFade'
+export { default } from './FlexOverlapFade';

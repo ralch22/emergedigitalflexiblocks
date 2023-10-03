@@ -1,1 +1,1 @@
-export { default } from './QuickSignupForm'
+export { default } from './QuickSignupForm';

@@ -1,4 +1,4 @@
-import common from './common'
+import common from './common';
 
 export default {
   ...common.button,
@@ -6,6 +6,6 @@ export default {
   '::after': {
     ...common.button['::after'],
     bg: `omegaDarker`,
-    borderColor: `omegaDarker`
-  }
-}
+    borderColor: `omegaDarker`,
+  },
+};

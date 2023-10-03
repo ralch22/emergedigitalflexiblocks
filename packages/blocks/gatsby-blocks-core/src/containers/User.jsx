@@ -1,20 +1,21 @@
 import React, { useEffect } from 'react';
-import Layout from '@solid-ui-layout/Layout'
-import Stack from '@solid-ui-layout/Stack/Stack'
-import Main from '@solid-ui-layout/Main/Main'
+import Layout from '@solid-ui-layout/Layout';
+import Stack from '@solid-ui-layout/Stack/Stack';
+import Main from '@solid-ui-layout/Main/Main';
 import Footer from '@solid-ui-blocks/Footer/Block01';
-import Seo from '@solid-ui-blocks/Seo'
+import Seo from '@solid-ui-blocks/Seo';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchOrders } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/orderSlice'; 
-import { fetchProducts } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/productSlice'; 
+import { fetchOrders } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/orderSlice';
+import { fetchProducts } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/productSlice';
 import Header from '@solid-ui-blocks/Header/Block01';
 import { Box, Flex, Text, Heading, Card } from 'theme-ui';
-import Divider from '@solid-ui-components/Divider'
-import { navigate, Link } from 'gatsby'
+import Divider from '@solid-ui-components/Divider';
+import { navigate, Link } from 'gatsby';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions'
+import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions';
 
-const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
+const auth =
+  typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
 const parsedData = JSON.parse(auth);
 // export const USER_QUERY = gql`
 // query GetUser($userId: ID!) {
@@ -28,8 +29,8 @@ const parsedData = JSON.parse(auth);
 
 export default function DashboardPage({ data: { allBlockContent }, ...props }) {
   const dispatch = useDispatch();
-  const orders = useSelector((state) => state.orders.list);
-  const products = useSelector((state) => state.products.list);
+  const orders = useSelector(state => state.orders.list);
+  const products = useSelector(state => state.products.list);
 
   useEffect(() => {
     dispatch(fetchOrders());
@@ -38,7 +39,7 @@ export default function DashboardPage({ data: { allBlockContent }, ...props }) {
   }, [dispatch]);
   useEffect(() => {
     // Check if the token is expired
-   // Check if the token is expired
+    // Check if the token is expired
     if (parsedData && parsedData.user.authToken) {
       const currentTime = Date.now() / 1000; // Get current timestamp in seconds
       const tokenExpirationTime = parsedData.user.jwtAuthExpiration; // Get the token's expiration timestamp
@@ -49,83 +50,149 @@ export default function DashboardPage({ data: { allBlockContent }, ...props }) {
         navigate('/'); // Redirect to the homepage
       }
     }
-
   }, []);
-  console.log("products:", products)
+  console.log('products:', products);
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-//   const { data: userData } = userResult;
+  //   const { data: userData } = userResult;
 
   return (
     <Layout {...props}>
-        <Header search content={content['header']} />
-        <Divider spaceY={5} />
-        <Divider spaceY={5} />
-    
-        <Flex sx={{ height: '70vh' }}>
-        <Box sx={{ pl: `3`, height: '100%', flexBasis: `1/4` }}>
-        <Card
-          sx={{
-          width: '200px',
-          height: '100%',
-          p: 3,
-          
-          }}
-        >
-          <Heading as="h2">Dashboard</Heading>
-          <Divider spaceY="5" />
-          <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/user">Profile</Link>
-          </Text>
-          <Box sx={{ mt: 3 }} />
-          <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/orders">Orders</Link>
-          </Text>
-          <Box sx={{ mt: 3 }} />
-          <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/subscription">Subscriptions</Link>
-          </Text>
-          <Box sx={{ mt: 3 }} />
-          <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/address">Address</Link>
-          </Text>
-          <Box sx={{ mt: 3 }} />
-          <Text>
-          <Link style={{ color: '#718096' }} activeStyle={{ background: '#e60037', padding: '5px', color: 'white', borderRadius: '3px' }} to="/downloads">Download</Link>
-          </Text>
-          <Box sx={{ mt: 3 }} />
-          <Box style={{ cursor: 'pointer' }} onClick={handleLogout}>Logout</Box>
-        </Card>
-            
-        </Box>
-        <Main sx={{ height: '100%' }}>
-        <Flex sx={{ height: '100%' }}>
-          
-            
+      <Header search content={content['header']} />
+      <Divider spaceY={5} />
+      <Divider spaceY={5} />
 
-          {/* Main Content */}
-          <Card sx={{ flex: 1, p: 2, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-          <Box sx={{ flex: 1, p: 3 }}>
-                
-                {parsedData ? (
-                <Box>
-                    {auth && <Text as="medium"> Hello <strong>{parsedData.user.name}</strong> (not <strong>{parsedData.user.name}</strong>? Log out) From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details</Text>}
-                </Box>
-                ) : (
-                <Text>Loading user data...</Text>
-                )}
-                {/* Add dashboard content here */}
+      <Flex sx={{ height: '70vh' }}>
+        <Box sx={{ pl: `3`, height: '100%', flexBasis: `1/4` }}>
+          <Card
+            sx={{
+              width: '200px',
+              height: '100%',
+              p: 3,
+            }}
+          >
+            <Heading as="h2">Dashboard</Heading>
+            <Divider spaceY="5" />
+            <Text>
+              <Link
+                style={{ color: '#718096' }}
+                activeStyle={{
+                  background: '#e60037',
+                  padding: '5px',
+                  color: 'white',
+                  borderRadius: '3px',
+                }}
+                to="/user"
+              >
+                Profile
+              </Link>
+            </Text>
+            <Box sx={{ mt: 3 }} />
+            <Text>
+              <Link
+                style={{ color: '#718096' }}
+                activeStyle={{
+                  background: '#e60037',
+                  padding: '5px',
+                  color: 'white',
+                  borderRadius: '3px',
+                }}
+                to="/orders"
+              >
+                Orders
+              </Link>
+            </Text>
+            <Box sx={{ mt: 3 }} />
+            <Text>
+              <Link
+                style={{ color: '#718096' }}
+                activeStyle={{
+                  background: '#e60037',
+                  padding: '5px',
+                  color: 'white',
+                  borderRadius: '3px',
+                }}
+                to="/subscription"
+              >
+                Subscriptions
+              </Link>
+            </Text>
+            <Box sx={{ mt: 3 }} />
+            <Text>
+              <Link
+                style={{ color: '#718096' }}
+                activeStyle={{
+                  background: '#e60037',
+                  padding: '5px',
+                  color: 'white',
+                  borderRadius: '3px',
+                }}
+                to="/address"
+              >
+                Address
+              </Link>
+            </Text>
+            <Box sx={{ mt: 3 }} />
+            <Text>
+              <Link
+                style={{ color: '#718096' }}
+                activeStyle={{
+                  background: '#e60037',
+                  padding: '5px',
+                  color: 'white',
+                  borderRadius: '3px',
+                }}
+                to="/downloads"
+              >
+                Download
+              </Link>
+            </Text>
+            <Box sx={{ mt: 3 }} />
+            <Box style={{ cursor: 'pointer' }} onClick={handleLogout}>
+              Logout
             </Box>
           </Card>
+        </Box>
+        <Main sx={{ height: '100%' }}>
+          <Flex sx={{ height: '100%' }}>
+            {/* Main Content */}
+            <Card
+              sx={{
+                flex: 1,
+                p: 2,
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'center',
+              }}
+            >
+              <Box sx={{ flex: 1, p: 3 }}>
+                {parsedData ? (
+                  <Box>
+                    {auth && (
+                      <Text as="medium">
+                        {' '}
+                        Hello <strong>{parsedData.user.name}</strong> (not{' '}
+                        <strong>{parsedData.user.name}</strong>? Log out) From
+                        your account dashboard you can view your recent orders,
+                        manage your shipping and billing addresses, and edit
+                        your password and account details
+                      </Text>
+                    )}
+                  </Box>
+                ) : (
+                  <Text>Loading user data...</Text>
+                )}
+                {/* Add dashboard content here */}
+              </Box>
+            </Card>
           </Flex>
         </Main>
-        
-        </Flex>
-        <Divider />
-        <Footer content={content['footer']} />
-        </Layout>
-        
+      </Flex>
+      <Divider />
+      <Footer content={content['footer']} />
+    </Layout>
   );
-};
-
-
-           
+}

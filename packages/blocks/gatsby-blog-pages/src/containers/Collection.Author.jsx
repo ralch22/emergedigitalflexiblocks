@@ -1,11 +1,11 @@
-import React from 'react'
-import { Layout, Stack, Main, PreFooter } from '@solid-ui-layout'
-import PageTitle from '@solid-ui-components/PageTitle'
-import Pagination from '@solid-ui-components/Pagination'
-import CardList from '@solid-ui-components/CardList'
-import Divider from '@solid-ui-components/Divider'
-import Seo from '@solid-ui-blocks/Seo'
-import AuthorExpanded from '@solid-ui-blocks/AuthorExpanded'
+import React from 'react';
+import { Layout, Stack, Main, PreFooter } from '@solid-ui-layout';
+import PageTitle from '@solid-ui-components/PageTitle';
+import Pagination from '@solid-ui-components/Pagination';
+import CardList from '@solid-ui-components/CardList';
+import Divider from '@solid-ui-components/Divider';
+import Seo from '@solid-ui-blocks/Seo';
+import AuthorExpanded from '@solid-ui-blocks/AuthorExpanded';
 
 const PageCollectionAuthors = ({
   data: { posts, collectionInfo },
@@ -15,7 +15,7 @@ const PageCollectionAuthors = ({
     <Seo title={collectionInfo.name} description={collectionInfo.description} />
     <Divider />
     <Stack effectProps={{ effect: 'fadeInDown' }}>
-      <PageTitle header='Published by Author' totalCount={posts.totalCount} />
+      <PageTitle header="Published by Author" totalCount={posts.totalCount} />
     </Stack>
     <Divider />
     <Stack>
@@ -36,6 +36,6 @@ const PageCollectionAuthors = ({
       <Pagination {...posts.pageInfo} {...collectionInfo} />
     </PreFooter>
   </Layout>
-)
+);
 
-export default PageCollectionAuthors
+export default PageCollectionAuthors;

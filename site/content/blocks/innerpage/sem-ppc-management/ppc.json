@@ -1,93 +1,91 @@
 {
-    "text": [
-     
-      {
-        "text": "Our PPC Services",
-        "variant": "h2"
+  "text": [
+    {
+      "text": "Our PPC Services",
+      "variant": "h2"
+    },
+    {
+      "text": "Boost your paid search performance with custom campaigns leveraging the right platforms.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "Boost your paid search performance with custom campaigns leveraging the right platforms.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Google Ads",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-          {
-            "text": "Google Ads",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Make your competitors look like amateurs. Bring in the sales. Unqualified leads, high CPCs, and poor performing ads are gone.",
-            "variant": "medium",
-             "color": ""
-          }
-        ]
+        {
+          "text": "Make your competitors look like amateurs. Bring in the sales. Unqualified leads, high CPCs, and poor performing ads are gone.",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/cart-shopping.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/cart-shopping.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-            {
-                "text": "Google Shopping",
-                "variant": "h4",
-                 "color": ""
-              },
-              {
-                "text": "Your sales goals can be crushed in record time with a bulletproof Google Shopping campaign.",
-                "variant": "medium",
-                 "color": ""
-              }
-        ]
-      },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/magnifying-glass-dollar-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Google Shopping",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-            {
-              "text": "Bing Ads",
-              "variant": "h4",
-               "color": ""
-            },
-            {
-              "text": "Boost conversion rates with a Bing ads campaign that hunts down leads your competitors have overlooked.",
-              "variant": "medium",
-               "color": ""
-            }
-          ]
+        {
+          "text": "Your sales goals can be crushed in record time with a bulletproof Google Shopping campaign.",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-dollar-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/globe-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
+      "text": [
+        {
+          "text": "Bing Ads",
+          "variant": "h4",
+          "color": ""
         },
-        "text": [
-            {
-              "text": "Remarketing",
-              "variant": "h4",
-               "color": ""
-            },
-            {
-              "text": "You can crush your competition with remarketing to stay top-of-mind and convert site visitors into customers.",
-              "variant": "medium",
-               "color": ""
-            }
-          ]
-      }
-    ]
-  }
-  
+        {
+          "text": "Boost conversion rates with a Bing ads campaign that hunts down leads your competitors have overlooked.",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/globe-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
+      },
+      "text": [
+        {
+          "text": "Remarketing",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "You can crush your competition with remarketing to stay top-of-mind and convert site visitors into customers.",
+          "variant": "medium",
+          "color": ""
+        }
+      ]
+    }
+  ]
+}

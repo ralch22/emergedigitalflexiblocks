@@ -12,7 +12,7 @@ const loadSubscriptionFromLocalStorage = () => {
   }
 };
 
-const saveSubscriptionToLocalStorage = (subscription) => {
+const saveSubscriptionToLocalStorage = subscription => {
   try {
     localStorage.setItem('subscription', JSON.stringify(subscription));
   } catch (error) {
@@ -25,7 +25,7 @@ const subscriptionSlice = createSlice({
   initialState: loadSubscriptionFromLocalStorage(),
   reducers: {
     addToSubscription: (state, action) => {
-      const existingItem = state.find((item) => item.id === action.payload.id);
+      const existingItem = state.find(item => item.id === action.payload.id);
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
@@ -34,13 +34,14 @@ const subscriptionSlice = createSlice({
       saveSubscriptionToLocalStorage(state);
     },
     clearSubscription: () => {
-      localStorage.removeItem("subscription")
+      localStorage.removeItem('subscription');
       return [];
       // saveCartToLocalStorage([]);
     },
   },
 });
 
-export const { addToSubscription, clearSubscription } = subscriptionSlice.actions;
+export const { addToSubscription, clearSubscription } =
+  subscriptionSlice.actions;
 
 export default subscriptionSlice.reducer;

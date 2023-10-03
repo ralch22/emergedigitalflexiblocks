@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link as GLink } from 'gatsby'
-import { Link, Text, Flex, Box, Badge } from 'theme-ui'
-import TextList from '@solid-ui-components/TextList'
-import PageTitle from '@solid-ui-components/PageTitle'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
-import { format } from 'date-fns'
+import React from 'react';
+import { Link as GLink } from 'gatsby';
+import { Link, Text, Flex, Box, Badge } from 'theme-ui';
+import TextList from '@solid-ui-components/TextList';
+import PageTitle from '@solid-ui-components/PageTitle';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
+import { format } from 'date-fns';
 
 const styles = {
   item: {
-    display: `inline-block`
-  }
-}
+    display: `inline-block`,
+  },
+};
 
 export const PostHead = ({ title, date }) => {
   const info = (
@@ -24,7 +24,7 @@ export const PostHead = ({ title, date }) => {
         </Text>
       )} */}
     </TextList>
-  )
+  );
 
-  return <PageTitle header={title.rendered} running={info} />
-}
+  return <PageTitle header={title.rendered} running={info} />;
+};

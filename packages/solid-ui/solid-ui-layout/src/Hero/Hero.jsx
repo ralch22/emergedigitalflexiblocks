@@ -1,11 +1,11 @@
-import React from 'react'
-import { Container, Box } from 'theme-ui'
+import React from 'react';
+import { Container, Box } from 'theme-ui';
 
 const styles = {
   wrapper: {
-    position: `relative`
-  }
-}
+    position: `relative`,
+  },
+};
 
 export const Hero = ({ children, sx, wide, full, ...props }) => (
   <Box sx={{ ...styles.wrapper, ...sx }} {...props}>
@@ -13,4 +13,4 @@ export const Hero = ({ children, sx, wide, full, ...props }) => (
       {children}
     </Container>
   </Box>
-)
+);

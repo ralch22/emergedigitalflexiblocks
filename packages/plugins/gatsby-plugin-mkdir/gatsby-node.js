@@ -1,1 +1,1 @@
-exports.onPreBootstrap = require('./src/onPreBootstrap')
+exports.onPreBootstrap = require('./src/onPreBootstrap');

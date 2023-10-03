@@ -5,8 +5,8 @@ export default {
     borderRadius: `none`,
     ':hover': {
       transform: `none`,
-      boxShadow: `none`
-    }
+      boxShadow: `none`,
+    },
   },
   content: {
     flexDirection: [`column`, null, `row`],
@@ -22,29 +22,29 @@ export default {
         0deg,
       	#2d3748 0%,
       	transparent 100%
-      )`
-    }
+      )`,
+    },
   },
   media: {
     flexBasis: `full`,
-    m: 0
+    m: 0,
   },
   image: {
     minHeight: `auto`,
     maxHeight: `none`,
-    width: `full`
+    width: `full`,
   },
   iconBox: {
     borderRadius: 0,
-    minHeight: `20rem`
+    minHeight: `20rem`,
   },
   iconText: {
-    display: `none`
+    display: `none`,
   },
   icon: {
     size: `5/6`,
     ml: `40%`,
-    opacity: 0.5
+    opacity: 0.5,
   },
   body: {
     height: `auto`,
@@ -57,10 +57,10 @@ export default {
     zIndex: 3,
     px: 4,
     py: [4, null, 0],
-    mb: [0, null, 4, 5]
+    mb: [0, null, 4, 5],
   },
   category: {
-    display: `block`
+    display: `block`,
   },
   title: {
     fontFamily: `heading`,
@@ -69,10 +69,10 @@ export default {
     color: [`heading`, null, `white`],
     textAlign: `left`,
     pr: [0, null, 4, 5],
-    m: 0
+    m: 0,
   },
   excerpt: {
-    display: `none`
+    display: `none`,
   },
   footer: {
     variant: `text.h4`,
@@ -83,22 +83,22 @@ export default {
     m: 0,
     mt: 3,
     px: 3,
-    py: 2
+    py: 2,
   },
   authorPhoto: {
-    display: [`block`, null, `none`]
+    display: [`block`, null, `none`],
   },
   author: {
     display: [`inline-block`, null, `none`],
     flexBasis: [`auto`, `full`],
     'a, a:visited': {
-      color: [`alpha`, null, `omegaLighter`]
-    }
+      color: [`alpha`, null, `omegaLighter`],
+    },
   },
   date: {
-    display: `inline-block`
+    display: `inline-block`,
   },
   timeToRead: {
-    display: `inline-block`
-  }
-}
+    display: `inline-block`,
+  },
+};

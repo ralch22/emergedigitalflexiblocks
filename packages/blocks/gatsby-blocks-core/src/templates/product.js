@@ -1,7 +1,7 @@
-import Product from '../containers/Product'
-import { graphql } from 'gatsby'
+import Product from '../containers/Product';
+import { graphql } from 'gatsby';
 
-export default Product
+export default Product;
 
 export const pageQuery = graphql`
   query CasePageQuery {
@@ -11,4 +11,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

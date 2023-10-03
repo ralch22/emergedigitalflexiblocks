@@ -1,1 +1,1 @@
-export { default } from './FlexImage'
+export { default } from './FlexImage';

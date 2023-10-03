@@ -14,213 +14,212 @@
       "text": [
         {
           "text": "Strategy",
-           "color": "",
+          "color": "",
           "variant": "h3"
         }
       ],
       "collection": [
-       {
-        "text": [
-          {
-            "text": "Strategy",
-            "color": "transparent",
-            "variant": "small",
-            "display": "none"
-          }
-        ],
-        "collection": [
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+        {
+          "text": [
+            {
+              "text": "Strategy",
+              "color": "transparent",
+              "variant": "small",
+              "display": "none"
+            }
+          ],
+          "collection": [
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Audience Identification & Matching Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Audience Identification & Matching Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Audience Segmentation Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Audience Segmentation Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Branding Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Branding Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Business Development Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Business Development Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Creative Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Creative Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "CRM Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "CRM Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Customer Experience Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Customer Experience Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Customer Journey Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Customer Journey Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Digital Media Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Digital Media Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "Content Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "Content Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "DXP Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "DXP Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "eCommerce Marketing Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
             },
-            "text": [
-              {
-                "text": "eCommerce Marketing Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          },
-          {
-            "icon": {
-              "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-              "bg": "omegaLighter",
-              "color": "omegaDark"
-            },
-            "text": [
-              {
-                "text": "First-Party Data Strategy",
-                "color": "omegaDark",
-                "variant": "h6"
-              }
-            ]
-          }
-        ]
-       }
-      
+            {
+              "icon": {
+                "src": "../../../assets/flexiblocks/icons/bx-check.svg",
+                "bg": "omegaLighter",
+                "color": "omegaDark"
+              },
+              "text": [
+                {
+                  "text": "First-Party Data Strategy",
+                  "color": "omegaDark",
+                  "variant": "h6"
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
       "text": [
         {
           "text": "Create",
-           "color": "",
+          "color": "",
           "variant": "h3"
         }
       ],
@@ -684,7 +683,7 @@
       "text": [
         {
           "text": "Connect",
-           "color": "",
+          "color": "",
           "variant": "h3"
         }
       ],
@@ -1134,7 +1133,7 @@
       "text": [
         {
           "text": "Convert",
-           "color": "",
+          "color": "",
           "variant": "h3"
         }
       ],

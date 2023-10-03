@@ -1,15 +1,15 @@
-import React from 'react'
-import { Container, Flex, Box, Heading, css } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, Heading, css } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   listItem: {
     alignItems: `stretch`,
-    justifyContent: `flex-start`
+    justifyContent: `flex-start`,
   },
   line: {
     position: `absolute`,
@@ -19,7 +19,7 @@ const styles = {
     height: t => `calc(100% - ${t.sizes.icon.md + 20}px)`,
     transform: `translateX(-50%)`,
     zIndex: 1,
-    bg: `omega`
+    bg: `omega`,
   },
   number: {
     color: `white`,
@@ -29,9 +29,9 @@ const styles = {
     size: `icon.md`,
     textAlign: `center`,
     p: 2,
-    mb: 0
-  }
-}
+    mb: 0,
+  },
+};
 
 const FeaturesBlock03 = ({ content: { text, buttons, collection } }) => (
   <Container>
@@ -41,10 +41,10 @@ const FeaturesBlock03 = ({ content: { text, buttons, collection } }) => (
           flexBasis: [`1`, `1/2`],
           alignSelf: `center`,
           mx: 4,
-          mb: [5, null, 0]
+          mb: [5, null, 0],
         }}
       >
-        <Reveal effect='fadeInDown'>
+        <Reveal effect="fadeInDown">
           <Box sx={{ textAlign: `left` }}>
             <ContentText content={text} />
           </Box>
@@ -61,20 +61,20 @@ const FeaturesBlock03 = ({ content: { text, buttons, collection } }) => (
           sx={{
             flexBasis: [`1`, `1/2`],
             alignSelf: `start`,
-            mx: 4
+            mx: 4,
           }}
         >
           <Flex sx={{ flexWrap: `wrap` }}>
             {collection.map(({ text }, index) => (
               <Reveal
                 key={`item-${index}`}
-                effect='fadeInDown'
+                effect="fadeInDown"
                 delay={0.2 * (index + 1)}
                 css={css({ flexBasis: [`1`, null, null, `1`] })}
               >
                 <Flex sx={styles.listItem}>
                   <Box sx={{ position: `relative`, flexShrink: 0, mr: 4 }}>
-                    <Heading variant='h4' as='div' sx={styles.number}>
+                    <Heading variant="h4" as="div" sx={styles.number}>
                       {index + 1}
                     </Heading>
                     {index + 1 < collection.length && <Box sx={styles.line} />}
@@ -91,6 +91,6 @@ const FeaturesBlock03 = ({ content: { text, buttons, collection } }) => (
       )}
     </Flex>
   </Container>
-)
+);
 
-export default WithDefaultContent(FeaturesBlock03)
+export default WithDefaultContent(FeaturesBlock03);

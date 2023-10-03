@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import ReactModal from 'react-modal'
-import { IconButton, css } from 'theme-ui'
-import { FaTimes } from 'react-icons/fa'
-import { ModalContext } from '@solid-ui-components/Modal'
-import './styles.css'
+import React, { useContext } from 'react';
+import ReactModal from 'react-modal';
+import { IconButton, css } from 'theme-ui';
+import { FaTimes } from 'react-icons/fa';
+import { ModalContext } from '@solid-ui-components/Modal';
+import './styles.css';
 
 const styles = {
   modalContent: {
@@ -12,7 +12,7 @@ const styles = {
     maxWidth: `container`,
     overflow: `hidden`,
     py: 5,
-    px: 4
+    px: 4,
   },
   close: {
     position: `absolute`,
@@ -21,18 +21,18 @@ const styles = {
     size: [`icon.sm`, null, `icon.md`],
     zIndex: 99,
     svg: {
-      size: [`icon.sm`, null, `icon.md`]
+      size: [`icon.sm`, null, `icon.md`],
     },
     ':hover': {
-      color: `omegaLighter`
-    }
-  }
-}
+      color: `omegaLighter`,
+    },
+  },
+};
 
-ReactModal.setAppElement('#___gatsby')
+ReactModal.setAppElement('#___gatsby');
 
 const Modal = ({ children, id, contentStyles, ...props }) => {
-  const { activeModal, setActiveModal } = useContext(ModalContext)
+  const { activeModal, setActiveModal } = useContext(ModalContext);
 
   return (
     <>
@@ -41,8 +41,8 @@ const Modal = ({ children, id, contentStyles, ...props }) => {
         isOpen={activeModal === id}
         closeTimeoutMS={300}
         onRequestClose={() => setActiveModal(null)}
-        className='ModalPortalContent'
-        overlayClassName='ModalPortalOverlay'
+        className="ModalPortalContent"
+        overlayClassName="ModalPortalOverlay"
         shouldFocusAfterRender={false}
         css={css({ ...styles.modalContent, ...contentStyles })}
         {...props}
@@ -50,7 +50,7 @@ const Modal = ({ children, id, contentStyles, ...props }) => {
         <IconButton
           onClick={() => setActiveModal(null)}
           sx={styles.close}
-          aria-label='Close Modal'
+          aria-label="Close Modal"
           // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus
         >
@@ -59,7 +59,7 @@ const Modal = ({ children, id, contentStyles, ...props }) => {
         {children}
       </ReactModal>
     </>
-  )
-}
+  );
+};
 
-export default Modal
+export default Modal;

@@ -4,7 +4,7 @@ import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { gql } from '@apollo/client'; // Import gql to define GraphQL queries/mutations
 import { afterwareLink, middlewareLink } from './links';
-import { handleLogout } from '../utils/functions'
+import { handleLogout } from '../utils/functions';
 
 // Function to create and configure the Apollo Client
 export function createApolloClient() {
@@ -50,7 +50,10 @@ export function createApolloClient() {
   });
 
   const client = new ApolloClient({
-    link: authLink.concat(middlewareLink).concat(afterwareLink).concat(httpLink),
+    link: authLink
+      .concat(middlewareLink)
+      .concat(afterwareLink)
+      .concat(httpLink),
     cache: new InMemoryCache(),
     connectToDevTools: true,
   });
@@ -80,7 +83,11 @@ async function refreshAuthToken(refreshToken) {
       },
     });
 
-    if (response.data && response.data.refreshJwtAuthToken && response.data.refreshJwtAuthToken.authToken) {
+    if (
+      response.data &&
+      response.data.refreshJwtAuthToken &&
+      response.data.refreshJwtAuthToken.authToken
+    ) {
       return response.data.refreshJwtAuthToken.authToken;
     }
   } catch (error) {

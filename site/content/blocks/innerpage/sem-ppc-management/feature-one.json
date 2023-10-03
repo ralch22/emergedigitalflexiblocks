@@ -1,53 +1,51 @@
 {
-    "text": [
-      {
-        "text": "Search Engine Marketing (SEM) & Google Ads Agency",
-        "color": "alpha",
-        "variant": "h4"
-      },
-      {
-        "text": "SEM Agency",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-          "text": "For maximum search return on investment, our award-winning team of search engine marketing experts uses the latest best practices and platform capabilities.",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "The demand for SEM comes from consumers – A SEM Agency in Dubai Can Help You To Get More Customers",
-            "variant": "medium",
-            "color": "alphaDark",
-            "fontWeight": "bold"
-          },
-          {
-            "text": "With our fully certified search marketing specialists, you can be confident that your campaigns will engage users and reach your targets every time.",
-            "variant": "medium",
-            "color": "alphaDark",
-            "fontWeight": "bold"
-          }
-          ,
-          {
-            "text": "In addition to our inherent test-and-learn approach, our teams use advanced machine learning capabilities and SEM product features to drive maximum results for your SEM campaigns.",
-            "variant": "medium",
-            "color": "alphaDark",
-            "fontWeight": "bold"
-          }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/search-engine-marketing.png",
-        "alt": "alt text"
-      }
-    ],
-    "buttons": [
-      {
-        "text": "CONTACT US",
-        "type": "MODAL",
-        "link": "contact",
-        "variant": "secondary"
-      }
-    ]
-  }
-  
+  "text": [
+    {
+      "text": "Search Engine Marketing (SEM) & Google Ads Agency",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "SEM Agency",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "For maximum search return on investment, our award-winning team of search engine marketing experts uses the latest best practices and platform capabilities.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "The demand for SEM comes from consumers – A SEM Agency in Dubai Can Help You To Get More Customers",
+      "variant": "medium",
+      "color": "alphaDark",
+      "fontWeight": "bold"
+    },
+    {
+      "text": "With our fully certified search marketing specialists, you can be confident that your campaigns will engage users and reach your targets every time.",
+      "variant": "medium",
+      "color": "alphaDark",
+      "fontWeight": "bold"
+    },
+    {
+      "text": "In addition to our inherent test-and-learn approach, our teams use advanced machine learning capabilities and SEM product features to drive maximum results for your SEM campaigns.",
+      "variant": "medium",
+      "color": "alphaDark",
+      "fontWeight": "bold"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/search-engine-marketing.png",
+      "alt": "alt text"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "CONTACT US",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}

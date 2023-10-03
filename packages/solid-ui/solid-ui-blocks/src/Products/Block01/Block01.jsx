@@ -1,15 +1,15 @@
-import React from 'react'
-import { Container, Flex, Box, Badge, Link } from 'theme-ui'
-import ContentContainer from '@solid-ui-components/ContentContainer'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import CardList from '@solid-ui-components/ProductList'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, Badge, Link } from 'theme-ui';
+import ContentContainer from '@solid-ui-components/ContentContainer';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import CardList from '@solid-ui-components/ProductList';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
-import { FaRegClock } from 'react-icons/fa'
+import { FaRegClock } from 'react-icons/fa';
 
 const styles = {
   wrapper: {
@@ -17,39 +17,39 @@ const styles = {
     minWidth: 300,
     maxWidth: [`none`, null, null, 500],
     cursor: `pointer`,
-    p: 3
+    p: 3,
   },
   card: {
     overflow: `hidden`,
-    height: `full`
+    height: `full`,
   },
   content: {
     alignItems: `stretch`,
     flexDirection: [`row`, null, null, `column`],
-    height: `full`
+    height: `full`,
   },
   body: {
     display: `flex`,
     flexDirection: `column`,
     justifyContent: `center`,
     flex: 1,
-    p: 4
+    p: 4,
   },
   footerWrapper: {
-    alignItems: `center`
+    alignItems: `center`,
   },
   postInfo: {
     flex: 1,
     flexWrap: `wrap`,
     justifyContent: `space-between`,
     color: `omega`,
-    ml: 3
+    ml: 3,
   },
   imageWrapper: {
     textAlign: `center`,
     position: `relative`,
     display: `block`,
-    height: `full`
+    height: `full`,
   },
   image: {
     display: [`none`, `block`],
@@ -58,8 +58,8 @@ const styles = {
     borderRadius: `default`,
     minHeight: `15rem`,
     div: {
-      p: `0 !important`
-    }
+      p: `0 !important`,
+    },
   },
   avatar: {
     size: 42,
@@ -70,36 +70,34 @@ const styles = {
     borderColor: `omegaLighter`,
     boxSizing: `content-box`,
     img: {
-      objectPosition: 'top center !important'
-    }
-  }
-}
+      objectPosition: 'top center !important',
+    },
+  },
+};
 
-const BlogBlock01 = ({ products, subscription, content: { text, collection, buttons } }) => {
-  console.log("products", products)
+const BlogBlock01 = ({
+  products,
+  subscription,
+  content: { text, collection, buttons },
+}) => {
+  console.log('products', products);
   return (
     <Container>
       <Box sx={{ textAlign: `center` }}>
         <ContentText content={text} />
       </Box>
       <Divider />
-      <Reveal effect='fadeIn'>
-          <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
-            <CardList
-              nodes={products}
-              limit={3}
-              subscription={subscription}
-              columns={[1, 1, 1, 3]}
-              variant={[
-                'horizontal-md',
-                'horizontal',
-                'horizontal',
-                'vertical'
-              ]}
-            />
-                    
-          </Flex>
-        </Reveal>
+      <Reveal effect="fadeIn">
+        <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
+          <CardList
+            nodes={products}
+            limit={3}
+            subscription={subscription}
+            columns={[1, 1, 1, 3]}
+            variant={['horizontal-md', 'horizontal', 'horizontal', 'vertical']}
+          />
+        </Flex>
+      </Reveal>
       {buttons && (
         <>
           <Divider space={3} />
@@ -107,7 +105,6 @@ const BlogBlock01 = ({ products, subscription, content: { text, collection, butt
         </>
       )}
     </Container>
-  )
-  
-}
-export default WithDefaultContent(BlogBlock01)
+  );
+};
+export default WithDefaultContent(BlogBlock01);

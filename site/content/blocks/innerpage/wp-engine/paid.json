@@ -21,7 +21,7 @@
         "src": "../../../assets/flexiblocks/homepage/marketing/users.svg",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Collaborate Effectively",
@@ -39,7 +39,7 @@
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Take Control of Spend",
@@ -57,7 +57,7 @@
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
         "bg": "omegaLighter",
         "color": "omegaDark"
-      },  
+      },
       "text": [
         {
           "text": "Leverage Automation",
@@ -67,7 +67,6 @@
         {
           "text": "Deliver faster, smarter marketing powered by Google's latest machine learning, with capabilities like automated bidding and inventory recommendations",
           "variant": "h4"
-          
         }
       ]
     }

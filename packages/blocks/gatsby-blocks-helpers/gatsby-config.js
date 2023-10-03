@@ -4,10 +4,10 @@ module.exports = {
       resolve: '@elegantstack/gatsby-plugin-alias-imports',
       options: {
         alias: {
-          '@blocks-helpers': '@elegantstack/gatsby-blocks-helpers/src'
+          '@blocks-helpers': '@elegantstack/gatsby-blocks-helpers/src',
         },
-        extensions: ['js', 'jsx']
-      }
-    }
-  ]
-}
+        extensions: ['js', 'jsx'],
+      },
+    },
+  ],
+};

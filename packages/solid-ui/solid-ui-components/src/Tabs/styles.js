@@ -5,7 +5,7 @@ export default {
       display: `flex`,
       justifyContent: `center`,
       m: 0,
-      p: 0
+      p: 0,
     },
     '.tabs_tab': {
       variant: `text.h5`,
@@ -22,16 +22,16 @@ export default {
       m: 0,
       ':not(.tabs_selectedTab):hover': {
         color: `omegaDarker`,
-        borderBottomColor: `omegaDarker`
-      }
+        borderBottomColor: `omegaDarker`,
+      },
     },
     '.tabs_selectedTab': {
       color: `alpha`,
-      borderBottomColor: `alpha`
+      borderBottomColor: `alpha`,
     },
     '.react-tabs__tab-panel:not([class$="--selected"])': {
-      display: `none`
-    }
+      display: `none`,
+    },
   },
   pill: {
     position: `relative`,
@@ -39,7 +39,7 @@ export default {
       display: `flex`,
       justifyContent: `center`,
       m: 0,
-      p: 0
+      p: 0,
     },
     '.tabs_tab': {
       minWidth: [`auto`, 200],
@@ -57,23 +57,23 @@ export default {
       py: 3,
       m: 0,
       ':last-of-type': {
-        borderRadius: t => `0 ${t.radii.xl} ${t.radii.xl} 0`
+        borderRadius: t => `0 ${t.radii.xl} ${t.radii.xl} 0`,
       },
       ':first-of-type': {
-        borderRadius: t => `${t.radii.xl}  0 0 ${t.radii.xl}`
+        borderRadius: t => `${t.radii.xl}  0 0 ${t.radii.xl}`,
       },
       ':not(.tabs_selectedTab):hover': {
         bg: `omegaDark`,
-        color: `white`
-      }
+        color: `white`,
+      },
     },
     '.tabs_tab + .tabs_tab': {
-      ml: `1px`
+      ml: `1px`,
     },
     '.tabs_selectedTab': {
       bg: `alpha`,
-      color: `white`
-    }
+      color: `white`,
+    },
   },
   dots: {
     position: `relative`,
@@ -81,7 +81,7 @@ export default {
       display: `flex`,
       justifyContent: `center`,
       m: 0,
-      p: 0
+      p: 0,
     },
     '.tabs_tab': {
       listStyle: `none`,
@@ -92,12 +92,12 @@ export default {
       cursor: `pointer`,
       mx: 1,
       ':not(.tabs_selectedTab):hover': {
-        bg: `omegaDarker`
-      }
+        bg: `omegaDarker`,
+      },
     },
     '.tabs_selectedTab': {
-      bg: `alpha`
-    }
+      bg: `alpha`,
+    },
   },
   arrowButton: {
     minWidth: `auto`,
@@ -107,19 +107,19 @@ export default {
     position: `absolute`,
     top: `50%`,
     p: 3,
-    mr: 2
+    mr: 2,
   },
   arrowButtonRight: {
     right: 0,
-    transform: `translate(-50%, 50%)`
+    transform: `translate(-50%, 50%)`,
   },
   arrowButtonLeft: {
     left: 0,
-    transform: `translate(50%, 50%)`
+    transform: `translate(50%, 50%)`,
   },
   arrow: {
     size: `10px`,
     borderBottom: `3px solid currentColor`,
-    borderLeft: `3px solid currentColor`
-  }
-}
+    borderLeft: `3px solid currentColor`,
+  },
+};

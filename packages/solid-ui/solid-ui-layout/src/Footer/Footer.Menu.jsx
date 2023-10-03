@@ -1,16 +1,16 @@
-import React from 'react'
-import { Box } from 'theme-ui'
-import Navigation from '@solid-ui-components/Navigation'
-import useSiteMetadata from '@blocks-helpers/useSiteMetadata'
+import React from 'react';
+import { Box } from 'theme-ui';
+import Navigation from '@solid-ui-components/Navigation';
+import useSiteMetadata from '@blocks-helpers/useSiteMetadata';
 
 const styles = {
   navHeader: {
-    display: [`none`, `block`]
-  }
-}
+    display: [`none`, `block`],
+  },
+};
 
 export const FooterMenu = () => {
-  const { footerMenu } = useSiteMetadata()
+  const { footerMenu } = useSiteMetadata();
 
   return (
     <>
@@ -24,5 +24,5 @@ export const FooterMenu = () => {
         </Box>
       ))}
     </>
-  )
-}
+  );
+};

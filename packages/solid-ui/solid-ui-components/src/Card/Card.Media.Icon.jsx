@@ -1,13 +1,13 @@
-import React from 'react'
-import SVG from 'react-inlinesvg'
-import { Flex, Box, Text, css } from 'theme-ui'
-import MemphisPattern from '@solid-ui-components/MemphisPattern'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
-import getReadableColor from '@solid-ui-components/utils/getReadableColor'
+import React from 'react';
+import SVG from 'react-inlinesvg';
+import { Flex, Box, Text, css } from 'theme-ui';
+import MemphisPattern from '@solid-ui-components/MemphisPattern';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
+import getReadableColor from '@solid-ui-components/utils/getReadableColor';
 
 const styles = {
   iconBox: {
-    height: `full`
+    height: `full`,
   },
   iconAndText: {
     flexDirection: `column`,
@@ -21,14 +21,14 @@ const styles = {
     px: 2,
     lineHeight: 1.33,
     svg: {
-      pb: 2
-    }
+      pb: 2,
+    },
   },
   pattern: {
     opacity: 0.07,
-    borderRadius: `default`
-  }
-}
+    borderRadius: `default`,
+  },
+};
 
 const CardMediaIcon = ({ variant, thumbnailText, category }) =>
   category && category.icon && category.name ? (
@@ -37,7 +37,7 @@ const CardMediaIcon = ({ variant, thumbnailText, category }) =>
       color={category.color ? getReadableColor(category.color) : '#fff'}
       sx={{
         ...styles.iconBox,
-        variant: rv(variant, 'iconBox')
+        variant: rv(variant, 'iconBox'),
       }}
     >
       <Flex sx={styles.iconAndText}>
@@ -48,6 +48,6 @@ const CardMediaIcon = ({ variant, thumbnailText, category }) =>
       </Flex>
       <MemphisPattern sx={styles.pattern} />
     </Box>
-  ) : null
+  ) : null;
 
-export default CardMediaIcon
+export default CardMediaIcon;

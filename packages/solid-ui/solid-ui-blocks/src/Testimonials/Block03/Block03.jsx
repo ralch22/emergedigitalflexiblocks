@@ -1,15 +1,15 @@
-import React from 'react'
-import { Container, Flex, Box, css } from 'theme-ui'
-import { ImQuotesRight } from 'react-icons/im'
-import { AiFillStar } from 'react-icons/ai'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import Tabs from '@solid-ui-components/Tabs'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentContainer from '@solid-ui-components/ContentContainer'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, css } from 'theme-ui';
+import { ImQuotesRight } from 'react-icons/im';
+import { AiFillStar } from 'react-icons/ai';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import Tabs from '@solid-ui-components/Tabs';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentContainer from '@solid-ui-components/ContentContainer';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   avatar: {
@@ -19,13 +19,13 @@ const styles = {
     borderTopStyle: `solid`,
     borderRadius: `lg`,
     boxSizing: `content-box`,
-    verticalAlign: `baseline`
-  }
-}
+    verticalAlign: `baseline`,
+  },
+};
 
 const TestimonialsBlock03 = ({
   content: { text, collection, buttons },
-  reverse
+  reverse,
 }) => (
   <Container>
     <Flex
@@ -35,23 +35,23 @@ const TestimonialsBlock03 = ({
           reverse ? `column-reverse` : `column`,
           null,
           null,
-          reverse ? `row-reverse` : `row`
+          reverse ? `row-reverse` : `row`,
         ],
-        mx: [null, null, null, -4]
+        mx: [null, null, null, -4],
       }}
     >
       <Box
         sx={{
           flexBasis: `1/2`,
           mx: [null, null, null, 4],
-          [reverse ? 'mt' : 'mb']: [5, null, null, 0]
+          [reverse ? 'mt' : 'mb']: [5, null, null, 0],
         }}
       >
-        <Tabs variant='dots' position='bottom' space={3} autoplay>
+        <Tabs variant="dots" position="bottom" space={3} autoplay>
           {collection?.map(({ container, text, avatar }, index) => (
             <ContentContainer
               content={container}
-              variant='cards.paper'
+              variant="cards.paper"
               key={`item-${index}`}
               sx={{ position: `relative` }}
             >
@@ -60,23 +60,23 @@ const TestimonialsBlock03 = ({
                   alignItems: `center`,
                   position: `relative`,
                   flexWrap: `wrap`,
-                  zIndex: 1
+                  zIndex: 1,
                 }}
               >
                 <Box sx={{ width: 150 }}>
                   <ContentImages
                     content={{ images: [avatar] }}
                     sx={styles.avatar}
-                    imageEffect='fadeInRotate'
+                    imageEffect="fadeInRotate"
                   />
                 </Box>
                 <Box sx={{ flex: [`100%`, 1], ml: [0, 4] }}>
-                  <Reveal effect='fadeInUp'>
+                  <Reveal effect="fadeInUp">
                     <ContentText content={text} />
                     {Array.from({ length: 5 }, (_, i) => (
                       <Reveal
                         key={`item-${i}`}
-                        effect='fadeInRotate'
+                        effect="fadeInRotate"
                         delay={0.2 * (i + 1)}
                         css={css({ display: `inline-block`, mt: 3 })}
                       >
@@ -95,7 +95,7 @@ const TestimonialsBlock03 = ({
                   position: `absolute`,
                   transform: `translate(0, -20%)`,
                   bottom: 0,
-                  right: 0
+                  right: 0,
                 })}
               />
             </ContentContainer>
@@ -106,7 +106,7 @@ const TestimonialsBlock03 = ({
         sx={{
           flexBasis: `1/2`,
           mx: [null, null, null, 4],
-          textAlign: [`center`, null, null, `left`]
+          textAlign: [`center`, null, null, `left`],
         }}
       >
         <Reveal effect={reverse ? 'fadeInLeft' : 'fadeInRight'}>
@@ -121,6 +121,6 @@ const TestimonialsBlock03 = ({
       </Box>
     </Flex>
   </Container>
-)
+);
 
-export default WithDefaultContent(TestimonialsBlock03)
+export default WithDefaultContent(TestimonialsBlock03);

@@ -1,29 +1,30 @@
-import Address from '@solid-ui-blocks/Address/Block01/Block01'
-import React, { useState } from 'react'
-import { Box, Button, Progress, Text } from 'theme-ui'
-import { normalizeBlockContentNodes } from '@blocks-helpers'
-import OrderConfirmationPage from '@solid-ui-blocks/Order/Block01'
-import { GoSellElements } from '@tap-payments/gosell'
-import { useDispatch, useSelector } from 'react-redux'
-import { addCustomer } from '@elegantstack/gatsby-theme-flexiblocks/src/store/ducks/tapSlice'
+import Address from '@solid-ui-blocks/Address/Block01/Block01';
+import React, { useState } from 'react';
+import { Box, Button, Progress, Text } from 'theme-ui';
+import { normalizeBlockContentNodes } from '@blocks-helpers';
+import OrderConfirmationPage from '@solid-ui-blocks/Order/Block01';
+import { GoSellElements } from '@tap-payments/gosell';
+import { useDispatch, useSelector } from 'react-redux';
+import { addCustomer } from '@elegantstack/gatsby-theme-flexiblocks/src/store/ducks/tapSlice';
 
 const steps = [
   'Shipping Information',
   'order.Billing Information',
   'Payment Information',
-  'Review and Confirm'
-]
+  'Review and Confirm',
+];
 
-const auth = typeof window !== 'undefined' ? localStorage.getItem('auth') : null
-const parsedData = JSON.parse(auth)
+const auth =
+  typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
+const parsedData = JSON.parse(auth);
 
 const CheckoutForm = ({ allBlockContent }) => {
-  const customer = useSelector(state => state.tap.customer)
-  const order = useSelector(state => state.checkout.order)
-  const dispatch = useDispatch()
-  const sub = useSelector(state => state.subscription)
-  console.log('order', order)
-  const [step, setStep] = useState(1)
+  const customer = useSelector(state => state.tap.customer);
+  const order = useSelector(state => state.checkout.order);
+  const dispatch = useDispatch();
+  const sub = useSelector(state => state.subscription);
+  console.log('order', order);
+  const [step, setStep] = useState(1);
 
   function callbackFunc(response) {
     // Payment or subscription was successful
@@ -31,7 +32,7 @@ const CheckoutForm = ({ allBlockContent }) => {
     // dispatch(
     //   createSub({ data: order, id: parsedData ? parsedData.user.id : '' })
     // )
-    console.log(response)
+    console.log(response);
     dispatch(
       addCustomer({
         id: parsedData && parsedData.user.id,
@@ -41,25 +42,25 @@ const CheckoutForm = ({ allBlockContent }) => {
           email: order.billing.email,
           phone: {
             country_code: '+234',
-            number: '08060376068'
-          }
-        }
-      })
-    )
+            number: '08060376068',
+          },
+        },
+      }),
+    );
     // dispatch(clearSubscription())
     // navigate('/success')
   }
 
   const nextStep = () => {
-    setStep(prevStep => prevStep + 1)
-  }
+    setStep(prevStep => prevStep + 1);
+  };
 
   const prevStep = () => {
-    setStep(prevStep => prevStep - 1)
-  }
+    setStep(prevStep => prevStep - 1);
+  };
 
   const renderStepContent = () => {
-    const content = normalizeBlockContentNodes(allBlockContent?.nodes)
+    const content = normalizeBlockContentNodes(allBlockContent?.nodes);
     switch (step) {
       case 1:
         return (
@@ -67,13 +68,13 @@ const CheckoutForm = ({ allBlockContent }) => {
             <Address checkout content={content['address']} />
             {/* Add your order.billing information fields here */}
           </Box>
-        )
+        );
       case 2:
         return (
           <Box>
             <OrderConfirmationPage subscription />
           </Box>
-        )
+        );
       case 3:
         return (
           <Box>
@@ -93,7 +94,7 @@ const CheckoutForm = ({ allBlockContent }) => {
                   expirationDate: 'MM/YY',
                   cvv: 'CVV',
                   cardHolder: 'Name on Card',
-                  actionButton: 'Pay'
+                  actionButton: 'Pay',
                 },
                 style: {
                   base: {
@@ -104,32 +105,32 @@ const CheckoutForm = ({ allBlockContent }) => {
                     fontSize: '16px',
                     '::placeholder': {
                       color: 'rgba(0, 0, 0, 0.26)',
-                      fontSize: '15px'
-                    }
+                      fontSize: '15px',
+                    },
                   },
                   invalid: {
                     color: 'red',
-                    iconColor: '#fa755a '
-                  }
-                }
+                    iconColor: '#fa755a ',
+                  },
+                },
               }}
               transaction={{
-                mode: `token`
+                mode: `token`,
               }}
               charge={{
                 threeDSecure: false,
                 redirect: '/',
                 post: '/',
-                hashstring: ''
+                hashstring: '',
               }}
             />
-            <p id='msg'></p>
+            <p id="msg"></p>
           </Box>
-        )
+        );
       default:
-        return null
+        return null;
     }
-  }
+  };
 
   return (
     <Box sx={{ maxWidth: '600px', mx: 'auto' }}>
@@ -138,8 +139,8 @@ const CheckoutForm = ({ allBlockContent }) => {
       <Progress
         value={(step - 1) / (steps.length - 1)}
         max={1}
-        variant='primary'
-        color='#000'
+        variant="primary"
+        color="#000"
         mb={4}
       />
 
@@ -147,18 +148,18 @@ const CheckoutForm = ({ allBlockContent }) => {
 
       <Box sx={{ textAlign: 'center', mt: 4 }}>
         {step !== 1 && (
-          <Button onClick={prevStep} variant='primary'>
+          <Button onClick={prevStep} variant="primary">
             Back
           </Button>
         )}
 
         {step !== 3 ? (
-          <Button onClick={nextStep} variant='secondary' ml={2}>
+          <Button onClick={nextStep} variant="secondary" ml={2}>
             Continue
           </Button>
         ) : (
           <Button
-            variant='secondary'
+            variant="secondary"
             onClick={() => GoSellElements.submit()}
             ml={2}
           >
@@ -167,7 +168,7 @@ const CheckoutForm = ({ allBlockContent }) => {
         )}
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default CheckoutForm
+export default CheckoutForm;

@@ -1,1 +1,1 @@
-export { default } from './HeroWide'
+export { default } from './HeroWide';

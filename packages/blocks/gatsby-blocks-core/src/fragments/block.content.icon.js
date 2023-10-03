@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const query = graphql`
   fragment BlockContentIcon on BlockContentIcon {
@@ -7,4 +7,4 @@ export const query = graphql`
     bg
     size
   }
-`
+`;

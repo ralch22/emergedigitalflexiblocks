@@ -1,5 +1,5 @@
-import { toTheme } from '@theme-ui/typography'
-import fonts from './typography-fonts.json'
+import { toTheme } from '@theme-ui/typography';
+import fonts from './typography-fonts.json';
 
 const typography = {
   baseFontSize: 16,
@@ -7,26 +7,26 @@ const typography = {
   headerLineHeight: 1.55,
   scaleRatio: 1.9,
   blockMarginBottom: 0.62,
-  ...fonts.theme
-}
+  ...fonts.theme,
+};
 
-let typographyTheme = toTheme(typography)
+let typographyTheme = toTheme(typography);
 
 //We use our own config for this property
-typographyTheme.space = null
+typographyTheme.space = null;
 
 typographyTheme.fonts = {
   ...typographyTheme.fonts,
-  monospace: `Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`
-}
+  monospace: `Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`,
+};
 
 typographyTheme.fontWeights = {
   body: `normal`,
   heading: `bold`,
   bold: 700,
   medium: 600,
-  bolder: 900
-}
+  bolder: 900,
+};
 
 typographyTheme.fontSizes = [
   '0.75rem',
@@ -38,7 +38,7 @@ typographyTheme.fontSizes = [
   '2.25rem',
   '3rem',
   '4rem',
-  '4.5rem'
-]
+  '4.5rem',
+];
 
-export default typographyTheme
+export default typographyTheme;

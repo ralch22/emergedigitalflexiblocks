@@ -1,11 +1,14 @@
 .drawer {
   position: absolute;
   top: 0;
-  transition: width 0s ease 0.3s, height 0s ease 0.3s,
+  transition:
+    width 0s ease 0.3s,
+    height 0s ease 0.3s,
     transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
 }
 .drawer > * {
-  transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+  transition:
+    transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
     opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
     box-shadow 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
 }
@@ -22,7 +25,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+  transition:
+    opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
     height 0s ease 0.3s;
 }
 .drawer-content-wrapper {

@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const query = graphql`
   fragment BlockContentText on BlockContentText {
@@ -8,4 +8,4 @@ export const query = graphql`
     space
     variant
   }
-`
+`;

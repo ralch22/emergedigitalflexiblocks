@@ -1,31 +1,31 @@
-import React, { useContext } from 'react'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { css } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import { ModalContext } from '@solid-ui-components/Modal'
-import { TabsContext } from '@solid-ui-components/Tabs'
-import { buildLinkProps } from '@solid-ui-components/ContentButtons'
+import React, { useContext } from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { css } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import { ModalContext } from '@solid-ui-components/Modal';
+import { TabsContext } from '@solid-ui-components/Tabs';
+import { buildLinkProps } from '@solid-ui-components/ContentButtons';
 
 const ImageComponent = ({ image, sx, ...props }) => {
-  if (!image?.src) return null
+  if (!image?.src) return null;
 
   // SVG Asset
-  const isSVG = image.src.extension === 'svg'
+  const isSVG = image.src.extension === 'svg';
   if (isSVG) {
     return (
       <img
         src={image.src.publicURL}
         style={{
           width: image.width || `100%`,
-          maxWidth: image.maxWidth || `none`
+          maxWidth: image.maxWidth || `none`,
         }}
         {...props}
       />
-    )
+    );
   }
 
   // Image Asset
-  const imageData = getImage(image.src)
+  const imageData = getImage(image.src);
   if (imageData) {
     return (
       <GatsbyImage
@@ -38,15 +38,15 @@ const ImageComponent = ({ image, sx, ...props }) => {
           borderColor: `white`,
           boxShadow: image.shadow || `unset`,
           borderRadius: image.radius || `unset`,
-          ...sx
+          ...sx,
         })}
         {...props}
       />
-    )
+    );
   }
 
-  return null
-}
+  return null;
+};
 
 const ContentImages = ({
   content: { images },
@@ -56,21 +56,21 @@ const ContentImages = ({
   imageFit,
   imageEffect,
   loading,
-  sx
+  sx,
 }) => {
-  const { setActiveModal } = useContext(ModalContext)
-  const { setActiveTab } = useContext(TabsContext)
-  if (!images) return null
+  const { setActiveModal } = useContext(ModalContext);
+  const { setActiveTab } = useContext(TabsContext);
+  if (!images) return null;
 
-  const { link } = images[0] || {}
+  const { link } = images[0] || {};
 
   const linkProps = link
     ? buildLinkProps({
         content: link,
         setActiveModal,
-        setActiveTab
+        setActiveTab,
       })?.linkProps
-    : {}
+    : {};
 
   return (
     <>
@@ -83,7 +83,7 @@ const ContentImages = ({
               : reverse
               ? `right`
               : undefined,
-          cursor: link ? `pointer` : `unset`
+          cursor: link ? `pointer` : `unset`,
         })}
         {...linkProps}
       >
@@ -105,7 +105,7 @@ const ContentImages = ({
               css={css({
                 ...image.position,
                 position: `absolute`,
-                display: [`none`, `block`]
+                display: [`none`, `block`],
               })}
             >
               <Reveal
@@ -115,14 +115,14 @@ const ContentImages = ({
                 <ImageComponent image={image} loading={loading} />
               </Reveal>
             </Reveal>
-          )
+          ),
       )}
     </>
-  )
-}
+  );
+};
 
 ContentImages.defaultProps = {
-  loading: 'lazy'
-}
+  loading: 'lazy',
+};
 
-export default ContentImages
+export default ContentImages;

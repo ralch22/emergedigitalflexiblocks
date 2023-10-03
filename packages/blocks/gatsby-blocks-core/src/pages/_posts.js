@@ -1,21 +1,19 @@
-const urljoin = require('url-join')
-const normalizeSlug = require('../utils/normalizeSlug')
+const urljoin = require('url-join');
+const normalizeSlug = require('../utils/normalizeSlug');
 
 module.exports = async (
   { graphql, actions, reporter },
   pluginOptions,
-  { template }
+  { template },
 ) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   const {
     basePath,
     paginatePostsPage,
     homePostsPerPage,
     pagingParam,
-    pageContextOptions
-  } = pluginOptions
-
-
+    pageContextOptions,
+  } = pluginOptions;
 
   //Create pagination for posts page if is required
   if (paginatePostsPage) {
@@ -29,36 +27,37 @@ module.exports = async (
 					}
 				}
 			}
-		`)
+		`);
 
     if (result.errors) {
-      reporter.panic(result.errors)
+      reporter.panic(result.errors);
     }
 
-    const { pageInfo } = result.data.allWpPost
+    const { pageInfo } = result.data.allWpPost;
 
     Array.from({ length: pageInfo.pageCount }, (_, i) => {
-      let path = i === 0 ? basePath : urljoin(basePath, pagingParam, `${i + 1}`)
-      path = normalizeSlug(path)
+      let path =
+        i === 0 ? basePath : urljoin(basePath, pagingParam, `${i + 1}`);
+      path = normalizeSlug(path);
 
       createPage({
-        path: "/posts",
+        path: '/posts',
         component: template,
         context: {
           limit: homePostsPerPage,
           skip: i * homePostsPerPage,
-          ...pageContextOptions
-        }
-      })
-    })
+          ...pageContextOptions,
+        },
+      });
+    });
     // Single posts page without pagination
   } else {
     createPage({
-      path: "/posts",
+      path: '/posts',
       component: template,
       context: {
-        ...pageContextOptions
-      }
-    })
+        ...pageContextOptions,
+      },
+    });
   }
-}
+};

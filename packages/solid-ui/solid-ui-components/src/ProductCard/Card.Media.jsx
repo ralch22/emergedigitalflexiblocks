@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link as GLink } from 'gatsby'
-import { get, Link, useThemeUI } from 'theme-ui'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
-import CardMediaImage from './Card.Media.Image'
+import React from 'react';
+import { Link as GLink } from 'gatsby';
+import { get, Link, useThemeUI } from 'theme-ui';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
+import CardMediaImage from './Card.Media.Image';
 
-const DEFAULT_IMAGE_VARIANT = 'vertical'
+const DEFAULT_IMAGE_VARIANT = 'vertical';
 
 const styles = {
   link: {
@@ -13,9 +13,9 @@ const styles = {
     position: `relative`,
     display: `block`,
     width: `100%`,
-    height: `full`
-  }
-}
+    height: `full`,
+  },
+};
 
 const CardMedia = ({
   imageVariant,
@@ -27,16 +27,16 @@ const CardMedia = ({
   withModerate,
   ...props
 }) => {
-  const context = useThemeUI()
+  const context = useThemeUI();
 
-  if (omitMedia) return null
+  if (omitMedia) return null;
 
-  const { variant, featuredImage, thumbnailText } = props
+  const { variant, featuredImage, thumbnailText } = props;
 
   const imageVar =
     imageVariant ||
     get(context.theme, rv(variant, 'imageVariant')[0]) ||
-    DEFAULT_IMAGE_VARIANT
+    DEFAULT_IMAGE_VARIANT;
 
   // const image = getImageVariant(thumbnail, imageVar)
 
@@ -45,12 +45,12 @@ const CardMedia = ({
         as: 'a',
         href: link,
         target: '_blank',
-        rel: 'noopener noreferrer'
+        rel: 'noopener noreferrer',
       }
     : {
         as: GLink,
-        to: `/products/${slug}`
-      }
+        to: `/products/${slug}`,
+      };
 
   return (
     <Link
@@ -66,11 +66,11 @@ const CardMedia = ({
         {...props}
       />
     </Link>
-  )
-}
+  );
+};
 
 CardMedia.defaultProps = {
-  mediaType: 'image'
-}
+  mediaType: 'image',
+};
 
-export default CardMedia
+export default CardMedia;

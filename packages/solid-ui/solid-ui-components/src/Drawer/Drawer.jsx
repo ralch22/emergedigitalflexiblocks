@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import Modal from 'react-modal'
-import { Box, IconButton } from 'theme-ui'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import './styles.css'
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import { Box, IconButton } from 'theme-ui';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import './styles.css';
 
 const styles = {
   panelContent: {
@@ -10,31 +10,31 @@ const styles = {
     zIndex: 2,
     bg: `contentBg`,
     overflowY: `scroll`,
-    p: 3
+    p: 3,
   },
   openButton: {
     // display: ['', '', 'none'], //to avoid ssr rehydration issue
-    verticalAlign: `middle`
+    verticalAlign: `middle`,
   },
   closeButton: {
     position: `fixed`,
     zIndex: 99999,
     left: `-20%`,
     top: 4,
-    color: `white`
-  }
-}
+    color: `white`,
+  },
+};
 
 const Drawer = ({ children, buttonStyle }) => {
-  const [open, setOpen] = useState()
-  const handleClick = () => setOpen(!open)
+  const [open, setOpen] = useState();
+  const handleClick = () => setOpen(!open);
 
   return (
     <>
       <IconButton
         onClick={handleClick}
         sx={{ ...styles.openButton, ...buttonStyle }}
-        aria-label='Open Drawer'
+        aria-label="Open Drawer"
       >
         <FaBars />
       </IconButton>
@@ -42,21 +42,21 @@ const Drawer = ({ children, buttonStyle }) => {
         isOpen={open}
         onRequestClose={handleClick}
         closeTimeoutMS={300}
-        contentLabel='Drawer'
-        className='DrawerPortalContent'
-        overlayClassName='DrawerPortalOverlay'
+        contentLabel="Drawer"
+        className="DrawerPortalContent"
+        overlayClassName="DrawerPortalOverlay"
       >
         <Box sx={styles.panelContent}>{children}</Box>
         <IconButton
           onClick={handleClick}
           sx={{ ...styles.closeButton, ...buttonStyle }}
-          aria-label='Close Drawer'
+          aria-label="Close Drawer"
         >
           <FaTimes />
         </IconButton>
       </Modal>
     </>
-  )
-}
+  );
+};
 
-export default Drawer
+export default Drawer;

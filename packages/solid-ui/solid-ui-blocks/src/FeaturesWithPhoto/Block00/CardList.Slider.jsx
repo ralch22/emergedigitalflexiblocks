@@ -4,19 +4,19 @@ import './CardList.Slider.css'; // Import your CSS file for styling
 
 const images = [
   'https://emergedigital.ae/wp-content/uploads/2022/07/Marketplace-1-1024x666.jpg',
-  'https://emergedigital.ae/wp-content/uploads/2022/07/Marketplace-2-1024x554.jpg'
+  'https://emergedigital.ae/wp-content/uploads/2022/07/Marketplace-2-1024x554.jpg',
 ];
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    setCurrentIndex(prevIndex =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 

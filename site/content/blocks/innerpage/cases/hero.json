@@ -1,13 +1,9 @@
 {
-  
-    "text": [
-      {
-        "text": "Case Studies",
-         "color": "",
-        "variant": "h3"
-      }
-    ]
-      
-  }
-  
-  
+  "text": [
+    {
+      "text": "Case Studies",
+      "color": "",
+      "variant": "h3"
+    }
+  ]
+}

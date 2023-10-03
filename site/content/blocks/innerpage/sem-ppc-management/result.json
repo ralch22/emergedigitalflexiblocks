@@ -1,26 +1,25 @@
 {
-    "text": [
-        {
-            "text": "01",
-            "color": "beta",
-            "variant": "h4"
-          },
-      {
-        "text": "Using SEM to drive business results",
-         "color": "",
-        "variant": "h3"
-      },
-      {
-        "text": "We help you define clear, measurable KPIs for your business. We optimize your website to achieve this goal so that your business performs at its best.",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "images": [
-      {
-        "src": "../../../assets/flexiblocks/homepage/marketing/01-sem-results.webp",
-        "alt": "alt text"
-      }
-    ]
-  }
-  
+  "text": [
+    {
+      "text": "01",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "Using SEM to drive business results",
+      "color": "",
+      "variant": "h3"
+    },
+    {
+      "text": "We help you define clear, measurable KPIs for your business. We optimize your website to achieve this goal so that your business performs at its best.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/01-sem-results.webp",
+      "alt": "alt text"
+    }
+  ]
+}

@@ -41,7 +41,7 @@
         {
           "text": "Event Tracking",
           "variant": "h4",
-           "color": ""
+          "color": ""
         }
       ]
     },
@@ -55,7 +55,7 @@
         {
           "text": "Conversion triggers, tags, and variables",
           "variant": "h4",
-           "color": ""
+          "color": ""
         }
       ]
     },
@@ -69,7 +69,7 @@
         {
           "text": "GTM Account Audit",
           "variant": "h4",
-           "color": ""
+          "color": ""
         }
       ]
     },
@@ -83,7 +83,7 @@
         {
           "text": "Google Ads Integration",
           "variant": "h4",
-           "color": ""
+          "color": ""
         }
       ]
     },
@@ -97,7 +97,7 @@
         {
           "text": "Report Configuration",
           "variant": "h4",
-           "color": ""
+          "color": ""
         }
       ]
     },
@@ -111,7 +111,7 @@
         {
           "text": "And much more...",
           "variant": "h4",
-           "color": ""
+          "color": ""
         }
       ]
     }

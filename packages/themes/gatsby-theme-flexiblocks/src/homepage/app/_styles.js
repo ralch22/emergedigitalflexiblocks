@@ -21,8 +21,8 @@ export default {
         180deg,
         #f7f9fe 0%,
         #f4f4f8 100%
-      )`
-    }
+      )`,
+    },
   },
   tabsContainer: {
     position: `relative`,
@@ -39,8 +39,8 @@ export default {
         180deg,
         #f7f9fe 0%,
         #f4f4f8 100%
-      )`
-    }
+      )`,
+    },
   },
   testimonialsContainer: {
     position: `relative`,
@@ -59,7 +59,7 @@ export default {
         180deg,
         #f7f9fe 0%,
         #f4f4f8 100%
-      )`
-    }
-  }
-}
+      )`,
+    },
+  },
+};

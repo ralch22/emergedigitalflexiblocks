@@ -4,5 +4,5 @@ export default {
   WebkitTapHighlightColor: `transparent`,
   borderRadius: `xl`,
   cursor: `pointer`,
-  transition: `all 250ms ease`
-}
+  transition: `all 250ms ease`,
+};

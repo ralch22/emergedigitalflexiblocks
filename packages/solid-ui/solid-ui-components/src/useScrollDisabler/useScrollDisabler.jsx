@@ -1,12 +1,12 @@
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect } from 'react';
 
 const useScrollDisabler = () =>
   useLayoutEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow
+    const originalStyle = window.getComputedStyle(document.body).overflow;
     // Prevent scrolling on mount
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden';
     // Re-enable scrolling when component unmounts
-    return () => (document.body.style.overflow = originalStyle)
-  }, [])
+    return () => (document.body.style.overflow = originalStyle);
+  }, []);
 
-export default useScrollDisabler
+export default useScrollDisabler;

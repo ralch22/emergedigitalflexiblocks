@@ -5,7 +5,7 @@
  *
  */
 
-import heroBg from './assets/hexagonal.png'
+import heroBg from './assets/hexagonal.png';
 
 export default {
   heroContainer: {
@@ -19,7 +19,7 @@ export default {
       top: [`-10%`, 0],
       right: `50%`,
       transform: `translate(50%, 0)`,
-      zIndex: -1
+      zIndex: -1,
     },
     '::before': {
       borderRadius: `xl`,
@@ -27,13 +27,13 @@ export default {
           180deg,
           ${t.colors.omegaLighter} 0%,
           ${t.colors.omegaLight} 100%
-        )`
+        )`,
     },
     '::after': {
       background: `url(${heroBg}) no-repeat right top`,
       backgroundSize: `50%`,
-      opacity: 0.1
-    }
+      opacity: 0.1,
+    },
   },
   featuresContainer: {
     position: `relative`,
@@ -51,8 +51,8 @@ export default {
           150deg,
           ${t.colors.omegaLighter} 80%,
           ${t.colors.omegaLight} 100%
-        )`
-    }
+        )`,
+    },
   },
   testimonialsContainer: {
     position: `relative`,
@@ -65,7 +65,7 @@ export default {
       top: 0,
       right: `50%`,
       transform: `translate(50%, 0)`,
-      zIndex: -1
+      zIndex: -1,
     },
     '::before': {
       borderRadius: `xl`,
@@ -73,13 +73,13 @@ export default {
           150deg,
           ${t.colors.omegaLighter} 50%,
           ${t.colors.omegaLight} 100%
-        )`
+        )`,
     },
     '::after': {
       transform: `scaleX(-1)`,
       background: `url(${heroBg}) no-repeat left top`,
       backgroundSize: `50%`,
-      opacity: 0.1
-    }
-  }
-}
+      opacity: 0.1,
+    },
+  },
+};

@@ -1,1 +1,1 @@
-export { default } from './BannerWide'
+export { default } from './BannerWide';

@@ -4,34 +4,34 @@ export default {
   card: {
     ':hover': {
       transform: `none`,
-      boxShadow: `none`
-    }
+      boxShadow: `none`,
+    },
   },
   content: {
     flexDirection: `row`,
-    position: `relative`
+    position: `relative`,
   },
   media: {
     flexBasis: `full`,
-    m: 0
+    m: 0,
   },
   image: {
     minHeight: `15rem`,
     img: {
-      borderRadius: `lg`
-    }
+      borderRadius: `lg`,
+    },
   },
   iconBox: {
     borderRadius: `default`,
-    minHeight: `20rem`
+    minHeight: `20rem`,
   },
   iconText: {
-    display: `none`
+    display: `none`,
   },
   icon: {
     size: `5/6`,
     ml: `40%`,
-    opacity: 0.5
+    opacity: 0.5,
   },
   body: {
     height: `full`,
@@ -48,10 +48,10 @@ export default {
     p: 0,
     pt: [4, 5],
     pl: [4, 6],
-    pr: 4
+    pr: 4,
   },
   category: {
-    display: [`none`, `block`]
+    display: [`none`, `block`],
   },
   title: {
     fontSize: [4, , null, 6],
@@ -60,31 +60,31 @@ export default {
     `,
     color: `white`,
     width: `full`,
-    mt: `auto`
+    mt: `auto`,
   },
   excerpt: {
-    display: `none`
+    display: `none`,
   },
   footer: {
     mt: `auto`,
-    pb: 6
+    pb: 6,
   },
   authorPhoto: {
-    display: [`none`, `block`]
+    display: [`none`, `block`],
   },
   author: {
     display: `inline-block`,
     flexBasis: `full`,
     'a, a:visited': {
-      color: `omegaLight`
-    }
+      color: `omegaLight`,
+    },
   },
   date: {
     display: [`none`, `inline-block`],
-    color: `omegaLight`
+    color: `omegaLight`,
   },
   timeToRead: {
     display: [`none`, `inline-block`],
-    color: `omegaLight`
-  }
-}
+    color: `omegaLight`,
+  },
+};

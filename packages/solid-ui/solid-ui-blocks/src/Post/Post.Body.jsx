@@ -1,23 +1,23 @@
-import React from 'react'
-import { Box, Text } from 'theme-ui'
+import React from 'react';
+import { Box, Text } from 'theme-ui';
 
 const styles = {
   excerpt: {
     flex: `auto`,
-    mb: 3
-  }
-}
+    mb: 3,
+  },
+};
 
 export const PostBody = ({ content }) => {
   return (
     <Box>
       <Text
-        variant='medium'
+        variant="medium"
         sx={{
-          ...styles.excerpt
+          ...styles.excerpt,
         }}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </Box>
-  )
-}
+  );
+};

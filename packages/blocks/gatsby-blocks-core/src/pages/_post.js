@@ -1,17 +1,14 @@
 module.exports = async (
   { graphql, actions, reporter },
   pluginOptions,
-  { template }
+  { template },
 ) => {
-  const { createPage } = actions
-  const { pageContextOptions } = pluginOptions
+  const { createPage } = actions;
+  const { pageContextOptions } = pluginOptions;
 
   const result = await graphql(`
     {
-      allWpPost(
-        sort: [{ date: DESC }, { title: ASC }]
-        limit: 1000
-      ) {
+      allWpPost(sort: [{ date: DESC }, { title: ASC }], limit: 1000) {
         edges {
           node {
             id
@@ -53,26 +50,27 @@ module.exports = async (
         }
       }
     }
-  `)
+  `);
 
   if (result.errors) {
-    reporter.panic(result.errors)
+    reporter.panic(result.errors);
   }
 
-  const { allWpPost } = result.data
-  const posts = allWpPost.edges
+  const { allWpPost } = result.data;
+  const posts = allWpPost.edges;
   posts.forEach(({ node }, index) => {
-    const { id, slug, categories, tags, link } = node
+    const { id, slug, categories, tags, link } = node;
 
-    if (link) return //skip creating pages for nodes linking to external sites
+    if (link) return; //skip creating pages for nodes linking to external sites
 
-    const previous = index === posts.length - 1 ? null : posts[index + 1]
-    const next = index === 0 ? null : posts[index - 1]
+    const previous = index === posts.length - 1 ? null : posts[index + 1];
+    const next = index === 0 ? null : posts[index - 1];
 
     //For querying related posts based on tags and category
-    const categoriesId = (categories && categories.nodes.map(category => category && category.id))
-    const tagsIds = (tags && tags.nodes.map(tag => tag && tag.id))
-    const hasTags = tagsIds.length > 0
+    const categoriesId =
+      categories && categories.nodes.map(category => category && category.id);
+    const tagsIds = tags && tags.nodes.map(tag => tag && tag.id);
+    const hasTags = tagsIds.length > 0;
 
     createPage({
       path: `/posts/${slug}`,
@@ -84,8 +82,8 @@ module.exports = async (
         hasTags,
         previousId: previous ? previous.node.id : undefined,
         nextId: next ? next.node.id : undefined,
-        ...pageContextOptions
-      }
-    })
-  })
-}
+        ...pageContextOptions,
+      },
+    });
+  });
+};

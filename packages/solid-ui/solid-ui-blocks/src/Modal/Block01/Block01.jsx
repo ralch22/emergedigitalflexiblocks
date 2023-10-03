@@ -1,38 +1,36 @@
-import React, { useContext } from 'react'
-import { Flex, Box } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import Tabs from '@solid-ui-components/Tabs'
-import Modal from '@solid-ui-components/Modal'
-import ListItem from '@solid-ui-components/ListItem'
-import { TabsContext } from '@solid-ui-components/Tabs'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentMap from '@solid-ui-components/ContentMap'
-import ContentForm from '@solid-ui-components/ContentForm'
-import { ModalContext } from '@solid-ui-components/Modal'
+import React, { useContext } from 'react';
+import { Flex, Box } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import Tabs from '@solid-ui-components/Tabs';
+import Modal from '@solid-ui-components/Modal';
+import ListItem from '@solid-ui-components/ListItem';
+import { TabsContext } from '@solid-ui-components/Tabs';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentMap from '@solid-ui-components/ContentMap';
+import ContentForm from '@solid-ui-components/ContentForm';
+import { ModalContext } from '@solid-ui-components/Modal';
 
 const ModalBlock01 = ({ content, reverse }) => {
-  const { activeModal } = useContext(ModalContext)
+  const { activeModal } = useContext(ModalContext);
   const {
-    activeTab: { index = 0 }
-  } = useContext(TabsContext)
+    activeTab: { index = 0 },
+  } = useContext(TabsContext);
 
-  const { identifier, text } = content
-  if (activeModal && activeModal !== identifier) return null
+  const { identifier, text } = content;
+  if (activeModal && activeModal !== identifier) return null;
 
-  const images = content?.collection[index]?.images || content.images
-  const map = content?.collection[index]?.map || content.map
-  const hasMedia = images || map
-
- 
+  const images = content?.collection[index]?.images || content.images;
+  const map = content?.collection[index]?.map || content.map;
+  const hasMedia = images || map;
 
   return (
     <Modal
       id={identifier}
       contentStyles={{
         maxWidth: hasMedia ? `narrow` : 500,
-        p: 0
+        p: 0,
       }}
     >
       <Flex
@@ -40,8 +38,8 @@ const ModalBlock01 = ({ content, reverse }) => {
           alignItems: `stretch`,
           flexDirection: [
             reverse ? `column-reverse` : `column`,
-            reverse ? `row-reverse` : `row`
-          ]
+            reverse ? `row-reverse` : `row`,
+          ],
         }}
       >
         {hasMedia && (
@@ -53,14 +51,14 @@ const ModalBlock01 = ({ content, reverse }) => {
               height: 750,
               position: `relative`,
               borderRadius: reverse ? `right` : `left`,
-              overflow: `hidden`
+              overflow: `hidden`,
             }}
           >
             {images && (
               <ContentImages
                 content={{ images }}
-                imageFit='cover'
-                height='100%'
+                imageFit="cover"
+                height="100%"
                 reverse={reverse}
               />
             )}
@@ -83,7 +81,7 @@ const ModalBlock01 = ({ content, reverse }) => {
                 ?.map(({ text, collection, form }, index) => (
                   <Reveal
                     key={`item-${index}`}
-                    effect='fadeIn'
+                    effect="fadeIn"
                     content={{ text }}
                   >
                     {text && (
@@ -98,7 +96,7 @@ const ModalBlock01 = ({ content, reverse }) => {
                       <ListItem key={`item-${index}`} {...props} compact />
                     ))}
                     {form && (
-                      <ContentForm 
+                      <ContentForm
                         form={form}
                         id={`form.${identifier}.${
                           form.multiStep ? 'multi' : index
@@ -112,7 +110,7 @@ const ModalBlock01 = ({ content, reverse }) => {
         )}
       </Flex>
     </Modal>
-  )
-}
+  );
+};
 
-export default ModalBlock01
+export default ModalBlock01;

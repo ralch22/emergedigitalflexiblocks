@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { Box, useColorMode, useThemeUI } from 'theme-ui'
-import pageContextProvider from '@helpers/pageContextProvider'
-import { MdInvertColors } from 'react-icons/md'
-import { FaChevronDown } from 'react-icons/fa'
+import React, { useState, useEffect, useContext } from 'react';
+import { Box, useColorMode, useThemeUI } from 'theme-ui';
+import pageContextProvider from '@helpers/pageContextProvider';
+import { MdInvertColors } from 'react-icons/md';
+import { FaChevronDown } from 'react-icons/fa';
 
 const styles = {
   wrapper: {
@@ -10,7 +10,7 @@ const styles = {
     right: 0,
     bottom: `20%`,
     transform: `translate(40px, -56px)`,
-    zIndex: 99
+    zIndex: 99,
   },
   button: {
     borderRadius: `0.5rem 0 0 0.5rem`,
@@ -25,11 +25,11 @@ const styles = {
     pr: 5,
     svg: {
       verticalAlign: `middle`,
-      mr: 2
+      mr: 2,
     },
     ':hover': {
-      color: `#667eea`
-    }
+      color: `#667eea`,
+    },
   },
   items: {
     transition: `all 0.2s ease-in`,
@@ -45,8 +45,8 @@ const styles = {
     opacity: 0,
     open: {
       opacity: 1,
-      pt: 3
-    }
+      pt: 3,
+    },
   },
   item: {
     display: `flex`,
@@ -59,11 +59,11 @@ const styles = {
     mx: `auto`,
     mb: 2,
     ':hover': {
-      opacity: 0.9
+      opacity: 0.9,
     },
     div: {
-      flexBasis: `1/4`
-    }
+      flexBasis: `1/4`,
+    },
   },
   close: {
     bg: `contentBg`,
@@ -71,29 +71,29 @@ const styles = {
     cursor: `pointer`,
     width: 24,
     mx: `auto`,
-    svg: {}
-  }
-}
+    svg: {},
+  },
+};
 
 const ColorMode = () => {
-  const [open, setOpen] = useState()
-  const [colorMode, setColorMode] = useColorMode()
-  const context = useThemeUI()
-  const { pageContext } = useContext(pageContextProvider)
+  const [open, setOpen] = useState();
+  const [colorMode, setColorMode] = useColorMode();
+  const context = useThemeUI();
+  const { pageContext } = useContext(pageContextProvider);
 
-  const { modes } = context.theme.colors
-  const modeNames = Object.keys(modes)
+  const { modes } = context.theme.colors;
+  const modeNames = Object.keys(modes);
 
-  const handleChange = color => setColorMode(color)
-  const handleToggle = () => setOpen(state => !state)
+  const handleChange = color => setColorMode(color);
+  const handleToggle = () => setOpen(state => !state);
 
   useEffect(() => {
     // Theme-UI saves last color mode in local storage. We don't want that.
     pageContext.colorMode === false &&
-      localStorage.removeItem('theme-ui-color-mode')
-  }, [])
+      localStorage.removeItem('theme-ui-color-mode');
+  }, []);
 
-  if (pageContext.colorMode === false) return null
+  if (pageContext.colorMode === false) return null;
 
   return (
     <Box sx={styles.wrapper}>
@@ -101,7 +101,7 @@ const ColorMode = () => {
         sx={{
           ...styles.items,
           ...(open && styles.items.open),
-          ...(open && { maxHeight: modeNames.length * 40 + 50 })
+          ...(open && { maxHeight: modeNames.length * 40 + 50 }),
         }}
       >
         {modeNames.map((mode, index) => (
@@ -126,7 +126,7 @@ const ColorMode = () => {
         <span>Colors</span>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ColorMode
+export default ColorMode;

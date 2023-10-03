@@ -5,13 +5,13 @@
  *
  */
 
-import heroBg from './assets/dot-pattern.svg'
-import growth from './assets/growth.svg'
+import heroBg from './assets/dot-pattern.svg';
+import growth from './assets/growth.svg';
 
 export default {
   heroContainer: {
     bg: `#F6F7FA`,
-    pt: [5, 6]
+    pt: [5, 6],
   },
   buildBrandContainer: {
     position: `relative`,
@@ -24,8 +24,8 @@ export default {
       zIndex: -1,
       background: `url(${heroBg}) no-repeat center center`,
       opacity: 0.3,
-      backgroundSize: `40%`
-    }
+      backgroundSize: `40%`,
+    },
   },
   getStartedContainer: {
     position: `relative`,
@@ -37,7 +37,7 @@ export default {
       right: 6,
       zIndex: -1,
       background: `url(${growth}) no-repeat right 0`,
-      backgroundSize: `55%`
-    }
-  }
-}
+      backgroundSize: `55%`,
+    },
+  },
+};

@@ -1,1 +1,1 @@
-exports.createSchemaCustomization = require('./src/createSchemaCustomization')
+exports.createSchemaCustomization = require('./src/createSchemaCustomization');

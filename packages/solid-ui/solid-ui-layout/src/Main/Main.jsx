@@ -1,10 +1,10 @@
-import React from 'react'
-import { Container } from 'theme-ui'
+import React from 'react';
+import { Container } from 'theme-ui';
 
-export default function Main ({ children, ...props }) {
+export default function Main({ children, ...props }) {
   return (
-    <Container variant='main' {...props}>
+    <Container variant="main" {...props}>
       {children}
     </Container>
-  )
+  );
 }

@@ -1,110 +1,109 @@
 {
-    "text": [
-      {
-        "text": "4 Simple Steps",
-        "color": "alpha",
-        "variant": "h4"
-      },
-      {
-        "text": "How does our Mobile App Development Services work?",
-        "variant": "h2"
-      },
-      {
-        "text": "Being the best mobile app development company in Dubai, we follow a business-friendly and modular approach that yields an amazing application.",
-        "variant": "medium",
-        "color": "alphaDark"
-      },
-      {
-        "text": "The various steps included in our mobile app development services:",
-        "variant": "medium",
-        "color": "alphaDark"
-      }
-    ],
-    "collection": [
-      {
-        "text": [
-          {
-            "text": "01",
-            "variant": "h4",
-            "color": "beta"
-          },
-          {
-            "text": "Select a category",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Start by selecting an app template that is similar to your idea or our AI product manager",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "text": [
-          {
-            "text": "02",
-            "variant": "h4",
-            "color": "beta"
-          },
-          {
-            "text": "Build your app with AI",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Our AI assembles features (like Lego blocks) to form your app.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "text": [
-          {
-            "text": "03",
-            "variant": "h4",
-            "color": "beta"
-          },
-          {
-            "text": "Develop a delivery plan",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Determine the timeline and price for your project and how fast you want it delivered",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "text": [
-          {
-            "text": "04",
-            "variant": "h4",
-            "color": "beta"
-          },
-          {
-            "text": "Find an expert to help you",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Dedicated specialists take care of everything from kick-off to delivery.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      }
-    ],
-    "buttons": [
-      {
-        "text": "Contact Us Now",
-        "type": "MODAL",
-        "link": "contact",
-        "variant": "gradient"
-      }
-    ]
-  }
-  
+  "text": [
+    {
+      "text": "4 Simple Steps",
+      "color": "alpha",
+      "variant": "h4"
+    },
+    {
+      "text": "How does our Mobile App Development Services work?",
+      "variant": "h2"
+    },
+    {
+      "text": "Being the best mobile app development company in Dubai, we follow a business-friendly and modular approach that yields an amazing application.",
+      "variant": "medium",
+      "color": "alphaDark"
+    },
+    {
+      "text": "The various steps included in our mobile app development services:",
+      "variant": "medium",
+      "color": "alphaDark"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "01",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Select a category",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Start by selecting an app template that is similar to your idea or our AI product manager",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "02",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Build your app with AI",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Our AI assembles features (like Lego blocks) to form your app.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "03",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Develop a delivery plan",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Determine the timeline and price for your project and how fast you want it delivered",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "04",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Find an expert to help you",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Dedicated specialists take care of everything from kick-off to delivery.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "gradient"
+    }
+  ]
+}

@@ -1,19 +1,18 @@
 {
-    "collection": [
-      {
-        "text": [
-          {
-            "text": "Book your free session",
-            "color": "beta",
-            "variant": "h5",
-            "space": 0
-          },
-          {
-            "text": "Talk With Our Digital Strategists",
-            "variant": "h2"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "Book your free session",
+          "color": "beta",
+          "variant": "h5",
+          "space": 0
+        },
+        {
+          "text": "Talk With Our Digital Strategists",
+          "variant": "h2"
+        }
+      ]
+    }
+  ]
+}

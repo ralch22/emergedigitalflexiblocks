@@ -1,1 +1,1 @@
-export { default } from './VideoButton'
+export { default } from './VideoButton';

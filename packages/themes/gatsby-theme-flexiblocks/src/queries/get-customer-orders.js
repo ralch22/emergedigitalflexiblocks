@@ -1,32 +1,32 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 const GET_CUSTOMER_ORDER = gql`
-    query GET_CUSTOMER_ORDER( $customerId: Int ) {
-        customer( customerId: $customerId ) {
+  query GET_CUSTOMER_ORDER($customerId: Int) {
+    customer(customerId: $customerId) {
+      id
+      customerId
+      orders {
+        edges {
+          node {
             id
-            customerId
-            orders {
-                edges {
-                    node {
-	                    id
-                        orderKey
-                        date
-                        status
-                        total
-                        customerNote
-                        paymentMethodTitle
-                        lineItems {
-                            edges {
-                                node {
-                                    product {
-                                        name
-	                                    id
-                                    }
-                                }
-                            }
-                        }
-                    }
+            orderKey
+            date
+            status
+            total
+            customerNote
+            paymentMethodTitle
+            lineItems {
+              edges {
+                node {
+                  product {
+                    name
+                    id
+                  }
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 `;

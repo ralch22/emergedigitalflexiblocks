@@ -1,3 +1,3 @@
-exports.createSchemaCustomization = require('./src/createSchemaCustomization')
+exports.createSchemaCustomization = require('./src/createSchemaCustomization');
 
-exports.onCreateNode = require('./src/onCreateNode')
+exports.onCreateNode = require('./src/onCreateNode');

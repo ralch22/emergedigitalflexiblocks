@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link as GLink } from 'gatsby'
-import { Heading } from 'theme-ui'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
+import React from 'react';
+import { Link as GLink } from 'gatsby';
+import { Heading } from 'theme-ui';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
 const CardBodyTitle = ({ variant, name, price_html, slug, link }) => {
   const linkProps = link
@@ -9,12 +9,12 @@ const CardBodyTitle = ({ variant, name, price_html, slug, link }) => {
         as: 'a',
         href: link,
         target: '_blank',
-        rel: 'noopener noreferrer'
+        rel: 'noopener noreferrer',
       }
     : {
         as: GLink,
-        to: `/products/${slug}`
-      }
+        to: `/products/${slug}`,
+      };
   return (
     <>
       <Heading
@@ -25,11 +25,11 @@ const CardBodyTitle = ({ variant, name, price_html, slug, link }) => {
       <Heading
         {...linkProps}
         dangerouslySetInnerHTML={{ __html: price_html }}
-        variant='h4'
+        variant="h4"
         sx={{ variant: rv(variant, 'h4') }}
       />
     </>
-  )
-}
+  );
+};
 
-export default CardBodyTitle
+export default CardBodyTitle;

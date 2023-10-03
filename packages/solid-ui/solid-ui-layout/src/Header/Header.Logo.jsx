@@ -1,29 +1,29 @@
-import React from 'react'
-import { useColorMode } from 'theme-ui'
-import { useStaticQuery, graphql } from 'gatsby'
-import { getImage } from 'gatsby-plugin-image'
-import Logo from '@solid-ui-components/Logo'
-import useSiteMetadata from '@blocks-helpers/useSiteMetadata'
+import React from 'react';
+import { useColorMode } from 'theme-ui';
+import { useStaticQuery, graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
+import Logo from '@solid-ui-components/Logo';
+import useSiteMetadata from '@blocks-helpers/useSiteMetadata';
 
 export const HeaderLogo = ({ ...props }) => {
-  const { title } = useSiteMetadata()
+  const { title } = useSiteMetadata();
 
-  const [colorMode] = useColorMode()
-  const isDark = colorMode === `dark`
+  const [colorMode] = useColorMode();
+  const isDark = colorMode === `dark`;
 
-  const { logo, logoDark } = useStaticQuery(logoQuery)
+  const { logo, logoDark } = useStaticQuery(logoQuery);
 
-  const logoNormal = getImage(logo)
-  const LogoDark = getImage(logoDark)
+  const logoNormal = getImage(logo);
+  const LogoDark = getImage(logoDark);
 
-  if (!logoNormal) return null
+  if (!logoNormal) return null;
 
   return isDark && LogoDark ? (
     <Logo image={LogoDark} title={title} alt={title} {...props} />
   ) : (
     <Logo image={logoNormal} title={title} alt={title} {...props} />
-  )
-}
+  );
+};
 
 const logoQuery = graphql`
   query LogoQuery {
@@ -54,4 +54,4 @@ const logoQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const query = graphql`
   fragment BlockContentContainer on BlockContentContainer {
@@ -10,4 +10,4 @@ export const query = graphql`
       target
     }
   }
-`
+`;

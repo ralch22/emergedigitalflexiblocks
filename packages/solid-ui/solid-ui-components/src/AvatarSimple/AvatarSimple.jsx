@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { GatsbyImage as Img } from 'gatsby-plugin-image'
-import { Box } from 'theme-ui'
-import getImageVariant from '@solid-ui-components/utils/getImageVariant'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
+import { Box } from 'theme-ui';
+import getImageVariant from '@solid-ui-components/utils/getImageVariant';
 
 const styles = {
   imageWrapperSimple: {
@@ -17,37 +17,37 @@ const styles = {
     opacity: 0.9,
     mr: 3,
     img: {
-      borderRadius: `full`
+      borderRadius: `full`,
     },
     ':hover': {
-      opacity: 1
+      opacity: 1,
     },
     '> div': {
-      borderRadius: `full`
-    }
-  }
-}
+      borderRadius: `full`,
+    },
+  },
+};
 
 const AvatarSimple = ({ avatar, size, alt }) => {
   // const image = avatar && getImageVariant(avatar, size)
 
-  if (!image) return null
+  if (!image) return null;
 
   return (
     <Box sx={styles.imageWrapperSimple}>
       <img src={avatar.url} alt={alt} />
     </Box>
-  )
-}
+  );
+};
 
-export default AvatarSimple
+export default AvatarSimple;
 
 AvatarSimple.defaultProps = {
-  size: 'regular'
-}
+  size: 'regular',
+};
 
 AvatarSimple.propTypes = {
   size: PropTypes.oneOf([false, 'small', 'regular']),
   loading: PropTypes.string,
-  alt: PropTypes.string
-}
+  alt: PropTypes.string,
+};

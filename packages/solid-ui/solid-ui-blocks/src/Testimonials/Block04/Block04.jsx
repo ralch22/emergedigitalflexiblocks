@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { Container, Flex, Box, css } from 'theme-ui'
-import { FaDotCircle } from 'react-icons/fa'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ListItem from '@solid-ui-components/ListItem'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React, { useState } from 'react';
+import { Container, Flex, Box, css } from 'theme-ui';
+import { FaDotCircle } from 'react-icons/fa';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ListItem from '@solid-ui-components/ListItem';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   container: {
@@ -15,12 +15,12 @@ const styles = {
       #f6f7fb 0%,
       #e0e7ef 100%
     )`,
-    py: [5, 5, 6]
+    py: [5, 5, 6],
   },
   controlWrapper: {
     position: `absolute`,
     bottom: 0,
-    left: 0
+    left: 0,
   },
   control: {
     color: `omega`,
@@ -28,11 +28,11 @@ const styles = {
     transition: `all 0.2s ease-in`,
     mr: 2,
     ':hover': {
-      color: `omegaDark`
+      color: `omegaDark`,
     },
     '&.active': {
-      color: `alpha`
-    }
+      color: `alpha`,
+    },
   },
   avatar: {
     borderTopColor: `omegaLighter`,
@@ -44,13 +44,13 @@ const styles = {
     mb: [4, 0],
     mt: [5, 0],
     img: {
-      borderRadius: `lg`
-    }
-  }
-}
+      borderRadius: `lg`,
+    },
+  },
+};
 
 const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
-  const [state, setState] = useState(0)
+  const [state, setState] = useState(0);
 
   return (
     <Container>
@@ -67,8 +67,8 @@ const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
                   flexDirection: [
                     reverse ? `column-reverse` : `column`,
 
-                    reverse ? `row-reverse` : `row`
-                  ]
+                    reverse ? `row-reverse` : `row`,
+                  ],
                 }}
               >
                 <Box
@@ -76,13 +76,13 @@ const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
                     flexBasis: [null, `2/5`],
                     [reverse ? 'ml' : 'mr']: [null, 5],
                     position: `relative`,
-                    textAlign: `center`
+                    textAlign: `center`,
                   }}
                 >
                   <ContentImages
                     content={{ images: [avatar] }}
                     sx={styles.avatar}
-                    imageEffect='fadeIn'
+                    imageEffect="fadeIn"
                   />
                 </Box>
                 <Box sx={{ flexBasis: `3/5`, textAlign: [`center`, `left`] }}>
@@ -90,10 +90,10 @@ const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
                     sx={{
                       flexDirection: `column`,
                       minHeight: [`none`, 420],
-                      position: `relative`
+                      position: `relative`,
                     }}
                   >
-                    <Reveal effect='fadeInRight'>
+                    <Reveal effect="fadeInRight">
                       <ContentText content={text?.slice(0, 3)} />
                       <Box sx={{ display: `inline-block`, textAlign: `left` }}>
                         <ListItem
@@ -109,7 +109,7 @@ const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
                   </Flex>
                 </Box>
               </Flex>
-            )
+            ),
         )}
         <Divider space={2} />
         <Box sx={{ textAlign: `center` }}>
@@ -125,7 +125,7 @@ const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
         </Box>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
-export default WithDefaultContent(TestimonialsBlock04)
+export default WithDefaultContent(TestimonialsBlock04);

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box, Label, Checkbox } from 'theme-ui'
+import React from 'react';
+import { Box, Label, Checkbox } from 'theme-ui';
 
 const FormCheckbox = ({ id, placeholder, ...props }) => (
   <Label htmlFor={id}>
@@ -9,8 +9,8 @@ const FormCheckbox = ({ id, placeholder, ...props }) => (
       <Checkbox
         sx={{
           'input:checked ~ &': {
-            color: 'alpha'
-          }
+            color: 'alpha',
+          },
         }}
         {...props}
         value={undefined}
@@ -19,6 +19,6 @@ const FormCheckbox = ({ id, placeholder, ...props }) => (
     </Box>
     {placeholder?.text}
   </Label>
-)
+);
 
-export default FormCheckbox
+export default FormCheckbox;

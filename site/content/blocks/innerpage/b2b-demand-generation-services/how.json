@@ -1,93 +1,91 @@
 {
-    "text": [
-     
-      {
-        "text": "How the Emerge Digital Process Works",
-        "variant": "h2"
-      },
-      {
-        "text": "Partnering with Emerge Digital is fast and easy. Here’s how:",
-        "variant": "medium",
-        "color": "alpha"
-      }
-    ],
-    "collection": [
-      {
-        "text": [
-            {
-                "text": "01",
-                "variant": "h4",
-                "color": "beta"
-              },
-          {
-            "text": "Contact Us",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Contact us to speak to a member of our team. We'll happily explain how B2B demand generation works and answer any questions.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "text": [
-            {
-                "text": "02",
-                "variant": "h4",
-                "color": "beta"
-              },
-          {
-            "text": "Tell Us About Your Business",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Once we know more about your company and the products and services you offer, we'll start a review of your current content and strategy. This allows us to gauge how best to approach your campaign.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "text": [
-            {
-                "text": "03",
-                "variant": "h4",
-                "color": "beta"
-              },
-          {
-            "text": "We Create a Custom Strategy",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "When we have all the information we need about your business, we will create a custom strategy tailored to your goals and budget. Once you're happy with everything, our B2B specialists will get to work on attracting more clients to your business.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      },
-      {
-        "text": [
-            {
-                "text": "04",
-                "variant": "h4",
-                "color": "beta"
-              },
-          {
-            "text": "Outstanding Results",
-            "variant": "h4",
-             "color": ""
-          },
-          {
-            "text": "Our marketing team will check your campaign results and provide you with regular reports. This is important as we need to know which pillars are working best. Once we have the data, we can adjust your custom strategy to perform optimally.",
-            "variant": "medium",
-            "color": "alpha"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "text": [
+    {
+      "text": "How the Emerge Digital Process Works",
+      "variant": "h2"
+    },
+    {
+      "text": "Partnering with Emerge Digital is fast and easy. Here’s how:",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "01",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Contact Us",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Contact us to speak to a member of our team. We'll happily explain how B2B demand generation works and answer any questions.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "02",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Tell Us About Your Business",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Once we know more about your company and the products and services you offer, we'll start a review of your current content and strategy. This allows us to gauge how best to approach your campaign.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "03",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "We Create a Custom Strategy",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "When we have all the information we need about your business, we will create a custom strategy tailored to your goals and budget. Once you're happy with everything, our B2B specialists will get to work on attracting more clients to your business.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "04",
+          "variant": "h4",
+          "color": "beta"
+        },
+        {
+          "text": "Outstanding Results",
+          "variant": "h4",
+          "color": ""
+        },
+        {
+          "text": "Our marketing team will check your campaign results and provide you with regular reports. This is important as we need to know which pillars are working best. Once we have the data, we can adjust your custom strategy to perform optimally.",
+          "variant": "medium",
+          "color": "alpha"
+        }
+      ]
+    }
+  ]
+}

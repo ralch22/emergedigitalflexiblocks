@@ -2,19 +2,19 @@
  * Placeholder component to shadow
  */
 
-import React from 'react'
-import { Box, Card } from 'theme-ui'
-import Layout from '@solid-ui-layout/Layout'
-import Stack from '@solid-ui-layout/Stack/Stack'
-import Main from '@solid-ui-layout/Main/Main'
-import Footer from '@solid-ui-blocks/Footer/Block01'
-import Header from '@solid-ui-blocks/Header/Block01'
-import CardList from '@solid-ui-components/CardList'
-import Divider from '@solid-ui-components/Divider'
-import Sticky from '@solid-ui-components/Sticky'
-import Seo from 'gatsby-plugin-wpgraphql-seo'
-import AuthorCompact from '@solid-ui-blocks/AuthorCompact'
-import TableOfContentsCompact from '@solid-ui-blocks/TableOfContentsCompact'
+import React from 'react';
+import { Box, Card } from 'theme-ui';
+import Layout from '@solid-ui-layout/Layout';
+import Stack from '@solid-ui-layout/Stack/Stack';
+import Main from '@solid-ui-layout/Main/Main';
+import Footer from '@solid-ui-blocks/Footer/Block01';
+import Header from '@solid-ui-blocks/Header/Block01';
+import CardList from '@solid-ui-components/CardList';
+import Divider from '@solid-ui-components/Divider';
+import Sticky from '@solid-ui-components/Sticky';
+import Seo from 'gatsby-plugin-wpgraphql-seo';
+import AuthorCompact from '@solid-ui-blocks/AuthorCompact';
+import TableOfContentsCompact from '@solid-ui-blocks/TableOfContentsCompact';
 import {
   PostBody,
   PostComments,
@@ -23,9 +23,9 @@ import {
   PostFooter,
   PostHead,
   PostImage,
-  PostTagsShare
-} from '@solid-ui-blocks/Post'
-import { normalizeBlockContentNodes } from '@blocks-helpers'
+  PostTagsShare,
+} from '@solid-ui-blocks/Post';
+import { normalizeBlockContentNodes } from '@blocks-helpers';
 
 export default function Post({
   data: {
@@ -36,7 +36,7 @@ export default function Post({
     previous,
     next,
     allBlockContent,
-    wpPost
+    wpPost,
   },
   ...props
 }) {
@@ -46,11 +46,11 @@ export default function Post({
   const relatedPosts = [
     ...(tagCategoryPosts ? tagCategoryPosts.nodes : []),
     ...(tagPosts ? tagPosts.nodes : []),
-    ...(categoryPosts ? categoryPosts.nodes : [])
-  ]
-  const { pageContext: { services = {}, siteUrl } = {} } = props
+    ...(categoryPosts ? categoryPosts.nodes : []),
+  ];
+  const { pageContext: { services = {}, siteUrl } = {} } = props;
 
-  const content = normalizeBlockContentNodes(allBlockContent?.nodes)
+  const content = normalizeBlockContentNodes(allBlockContent?.nodes);
   return (
     <Layout {...props}>
       <Seo post={wpPost} />
@@ -63,7 +63,7 @@ export default function Post({
       <Divider />
       <Stack effectProps={{ effect: 'fadeInUp' }}>
         <Main>
-          <Card variant='paper'>
+          <Card variant="paper">
             <PostImage {...post} inCard />
             <PostBody {...post} />
             <PostTagsShare {...post} location={props.location} />
@@ -86,9 +86,9 @@ export default function Post({
               </>
             )}
             <CardList
-              title='Related Posts'
+              title="Related Posts"
               nodes={relatedPosts}
-              variant='horizontal-aside'
+              variant="horizontal-aside"
               limit={6}
               omitMedia
               omitCategory
@@ -101,5 +101,5 @@ export default function Post({
       <Divider />
       <Footer content={content['footer']} />
     </Layout>
-  )
+  );
 }

@@ -1,16 +1,16 @@
-import React from 'react'
-import { Container, Flex, Box, css } from 'theme-ui'
-import ContentText from '@solid-ui-components/ContentText'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ContentImages from '@solid-ui-components/ContentImages'
-import QuickSignupForm from '@solid-ui-components/QuickSignupForm'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, css } from 'theme-ui';
+import ContentText from '@solid-ui-components/ContentText';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ContentImages from '@solid-ui-components/ContentImages';
+import QuickSignupForm from '@solid-ui-components/QuickSignupForm';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const HeroBlock01 = ({
   content: { text = [], images, buttons, form },
-  reverse
+  reverse,
 }) => (
   <Container>
     <Flex
@@ -20,8 +20,8 @@ const HeroBlock01 = ({
           reverse ? `column-reverse` : `column`,
           null,
           null,
-          reverse ? `row-reverse` : `row`
-        ]
+          reverse ? `row-reverse` : `row`,
+        ],
       }}
     >
       <Box
@@ -29,28 +29,28 @@ const HeroBlock01 = ({
           flexBasis: [null, null, null, `3/5`],
           [reverse ? 'ml' : 'mr']: [null, null, null, 5],
           position: `relative`,
-          textAlign: `center`
+          textAlign: `center`,
         }}
       >
         <ContentImages
           content={{ images }}
-          loading='eager'
+          loading="eager"
           reverse={reverse}
-          imagePosition='center'
+          imagePosition="center"
         />
       </Box>
       <Box
         sx={{
           flexBasis: `2/5`,
-          textAlign: [`center`, null, null, `left`]
+          textAlign: [`center`, null, null, `left`],
         }}
       >
-        <Reveal effect='fadeInDown'>
+        <Reveal effect="fadeInDown">
           <ContentText content={text} />
         </Reveal>
         {buttons && (
           <Reveal
-            effect='fadeInRight'
+            effect="fadeInRight"
             delay={1}
             css={css({ mb: [4, null, null, 0] })}
           >
@@ -64,7 +64,7 @@ const HeroBlock01 = ({
         )}
         {form && (
           <Reveal
-            effect='fadeInRight'
+            effect="fadeInRight"
             delay={1}
             css={css({ mb: [4, null, null, 0] })}
           >
@@ -74,6 +74,6 @@ const HeroBlock01 = ({
       </Box>
     </Flex>
   </Container>
-)
+);
 
-export default WithDefaultContent(HeroBlock01)
+export default WithDefaultContent(HeroBlock01);

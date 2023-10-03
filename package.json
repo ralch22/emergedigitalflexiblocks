@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^4.6.3",
+    "prettier": "3.0.3",
     "rsync": "^0.6.1"
   },
   "engines": {

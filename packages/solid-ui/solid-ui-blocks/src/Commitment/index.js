@@ -1,1 +1,1 @@
-export { default } from './Commitment'
+export { default } from './Commitment';

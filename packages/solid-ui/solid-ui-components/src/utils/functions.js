@@ -1,14 +1,14 @@
-import { v4 } from "uuid";
+import { v4 } from 'uuid';
 import { isEmpty, remove } from 'lodash';
 import DOMPurify from 'dompurify';
 import { navigate } from 'gatsby';
 
-export const normalizePath = (path) => {
-  const pathStr = path.split("/");
+export const normalizePath = path => {
+  const pathStr = path.split('/');
 
   // If the path ends with '/' get the second last item
   if (path?.endsWith(`/`)) {
-    const strIndex = pathStr.length ? pathStr.length - 2 : "";
+    const strIndex = pathStr.length ? pathStr.length - 2 : '';
 
     if (strIndex) {
       path = `/${pathStr[strIndex]}/`;
@@ -17,7 +17,7 @@ export const normalizePath = (path) => {
 
   // If the path ends with '/' get the second last item.
   if (!path?.endsWith(`/`)) {
-    const strIndex = pathStr.length ? pathStr.length - 1 : "";
+    const strIndex = pathStr.length ? pathStr.length - 1 : '';
 
     if (strIndex) {
       path = `/${pathStr[strIndex]}/`;
@@ -33,9 +33,9 @@ export const normalizePath = (path) => {
  *
  * @return {string}
  */
-export const getFormattedDate = (dateString) => {
+export const getFormattedDate = dateString => {
   if (!dateString) {
-    return "";
+    return '';
   }
 
   const date = new Date(dateString);
@@ -49,14 +49,12 @@ export const getFormattedDate = (dateString) => {
  * @param {string} string String
  * @return {any}
  */
-export const getFloatVal = (string) => {
+export const getFloatVal = string => {
   let floatValue = string.match(/[+-]?\d+(\.\d+)?/g)[0];
   return null !== floatValue
     ? parseFloat(parseFloat(floatValue).toFixed(2))
-    : "";
+    : '';
 };
-
-
 
 export function handleLogout() {
   // Remove the authentication-related data from local storage
@@ -67,14 +65,13 @@ export function handleLogout() {
   navigate('/');
 }
 
-
 /**
  * Add first product.
  *
  * @param {Object} product Product
  * @return {{totalProductsCount: number, totalProductsPrice: any, products: Array}}
  */
-export const addFirstProduct = (product) => {
+export const addFirstProduct = product => {
   let productPrice = getFloatVal(product.price);
 
   let newCart = {
@@ -86,7 +83,7 @@ export const addFirstProduct = (product) => {
   const newProduct = createNewProduct(product, productPrice, 1);
   newCart.products.push(newProduct);
 
-  localStorage.setItem("woo-next-cart", JSON.stringify(newCart));
+  localStorage.setItem('woo-next-cart', JSON.stringify(newCart));
 
   return newCart;
 };
@@ -123,13 +120,13 @@ export const updateCart = (
   existingCart,
   product,
   qtyToBeAdded,
-  newQty = false
+  newQty = false,
 ) => {
   const updatedProducts = getUpdatedProducts(
     existingCart.products,
     product,
     qtyToBeAdded,
-    newQty
+    newQty,
   );
 
   const addPrice = (total, item) => {
@@ -148,7 +145,7 @@ export const updateCart = (
     totalProductsPrice: parseFloat(total.totalPrice),
   };
 
-  localStorage.setItem("woo-next-cart", JSON.stringify(updatedCart));
+  localStorage.setItem('woo-next-cart', JSON.stringify(updatedCart));
 
   return updatedCart;
 };
@@ -168,12 +165,12 @@ export const getUpdatedProducts = (
   existingProductsInCart,
   product,
   qtyToBeAdded,
-  newQty = false
+  newQty = false,
 ) => {
   // Check if the product already exits in the cart.
   const productExitsIndex = isProductInCart(
     existingProductsInCart,
-    product.productId
+    product.productId,
   );
 
   // If product exits ( index of that product found in the array ), update the product quantity and totalPrice
@@ -186,7 +183,7 @@ export const getUpdatedProducts = (
       ? parseInt(newQty)
       : parseInt(updatedProduct.qty + qtyToBeAdded);
     updatedProduct.totalPrice = parseFloat(
-      (updatedProduct.price * updatedProduct.qty).toFixed(2)
+      (updatedProduct.price * updatedProduct.qty).toFixed(2),
     );
 
     return updatedProducts;
@@ -226,17 +223,17 @@ const isProductInCart = (existingProductsInCart, productId) => {
  * @param {Integer} productId Product Id.
  * @return {any | string} Updated cart
  */
-export const removeItemFromCart = (productId) => {
+export const removeItemFromCart = productId => {
   if (!process.browser) {
     return null;
   }
 
-  let existingCart = localStorage.getItem("woo-next-cart");
+  let existingCart = localStorage.getItem('woo-next-cart');
   existingCart = JSON.parse(existingCart);
 
   // If there is only one item in the cart, delete the cart.
   if (1 === existingCart.products.length) {
-    localStorage.removeItem("woo-next-cart");
+    localStorage.removeItem('woo-next-cart');
     return null;
   }
 
@@ -257,7 +254,7 @@ export const removeItemFromCart = (productId) => {
     updatedCart.totalProductsPrice =
       updatedCart.totalProductsPrice - priceToBeDeductedFromTotal;
 
-    localStorage.setItem("woo-next-cart", JSON.stringify(updatedCart));
+    localStorage.setItem('woo-next-cart', JSON.stringify(updatedCart));
     return updatedCart;
   } else {
     return existingCart;
@@ -268,7 +265,7 @@ export const removeItemFromCart = (productId) => {
  * Returns cart data in the required format.
  * @param {String} data Cart data
  */
-export const getFormattedCart = (data) => {
+export const getFormattedCart = data => {
   let formattedCart = null;
 
   if (undefined === data || !data?.cart?.contents?.nodes?.length) {
@@ -302,8 +299,8 @@ export const getFormattedCart = (data) => {
           title: givenProduct?.node?.image.title,
         })
       : (product.image = {
-          sourceUrl: "https://via.placeholder.com/434",
-          srcSet: "https://via.placeholder.com/434",
+          sourceUrl: 'https://via.placeholder.com/434',
+          srcSet: 'https://via.placeholder.com/434',
           title: givenProduct?.node?.name,
         });
 
@@ -319,7 +316,7 @@ export const getFormattedCart = (data) => {
   return formattedCart;
 };
 
-export const createCheckoutData = (order) => {
+export const createCheckoutData = order => {
   const checkoutData = {
     clientMutationId: v4(),
     billing: {
@@ -351,7 +348,7 @@ export const createCheckoutData = (order) => {
     shipToDifferentAddress: false,
     paymentMethod: order.paymentMethod,
     isPaid: false,
-    transactionId: "hjkhjkhsdsdiui",
+    transactionId: 'hjkhjkhsdsdiui',
     customerNote: order.customerNote,
   };
 
@@ -381,7 +378,7 @@ export const getUpdatedItems = (products, newQty, cartKey) => {
   const updatedItems = [];
 
   // Loop through the product array.
-  products.map((cartItem) => {
+  products.map(cartItem => {
     // If you find the cart key of the product user is trying to update, push the key and new qty.
     if (cartItem.cartKey === cartKey) {
       updatedItems.push({
@@ -407,17 +404,17 @@ export const isUserLoggedIn = () => {
   let authData = null;
 
   if (process.browser) {
-    authData = JSON.parse(localStorage.getItem("auth"));
+    authData = JSON.parse(localStorage.getItem('auth'));
   }
   return authData;
 };
 
 export const logOut = () => {
-  localStorage.removeItem("auth");
+  localStorage.removeItem('auth');
 };
 
-export const setAuth = (authData) => {
-  localStorage.setItem("auth", JSON.stringify(authData));
+export const setAuth = authData => {
+  localStorage.setItem('auth', JSON.stringify(authData));
 };
 
 /**
@@ -426,10 +423,10 @@ export const setAuth = (authData) => {
  * @return {object} Auth Object containing token and user data, false on failure.
  */
 export const isUserValidated = () => {
-  let userLoggedInData = "";
+  let userLoggedInData = '';
 
   if (process.browser) {
-    let authTokenData = localStorage.getItem("auth");
+    let authTokenData = localStorage.getItem('auth');
 
     if (!isEmpty(authTokenData)) {
       authTokenData = JSON.parse(authTokenData);
@@ -443,7 +440,6 @@ export const isUserValidated = () => {
   return userLoggedInData;
 };
 
-
 /**
  * Function to get opengraph image.
  *
@@ -451,13 +447,16 @@ export const isUserValidated = () => {
  *
  * @return {void}
  */
-export const getOgImage = ( seo ) => {
+export const getOgImage = seo => {
+  if (
+    isEmpty(seo) ||
+    isEmpty(seo.opengraphImage) ||
+    isEmpty(seo.opengraphImage.sourceUrl)
+  ) {
+    return getDefaultOgImage(seo);
+  }
 
-	if ( isEmpty( seo ) || isEmpty( seo.opengraphImage ) || isEmpty( seo.opengraphImage.sourceUrl ) ) {
-		return getDefaultOgImage( seo );
-	}
-
-	return seo.opengraphImage.sourceUrl;
+  return seo.opengraphImage.sourceUrl;
 };
 
 /**
@@ -467,62 +466,59 @@ export const getOgImage = ( seo ) => {
  *
  * @return {void}
  */
-export const getDefaultOgImage = ( seo ) => {
+export const getDefaultOgImage = seo => {
+  if (
+    isEmpty(seo) ||
+    isEmpty(seo.social) ||
+    isEmpty(seo.social.facebook) ||
+    isEmpty(seo.social.facebook.defaultImage) ||
+    isEmpty(seo.social.facebook.defaultImage.sourceUrl)
+  ) {
+    return '';
+  }
 
-	if (
-		isEmpty( seo ) ||
-		isEmpty( seo.social ) ||
-		isEmpty( seo.social.facebook ) ||
-		isEmpty( seo.social.facebook.defaultImage ) ||
-		isEmpty( seo.social.facebook.defaultImage.sourceUrl )
-	) {
-		return '';
-	}
-
-	return seo.social.facebook.defaultImage.sourceUrl;
+  return seo.social.facebook.defaultImage.sourceUrl;
 };
 
 /**
  * Add to wish list
  * @param {Object} productData Product data.
  */
-export const addToWishList = ( productData ) => {
+export const addToWishList = productData => {
+  let updatedWishList;
 
-	let updatedWishList;
+  // Get the existing value of wishlist from localStorage.
+  const existingWishList = JSON.parse(localStorage.getItem('woo_wishlist'));
 
-	// Get the existing value of wishlist from localStorage.
-	const existingWishList = JSON.parse( localStorage.getItem( 'woo_wishlist' ) );
+  /**
+   * If its the first item
+   */
 
-	/**
-	 * If its the first item
-	 */
+  // Set it in localStorage and return.
+  if (isEmpty(existingWishList)) {
+    updatedWishList = addWishListToLocalStorage({
+      productIds: [productData.node.productId],
+      products: [productData],
+    });
+    return updatedWishList;
+  }
 
-	// Set it in localStorage and return.
-	if ( isEmpty( existingWishList ) ) {
-		updatedWishList = addWishListToLocalStorage( {
-			productIds: [ productData.node.productId ],
-			products: [ productData ]
-		} );
-		return updatedWishList;
-	}
+  /**
+   * If its not the first item
+   */
 
-	/**
-	 * If its not the first item
-	 */
+  // First set the updated wishlist to existing one.
+  updatedWishList = existingWishList;
 
-	// First set the updated wishlist to existing one.
-	updatedWishList = existingWishList;
+  // Then push the new items to existing array.
+  if (!existingWishList.productIds.includes(productData.node.productId)) {
+    updatedWishList.productIds.push(productData.node.productId);
+    updatedWishList.products.push(productData);
+  }
 
-	// Then push the new items to existing array.
-	if ( ! existingWishList.productIds.includes( productData.node.productId )  ) {
-		updatedWishList.productIds.push( productData.node.productId );
-		updatedWishList.products.push( productData );
-	}
-
-	// Update the localStorage with updated items.
-	addWishListToLocalStorage( updatedWishList );
-
-}
+  // Update the localStorage with updated items.
+  addWishListToLocalStorage(updatedWishList);
+};
 
 /**
  * Remove item from the list.
@@ -531,26 +527,34 @@ export const addToWishList = ( productData ) => {
  * @param getWishList
  * @param setWishList
  */
-export const removeProductFromWishList = ( productId, getWishList, setWishList ) => {
-	const existingWishlist = getWishListProducts();
-	let updatedWishList;
+export const removeProductFromWishList = (
+  productId,
+  getWishList,
+  setWishList,
+) => {
+  const existingWishlist = getWishListProducts();
+  let updatedWishList;
 
-	if ( ! isEmpty( existingWishlist ) ) {
-		const updatedItems = {
-			productIds: remove( existingWishlist.productIds, ( id ) => { return productId !== id } ),
-			products: remove( existingWishlist.products, ( product ) => { return productId !== product.node.productId } )
-		}
+  if (!isEmpty(existingWishlist)) {
+    const updatedItems = {
+      productIds: remove(existingWishlist.productIds, id => {
+        return productId !== id;
+      }),
+      products: remove(existingWishlist.products, product => {
+        return productId !== product.node.productId;
+      }),
+    };
 
-		updatedWishList = addWishListToLocalStorage( updatedItems  );
+    updatedWishList = addWishListToLocalStorage(updatedItems);
 
-		if ( 0 === updatedItems.productIds.length ) {
-			setWishList(null);
-		} else {
-			getWishList();
-		}
+    if (0 === updatedItems.productIds.length) {
+      setWishList(null);
+    } else {
+      getWishList();
+    }
 
-		return updatedWishList;
-	}
+    return updatedWishList;
+  }
 };
 
 /**
@@ -558,9 +562,9 @@ export const removeProductFromWishList = ( productId, getWishList, setWishList )
  *
  * @param wishList
  */
-export const addWishListToLocalStorage = (wishList) => {
-	return localStorage.setItem( 'woo_wishlist', JSON.stringify( wishList ) )
-}
+export const addWishListToLocalStorage = wishList => {
+  return localStorage.setItem('woo_wishlist', JSON.stringify(wishList));
+};
 
 /**
  * Checks if the product with given id exists in the wishlist.
@@ -568,25 +572,25 @@ export const addWishListToLocalStorage = (wishList) => {
  * @param productId
  * @returns {boolean}
  */
-export const isProductInWishList = ( productId ) => {
-	if ( ! process.browser ) {
-		return null;
-	}
-	const existingWishList = JSON.parse( localStorage.getItem( 'woo_wishlist' ) );
+export const isProductInWishList = productId => {
+  if (!process.browser) {
+    return null;
+  }
+  const existingWishList = JSON.parse(localStorage.getItem('woo_wishlist'));
 
-	if ( ! isEmpty( existingWishList ) ) {
-		return existingWishList.productIds.includes( productId );
-	} else {
-		return false;
-	}
-}
+  if (!isEmpty(existingWishList)) {
+    return existingWishList.productIds.includes(productId);
+  } else {
+    return false;
+  }
+};
 
 export const getWishListProducts = () => {
-	if ( ! process.browser ) {
-		return null;
-	}
-	return JSON.parse( localStorage.getItem( 'woo_wishlist' ) );
-}
+  if (!process.browser) {
+    return null;
+  }
+  return JSON.parse(localStorage.getItem('woo_wishlist'));
+};
 
 /**
  * Sanitize markup or text when used inside dangerouslysetInnerHTML
@@ -595,6 +599,6 @@ export const getWishListProducts = () => {
  *
  * @return {string} Sanitized string
  */
-export const sanitize = (content) => {
-	return process.browser ? DOMPurify.sanitize(content) : content
-}
+export const sanitize = content => {
+  return process.browser ? DOMPurify.sanitize(content) : content;
+};

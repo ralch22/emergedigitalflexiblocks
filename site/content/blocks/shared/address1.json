@@ -1,15 +1,14 @@
 {
-    "text": [
-        {
-          "text": "Address: Tower 1 L35/100 Barangaroo Ave, Barangaroo NSW 2000",
-          "variant": "medium",
-          "color": "white"
-        },
-        {
-          "text": "Phone: (02) 9055 3835",
-          "variant": "medium",
-          "color": "white"
-        }
-      ]
-  }
-  
+  "text": [
+    {
+      "text": "Address: Tower 1 L35/100 Barangaroo Ave, Barangaroo NSW 2000",
+      "variant": "medium",
+      "color": "white"
+    },
+    {
+      "text": "Phone: (02) 9055 3835",
+      "variant": "medium",
+      "color": "white"
+    }
+  ]
+}

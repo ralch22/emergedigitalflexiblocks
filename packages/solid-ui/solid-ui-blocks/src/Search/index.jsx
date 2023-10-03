@@ -1,21 +1,21 @@
-import React, { useState, useCallback, useTransition, Suspense } from 'react'
-import SearchInput from './Search.Input'
+import React, { useState, useCallback, useTransition, Suspense } from 'react';
+import SearchInput from './Search.Input';
 
-const SearchComponent = React.lazy(() => import('./Search'))
+const SearchComponent = React.lazy(() => import('./Search'));
 
 const Search = () => {
-  const [transition, startTransition] = React.useTransition()
-  const [searchLoaded, setSearchLoaded] = useState()
+  const [transition, startTransition] = React.useTransition();
+  const [searchLoaded, setSearchLoaded] = useState();
 
   const loadSearchModule = useCallback(() => {
     startTransition(() => {
-      setSearchLoaded(true)
-    })
-  })
+      setSearchLoaded(true);
+    });
+  });
 
   const loadSearch = useCallback(() => {
-    loadSearchModule()
-  })
+    loadSearchModule();
+  });
 
   return searchLoaded ? (
     <Suspense fallback={null}>
@@ -23,7 +23,7 @@ const Search = () => {
     </Suspense>
   ) : (
     <SearchInput loadSearch={loadSearch} />
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

@@ -1,19 +1,19 @@
-import React from 'react'
-import { css } from 'theme-ui'
-import { Card, Text, Heading, Box } from 'theme-ui'
-import NewsletterForm from '@solid-ui-components/NewsletterForm'
-import useMailChimp from '@helpers/useMailChimp'
-import { FaRegPaperPlane, FaWind } from 'react-icons/fa'
+import React from 'react';
+import { css } from 'theme-ui';
+import { Card, Text, Heading, Box } from 'theme-ui';
+import NewsletterForm from '@solid-ui-components/NewsletterForm';
+import useMailChimp from '@helpers/useMailChimp';
+import { FaRegPaperPlane, FaWind } from 'react-icons/fa';
 
 const styles = {
   card: {
-    position: `relative`
+    position: `relative`,
   },
   wrapper: {
     maxWidth: 500,
     textAlign: `center`,
     mx: `auto`,
-    py: 3
+    py: 3,
   },
   icons: {
     display: [`none`, null, `block`],
@@ -21,38 +21,33 @@ const styles = {
     top: `-3rem`,
     left: `5rem`,
     svg: {
-      display: `block`
-    }
+      display: `block`,
+    },
   },
   plane: {
     fontSize: `9rem`,
-    color: `beta`
+    color: `beta`,
   },
   wind: {
     fontSize: `7rem`,
     color: `omegaLight`,
     transform: `rotate(120deg)`,
     mt: `0.5rem`,
-    ml: `-3rem`
+    ml: `-3rem`,
   },
   form: {
     maxWidth: 300,
     mx: `auto`,
-    mt: 4
-  }
-}
+    mt: 4,
+  },
+};
 
-const NewsletterExpanded = ({ simple, content: { collection, form }  }) => {
-  const {
-    handleSubmit,
-    canSubmit,
-    submitting,
-    message,
-    success
-  } = useMailChimp()
+const NewsletterExpanded = ({ simple, content: { collection, form } }) => {
+  const { handleSubmit, canSubmit, submitting, message, success } =
+    useMailChimp();
 
   return (
-    <Card variant='paper' sx={styles.card}>
+    <Card variant="paper" sx={styles.card}>
       <Box sx={styles.wrapper}>
         {!simple && (
           <Box sx={styles.icons}>
@@ -60,22 +55,20 @@ const NewsletterExpanded = ({ simple, content: { collection, form }  }) => {
             <FaWind css={css(styles.wind)} />
           </Box>
         )}
-        <Heading variant='h2'>Subscribe to our newsletter!</Heading>
-        <Text variant='p'>
+        <Heading variant="h2">Subscribe to our newsletter!</Heading>
+        <Text variant="p">
           We'll send you the best of our blog just once a month. We promise.
         </Text>
         <Box sx={styles.form}>
-          <NewsletterForm
-            form={form}
-          />
+          <NewsletterForm form={form} />
         </Box>
       </Box>
     </Card>
-  )
-}
+  );
+};
 
 NewsletterExpanded.defaultProps = {
-  simple: false
-}
+  simple: false,
+};
 
-export default NewsletterExpanded
+export default NewsletterExpanded;

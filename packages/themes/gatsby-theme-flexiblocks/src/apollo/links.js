@@ -36,9 +36,11 @@ export const middlewareLink = new ApolloLink((operation, forward) => {
 
 // Afterware operation
 export const afterwareLink = new ApolloLink((operation, forward) => {
-  return forward(operation).map((response) => {
+  return forward(operation).map(response => {
     const context = operation.getContext();
-    const { response: { headers } } = context;
+    const {
+      response: { headers },
+    } = context;
     const session = headers.get('woocommerce-session');
 
     if (session) {

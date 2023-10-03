@@ -3,6 +3,6 @@ export default {
   root: {
     WebkitFontSmoothing: `antialiased`,
     textDecoration: `none`,
-    overflowX: `hidden`
-  }
-}
+    overflowX: `hidden`,
+  },
+};

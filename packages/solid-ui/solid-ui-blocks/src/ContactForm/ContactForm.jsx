@@ -1,16 +1,16 @@
-import React from 'react'
-import { Card } from 'theme-ui'
-import ContactFormComponent from '@solid-ui-components/ContactForm'
-import useForm from '@helpers/useForm'
+import React from 'react';
+import { Card } from 'theme-ui';
+import ContactFormComponent from '@solid-ui-components/ContactForm';
+import useForm from '@helpers/useForm';
 
 const ContactForm = () => {
-  const { handleSubmit, submitting, success } = useForm()
+  const { handleSubmit, submitting, success } = useForm();
 
   return (
-    <Card variant='paper'>
+    <Card variant="paper">
       <ContactFormComponent {...{ handleSubmit, submitting, success }} />
     </Card>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

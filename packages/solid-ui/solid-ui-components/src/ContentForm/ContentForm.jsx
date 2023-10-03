@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
-import { Box, css, Spinner } from 'theme-ui'
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { Box, css, Spinner } from 'theme-ui';
 import { navigate } from 'gatsby';
-import Reveal from '@solid-ui-components/Reveal'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox'
-import FormInput from '@solid-ui-components/ContentForm/FormInput'
-import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea'
-import FormHidden from '@solid-ui-components/ContentForm/FormHidden'
-import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi'
-import useForm from '@helpers/useForm'
+import Reveal from '@solid-ui-components/Reveal';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox';
+import FormInput from '@solid-ui-components/ContentForm/FormInput';
+import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea';
+import FormHidden from '@solid-ui-components/ContentForm/FormHidden';
+import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi';
+import useForm from '@helpers/useForm';
 import { useFormik } from 'formik'; // Import Formik
 import * as Yup from 'yup'; // Import Yup for validation
-import { FormContext } from '@solid-ui-components/ContentForm'
-import Divider from '@solid-ui-components/Divider/Divider'
-import { useMutation } from '@apollo/client'
+import { FormContext } from '@solid-ui-components/ContentForm';
+import Divider from '@solid-ui-components/Divider/Divider';
+import { useMutation } from '@apollo/client';
 import { v4 as uuidv4 } from 'uuid';
-import LOGIN from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/login'
-import REGISTER from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/register'
+import LOGIN from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/login';
+import REGISTER from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/register';
 
 const styles = {
   form: {
-    position: `relative`
+    position: `relative`,
   },
   responseOverlay: {
     position: `absolute`,
@@ -36,8 +36,8 @@ const styles = {
     left: 0,
     active: {
       zIndex: 0,
-      backgroundColor: `rgba(255,255,255,0.85)`
-    }
+      backgroundColor: `rgba(255,255,255,0.85)`,
+    },
   },
   buttonsWrapper: {
     display: `inline-flex`,
@@ -46,19 +46,22 @@ const styles = {
     '.button-group-button + .button-group-link': {
       flex: `100%`,
       ml: 0,
-      mt: 3
-    } 
-  }
-}
-
+      mt: 3,
+    },
+  },
+};
 
 // ... (previous imports and code)
 
 const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
-  const [register, { data: registerData, loading: registerLoading, error: registerError }] = useMutation(REGISTER);
-const [login, { data: loginData, loading: loginLoading, error: loginError }] = useMutation(LOGIN);
+  const [
+    register,
+    { data: registerData, loading: registerLoading, error: registerError },
+  ] = useMutation(REGISTER);
+  const [login, { data: loginData, loading: loginLoading, error: loginError }] =
+    useMutation(LOGIN);
 
-const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (registerError) {
@@ -107,7 +110,7 @@ const [isVisible, setIsVisible] = useState(false);
   // Initialize different initialValues objects based on button text
   let initialValues = {};
   const buttonValue = buttons[0].text;
-  
+
   switch (buttonValue) {
     case 'Contact':
       initialValues = {
@@ -141,8 +144,7 @@ const [isVisible, setIsVisible] = useState(false);
 
   const formik = useFormik({
     initialValues,
-    onSubmit: async (values) => {
-
+    onSubmit: async values => {
       switch (buttonValue) {
         case 'Send Message': // Handle contact form submission
           await submitContactForm(values);
@@ -159,7 +161,7 @@ const [isVisible, setIsVisible] = useState(false);
       }
     },
   });
-  const handleLogin = async (values) => {
+  const handleLogin = async values => {
     const loginInput = {
       username: values.username,
       password: values.password,
@@ -168,7 +170,11 @@ const [isVisible, setIsVisible] = useState(false);
     try {
       const response = await login({ variables: { input: loginInput } });
 
-      if (response.data && response.data.login && response.data.login.authToken) {
+      if (
+        response.data &&
+        response.data.login &&
+        response.data.login.authToken
+      ) {
         // Successful login, handle authToken or redirect to a new page
         const auth = response.data.login;
         localStorage.setItem('auth', JSON.stringify(auth)); // Store the token in localStorage
@@ -183,11 +189,11 @@ const [isVisible, setIsVisible] = useState(false);
       console.error('Login error:', error.message);
     }
   };
-  const submitContactForm = async (values) => {
+  const submitContactForm = async values => {
     const portalId = GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
     const formGuid = GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
     const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
-  
+
     const requestBody = {
       portalId,
       formGuid,
@@ -207,10 +213,10 @@ const [isVisible, setIsVisible] = useState(false);
         {
           name: 'message',
           value: values.message,
-        }
+        },
       ],
     };
-  
+
     const requestOptions = {
       method: 'POST',
       headers: {
@@ -218,10 +224,10 @@ const [isVisible, setIsVisible] = useState(false);
       },
       body: JSON.stringify(requestBody),
     };
-  
+
     try {
       const response = await fetch(apiUrl, requestOptions);
-      
+
       if (response.ok) {
         const responseData = await response.json();
         return responseData;
@@ -234,7 +240,7 @@ const [isVisible, setIsVisible] = useState(false);
     }
   };
 
-  const submitRegisterForm = async (values) => {
+  const submitRegisterForm = async values => {
     const clientMutationId = uuidv4();
 
     const registerInput = {
@@ -247,10 +253,7 @@ const [isVisible, setIsVisible] = useState(false);
     try {
       const response = await register({ variables: { input: registerInput } });
 
-      if (
-        response.data &&
-        response.data.registerUser
-      ) {
+      if (response.data && response.data.registerUser) {
         // Successful registration, handle authToken or redirect to a new page
         const auth = response.data.registerUser;
         localStorage.setItem('auth', JSON.stringify(auth)); // Store the token in localStorage
@@ -266,10 +269,7 @@ const [isVisible, setIsVisible] = useState(false);
     }
   };
   return (
-    <form
-      css={css(styles.form)}
-      onSubmit={formik.handleSubmit}
-    >
+    <form css={css(styles.form)} onSubmit={formik.handleSubmit}>
       <Box variant="forms.row">
         {fields?.map(({ identifier, value, ...props }, index) => {
           let Component;
@@ -310,60 +310,70 @@ const [isVisible, setIsVisible] = useState(false);
           );
         })}
       </Box>
-       {/* Error messages */}
-       {formik.errors.password && formik.touched.password && (
+      {/* Error messages */}
+      {formik.errors.password && formik.touched.password && (
         <div>{formik.errors.password}</div>
       )}
       {formik.errors.confirmPassword && formik.touched.confirmPassword && (
         <div>{formik.errors.confirmPassword}</div>
       )}
       <Box sx={{ textAlign: `center` }}>
-        
-        <button type='submit' style={{ background: 'transparent', border: 'none' }}>
-        <ContentButtons
-          content={buttons}
-          wrapperStyles={styles.buttonsWrapper}
-        />
+        <button
+          type="submit"
+          style={{ background: 'transparent', border: 'none' }}
+        >
+          <ContentButtons
+            content={buttons}
+            wrapperStyles={styles.buttonsWrapper}
+          />
         </button>
       </Box>
-      {buttonValue === "Create Account" ? (
+      {buttonValue === 'Create Account' ? (
         <Box
-        sx={styles.responseOverlay}
-        css={isVisible || registerLoading || registerData ? styles.responseOverlay.active : null}
-      >
-        {registerLoading && (
-          <Reveal effect='fadeInDown'>
-            <Spinner size='64' color='alpha' />
-          </Reveal>
-        )}
-        {registerData && (
-          <Reveal effect='fadeInDown'>
-            <BiCheckCircle size='64' css={css({ color: `success` })} />
-          </Reveal>
-        )}
-        {registerError && isVisible && (
-          <BiErrorCircle size='64' css={css({ color: `error` })} />
-        )}
-      </Box> 
-      ) : buttonValue === "Login" ? (
+          sx={styles.responseOverlay}
+          css={
+            isVisible || registerLoading || registerData
+              ? styles.responseOverlay.active
+              : null
+          }
+        >
+          {registerLoading && (
+            <Reveal effect="fadeInDown">
+              <Spinner size="64" color="alpha" />
+            </Reveal>
+          )}
+          {registerData && (
+            <Reveal effect="fadeInDown">
+              <BiCheckCircle size="64" css={css({ color: `success` })} />
+            </Reveal>
+          )}
+          {registerError && isVisible && (
+            <BiErrorCircle size="64" css={css({ color: `error` })} />
+          )}
+        </Box>
+      ) : buttonValue === 'Login' ? (
         <Box
-        sx={styles.responseOverlay}
-        css={isVisible || loginLoading || loginData ? styles.responseOverlay.active : null}
-      >
-        {loginLoading && (
-          <Reveal effect='fadeInDown'>
-            <Spinner size='64' color='alpha' />
-          </Reveal>
-        )}
-        {loginData && (
-          <Reveal effect='fadeInDown'>
-            <BiCheckCircle size='64' css={css({ color: `success` })} />
-          </Reveal>
-        )}
-        {loginError && isVisible && (
-          <BiErrorCircle size='64' css={css({ color: `error` })} />
-        )}
-      </Box> 
+          sx={styles.responseOverlay}
+          css={
+            isVisible || loginLoading || loginData
+              ? styles.responseOverlay.active
+              : null
+          }
+        >
+          {loginLoading && (
+            <Reveal effect="fadeInDown">
+              <Spinner size="64" color="alpha" />
+            </Reveal>
+          )}
+          {loginData && (
+            <Reveal effect="fadeInDown">
+              <BiCheckCircle size="64" css={css({ color: `success` })} />
+            </Reveal>
+          )}
+          {loginError && isVisible && (
+            <BiErrorCircle size="64" css={css({ color: `error` })} />
+          )}
+        </Box>
       ) : null}
       {/* */}
     </form>
@@ -373,8 +383,7 @@ const [isVisible, setIsVisible] = useState(false);
 ContentForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
-  success: PropTypes.bool
-}
+  success: PropTypes.bool,
+};
 
 export default ContentForm;
-

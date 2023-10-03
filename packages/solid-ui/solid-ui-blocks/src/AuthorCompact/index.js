@@ -1,1 +1,1 @@
-export { default } from './AuthorCompact'
+export { default } from './AuthorCompact';

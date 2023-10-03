@@ -11,5 +11,5 @@
       "@solid-ui-blocks/*": ["packages/solid-ui/solid-ui-blocks/src/*"]
     }
   },
-  "exclude": ["node_modules", "public"] 
+  "exclude": ["node_modules", "public"]
 }

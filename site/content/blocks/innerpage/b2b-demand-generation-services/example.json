@@ -1,26 +1,24 @@
 {
-    "text": [
-     
-      {
-        "text": "What Is an Example of a Demand Generator?",
-        "variant": "h2",
-        "color": "white"
-      },
-      {
-        "text": "A demand generator is a tool or strategy that creates interest in your products and services among your target market. One example of a demand generator often used in B2B data-driven marketing solutions is predictive lead scoring.",
-        "variant": "medium",
-        "color": "white"
-      },
-      {
-        "text": "Lead scoring uses advanced algorithms, sales data, and customer behaviors to assign a numerical score to each lead. This score indicates the likelihood of a lead converting into a paying customer.",
-        "variant": "medium",
-        "color": "white"
-      },
-      {
-        "text": "As B2B demand generation experts, we optimize your marketing and sales pipeline. The goal is to target the most promising prospects by focusing on high-scoring leads.",
-        "variant": "medium",
-        "color": "white"
-      }
-    ]
-  }
-  
+  "text": [
+    {
+      "text": "What Is an Example of a Demand Generator?",
+      "variant": "h2",
+      "color": "white"
+    },
+    {
+      "text": "A demand generator is a tool or strategy that creates interest in your products and services among your target market. One example of a demand generator often used in B2B data-driven marketing solutions is predictive lead scoring.",
+      "variant": "medium",
+      "color": "white"
+    },
+    {
+      "text": "Lead scoring uses advanced algorithms, sales data, and customer behaviors to assign a numerical score to each lead. This score indicates the likelihood of a lead converting into a paying customer.",
+      "variant": "medium",
+      "color": "white"
+    },
+    {
+      "text": "As B2B demand generation experts, we optimize your marketing and sales pipeline. The goal is to target the most promising prospects by focusing on high-scoring leads.",
+      "variant": "medium",
+      "color": "white"
+    }
+  ]
+}

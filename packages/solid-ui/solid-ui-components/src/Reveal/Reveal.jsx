@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useInView } from 'react-intersection-observer'
-import { motion } from 'framer-motion'
-import variants from './Reveal.variants'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+import variants from './Reveal.variants';
 
 const Reveal = ({
   effect,
@@ -16,8 +16,8 @@ const Reveal = ({
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold
-  })
+    threshold,
+  });
 
   return (
     <motion.div
@@ -28,16 +28,16 @@ const Reveal = ({
       transition={{
         duration,
         delay,
-        ...transition
+        ...transition,
       }}
       {...props}
     >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
-export default Reveal
+export default Reveal;
 
 Reveal.defaultProps = {
   effect: 'fadeInUp',
@@ -45,9 +45,9 @@ Reveal.defaultProps = {
   duration: 0.5,
   delay: 0,
   transition: null,
-  animate: null
-}
+  animate: null,
+};
 
 Reveal.propTypes = {
-  effect: PropTypes.oneOf(Object.keys(variants))
-}
+  effect: PropTypes.oneOf(Object.keys(variants)),
+};

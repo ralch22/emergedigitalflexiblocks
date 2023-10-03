@@ -1,18 +1,18 @@
-import React from 'react'
-import mergeWith from 'lodash.mergewith'
-import SVG from 'react-inlinesvg'
-import { Box, css } from 'theme-ui'
+import React from 'react';
+import mergeWith from 'lodash.mergewith';
+import SVG from 'react-inlinesvg';
+import { Box, css } from 'theme-ui';
 
 const ContentIcon = ({ content, round, p, ...props }) => {
-  if (!content) return null
+  if (!content) return null;
 
-  const { src, ...contentRest } = content
+  const { src, ...contentRest } = content;
 
-  if (!src) return null
+  if (!src) return null;
 
   const mergedProps = mergeWith({}, props, contentRest, (a, b) =>
-    b === null ? a : undefined
-  )
+    b === null ? a : undefined,
+  );
 
   return (
     <Box
@@ -21,7 +21,7 @@ const ContentIcon = ({ content, round, p, ...props }) => {
         verticalAlign: `middle`,
         borderRadius: round ? `full` : `lg`,
         minWidth: `auto`,
-        bg: mergedProps.bg
+        bg: mergedProps.bg,
       }}
       p={mergedProps.bg && p}
       {...props}
@@ -31,16 +31,16 @@ const ContentIcon = ({ content, round, p, ...props }) => {
         css={css({
           fill: mergedProps.color,
           size: `icon.${mergedProps.size || 'md'}`,
-          display: `block`
+          display: `block`,
         })}
       />
     </Box>
-  )
-}
+  );
+};
 
 ContentIcon.defaultProps = {
   p: 3,
-  round: false
-}
+  round: false,
+};
 
-export default ContentIcon
+export default ContentIcon;

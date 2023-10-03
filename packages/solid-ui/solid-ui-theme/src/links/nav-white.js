@@ -7,9 +7,9 @@ export default {
   transition: `all 250ms ease`,
   p: 0,
   ':visited': {
-    color: 'white'
+    color: 'white',
   },
   ':hover': {
-    textShadow: `default`
-  }
-}
+    textShadow: `default`,
+  },
+};

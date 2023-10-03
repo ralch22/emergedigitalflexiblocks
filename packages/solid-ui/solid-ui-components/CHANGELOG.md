@@ -5,112 +5,74 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [4.0.0](https://github.com/ElegantStack/gatsby-themes/compare/@elegantstack/solid-ui-components@3.8.0...@elegantstack/solid-ui-components@4.0.0) (2023-03-11)
 
-
 ### Features
 
-* upgrade to Gatsby v5 and update other dependencies ([aba9eb2](https://github.com/ElegantStack/gatsby-themes/commit/aba9eb243ebe39f0f02885b9693703a316c0a91f))
-
+- upgrade to Gatsby v5 and update other dependencies ([aba9eb2](https://github.com/ElegantStack/gatsby-themes/commit/aba9eb243ebe39f0f02885b9693703a316c0a91f))
 
 ### Bug Fixes
 
-* fix react warnings and hydration errors ([cd0f1e9](https://github.com/ElegantStack/gatsby-themes/commit/cd0f1e9dc127a426c95550e46b925047f1e7d1ca))
-
-
-
+- fix react warnings and hydration errors ([cd0f1e9](https://github.com/ElegantStack/gatsby-themes/commit/cd0f1e9dc127a426c95550e46b925047f1e7d1ca))
 
 ## [3.8.0](https://github.com/ElegantStack/gatsby-themes/compare/@elegantstack/solid-ui-components@3.7.0...@elegantstack/solid-ui-components@3.8.0) (2022-05-18)
 
-
 ### Features
 
-* Upgrade Gatsby and React and other depenedencies ([144ccc1](https://github.com/ElegantStack/gatsby-themes/commit/144ccc14a11f5f5cb5721d744922a3f164410f17))
-
-
+- Upgrade Gatsby and React and other depenedencies ([144ccc1](https://github.com/ElegantStack/gatsby-themes/commit/144ccc14a11f5f5cb5721d744922a3f164410f17))
 
 ## [3.7.0](https://github.com/ElegantStack/gatsby-themes/compare/@elegantstack/solid-ui-components@3.6.0...@elegantstack/solid-ui-components@3.7.0) (2022-02-28)
 
-
 ### Features
 
-* **solid-ui-components:** add link property to image contentType ([a57bdcb](https://github.com/ElegantStack/gatsby-themes/commit/a57bdcbcbe87a61214a47c26e5c48c420931b6fe))
-* upgrade Gatsby and other dependencies ([c42e47d](https://github.com/ElegantStack/gatsby-themes/commit/c42e47d5aea6364d7671bf5f75fbed7cee431c73))
-
-
-
+- **solid-ui-components:** add link property to image contentType ([a57bdcb](https://github.com/ElegantStack/gatsby-themes/commit/a57bdcbcbe87a61214a47c26e5c48c420931b6fe))
+- upgrade Gatsby and other dependencies ([c42e47d](https://github.com/ElegantStack/gatsby-themes/commit/c42e47d5aea6364d7671bf5f75fbed7cee431c73))
 
 ## [3.6.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@3.5.0...@elegantstack/solid-ui-components@3.6.0) (2021-11-15)
 
-
 ### Features
 
-* upgrade to Gatsby v4 ([e481e4a](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/e481e4ab705d20c9d3daf3b2048f29eef308f420))
-
+- upgrade to Gatsby v4 ([e481e4a](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/e481e4ab705d20c9d3daf3b2048f29eef308f420))
 
 ### Bug Fixes
 
-* **solid-ui-components:** fix FormCheckbox not working ([9c1d401](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/9c1d40152721521f62b5b934df30f1bb72fee2c3))
-* **solid-ui-components:** fix map marker location ([30f4745](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/30f4745014cfc3aaacbc5dbd40bd78f63dd359bb))
-
-
-
+- **solid-ui-components:** fix FormCheckbox not working ([9c1d401](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/9c1d40152721521f62b5b934df30f1bb72fee2c3))
+- **solid-ui-components:** fix map marker location ([30f4745](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/30f4745014cfc3aaacbc5dbd40bd78f63dd359bb))
 
 ## [3.5.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@3.4.0...@elegantstack/solid-ui-components@3.5.0) (2021-09-07)
 
-
 ### Features
 
-* upgrade Gatsby and dependencies ([d59a731](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/d59a731107925db1a03367d9a24d7c40dae622e6))
-
+- upgrade Gatsby and dependencies ([d59a731](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/d59a731107925db1a03367d9a24d7c40dae622e6))
 
 ### Bug Fixes
 
-* **solid-ui-components:** fix map marker position ([ebc99cc](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/ebc99ccde39b84b8b3e32c719a0213cdf09b2c62))
-
-
-
+- **solid-ui-components:** fix map marker position ([ebc99cc](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/ebc99ccde39b84b8b3e32c719a0213cdf09b2c62))
 
 ## [3.4.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@3.3.0...@elegantstack/solid-ui-components@3.4.0) (2021-08-19)
 
-
 ### Bug Fixes
 
-* **soli-ui-components:** fix hidden fields getting ignored in form handling ([a224f4e](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/a224f4ec41a288c67e34921be9463400724fdc1f))
-
-
-
+- **soli-ui-components:** fix hidden fields getting ignored in form handling ([a224f4e](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/a224f4ec41a288c67e34921be9463400724fdc1f))
 
 ## [3.3.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@3.2.0...@elegantstack/solid-ui-components@3.3.0) (2021-08-01)
 
-
 ### Features
 
-* update Gatsby and dependencies ([95b3b72](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/95b3b7234b39eb66e5957f9acc0d10519b400941))
-
-
-
+- update Gatsby and dependencies ([95b3b72](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/95b3b7234b39eb66e5957f9acc0d10519b400941))
 
 ## [3.2.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@3.1.0...@elegantstack/solid-ui-components@3.2.0) (2021-06-17)
 
-
 ### Features
 
-* upgrade gatsby and other dependencies ([941b5ea](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/941b5ea131271f222c557d9ab3b38da5a8140d2d))
-* **gatsby-blocks-core, solid-ui-components:** add SVG support to ContentImages ([b4c6e39](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/b4c6e39d59d88758be36fe971f20424a4b6ad680))
-* **solid-ui-components:** add support for mailto in URLs ([3c3e84c](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/3c3e84c6659080b8190bda36f22311da4a7d12b2))
-
-
-
+- upgrade gatsby and other dependencies ([941b5ea](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/941b5ea131271f222c557d9ab3b38da5a8140d2d))
+- **gatsby-blocks-core, solid-ui-components:** add SVG support to ContentImages ([b4c6e39](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/b4c6e39d59d88758be36fe971f20424a4b6ad680))
+- **solid-ui-components:** add support for mailto in URLs ([3c3e84c](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/3c3e84c6659080b8190bda36f22311da4a7d12b2))
 
 ## [3.1.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@3.0.0...@elegantstack/solid-ui-components@3.1.0) (2021-05-19)
 
-
 ### Features
 
-* upgrade dependencies ([dae5750](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/dae57508db7811d0a33ceeb53d57f9b680196f37))
-* **solid-ui-components:** add gradient text style to ContentText component ([455394f](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/455394f08ad580843cfc25ebcba2d83da2ec814e))
-
-
-
+- upgrade dependencies ([dae5750](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/dae57508db7811d0a33ceeb53d57f9b680196f37))
+- **solid-ui-components:** add gradient text style to ContentText component ([455394f](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/commit/455394f08ad580843cfc25ebcba2d83da2ec814e))
 
 ## [3.0.0](https://gitlab.com/alimoosavi15/gatsby-theme-flexiblog/compare/@elegantstack/solid-ui-components@2.1.0...@elegantstack/solid-ui-components@3.0.0) (2021-04-22)
 

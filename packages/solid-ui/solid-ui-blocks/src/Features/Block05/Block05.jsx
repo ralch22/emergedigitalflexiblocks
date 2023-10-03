@@ -1,27 +1,27 @@
-import React from 'react'
-import { Container, Flex, Box, css, Grid } from 'theme-ui'
-import Divider from '@solid-ui-components/Divider'
-import Reveal from '@solid-ui-components/Reveal'
-import ListItem from '@solid-ui-components/ListItem'
-import ContentContainer from '@solid-ui-components/ContentContainer'
-import ContentText from '@solid-ui-components/ContentText'
-import Icon from '@solid-ui-components/ContentIcon'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, css, Grid } from 'theme-ui';
+import Divider from '@solid-ui-components/Divider';
+import Reveal from '@solid-ui-components/Reveal';
+import ListItem from '@solid-ui-components/ListItem';
+import ContentContainer from '@solid-ui-components/ContentContainer';
+import ContentText from '@solid-ui-components/ContentText';
+import Icon from '@solid-ui-components/ContentIcon';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   listItem: {
     flex: `1 1 0`,
     minWidth: 300,
-    p: 3
+    p: 3,
   },
   itemDescription: {
     flexBasis: `3/5`,
     flexGrow: 1,
     order: [1, null, 0],
-    mb: 3
-  }
-}
+    mb: 3,
+  },
+};
 
 const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
   <Container as={Reveal}>
@@ -36,16 +36,16 @@ const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
             ({ text, icon, collection, buttons, container }, index) => (
               <Reveal
                 key={`item-${index}`}
-                effect='fadeInGrow'
+                effect="fadeInGrow"
                 delay={0.15 * (index + 1)}
                 css={css(styles.listItem)}
               >
                 <ContentContainer
                   content={container}
-                  variant='cards.paper'
+                  variant="cards.paper"
                   sx={{ height: `full` }}
                 >
-                  <Icon content={icon} size='md' mr='3' mb='3' />
+                  <Icon content={icon} size="md" mr="3" mb="3" />
                   <ContentText content={text?.[0]} />
                   <Flex sx={{ alignItems: `center`, flexWrap: `wrap` }}>
                     <ContentText
@@ -69,13 +69,20 @@ const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
                   )}
                 </ContentContainer>
               </Reveal>
-            )
+            ),
           )}
         </Grid>
       </>
     )}
-    <Flex sx={{ width: '100%', justifyContent: "center", alignItems: "center", flexDirection: 'column' }}>
-    {buttons && (
+    <Flex
+      sx={{
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      {buttons && (
         <>
           <Divider space={3} />
           <ContentButtons content={buttons} />
@@ -83,6 +90,6 @@ const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
       )}
     </Flex>
   </Container>
-)
+);
 
-export default WithDefaultContent(FeaturesBlock05)
+export default WithDefaultContent(FeaturesBlock05);

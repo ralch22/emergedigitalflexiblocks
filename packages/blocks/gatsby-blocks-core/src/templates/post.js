@@ -1,7 +1,7 @@
-import { graphql } from 'gatsby'
-import PostPage from '../containers/Post'
+import { graphql } from 'gatsby';
+import PostPage from '../containers/Post';
 
-export default PostPage
+export default PostPage;
 
 export const pageQuery = graphql`
   query PostPageQuery(
@@ -165,4 +165,4 @@ export const pageQuery = graphql`
       title
     }
   }
-`
+`;

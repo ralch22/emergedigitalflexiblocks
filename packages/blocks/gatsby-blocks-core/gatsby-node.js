@@ -1,10 +1,10 @@
-exports.createSchemaCustomization = require('./src/createSchemaCustomization')
+exports.createSchemaCustomization = require('./src/createSchemaCustomization');
 
-exports.onCreateNode = require('./src/onCreateNode')
+exports.onCreateNode = require('./src/onCreateNode');
 
-exports.createPages = require('./src/createPages')
+exports.createPages = require('./src/createPages');
 
-exports.onCreatePage = require('./src/onCreatePage')
+exports.onCreatePage = require('./src/onCreatePage');
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === 'build-html') {
@@ -13,10 +13,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         rules: [
           {
             test: /@tap-payments\/gosell/,
-            use: loaders.null()
-          }
-        ]
-      }
-    })
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
   }
-}
+};

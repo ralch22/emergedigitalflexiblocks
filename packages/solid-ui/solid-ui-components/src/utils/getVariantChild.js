@@ -1,2 +1,2 @@
 export default (variants, part) =>
-  variants.map(variant => [variant, part].join('.'))
+  variants.map(variant => [variant, part].join('.'));

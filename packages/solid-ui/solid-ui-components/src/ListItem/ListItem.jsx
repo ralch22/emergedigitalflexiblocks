@@ -1,7 +1,7 @@
-import React from 'react'
-import { Flex, Box } from 'theme-ui'
-import ContentText from '@solid-ui-components/ContentText'
-import Icon from '@solid-ui-components/ContentIcon'
+import React from 'react';
+import { Flex, Box } from 'theme-ui';
+import ContentText from '@solid-ui-components/ContentText';
+import Icon from '@solid-ui-components/ContentIcon';
 
 const ListItem = ({
   icon,
@@ -12,7 +12,7 @@ const ListItem = ({
   vertical,
   center,
   full,
-  middle //Centering for horizontal layout
+  middle, //Centering for horizontal layout
 }) => (
   <Flex
     sx={{
@@ -20,7 +20,7 @@ const ListItem = ({
       alignItems: center ? `center` : `flex-start`,
       textAlign: center && vertical ? `center` : `unset`,
       justifyContent: middle ? `center` : `unset`,
-      '& + &': { mt: description ? (compact ? 3 : 4) : 2 }
+      '& + &': { mt: description ? (compact ? 3 : 4) : 2 },
     }}
   >
     {icon?.src && (
@@ -28,25 +28,30 @@ const ListItem = ({
         sx={{
           display: `inline-flex`,
           flexShrink: 0,
-          [vertical ? 'mb' : 'mr']: compact ? 2 : 3
+          [vertical ? 'mb' : 'mr']: compact ? 2 : 3,
         }}
       >
         <Icon
           content={icon}
-          size='sm'
+          size="sm"
           p={compact ? 1 : undefined}
           {...iconProps}
         />
       </Box>
     )}
-    <Box sx={{ alignSelf: vertical ? `auto` : `center`, width: full ? '100%': '' }}>
+    <Box
+      sx={{
+        alignSelf: vertical ? `auto` : `center`,
+        width: full ? '100%' : '',
+      }}
+    >
       <ContentText content={text} />
     </Box>
   </Flex>
-)
+);
 
 ListItem.defaultProps = {
-  iconProps: {}
-}
+  iconProps: {},
+};
 
-export default ListItem
+export default ListItem;

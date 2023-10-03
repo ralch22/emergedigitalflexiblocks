@@ -1,15 +1,14 @@
 {
-    "text": [
-      {
-        "text": "Introduction to Programmatic Advertising",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-        "text": "Programmatic advertising is a unique system that maximizes the automation of processes and transactions revolving around media buying and placements of ads on apps and websites. When performed manually, the process can be time-demanding. Programmatic advertising products are designed to buy and place media display ads in less than a second. Programmatic advertising solutions also integrate targeting factors for better ad serving. You can use this strategy as part of the Google Marketing Platform.",
-          "variant": "medium",
-          "color": "alpha"
-        }
-    ]
+  "text": [
+    {
+      "text": "Introduction to Programmatic Advertising",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "Programmatic advertising is a unique system that maximizes the automation of processes and transactions revolving around media buying and placements of ads on apps and websites. When performed manually, the process can be time-demanding. Programmatic advertising products are designed to buy and place media display ads in less than a second. Programmatic advertising solutions also integrate targeting factors for better ad serving. You can use this strategy as part of the Google Marketing Platform.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ]
 }
-  

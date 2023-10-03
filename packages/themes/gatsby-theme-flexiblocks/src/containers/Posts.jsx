@@ -1,27 +1,27 @@
-import React from 'react'
-import { Layout, Stack, Main, Sidebar } from '@solid-ui-layout'
-import CardList from '@solid-ui-components/CardList'
-import Divider from '@solid-ui-components/Divider'
-import Seo from '@solid-ui-blocks/Seo'
-import Categories from '@solid-ui-blocks/Categories'
-import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded'
-import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal'
-import BannerVertical from '@solid-ui-blocks/BannerVertical'
-import { useBlogCategories } from '@blocks-helpers'
+import React from 'react';
+import { Layout, Stack, Main, Sidebar } from '@solid-ui-layout';
+import CardList from '@solid-ui-components/CardList';
+import Divider from '@solid-ui-components/Divider';
+import Seo from '@solid-ui-blocks/Seo';
+import Categories from '@solid-ui-blocks/Categories';
+import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded';
+import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal';
+import BannerVertical from '@solid-ui-blocks/BannerVertical';
+import { useBlogCategories } from '@blocks-helpers';
 
 const Posts = ({
   data: { posts = {}, featuredPosts = {}, recentPosts = {} },
   ...props
 }) => {
-  const { pageContext: { services = {} } = {} } = props
-  const categories = useBlogCategories()
+  const { pageContext: { services = {} } = {} } = props;
+  const categories = useBlogCategories();
 
   return (
     <Layout {...props}>
-      <Seo title='Home' />
+      <Seo title="Home" />
       <Divider />
       <Stack effectProps={{ effect: false }}>
-        <Categories categories={categories} variant='horizontal' omitTitle />
+        <Categories categories={categories} variant="horizontal" omitTitle />
       </Stack>
       <Divider />
       <Stack effectProps={{ effect: false }}>
@@ -29,11 +29,11 @@ const Posts = ({
           <CardList
             nodes={featuredPosts.nodes}
             limit={3}
-            variant='horizontal-cover'
+            variant="horizontal-cover"
             slider
             fade
-            controlPosition='over'
-            loading='eager'
+            controlPosition="over"
+            loading="eager"
             omitCategory
           />
           <Divider space={2} />
@@ -41,11 +41,11 @@ const Posts = ({
             nodes={recentPosts.nodes}
             limit={4}
             columns={[1, 2]}
-            variant='horizontal-aside'
-            loading='eager'
+            variant="horizontal-aside"
+            loading="eager"
           />
         </Main>
-        
+
         <Sidebar sx={{ pl: `3`, flexBasis: `1/4` }}>
           <BannerVertical />
         </Sidebar>
@@ -68,9 +68,8 @@ const Posts = ({
                       'horizontal-md',
                       'horizontal',
                       'horizontal',
-                      'vertical'
+                      'vertical',
                     ]}
-                    
                   />
                   <Divider space={2} />
                   <CardList
@@ -94,7 +93,7 @@ const Posts = ({
                     pl: 0,
                     pr: [0, null, null, 3],
                     display: [null, `flex`],
-                    flexDirection: [`column`, null, null, `row`]
+                    flexDirection: [`column`, null, null, `row`],
                   }}
                 >
                   <CardList
@@ -105,7 +104,7 @@ const Posts = ({
                       'horizontal-md',
                       'horizontal',
                       'horizontal',
-                      'vertical'
+                      'vertical',
                     ]}
                     omitCategory
                   />
@@ -113,7 +112,7 @@ const Posts = ({
                 <Main
                   sx={{
                     display: [null, `flex`],
-                    flexDirection: [`column`, null, null, `row`]
+                    flexDirection: [`column`, null, null, `row`],
                   }}
                 >
                   <Divider space={2} />
@@ -125,9 +124,9 @@ const Posts = ({
                     variant={[
                       'horizontal-md',
                       'horizontal-md',
-                      'horizontal-aside'
+                      'horizontal-aside',
                     ]}
-                    mediaType='icon'
+                    mediaType="icon"
                     omitCategory
                   />
                   <Divider space={2} />
@@ -136,7 +135,7 @@ const Posts = ({
                   sx={{
                     pl: [0, null, null, 3],
                     display: [null, `flex`],
-                    flexDirection: [`column`, null, null, `row`]
+                    flexDirection: [`column`, null, null, `row`],
                   }}
                 >
                   <CardList
@@ -148,7 +147,7 @@ const Posts = ({
                       'horizontal-md',
                       'horizontal',
                       'horizontal',
-                      'vertical'
+                      'vertical',
                     ]}
                     omitCategory
                   />
@@ -177,7 +176,7 @@ const Posts = ({
         </Main>
       </Stack>
     </Layout>
-  )
-}
+  );
+};
 
-export default Posts
+export default Posts;

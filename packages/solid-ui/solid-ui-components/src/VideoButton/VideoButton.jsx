@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import { Box, Button, Text } from 'theme-ui'
-import { FaPlay } from 'react-icons/fa'
-import Modal, { ModalContext } from '@solid-ui-components/Modal'
+import React, { useContext } from 'react';
+import { Box, Button, Text } from 'theme-ui';
+import { FaPlay } from 'react-icons/fa';
+import Modal, { ModalContext } from '@solid-ui-components/Modal';
 
 const styles = {
   buttonWrapper: {
     display: `inline-flex`,
-    alignItems: `center`
+    alignItems: `center`,
   },
   button: {
     minWidth: `auto`,
@@ -15,8 +15,8 @@ const styles = {
     p: 3,
     mr: 3,
     svg: {
-      transform: `translate(10%, 0)`
-    }
+      transform: `translate(10%, 0)`,
+    },
   },
   modal: {
     width: [`100%`, `75%`],
@@ -24,7 +24,7 @@ const styles = {
     bg: `#000`,
     px: 0,
     pb: 0,
-    pt: [`56%`, `42.15%`]
+    pt: [`56%`, `42.15%`],
   },
   iframe: {
     position: `absolute`,
@@ -33,30 +33,30 @@ const styles = {
     bottom: 0,
     right: 0,
     width: `100%`,
-    height: `100%`
-  }
-}
+    height: `100%`,
+  },
+};
 
 const VideoButton = ({ variant, children, link }) => {
-  const { setActiveModal } = useContext(ModalContext)
-  const modalIdentifier = link
+  const { setActiveModal } = useContext(ModalContext);
+  const modalIdentifier = link;
 
   return (
     <>
       <Modal
         id={modalIdentifier}
-        contentLabel='Video'
+        contentLabel="Video"
         contentStyles={styles.modal}
       >
         <iframe
           style={styles.iframe}
           src={link}
-          title='Video'
-          frameBorder='0'
+          title="Video"
+          frameBorder="0"
           allow={
             'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
           }
-          tabIndex='-1'
+          tabIndex="-1"
         />
       </Modal>
       <Box sx={styles.buttonWrapper}>
@@ -64,7 +64,7 @@ const VideoButton = ({ variant, children, link }) => {
           onClick={() => setActiveModal(modalIdentifier)}
           variant={variant}
           sx={styles.button}
-          as='div'
+          as="div"
           alt={children}
           title={children}
         >
@@ -73,7 +73,7 @@ const VideoButton = ({ variant, children, link }) => {
         <Text>{children}</Text>
       </Box>
     </>
-  )
-}
+  );
+};
 
-export default VideoButton
+export default VideoButton;

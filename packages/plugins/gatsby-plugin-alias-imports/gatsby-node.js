@@ -1,1 +1,1 @@
-exports.onCreateWebpackConfig = require('./src/onCreateWebpackConfig')
+exports.onCreateWebpackConfig = require('./src/onCreateWebpackConfig');

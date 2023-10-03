@@ -1,22 +1,22 @@
-import React from 'react'
-import SVG from 'react-inlinesvg'
-import { Container, Flex, Box, css } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import SVG from 'react-inlinesvg';
+import { Container, Flex, Box, css } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   logo: {
     width: [100, 150],
-    height: [50, 75]
-  }
-}
+    height: [50, 75],
+  },
+};
 
 const CompaniesBlock01 = ({ content }) => {
-  const { text, collection, buttons, images } = content
+  const { text, collection, buttons, images } = content;
 
   return (
     <Container sx={{ textAlign: `center` }}>
@@ -26,14 +26,14 @@ const CompaniesBlock01 = ({ content }) => {
         {collection?.map(({ text, icon }, index) => (
           <Box key={`item-${index}`} sx={{ flexGrow: 1, p: [1, 3] }}>
             <Reveal
-              effect='fadeInGrow'
+              effect="fadeInGrow"
               delay={0.2 * (index + 2)}
               title={text?.[0]?.text}
             >
               {icon?.src ? (
                 <SVG src={icon.src} css={css(styles.logo)} />
               ) : (
-                <ContentText content={text?.[0]} variant='h6' mb='0' />
+                <ContentText content={text?.[0]} variant="h6" mb="0" />
               )}
             </Reveal>
           </Box>
@@ -45,11 +45,11 @@ const CompaniesBlock01 = ({ content }) => {
           <ContentButtons content={buttons} />
         </>
       )}
-      <Divider space='5' />
-      <Divider space='5' />
+      <Divider space="5" />
+      <Divider space="5" />
       <ContentImages content={{ images }} />
     </Container>
-  )
-}
+  );
+};
 
-export default WithDefaultContent(CompaniesBlock01)
+export default WithDefaultContent(CompaniesBlock01);

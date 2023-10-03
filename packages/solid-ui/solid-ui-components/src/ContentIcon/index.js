@@ -1,1 +1,1 @@
-export { default } from './ContentIcon'
+export { default } from './ContentIcon';

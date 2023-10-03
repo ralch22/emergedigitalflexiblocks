@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react'
-import { Global } from '@emotion/core'
-import { ThemeProvider, merge, Flex, Box, css } from 'theme-ui'
-import baseTheme from '@solid-ui-theme'
-import pageContextProvider from '@helpers/pageContextProvider'
-import { FormContextProvider } from '@solid-ui-components/ContentForm'
-import ThreeCX from '@solid-ui-components/ThreeCX'
-import { ModalContextProvider } from '@solid-ui-components/Modal'
-import { TabsContextProvider } from '@solid-ui-components/Tabs'
-import { navigate } from 'gatsby'
-import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions'
-import './css/global.css'
+import React, { useEffect } from 'react';
+import { Global } from '@emotion/core';
+import { ThemeProvider, merge, Flex, Box, css } from 'theme-ui';
+import baseTheme from '@solid-ui-theme';
+import pageContextProvider from '@helpers/pageContextProvider';
+import { FormContextProvider } from '@solid-ui-components/ContentForm';
+import ThreeCX from '@solid-ui-components/ThreeCX';
+import { ModalContextProvider } from '@solid-ui-components/Modal';
+import { TabsContextProvider } from '@solid-ui-components/Tabs';
+import { navigate } from 'gatsby';
+import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions';
+import './css/global.css';
 
-const auth = localStorage.getItem("auth")
+const auth = localStorage.getItem('auth');
 const parsedData = JSON.parse(auth);
 
 const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
@@ -32,9 +32,9 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
         <FormContextProvider>
           <ModalContextProvider>
             <TabsContextProvider>
-              <Flex variant='layout.layout'>
+              <Flex variant="layout.layout">
                 <Global styles={css(theme => theme.global)} />
-                <Box variant='layout.body'>
+                <Box variant="layout.body">
                   {children}
                   <ThreeCX />
                 </Box>
@@ -44,7 +44,7 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
         </FormContextProvider>
       </pageContextProvider.Provider>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

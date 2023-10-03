@@ -1,23 +1,31 @@
-import React, { useEffect, useState, useContext } from 'react'
-import PropTypes from 'prop-types'
-import { Box, css, Spinner } from 'theme-ui'
+import React, { useEffect, useState, useContext } from 'react';
+import PropTypes from 'prop-types';
+import { Box, css, Spinner } from 'theme-ui';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchShipping, updateShipping, fetchBilling, updateBilling } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/addressSlice'; 
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox'
-import FormInput from '@solid-ui-components/ContentForm/FormInput'
-import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea'
-import FormHidden from '@solid-ui-components/ContentForm/FormHidden'
-import { TabsContext } from '@solid-ui-components/Tabs'
-import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi'
+import {
+  fetchShipping,
+  updateShipping,
+  fetchBilling,
+  updateBilling,
+} from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/addressSlice';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox';
+import FormInput from '@solid-ui-components/ContentForm/FormInput';
+import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea';
+import FormHidden from '@solid-ui-components/ContentForm/FormHidden';
+import { TabsContext } from '@solid-ui-components/Tabs';
+import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi';
 import { useFormik } from 'formik'; // Import Formik
 import * as Yup from 'yup'; // Import Yup for validation
 import Reveal from '@solid-ui-components/Reveal/Reveal';
-import { addUserShipping, addUserBilling  } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice'; 
+import {
+  addUserShipping,
+  addUserBilling,
+} from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice';
 
 const styles = {
   form: {
-    position: `relative`
+    position: `relative`,
   },
   responseOverlay: {
     position: `absolute`,
@@ -32,8 +40,8 @@ const styles = {
     left: 0,
     active: {
       zIndex: 0,
-      backgroundColor: `rgba(255,255,255,0.85)`
-    }
+      backgroundColor: `rgba(255,255,255,0.85)`,
+    },
   },
   buttonsWrapper: {
     display: `inline-flex`,
@@ -42,21 +50,23 @@ const styles = {
     '.button-group-button + .button-group-link': {
       flex: `100%`,
       ml: 0,
-      mt: 3
-    } 
-  }
-}
-
+      mt: 3,
+    },
+  },
+};
 
 // ... (previous imports and code)
 
-const auth = typeof window !== 'undefined' ? localStorage.getItem("auth") : null
+const auth =
+  typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
 const parsedData = JSON.parse(auth);
 
-const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) => {
-  const {
-    activeTab
-  } = useContext(TabsContext)
+const ContentForm = ({
+  id,
+  form: { action, fields, buttons } = {},
+  checkout,
+}) => {
+  const { activeTab } = useContext(TabsContext);
   // const validationSchema = Yup.object().shape({
   //   // username: Yup.string().required('Invalid Username').required('Required')
   //   password: Yup.string().required('Required'),
@@ -70,8 +80,10 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
 
   // Initialize different initialValues objects based on button text
   const dispatch = useDispatch();
-  const { billing: userBilling, shipping: userShipping } = useSelector((state) => state.checkout.order);
-  const { shipping, status, billing } = useSelector((state) => state.address);
+  const { billing: userBilling, shipping: userShipping } = useSelector(
+    state => state.checkout.order,
+  );
+  const { shipping, status, billing } = useSelector(state => state.address);
   useEffect(() => {
     dispatch(fetchShipping({ id: parsedData && parsedData.user.id }));
     dispatch(fetchBilling({ id: parsedData && parsedData.user.id }));
@@ -109,11 +121,11 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
   }, []);
   let initialValues = {};
   const buttonValue = buttons[0].text;
-  console.log("active:", activeTab)
-  console.log(buttonValue)
+  console.log('active:', activeTab);
+  console.log(buttonValue);
   // Check if the shipping array is empty
 
-  if(checkout) {
+  if (checkout) {
     if (Object.keys(userShipping).length !== 0) {
       if (buttonValue === 'Update Shipping') {
         initialValues = {
@@ -144,7 +156,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
       }
     }
   } else {
-    if (Object.keys(shipping).length !== 0 ) {
+    if (Object.keys(shipping).length !== 0) {
       if (buttonValue === 'Update Shipping') {
         initialValues = {
           first_name: shipping.first_name,
@@ -174,12 +186,10 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
       }
     }
   }
- 
 
   const formik = useFormik({
     initialValues,
-    onSubmit: async (values) => {
-
+    onSubmit: async values => {
       switch (buttonValue) {
         case 'Update Shipping': // Handle contact form submission
           await handleShippingForm(values);
@@ -196,7 +206,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
   const handleBillingForm = async ({
     first_name,
     last_name,
-    company ,
+    company,
     address_1,
     address_2,
     city,
@@ -204,73 +214,67 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
     postcode,
     country,
     email,
-    phone
+    phone,
   }) => {
-   const data = {
-    billing: {
-      first_name,
-      last_name,
-      company ,
-      address_1,
-      address_2,
-      city,
-      state,
-      postcode,
-      country,
-      phone,
-      email
-    }
-   }
-   dispatch(updateBilling({ id: parsedData && parsedData.user.id, data }));
+    const data = {
+      billing: {
+        first_name,
+        last_name,
+        company,
+        address_1,
+        address_2,
+        city,
+        state,
+        postcode,
+        country,
+        phone,
+        email,
+      },
+    };
+    dispatch(updateBilling({ id: parsedData && parsedData.user.id, data }));
   };
 
   function handleFieldChange(e) {
-    const { name, value } = e.target
-    formik.handleChange(e)
-    if(activeTab.index === 1) {
+    const { name, value } = e.target;
+    formik.handleChange(e);
+    if (activeTab.index === 1) {
       dispatch(addUserShipping({ ...userShipping, [name]: value }));
     } else {
       dispatch(addUserBilling({ ...userBilling, [name]: value }));
     }
-    
   }
 
   const handleShippingForm = async ({
     first_name,
     last_name,
-    company ,
+    company,
     address_1,
     address_2,
     city,
     state,
     postcode,
     country,
-    email
+    email,
   }) => {
-   const data = {
-    shipping: {
-      first_name,
-      last_name,
-      company ,
-      address_1,
-      address_2,
-      city,
-      state,
-      postcode,
-      country,
-      email
-    }
-   }
-   dispatch(updateShipping({ id: parsedData && parsedData.user.id, data }));
+    const data = {
+      shipping: {
+        first_name,
+        last_name,
+        company,
+        address_1,
+        address_2,
+        city,
+        state,
+        postcode,
+        country,
+        email,
+      },
+    };
+    dispatch(updateShipping({ id: parsedData && parsedData.user.id, data }));
   };
-    
-
 
   return (
-    <form
-      css={css(styles.form)}
-      onSubmit={formik.handleSubmit}
-    >
+    <form css={css(styles.form)} onSubmit={formik.handleSubmit}>
       <Box variant="forms.row">
         {fields?.map(({ identifier, value, ...props }, index) => {
           let Component;
@@ -310,8 +314,8 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
           );
         })}
       </Box>
-       {/* Error messages */}
-       {formik.errors.password && formik.touched.password && (
+      {/* Error messages */}
+      {formik.errors.password && formik.touched.password && (
         <div>{formik.errors.password}</div>
       )}
       {formik.errors.confirmPassword && formik.touched.confirmPassword && (
@@ -319,14 +323,16 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
       )}
       {!checkout && (
         <Box sx={{ textAlign: `center` }}>
-        
-        <button type='submit' style={{ background: 'transparent', border: 'none' }}>
-        <ContentButtons
-          content={buttons}
-          wrapperStyles={styles.buttonsWrapper}
-        />
-        </button>
-      </Box>
+          <button
+            type="submit"
+            style={{ background: 'transparent', border: 'none' }}
+          >
+            <ContentButtons
+              content={buttons}
+              wrapperStyles={styles.buttonsWrapper}
+            />
+          </button>
+        </Box>
       )}
       {/* <Box
         sx={styles.responseOverlay}
@@ -353,8 +359,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {}, checkout }) =
 ContentForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
-  success: PropTypes.bool
-}
+  success: PropTypes.bool,
+};
 
 export default ContentForm;
-

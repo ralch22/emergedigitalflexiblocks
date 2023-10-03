@@ -3,8 +3,8 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
 import { createApolloClient } from './client'; // Adjust the import path
-import store from '../store/config'
-import { Provider } from 'react-redux'
+import store from '../store/config';
+import { Provider } from 'react-redux';
 
 export const wrapRootElement = ({ element }) => {
   // Create the Apollo Client instance
@@ -12,10 +12,8 @@ export const wrapRootElement = ({ element }) => {
 
   // Wrap the UI components with Apollo and Theme UI providers
   return (
-   <Provider store={store}>
-     <ApolloProvider client={client}>
-      {element}
-    </ApolloProvider>
-   </Provider>
+    <Provider store={store}>
+      <ApolloProvider client={client}>{element}</ApolloProvider>
+    </Provider>
   );
 };

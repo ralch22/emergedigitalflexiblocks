@@ -1,73 +1,72 @@
 {
-    "text": [
-      {
-        "text": "Developer hosting for WordPress",
-        "variant": "h4",
-        "color": "alpha"
+  "text": [
+    {
+      "text": "Developer hosting for WordPress",
+      "variant": "h4",
+      "color": "alpha"
+    },
+    {
+      "text": "Faster build, test, and deploy with a hosting platform",
+      "variant": "h2"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/ioxhost.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "text": "Faster build, test, and deploy with a hosting platform",
-        "variant": "h2"
-      }
-    ],
-    "collection": [
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/ioxhost.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-          {
-            "text": "Developing WordPress locally has never been easier",
-            "variant": "h4",
-            "color": "alphaDark"
-          },
-          {
-            "text": "With Local, you can quickly and easily create WordPress sites, speeding up your development process.",
-            "variant": "medium", 
-            "color": "omega"
-          }
-        ]
+      "text": [
+        {
+          "text": "Developing WordPress locally has never been easier",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "With Local, you can quickly and easily create WordPress sites, speeding up your development process.",
+          "variant": "medium",
+          "color": "omega"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/screwdriver-wrench-solid.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/screwdriver-wrench-solid.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-          {
-            "text": "Learn about site problems immediately and resolve them​",
-            "variant": "h4",
-            "color": "alphaDark"
-          },
-          {
-            "text": "With Site Monitoring, you can rest assured that you will be notified immediately if there are any issues with uptime or errors.​",
-            "variant": "medium", 
-            "color": "omega"
-          }
-        ]
+      "text": [
+        {
+          "text": "Learn about site problems immediately and resolve them​",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "With Site Monitoring, you can rest assured that you will be notified immediately if there are any issues with uptime or errors.​",
+          "variant": "medium",
+          "color": "omega"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../assets/flexiblocks/icons/wordpress-simple.svg",
+        "bg": "omegaLighter",
+        "color": "omegaDark"
       },
-      {
-        "icon": {
-          "src": "../../../assets/flexiblocks/icons/wordpress-simple.svg",
-          "bg": "omegaLighter",
-          "color": "omegaDark"
-        },  
-        "text": [
-          {
-            "text": "The complete Headless WordPress platform",
-            "variant": "h4",
-            "color": "alphaDark"
-          },
-          {
-            "text": "Headless websites can be built, deployed, and managed with Atlas using the best of WordPress and modern web development.",
-            "variant": "medium", 
-            "color": "omega"
-          }
-        ]
-      }
-    ]
-  }
-  
+      "text": [
+        {
+          "text": "The complete Headless WordPress platform",
+          "variant": "h4",
+          "color": "alphaDark"
+        },
+        {
+          "text": "Headless websites can be built, deployed, and managed with Atlas using the best of WordPress and modern web development.",
+          "variant": "medium",
+          "color": "omega"
+        }
+      ]
+    }
+  ]
+}

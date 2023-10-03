@@ -1,1 +1,1 @@
-export { default } from '../../../containers/Collection.Author'
+export { default } from '../../../containers/Collection.Author';

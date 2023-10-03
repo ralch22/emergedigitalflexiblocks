@@ -1,13 +1,13 @@
-import React from 'react'
-import { Container, Flex, Box, css } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import { ImQuotesRight } from 'react-icons/im'
-import { AiFillStar } from 'react-icons/ai'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentContainer from '@solid-ui-components/ContentContainer'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, css } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import { ImQuotesRight } from 'react-icons/im';
+import { AiFillStar } from 'react-icons/ai';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentContainer from '@solid-ui-components/ContentContainer';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   avatar: {
@@ -17,9 +17,9 @@ const styles = {
     borderTopWidth: `xl`,
     borderTopStyle: `solid`,
     borderRadius: `lg`,
-    boxSizing: `content-box`
-  }
-}
+    boxSizing: `content-box`,
+  },
+};
 
 const TestimonialsBlock02 = ({ content: { text, collection } }) => (
   <Container>
@@ -33,21 +33,21 @@ const TestimonialsBlock02 = ({ content: { text, collection } }) => (
           key={`item-${index}`}
           sx={{ flexBasis: [`1`, `1/2`], flexGrow: 1, p: 3 }}
         >
-          <Reveal effect='fadeInLeft' delay={0.25 * (index + 2)}>
+          <Reveal effect="fadeInLeft" delay={0.25 * (index + 2)}>
             <Flex
               sx={{
                 alignItems: `center`,
-                flexDirection: [`column`, null, null, `row`]
+                flexDirection: [`column`, null, null, `row`],
               }}
             >
               <ContentContainer
                 content={container}
-                variant='cards.paper'
+                variant="cards.paper"
                 sx={{
                   flexBasis: `1/3`,
                   textAlign: `center`,
                   position: `relative`,
-                  width: `full`
+                  width: `full`,
                 }}
               >
                 <ImQuotesRight
@@ -57,11 +57,11 @@ const TestimonialsBlock02 = ({ content: { text, collection } }) => (
                     position: `absolute`,
                     bottom: `-12%`,
                     left: `50%`,
-                    transform: `translate(-50%, 0)`
+                    transform: `translate(-50%, 0)`,
                   })}
                 />
                 <ContentText content={text?.slice(0, 2)} />
-                <Box mt='3'>
+                <Box mt="3">
                   {Array.from({ length: 5 }, (_, i) => (
                     <AiFillStar
                       key={`item-${i}`}
@@ -75,13 +75,13 @@ const TestimonialsBlock02 = ({ content: { text, collection } }) => (
                   ml: [0, null, null, -3],
                   mr: [0, null, null, 3],
                   mt: [-4, null, null, 0],
-                  mb: [3, null, null, 0]
+                  mb: [3, null, null, 0],
                 }}
               >
                 <ContentImages
                   content={{ images: [avatar] }}
                   sx={styles.avatar}
-                  imageEffect='fadeIn'
+                  imageEffect="fadeIn"
                 />
               </Box>
               <Box sx={{ flexBasis: `1/3`, flexGrow: 1 }}>
@@ -93,6 +93,6 @@ const TestimonialsBlock02 = ({ content: { text, collection } }) => (
       ))}
     </Flex>
   </Container>
-)
+);
 
-export default WithDefaultContent(TestimonialsBlock02)
+export default WithDefaultContent(TestimonialsBlock02);

@@ -1,33 +1,32 @@
 {
-    "text": [
-      {
-        "text": "B2B Campaign Costs",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-        "text": "We understand the importance of your budget and the value of every dollar you invest. Our team is committed to managing your brand with the utmost care and respect.",
-          "variant": "medium",
-          "color": "alpha"
-        },
-        {
-            "text": "Get Great Results With B2B Demand Generation Services",
-            "variant": "h2",
-             "color": ""
-          },
-          {
-            "text": "B2B demand generation services could be key to your success. Contact Emerge Digital today to learn how we can help grow your business.",
-              "variant": "medium",
-              "color": "alpha"
-            }
-    ],
-    "buttons": [
-        {
-          "text": "Contact Us Now",
-          "type": "MODAL",
-          "link": "contact",
-          "variant": "secondary"
-        }
-      ]
+  "text": [
+    {
+      "text": "B2B Campaign Costs",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "We understand the importance of your budget and the value of every dollar you invest. Our team is committed to managing your brand with the utmost care and respect.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "Get Great Results With B2B Demand Generation Services",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "B2B demand generation services could be key to your success. Contact Emerge Digital today to learn how we can help grow your business.",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Contact Us Now",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
 }
-  

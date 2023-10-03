@@ -1,36 +1,36 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Box } from 'theme-ui'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Box } from 'theme-ui';
 
 const styles = {
   wrapper: separator => ({
     '> *': {
       ':not(:last-child) + *:before': {
-        content: `" ${separator} "`
-      }
-    }
+        content: `" ${separator} "`,
+      },
+    },
   }),
   nowrap: {
     overflow: `hidden`,
     textOverflow: `ellipsis`,
-    whiteSpace: `nowrap`
-  }
-}
+    whiteSpace: `nowrap`,
+  },
+};
 
 const TextList = ({ nowrap, separator, children }) => (
   <Box sx={{ ...(nowrap && styles.nowrap), ...styles.wrapper(separator) }}>
     {children}
   </Box>
-)
+);
 
-export default TextList
+export default TextList;
 
 TextList.defaultProps = {
   separator: '・',
-  nowrap: false
-}
+  nowrap: false,
+};
 
 TextList.propTypes = {
   separator: PropTypes.string,
-  nowrap: PropTypes.bool
-}
+  nowrap: PropTypes.bool,
+};

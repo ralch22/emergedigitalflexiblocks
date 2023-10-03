@@ -1,7 +1,7 @@
-import { graphql } from 'gatsby'
-import PostsPage from '../containers/Posts'
+import { graphql } from 'gatsby';
+import PostsPage from '../containers/Posts';
 
-export default PostsPage
+export default PostsPage;
 
 export const pageQuery = graphql`
   query PostsPageQuery {
@@ -114,4 +114,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

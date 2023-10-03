@@ -1,71 +1,70 @@
 {
-    "text": [
-      {
-        "text": "How Your Business Can Benefit With the Best Communication App?",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-          "text": "With a 3CX phone system, you can work from any location, at any time, without your clients being aware that you have left the office. To boost employee productivity and client services, modern offices must utilize 3CX mobility features.",
-            "variant": "medium",
-            "color": "alpha"
-          },
-          {
-            "text": "The goal of 3CX, an all-in-one software-based communications system, is to make communication simple while saving you money on your telecommunications bill.",
-            "variant": "medium",
-            "color": "alpha",
-            "fontWeight": "bold"
-          },
-          {
-            "text": "Don’t trust us? A 3CX phone system differs from a conventional PBX phone system for a number of reasons, some of which are listed below:",
-            "variant": "medium",
-            "color": "alpha",
-            "fontWeight": "bold"
-          }
-    ], 
-    "collection": [
+  "text": [
+    {
+      "text": "How Your Business Can Benefit With the Best Communication App?",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "With a 3CX phone system, you can work from any location, at any time, without your clients being aware that you have left the office. To boost employee productivity and client services, modern offices must utilize 3CX mobility features.",
+      "variant": "medium",
+      "color": "alpha"
+    },
+    {
+      "text": "The goal of 3CX, an all-in-one software-based communications system, is to make communication simple while saving you money on your telecommunications bill.",
+      "variant": "medium",
+      "color": "alpha",
+      "fontWeight": "bold"
+    },
+    {
+      "text": "Don’t trust us? A 3CX phone system differs from a conventional PBX phone system for a number of reasons, some of which are listed below:",
+      "variant": "medium",
+      "color": "alpha",
+      "fontWeight": "bold"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
         {
-            "text": [
-                {
-                    "text": "Live call &amp; chat with online visitors"
-                }
-            ] 
-        },
-        {
-            "text": [
-                {
-                    "text": "Easy management on-premise or hosted"
-                }
-            ] 
-        },
-        {
-            "text": [
-                {
-                    "text": "Take Your Office Extension Anywhere"
-                }
-            ] 
-        },
-        {
-            "text": [
-                {
-                    "text": "Reduce phone bills up to 75%"
-                }
-            ] 
-        },
-        {
-            "text": [
-                {
-                    "text": "Easy Installation & Management"
-                }
-            ] 
-        },
-        {
-            "text": [
-                {
-                    "text": "Top-Notch Performance & Secured"
-                }
-            ] 
+          "text": "Live call &amp; chat with online visitors"
         }
-    ]
-  }
-  
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Easy management on-premise or hosted"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Take Your Office Extension Anywhere"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Reduce phone bills up to 75%"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Easy Installation & Management"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Top-Notch Performance & Secured"
+        }
+      ]
+    }
+  ]
+}

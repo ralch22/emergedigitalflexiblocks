@@ -1,6 +1,6 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   plugins: [
@@ -8,8 +8,8 @@ module.exports = {
       resolve: '@elegantstack/gatsby-theme-flexiblocks',
       options: {
         createDemoPages: false,
-        colorMode: false
-      }
+        colorMode: false,
+      },
     },
     {
       resolve: `gatsby-plugin-fastify`,
@@ -22,6 +22,6 @@ module.exports = {
   siteMetadata: {
     title: 'FlexiBlocks Theme',
     name: 'FlexiBlocks',
-    description: 'My site description...'
-  }
-}
+    description: 'My site description...',
+  },
+};

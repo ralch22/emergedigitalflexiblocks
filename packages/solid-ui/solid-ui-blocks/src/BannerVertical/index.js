@@ -1,1 +1,1 @@
-export { default } from './BannerVertical'
+export { default } from './BannerVertical';

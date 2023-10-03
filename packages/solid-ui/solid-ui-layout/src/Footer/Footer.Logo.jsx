@@ -1,19 +1,19 @@
-import React from 'react'
-import { Box } from 'theme-ui'
-import PoweredByGatsby from '@solid-ui-components/PoweredByGatsby'
-import { HeaderLogo } from '../Header/Header.Logo'
+import React from 'react';
+import { Box } from 'theme-ui';
+import PoweredByGatsby from '@solid-ui-components/PoweredByGatsby';
+import { HeaderLogo } from '../Header/Header.Logo';
 
 const styles = {
   logo: {
     pb: 1,
     mb: 2,
-    mt: [4, 0]
+    mt: [4, 0],
   },
   copyright: {
     pt: 2,
-    mb: [2, 4]
-  }
-}
+    mb: [2, 4],
+  },
+};
 
 export const FooterLogo = () => (
   <>
@@ -27,4 +27,4 @@ export const FooterLogo = () => (
       <PoweredByGatsby />
     </Box>
   </>
-)
+);

@@ -24,38 +24,38 @@ const button = {
     borderRadius: `inherit`,
     borderWidth: `md`,
     borderStyle: `solid`,
-    transitionDuration: `0.35s`
+    transitionDuration: `0.35s`,
   },
   '::after': {
     zIndex: -2,
     transform: `perspective(1px) translateZ(0)`,
-    transitionTimingFunction: `cubic-bezier(0.47, 2.02, 0.31, 0.1)`
+    transitionTimingFunction: `cubic-bezier(0.47, 2.02, 0.31, 0.1)`,
   },
   '::before': {
     zIndex: -1,
     bg: `rgba(0,0,0,.05)`,
     borderColor: `transparent`,
     transform: `scale(0.5) perspective(15px)`,
-    opacity: 0
+    opacity: 0,
   },
   ':hover': {
     '::after': {
       transform: `scale(1.08)`,
-      transitionTimingFunction: `cubic-bezier(0.47, 2.02, 0.31, 0.1)`
+      transitionTimingFunction: `cubic-bezier(0.47, 2.02, 0.31, 0.1)`,
     },
     '::before': {
       opacity: 1,
-      transform: `scale(1.08) perspective(15px)`
-    }
+      transform: `scale(1.08) perspective(15px)`,
+    },
   },
   ':active': {
     '::after': {
       transform: `scale(1.02)`,
-      transitionTimingFunction: `cubic-bezier(0.47, 2.02, 0.31, 0.1)`
-    }
-  }
-}
+      transitionTimingFunction: `cubic-bezier(0.47, 2.02, 0.31, 0.1)`,
+    },
+  },
+};
 
 export default {
-  button
-}
+  button,
+};

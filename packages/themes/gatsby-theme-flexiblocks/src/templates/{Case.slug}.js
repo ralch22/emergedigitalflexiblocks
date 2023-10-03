@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Container } from 'theme-ui'
-import Layout from '@solid-ui-layout/Layout'
-import Seo from '@solid-ui-components/Seo'
-import Divider from '@solid-ui-components/Divider'
-import Header from '@solid-ui-blocks/Header/Block01'
-import Content from '@solid-ui-blocks/Content/Block02'
-import SingleCase from '@solid-ui-blocks/SinglePost/Block01'
-import Footer from '@solid-ui-blocks/Footer/Block01'
+import { Container } from 'theme-ui';
+import Layout from '@solid-ui-layout/Layout';
+import Seo from '@solid-ui-components/Seo';
+import Divider from '@solid-ui-components/Divider';
+import Header from '@solid-ui-blocks/Header/Block01';
+import Content from '@solid-ui-blocks/Content/Block02';
+import SingleCase from '@solid-ui-blocks/SinglePost/Block01';
+import Footer from '@solid-ui-blocks/Footer/Block01';
 import styles from '../pages/cases/_styles';
 
 function SinglePost({ postId }) {
@@ -32,7 +32,9 @@ function SinglePost({ postId }) {
     }
 
     try {
-      const response = await fetch(`https://emergedigital.ae/wp-json/wp/v2/media/${featuredMediaId}`);
+      const response = await fetch(
+        `https://emergedigital.ae/wp-json/wp/v2/media/${featuredMediaId}`,
+      );
       const featuredMediaData = await response.json();
       setFeaturedMediaUrl(featuredMediaData.source_url);
     } catch (error) {
@@ -46,21 +48,20 @@ function SinglePost({ postId }) {
 
   return (
     <Layout {...props}>
-      <Seo title='Home' />
+      <Seo title="Home" />
       <Header content={content['header']} />
-      <Divider space='5' />
-      <Container variant='wide' sx={styles.heroContainer}>
+      <Divider space="5" />
+      <Container variant="wide" sx={styles.heroContainer}>
         <Content content={content['hero']} />
       </Container>
-      <Divider space='5' />
+      <Divider space="5" />
       <Container>
         <SingleCase media={getFeaturedMediaUrl} post={post} />
-       </Container>
-      <Divider space='5' />
+      </Container>
+      <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>
-  )
+  );
 }
 
-
-export default SinglePost
+export default SinglePost;

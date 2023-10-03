@@ -1,1 +1,1 @@
-export { default } from './FlexContent'
+export { default } from './FlexContent';

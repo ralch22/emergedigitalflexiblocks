@@ -1,3 +1,3 @@
 module.exports = pluginOptions => ({
-  localPaths: pluginOptions.localPaths || []
-})
+  localPaths: pluginOptions.localPaths || [],
+});

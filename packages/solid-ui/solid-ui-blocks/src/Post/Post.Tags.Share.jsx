@@ -1,8 +1,8 @@
-import React, { Suspense } from 'react'
-import { Flex, Box, Divider } from 'theme-ui'
-import { PostTags } from '@solid-ui-blocks/Post/Post.Tags'
+import React, { Suspense } from 'react';
+import { Flex, Box, Divider } from 'theme-ui';
+import { PostTags } from '@solid-ui-blocks/Post/Post.Tags';
 
-const PostShare = React.lazy(() => import('@solid-ui-blocks/Post/Post.Share'))
+const PostShare = React.lazy(() => import('@solid-ui-blocks/Post/Post.Share'));
 
 const styles = {
   flex: {
@@ -12,10 +12,10 @@ const styles = {
     '& > div + div': {
       mt: [3, 0],
       flexBasis: `1/2`,
-      justifyContent: `flex-end`
-    }
-  }
-}
+      justifyContent: `flex-end`,
+    },
+  },
+};
 
 export const PostTagsShare = props => (
   <Box>
@@ -27,4 +27,4 @@ export const PostTagsShare = props => (
       </Suspense>
     </Flex>
   </Box>
-)
+);

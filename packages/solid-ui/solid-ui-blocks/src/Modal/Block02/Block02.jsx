@@ -1,20 +1,20 @@
-import React from 'react'
-import { Flex, Box } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import Modal from '@solid-ui-components/Modal'
-import ListItem from '@solid-ui-components/ListItem'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import ContentMap from '@solid-ui-components/ContentMap'
-import ContentForm from '@solid-ui-components/ContentForm'
+import React from 'react';
+import { Flex, Box } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import Modal from '@solid-ui-components/Modal';
+import ListItem from '@solid-ui-components/ListItem';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import ContentMap from '@solid-ui-components/ContentMap';
+import ContentForm from '@solid-ui-components/ContentForm';
 
 const ModalBlock02 = ({
   content: { identifier, text, images, map, collection, form, buttons },
-  reverse
+  reverse,
 }) => {
-  const hasMedia = images || map
+  const hasMedia = images || map;
 
   return (
     <Modal
@@ -29,8 +29,8 @@ const ModalBlock02 = ({
           maxHeight: `750px`,
           flexDirection: [
             reverse ? `column-reverse` : `column`,
-            reverse ? `row-reverse` : `row`
-          ]
+            reverse ? `row-reverse` : `row`,
+          ],
         }}
       >
         {hasMedia && (
@@ -41,14 +41,14 @@ const ModalBlock02 = ({
               flex: 1,
               position: `relative`,
               borderRadius: reverse ? `right` : `left`,
-              overflow: `hidden`
+              overflow: `hidden`,
             }}
           >
             {images && (
               <ContentImages
                 content={{ images }}
-                imageFit='cover'
-                height='100%'
+                imageFit="cover"
+                height="100%"
                 reverse={reverse}
               />
             )}
@@ -87,7 +87,7 @@ const ModalBlock02 = ({
         </Box>
       </Flex>
     </Modal>
-  )
-}
+  );
+};
 
-export default ModalBlock02
+export default ModalBlock02;

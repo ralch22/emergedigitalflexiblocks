@@ -7,9 +7,9 @@
 const reduce =
   (options = {}, fieldConfig) =>
   async (source, args, context, info) => {
-    const resolver = fieldConfig.resolve || context.defaultFieldResolver
-    const fieldValue = await resolver(source, args, context, info)
-    if (fieldValue == null) return null
+    const resolver = fieldConfig.resolve || context.defaultFieldResolver;
+    const fieldValue = await resolver(source, args, context, info);
+    if (fieldValue == null) return null;
 
     const result = await context.defaultFieldResolver(
       fieldValue,
@@ -17,12 +17,12 @@ const reduce =
       context,
       {
         ...info,
-        from: options.to
-      }
-    )
+        from: options.to,
+      },
+    );
 
-    return result
-  }
+    return result;
+  };
 
 /**
  * Proxies field to a field in another node
@@ -34,25 +34,25 @@ const reduce =
 const proxyField =
   (options = {}, fieldConfig) =>
   async (source, args, context, info) => {
-    let fromField = 'parent'
-    let toField = info.fieldName
+    let fromField = 'parent';
+    let toField = info.fieldName;
 
     if (options.from) {
-      const fromFields = options.from.split('.')
-      fromField = fromFields[0]
-      toField = fromFields.slice(1)
+      const fromFields = options.from.split('.');
+      fromField = fromFields[0];
+      toField = fromFields.slice(1);
     }
 
-    const resolver = fieldConfig.resolve || context.defaultFieldResolver
+    const resolver = fieldConfig.resolve || context.defaultFieldResolver;
     const fieldValue = await resolver(source, args, context, {
       ...info,
-      from: fromField
-    })
-    if (fieldValue == null) return null
+      from: fromField,
+    });
+    if (fieldValue == null) return null;
 
     const targetNode = context.nodeModel.getNodeById({
-      id: fieldValue
-    })
+      id: fieldValue,
+    });
 
     const result = await context.defaultFieldResolver(
       targetNode,
@@ -60,32 +60,32 @@ const proxyField =
       context,
       {
         ...info,
-        from: toField
-      }
-    )
+        from: toField,
+      },
+    );
 
-    return result
-  }
+    return result;
+  };
 
 const proxyResolver =
   (options = {}, fieldConfig) =>
   async (source, args, context, info) => {
-    const resolver = fieldConfig.resolve || context.defaultFieldResolver
-    const fieldValue = await resolver(source, args, context, info)
-    if (fieldValue == null) return null
+    const resolver = fieldConfig.resolve || context.defaultFieldResolver;
+    const fieldValue = await resolver(source, args, context, info);
+    if (fieldValue == null) return null;
 
-    const { on, to } = options
-    const { schema, fieldName } = info
-    const gqlField = schema.getType(on).getFields()[to || fieldName]
+    const { on, to } = options;
+    const { schema, fieldName } = info;
+    const gqlField = schema.getType(on).getFields()[to || fieldName];
     const result = gqlField
       ? await gqlField.resolve(fieldValue, args, context, info)
-      : null
+      : null;
 
-    return result
-  }
+    return result;
+  };
 
 module.exports = {
   reduce,
   proxyField,
-  proxyResolver
-}
+  proxyResolver,
+};

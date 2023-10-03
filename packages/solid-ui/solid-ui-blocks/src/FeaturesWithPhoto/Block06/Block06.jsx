@@ -1,19 +1,19 @@
-import React from 'react'
-import { Container, Flex, Box } from 'theme-ui'
-import Divider from '@solid-ui-components/Divider'
-import ProgressBar from '@solid-ui-components/ProgressBar'
-import Counter from '@solid-ui-components/Counter'
-import FlexImage from '@solid-ui-components/FlexImage'
-import FlexContent from '@solid-ui-components/FlexContent'
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box } from 'theme-ui';
+import Divider from '@solid-ui-components/Divider';
+import ProgressBar from '@solid-ui-components/ProgressBar';
+import Counter from '@solid-ui-components/Counter';
+import FlexImage from '@solid-ui-components/FlexImage';
+import FlexContent from '@solid-ui-components/FlexContent';
+import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const FeaturesWithPhotoBlock06 = ({
   content: { text, images, collection, buttons },
-  reverse
+  reverse,
 }) => (
   <Container sx={{ position: `relative` }}>
     <Flex
@@ -21,9 +21,9 @@ const FeaturesWithPhotoBlock06 = ({
         alignItems: [null, `center`],
         flexDirection: [
           reverse ? `column-reverse` : `column`,
-          reverse ? `row-reverse` : `row`
+          reverse ? `row-reverse` : `row`,
         ],
-        mx: [null, null, null, -4]
+        mx: [null, null, null, -4],
       }}
     >
       <FlexImage reverse={reverse}>
@@ -37,13 +37,13 @@ const FeaturesWithPhotoBlock06 = ({
           <>
             <Divider space={3} />
             {collection.map(({ text }, index) => (
-              <Box key={`item-${index}`} mb='4'>
+              <Box key={`item-${index}`} mb="4">
                 <Flex
                   sx={{
                     justifyContent: `space-between`,
                     alignItems: `center`,
                     mb: 3,
-                    px: 2
+                    px: 2,
                   }}
                 >
                   <Box>
@@ -51,17 +51,17 @@ const FeaturesWithPhotoBlock06 = ({
                   </Box>
                   <ContentText
                     content={text?.[2]}
-                    variant='h2'
+                    variant="h2"
                     sx={{ color: `omegaDarker` }}
-                    mb='0'
-                    pl='3'
+                    mb="0"
+                    pl="3"
                   >
-                    <Counter from='0' to={text?.[2]?.text} duration={2} />%
+                    <Counter from="0" to={text?.[2]?.text} duration={2} />%
                   </ContentText>
                 </Flex>
                 <ProgressBar
                   color={text?.[2]?.color || undefined}
-                  from='0%'
+                  from="0%"
                   to={text?.[2]?.text}
                   duration={2}
                 />
@@ -79,6 +79,6 @@ const FeaturesWithPhotoBlock06 = ({
     </Flex>
     <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>
-)
+);
 
-export default WithDefaultContent(FeaturesWithPhotoBlock06)
+export default WithDefaultContent(FeaturesWithPhotoBlock06);

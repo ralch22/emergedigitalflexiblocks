@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import { InstantSearch, Configure } from 'react-instantsearch-dom'
-import algoliasearch from 'algoliasearch/lite'
-import { Box, IconButton } from 'theme-ui'
-import { FaTimes } from 'react-icons/fa'
-import SearchBox from './Search.Box'
-import Results from './Search.Results'
-import styles from './Search.styles'
-import { useStaticQuery, graphql } from 'gatsby'
+import React, { useState, useEffect } from 'react';
+import { InstantSearch, Configure } from 'react-instantsearch-dom';
+import algoliasearch from 'algoliasearch/lite';
+import { Box, IconButton } from 'theme-ui';
+import { FaTimes } from 'react-icons/fa';
+import SearchBox from './Search.Box';
+import Results from './Search.Results';
+import styles from './Search.styles';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const indexName = process.env.GATSBY_ALGOLIA_INDEX_NAME || 'Posts'
-const searchDistinctLimit = 4
+const indexName = process.env.GATSBY_ALGOLIA_INDEX_NAME || 'Posts';
+const searchDistinctLimit = 4;
 
 const Overlay = ({ onClick }) => (
   <>
@@ -21,58 +21,56 @@ const Overlay = ({ onClick }) => (
       <Box sx={styles.esc}>ESC</Box>
     </Box>
   </>
-)
-
-
+);
 
 const Search = ({ isFocused = false }) => {
-  const [focus, setFocus] = useState(isFocused)
+  const [focus, setFocus] = useState(isFocused);
   const data = useStaticQuery(graphql`
-  query {
-    allWpPost {
-      nodes {
-        objectID: id
-        title
-        content
-        slug
-        categories {
-          nodes {
-            name
+    query {
+      allWpPost {
+        nodes {
+          objectID: id
+          title
+          content
+          slug
+          categories {
+            nodes {
+              name
+            }
           }
         }
       }
     }
-  }
-`);
-  const posts = data.allWpPost.nodes.map((node) => ({
+  `);
+  const posts = data.allWpPost.nodes.map(node => ({
     objectID: node.objectID,
     title: node.title,
     excerpt: node.content,
     slug: node.slug,
-    category: node.categories.nodes.map((category) => category.name).join(', '),
+    category: node.categories.nodes.map(category => category.name).join(', '),
   }));
-  
+
   const algoliaClient = algoliasearch(
     process.env.GATSBY_ALGOLIA_APP_ID,
-    process.env.GATSBY_ALGOLIA_SEARCH_KEY
-  )
+    process.env.GATSBY_ALGOLIA_SEARCH_KEY,
+  );
 
   const searchClient = {
     search(requests) {
       const shouldSearch = requests.some(
-        ({ params: { query } }) => query !== ''
-      )
+        ({ params: { query } }) => query !== '',
+      );
       if (focus && shouldSearch) {
-        return algoliaClient.search(requests)
+        return algoliaClient.search(requests);
       }
       return Promise.resolve({
-        results: [{ hits: [] }]
-      })
-    }
-  }
+        results: [{ hits: [] }],
+      });
+    },
+  };
 
-  const handleClose = () => setFocus(false)
-  const handleFocus = () => !focus && setFocus(true)
+  const handleClose = () => setFocus(false);
+  const handleFocus = () => !focus && setFocus(true);
 
   return (
     <Box>
@@ -91,7 +89,7 @@ const Search = ({ isFocused = false }) => {
         </>
       )}
     </Box>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

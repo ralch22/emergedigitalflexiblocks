@@ -6,9 +6,9 @@ export default {
   whiteSpace: `pre`,
   p: 0,
   ':visited': {
-    color: 'omegaDark'
+    color: 'omegaDark',
   },
   ':hover': {
-    color: 'omegaDark'
-  }
-}
+    color: 'omegaDark',
+  },
+};

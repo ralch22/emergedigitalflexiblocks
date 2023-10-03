@@ -1,1 +1,1 @@
-export { default } from './ThreeCX'
+export { default } from './ThreeCX';

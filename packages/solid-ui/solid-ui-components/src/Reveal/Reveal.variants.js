@@ -4,16 +4,16 @@ export default {
     transition: {
       duration: 1.5,
       repeat: Infinity,
-      repeatType: 'reverse'
-    }
+      repeatType: 'reverse',
+    },
   },
   floatFaster: {
     y: ['7%', '0%'],
     transition: {
       duration: 1.3,
       repeat: Infinity,
-      repeatType: 'reverse'
-    }
+      repeatType: 'reverse',
+    },
   },
   fadeIn: { opacity: [null, 1] },
   fadeInUp: { opacity: [null, 1], y: ['20%', '0%'] },
@@ -27,11 +27,11 @@ export default {
   fadeInBounce: {
     stiffness: 10000,
     opacity: [null, 1],
-    scale: [0.3, 1.1, 0.9, 1.03, 0.97, 1]
+    scale: [0.3, 1.1, 0.9, 1.03, 0.97, 1],
   },
   fadeInRotate: {
     scale: [0.8, 1],
     rotate: [350, 360],
-    opacity: [null, 1]
-  }
-}
+    opacity: [null, 1],
+  },
+};

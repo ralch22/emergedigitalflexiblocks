@@ -1,9 +1,16 @@
-import React from 'react'
-import { GatsbyImage as Img } from 'gatsby-plugin-image'
-import { css } from 'theme-ui'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
+import React from 'react';
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
+import { css } from 'theme-ui';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
-const CardMediaImage = ({ variant, moderate, small, loading, images, title }) => {
+const CardMediaImage = ({
+  variant,
+  moderate,
+  small,
+  loading,
+  images,
+  title,
+}) => {
   return (
     <img
       src={images && images.length > 0 ? images[0].src : ''}
@@ -14,15 +21,15 @@ const CardMediaImage = ({ variant, moderate, small, loading, images, title }) =>
         width: `100%`,
         verticalAlign: `middle`, //avoid baseline gap
         img: {
-          bg: `omegaLighter`
+          bg: `omegaLighter`,
         },
-        variant: rv(variant, 'image')
+        variant: rv(variant, 'image'),
       })}
     />
-  )
-}
+  );
+};
 CardMediaImage.defaultProps = {
-  loading: 'lazy'
-}
+  loading: 'lazy',
+};
 
-export default CardMediaImage
+export default CardMediaImage;

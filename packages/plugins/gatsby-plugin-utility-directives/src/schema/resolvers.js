@@ -1,8 +1,8 @@
-const urljoin = require('url-join')
-const slugify = require('slugify')
-const toMarkdown = require('@sanity/block-content-to-markdown')
-const normalizeSlug = require('../utils/normalizeSlug')
-const withDefaults = require('../utils/default.options')
+const urljoin = require('url-join');
+const slugify = require('slugify');
+const toMarkdown = require('@sanity/block-content-to-markdown');
+const normalizeSlug = require('../utils/normalizeSlug');
+const withDefaults = require('../utils/default.options');
 
 /**
  * Slug Maker
@@ -14,30 +14,30 @@ const withDefaults = require('../utils/default.options')
 const makeSlug =
   (options = {}, fieldConfig) =>
   async (source, args, context, info) => {
-    const resolver = fieldConfig.resolve || context.defaultFieldResolver
-    const fieldValue = await resolver(source, args, context, info)
+    const resolver = fieldConfig.resolve || context.defaultFieldResolver;
+    const fieldValue = await resolver(source, args, context, info);
 
     const fromValue =
       (fieldValue &&
         (fieldValue.slug || fieldValue.name || fieldValue.title)) ||
       (source &&
-        (source[info.fieldName] || source.slug || source.name || source.title))
+        (source[info.fieldName] || source.slug || source.name || source.title));
 
-    if (!fromValue) return null
+    if (!fromValue) return null;
 
     const plugin = await context.nodeModel.findOne({
       query: {
         filter: {
-          name: { eq: '@elegantstack/gatsby-plugin-utility-directives' }
-        }
+          name: { eq: '@elegantstack/gatsby-plugin-utility-directives' },
+        },
       },
-      type: 'SitePlugin'
-    })
+      type: 'SitePlugin',
+    });
 
     const { basePath, sitePaths, slugSanitizeRegex } = withDefaults(
-      plugin.pluginOptions
-    )
-    const pathPrefix = (sitePaths && sitePaths[source.internal.type]) || ''
+      plugin.pluginOptions,
+    );
+    const pathPrefix = (sitePaths && sitePaths[source.internal.type]) || '';
 
     return normalizeSlug(
       urljoin(
@@ -45,11 +45,11 @@ const makeSlug =
         pathPrefix,
         slugify(fromValue, {
           lower: true,
-          remove: slugSanitizeRegex
-        })
-      )
-    )
-  }
+          remove: slugSanitizeRegex,
+        }),
+      ),
+    );
+  };
 
 /**
  * Normalize Social Links
@@ -60,15 +60,15 @@ const makeSlug =
 const normalizeSocial =
   (options = {}, fieldConfig) =>
   async (source, args, context, info) => {
-    const resolver = fieldConfig.resolve || context.defaultFieldResolver
-    const fieldValue = await resolver(source, args, context, info)
-    if (fieldValue == null || fieldValue.length < 1) return null
+    const resolver = fieldConfig.resolve || context.defaultFieldResolver;
+    const fieldValue = await resolver(source, args, context, info);
+    if (fieldValue == null || fieldValue.length < 1) return null;
 
     return fieldValue.map(social => ({
       name: social.name || null,
-      url: social.url || social
-    }))
-  }
+      url: social.url || social,
+    }));
+  };
 
 /**
  * Block Content to Markdown
@@ -79,28 +79,28 @@ const normalizeSocial =
 const blockContentToMarkdown =
   (options = {}, fieldConfig) =>
   async (source, args, context, info) => {
-    const resolver = fieldConfig.resolve || context.defaultFieldResolver
-    const fieldValue = await resolver(source, args, context, info)
-    if (fieldValue == null) return null
+    const resolver = fieldConfig.resolve || context.defaultFieldResolver;
+    const fieldValue = await resolver(source, args, context, info);
+    if (fieldValue == null) return null;
 
     // Get gatsby-source-sanity options
     const plugin = context.nodeModel
       .findAll({ type: 'SitePlugin' })
-      .find(node => node.name === 'gatsby-source-sanity')
+      .find(node => node.name === 'gatsby-source-sanity');
 
-    const { projectId, dataset } = plugin.pluginOptions
+    const { projectId, dataset } = plugin.pluginOptions;
 
     return {
       ...source,
       rawBody: toMarkdown(fieldValue, {
         projectId,
-        dataset
-      })
-    }
-  }
+        dataset,
+      }),
+    };
+  };
 
 module.exports = {
   makeSlug,
   normalizeSocial,
-  blockContentToMarkdown
-}
+  blockContentToMarkdown,
+};

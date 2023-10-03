@@ -1,1 +1,1 @@
-export { default } from './NewsletterExpanded'
+export { default } from './NewsletterExpanded';

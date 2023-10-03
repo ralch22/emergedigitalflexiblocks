@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { IconButton, css, useThemeUI } from 'theme-ui'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import './CardList.Slider.css'
-import styles from './CardList.Slider.Styles'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { IconButton, css, useThemeUI } from 'theme-ui';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import './CardList.Slider.css';
+import styles from './CardList.Slider.Styles';
 
 const CardListSlider = React.forwardRef((props, ref) => {
   const {
@@ -21,43 +21,43 @@ const CardListSlider = React.forwardRef((props, ref) => {
     centerPadding,
     controlPosition,
     beforeChange,
-    children
-  } = props
+    children,
+  } = props;
 
-  const context = useThemeUI()
+  const context = useThemeUI();
 
   const animationSettings = {
     slidesToScroll: 1,
     autoplay: true,
-    cssEase: 'linear'
-  }
+    cssEase: 'linear',
+  };
 
   const mobileSettings = {
     centerMode: fade ? false : true,
     centerPadding: '40px',
     swipeToSlide: true,
     arrows: false,
-    dots: dots && fade ? true : false
-  }
+    dots: dots && fade ? true : false,
+  };
 
   const responsiveSettings = context.theme.breakpoints.map(
     (breakpoint, index) => {
       const rSlidesToShow =
-        columns[index >= columns.length ? columns.length - 1 : index]
+        columns[index >= columns.length ? columns.length - 1 : index];
       const rSlidesToScroll =
         slidesToScroll[
           index >= slidesToScroll.length ? slidesToScroll.length - 1 : index
-        ]
+        ];
       return {
         breakpoint: parseInt(breakpoint),
         settings: {
           slidesToShow: rSlidesToShow,
           slidesToScroll: rSlidesToScroll,
-          ...(index === 0 ? mobileSettings : {})
-        }
-      }
-    }
-  )
+          ...(index === 0 ? mobileSettings : {}),
+        },
+      };
+    },
+  );
   let settings = {
     ref,
     beforeChange,
@@ -76,7 +76,7 @@ const CardListSlider = React.forwardRef((props, ref) => {
       ...(fade ? styles.fade : styles.slide),
       ...(controlPosition === 'bottom' && styles.controlBottom),
       ...(controlPosition === 'center' && styles.controlCenter),
-      ...(controlPosition === 'over' && styles.controlOver)
+      ...(controlPosition === 'over' && styles.controlOver),
     }),
     prevArrow: (
       <IconButton sx={styles.arrowPrev}>
@@ -87,8 +87,8 @@ const CardListSlider = React.forwardRef((props, ref) => {
       <IconButton sx={styles.arrowNext}>
         <FaChevronRight />
       </IconButton>
-    )
-  }
+    ),
+  };
 
   if (smoothAutoScroll) {
     settings = {
@@ -97,8 +97,8 @@ const CardListSlider = React.forwardRef((props, ref) => {
       speed: 10000,
       autoplaySpeed: 0,
       arrows: false,
-      dots: false
-    }
+      dots: false,
+    };
   }
 
   if (!smoothAutoScroll && autoPlay) {
@@ -106,14 +106,14 @@ const CardListSlider = React.forwardRef((props, ref) => {
       ...settings,
       ...animationSettings,
       speed: 300,
-      autoplaySpeed
-    }
+      autoplaySpeed,
+    };
   }
 
-  return <Slider {...settings}>{children}</Slider>
-})
+  return <Slider {...settings}>{children}</Slider>;
+});
 
-export default CardListSlider
+export default CardListSlider;
 
 CardListSlider.defaultProps = {
   fade: false,
@@ -126,8 +126,8 @@ CardListSlider.defaultProps = {
   smoothAutoScroll: false,
   slidesToScroll: [1],
   rows: 1,
-  controlPosition: 'sides'
-}
+  controlPosition: 'sides',
+};
 
 CardListSlider.propTypes = {
   fade: PropTypes.bool,
@@ -140,5 +140,5 @@ CardListSlider.propTypes = {
   smoothAutoScroll: PropTypes.bool,
   columns: PropTypes.arrayOf(PropTypes.number),
   slidesToScroll: PropTypes.arrayOf(PropTypes.number),
-  controlPosition: PropTypes.oneOf(['bottom', 'over', 'sides', 'center'])
-}
+  controlPosition: PropTypes.oneOf(['bottom', 'over', 'sides', 'center']),
+};

@@ -1,1 +1,1 @@
-export { default } from './ContentCard'
+export { default } from './ContentCard';

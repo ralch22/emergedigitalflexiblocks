@@ -1,20 +1,19 @@
 {
-    "text": [
-      {
-        "text": "Demand Generation Services",
-        "variant": "h4",
-        "color": "alpha"
-      },
-      {
-        "text": "What Are the 4 Stages of Demand Generation?",
-        "variant": "h2",
-         "color": ""
-      },
-      {
-        "text": "Demand generation involves a series of steps to create interest in and demand for your company’s products and services. Here are the four stages of the process:",
-          "variant": "medium",
-          "color": "alpha"
-        }
-    ]
+  "text": [
+    {
+      "text": "Demand Generation Services",
+      "variant": "h4",
+      "color": "alpha"
+    },
+    {
+      "text": "What Are the 4 Stages of Demand Generation?",
+      "variant": "h2",
+      "color": ""
+    },
+    {
+      "text": "Demand generation involves a series of steps to create interest in and demand for your company’s products and services. Here are the four stages of the process:",
+      "variant": "medium",
+      "color": "alpha"
+    }
+  ]
 }
-  

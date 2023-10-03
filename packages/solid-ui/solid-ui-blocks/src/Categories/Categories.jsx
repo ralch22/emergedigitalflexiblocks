@@ -1,8 +1,8 @@
-import React from 'react'
-import { Box } from 'theme-ui'
-import { FaArchive } from 'react-icons/fa'
-import IconButton from '@solid-ui-components/IconButton'
-import Section from '@solid-ui-components/Section'
+import React from 'react';
+import { Box } from 'theme-ui';
+import { FaArchive } from 'react-icons/fa';
+import IconButton from '@solid-ui-components/IconButton';
+import Section from '@solid-ui-components/Section';
 
 const styles = {
   horizontal: {
@@ -15,13 +15,13 @@ const styles = {
     a: {
       flex: 1,
       minWidth: [`1/3`, `auto`],
-      m: 2
-    }
-  }
-}
+      m: 2,
+    },
+  },
+};
 
 const Categories = ({ variant, categories, ...props }) => (
-  <Section aside={variant === 'vertical'} title='Topics' {...props}>
+  <Section aside={variant === 'vertical'} title="Topics" {...props}>
     <Box sx={styles[variant]}>
       {categories &&
         categories.map(({ id, name, slug, totalCount, icon }) => {
@@ -32,17 +32,17 @@ const Categories = ({ variant, categories, ...props }) => (
             to: slug,
             iconPath: icon,
             Icon: !icon && FaArchive,
-            variant
-          }
+            variant,
+          };
 
-          return totalCount !== 0 && <IconButton {...buttonProps} />
+          return totalCount !== 0 && <IconButton {...buttonProps} />;
         })}
     </Box>
   </Section>
-)
+);
 
-export default Categories
+export default Categories;
 
 Categories.defaultProps = {
-  variant: 'vertical'
-}
+  variant: 'vertical',
+};

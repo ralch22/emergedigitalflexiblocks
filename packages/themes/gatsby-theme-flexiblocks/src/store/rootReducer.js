@@ -1,16 +1,16 @@
-import { combineReducers } from '@reduxjs/toolkit'
-import ordersReducer from './ducks/orderSlice'
-import productsReducer from './ducks/productSlice'
-import cartReducer from './ducks/cartSlice'
-import checkoutReducer from './ducks/checkoutSlice'
-import subsReducer from './ducks/subsSlice'
-import downloadsReducer from './ducks/downloadSlice'
-import addressReducer from './ducks/addressSlice'
-import userReducer from './ducks/userSlice'
-import methodReducer from './ducks/methodSlice'
-import caseReducer from './ducks/caseSlice'
-import subscriptionReducer from './ducks/subscriptionSlice'
-import tapReducer from './ducks/tapSlice'
+import { combineReducers } from '@reduxjs/toolkit';
+import ordersReducer from './ducks/orderSlice';
+import productsReducer from './ducks/productSlice';
+import cartReducer from './ducks/cartSlice';
+import checkoutReducer from './ducks/checkoutSlice';
+import subsReducer from './ducks/subsSlice';
+import downloadsReducer from './ducks/downloadSlice';
+import addressReducer from './ducks/addressSlice';
+import userReducer from './ducks/userSlice';
+import methodReducer from './ducks/methodSlice';
+import caseReducer from './ducks/caseSlice';
+import subscriptionReducer from './ducks/subscriptionSlice';
+import tapReducer from './ducks/tapSlice';
 
 const rootReducer = combineReducers({
   orders: ordersReducer,
@@ -24,7 +24,7 @@ const rootReducer = combineReducers({
   method: methodReducer,
   subscription: subscriptionReducer,
   case: caseReducer,
-  tap: tapReducer
-})
+  tap: tapReducer,
+});
 
-export default rootReducer
+export default rootReducer;

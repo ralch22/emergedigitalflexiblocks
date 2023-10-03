@@ -1,30 +1,30 @@
-const sharp = require(`sharp`)
-const glob = require(`glob`)
-const fs = require(`fs-extra`)
+const sharp = require(`sharp`);
+const glob = require(`glob`);
+const fs = require(`fs-extra`);
 
-const matches = glob.sync(`src/images/**/*.{png,jpg,jpeg}`)
-const MAX_WIDTH = 1800
-const QUALITY = 70
+const matches = glob.sync(`src/images/**/*.{png,jpg,jpeg}`);
+const MAX_WIDTH = 1800;
+const QUALITY = 70;
 
 Promise.all(
   matches.map(async match => {
-    const stream = sharp(match)
-    const info = await stream.metadata()
+    const stream = sharp(match);
+    const info = await stream.metadata();
 
     if (info.width < MAX_WIDTH) {
-      return
+      return;
     }
 
     const optimizedName = match.replace(
       /(\..+)$/,
-      (match, ext) => `-optimized${ext}`
-    )
+      (match, ext) => `-optimized${ext}`,
+    );
 
     await stream
       .resize(MAX_WIDTH)
       .jpeg({ quality: QUALITY })
-      .toFile(optimizedName)
+      .toFile(optimizedName);
 
-    return fs.rename(optimizedName, match)
-  })
-)
+    return fs.rename(optimizedName, match);
+  }),
+);

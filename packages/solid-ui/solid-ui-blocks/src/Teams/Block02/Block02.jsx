@@ -1,11 +1,11 @@
-import React from 'react'
-import { Container, Flex, Box, css } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentContainer from '@solid-ui-components/ContentContainer'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, css } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentContainer from '@solid-ui-components/ContentContainer';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
   avatar: {
@@ -22,10 +22,10 @@ const styles = {
     mx: `auto`,
     img: {
       borderRadius: `top`,
-      objectPosition: `top center !important`
-    }
-  }
-}
+      objectPosition: `top center !important`,
+    },
+  },
+};
 
 const TeamsBlock02 = ({ content: { text, collection } }) => (
   <Container>
@@ -41,25 +41,25 @@ const TeamsBlock02 = ({ content: { text, collection } }) => (
             flexBasis: [`1/2`, null, `1/3`, `1/5`],
             flexGrow: 1,
             maxWidth: 240,
-            p: 3
+            p: 3,
           }}
         >
           <Reveal
-            effect='fadeInLeft'
+            effect="fadeInLeft"
             delay={0.25 * (index + 2)}
             css={css({ height: `100%` })}
           >
             <ContentContainer
               content={container}
-              variant='cards.primary'
+              variant="cards.primary"
               sx={{ textAlign: `center`, height: `100%`, p: 2 }}
             >
               <ContentImages
                 content={{ images: [avatar] }}
                 sx={styles.avatar}
-                imageEffect='fadeIn'
+                imageEffect="fadeIn"
               />
-              <Flex sx={{ flexDirection: `column` }} p='3' px='3'>
+              <Flex sx={{ flexDirection: `column` }} p="3" px="3">
                 <ContentText content={text} />
               </Flex>
             </ContentContainer>
@@ -68,6 +68,6 @@ const TeamsBlock02 = ({ content: { text, collection } }) => (
       ))}
     </Flex>
   </Container>
-)
+);
 
-export default WithDefaultContent(TeamsBlock02)
+export default WithDefaultContent(TeamsBlock02);

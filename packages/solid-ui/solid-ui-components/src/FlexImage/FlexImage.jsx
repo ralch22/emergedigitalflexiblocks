@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box } from 'theme-ui'
+import React from 'react';
+import { Box } from 'theme-ui';
 
 const FlexImage = ({ reverse, children }) => (
   <Box
@@ -9,11 +9,11 @@ const FlexImage = ({ reverse, children }) => (
       [reverse ? 'ml' : 'mr']: [null, t => `-${t.sizes['1/6']}`, null],
       [reverse ? 'mt' : 'mb']: [4, 0],
       // zIndex: [null, -1],
-      position: `relative`
+      position: `relative`,
     }}
   >
     {children}
   </Box>
-)
+);
 
-export default FlexImage
+export default FlexImage;

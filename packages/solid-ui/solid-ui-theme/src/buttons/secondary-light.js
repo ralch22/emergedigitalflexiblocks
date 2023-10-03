@@ -1,14 +1,14 @@
-import common from './common'
+import common from './common';
 
 export default {
   ...common.button,
   color: `betaDark`,
   '::before': {
-    display: `none`
+    display: `none`,
   },
   '::after': {
     ...common.button['::after'],
     bg: `betaLighter`,
-    borderColor: `betaLighter`
-  }
-}
+    borderColor: `betaLighter`,
+  },
+};

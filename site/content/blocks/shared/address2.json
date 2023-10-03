@@ -1,14 +1,14 @@
 {
   "text": [
-      {
-        "text": "Address: Levels 41 & 42, Emirates Towers - Sheikh Zayed Rd - Dubai - United Arab Emirates",
-        "variant": "medium",
-        "color": "white"
-      },
-      {
-        "text": "Phone: +97145813606",
-        "variant": "medium",
-        "color": "white"
-      }
-    ]
+    {
+      "text": "Address: Levels 41 & 42, Emirates Towers - Sheikh Zayed Rd - Dubai - United Arab Emirates",
+      "variant": "medium",
+      "color": "white"
+    },
+    {
+      "text": "Phone: +97145813606",
+      "variant": "medium",
+      "color": "white"
+    }
+  ]
 }

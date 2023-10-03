@@ -1,7 +1,15 @@
-import React, { useContext } from 'react'
-import PropTypes from 'prop-types'
-import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
-import { FormContext } from '@solid-ui-components/ContentForm/FormContext'
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
+import {
+  Box,
+  Label,
+  Input,
+  Textarea,
+  Button,
+  Message,
+  Spinner,
+} from 'theme-ui';
+import { FormContext } from '@solid-ui-components/ContentForm/FormContext';
 import axios from 'axios';
 import messages from '@solid-ui-theme/messages';
 
@@ -21,49 +29,56 @@ import messages from '@solid-ui-theme/messages';
  */
 
 const ContactForm = ({ handleSubmit, submitting, success }) => {
-  const form = useContext(FormContext)
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [message, setMessage] = useState("");
-  const [subject, setSubject] = useState("");
- 
+  const form = useContext(FormContext);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [company, setCompany] = useState('');
+  const [message, setMessage] = useState('');
+  const [subject, setSubject] = useState('');
+
   return (
-    <form
-      onSubmit={handleSubmit}
-      method='POST'
-      action='YOUR_ACTION_END_POINT'
-    >
+    <form onSubmit={handleSubmit} method="POST" action="YOUR_ACTION_END_POINT">
       {success === true && (
-        <Message variant='success'>
+        <Message variant="success">
           Thank you for contacting us. We'll get back to you soon!
         </Message>
       )}
       {success === false && (
-        <Message variant='error'>
+        <Message variant="error">
           Something went wrong. Please try again later!
         </Message>
       )}
-      <Box variant='forms.row'>
-        <Box variant='forms.column'>
-          <Label htmlFor='contact-form-name'>Name</Label>
-          <Input onChange={(e) => setName(e.target.value)} type='text' id='contact-form-name' name='name' required />
+      <Box variant="forms.row">
+        <Box variant="forms.column">
+          <Label htmlFor="contact-form-name">Name</Label>
+          <Input
+            onChange={e => setName(e.target.value)}
+            type="text"
+            id="contact-form-name"
+            name="name"
+            required
+          />
         </Box>
-        <Box variant='forms.column'>
-          <Label htmlFor='contact-form-company'>Company Name</Label>
-          <Input onChange={(e) => setCompany(e.target.value)} type='text' id='contact-form-company' name='company' />
+        <Box variant="forms.column">
+          <Label htmlFor="contact-form-company">Company Name</Label>
+          <Input
+            onChange={e => setCompany(e.target.value)}
+            type="text"
+            id="contact-form-company"
+            name="company"
+          />
         </Box>
       </Box>
-      <Box variant='forms.row'>
-        <Box variant='forms.column'>
-          <Label htmlFor='contact-form-email'>Email</Label>
+      <Box variant="forms.row">
+        <Box variant="forms.column">
+          <Label htmlFor="contact-form-email">Email</Label>
           <Input
-            type='email'
-            placeholder='email@example.com'
-            id='contact-form-email'
-            name='email'
+            type="email"
+            placeholder="email@example.com"
+            id="contact-form-email"
+            name="email"
             required
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={e => setEmail(e.target.value)}
           />
         </Box>
         {/* <Box variant='forms.column'>
@@ -77,30 +92,40 @@ const ContactForm = ({ handleSubmit, submitting, success }) => {
           />
         </Box> */}
       </Box>
-      <Box variant='forms.row'>
-        <Label htmlFor='contact-form-subject'>Subject</Label>
-        <Input onChange={(e) => setSubject(e.target.value)} type='text' id='contact-form-subject' name='subject' required />
+      <Box variant="forms.row">
+        <Label htmlFor="contact-form-subject">Subject</Label>
+        <Input
+          onChange={e => setSubject(e.target.value)}
+          type="text"
+          id="contact-form-subject"
+          name="subject"
+          required
+        />
       </Box>
-      <Box variant='forms.row'>
-        <Label htmlFor='contact-form-message'>Your Message</Label>
-        <Textarea onChange={(e) => setMessage(e.target.value)} name='message' id='contact-form-message' />
+      <Box variant="forms.row">
+        <Label htmlFor="contact-form-message">Your Message</Label>
+        <Textarea
+          onChange={e => setMessage(e.target.value)}
+          name="message"
+          id="contact-form-message"
+        />
       </Box>
       <Button
         variant={success || submitting ? 'disabled' : 'primary'}
         disabled={success || submitting}
-        type='submit'
+        type="submit"
         required
       >
-        Submit {submitting && <Spinner size='20' />}
+        Submit {submitting && <Spinner size="20" />}
       </Button>
     </form>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
 
 ContactForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
-  success: PropTypes.bool
-}
+  success: PropTypes.bool,
+};

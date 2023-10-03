@@ -5,8 +5,8 @@
  *
  */
 
-import heroBg from './assets/contour-pattern.svg'
-import bg from './assets/3CX.jpg'
+import heroBg from './assets/contour-pattern.svg';
+import bg from './assets/3CX.jpg';
 
 export default {
   heroContainer: {
@@ -17,10 +17,9 @@ export default {
       top: `-10%`,
       left: 0,
       zIndex: -1,
-      background: t =>
-        `url(${heroBg}) no-repeat center 0`,
-      backgroundSize: `100%`
-    }
+      background: t => `url(${heroBg}) no-repeat center 0`,
+      backgroundSize: `100%`,
+    },
   },
   heroContainer3CX: {
     '::before': {
@@ -36,8 +35,8 @@ export default {
           ${t.colors.alphaLighter} 0%,
           ${t.colors.background} 100%
         )`,
-      backgroundSize: `100%`
-    }
+      backgroundSize: `100%`,
+    },
   },
   strategiesContainer: {
     position: `relative`,
@@ -55,13 +54,13 @@ export default {
           ${t.colors.alphaLighter} 0%,
           ${t.colors.background} 100%
         )`,
-      backgroundSize: `100%`
-    }
+      backgroundSize: `100%`,
+    },
   },
   whyChooseUsContainer: {
     bg: `omegaLighter`,
     borderRadius: `xl`,
     py: 5,
-    px: [4, 0]
-  }
-}
+    px: [4, 0],
+  },
+};

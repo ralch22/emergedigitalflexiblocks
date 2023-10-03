@@ -1,1 +1,1 @@
-export { default } from './ContentMap'
+export { default } from './ContentMap';

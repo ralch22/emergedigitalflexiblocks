@@ -1,1 +1,1 @@
-export { default } from './PoweredByGatsby'
+export { default } from './PoweredByGatsby';

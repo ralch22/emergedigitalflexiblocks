@@ -1,10 +1,10 @@
-import React from 'react'
-import { Text } from 'theme-ui'
-import TextList from '@solid-ui-components/TextList'
-import { FaRegClock } from 'react-icons/fa'
-import rv from '@solid-ui-components/utils/buildResponsiveVariant'
+import React from 'react';
+import { Text } from 'theme-ui';
+import TextList from '@solid-ui-components/TextList';
+import { FaRegClock } from 'react-icons/fa';
+import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
-import { format } from 'date-fns'
+import { format } from 'date-fns';
 
 const CardFooterInfo = ({ variant, date, timeToRead }) => (
   <TextList nowrap>
@@ -19,6 +19,6 @@ const CardFooterInfo = ({ variant, date, timeToRead }) => (
       </Text>
     )}
   </TextList>
-)
+);
 
-export default CardFooterInfo
+export default CardFooterInfo;

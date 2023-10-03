@@ -1,5 +1,5 @@
-import icon from '../../assets/placeholder.svg'
-import image from '../../assets/placeholder.jpg'
+import icon from '../../assets/placeholder.svg';
+import image from '../../assets/placeholder.jpg';
 
 const placeholderImage = {
   isPlaceholder: true,
@@ -9,21 +9,21 @@ const placeholderImage = {
     maxWidth: 500,
     aspectRatio: 1,
     sizes: '',
-    srcSet: ''
-  }
-}
+    srcSet: '',
+  },
+};
 
 export default {
   text: [
     { text: 'KICKER TEXT', variant: 'h4' },
     { text: 'Title Text', variant: 'h2' },
     { text: 'First placeholder for description text.', variant: 'medium' },
-    { text: 'Second placeholder for description text.', variant: 'medium' }
+    { text: 'Second placeholder for description text.', variant: 'medium' },
   ],
   images: [
     {
-      src: placeholderImage
-    }
+      src: placeholderImage,
+    },
   ],
   collection: [
     {
@@ -32,8 +32,8 @@ export default {
       icon: {
         src: icon,
         color: '#667eea',
-        bg: 'transparent'
-      }
+        bg: 'transparent',
+      },
     },
     {
       text: [{ text: 'Text Content No.1' }, { text: 'Text Content No.2' }],
@@ -41,8 +41,8 @@ export default {
       icon: {
         src: icon,
         color: '#667eea',
-        bg: 'transparent'
-      }
+        bg: 'transparent',
+      },
     },
     {
       text: [{ text: 'Text Content No.1' }, { text: 'Text Content No.2' }],
@@ -50,18 +50,18 @@ export default {
       icon: {
         src: icon,
         color: '#667eea',
-        bg: 'transparent'
-      }
-    }
+        bg: 'transparent',
+      },
+    },
   ],
   buttons: [
     {
       text: 'Button One',
-      link: '/'
+      link: '/',
     },
     {
       text: 'Button Two',
-      link: '/'
-    }
-  ]
-}
+      link: '/',
+    },
+  ],
+};

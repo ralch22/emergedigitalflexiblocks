@@ -1,66 +1,66 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 const ADD_TO_CART = gql`
-mutation ($input: AddToCartInput!) {
-  addToCart(input: $input) {
-    cartItem {
-      key
-      product {
-        node {
-          id
-          databaseId
-          name
-          description
-          type
-          onSale
-          slug
-          averageRating
-          reviewCount
-          image {
+  mutation ($input: AddToCartInput!) {
+    addToCart(input: $input) {
+      cartItem {
+        key
+        product {
+          node {
             id
-            sourceUrl
-            altText
+            databaseId
+            name
+            description
+            type
+            onSale
+            slug
+            averageRating
+            reviewCount
+            image {
+              id
+              sourceUrl
+              altText
+            }
+            galleryImages {
+              nodes {
+                id
+                sourceUrl
+                altText
+              }
+            }
           }
-          galleryImages {
-            nodes {
+        }
+        variation {
+          node {
+            id
+            databaseId
+            name
+            description
+            type
+            onSale
+            price
+            regularPrice
+            salePrice
+            image {
               id
               sourceUrl
               altText
             }
           }
-        }
-      }
-      variation {
-        node {
-          id
-          databaseId
-          name
-          description
-          type
-          onSale
-          price
-          regularPrice
-          salePrice
-          image {
+          attributes {
             id
-            sourceUrl
-            altText
+            attributeId
+            name
+            value
           }
         }
-        attributes {
-          id
-          attributeId
-          name
-          value
-        }
+        quantity
+        total
+        subtotal
+        subtotalTax
       }
-      quantity
-      total
-      subtotal
-      subtotalTax
     }
   }
-}
 `;
 
 export default ADD_TO_CART;

@@ -1,14 +1,14 @@
-import React from 'react'
-import groupArray from 'group-array'
+import React from 'react';
+import groupArray from 'group-array';
 import {
   Highlight,
   Snippet,
   connectStateResults,
-  PoweredBy
-} from 'react-instantsearch-dom'
-import { Text, Box, Spinner, Card } from 'theme-ui'
-import useScrollDisabler from '@solid-ui-components/useScrollDisabler'
-import styles from './Search.styles'
+  PoweredBy,
+} from 'react-instantsearch-dom';
+import { Text, Box, Spinner, Card } from 'theme-ui';
+import useScrollDisabler from '@solid-ui-components/useScrollDisabler';
+import styles from './Search.styles';
 
 const Hits = ({ searchState, searchResults }) => {
   useScrollDisabler();
@@ -26,21 +26,21 @@ const Hits = ({ searchState, searchResults }) => {
     return `No results for '${searchResults.query}'`;
   } else {
     return (
-      <Box variant='lists.cards.fixed.search'>
+      <Box variant="lists.cards.fixed.search">
         {searchResults.hits.map(hit => {
           const node = {
             ...hit,
             key: hit.objectID,
-            title: <Highlight hit={hit} tagName='mark' attribute='title' />,
-            excerpt: <Snippet hit={hit} tagName='mark' attribute='excerpt' />,
+            title: <Highlight hit={hit} tagName="mark" attribute="title" />,
+            excerpt: <Snippet hit={hit} tagName="mark" attribute="excerpt" />,
           };
           return (
-            <Card key={hit.objectID} variant='search'>
-              <Text as='h3'>
-                <Highlight hit={hit} tagName='mark' attribute='title' />
+            <Card key={hit.objectID} variant="search">
+              <Text as="h3">
+                <Highlight hit={hit} tagName="mark" attribute="title" />
               </Text>
-              <Text as='p'>
-                <Snippet hit={hit} tagName='mark' attribute='excerpt' />
+              <Text as="p">
+                <Snippet hit={hit} tagName="mark" attribute="excerpt" />
               </Text>
             </Card>
           );
@@ -50,7 +50,7 @@ const Hits = ({ searchState, searchResults }) => {
   }
 };
 
-const ConnectedHits = connectStateResults(Hits)
+const ConnectedHits = connectStateResults(Hits);
 
 const Results = ({ posts }) => (
   <Box sx={styles.resultsWrapper}>
@@ -61,6 +61,6 @@ const Results = ({ posts }) => (
       <PoweredBy />
     </Box>
   </Box>
-)
+);
 
-export default Results
+export default Results;

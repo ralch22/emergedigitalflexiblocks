@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box } from 'theme-ui'
+import React from 'react';
+import { Box } from 'theme-ui';
 
 const FlexOverlapFade = ({ direction }) => (
   <Box
@@ -15,13 +15,13 @@ const FlexOverlapFade = ({ direction }) => (
           circle,
           ${t.colors.background} 25%,
           transparent 70%
-        )`
+        )`,
     }}
   />
-)
+);
 
-export default FlexOverlapFade
+export default FlexOverlapFade;
 
 FlexOverlapFade.defaultProps = {
-  direction: 'ltr'
-}
+  direction: 'ltr',
+};

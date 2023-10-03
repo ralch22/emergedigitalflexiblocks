@@ -1,4 +1,4 @@
-import common from './common'
+import common from './common';
 
 export default {
   ...common.badge,
@@ -6,6 +6,6 @@ export default {
   color: `alpha`,
   ':hover': {
     bg: `alpha`,
-    color: `white`
-  }
-}
+    color: `white`,
+  },
+};

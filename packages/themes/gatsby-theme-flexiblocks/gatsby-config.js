@@ -1,28 +1,27 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
-
+});
 
 module.exports = options => {
-  const { createDemoPages } = options
+  const { createDemoPages } = options;
 
   const plugins = [
     {
       resolve: '@elegantstack/gatsby-blocks-core',
-      options
+      options,
     },
     {
       resolve: `gatsby-plugin-fastify`,
       options: {
         /* discussed below */
       }, // All options are optional
-    }, 
-    
+    },
+
     '@elegantstack/gatsby-blocks-helpers',
     '@elegantstack/gatsby-common-helpers',
     {
       resolve: '@elegantstack/solid-ui-theme',
-      options
+      options,
     },
     '@elegantstack/solid-ui-layout',
     '@elegantstack/solid-ui-components',
@@ -32,19 +31,19 @@ module.exports = options => {
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_API_KEY,
-        queries: require("../../blocks/gatsby-blog-algolia/src/queries"),
+        queries: require('../../blocks/gatsby-blog-algolia/src/queries'),
       },
-    }
-  ]
+    },
+  ];
 
   if (createDemoPages === true) {
     plugins.push({
       resolve: 'gatsby-plugin-page-creator',
       options: {
-        path: `${__dirname}/src`
-      }
-    })
+        path: `${__dirname}/src`,
+      },
+    });
   }
 
-  return { plugins }
-}
+  return { plugins };
+};

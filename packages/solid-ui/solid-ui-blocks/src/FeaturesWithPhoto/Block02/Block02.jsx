@@ -1,19 +1,19 @@
-import React from 'react'
-import { Container, Flex, Box, Card, css } from 'theme-ui'
-import Reveal from '@solid-ui-components/Reveal'
-import Divider from '@solid-ui-components/Divider'
-import ListItem from '@solid-ui-components/ListItem'
-import FlexImage from '@solid-ui-components/FlexImage'
-import FlexContent from '@solid-ui-components/FlexContent'
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade'
-import ContentText from '@solid-ui-components/ContentText'
-import ContentImages from '@solid-ui-components/ContentImages'
-import ContentButtons from '@solid-ui-components/ContentButtons'
-import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import React from 'react';
+import { Container, Flex, Box, Card, css } from 'theme-ui';
+import Reveal from '@solid-ui-components/Reveal';
+import Divider from '@solid-ui-components/Divider';
+import ListItem from '@solid-ui-components/ListItem';
+import FlexImage from '@solid-ui-components/FlexImage';
+import FlexContent from '@solid-ui-components/FlexContent';
+import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
+import ContentText from '@solid-ui-components/ContentText';
+import ContentImages from '@solid-ui-components/ContentImages';
+import ContentButtons from '@solid-ui-components/ContentButtons';
+import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const FeaturesWithPhotoBlock02 = ({
   content: { text, images, collection, buttons, full },
-  reverse
+  reverse,
 }) => (
   <Container sx={{ position: `relative` }}>
     <Flex
@@ -21,19 +21,18 @@ const FeaturesWithPhotoBlock02 = ({
         alignItems: [null, `center`],
         flexDirection: [
           reverse ? `column-reverse` : `column`,
-          reverse ? `row-reverse` : `row`
+          reverse ? `row-reverse` : `row`,
         ],
-        mx: [null, null, null, -4]
+        mx: [null, null, null, -4],
       }}
     >
-      <Box sx={{ flexBasis: "80%" }}>
-
-      <FlexImage reverse={reverse}>
-      <Box sx={{ textAlign: ['center', 'left'] }}>
-          <ContentText content={text} />
-        </Box>
-        <ContentImages content={{ images }} reverse={reverse} />
-      </FlexImage>
+      <Box sx={{ flexBasis: '80%' }}>
+        <FlexImage reverse={reverse}>
+          <Box sx={{ textAlign: ['center', 'left'] }}>
+            <ContentText content={text} />
+          </Box>
+          <ContentImages content={{ images }} reverse={reverse} />
+        </FlexImage>
       </Box>
       <FlexContent reverse={reverse}>
         {collection && (
@@ -43,12 +42,12 @@ const FeaturesWithPhotoBlock02 = ({
               {collection.map((props, index) => (
                 <Reveal
                   key={`item-${index}`}
-                  effect='fadeInPop'
+                  effect="fadeInPop"
                   delay={1 + 0.2 * (index + 1)}
                   css={css({ flexBasis: [`1`, `1/2`] })}
                 >
-                  <Box py='3' m='2' px='3'>
-                    <ListItem {...props} full compact middle p='2' />
+                  <Box py="3" m="2" px="3">
+                    <ListItem {...props} full compact middle p="2" />
                   </Box>
                 </Reveal>
               ))}
@@ -65,6 +64,6 @@ const FeaturesWithPhotoBlock02 = ({
     </Flex>
     <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>
-)
+);
 
-export default WithDefaultContent(FeaturesWithPhotoBlock02)
+export default WithDefaultContent(FeaturesWithPhotoBlock02);

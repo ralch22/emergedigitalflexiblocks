@@ -1,29 +1,29 @@
-import React, { useContext } from 'react'
-import { Box } from 'theme-ui' 
-import Icon from '@solid-ui-components/ContentIcon'
-import ContentContainer from '@solid-ui-components/ContentContainer'
-import { ModalContext } from '@solid-ui-components/Modal'
-import { TabsContext } from '@solid-ui-components/Tabs'
-import { buildLinkProps } from '@solid-ui-components/ContentButtons'
-import { BiChevronDown } from 'react-icons/bi'
+import React, { useContext } from 'react';
+import { Box } from 'theme-ui';
+import Icon from '@solid-ui-components/ContentIcon';
+import ContentContainer from '@solid-ui-components/ContentContainer';
+import { ModalContext } from '@solid-ui-components/Modal';
+import { TabsContext } from '@solid-ui-components/Tabs';
+import { buildLinkProps } from '@solid-ui-components/ContentButtons';
+import { BiChevronDown } from 'react-icons/bi';
 
 const styles = {
   horizontal: {
     '.button-group-link': {
-      py: 3
+      py: 3,
     },
     '> * + a, > * + div, > * + button': {
       ml: [3, null, null, 4],
-      mt: [4, 0]
-    }
+      mt: [4, 0],
+    },
   },
   vertical: {
     display: `flex`,
     flexDirection: `column`,
     a: {
       mb: [3, 2],
-      px: [2, 0]
-    }
+      px: [2, 0],
+    },
   },
   subButtonsParent: {
     display: [null, null, `inline-flex`],
@@ -32,15 +32,15 @@ const styles = {
       '& > .container-level-1': {
         opacity: 1,
         visibility: `inherit`,
-        transform: [null, null, `translate(-50%, 0)`]
-      }
+        transform: [null, null, `translate(-50%, 0)`],
+      },
     },
     '& > svg': {
       size: `icon.xs`,
       position: [`absolute`, `static`],
       right: 0,
-      ml: `auto`
-    }
+      ml: `auto`,
+    },
   },
   subContainer: {
     '&.container-level-1': {
@@ -58,7 +58,7 @@ const styles = {
       flexDirection: `column`,
       transition: `all 250ms ease`,
       p: [3, null, 0],
-      mt: [3, null, 0]
+      mt: [3, null, 0],
     },
     // Single level
     '&.container-level-1.no-collection': {
@@ -66,8 +66,8 @@ const styles = {
       '.button-group-link': {
         px: 2,
         py: 1,
-        my: 1
-      }
+        my: 1,
+      },
     },
     '&.container-level-2': {
       flexBasis: `100%`,
@@ -75,9 +75,9 @@ const styles = {
       '.button-group-link': {
         display: `block`,
         py: 0,
-        mt: 2
-      }
-    }
+        mt: 2,
+      },
+    },
   },
   subContainerCollection: {
     display: `flex`,
@@ -92,22 +92,22 @@ const styles = {
       alignContent: `flex-start`,
       minWidth: 210,
       mb: [0, null, `inherit`],
-      py: 0
-    }
-  }
-}
+      py: 0,
+    },
+  },
+};
 
 const ButtonComponent = ({ content, children, styles = {}, className }) => {
-  const { setActiveModal } = useContext(ModalContext)
-  const { setActiveTab } = useContext(TabsContext)
+  const { setActiveModal } = useContext(ModalContext);
+  const { setActiveTab } = useContext(TabsContext);
 
-  const { type, text, link, target, variant, width, bg, icon } = content
+  const { type, text, link, target, variant, width, bg, icon } = content;
 
   const { Component, linkProps } = buildLinkProps({
     content: { type, link, target, variant },
     setActiveModal,
-    setActiveTab
-  })
+    setActiveTab,
+  });
 
   return (
     <Component
@@ -116,26 +116,26 @@ const ButtonComponent = ({ content, children, styles = {}, className }) => {
         width,
         '::after': { bg, borderColor: bg },
         position: `relative`,
-        ...styles
+        ...styles,
       }}
       {...linkProps}
       className={[linkProps.className, className].join(' ')}
     >
       <Box sx={{ display: `inline-block` }}>
-        <Icon content={icon} size='xs' mr='1' /> {text}
+        <Icon content={icon} size="xs" mr="1" /> {text}
       </Box>
 
       {children}
     </Component>
-  )
-}
+  );
+};
 
 const ContentButton = ({ content, level = 1 }) => {
-  const { collection, buttons } = content
-  const className = `level-${level}`
+  const { collection, buttons } = content;
+  const className = `level-${level}`;
 
   if (!collection && !buttons)
-    return <ButtonComponent content={content} className={className} />
+    return <ButtonComponent content={content} className={className} />;
 
   const ButtonGroup = ({ buttons }) =>
     buttons.map((content, index) => (
@@ -144,7 +144,7 @@ const ContentButton = ({ content, level = 1 }) => {
         level={level + 1}
         content={content}
       />
-    ))
+    ));
 
   return (
     <ButtonComponent
@@ -174,8 +174,8 @@ const ContentButton = ({ content, level = 1 }) => {
         )}
       </Box>
     </ButtonComponent>
-  )
-}
+  );
+};
 
 const ContentButtons = ({ content, variant, wrapperStyles }) =>
   content ? (
@@ -190,10 +190,10 @@ const ContentButtons = ({ content, variant, wrapperStyles }) =>
         ))}
       </Box>
     </>
-  ) : null
+  ) : null;
 
-export default ContentButtons
+export default ContentButtons;
 
 ContentButtons.defaultProps = {
-  variant: 'horizontal'
-}
+  variant: 'horizontal',
+};

@@ -5,7 +5,7 @@
  *
  */
 
-import holographic from './assets/holographic.jpg'
+import holographic from './assets/holographic.jpg';
 
 export default {
   heroContainer: {
@@ -20,19 +20,19 @@ export default {
       right: `50%`,
       transform: `translate(50%, -50%)`,
       zIndex: -1,
-      borderRadius: `xl`
+      borderRadius: `xl`,
     },
     '::after': {
       background: `linear-gradient(
           180deg,
           rgba(255,255,255,0.2) 0%,
           rgba(255,255,255,0.9) 100%
-        )`
+        )`,
     },
     '::before': {
       background: `url(${holographic}) no-repeat center center`,
-      backgroundSize: `cover`
-    }
+      backgroundSize: `cover`,
+    },
   },
   featureOneContainer: {
     position: `relative`,
@@ -47,19 +47,19 @@ export default {
       left: `0%`,
       transform: [`translate(15vw, -185%)`, `translate(20%, -85%)`],
       zIndex: -2,
-      borderRadius: `full`
+      borderRadius: `full`,
     },
     '::after': {
       background: `linear-gradient(
           180deg,
           rgba(255,255,255,0.2) 0%,
           rgba(255,255,255,0.9) 100%
-        )`
+        )`,
     },
     '::before': {
       background: `url(${holographic}) no-repeat center center`,
-      backgroundSize: `cover`
-    }
+      backgroundSize: `cover`,
+    },
   },
   featureTwoContainer: {
     position: `relative`,
@@ -74,19 +74,19 @@ export default {
       right: `0%`,
       transform: [`translate(-15vw, 30%)`, `translate(-15%, -85%)`],
       zIndex: -2,
-      borderRadius: `full`
+      borderRadius: `full`,
     },
     '::after': {
       background: `linear-gradient(
           180deg,
           rgba(255,255,255,0.2) 0%,
           rgba(255,255,255,0.9) 100%
-        )`
+        )`,
     },
     '::before': {
       background: `url(${holographic}) no-repeat center center`,
-      backgroundSize: `cover`
-    }
+      backgroundSize: `cover`,
+    },
   },
   featureThreeContainer: {
     position: `relative`,
@@ -97,7 +97,7 @@ export default {
       size: `full`,
       top: `30%`,
       right: `0%`,
-      zIndex: -1
+      zIndex: -1,
     },
     '::after': {
       background: `linear-gradient(
@@ -105,17 +105,17 @@ export default {
           rgba(255,255,255,1) 0%,
           rgba(255,255,255,0.6) 50%,
           rgba(255,255,255,1) 100%
-        )`
+        )`,
     },
     '::before': {
       background: `url(${holographic}) no-repeat center center`,
-      backgroundSize: `cover`
-    }
+      backgroundSize: `cover`,
+    },
   },
   whyChooseUsContainer: {
     bg: `omegaDarker`,
     borderRadius: `xl`,
     py: 5,
-    px: [4, 0]
-  }
-}
+    px: [4, 0],
+  },
+};

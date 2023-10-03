@@ -12,7 +12,7 @@ const loadCartFromLocalStorage = () => {
   }
 };
 
-const saveCartToLocalStorage = (cart) => {
+const saveCartToLocalStorage = cart => {
   try {
     localStorage.setItem('cart', JSON.stringify(cart));
   } catch (error) {
@@ -25,7 +25,7 @@ const cartSlice = createSlice({
   initialState: loadCartFromLocalStorage(),
   reducers: {
     addToCart: (state, action) => {
-      const existingItem = state.find((item) => item.id === action.payload.id);
+      const existingItem = state.find(item => item.id === action.payload.id);
 
       if (existingItem) {
         existingItem.quantity += 1;
@@ -54,13 +54,19 @@ const cartSlice = createSlice({
       });
     },
     clearCart: () => {
-      localStorage.removeItem("cart")
+      localStorage.removeItem('cart');
       return [];
       // saveCartToLocalStorage([]);
     },
   },
 });
 
-export const { addToCart, removeFromCart, clearCart, decreaseQuantity, increaseQuantity } = cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  clearCart,
+  decreaseQuantity,
+  increaseQuantity,
+} = cartSlice.actions;
 
 export default cartSlice.reducer;

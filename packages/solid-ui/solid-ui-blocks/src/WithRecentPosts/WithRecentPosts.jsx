@@ -1,61 +1,61 @@
-import React, { Children } from 'react'
-import { useRecentPosts } from '@blocks-helpers'
-import getImageVariant from '@solid-ui-components/utils/getImageVariant'
+import React, { Children } from 'react';
+import { useRecentPosts } from '@blocks-helpers';
+import getImageVariant from '@solid-ui-components/utils/getImageVariant';
 
 const WithRecentPosts = ({ children, limit = 3 }) => {
-  const recentPosts = useRecentPosts()
+  const recentPosts = useRecentPosts();
 
-  if (!recentPosts || recentPosts.length === 0) return null
+  if (!recentPosts || recentPosts.length === 0) return null;
 
   const collection = recentPosts.map(post => ({
     container: {
       variant: 'cards.interactive',
       link: {
         type: 'PAGE',
-        link: post.slug
-      }
+        link: post.slug,
+      },
     },
     text: [
       {
         text: post.category.name,
-        color: 'alphaDark'
+        color: 'alphaDark',
       },
       {
         text: post.title,
-        variant: 'h5'
+        variant: 'h5',
       },
       {
-        text: post.excerpt
+        text: post.excerpt,
       },
       {
         text: post.author.name,
-        color: 'omegaDark'
+        color: 'omegaDark',
       },
       {
-        text: post.date
+        text: post.date,
       },
       {
-        text: `${post.timeToRead} min read`
-      }
+        text: `${post.timeToRead} min read`,
+      },
     ],
     images: [
       {
         alt: post.title,
         src: {
           childImageSharp: {
-            gatsbyImageData: getImageVariant(post.thumbnail, 'vertical')
-          }
-        }
-      }
+            gatsbyImageData: getImageVariant(post.thumbnail, 'vertical'),
+          },
+        },
+      },
     ],
     avatar: {
       src: {
         childImageSharp: {
-          gatsbyImageData: getImageVariant(post.author.thumbnail, 'small')
-        }
-      }
-    }
-  }))
+          gatsbyImageData: getImageVariant(post.author.thumbnail, 'small'),
+        },
+      },
+    },
+  }));
 
   const wrappedBlock = Children.map(children, child =>
     React.cloneElement(child, {
@@ -63,16 +63,16 @@ const WithRecentPosts = ({ children, limit = 3 }) => {
       content: {
         text: child.props?.text || null,
         buttons: child.props?.buttons || null,
-        collection: collection.splice(0, limit)
-      }
-    })
-  )
+        collection: collection.splice(0, limit),
+      },
+    }),
+  );
 
-  return wrappedBlock
-}
+  return wrappedBlock;
+};
 
-export default WithRecentPosts
+export default WithRecentPosts;
 
 WithRecentPosts.defaultProps = {
-  limit: 3
-}
+  limit: 3,
+};

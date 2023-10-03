@@ -1,24 +1,24 @@
-import React from 'react'
-import { Heading } from 'theme-ui'
-import Navigation from '@solid-ui-components/Navigation'
-import useSiteMetadata from '@blocks-helpers/useSiteMetadata'
-import attachSocialIcons from '@helpers/attachSocialIcons'
+import React from 'react';
+import { Heading } from 'theme-ui';
+import Navigation from '@solid-ui-components/Navigation';
+import useSiteMetadata from '@blocks-helpers/useSiteMetadata';
+import attachSocialIcons from '@helpers/attachSocialIcons';
 
 const styles = {
   social: {
-    mb: [3, 0]
+    mb: [3, 0],
   },
   navHeader: {
-    display: [`none`, `block`]
-  }
-}
+    display: [`none`, `block`],
+  },
+};
 
 export const FooterSocial = () => {
-  const { social } = useSiteMetadata()
+  const { social } = useSiteMetadata();
 
   return (
     <>
-      <Heading variant='h4' as='p' sx={styles.navHeader}>
+      <Heading variant="h4" as="p" sx={styles.navHeader}>
         Social Media
       </Heading>
       <Navigation
@@ -27,5 +27,5 @@ export const FooterSocial = () => {
         wrapperStyle={styles.social}
       />
     </>
-  )
-}
+  );
+};
