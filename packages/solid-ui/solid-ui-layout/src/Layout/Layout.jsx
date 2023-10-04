@@ -1,14 +1,13 @@
 import React from 'react';
 import { Global } from '@emotion/core';
-import { ThemeProvider, merge, Flex, Box, css } from 'theme-ui';
+import { Box, css, Flex, merge, ThemeProvider } from 'theme-ui';
 import baseTheme from '@solid-ui-theme';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import pageContextProvider from '@helpers/pageContextProvider';
 import { FormContextProvider } from '@solid-ui-components/ContentForm';
 import ThreeCX from '@solid-ui-components/ThreeCX';
 import { ModalContextProvider } from '@solid-ui-components/Modal';
 import { TabsContextProvider } from '@solid-ui-components/Tabs';
-import ColorMode from '@solid-ui-components/ColorMode';
 import { SEOContext } from 'gatsby-plugin-wpgraphql-seo';
 import './css/global.css';
 import 'react-tabs/style/react-tabs.css';
@@ -99,7 +98,6 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
               <SEOContext.Provider value={{ global: seo }}>
                 <Flex variant="layout.layout">
                   <Global styles={css(theme => theme.global)} />
-                  <ColorMode />
                   <Box variant="layout.body">
                     {children}
                     <ThreeCX />
@@ -114,4 +112,4 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
   );
 };
 
-export default Layout;
+export default Layout
