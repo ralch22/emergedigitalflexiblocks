@@ -1,15 +1,11 @@
 import React from 'react';
-import { Container, Flex, Box, Badge, Link } from 'theme-ui';
-import ContentContainer from '@solid-ui-components/ContentContainer';
+import { Box, Container, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentImages from '@solid-ui-components/ContentImages';
 import CardList from '@solid-ui-components/ProductList';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
-
-import { FaRegClock } from 'react-icons/fa';
 
 const styles = {
   wrapper: {
@@ -77,6 +73,7 @@ const styles = {
 
 const BlogBlock01 = ({
   products,
+  all,
   subscription,
   content: { text, collection, buttons },
 }) => {
@@ -91,7 +88,7 @@ const BlogBlock01 = ({
         <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
           <CardList
             nodes={products}
-            limit={3}
+            limit={!all && 3}
             subscription={subscription}
             columns={[1, 1, 1, 3]}
             variant={['horizontal-md', 'horizontal', 'horizontal', 'vertical']}
@@ -107,4 +104,4 @@ const BlogBlock01 = ({
     </Container>
   );
 };
-export default WithDefaultContent(BlogBlock01);
+export default WithDefaultContent(BlogBlock01)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box } from 'theme-ui';
+import { Box, Container, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import FlexImage from '@solid-ui-components/FlexImage';
@@ -86,4 +86,4 @@ const FeaturesWithPhotoBlock05 = ({
   </Container>
 );
 
-export default WithDefaultContent(FeaturesWithPhotoBlock05);
+export default WithDefaultContent(FeaturesWithPhotoBlock05)

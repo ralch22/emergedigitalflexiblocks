@@ -1,30 +1,35 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Box, Container, Flex } from 'theme-ui';
+import { Container } from 'theme-ui';
 import Layout from '@solid-ui-layout/Layout';
 import Seo from 'gatsby-plugin-wpgraphql-seo';
 import Divider from '@solid-ui-components/Divider';
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
 import ModalSimple from '@solid-ui-blocks/Modal/Block02';
+import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
-import Content from '@solid-ui-blocks/Content/Block01';
+import Content3 from '@solid-ui-blocks/Content/Block03';
+import Content4 from '@solid-ui-blocks/Content/Block04';
 import Contact from '@solid-ui-blocks/CallToAction/Block02';
-import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block10';
-import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block05';
-import FeatureFour from '@solid-ui-blocks/Features/Block10';
-import Industries from '@solid-ui-blocks/Features/Block11';
-import List from '@solid-ui-blocks/Features/Block04';
-import Steps from '@solid-ui-blocks/Content/Block06';
-import Choice from '@solid-ui-blocks/Features/Block02';
+import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
+import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
+import Inclusions from '@solid-ui-blocks/FeaturesWithPhoto/Block02';
+import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
+import Faq from '@solid-ui-blocks/Faq/Block01';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import styles from '../_styles';
-import { regexString } from '../../utils/filter';
+import servicesData from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services.json';
+import servicesData1 from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services1.json';
+import { regexString } from '../utils/filter';
 
-const AppDevelopment = props => {
+const GAnalyticsAudit = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 
+  const tabs = [
+    { title: 'Overview', content: <Content4 content={servicesData1} /> },
+    { title: 'Our Services', content: <Content3 content={servicesData} /> },
+  ];
   const uri = regexString(props.uri);
   const filter = allWpPage.nodes.filter(page => {
     return page.slug === uri;
@@ -37,39 +42,24 @@ const AppDevelopment = props => {
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
       {/* Blocks */}
       <Header content={content['header']} />
+      <Hero content={content['page-title']} />
       <Divider space="5" />
-      <Container variant="wide" sx={styles.heroContainer}>
-        <Content pageTitle="hello" content={content['hero']} />
+      <Container>
+        <FeatureThree reverseSm content={content['feature-one']} />
+      </Container>
+      <Divider space="5" />
+      <Inclusions content={content['inclusions']} />
+      <Divider space="5" />
+      <Container>
+        <FeatureTwo reverse content={content['feature-two']} />
       </Container>
       <Divider space="5" />
       <Container>
-        <Flex sx={{ flexDirection: [`column`, null, `row`], m: [0, -4] }}>
-          <div style={{ flexBasis: '50%' }}>
-            <FeatureThree content={content['feature-three']} />
-          </div>
-          <div style={{ flexBasis: '50%' }}>
-            <FeatureFour content={content['feature-four']} />
-          </div>
-        </Flex>
+        <Faq content={content['faq']} />
       </Container>
-      <Divider space="5" />
-      <Steps content={content['steps']} />
-      <Divider space="5" />
-      <Box
-        sx={{ background: `linear-gradient(90deg, #336567 0%, #3F2B56 100%)` }}
-      >
-        <FeatureTwo content={content['feature-two']} />
-      </Box>
-      <Divider space="5" />
-      <Industries content={content['industries']} />
-      <Divider space="5" />
-      <List content={content['card-list']} />
-      <Divider space="5" />
-      <Choice content={content['choice']} />
-      <Divider space="5" />
-      <Steps content={content['why']} />
       <Divider space="5" />
       <Contact content={content['cta']} />
       <Divider space="5" />
@@ -79,9 +69,11 @@ const AppDevelopment = props => {
 };
 
 export const query = graphql`
-  query innerpageAppDevelopmentBlockContent {
+  query innerpageGAnalyticsAuditBlockContent {
     allBlockContent(
-      filter: { page: { in: ["innerpage/app-development", "shared"] } }
+      filter: {
+        page: { in: ["innerpage/google-analytics-4-training", "shared"] }
+      }
     ) {
       nodes {
         ...BlockContent
@@ -127,4 +119,4 @@ export const query = graphql`
   }
 `;
 
-export default AppDevelopment;
+export default GAnalyticsAudit;

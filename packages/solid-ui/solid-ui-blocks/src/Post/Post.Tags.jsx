@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { Badge, Heading, Flex, Box } from 'theme-ui';
+import { Badge, Box, Flex, Heading } from 'theme-ui';
 
 const styles = {
   wrapper: {
@@ -21,7 +20,7 @@ export const PostTags = ({ tags }) =>
       </Heading>
       <Box variant="lists.badges">
         {tags.node.map(({ id, name, slug }) => (
-          <Badge variant="tag" key={id} as={Link} to={slug}>
+          <Badge variant="tag" key={id}>
             {name}
           </Badge>
         ))}

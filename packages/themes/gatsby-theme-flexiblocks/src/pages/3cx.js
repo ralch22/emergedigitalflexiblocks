@@ -17,10 +17,10 @@ import Faq from '@solid-ui-blocks/Faq/Block01';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../../store/ducks/productSlice';
+import { fetchProducts } from '../store/ducks/productSlice';
 import Products from '@solid-ui-blocks/Products/Block01';
-import styles from '../_styles';
-import { regexString } from '../../utils/filter';
+import styles from './_styles';
+import { regexString } from '../utils/filter';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;

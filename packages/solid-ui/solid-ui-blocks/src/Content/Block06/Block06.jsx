@@ -1,13 +1,8 @@
 import React from 'react';
-import { Container, Grid, Box, Card } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
+import { Box, Card, Container, Grid } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
-import Icon from '@solid-ui-components/ContentIcon';
-import Buttons from '@solid-ui-theme/buttons/index';
-import ContentIcon from '@solid-ui-components/ContentIcon/ContentIcon';
 
 const ServiceColumn = ({ text }) => {
   return (

@@ -1,12 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box, Badge, Link, Grid, Ima } from 'theme-ui';
-import { StaticImage } from 'gatsby-plugin-image';
-import ContentContainer from '@solid-ui-components/ContentContainer';
-import Reveal from '@solid-ui-components/Reveal';
-import Divider from '@solid-ui-components/Divider';
-import Text from 'theme-ui';
-import CustomImages from '@solid-ui-components/CustomImage';
-import ContentButtons from '@solid-ui-components/ContentButtons';
+import { Badge, Box, Flex, Grid, Link } from 'theme-ui';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import { format } from 'date-fns';
 
@@ -195,4 +188,4 @@ const Posts = ({ posts }) => {
   );
 };
 
-export default WithDefaultContent(Posts);
+export default WithDefaultContent(Posts)

@@ -1,15 +1,10 @@
 import React, { useContext } from 'react';
-import { Box, Card, Flex, Button } from 'theme-ui';
+import { Box, Button, Card, Flex } from 'theme-ui';
 import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 import columnSizeMatcher from '@solid-ui-components/utils/columnSizeMatcher';
 import Body from './Card.Body';
-import Footer from './Card.Footer';
-import { useSelector, useDispatch } from 'react-redux';
-import {
-  addToCart,
-  removeFromCart,
-  clearCart,
-} from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
 import { addToSubscription } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/subscriptionSlice';
 import Media from './Card.Media';
 import { navigate } from 'gatsby';
@@ -24,6 +19,7 @@ const styles = {
   content: {
     alignItems: `stretch`,
     height: `full`,
+    flexDirection: `column`,
   },
 };
 
@@ -55,6 +51,7 @@ const CardBase = ({
       handleAddToCart(item);
     }
   }
+
   return (
     <Box
       className="blog_card"
@@ -75,6 +72,7 @@ const CardBase = ({
             ...styles.content,
             variant: rv(props.variant, 'content'),
           }}
+          style={{ flexDirection: 'column' }}
         >
           <Media withModerate {...props} />
           <Body {...props}></Body>
@@ -93,4 +91,4 @@ const CardBase = ({
   );
 };
 
-export default CardBase;
+export default CardBase

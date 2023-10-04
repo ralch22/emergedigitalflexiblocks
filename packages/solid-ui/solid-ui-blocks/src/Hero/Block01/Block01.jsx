@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box, css } from 'theme-ui';
+import { Box, Container, css, Flex } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
@@ -76,4 +76,4 @@ const HeroBlock01 = ({
   </Container>
 );
 
-export default WithDefaultContent(HeroBlock01);
+export default WithDefaultContent(HeroBlock01)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box, css } from 'theme-ui';
+import { Box, Container, css, Flex } from 'theme-ui';
 import { ImQuotesRight } from 'react-icons/im';
 import { AiFillStar } from 'react-icons/ai';
 import Reveal from '@solid-ui-components/Reveal';
@@ -123,4 +123,4 @@ const TestimonialsBlock03 = ({
   </Container>
 );
 
-export default WithDefaultContent(TestimonialsBlock03);
+export default WithDefaultContent(TestimonialsBlock03)

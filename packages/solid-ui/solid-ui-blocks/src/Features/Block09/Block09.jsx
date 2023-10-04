@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Flex, Box } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
+import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
@@ -91,4 +90,4 @@ const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
     </Container>
   );
 };
-export default WithDefaultContent(FeaturesBlock06);
+export default WithDefaultContent(FeaturesBlock06)

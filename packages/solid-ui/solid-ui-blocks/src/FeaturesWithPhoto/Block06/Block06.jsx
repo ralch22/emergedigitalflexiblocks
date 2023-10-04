@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box } from 'theme-ui';
+import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import ProgressBar from '@solid-ui-components/ProgressBar';
 import Counter from '@solid-ui-components/Counter';
@@ -81,4 +81,4 @@ const FeaturesWithPhotoBlock06 = ({
   </Container>
 );
 
-export default WithDefaultContent(FeaturesWithPhotoBlock06);
+export default WithDefaultContent(FeaturesWithPhotoBlock06)

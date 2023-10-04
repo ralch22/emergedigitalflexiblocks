@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box, css } from 'theme-ui';
+import { Box, Container, css, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ContentText from '@solid-ui-components/ContentText';
@@ -63,4 +63,4 @@ const TestimonialsBlock01 = ({ content: { text, collection } }) => (
   </Container>
 );
 
-export default WithDefaultContent(TestimonialsBlock01);
+export default WithDefaultContent(TestimonialsBlock01)

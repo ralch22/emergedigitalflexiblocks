@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box } from 'theme-ui';
+import { Box, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import Modal from '@solid-ui-components/Modal';
@@ -90,4 +90,4 @@ const ModalBlock02 = ({
   );
 };
 
-export default ModalBlock02;
+export default ModalBlock02

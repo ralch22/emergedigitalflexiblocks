@@ -1,27 +1,19 @@
 import React, { useEffect } from 'react';
-import { Flex, Box, Grid, Heading, Text, Card, Select } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
+import { Box, Card, Flex, Heading, Select, Text } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import Modal from '@solid-ui-components/Modal';
-import ListItem from '@solid-ui-components/ListItem';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
-import rv from '@solid-ui-components/utils/buildResponsiveVariant';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   addToCart,
-  removeFromCart,
   decreaseQuantity,
   increaseQuantity,
+  removeFromCart,
 } from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/cartSlice';
 import { fetchShipmentMethods } from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/methodSlice';
-import { FaTimes, FaPlus, FaMinus } from 'react-icons/fa';
 import CartTable from '@solid-ui-blocks/CartTable/Block01';
-import {
-  addLineShipping,
-  getShippingMethod,
-} from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice';
+import { addLineShipping } from '../../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/checkoutSlice';
 
 const calculateTotalPrice = cartItems => {
   return cartItems.reduce((total, item) => {
@@ -97,7 +89,7 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
             <Text>Nothing is Added To the Cart</Text>
           </Flex>
         ) : (
-          <Flex>
+          <Flex sx={{ flexDirection: [`column`, null, `row`] }}>
             {/* <Grid 
           columns={[1, 2]} 
           gap={4}
@@ -202,4 +194,4 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
   );
 };
 
-export default ModalBlock02;
+export default ModalBlock02

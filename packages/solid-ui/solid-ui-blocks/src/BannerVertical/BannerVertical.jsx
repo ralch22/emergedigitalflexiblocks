@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { Flex, Button, Heading, Text } from 'theme-ui';
+import { Flex, Heading, Text } from 'theme-ui';
 import { FaRegHandshake } from 'react-icons/fa';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import Divider from '@solid-ui-components/Divider';
@@ -77,4 +76,4 @@ const BannerVertical = ({ content: { buttons } }) => (
   </Flex>
 );
 
-export default BannerVertical;
+export default BannerVertical

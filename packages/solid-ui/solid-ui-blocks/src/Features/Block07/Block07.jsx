@@ -1,10 +1,9 @@
 import React from 'react';
-import { Container, Flex, Box } from 'theme-ui';
+import { Box, Container, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ContentForm from '@solid-ui-components/ContentForm';
 import ListItem from '@solid-ui-components/ListItem';
-import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const FeaturesBlock06 = ({ content: { collection, form, reverse } }) => (
@@ -64,4 +63,4 @@ const FeaturesBlock06 = ({ content: { collection, form, reverse } }) => (
   </Container>
 );
 
-export default WithDefaultContent(FeaturesBlock06);
+export default WithDefaultContent(FeaturesBlock06)

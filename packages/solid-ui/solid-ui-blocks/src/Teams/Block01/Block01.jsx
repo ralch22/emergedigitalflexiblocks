@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Flex, css } from 'theme-ui';
+import { Box, Container, css, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import Reveal from '@solid-ui-components/Reveal';
 import ContentText from '@solid-ui-components/ContentText';
@@ -99,4 +99,4 @@ const TeamsBlock01 = ({
   </Container>
 );
 
-export default WithDefaultContent(TeamsBlock01);
+export default WithDefaultContent(TeamsBlock01)

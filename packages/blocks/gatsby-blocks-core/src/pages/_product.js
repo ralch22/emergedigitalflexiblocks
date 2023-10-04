@@ -11,7 +11,7 @@ module.exports = async ({ actions }, pluginOptions, { template }) => {
   const { createPage } = actions;
 
   const response = await WooCommerce.get('products', {
-    per_page: 1000,
+    per_page: 36, // 20 products per page
   });
   response.data.forEach(post => {
     createPage({

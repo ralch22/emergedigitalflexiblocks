@@ -1,21 +1,21 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { Container } from 'theme-ui';
-import Layout from '@solid-ui-layout/Layout';
-import Seo from 'gatsby-plugin-wpgraphql-seo';
-import Divider from '@solid-ui-components/Divider';
-import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
-import ModalSimple from '@solid-ui-blocks/Modal/Block02';
-import Header from '@solid-ui-blocks/Header/Block01';
-import Content from '@solid-ui-blocks/Content/Block01';
-import List from '@solid-ui-blocks/Features/Block05';
-import Choice from '@solid-ui-blocks/Features/Block02';
-import View from '@solid-ui-blocks/Content/Block08';
-import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
-import Footer from '@solid-ui-blocks/Footer/Block01';
-import { normalizeBlockContentNodes } from '@blocks-helpers';
-import styles from '../_styles';
-import { regexString } from '../../utils/filter';
+import React from 'react'
+import { graphql } from 'gatsby'
+import { Container } from 'theme-ui'
+import Layout from '@solid-ui-layout/Layout'
+import Seo from 'gatsby-plugin-wpgraphql-seo'
+import Divider from '@solid-ui-components/Divider'
+import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
+import ModalSimple from '@solid-ui-blocks/Modal/Block02'
+import ModalCart from '@solid-ui-blocks/Modal/Block03'
+import Header from '@solid-ui-blocks/Header/Block01'
+import List from '@solid-ui-blocks/Features/Block05'
+import Choice from '@solid-ui-blocks/Features/Block02'
+import Hero from '@solid-ui-blocks/Hero/Block04/Block04'
+import View from '@solid-ui-blocks/Content/Block08'
+import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
+import Footer from '@solid-ui-blocks/Footer/Block01'
+import { normalizeBlockContentNodes } from '@blocks-helpers'
+import { regexString } from '../utils/filter'
 // import servicesData from '../../../../../../site/content/blocks/innerpage/services-03/services.json';
 // import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
 
@@ -39,12 +39,10 @@ const GAnalyticsAudit = props => {
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
       {/* Blocks */}
       <Header content={content['header']} />
-      <Divider space="5" />
-      <Container variant="wide" sx={styles.heroContainer}>
-        <Content pageTitle="hello" content={content['hero']} />
-      </Container>
+      <Hero content={content['page-title']} />
       <Divider space="5" />
       <Container>
         <FeatureThree reverseSm content={content['feature-one']} />

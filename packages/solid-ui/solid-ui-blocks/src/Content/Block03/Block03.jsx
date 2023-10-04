@@ -1,12 +1,9 @@
 import React from 'react';
-import { Container, Flex, Box, css } from 'theme-ui';
+import { Box, Container, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
-import Divider from '@solid-ui-components/Divider';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import Icon from '@solid-ui-components/ContentIcon';
-import Buttons from '@solid-ui-theme/buttons/index';
 
 const ServiceColumn = ({ title, collection }) => {
   const chunkSize = Math.ceil(collection.length / 3);
@@ -82,4 +79,4 @@ const ContentBlock01 = ({ content, reverse }) => (
   </Container>
 );
 
-export default WithDefaultContent(ContentBlock01);
+export default WithDefaultContent(ContentBlock01)

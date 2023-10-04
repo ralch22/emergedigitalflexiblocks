@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box } from 'theme-ui';
+import { Box, Container, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ListItem from '@solid-ui-components/ListItem';

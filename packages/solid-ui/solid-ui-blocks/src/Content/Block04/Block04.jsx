@@ -1,12 +1,7 @@
 import React from 'react';
-import { Container, Flex, Box, Card } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
-import Divider from '@solid-ui-components/Divider';
+import { Box, Card, Container, Flex } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
-import Icon from '@solid-ui-components/ContentIcon';
-import Buttons from '@solid-ui-theme/buttons/index';
 import ContentIcon from '@solid-ui-components/ContentIcon/ContentIcon';
 
 const ServiceColumn = ({ text, collection, icon }) => {
@@ -64,4 +59,4 @@ const ContentBlock01 = ({ content, reverse }) => (
   </Container>
 );
 
-export default WithDefaultContent(ContentBlock01);
+export default WithDefaultContent(ContentBlock01)

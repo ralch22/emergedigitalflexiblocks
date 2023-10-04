@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, Box, Heading, css } from 'theme-ui';
+import { Box, Container, css, Flex, Heading } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ContentText from '@solid-ui-components/ContentText';
@@ -93,4 +93,4 @@ const FeaturesBlock03 = ({ content: { text, buttons, collection } }) => (
   </Container>
 );
 
-export default WithDefaultContent(FeaturesBlock03);
+export default WithDefaultContent(FeaturesBlock03)

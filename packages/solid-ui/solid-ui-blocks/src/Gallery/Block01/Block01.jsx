@@ -1,6 +1,6 @@
 import React from 'react';
 import { getImage } from 'gatsby-plugin-image';
-import { Container, Flex, Box, css } from 'theme-ui';
+import { Box, Container, css, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ContentContainer from '@solid-ui-components/ContentContainer';
@@ -63,4 +63,4 @@ const GalleryBlock01 = ({ content: { text, collection } }) => (
   </Container>
 );
 
-export default WithDefaultContent(GalleryBlock01);
+export default WithDefaultContent(GalleryBlock01)

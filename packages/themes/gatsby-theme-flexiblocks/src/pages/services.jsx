@@ -1,29 +1,39 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Button, Container, Flex } from 'theme-ui';
+import { Container } from 'theme-ui';
 import Layout from '@solid-ui-layout/Layout';
+import Seo from 'gatsby-plugin-wpgraphql-seo';
 import Divider from '@solid-ui-components/Divider';
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
 import ModalSimple from '@solid-ui-blocks/Modal/Block02';
+import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
 import Content from '@solid-ui-blocks/Content/Block01';
+import Content3 from '@solid-ui-blocks/Content/Block03';
+import Content4 from '@solid-ui-blocks/Content/Block04';
+import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
+import CustomTabSwitcher from '@solid-ui-blocks/Content/Tabs';
+import Contact from '@solid-ui-blocks/CallToAction/Block02';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
-import FeatureTwo from '@solid-ui-blocks/Features/Block02';
-import SingleText from '@solid-ui-blocks/Content/Block07';
 import Footer from '@solid-ui-blocks/Footer/Block01';
-import Seo from 'gatsby-plugin-wpgraphql-seo';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import styles from '../_styles';
-import { regexString } from '../../utils/filter';
+import servicesData from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services.json';
+import servicesData1 from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services1.json';
+import { regexString } from '../utils/filter';
 
-const WpEngine = props => {
+const Services03 = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
+
+  const tabs = [
+    { title: 'Overview', content: <Content4 content={servicesData1} /> },
+    { title: 'Our Services', content: <Content3 content={servicesData} /> },
+  ];
   const uri = regexString(props.uri);
-  const filtered = allWpPage.nodes.filter(page => {
+  const filter = allWpPage.nodes.filter(page => {
     return page.slug === uri;
   });
-  const post = filtered[0];
+  const post = filter[0];
   return (
     <Layout {...props}>
       <Seo post={post} />
@@ -31,74 +41,30 @@ const WpEngine = props => {
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
       {/* Blocks */}
       <Header content={content['header']} />
-      <Divider space="5" />
-      <Container variant="wide" sx={styles.heroContainer}>
-        <Content pageTitle="hello" content={content['hero']} />
-      </Container>
+      <Hero content={content['services']} />
       <Divider space="5" />
       <Container>
         <FeatureThree reverseSm content={content['feature-one']} />
       </Container>
       <Divider space="5" />
-      <Container>
-        <FeatureThree content={content['speed']} />
-        <Divider space="3" />
-        <FeatureThree reverse content={content['support']} />
-        <Divider space="3" />
-        <FeatureThree content={content['security']} />
-      </Container>
+      <Content content={content['services-intro']} />
+      <Divider space="4" />
+      <CustomTabSwitcher tabs={tabs} />
+      <Divider space="4" />
+      <Contact content={content['cta']} />
       <Divider space="5" />
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <img
-          style={{ width: 'inherit' }}
-          src="https://emergedigital.ae/wp-content/uploads/2019/10/WPEngine_Member-Badge.png"
-          alt=""
-        />
-        <Divider space="3" />
-        <Button variant="secondary" to="/dd" ml={2}>
-          GET 2 MONTHS FREE
-        </Button>
-      </Flex>
-      <Divider space="5" />
-      <Container>
-        <FeatureTwo content={content['developer']} />
-      </Container>
-      <Divider space="5" />
-      <Container>
-        <FeatureTwo content={content['enterprise']} />
-      </Container>
-      <Divider space="5" />
-      <Container>
-        <FeatureTwo double content={content['hosting']} />
-      </Container>
-      <Divider space="5" />
-      <Container>
-        <FeatureTwo double content={content['store']} />
-      </Container>
-      <Divider space="5" />
-      <SingleText content={content['intro']} />
-      <Divider space="5" />
-      <Container>
-        <FeatureThree reverseSm content={content['feature-two']} />
-      </Container>
-      <Divider space="5" />
-
       <Footer content={content['footer']} />
     </Layout>
   );
 };
+
 export const query = graphql`
-  query homepageMarketingBlockContent {
+  query innerpageServices03BlockContent {
     allBlockContent(
-      filter: { page: { in: ["innerpage/wp-engine", "shared"] } }
+      filter: { page: { in: ["innerpage/services-03", "shared", "others"] } }
     ) {
       nodes {
         ...BlockContent
@@ -143,4 +109,5 @@ export const query = graphql`
     }
   }
 `;
-export default WpEngine;
+
+export default Services03;

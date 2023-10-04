@@ -1,9 +1,6 @@
-import React, { Fragment } from 'react';
-import { Container, Flex, Box } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
+import React from 'react';
+import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
-import ListItem from '@solid-ui-components/ListItem';
-import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
 import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentImages from '@solid-ui-components/ContentImages';
@@ -61,4 +58,4 @@ const FeaturesWithPhotoBlock01 = ({
   </Box>
 );
 
-export default WithDefaultContent(FeaturesWithPhotoBlock01);
+export default WithDefaultContent(FeaturesWithPhotoBlock01)

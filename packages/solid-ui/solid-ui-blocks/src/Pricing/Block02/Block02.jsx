@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Flex, Box, Badge, css } from 'theme-ui';
+import { Badge, Box, Container, css, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ListItem from '@solid-ui-components/ListItem';
@@ -146,4 +146,4 @@ const PricingBlock02 = ({ content: { text, collection, buttons } }) => {
   );
 };
 
-export default WithDefaultContent(PricingBlock02);
+export default WithDefaultContent(PricingBlock02)

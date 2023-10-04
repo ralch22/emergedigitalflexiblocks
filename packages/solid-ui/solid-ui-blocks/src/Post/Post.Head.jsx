@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link as GLink } from 'gatsby';
-import { Link, Text, Flex, Box, Badge } from 'theme-ui';
+import { Badge, Box, Flex, Link, Text } from 'theme-ui';
 import TextList from '@solid-ui-components/TextList';
 import PageTitle from '@solid-ui-components/PageTitle';
-import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
 const styles = {
   item: {
@@ -29,9 +28,7 @@ export const PostHead = ({ title, author, date, timeToRead, categories }) => {
             {categories.nodes.map(({ name, slug }) => {
               return (
                 <Box sx={{ ml: 2 }}>
-                  <Badge variant="tag" as={Link} to={slug}>
-                    {name}
-                  </Badge>
+                  <Badge variant="tag">{name}</Badge>
                 </Box>
               );
             })}

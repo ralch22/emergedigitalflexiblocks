@@ -9,7 +9,8 @@ import Drawer from '@solid-ui-components/Drawer';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
-import { FaUser } from 'react-icons/fa';
+import { ModalContext } from '@solid-ui-components/Modal';
+import { FaCartArrowDown, FaUser } from 'react-icons/fa';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -66,7 +67,7 @@ const styles = {
     width: 150,
   },
   mobileMenu: {
-    display: [`block`, null, `none`],
+    display: [`flex`, null, `none`],
   },
 };
 
@@ -78,7 +79,7 @@ const HeaderBlock01 = ({
   const context = useContext(pageContextProvider);
 
   const { services, mobileMenu, darkMode } = context.pageContext;
-
+  const { setActiveModal } = useContext(ModalContext);
   const algolia = services && services.algolia;
   return (
     <>
@@ -210,6 +211,11 @@ const HeaderBlock01 = ({
                             </>
                           )}
                         </Drawer>
+                        <FaCartArrowDown
+                          size={25}
+                          style={{ marginLeft: '1em' }}
+                          onClick={() => setActiveModal('cart')}
+                        />
                       </Box>
                     </>
                   )}

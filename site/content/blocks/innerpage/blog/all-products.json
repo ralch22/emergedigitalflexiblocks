@@ -1,0 +1,14 @@
+{
+  "text": [
+    {
+      "text": " OUR PRODUCTS",
+      "variant": "h2"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/marketing/bg-page-header.jpg",
+      "alt": "Page Alt"
+    }
+  ]
+}

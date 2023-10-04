@@ -1,9 +1,6 @@
 import React from 'react';
-import { Container, Flex, Box, css } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
-import Divider from '@solid-ui-components/Divider';
+import { Box, Container } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const ContentBlock01 = ({ content: { text } }) => (

@@ -26,55 +26,55 @@
         {
           "text": "Digital Analytics & Measurement",
           "type": "PAGE",
-          "link": "/services/digital-analytics-measurement-services/",
+          "link": "/digital-analytics-measurement-services/",
           "variant": "links.nav-white"
         },
         {
           "text": "Google Analytics 4 Training",
           "type": "PAGE",
-          "link": "/services/google-analytics-4-training/",
+          "link": "/google-analytics-4-training/",
           "variant": "links.nav-white"
         },
         {
           "text": "Google Analytics 4 Audit",
           "type": "PAGE",
-          "link": "/services/google-analytics-4-audits/",
+          "link": "/google-analytics-4-audits/",
           "variant": "links.nav-white"
         },
         {
           "text": "Google Tag Manager Audit",
           "type": "PAGE",
-          "link": "/services/google-tag-manager-audits/",
+          "link": "/google-tag-manager-audits/",
           "variant": "links.nav-white"
         },
         {
           "text": "Search Engine Optimization",
           "type": "PAGE",
-          "link": "/services/search-engine-optimization/",
+          "link": "/search-engine-optimization/",
           "variant": "links.nav-white"
         },
         {
           "text": "Paid Media Services",
           "type": "PAGE",
-          "link": "/services/paid-media-services/",
+          "link": "/paid-media-services/",
           "variant": "links.nav-white"
         },
         {
           "text": "Sem PPC Management",
           "type": "PAGE",
-          "link": "/services/sem-ppc-management/",
+          "link": "/sem-ppc-management/",
           "variant": "links.nav-white"
         },
         {
           "text": "App Development",
           "type": "PAGE",
-          "link": "/services/app-development/",
+          "link": "/app-development/",
           "variant": "links.nav-white"
         },
         {
           "text": "B2B Demand Generation Services",
           "type": "PAGE",
-          "link": "/services/b2b-demand-generation-services/",
+          "link": "/b2b-demand-generation-services/",
           "variant": "links.nav-white"
         }
       ]
@@ -91,21 +91,21 @@
         {
           "text": "Google Marketing Platform",
           "type": "PAGE",
-          "link": "/technologies/google-marketing-platform",
+          "link": "/google-marketing-platform",
           "variant": "links.nav-white",
           "color": "white"
         },
         {
           "text": "3CX",
           "type": "PAGE",
-          "link": "/technologies/3cx",
+          "link": "/3cx",
           "variant": "links.nav-white",
           "color": "white"
         },
         {
           "text": "WP Engine",
           "type": "PAGE",
-          "link": "/technologies/wp-engine",
+          "link": "/wp-engine",
           "variant": "links.nav-white",
           "color": "white"
         }

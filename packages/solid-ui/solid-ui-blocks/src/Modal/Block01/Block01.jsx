@@ -1,16 +1,14 @@
 import React, { useContext } from 'react';
-import { Flex, Box } from 'theme-ui';
+import { Box, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
-import Tabs from '@solid-ui-components/Tabs';
-import Modal from '@solid-ui-components/Modal';
+import Tabs, { TabsContext } from '@solid-ui-components/Tabs';
+import Modal, { ModalContext } from '@solid-ui-components/Modal';
 import ListItem from '@solid-ui-components/ListItem';
-import { TabsContext } from '@solid-ui-components/Tabs';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentMap from '@solid-ui-components/ContentMap';
 import ContentForm from '@solid-ui-components/ContentForm';
-import { ModalContext } from '@solid-ui-components/Modal';
 
 const ModalBlock01 = ({ content, reverse }) => {
   const { activeModal } = useContext(ModalContext);
@@ -113,4 +111,4 @@ const ModalBlock01 = ({ content, reverse }) => {
   );
 };
 
-export default ModalBlock01;
+export default ModalBlock01

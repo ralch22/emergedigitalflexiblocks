@@ -1,12 +1,7 @@
-import React, { Fragment } from 'react';
-import { Container, Flex, Box } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
+import React from 'react';
+import { Box } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
-import ListItem from '@solid-ui-components/ListItem';
-import FlexImage from '@solid-ui-components/FlexImage';
-import FlexContent from '@solid-ui-components/FlexContent';
 import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
-import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import ContentText from '@solid-ui-components/ContentText';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';

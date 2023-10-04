@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Flex, Box, css } from 'theme-ui';
+import { Box, Container, css, Flex } from 'theme-ui';
 import { FaDotCircle } from 'react-icons/fa';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
@@ -128,4 +128,4 @@ const TestimonialsBlock04 = ({ content: { text, collection }, reverse }) => {
   );
 };
 
-export default WithDefaultContent(TestimonialsBlock04);
+export default WithDefaultContent(TestimonialsBlock04)

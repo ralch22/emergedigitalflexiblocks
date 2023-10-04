@@ -13,8 +13,7 @@ import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
 import ModalSimple from '@solid-ui-blocks/Modal/Block02';
 import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Seo from 'gatsby-plugin-wpgraphql-seo';
-import Content from '@solid-ui-blocks/Content/Block01';
-import styles from './_styles';
+import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCaseStudies } from '../store/ducks/caseSlice';
@@ -50,11 +49,8 @@ const Privacy = ({ data: { allBlockContent, allWpPage }, ...props }) => {
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
       <ModalCart content={content['cart']} />
-      <Container variant="wide" sx={styles.heroContainer}>
-        <Content pageTitle="hello" content={content['hero']} />
-      </Container>
-      <Divider />
-      <Divider spaceY="5" />
+      <Hero content={content['term']} />
+      <Divider space="5" />
       <Container>
         {post && <div dangerouslySetInnerHTML={{ __html: post.content }} />}
       </Container>
@@ -67,7 +63,7 @@ const Privacy = ({ data: { allBlockContent, allWpPage }, ...props }) => {
 export const query = graphql`
   query homepageMarketingBlockContent {
     allBlockContent(
-      filter: { page: { in: ["homepage/marketing", "shared"] } }
+      filter: { page: { in: ["homepage/marketing", "shared", "others"] } }
     ) {
       nodes {
         ...BlockContent

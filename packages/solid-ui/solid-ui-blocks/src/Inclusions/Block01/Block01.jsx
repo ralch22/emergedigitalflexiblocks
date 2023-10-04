@@ -1,12 +1,8 @@
 import React from 'react';
-import { Container, Flex, Box, css, Card } from 'theme-ui';
+import { Box, Card, Container, Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import ContentText from '@solid-ui-components/ContentText';
-import ContentImages from '@solid-ui-components/ContentImages';
-import ContentContainer from '@solid-ui-components/ContentContainer';
-import { ImQuotesRight } from 'react-icons/im';
-import { AiFillStar } from 'react-icons/ai';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 
 const styles = {
@@ -47,4 +43,4 @@ const Inclusions = ({ content: { text, collection } }) => (
   </Container>
 );
 
-export default WithDefaultContent(Inclusions);
+export default WithDefaultContent(Inclusions)

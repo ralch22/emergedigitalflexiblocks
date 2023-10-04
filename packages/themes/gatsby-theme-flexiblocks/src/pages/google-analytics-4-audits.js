@@ -6,27 +6,22 @@ import Seo from 'gatsby-plugin-wpgraphql-seo';
 import Divider from '@solid-ui-components/Divider';
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
 import ModalSimple from '@solid-ui-blocks/Modal/Block02';
+import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
-import Content from '@solid-ui-blocks/Content/Block01';
 import Content3 from '@solid-ui-blocks/Content/Block03';
 import Content4 from '@solid-ui-blocks/Content/Block04';
 import Contact from '@solid-ui-blocks/CallToAction/Block02';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
-import Feature4 from '@solid-ui-blocks/FeaturesWithPhoto/Block09';
-import Capabilities from '@solid-ui-blocks/Features/Block08';
-import Campaign from '@solid-ui-blocks/Features/Block08';
-import View from '@solid-ui-blocks/Features/Block09';
-import Target from '@solid-ui-blocks/Features/Block04';
-import Faq from '@solid-ui-blocks/Faq/Block01';
-import Pricing from '@solid-ui-blocks/Pricing/Block01';
+import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
+import Inclusions from '@solid-ui-blocks/Content/Block06';
 import Footer from '@solid-ui-blocks/Footer/Block01';
+import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import styles from './_styles';
-import servicesData from '../../../../../../site/content/blocks/innerpage/services-03/services.json';
-import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
-import { regexString } from '../../utils/filter';
+import servicesData from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services.json';
+import servicesData1 from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services1.json';
+import { regexString } from '../utils/filter';
 
-const PaidMediaPag = props => {
+const GAnalyticsAudit = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 
@@ -34,7 +29,6 @@ const PaidMediaPag = props => {
     { title: 'Overview', content: <Content4 content={servicesData1} /> },
     { title: 'Our Services', content: <Content3 content={servicesData} /> },
   ];
-
   const uri = regexString(props.uri);
   const filter = allWpPage.nodes.filter(page => {
     return page.slug === uri;
@@ -47,40 +41,22 @@ const PaidMediaPag = props => {
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
       {/* Blocks */}
       <Header content={content['header']} />
-      <Divider space="5" />
-      <Container variant="wide" sx={styles.heroContainer}>
-        <Content pageTitle="hello" content={content['hero']} />
-      </Container>
+      <Hero content={content['page-title']} />
       <Divider space="5" />
       <Container>
         <FeatureThree reverseSm content={content['feature-one']} />
       </Container>
       <Divider space="5" />
-      <Capabilities content={content['target']} />
-      <Divider space="5" />
-      <Target content={content['ppc']} />
-      <Divider space="5" />
-      <Campaign content={content['campaign']} />
-      <Divider space="5" />
-      <Pricing content={content['pricing']} />
-      <Divider space="5" />
-      <View content={content['view']} />
-      <Divider space="5" />
-      <Feature4 content={content['result']} />
-      <Divider space="5" />
-      <Feature4 reverse content={content['expertise']} />
-      <Divider space="5" />
-      <Feature4 content={content['searching']} />
-      <Divider space="5" />
-      <Feature4 reverse content={content['inovating']} />
-      <Divider space="5" />
-      <Contact content={content['cta']} />
+      <Inclusions content={content['inclusions']} />
       <Divider space="5" />
       <Container>
-        <Faq content={content['faq']} />
+        <FeatureTwo reverse content={content['feature-two']} />
       </Container>
+      <Divider space="5" />
+      <Contact content={content['cta']} />
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>
@@ -90,7 +66,9 @@ const PaidMediaPag = props => {
 export const query = graphql`
   query innerpageGAnalyticsAuditBlockContent {
     allBlockContent(
-      filter: { page: { in: ["innerpage/sem-ppc-management", "shared"] } }
+      filter: {
+        page: { in: ["innerpage/google-analytics-4-audits", "shared"] }
+      }
     ) {
       nodes {
         ...BlockContent
@@ -136,4 +114,4 @@ export const query = graphql`
   }
 `;
 
-export default PaidMediaPag;
+export default GAnalyticsAudit;

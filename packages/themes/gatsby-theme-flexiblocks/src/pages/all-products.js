@@ -13,6 +13,7 @@ import Products from '@solid-ui-blocks/Products/Block01';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../store/ducks/productSlice';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
+import Hero from '@solid-ui-blocks/Hero/Block04';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -31,8 +32,9 @@ const RenderProduct = ({ data: { allBlockContent }, ...props }) => {
     <Layout {...props}>
       <Seo title="Home" />
       <Header content={content['header']} />
-      <Divider />
-      <Products products={products} content={content['latest-blogs']} />
+      <Hero content={content['all-products']} />
+      <Divider spaceY="5" />
+      <Products all products={products} content={content['title']} />
 
       <Footer content={content['footer']} />
     </Layout>
@@ -41,9 +43,7 @@ const RenderProduct = ({ data: { allBlockContent }, ...props }) => {
 
 export const pageQuery = graphql`
   query PostsPageQuery {
-    allBlockContent(
-      filter: { page: { in: ["innerpage/products", "shared"] } }
-    ) {
+    allBlockContent(filter: { page: { in: ["innerpage/blog", "shared"] } }) {
       nodes {
         ...BlockContent
       }

@@ -6,21 +6,21 @@ import Seo from 'gatsby-plugin-wpgraphql-seo';
 import Divider from '@solid-ui-components/Divider';
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
 import ModalSimple from '@solid-ui-blocks/Modal/Block02';
+import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
-import Content from '@solid-ui-blocks/Content/Block01';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block12';
 import FeatureFour from '@solid-ui-blocks/FeaturesWithPhoto/Block11';
 import Feature4 from '@solid-ui-blocks/FeaturesWithPhoto/Block09';
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block05';
 import FeatureOne from '@solid-ui-blocks/FeaturesWithPhoto/Block13';
 import Feature0 from '@solid-ui-blocks/FeaturesWithPhoto/Block00';
+import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 import Target from '@solid-ui-blocks/Features/Block12';
 import Faq from '@solid-ui-blocks/Faq/Block01';
 import SingleText from '@solid-ui-blocks/Content/Block07';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import styles from '../_styles';
-import { regexString } from '../../utils/filter';
+import { regexString } from '../utils/filter';
 
 const PaidMediaPag = props => {
   const { allBlockContent, allWpPage } = props.data;
@@ -37,12 +37,10 @@ const PaidMediaPag = props => {
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
+      <ModalCart content={content['cart']} />
       {/* Blocks */}
       <Header content={content['header']} />
-      <Divider space="5" />
-      <Container variant="wide" sx={styles.heroContainer}>
-        <Content pageTitle="hello" content={content['hero']} />
-      </Container>
+      <Hero content={content['page-title']} />
       <Divider space="5" />
       <Container>
         <FeatureThree reverseSm content={content['feature-one']} />
