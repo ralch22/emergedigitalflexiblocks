@@ -1,13 +1,11 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, css, Spinner } from 'theme-ui';
-import Reveal from '@solid-ui-components/Reveal';
+import { Box, css } from 'theme-ui';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox';
 import FormInput from '@solid-ui-components/ContentForm/FormInput';
 import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea';
 import FormHidden from '@solid-ui-components/ContentForm/FormHidden';
-import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi';
 
 import { useFormik } from 'formik';
 
@@ -28,7 +26,7 @@ const styles = {
     left: 0,
     active: {
       zIndex: 0,
-      backgroundColor: `rgba(255,255,255,0.85)`,
+      backgroundColor: `rgba(255, 255, 255, 0.85)`,
     },
   },
   buttonsWrapper: {
@@ -51,8 +49,8 @@ const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
     },
   });
   const submitNewsForm = async values => {
-    const portalId = GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
-    const formGuid = GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
+    const portalId = processs.env.GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
+    const formGuid = processs.env.GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
     const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
 
     const requestBody = {
@@ -154,10 +152,10 @@ const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
   );
 };
 
-export default NewsletterForm;
+export default NewsletterForm
 
 NewsletterForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
-  success: PropTypes.bool,
-};
+  success: PropTypes.bool
+}
