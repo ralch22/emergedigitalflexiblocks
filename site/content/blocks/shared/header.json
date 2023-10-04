@@ -103,7 +103,7 @@
         {
           "text": "Blog",
           "type": "PAGE",
-          "link": "/blog/",
+          "link": "/posts/",
           "variant": "links.nav-dark"
         },
         {

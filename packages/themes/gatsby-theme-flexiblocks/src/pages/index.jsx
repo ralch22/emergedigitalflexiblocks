@@ -23,12 +23,11 @@ import Blog from '@solid-ui-blocks/Blog/Block01';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import styles from './_homeStyle';
-import { regexString } from '../utils/filter';
 
 const IndexPage = props => {
   const { allBlockContent, posts, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
     return page.slug === 'home';
   });

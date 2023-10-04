@@ -14,14 +14,13 @@ import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import Seo from 'gatsby-plugin-wpgraphql-seo';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { regexString } from '../utils/filter';
 
 const WpEngine = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filtered = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filtered[0];
   return (
@@ -61,9 +60,15 @@ const WpEngine = props => {
           alt=""
         />
         <Divider space="3" />
-        <Button variant="secondary" to="/dd" ml={2}>
-          GET 2 MONTHS FREE
-        </Button>
+        <a
+          href="https://wpengine.com/more/partnerspecialoffer/?w_agcid=xzUnBBU3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="secondary" ml={2}>
+            GET 2 MONTHS FREE
+          </Button>
+        </a>
       </Flex>
       <Divider space="5" />
       <Container>

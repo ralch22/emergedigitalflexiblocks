@@ -18,16 +18,15 @@ import Steps from '@solid-ui-blocks/Content/Block06';
 import Choice from '@solid-ui-blocks/Features/Block02';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { regexString } from '../utils/filter';
 import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 
 const AppDevelopment = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filter[0];
   return (

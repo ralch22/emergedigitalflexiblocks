@@ -20,15 +20,14 @@ import Feature4 from '@solid-ui-blocks/FeaturesWithPhoto/Block09';
 import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { regexString } from '../utils/filter';
 
 const SearchEngine = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
 
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filter[0];
   return (

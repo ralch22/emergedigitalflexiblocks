@@ -20,14 +20,13 @@ import Faq from '@solid-ui-blocks/Faq/Block01';
 import SingleText from '@solid-ui-blocks/Content/Block07';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { regexString } from '../utils/filter';
 
 const PaidMediaPag = props => {
   const { allBlockContent, allWpPage } = props.data;
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filtered = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filtered[0];
   return (

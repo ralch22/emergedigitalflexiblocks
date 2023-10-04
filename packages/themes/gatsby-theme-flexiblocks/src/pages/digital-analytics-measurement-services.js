@@ -15,7 +15,6 @@ import View from '@solid-ui-blocks/Content/Block08'
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import { regexString } from '../utils/filter'
 // import servicesData from '../../../../../../site/content/blocks/innerpage/services-03/services.json';
 // import servicesData1 from '../../../../../../site/content/blocks/innerpage/services-03/services1.json';
 
@@ -27,9 +26,9 @@ const GAnalyticsAudit = props => {
   //   { title: 'Overview', content: <Content4 content={servicesData1} /> },
   //   { title: 'Our Services', content: <Content3 content={servicesData} /> },
   // ];
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filter[0];
   return (

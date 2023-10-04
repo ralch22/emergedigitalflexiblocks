@@ -1,7 +1,6 @@
 import React from 'react';
-import { css } from 'theme-ui';
-import { Card, Text, Heading, Box } from 'theme-ui';
-import NewsletterForm from '@solid-ui-components/NewsletterForm';
+import { Box, Card, css, Heading, Text } from 'theme-ui';
+import NewsletterForm from '@solid-ui-components/NewsletterForm/NewsletterForm';
 import useMailChimp from '@helpers/useMailChimp';
 import { FaRegPaperPlane, FaWind } from 'react-icons/fa';
 
@@ -71,4 +70,4 @@ NewsletterExpanded.defaultProps = {
   simple: false,
 };
 
-export default NewsletterExpanded;
+export default NewsletterExpanded

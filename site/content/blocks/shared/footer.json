@@ -126,7 +126,7 @@
           "link": "https://www.linkedin.com/company/emerge-digital-ae/#",
           "variant": "links.nav-white",
           "icon": {
-            "src": "../../assets/flexiblocks/icons/bxl-github.svg",
+            "src": "../../assets/flexiblocks/icons/bxl-linkedin.svg",
             "alt": "Linkedin Icon",
             "color": "#2f4f4f"
           }
@@ -159,7 +159,7 @@
           "link": "https://facebook.com/emergedigitalae/",
           "variant": "links.nav-white",
           "icon": {
-            "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
+            "src": "../../assets/flexiblocks/icons/bxl-facebook.svg",
             "alt": "Facebook Icon",
             "color": "#c13584"
           }
@@ -170,7 +170,7 @@
           "link": "http://www.tiktok.com/@emergedigital",
           "variant": "links.nav-white",
           "icon": {
-            "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
+            "src": "../../assets/flexiblocks/icons/bxl-tiktok.svg",
             "alt": "TikTok Icon",
             "color": "#c13584"
           }

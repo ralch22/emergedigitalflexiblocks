@@ -19,7 +19,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchCaseStudies } from '../store/ducks/caseSlice';
 
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { regexString } from '../utils/filter';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -36,9 +35,9 @@ const CaseStudiesList = ({
   useEffect(() => {
     dispatch(fetchCaseStudies());
   }, [dispatch]);
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filter[0];
   console.log(allWpPage.nodes);

@@ -19,7 +19,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchCaseStudies } from '../store/ducks/caseSlice';
 
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { regexString } from '../utils/filter';
 import Head from '@solid-ui-blocks/Head';
 
 const auth =
@@ -34,7 +33,7 @@ const Privacy = ({ data: { allBlockContent, allWpPage }, ...props }) => {
   useEffect(() => {
     dispatch(fetchCaseStudies());
   }, [dispatch]);
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
     return page.slug === 'privacy-policy';
   });

@@ -19,7 +19,6 @@ import Footer from '@solid-ui-blocks/Footer/Block01';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import servicesData from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services.json';
 import servicesData1 from '@elegantstack/gatsby-starter-flexiblocks/content/blocks/innerpage/services-03/services1.json';
-import { regexString } from '../utils/filter';
 
 const PaidMediaPag = props => {
   const { allBlockContent, allWpPage } = props.data;
@@ -30,9 +29,9 @@ const PaidMediaPag = props => {
     { title: 'Our Services', content: <Content3 content={servicesData} /> },
   ];
 
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filter[0];
   return (

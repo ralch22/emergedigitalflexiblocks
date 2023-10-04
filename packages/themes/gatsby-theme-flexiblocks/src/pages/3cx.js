@@ -20,7 +20,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../store/ducks/productSlice';
 import Products from '@solid-ui-blocks/Products/Block01';
 import styles from './_styles';
-import { regexString } from '../utils/filter';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -68,9 +67,9 @@ const AppDevelopment = props => {
     return product.downloadable === true;
   });
 
-  const uri = regexString(props.uri);
+  const uri = props.path;
   const filter = allWpPage.nodes.filter(page => {
-    return page.slug === uri;
+    return page.uri === uri;
   });
   const post = filter[0];
 
