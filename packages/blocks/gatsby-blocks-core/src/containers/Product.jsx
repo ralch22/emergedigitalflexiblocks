@@ -44,7 +44,7 @@ export default function RenderPost({ data: { allBlockContent }, ...props }) {
       <Container>
         <Grid columns={[1, 2]} gap={2}>
           <Box>
-            <img alt={post.name} src={post.images && post.images[0].src} />
+            <img alt={post.name} src={post.images[0] && post.images[0].src} />
           </Box>
           <Box sx={{ ml: 'auto' }}>
             <Heading
