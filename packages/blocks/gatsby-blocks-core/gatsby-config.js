@@ -91,7 +91,7 @@ module.exports = options => {
         background_color: '#ffffff',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'assets/icon.svg', // Specify the path to your favicon image
+        icon: './assets/icon.svg', // Specify the path to your favicon image
       },
     },
     'gatsby-plugin-catch-links',
