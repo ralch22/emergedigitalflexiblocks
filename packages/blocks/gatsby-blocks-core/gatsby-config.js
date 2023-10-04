@@ -82,6 +82,18 @@ module.exports = options => {
         shortname: `emerge-digital`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Emerge Digital',
+        short_name: 'Emerge Digital',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/assets/icon.png', // Specify the path to your favicon image
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-image',
     'gatsby-plugin-next-seo',
