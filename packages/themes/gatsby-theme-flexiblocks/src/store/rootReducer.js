@@ -11,6 +11,7 @@ import methodReducer from './ducks/methodSlice';
 import caseReducer from './ducks/caseSlice';
 import subscriptionReducer from './ducks/subscriptionSlice';
 import contactReducer from './ducks/contactSlice';
+import tapReducer from './ducks/tapSlice';
 
 const rootReducer = combineReducers({
   orders: ordersReducer,
@@ -25,6 +26,7 @@ const rootReducer = combineReducers({
   subscription: subscriptionReducer,
   case: caseReducer,
   contact: contactReducer,
+  tap: tapReducer,
 });
 
 export default rootReducer;
