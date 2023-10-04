@@ -9,11 +9,7 @@ import FormInput from '@solid-ui-components/ContentForm/FormInput';
 import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea';
 import FormHidden from '@solid-ui-components/ContentForm/FormHidden';
 import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi';
-import useForm from '@helpers/useForm';
 import { useFormik } from 'formik'; // Import Formik
-import * as Yup from 'yup'; // Import Yup for validation
-import { FormContext } from '@solid-ui-components/ContentForm';
-import Divider from '@solid-ui-components/Divider/Divider';
 import { useMutation } from '@apollo/client';
 import { v4 as uuidv4 } from 'uuid';
 import LOGIN from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/login';
@@ -36,7 +32,7 @@ const styles = {
     left: 0,
     active: {
       zIndex: 0,
-      backgroundColor: `rgba(255,255,255,0.85)`,
+      backgroundColor: `rgba(255, 255, 255, 0.85)`,
     },
   },
   buttonsWrapper: {
@@ -190,8 +186,8 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
     }
   };
   const submitContactForm = async values => {
-    const portalId = GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
-    const formGuid = GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
+    const portalId = processs.env.GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
+    const formGuid = processs.env.GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
     const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
 
     const requestBody = {
@@ -383,7 +379,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
 ContentForm.propTypes = {
   handleSubmit: PropTypes.func,
   submitting: PropTypes.bool,
-  success: PropTypes.bool,
-};
+  success: PropTypes.bool
+}
 
-export default ContentForm;
+export default ContentForm
