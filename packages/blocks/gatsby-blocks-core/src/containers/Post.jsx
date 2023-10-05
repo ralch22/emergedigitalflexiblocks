@@ -55,6 +55,7 @@ export default function Post({
     <Layout {...props}>
       <Seo post={wpPost} />
       <Header search content={content['header']} />
+      <Divider space="5" />
       <div style={{ marginTop: `5rem` }}>
         <Stack effectProps={{ effect: 'fadeInDown' }}>
           <PostHead {...post} />

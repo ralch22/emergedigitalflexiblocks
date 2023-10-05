@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Box, css, Spinner } from 'theme-ui';
+import { Box, css, Flex, Spinner } from 'theme-ui';
 import { navigate } from 'gatsby';
 import Reveal from '@solid-ui-components/Reveal';
 import ContentButtons from '@solid-ui-components/ContentButtons';
@@ -14,6 +14,8 @@ import { useMutation } from '@apollo/client';
 import { v4 as uuidv4 } from 'uuid';
 import LOGIN from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/login';
 import REGISTER from '../../../../themes/gatsby-theme-flexiblocks/src/mutations/register';
+import { useDispatch, useSelector } from 'react-redux';
+import { submitContact } from '@elegantstack/gatsby-theme-flexiblocks/src/store/ducks/contactSlice';
 
 const styles = {
   form: {
@@ -56,6 +58,9 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
   ] = useMutation(REGISTER);
   const [login, { data: loginData, loading: loginLoading, error: loginError }] =
     useMutation(LOGIN);
+
+  const dispatch = useDispatch();
+  const { status, contact } = useSelector(state => state.contact);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -108,10 +113,11 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
   const buttonValue = buttons[0].text;
 
   switch (buttonValue) {
-    case 'Contact':
+    case 'Send Message':
       initialValues = {
         // Define initialValues for the contact form
-        name: '',
+        first_name: '',
+        last_name: '',
         email: '',
         message: '',
         // Add other fields as needed
@@ -143,7 +149,7 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
     onSubmit: async values => {
       switch (buttonValue) {
         case 'Send Message': // Handle contact form submission
-          await submitContactForm(values);
+          await dispatch(submitContact({ data: values }));
           break;
         case 'Login': // Handle login form submission
           await handleLogin(values);
@@ -306,6 +312,14 @@ const ContentForm = ({ id, form: { action, fields, buttons } = {} }) => {
           );
         })}
       </Box>
+      {status === 'succeeded' && (
+        <Flex>
+          <Reveal effect="fadeInDown">
+            <BiCheckCircle size="20" css={css({ color: `success` })} />
+          </Reveal>{' '}
+          We will get in touch shortly
+        </Flex>
+      )}
       {/* Error messages */}
       {formik.errors.password && formik.touched.password && (
         <div>{formik.errors.password}</div>

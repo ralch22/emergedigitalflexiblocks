@@ -79,28 +79,24 @@
   ],
   "images": [
     {
-      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/visa.png",
-      "alt": "Visa"
+      "src": "../../assets/flexiblocks/shared/visa.webp",
+      "alt": "Visa Card"
     },
     {
-      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/master-card.png",
-      "alt": "master"
+      "src": "../../assets/flexiblocks/shared/master-card.webp",
+      "alt": "Master Card"
     },
     {
-      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/american.png",
-      "alt": "American"
+      "src": "../../assets/flexiblocks/shared/wechatpay.jpg",
+      "alt": "WeChat"
     },
     {
-      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/stripe.png",
+      "src": "../../assets/flexiblocks/shared/crypto_com.png",
+      "alt": "Crypto.Com"
+    },
+    {
+      "src": "../../assets/flexiblocks/shared/stripe.png",
       "alt": "Stripe"
-    },
-    {
-      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/crypto_com.png",
-      "alt": "Crypto"
-    },
-    {
-      "src": "https://emergedigital.ae/wp-content/uploads/2022/05/wechatpay.jpg",
-      "alt": "We chat"
     }
   ]
 }

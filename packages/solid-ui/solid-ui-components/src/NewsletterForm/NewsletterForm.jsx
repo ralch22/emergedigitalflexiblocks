@@ -1,6 +1,8 @@
-import React from 'react';
+// noop
+
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Box, css } from 'theme-ui';
+import { Box, css, Flex, Spinner } from 'theme-ui';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import FormCheckbox from '@solid-ui-components/ContentForm/FormCheckbox';
 import FormInput from '@solid-ui-components/ContentForm/FormInput';
@@ -8,10 +10,14 @@ import FormTextarea from '@solid-ui-components/ContentForm/FormTextarea';
 import FormHidden from '@solid-ui-components/ContentForm/FormHidden';
 
 import { useFormik } from 'formik';
+import { useDispatch, useSelector } from 'react-redux';
+import Reveal from '@solid-ui-components/Reveal';
+import { BiCheckCircle, BiErrorCircle } from 'react-icons/bi';
+import { submitNews } from '@elegantstack/gatsby-theme-flexiblocks/src/store/ducks/contactSlice';
 
 const styles = {
   form: {
-    position: `relative`,
+    position: `relative`
   },
   responseOverlay: {
     position: `absolute`,
@@ -26,8 +32,8 @@ const styles = {
     left: 0,
     active: {
       zIndex: 0,
-      backgroundColor: `rgba(255, 255, 255, 0.85)`,
-    },
+      backgroundColor: `rgba(255, 255, 255, 0.85)`
+    }
   },
   buttonsWrapper: {
     display: `inline-flex`,
@@ -36,79 +42,61 @@ const styles = {
     '.button-group-button + .button-group-link': {
       flex: `100%`,
       ml: 0,
-      mt: 3,
-    },
-  },
-};
+      mt: 3
+    }
+  }
+}
 
 const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
-  const formik = useFormik({
-    initialValues: '',
-    onSubmit: async values => {
-      submitNewsForm(values);
-    },
-  });
-  const submitNewsForm = async values => {
-    const portalId = processs.env.GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
-    const formGuid = processs.env.GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
-    const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
+  const dispatch = useDispatch()
+  const { news, status, contact } = useSelector(state => state.contact)
 
-    const requestBody = {
-      portalId,
-      formGuid,
-      fields: [
-        {
-          name: 'email',
-          value: values.email,
-        },
-      ],
-    };
+  const [isVisible, setIsVisible] = useState(false)
 
-    const requestOptions = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(requestBody),
-    };
+  useEffect(() => {
+    if (status === 'failed') {
+      // Show the Reveal element
+      setIsVisible(true)
 
-    try {
-      const response = await fetch(apiUrl, requestOptions);
+      // Hide the Reveal element after a delay (e.g., 3 seconds)
+      const hideTimeout = setTimeout(() => {
+        setIsVisible(false)
+      }, 1000) // Adjust the delay as needed (in milliseconds)
 
-      if (response.ok) {
-        const responseData = await response.json();
-        return responseData;
-      } else {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+      return () => {
+        // Clear the timeout when the component unmounts
+        clearTimeout(hideTimeout)
       }
-    } catch (error) {
-      console.error('Error:', error);
-      throw error;
     }
-  };
-
+  }, [status])
+  const formik = useFormik({
+    initialValues: {},
+    onSubmit: async values => {
+      dispatch(submitNews({ data: values }))
+    }
+  })
   return (
     <form css={css(styles.form)} onSubmit={formik.handleSubmit}>
-      <Box variant="forms.row">
+      <Box variant='forms.row'>
         {fields?.map(({ identifier, value, ...props }, index) => {
-          let Component;
+          let Component
           switch (props.type) {
             case 'PASSWORD':
             case 'EMAIL':
             case 'TEXT':
-              Component = FormInput;
-              break;
+              Component = FormInput
+              break
             case 'TEXTAREA':
-              Component = FormTextarea;
-              break;
+              Component = FormTextarea
+              break
             case 'CHECKBOX':
-              Component = FormCheckbox;
-              break;
+              Component = FormCheckbox
+              break
             case 'HIDDEN':
-              Component = FormHidden;
-              break;
+              Component = FormHidden
+              break
             default:
-              break;
+              break
           }
 
           return (
@@ -126,9 +114,17 @@ const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
                 // Add other Formik-related props as needed
               />
             </Box>
-          );
+          )
         })}
       </Box>
+      {status === 'succeeded' && (
+        <Flex>
+          <Reveal effect='fadeInDown'>
+            <BiCheckCircle size='20' css={css({ color: `success` })} />
+          </Reveal>{' '}
+          We will get in touch shortly
+        </Flex>
+      )}
       {/* Error messages */}
       {formik.errors.password && formik.touched.password && (
         <div>{formik.errors.password}</div>
@@ -138,7 +134,7 @@ const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
       )}
       <Box sx={{ textAlign: `center` }}>
         <button
-          type="submit"
+          type='submit'
           style={{ background: 'transparent', border: 'none' }}
         >
           <ContentButtons
@@ -147,10 +143,27 @@ const NewsletterForm = ({ id, form: { action, fields, buttons } = {} }) => {
           />
         </button>
       </Box>
-      {/* */}
+      <Box
+        sx={styles.responseOverlay}
+        css={isVisible ? styles.responseOverlay.active : null}
+      >
+        {status === 'loading' && (
+          <Reveal effect='fadeInDown'>
+            <Spinner size='64' color='alpha' />
+          </Reveal>
+        )}
+        {status === 'succeeded' && (
+          <Reveal effect='fadeInDown'>
+            <BiCheckCircle size='64' css={css({ color: `success` })} />
+          </Reveal>
+        )}
+        {status === 'failed' && isVisible && (
+          <BiErrorCircle size='64' css={css({ color: `error` })} />
+        )}
+      </Box>
     </form>
-  );
-};
+  )
+}
 
 export default NewsletterForm
 

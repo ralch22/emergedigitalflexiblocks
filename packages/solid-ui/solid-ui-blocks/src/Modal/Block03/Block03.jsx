@@ -90,50 +90,6 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
           </Flex>
         ) : (
           <Flex sx={{ flexDirection: [`column`, null, `row`] }}>
-            {/* <Grid 
-          columns={[1, 2]} 
-          gap={4}
-          sx={{
-            alignItems: `stretch`,
-            overflowY: `scroll`,
-            height: `60vh`,
-            maxHeight: `750px`,
-            flexWrap: "wrap",
-            flexBasis: "70%"
-          }}
-        >
-          
-            {cartItems && cartItems.map((product) => {
-              const src = product.images[0].src
-              return (
-                <Box
-               
-              >
-                
-                <img src={src} alt="" />
-                
-                
-                <Text dangerouslySetInnerHTML={{ __html: product.name }} variant="h4" sx={{ variant: rv(product.variant, 'title') }} />
-                <Text dangerouslySetInnerHTML={{ __html: product.price_html }} variant="h4" sx={{ variant: rv(product.variant, 'large') }} />
-                <Flex sx={{ justifyContent: 'space-between', mt: 3 }}>
-                  <Box sx={{ width: '30px', height: '30px', borderRadius: '50%', padding: '10px', background: "#bf002e", display: "flex", justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}>
-                  <FaTimes color="#fff" onClick={() => handleRemoveFromCart(product.id)} />
-                  </Box>
-                  <Text>{product.quantity}</Text>
-                  <Flex>
-                  <Box sx={{ width: '30px', height: '30px', borderRadius: '50%', padding: '10px', background: "#cbd5e0", display: "flex", justifyContent: 'center', alignItems: 'center', cursor: 'pointer', mr: 2 }}>
-                  <FaPlus color="#fff" onClick={() => increaseCartQuantity(product.id)} />
-                  </Box>
-                  <Box sx={{ width: '30px', height: '30px', borderRadius: '50%', padding: '10px', background: "#cbd5e0", display: "flex", justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}>
-                  <FaMinus color="#fff" onClick={() => decreaseCartQuantity(product.id)} />
-                  </Box>
-                    
-                  </Flex>
-                </Flex>
-              </Box>
-                )
-              })}
-        </Grid> */}
             <CartTable
               increaseCartQuantity={increaseCartQuantity}
               decreaseCartQuantity={decreaseCartQuantity}
@@ -182,9 +138,19 @@ const ModalBlock02 = ({ content: { identifier, text, images, buttons } }) => {
                 <ContentButtons content={buttons} />
                 <Divider spaceY="3" />
                 <Text>We Accept: </Text>
-                {images.map((image, index) => (
-                  <img key={index} src={image.src} alt={image.alt} />
-                ))}
+                <Flex>
+                  {images.map(({ src, alt }, index) => {
+                    return (
+                      <img
+                        width={50}
+                        height={30}
+                        src={src.publicURL}
+                        alt={alt}
+                        key={index}
+                      />
+                    );
+                  })}
+                </Flex>
               </Card>
             </Box>
           </Flex>

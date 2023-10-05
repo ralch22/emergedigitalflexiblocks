@@ -94,7 +94,7 @@ export default function Case({
             }}
           />
           <Header search content={content['header']} />
-
+          <Divider space="5" />
           <div style={{ marginTop: `5rem` }}>
             <Stack effectProps={{ effect: 'fadeInDown' }}>
               <PostHead {...caseStudy} />

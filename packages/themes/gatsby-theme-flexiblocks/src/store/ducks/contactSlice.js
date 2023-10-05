@@ -1,16 +1,19 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
+const portalId = process.env.GATSBY_HUBSPOT_PORTALID;
+const formGuid = process.env.GATSBY_HUBSPOT_CONTACTFORMID;
+const formGuid2 = process.env.GATSBY_HUBSPOT_NEWSLETTERFORMID; // example form GUID (not real)
+
 export const submitNews = createAsyncThunk(
   'news/fetchNews',
   async ({ data }) => {
     // Convert the UTF-8 string to an integer (assuming it's an integer)
-    const portalId = processs.env.GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
-    const formGuid = processs.env.GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
+
     const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
 
     const requestBody = {
       portalId,
-      formGuid,
+      formGuid2,
       fields: [
         {
           name: 'email',
@@ -47,8 +50,6 @@ export const submitContact = createAsyncThunk(
   'contact/fetchContact',
   async ({ data }) => {
     // Convert the UTF-8 string to an integer (assuming it's an integer)
-    const portalId = processs.env.GATSBY_HUBSPOT_PORTALID; // example portal ID (not real)
-    const formGuid = processs.env.GATSBY_HUBSPOT_FORMID; // example form GUID (not real)
     const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
 
     const requestBody = {

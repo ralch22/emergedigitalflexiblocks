@@ -1,12 +1,11 @@
 import React from 'react';
-import groupArray from 'group-array';
 import {
-  Highlight,
-  Snippet,
   connectStateResults,
+  Highlight,
   PoweredBy,
+  Snippet,
 } from 'react-instantsearch-dom';
-import { Text, Box, Spinner, Card } from 'theme-ui';
+import { Box, Card, Spinner, Text } from 'theme-ui';
 import useScrollDisabler from '@solid-ui-components/useScrollDisabler';
 import styles from './Search.styles';
 
@@ -35,14 +34,16 @@ const Hits = ({ searchState, searchResults }) => {
             excerpt: <Snippet hit={hit} tagName="mark" attribute="excerpt" />,
           };
           return (
-            <Card key={hit.objectID} variant="search">
-              <Text as="h3">
-                <Highlight hit={hit} tagName="mark" attribute="title" />
-              </Text>
-              <Text as="p">
-                <Snippet hit={hit} tagName="mark" attribute="excerpt" />
-              </Text>
-            </Card>
+            <a style={{ color: 'inherit' }} href={`/posts/${hit.slug}`}>
+              <Card key={hit.objectID} variant="search">
+                <Text as="h3">
+                  <Highlight hit={hit} tagName="mark" attribute="title" />
+                </Text>
+                <Text as="p">
+                  <Snippet hit={hit} tagName="mark" attribute="excerpt" />
+                </Text>
+              </Card>
+            </a>
           );
         })}
       </Box>
@@ -63,4 +64,4 @@ const Results = ({ posts }) => (
   </Box>
 );
 
-export default Results;
+export default Results

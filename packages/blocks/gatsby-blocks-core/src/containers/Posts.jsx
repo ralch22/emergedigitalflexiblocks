@@ -41,7 +41,7 @@ export default function RenderPost({
     <Layout {...props}>
       <Seo post={post} />
       <Header search content={content['header']} />
-      <Divider />
+      <Divider space="5" />
       <Stack effectProps={{ effect: false }}>
         {/* <Categories categories={categories} variant='horizontal' omitTitle /> */}
       </Stack>
@@ -193,6 +193,7 @@ export default function RenderPost({
           )}
         </Main>
       </Stack>
+      <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>
   );
