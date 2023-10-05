@@ -51,7 +51,7 @@ const FeaturesWithPhotoBlock05 = ({
           <ContentText content={text} />
         </Box>
         <ContentImages content={{ images }} reverse={reverse} />
-        <ContentText content={text} />
+
         {bottomText && <ContentText content={textArray} />}
       </FlexImage>
       <FlexContent reverse={reverse}>
@@ -65,7 +65,9 @@ const FeaturesWithPhotoBlock05 = ({
                 effect="fadeInPop"
                 delay={0.3 * (index + 1)}
               >
-                <ListItem {...props} iconProps={{ size: 'md' }} center />
+                <Box sx={{ mt: 5 }}>
+                  <ListItem {...props} iconProps={{ size: 'md' }} compact />
+                </Box>
                 {/* <Flex sx={{ alignItems: `center`, mb: 3 }}>
                   <ContentIcon  content={icon} size='sm' mr='3' />
                   <ContentText content={text[0]} mb='0' />

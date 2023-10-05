@@ -52,7 +52,7 @@ const CaseStudiesList = ({
       <Hero content={content['page-title']} />
       <Divider spaceY="5" />
       <Cases cases={caseStudies} content={content['all-cases']} />
-
+      <Divider spaceY="5" />
       <Footer content={content['footer']} />
     </Layout>
   );

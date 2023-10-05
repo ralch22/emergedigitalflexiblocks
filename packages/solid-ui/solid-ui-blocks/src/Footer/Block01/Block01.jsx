@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { Container, Box, Flex, Link, Grid } from 'theme-ui';
+import React from 'react';
+import { Box, Container, Flex, Grid } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import Divider from '@solid-ui-components/Divider/Divider';
 import CustomTabSwitcher from '@solid-ui-blocks/Content/Tabs';
-import ContentImages from '@solid-ui-components/ContentImages/ContentImages';
 import address1 from '../../../../../../site/content/blocks/shared/address1.json';
 import address2 from '../../../../../../site/content/blocks/shared/address2.json';
 import ClutchWidget from '@solid-ui-components/Widget/Widget';
@@ -48,6 +47,7 @@ const tabs = [
 ];
 
 const FooterBlock01 = ({ content: { text, collection, images } }) => {
+  console.log('img', collection);
   return (
     <div style={styles.wrapper}>
       <Container sx={{ position: 'relative' }}>
@@ -63,7 +63,7 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
             <ClutchWidget />
             {/* {images && <ContentImages
                      content={images[5]}
-                     
+
                    />} */}
           </Box>
           <Divider spaceX="50px" />
@@ -79,13 +79,6 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
               ({ text, buttons, images }, index) =>
                 buttons && (
                   <Box key={`item-${index}`} sx={styles.columnButtons}>
-                    <Flex>
-                      {images &&
-                        images.map((img, index) => (
-                          <ContentImages content={img} />
-                        ))}
-                    </Flex>
-
                     <ContentText content={text} variant="h5" />
                     <ContentButtons
                       content={buttons}
@@ -95,6 +88,20 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
                         alignItems: 'flex-start',
                       }}
                     />
+                    <Flex>
+                      {images &&
+                        images.map(({ src, alt }, index) => {
+                          return (
+                            <img
+                              width={50}
+                              height={30}
+                              src={src.publicURL}
+                              alt={alt}
+                              key={index}
+                            />
+                          );
+                        })}
+                    </Flex>
                   </Box>
                 ),
             )}
@@ -117,7 +124,7 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
 };
 
 FooterBlock01.defaultProps = {
-  menuJustify: 'flex-end',
-};
+  menuJustify: 'flex-end'
+}
 
-export default WithDefaultContent(FooterBlock01);
+export default WithDefaultContent(FooterBlock01)

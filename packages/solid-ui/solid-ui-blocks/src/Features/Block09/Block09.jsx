@@ -80,6 +80,7 @@ const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
               </Box>
             )}
           </FlexContent>
+          <Divider space="5" />
           <FlexImage reverse={reverse}>
             {post && <ContentCard post={post} />}
           </FlexImage>

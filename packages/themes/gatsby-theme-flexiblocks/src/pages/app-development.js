@@ -55,7 +55,10 @@ const AppDevelopment = props => {
       <Steps content={content['steps']} />
       <Divider space="5" />
       <Box
-        sx={{ background: `linear-gradient(90deg, #336567 0%, #3F2B56 100%)` }}
+        sx={{
+          py: 5,
+          background: `linear-gradient(90deg, #336567 0%, #3F2B56 100%)`,
+        }}
       >
         <FeatureTwo content={content['feature-two']} />
       </Box>

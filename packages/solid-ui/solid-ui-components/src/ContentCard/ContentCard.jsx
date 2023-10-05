@@ -1,12 +1,7 @@
 import React from 'react';
-import GoogleMapReact from 'google-map-react';
-import { Container, Flex, Box, css, Grid } from 'theme-ui';
-import Divider from '@solid-ui-components/Divider';
+import { Flex } from 'theme-ui';
 import Reveal from '@solid-ui-components/Reveal';
-import ListItem from '@solid-ui-components/ListItem';
 import ContentContainer from '@solid-ui-components/ContentContainer';
-import ContentText from '@solid-ui-components/ContentText';
-import Icon from '@solid-ui-components/ContentIcon';
 
 const GoogleMap = ({ post: { title, content } }) => {
   function createExcerpt(content) {
@@ -41,6 +36,7 @@ const GoogleMap = ({ post: { title, content } }) => {
 
     return limitedExcerpt;
   }
+
   const excerpt = createExcerpt(content.rendered);
 
   const styles = {
@@ -72,7 +68,11 @@ const GoogleMap = ({ post: { title, content } }) => {
     },
   };
   return (
-    <Reveal effect="fadeInGrow" delay={0.15}>
+    <Reveal
+      effect="fadeInGrow"
+      sx={{ marginTop: ['20px', null, 5] }}
+      delay={0.15}
+    >
       <h4 style={styles.h4}>Curious to learn more?</h4>
       <h2 style={styles.h2}>See Our Case Studies</h2>
       <ContentContainer variant="cards.paper" sx={{ height: `full` }}>
@@ -91,4 +91,4 @@ GoogleMap.defaultProps = {
   zoom: 12,
 };
 
-export default GoogleMap;
+export default GoogleMap

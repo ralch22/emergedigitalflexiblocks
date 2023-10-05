@@ -30,9 +30,9 @@
       },
       "buttons": [
         {
-          "text": "Case Studies",
+          "text": "Learn More",
           "type": "PAGE",
-          "link": "",
+          "link": "/digital-analytics-measurement-services/",
           "variant": "secondary"
         }
       ]
@@ -56,9 +56,9 @@
       },
       "buttons": [
         {
-          "text": "Case Studies",
+          "text": "Learn More",
           "type": "PAGE",
-          "link": "",
+          "link": "/paid-media-services",
           "variant": "secondary"
         }
       ]
@@ -82,9 +82,9 @@
       },
       "buttons": [
         {
-          "text": "Case Studies",
+          "text": "Learn More",
           "type": "PAGE",
-          "link": "",
+          "link": "/search-engine-optimization",
           "variant": "secondary"
         }
       ]
@@ -108,9 +108,9 @@
       },
       "buttons": [
         {
-          "text": "Case Studies",
+          "text": "Learn More",
           "type": "PAGE",
-          "link": "",
+          "link": "app-development",
           "variant": "secondary"
         }
       ]
@@ -134,9 +134,9 @@
       },
       "buttons": [
         {
-          "text": "Case Studies",
+          "text": "Learn More",
           "type": "PAGE",
-          "link": "",
+          "link": "/b2b-demand-generation-services",
           "variant": "secondary"
         }
       ]

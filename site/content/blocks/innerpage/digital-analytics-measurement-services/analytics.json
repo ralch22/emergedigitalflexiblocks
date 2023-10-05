@@ -13,7 +13,7 @@
   "collection": [
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/chart-bar.svg",
+        "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
         "alt": "Chart Bar Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
@@ -112,7 +112,7 @@
     },
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/poll-solid.svg",
+        "src": "../../../assets/flexiblocks/icons/square-poll-vertical-solid.svg",
         "alt": "Poll Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
@@ -132,7 +132,7 @@
     },
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/users-cog-solid.svg",
+        "src": "../../../assets/flexiblocks/icons/users-gear-solid.svg",
         "alt": "Cog Icon",
         "bg": "omegaLighter",
         "color": "omegaDark"
