@@ -6,7 +6,7 @@ const l = require('lodash');
 const path = require('path');
 const withDefaults = require('./src/utils/default.options');
 
-const siteUrl = process.env.URL || `https://fallback.net`;
+const siteUrl = process.env.GATSBY_WEBSITE_URL || `https://fallback.net`;
 
 module.exports = options => {
   options = withDefaults(options);

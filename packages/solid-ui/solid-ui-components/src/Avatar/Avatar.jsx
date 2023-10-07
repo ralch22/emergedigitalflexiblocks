@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { GatsbyImage as Img } from 'gatsby-plugin-image';
-import { Box, css } from 'theme-ui';
-import MemphisPattern from '@solid-ui-components/MemphisPattern';
-import getImageVariant from '@solid-ui-components/utils/getImageVariant';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Box, Image } from 'theme-ui'
+import MemphisPattern from '@solid-ui-components/MemphisPattern'
+import getImageVariant from '@solid-ui-components/utils/getImageVariant'
 
 //Base size to keep all layers aligned easier
 const bs = x => `${x * 0.35}rem`;
@@ -78,12 +77,7 @@ const Avatar = ({
         )}
         <Box sx={styles.circle({ width })}></Box>
         <Box sx={styles.arc({ width })}></Box>
-        <Img
-          image={image}
-          alt={alt}
-          loading={loading}
-          css={css(styles.imageWrapper)}
-        />
+        <Image src={avatar} alt={alt} sx={styles.imageWrapper} />
       </Box>
     </Box>
   );

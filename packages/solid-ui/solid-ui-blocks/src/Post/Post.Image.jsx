@@ -34,7 +34,7 @@ const styles = {
 export const PostImage = ({
   title,
   featuredImage: {
-    node: { sourceUrl, alt },
+    node: { sourceUrl },
   },
   wide,
   full,
@@ -47,7 +47,7 @@ export const PostImage = ({
     <>
       <img
         src={sourceUrl}
-        alt={alt}
+        alt={title}
         style={{ width: '100%' }}
         css={css({
           ...styles[variant],

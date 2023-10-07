@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link as GLink } from 'gatsby';
-import { Box, Heading, Card, Link, Text } from 'theme-ui';
+import { Box, Card, Heading, Image, Link, Text } from 'theme-ui';
 import Navigation from '@solid-ui-components/Navigation';
 import Section from '@solid-ui-components/Section';
-import Avatar from '@solid-ui-components/Avatar';
 import attachSocialIcons from '@helpers/attachSocialIcons';
 
 const styles = {
@@ -16,23 +15,35 @@ const styles = {
   title: {
     color: `omegaDark`,
   },
+  imageWrapper: {
+    width: 100,
+    height: 100,
+    borderRadius: `50%`,
+  },
 };
 
 const AuthorCompact = ({ author, omitSocial, ...props }) => {
   if (!author) return '';
-
   return (
     <Section aside title="The Author" {...props}>
       <Card variant="paper">
         <Box sx={styles.wrapper}>
-          {author.url && (
+          {author.avatar.url && (
             <Box sx={styles.avatarWrapper}>
-              <Link as={GLink} to={author.slug} aria-label={author.name}>
-                <Avatar avatar={author.url} alt={author.name} withPattern />
+              <Link
+                as={GLink}
+                to={`/author/${author.slug}`}
+                aria-label={author.name}
+              >
+                <Image
+                  src={author.avatar.url}
+                  alt={author.name}
+                  sx={styles.imageWrapper}
+                />
               </Link>
             </Box>
           )}
-          <Link as={GLink} to={author.slug}>
+          <Link as={GLink} to={`/author/${author.slug}`}>
             <Heading variant="h3">{author.name}</Heading>
           </Link>
           <Text variant="h4" sx={styles.title}>
@@ -51,4 +62,4 @@ const AuthorCompact = ({ author, omitSocial, ...props }) => {
   );
 };
 
-export default AuthorCompact;
+export default AuthorCompact

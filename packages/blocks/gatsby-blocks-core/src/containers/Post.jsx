@@ -2,7 +2,7 @@
  * Placeholder component to shadow
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Card } from 'theme-ui';
 import Layout from '@solid-ui-layout/Layout';
 import Stack from '@solid-ui-layout/Stack/Stack';
@@ -40,9 +40,16 @@ export default function Post({
   },
   ...props
 }) {
-  // useEffect(() => {
-  //   typeof document !== 'undefined' ? document.location.reload() : null
-  // }, []);
+  useEffect(() => {
+    const removeComments = () => {
+      const elementsToRemove = document.querySelector('.comment');
+
+      elementsToRemove.remove();
+    };
+
+    // Call the function when the component mounts (page loads)
+    removeComments();
+  }, []);
   const relatedPosts = [
     ...(tagCategoryPosts ? tagCategoryPosts.nodes : []),
     ...(tagPosts ? tagPosts.nodes : []),

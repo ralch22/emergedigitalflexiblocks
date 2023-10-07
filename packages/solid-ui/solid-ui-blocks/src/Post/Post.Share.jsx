@@ -1,10 +1,10 @@
 import React from 'react';
-import { IconButton, Heading, Flex } from 'theme-ui';
+import { Flex, Heading, IconButton } from 'theme-ui';
 import {
-  FacebookShareButton,
-  TwitterShareButton,
-  LinkedinShareButton,
   EmailShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
 } from 'react-share';
 import attachSocialIcons from '@helpers/attachSocialIcons';
 
@@ -21,7 +21,6 @@ const styles = {
 
 const PostShare = ({ location, title }) => {
   const url = location && location.href;
-
   const Facebook = ({ children }) => (
     <FacebookShareButton url={url} quote={title}>
       {children}
@@ -83,4 +82,4 @@ const PostShare = ({ location, title }) => {
   );
 };
 
-export default PostShare;
+export default PostShare

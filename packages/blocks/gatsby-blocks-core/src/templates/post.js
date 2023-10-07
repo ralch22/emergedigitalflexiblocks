@@ -38,10 +38,12 @@ export const pageQuery = graphql`
       author {
         node {
           id
+          slug
           avatar {
             url
           }
           name
+          description
         }
       }
     }
