@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Heading, Text, Badge } from 'theme-ui';
+import { Badge, Heading, Text } from 'theme-ui';
 
 const styles = {
   count: {
     fontSize: 4,
+    ml: 3,
   },
   subheader: {
     fontWeight: `body`,
@@ -20,14 +21,10 @@ const styles = {
 const PageTitle = ({ header, subheader, running, totalCount }) => {
   return (
     <div>
-      <Heading
-        variant="h1"
-        as="h1"
-        dangerouslySetInnerHTML={{ __html: header }}
-      >
+      <Heading variant="h1" as="h1">
+        {header}
         {totalCount && (
           <Badge variant="tag-white" sx={styles.count}>
-            {' '}
             {totalCount}
           </Badge>
         )}

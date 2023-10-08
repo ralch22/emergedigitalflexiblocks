@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link as GLink } from 'gatsby';
-import { Flex, Box, Text, Heading, Card, Badge, Link } from 'theme-ui';
+import { Badge, Box, Card, Flex, Heading, Image, Link, Text } from 'theme-ui';
 import MemphisPattern from '@solid-ui-components/MemphisPattern';
-import Avatar from '@solid-ui-components/Avatar';
 import Navigation from '@solid-ui-components/Navigation';
 import attachSocialIcons from '@helpers/attachSocialIcons';
 
@@ -52,6 +51,11 @@ const styles = {
   pattern: {
     borderRadius: `lg`,
   },
+  imageWrapper: {
+    width: 100,
+    height: 100,
+    borderRadius: `50%`,
+  },
   gradient: {
     size: `full`,
     borderRadius: `lg`,
@@ -74,11 +78,11 @@ const Subheader = ({ children }) => (
   </Heading>
 );
 
-const AuthorAvatar = ({ name, thumbnail, slug }) =>
-  thumbnail ? (
+const AuthorAvatar = ({ name, avatar, slug }) =>
+  avatar ? (
     <Box>
       <Link as={GLink} to={slug} aria-label={name}>
-        <Avatar avatar={thumbnail} alt={name} />
+        <Image src={avatar.url} alt={name} sx={styles.imageWrapper} />
       </Link>
     </Box>
   ) : null;
@@ -161,4 +165,4 @@ const AuthorExpanded = ({ author, withLink }) => {
   );
 };
 
-export default AuthorExpanded;
+export default AuthorExpanded

@@ -3,6 +3,7 @@ const createPostsPage = require('./pages/_posts');
 const createUserPage = require('./pages/_user');
 const createPostPage = require('./pages/_post');
 const createCasePage = require('./pages/_case');
+const createAuthorPage = require('./pages/_author');
 const createProductPage = require('./pages/_product');
 module.exports = async (helpers, pluginOptions) => {
   pluginOptions = withDefaults(pluginOptions);
@@ -16,6 +17,10 @@ module.exports = async (helpers, pluginOptions) => {
 
   await createCasePage(helpers, pluginOptions, {
     template: require.resolve('./templates/case'),
+  });
+
+  await createAuthorPage(helpers, pluginOptions, {
+    template: require.resolve('./templates/author'),
   });
 
   await createProductPage(helpers, pluginOptions, {
