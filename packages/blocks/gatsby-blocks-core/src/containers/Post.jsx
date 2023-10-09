@@ -44,7 +44,7 @@ export default function Post({
     const removeComments = () => {
       const elementsToRemove = document.querySelector('.comment');
 
-      elementsToRemove.remove();
+      elementsToRemove && elementsToRemove.remove();
     };
 
     // Call the function when the component mounts (page loads)

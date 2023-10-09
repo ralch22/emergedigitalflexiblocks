@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Box, Badge, css, Flex } from 'theme-ui';
+import { Badge, Box, css, Flex } from 'theme-ui';
 import rv from '@solid-ui-components/utils/buildResponsiveVariant';
-import getReadableColor from '@solid-ui-components/utils/getReadableColor';
 
 const styles = {
   badge: {
@@ -18,7 +17,7 @@ const CardBodyCategory = ({ variant, categories, omitCategory }) => (
           css={css(styles.badge)}
           sx={{ variant: rv(variant, 'category'), mr: 2 }}
         >
-          <Badge variant="tag" as={Link} to={slug}>
+          <Badge variant="tag" as={Link} to={`/category/${slug}`}>
             {name}
           </Badge>
         </Box>

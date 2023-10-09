@@ -4,6 +4,8 @@ body {
 
 a {
     text-decoration: none !important;
+    color: inherit;
+    font-weight: bold;
 }
 
 .comments {

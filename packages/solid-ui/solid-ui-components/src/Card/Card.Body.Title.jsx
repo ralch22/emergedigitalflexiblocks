@@ -13,7 +13,7 @@ const CardBodyTitle = ({ variant, title, slug, link, single }) => {
       }
     : {
         as: GLink,
-        to: single ? `posts/${slug}` : slug,
+        to: single ? `/${slug}` : slug,
       };
   return (
     <Heading

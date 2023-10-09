@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link as GLink } from 'gatsby';
-import { Link, useThemeUI, get } from 'theme-ui';
+import { get, Link, useThemeUI } from 'theme-ui';
 import rv from '@solid-ui-components/utils/buildResponsiveVariant';
-import getImageVariant from '@solid-ui-components/utils/getImageVariant';
-import CardMediaIcon from './Card.Media.Icon';
 import CardMediaImage from './Card.Media.Image';
 
 const DEFAULT_IMAGE_VARIANT = 'vertical';
@@ -52,7 +50,7 @@ const CardMedia = ({
       }
     : {
         as: GLink,
-        to: single ? `posts/${slug}` : slug,
+        to: single ? `/${slug}` : slug,
       };
 
   return (
@@ -83,7 +81,7 @@ const CardMedia = ({
 };
 
 CardMedia.defaultProps = {
-  mediaType: 'image',
-};
+  mediaType: 'image'
+}
 
-export default CardMedia;
+export default CardMedia

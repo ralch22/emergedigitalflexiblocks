@@ -73,7 +73,7 @@ module.exports = async (
     const hasTags = tagsIds.length > 0;
 
     createPage({
-      path: `/posts/${slug}`,
+      path: slug,
       component: template,
       context: {
         id,

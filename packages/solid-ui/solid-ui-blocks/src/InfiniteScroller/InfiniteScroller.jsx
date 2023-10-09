@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CardList from '@solid-ui-components/CardList';
 import Reveal from '@solid-ui-components/Reveal';
-import { Spinner } from 'theme-ui';
+import { Flex, Spinner } from 'theme-ui';
 
 const InfiniteLoopPagination = ({ data }) => {
   const [itemsToShow, setItemsToShow] = useState(5);
@@ -44,17 +44,18 @@ const InfiniteLoopPagination = ({ data }) => {
 
   return (
     <div>
-      <ul>
-        <CardList
-          nodes={data}
-          variant={['horizontal-md', 'vertical']}
-          columns={[1, 2, 3, 3]}
-        />
-      </ul>
+      <CardList
+        nodes={data}
+        variant={['horizontal-md', 'vertical']}
+        columns={[1, 2, 3, 3]}
+      />
+
       {isLoading && (
-        <Reveal effect="fadeInDown">
-          <Spinner size="64" color="alpha" />
-        </Reveal>
+        <Flex sx={{ alignItems: `center`, justifyContent: 'center' }}>
+          <Reveal effect="fadeInDown">
+            <Spinner size="64" color="alpha" />
+          </Reveal>
+        </Flex>
       )}
       {reachedEnd && <p></p>}
     </div>
