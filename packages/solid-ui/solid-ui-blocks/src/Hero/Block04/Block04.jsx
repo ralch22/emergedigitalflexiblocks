@@ -1,6 +1,6 @@
 import React from 'react';
 import { getImage } from 'gatsby-plugin-image';
-import { Box, Container, Flex } from 'theme-ui';
+import { Box, Container, Divider, Flex } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
 import Reveal from '@solid-ui-components/Reveal';
 import ContentContainer from '@solid-ui-components/ContentContainer';
@@ -42,6 +42,7 @@ const HeroBlock03 = ({
       background: `url(https://emergedigital.ae/wp-content/themes/onum/images/bg-page-header.jpg) no-repeat center`,
     }}
   >
+    <Divider />
     <Flex
       sx={{
         ...styles.content,

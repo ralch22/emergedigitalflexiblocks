@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Input, IconButton } from 'theme-ui';
+import { Box, IconButton, Input } from 'theme-ui';
 import { FaSearch } from 'react-icons/fa';
 import styles from './Search.styles';
 
@@ -17,7 +17,7 @@ const SearchInput = ({ isLoaded, focus, loadSearch, ...props }) => (
       onClick={loadSearch || props.onFocus}
       aria-label="Search"
     >
-      <FaSearch />
+      <FaSearch size={20} color="#2d3748" />
     </IconButton>
     <Box sx={styles.form({ focus })}>
       <FaSearch style={styles.searchIcon} />
@@ -35,4 +35,4 @@ const SearchInput = ({ isLoaded, focus, loadSearch, ...props }) => (
   </>
 );
 
-export default SearchInput;
+export default SearchInput

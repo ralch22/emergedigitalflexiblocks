@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link as GLink, navigate } from 'gatsby';
+import { Link as GLink } from 'gatsby';
 import Sticky from 'react-sticky-el';
 import pageContextProvider from '@helpers/pageContextProvider';
 import { Box, Container, css, Flex } from 'theme-ui';
@@ -10,7 +10,7 @@ import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import { ModalContext } from '@solid-ui-components/Modal';
-import { FaCartArrowDown, FaUser } from 'react-icons/fa';
+import { FaCartArrowDown } from 'react-icons/fa';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -49,14 +49,13 @@ const styles = {
     // height: [`6rem`, `7rem`], //prevent layout shift
   },
   searchContainer: {
-    flexBasis: [`auto`, null, `1/3`],
     minWidth: `auto`,
     order: [3, null, `unset`],
-    mx: 3,
+    mx: 1,
   },
   logoContainer: {
     flexShrink: 0,
-    mr: [null, null, 3, 5],
+    mr: [null, null, 3, 3],
   },
   desktopMenu: {
     display: [`none`, null, `block`],
@@ -100,127 +99,68 @@ const HeaderBlock01 = ({
                   />
                 </GLink>
               </Box>
-              {search && (
-                <Box sx={styles.searchContainer}>{algolia && <Search />}</Box>
-              )}
-              {!search && (
+
+              {collection && (
                 <>
-                  {collection && (
-                    <>
-                      <Box sx={styles.desktopMenu}>
-                        <Reveal effect="fadeInDown">
-                          <Flex
-                            sx={{
-                              alignItems: `center`,
-                              justifyContent: menuJustify,
-                            }}
-                          >
-                            {collection.map(
-                              ({ buttons }, index) =>
-                                buttons && (
-                                  <Box
-                                    key={`item-${index}`}
-                                    sx={{
-                                      '& + &': {
-                                        ml: 4,
-                                      },
-                                    }}
-                                  >
-                                    <ContentButtons content={buttons} />
-                                  </Box>
-                                ),
-                            )}
-                            {parsedData ? (
+                  <Box sx={styles.desktopMenu}>
+                    <Reveal effect="fadeInDown">
+                      <Flex
+                        sx={{
+                          alignItems: `center`,
+                          justifyContent: menuJustify,
+                        }}
+                      >
+                        {collection.map(
+                          ({ buttons }, index) =>
+                            buttons && (
                               <Box
-                                onClick={() => navigate('/dashboard')}
+                                key={`item-${index}`}
                                 sx={{
                                   '& + &': {
                                     ml: 4,
                                   },
-                                  px: 4,
-                                  cursor: 'pointer',
                                 }}
                               >
-                                <FaUser size="20px" />
+                                <ContentButtons content={buttons} />
                               </Box>
-                            ) : (
-                              <>
-                                {buttons && (
-                                  <Box
-                                    sx={{
-                                      '& + &': {
-                                        ml: 4,
-                                      },
-                                    }}
-                                  >
-                                    <ContentButtons content={buttons} />
-                                  </Box>
-                                )}
-                              </>
-                            )}
-                          </Flex>
-                        </Reveal>
-                      </Box>
-                      <Box sx={styles.mobileMenu}>
-                        <Drawer buttonStyle={{ svg: { size: 32 } }}>
-                          {collection.map(
-                            ({ buttons }, index) =>
-                              buttons && (
-                                <Box
-                                  key={`item-${index}`}
-                                  sx={{
-                                    fontSize: 3,
-                                    '.button-group-link.level-1, button-group-link.level-1:visited':
-                                      {
-                                        color: `headerActiveColor`,
-                                      },
-                                  }}
-                                >
-                                  <ContentButtons
-                                    content={buttons}
-                                    variant="vertical"
-                                  />
-                                </Box>
-                              ),
-                          )}
-                          {parsedData ? (
+                            ),
+                        )}
+                      </Flex>
+                    </Reveal>
+                  </Box>
+                  <Box sx={styles.mobileMenu}>
+                    <Drawer buttonStyle={{ svg: { size: 32 } }}>
+                      {collection.map(
+                        ({ buttons }, index) =>
+                          buttons && (
                             <Box
-                              onClick={() => navigate('/dashboard')}
+                              key={`item-${index}`}
                               sx={{
-                                '& + &': {
-                                  ml: 4,
-                                },
-                                cursor: 'pointer',
+                                fontSize: 3,
+                                '.button-group-link.level-1, button-group-link.level-1:visited':
+                                  {
+                                    color: `headerActiveColor`,
+                                  },
                               }}
                             >
-                              <FaUser size="20px" />
+                              <ContentButtons
+                                content={buttons}
+                                variant="vertical"
+                              />
                             </Box>
-                          ) : (
-                            <>
-                              {buttons && (
-                                <Box
-                                  sx={{
-                                    '& + &': {
-                                      ml: 4,
-                                    },
-                                  }}
-                                >
-                                  <ContentButtons content={buttons} />
-                                </Box>
-                              )}
-                            </>
-                          )}
-                        </Drawer>
-                        <FaCartArrowDown
-                          size={25}
-                          style={{ marginLeft: '1em' }}
-                          onClick={() => setActiveModal('cart')}
-                        />
-                      </Box>
-                    </>
-                  )}
+                          ),
+                      )}
+                    </Drawer>
+                    <FaCartArrowDown
+                      size={25}
+                      style={{ marginLeft: '1em' }}
+                      onClick={() => setActiveModal('cart')}
+                    />
+                  </Box>
                 </>
               )}
+
+              <Box sx={styles.searchContainer}>{<Search />}</Box>
             </Flex>
           </Container>
         </Container>

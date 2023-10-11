@@ -50,7 +50,7 @@ const CardMedia = ({
       }
     : {
         as: GLink,
-        to: single ? `/${slug}` : slug,
+        to: `/${slug}`,
       };
 
   return (

@@ -15,31 +15,31 @@ export default {
   },
   h2: {
     ...heading,
-    fontSize: 5,
+    fontSize: 6,
     maxWidth: 650,
     mx: `auto`,
-    mb: 5,
+    mb: 4,
   },
   h3: {
     ...heading,
-    fontSize: 4,
+    fontSize: 5,
   },
   h4: {
     ...heading,
-    fontSize: 3,
+    fontSize: 4,
   },
   h5: {
     ...heading,
-    fontSize: 2,
+    fontSize: 3,
     mb: 2,
   },
   h6: {
     ...heading,
-    fontSize: 1,
+    fontSize: 2,
     mb: 0,
   },
   medium: {
-    fontSize: 2,
+    fontSize: 3,
     mb: 3,
   },
   small: {

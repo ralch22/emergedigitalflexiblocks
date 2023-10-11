@@ -65,11 +65,18 @@ export default {
   title: {
     fontFamily: `heading`,
     fontSize: [5, 6, null, 7],
+    variant: `text.h3`,
     width: [`full`, null, null, `2/3`],
     color: [`heading`, null, `white`],
     textAlign: `left`,
     pr: [0, null, 4, 5],
     m: 0,
+  },
+  title2: {
+    variant: `text.h2`,
+    textAlign: `center`,
+    color: `omegaDark`,
+    mb: [0, 2, 3],
   },
   excerpt: {
     display: `none`,

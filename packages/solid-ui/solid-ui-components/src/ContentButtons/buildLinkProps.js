@@ -1,4 +1,4 @@
-import { Link as GLink } from 'gatsby';
+import { Link as GLink, navigate } from 'gatsby';
 import { Button, Link } from 'theme-ui';
 import AppButton from '@solid-ui-components/AppButton';
 import VideoButton from '@solid-ui-components/VideoButton';
@@ -13,6 +13,10 @@ const isValidHttpUrl = link => {
   }
   return protocols.includes(url.protocol);
 };
+
+const auth =
+  typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
+const parsedData = JSON.parse(auth);
 
 const buildLinkProps = ({
   content: { type, link, target, variant },
@@ -56,6 +60,12 @@ const buildLinkProps = ({
       break;
     case 'ANCHOR':
       linkProps = { href: link, as: 'a', target, offset: 150 };
+      break;
+    case 'AUTH':
+      linkProps = {
+        onClick: () => navigate('/dashboard'),
+        // sx: { display: parsedData ? `block` : `none` },
+      };
       break;
     case 'SUBMIT':
       linkProps = { type: 'submit' };

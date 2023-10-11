@@ -45,9 +45,12 @@ const CompaniesBlock01 = ({ content }) => {
           <ContentButtons content={buttons} />
         </>
       )}
-      <Divider space="5" />
-      <Divider space="5" />
-      <ContentImages content={{ images }} />
+      <Divider space={3} />
+      <ContentImages
+        content={{ images }}
+        loading="eager"
+        imagePosition="center"
+      />
     </Container>
   );
 };

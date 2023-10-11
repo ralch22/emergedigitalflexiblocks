@@ -6,10 +6,11 @@ import React, { useEffect, useState } from 'react';
 import { Box, Card } from 'theme-ui';
 import Layout from '@solid-ui-layout/Layout';
 import Stack from '@solid-ui-layout/Stack/Stack';
-import Main from '@solid-ui-layout/Main/Main';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import Header from '@solid-ui-blocks/Header/Block01';
 import Divider from '@solid-ui-components/Divider';
+import { normalizeBlockContentNodes } from '@blocks-helpers';
+import { ArticleJsonLd } from 'gatsby-plugin-next-seo';
 import {
   PostBody,
   PostComments,
@@ -17,8 +18,7 @@ import {
   PostImage,
   PostTagsShare,
 } from '@solid-ui-blocks/Case';
-import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { ArticleJsonLd } from 'gatsby-plugin-next-seo';
+import Main from '@solid-ui-layout/Main/Main';
 
 export default function Case({
   pageContext,
@@ -28,6 +28,7 @@ export default function Case({
   const {
     post: { slug },
     siteUrl,
+    services,
   } = pageContext;
   const [caseStudy, setCaseStudy] = useState(null);
   useEffect(() => {
@@ -75,8 +76,8 @@ export default function Case({
 
     fetchCaseStudy();
   }, [slug]);
-  console.log('case: ', caseStudy);
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
+
   return (
     <Layout {...props}>
       {caseStudy && (
@@ -90,34 +91,29 @@ export default function Case({
             dateModified={caseStudy.modified}
             description={caseStudy.content.rendered}
             overrides={{
-              '@type': 'BlogPosting', // set's this as a blog post.
+              '@type': 'BlogPosting', // set's this as a blog caseStudy.
             }}
           />
-          <Header search content={content['header']} />
+          <Header case content={content['header']} />
           <Divider space="5" />
-          <div style={{ marginTop: `5rem` }}>
-            <Stack effectProps={{ effect: 'fadeInDown' }}>
-              <PostHead {...caseStudy} />
-            </Stack>
-          </div>
+          <Stack effectProps={{ effect: 'fadeInDown' }}>
+            <PostHead {...caseStudy} />
+          </Stack>
           <Divider />
-          <Stack effectProps={{ effect: 'fadeInUp' }}>
+          <Stack>
             <Main>
               <Card variant="paper">
                 <PostImage {...caseStudy} inCard />
                 <PostBody {...caseStudy} />
                 <PostTagsShare {...caseStudy} location={props.location} />
                 <PostComments {...caseStudy} />
-
-                {/* <PostFooter {...{ previous, next }} /> */}
               </Card>
             </Main>
-            <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>
-              {/*<AuthorCompact author={caseStudy.author.node} omitTitle />*/}
-              <Divider />
-            </Box>
+            <Box
+              sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}
+            ></Box>
           </Stack>
-          <Divider />
+          <Divider space="5" />
           <Footer content={content['footer']} />
         </>
       )}

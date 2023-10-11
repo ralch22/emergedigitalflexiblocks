@@ -14,7 +14,6 @@ import Divider from '@solid-ui-components/Divider';
 import Seo from 'gatsby-plugin-wpgraphql-seo';
 import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded';
 import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal';
-import BannerVertical from '@solid-ui-blocks/BannerVertical';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import { regexString } from '@elegantstack/gatsby-theme-flexiblocks/src/utils/filter';
 
@@ -45,34 +44,12 @@ export default function RenderPost({
       <Stack effectProps={{ effect: false }}>
         {/* <Categories categories={categories} variant='horizontal' omitTitle /> */}
       </Stack>
-      <Divider />
-      <Stack effectProps={{ effect: false }}>
-        <Main>
-          {/* <CardList
-            nodes={featuredPosts.nodes}
-            limit={3}
-            variant='horizontal-cover'
-            slider
-            fade
-            controlPosition='over'
-            loading='eager'
-            omitCategory
-          /> */}
-          <Divider space={2} />
-          <CardList
-            nodes={recentPosts.nodes}
-            limit={4}
-            columns={[1, 2]}
-            variant="horizontal-aside"
-            loading="eager"
-            withModerate
-          />
-        </Main>
-        <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>
-          <BannerVertical content={content['posts']} />
-        </Box>
-      </Stack>
       <Divider space={5} />
+      {/*<Flex>*/}
+      {/*  <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>*/}
+      {/*    <BannerVertical content={content['posts']} />*/}
+      {/*  </Box>*/}
+      {/*</Flex>*/}
       {posts.group.length &&
         posts.group.map((group, index) => (
           <React.Fragment key={`${group.categoryName}.list`}>
@@ -83,12 +60,7 @@ export default function RenderPost({
                     nodes={group.nodes}
                     limit={3}
                     columns={[1, 1, 1, 3]}
-                    variant={[
-                      'horizontal-md',
-                      'horizontal',
-                      'horizontal',
-                      'vertical',
-                    ]}
+                    variant={['horizontal-md', 'horizontal']}
                   />
                   <Divider space={2} />
                   <CardList

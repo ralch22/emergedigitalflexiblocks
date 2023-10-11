@@ -10,7 +10,7 @@ import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
 import Content3 from '@solid-ui-blocks/Content/Block03';
 import Content4 from '@solid-ui-blocks/Content/Block04';
-import Contact from '@solid-ui-blocks/CallToAction/Block02';
+import Contact from '@solid-ui-blocks/CallToAction/Block01';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
 import Inclusions from '@solid-ui-blocks/FeaturesWithPhoto/Block02';
@@ -60,7 +60,7 @@ const GAnalyticsAudit = props => {
         <Faq content={content['faq']} />
       </Container>
       <Divider space="5" />
-      <Contact content={content['cta']} />
+      <Contact content={content['get-started']} />
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>

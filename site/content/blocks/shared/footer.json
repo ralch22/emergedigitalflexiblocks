@@ -13,6 +13,13 @@
       "space": 3
     }
   ],
+  "images": [
+    {
+      "src": "../../assets/flexiblocks/shared/footer-logo.svg",
+      "alt": "Emerge Digital Logo",
+      "width": "200px"
+    }
+  ],
   "collection": [
     {
       "text": [
@@ -128,7 +135,7 @@
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-linkedin.svg",
             "alt": "Linkedin Icon",
-            "color": "#2f4f4f"
+            "color": "#ffffff"
           }
         },
         {
@@ -139,7 +146,7 @@
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
             "alt": "Twitter Icon",
-            "color": "#1da1f2"
+            "color": "#ffffff"
           }
         },
         {
@@ -150,7 +157,7 @@
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
             "alt": "instagram Icon",
-            "color": "#c13584"
+            "color": "#ffffff"
           }
         },
         {
@@ -161,7 +168,7 @@
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-facebook.svg",
             "alt": "Facebook Icon",
-            "color": "#c13584"
+            "color": "#ffffff"
           }
         },
         {
@@ -172,7 +179,7 @@
           "icon": {
             "src": "../../assets/flexiblocks/icons/bxl-tiktok.svg",
             "alt": "TikTok Icon",
-            "color": "#c13584"
+            "color": "#ffffff"
           }
         }
       ]

@@ -61,15 +61,14 @@ export default function Post({
   return (
     <Layout {...props}>
       <Seo post={wpPost} />
-      <Header search content={content['header']} />
+      <Header content={content['header']} />
       <Divider space="5" />
-      <div style={{ marginTop: `5rem` }}>
-        <Stack effectProps={{ effect: 'fadeInDown' }}>
-          <PostHead {...post} />
-        </Stack>
-      </div>
+
+      <Stack effectProps={{ effect: 'fadeInDown' }}>
+        <PostHead {...post} />
+      </Stack>
       <Divider />
-      <Stack effectProps={{ effect: 'fadeInUp' }}>
+      <Stack>
         <Main>
           <Card variant="paper">
             <PostImage {...post} inCard />
@@ -106,7 +105,7 @@ export default function Post({
           </Sticky>
         </Box>
       </Stack>
-      <Divider />
+      <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>
   );

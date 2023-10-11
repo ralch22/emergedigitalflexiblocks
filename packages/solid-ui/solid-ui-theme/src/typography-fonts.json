@@ -1,11 +1,19 @@
 {
   "fonts": {
     "google": {
-      "families": ["Poppins:400,600,700"]
+      "families": [
+        "Poppins:400,600,700"
+      ]
     }
   },
   "theme": {
-    "headerFontFamily": ["Poppins", "sans-serif"],
-    "bodyFontFamily": ["Poppins", "sans-serif"]
+    "headerFontFamily": [
+      "Prompt",
+      "sans-serif"
+    ],
+    "bodyFontFamily": [
+      "Prompt",
+      "sans-serif"
+    ]
   }
 }

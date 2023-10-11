@@ -7,7 +7,7 @@ export default {
     display: [`none`, null, `block`],
   },
   form: ({ focus }) => ({
-    display: [focus ? `flex` : `none`, null, `flex`],
+    display: [focus ? `flex` : `none`],
     alignItems: `center`,
     bg: `omegaLight`,
     borderRadius: `default`,
@@ -25,9 +25,11 @@ export default {
   }),
   searchIcon: {
     flexShrink: 0,
+    color: '#2d3748',
   },
   mobileTrigger: {
-    display: [`block`, null, `none`],
+    display: [`block`],
+    ml: 5,
   },
   input: {
     ml: 1,
@@ -89,14 +91,14 @@ export default {
     },
   },
   overlay: {
-    position: `fixed`,
+    position: `absolute`,
     top: 0,
     left: 0,
     zIndex: 97,
     bg: `background`,
     opacity: 0.9,
     width: `full`,
-    height: `full`,
+    height: `100vh`,
   },
   close: {
     position: `fixed`,

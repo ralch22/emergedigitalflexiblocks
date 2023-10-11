@@ -116,9 +116,20 @@
           "type": "MODAL",
           "link": "cart",
           "variant": "links.nav-dark",
+          "color": "#2d3748",
           "icon": {
             "src": "../../assets/flexiblocks/icons/cart-shopping-solid.svg",
-            "color": "alphaLight"
+            "color": "#2d3748"
+          }
+        },
+        {
+          "type": "AUTH",
+          "link": "/dashboard",
+          "variant": "links.nav-light",
+          "color": "#2d3748",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/user-solid.svg",
+            "color": "#2d3748"
           }
         }
       ]

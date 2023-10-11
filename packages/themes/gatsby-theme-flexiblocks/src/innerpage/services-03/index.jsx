@@ -45,7 +45,7 @@ const Services03 = props => {
       <Divider space="4" />
       <Content content={content['services']} />
       <Divider space="4" />
-      <Contact content={content['cta']} />
+      <Contact content={content['get-started']} />
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>
@@ -101,4 +101,4 @@ export const query = graphql`
   }
 `;
 
-export default Services03;
+export default Services03

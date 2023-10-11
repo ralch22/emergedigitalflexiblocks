@@ -71,7 +71,7 @@ const AppDevelopment = props => {
       <Divider space="5" />
       <Steps content={content['why']} />
       <Divider space="5" />
-      <Contact content={content['cta']} />
+      <Contact content={content['get-started']} />
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>

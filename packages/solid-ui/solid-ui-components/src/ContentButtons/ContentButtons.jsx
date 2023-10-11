@@ -116,6 +116,7 @@ const ButtonComponent = ({ content, children, styles = {}, className }) => {
         width,
         '::after': { bg, borderColor: bg },
         position: `relative`,
+        // ...linkProps.sx,
         ...styles,
       }}
       {...linkProps}
@@ -192,8 +193,8 @@ const ContentButtons = ({ content, variant, wrapperStyles }) =>
     </>
   ) : null;
 
-export default ContentButtons;
+export default ContentButtons
 
 ContentButtons.defaultProps = {
-  variant: 'horizontal',
-};
+  variant: 'horizontal'
+}

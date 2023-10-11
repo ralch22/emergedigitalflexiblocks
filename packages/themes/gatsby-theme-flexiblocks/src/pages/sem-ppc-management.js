@@ -73,7 +73,7 @@ const PaidMediaPag = props => {
       <Divider space="5" />
       <Feature4 reverse content={content['inovating']} />
       <Divider space="5" />
-      <Contact content={content['cta']} />
+      <Contact content={content['get-started']} />
       <Divider space="5" />
       <Container>
         <Faq content={content['faq']} />

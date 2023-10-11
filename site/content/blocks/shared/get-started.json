@@ -1,0 +1,26 @@
+{
+  "text": [
+    {
+      "text": "Let's get in touch",
+      "color": "omegaDark",
+      "variant": "h4"
+    },
+    {
+      "text": "Alternatively, send us a Message",
+      "variant": "h2"
+    },
+    {
+      "text": "Ready to Grow Your Business? Chat or Call Us Now",
+      "color": "alpha",
+      "variant": "medium"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Get Started",
+      "type": "MODAL",
+      "link": "contact",
+      "variant": "secondary"
+    }
+  ]
+}

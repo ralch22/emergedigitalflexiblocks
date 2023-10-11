@@ -11,6 +11,7 @@ import { TabsContextProvider } from '@solid-ui-components/Tabs';
 import { SEOContext } from 'gatsby-plugin-wpgraphql-seo';
 import './css/global.css';
 import 'react-tabs/style/react-tabs.css';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
   const {

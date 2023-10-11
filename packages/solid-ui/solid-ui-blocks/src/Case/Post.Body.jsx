@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text } from 'theme-ui';
+import { Box } from 'theme-ui';
 
 const styles = {
   excerpt: {
@@ -11,12 +11,14 @@ const styles = {
 export const PostBody = ({ content }) => {
   return (
     <Box>
-      <Text
+      <Box
         variant="medium"
         sx={{
           ...styles.excerpt,
         }}
-        dangerouslySetInnerHTML={{ __html: content.rendered }}
+        dangerouslySetInnerHTML={{
+          __html: `<div class='name'> ${content.rendered} </div>`,
+        }}
       />
     </Box>
   );

@@ -52,7 +52,7 @@ export default {
     display: [`none`, `block`],
   },
   title: {
-    variant: `text.h2`,
+    variant: `text.h3`,
     textAlign: `center`,
     color: `omegaDark`,
     mb: [0, 2, 3],

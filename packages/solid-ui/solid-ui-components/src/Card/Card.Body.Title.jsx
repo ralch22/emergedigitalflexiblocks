@@ -4,6 +4,7 @@ import { Heading } from 'theme-ui';
 import rv from '@solid-ui-components/utils/buildResponsiveVariant';
 
 const CardBodyTitle = ({ variant, title, slug, link, single }) => {
+  console.log(variant);
   const linkProps = link
     ? {
         as: 'a',
@@ -13,7 +14,7 @@ const CardBodyTitle = ({ variant, title, slug, link, single }) => {
       }
     : {
         as: GLink,
-        to: single ? `/${slug}` : slug,
+        to: `/${slug}`,
       };
   return (
     <Heading

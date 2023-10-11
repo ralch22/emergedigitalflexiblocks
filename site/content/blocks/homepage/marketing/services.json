@@ -23,7 +23,7 @@
         }
       ],
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-target-lock.svg",
+        "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
         "alt": "Target",
         "bg": "omegaLighter",
         "color": "beta"
@@ -49,7 +49,7 @@
         }
       ],
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-user-voice.svg",
+        "src": "../../../assets/flexiblocks/icons/ad-solid.svg",
         "alt": "Voice",
         "bg": "omegaLighter",
         "color": "beta"
@@ -75,7 +75,7 @@
         }
       ],
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-pen.svg",
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
         "alt": "Pen",
         "bg": "omegaLighter",
         "color": "beta"
@@ -101,7 +101,7 @@
         }
       ],
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-user-voice.svg",
+        "src": "../../../assets/flexiblocks/icons/mobile-solid.svg",
         "alt": "Voice",
         "bg": "omegaLighter",
         "color": "beta"
@@ -127,7 +127,7 @@
         }
       ],
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-pen.svg",
+        "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
         "alt": "Pen",
         "bg": "omegaLighter",
         "color": "beta"

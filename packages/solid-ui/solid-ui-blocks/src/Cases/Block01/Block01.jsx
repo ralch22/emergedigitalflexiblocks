@@ -6,6 +6,7 @@ import ContentText from '@solid-ui-components/ContentText';
 import CaseList from '@solid-ui-components/CaseList';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
+import SkeletonLoader from '@solid-ui-blocks/SkeletonLoader/index';
 
 const styles = {
   wrapper: {
@@ -74,6 +75,7 @@ const styles = {
 const CasesBlock01 = ({
   cases,
   subscription,
+  status,
   content: { text, collection, buttons },
 }) => {
   return (
@@ -84,12 +86,21 @@ const CasesBlock01 = ({
       <Divider />
       <Reveal effect="fadeIn">
         <Flex sx={{ flexWrap: `wrap`, justifyContent: `center`, m: -3 }}>
-          <CaseList
-            nodes={cases}
-            limit={10}
-            columns={[1, 1, 1, 3]}
-            variant={['horizontal-md', 'horizontal', 'horizontal', 'vertical']}
-          />
+          {status === 'loading' ? (
+            <SkeletonLoader />
+          ) : (
+            <CaseList
+              nodes={cases}
+              limit={10}
+              columns={[1, 1, 1, 3]}
+              variant={[
+                'horizontal-md',
+                'horizontal',
+                'horizontal',
+                'vertical',
+              ]}
+            />
+          )}
         </Flex>
       </Reveal>
       {buttons && (

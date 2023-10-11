@@ -11,7 +11,7 @@ import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
 import Hero from '@solid-ui-blocks/Hero/Block01';
 import Companies from '@solid-ui-blocks/Companies/Block01';
-import Services from '@solid-ui-blocks/Features/Block02';
+import Services from '@solid-ui-blocks/Features/Block05';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
 import WhyChooseUs from '@solid-ui-blocks/Features/Block01';
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block02';
@@ -43,7 +43,6 @@ const IndexPage = props => {
       {/* Blocks */}
       <Header content={content['header']} />
       <Divider space="5" />
-      <Divider space="5" />
       <Container variant="full" sx={styles.heroContainer}>
         <Hero content={content['hero']} />
       </Container>
@@ -67,6 +66,7 @@ const IndexPage = props => {
       <Divider space="5" />
       <NewsletterExpanded content={content['newsletter']} />
       <Divider space="5" />
+      <Divider space="5" />
       <Blog posts={posts} content={content['latest-blogs']} />
       <Divider space="6" />
       <Divider space="6" />
@@ -83,6 +83,7 @@ const IndexPage = props => {
       <Divider space="5" />
       <Divider space="5" />
       <GetStarted content={content['get-started']} />
+      <Divider space="5" />
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>

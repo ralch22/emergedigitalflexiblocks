@@ -34,7 +34,7 @@ const Hits = ({ searchState, searchResults }) => {
             excerpt: <Snippet hit={hit} tagName="mark" attribute="excerpt" />,
           };
           return (
-            <a style={{ color: 'inherit' }} href={`/posts/${hit.slug}`}>
+            <a style={{ color: 'inherit' }} href={`/${hit.slug}`}>
               <Card key={hit.objectID} variant="search">
                 <Text as="h3">
                   <Highlight hit={hit} tagName="mark" attribute="title" />

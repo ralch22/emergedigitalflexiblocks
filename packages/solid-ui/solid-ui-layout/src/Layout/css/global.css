@@ -1,5 +1,44 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../static/Lexend-Black.ttf') format('ttf'),
+    url('../static/Lexend-Bold.ttf') format('ttf'),
+    url('../static/Lexend-ExtraBold.ttf') format('ttf'),
+    url('../static/Lexend-ExtraLight.ttf') format('ttf'),
+    url('../static/Lexend-Light.ttf') format('ttf'),
+    url('../static/Lexend-Medium.ttf') format('ttf'),
+    url('../static/Lexend-Regular.ttf') format('ttf'),
+    url('../static/Lexend-SemiBold.ttf') format('ttf'),
+    url('../static/Lexend-Thin.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url('../static/Prompt-Black.ttf') format('ttf'),
+    url('../static/Prompt-Bold.ttf') format('ttf'),
+    url('../static/Prompt-ExtraBold.ttf') format('ttf'),
+    url('../static/Prompt-ExtraLight.ttf') format('ttf'),
+    url('../static/Prompt-Light.ttf') format('ttf'),
+    url('../static/Prompt-Medium.ttf') format('ttf'),
+    url('../static/Prompt-Regular.ttf') format('ttf'),
+    url('../static/Prompt-SemiBold.ttf') format('ttf'),
+    url('../static/Prompt-Thin.ttf') format('ttf'),
+    url('../static/Prompt-BlackItalic.ttf') format('ttf'),
+    url('../static/Prompt-BoldItalic.ttf') format('ttf'),
+    url('../static/Prompt-ExtraBoldItalic.ttf') format('ttf'),
+    url('../static/Prompt-ExtraLightItalic.ttf') format('ttf'),
+    url('../static/Prompt-LightItalic.ttf') format('ttf'),
+    url('../static/Prompt-MediumItalic.ttf') format('ttf'),
+    url('../static/Prompt-SemiBoldItalic.ttf') format('ttf')
+}
+
+
 body {
     overflow-x: hidden;
+    font-family: 'Prompt', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend', sans-serif !important;
 }
 
 a {
@@ -23,3 +62,19 @@ video {
 iframe {
     width: 100%;
 }
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-post {
+    width: calc(33.33% - 20px);
+    min-height: 200px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+

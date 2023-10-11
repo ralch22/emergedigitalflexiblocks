@@ -1,10 +1,12 @@
 import React from 'react';
-import { Box, Container, Flex, Grid } from 'theme-ui';
+import { Box, Container, Flex } from 'theme-ui';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentButtons from '@solid-ui-components/ContentButtons';
+import ContentImages from '@solid-ui-components/ContentImages';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import Divider from '@solid-ui-components/Divider/Divider';
 import CustomTabSwitcher from '@solid-ui-blocks/Content/Tabs';
+import { Link as GLink } from 'gatsby';
 import address1 from '../../../../../../site/content/blocks/shared/address1.json';
 import address2 from '../../../../../../site/content/blocks/shared/address2.json';
 import ClutchWidget from '@solid-ui-components/Widget/Widget';
@@ -53,6 +55,15 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
       <Container sx={{ position: 'relative' }}>
         <Flex sx={styles.footer}>
           <Box sx={styles.column}>
+            <Box pb="1" mb="2" mt={[4, 0]}>
+              <GLink to="/">
+                <ContentImages
+                  sx={{ width: `77%` }}
+                  content={{ images }}
+                  imageEffect="fadeIn"
+                />
+              </GLink>
+            </Box>
             <ContentText content={text} />
             <CustomTabSwitcher tabs={tabs} />
             <img
@@ -61,18 +72,13 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
               alt=""
             />
             <ClutchWidget />
-            {/* {images && <ContentImages
-                     content={images[5]}
-
-                   />} */}
           </Box>
-          <Divider spaceX="50px" />
-          <Grid
-            columns={[1, 3]}
+
+          <Flex
             sx={{
               flexWrap: 'wrap',
               flexBasis: '70%',
-              columnGap: [null, '6em'],
+              columnGap: [null, '1em'],
             }}
           >
             {collection?.map(
@@ -105,7 +111,7 @@ const FooterBlock01 = ({ content: { text, collection, images } }) => {
                   </Box>
                 ),
             )}
-          </Grid>
+          </Flex>
         </Flex>
 
         <Flex

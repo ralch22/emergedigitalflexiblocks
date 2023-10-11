@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Box, Flex, Text, Heading } from 'theme-ui';
+import { Box, Flex, Heading, Text } from 'theme-ui';
 
 const styles = {
   wrapper: {
@@ -36,7 +36,7 @@ const PostLink = ({ title, post }) => (
     <Heading
       variant="h4"
       as={Link}
-      to={`/posts/${post.slug}`}
+      to={`/${post.slug}`}
       dangerouslySetInnerHTML={{ __html: post.title }}
     />
   </>

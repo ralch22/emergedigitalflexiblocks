@@ -53,7 +53,7 @@ const Services03 = props => {
       <Divider space="4" />
       <CustomTabSwitcher tabs={tabs} />
       <Divider space="4" />
-      <Contact content={content['cta']} />
+      <Contact content={content['get-started']} />
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>
