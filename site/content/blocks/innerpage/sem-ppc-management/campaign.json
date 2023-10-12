@@ -15,8 +15,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/horse-head-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -26,8 +27,7 @@
         },
         {
           "text": "Make sure you're targeting the right customers, at the right time, on the right platform with a carefully planned and researched PPC campaign. Our use of keywords, messaging, and strategic timing is driven by data. In order to influence your key demographic, we must understand their needs, intentions, behaviours, and emotional triggers.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
@@ -35,8 +35,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/puzzle-piece-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -46,8 +47,7 @@
         },
         {
           "text": "Improve your quality score, reduce your cost per click, and raise your revenue by weeding out non-performing keywords. Once an ad is turned on in a PPC campaign, it's often left to its own devices. PPC isn't as effective if you 'set and forget'. In order to achieve results, we continuously monitor, analyze, and adjust your campaign.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
@@ -55,8 +55,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/hourglass-end-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -66,8 +67,7 @@
         },
         {
           "text": "Make sure you know what works for you. Ensure that every paid search campaign is performing well in terms of bottom line results. Google Ads and other platforms collect statistics such as impressions, clicks, and post-click activity. These data are compiled into custom reports so that you know exactly what's happening.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     }

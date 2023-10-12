@@ -41,7 +41,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-message-detail.svg",
         "size": "lg",
-        "color": "beta"
+        "color": "green"
       }
     },
     {
@@ -122,7 +122,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-box.svg",
         "size": "lg",
-        "color": "beta"
+        "color": "green"
       }
     }
   ]

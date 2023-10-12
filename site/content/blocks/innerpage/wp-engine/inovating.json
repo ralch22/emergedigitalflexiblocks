@@ -36,8 +36,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/tool.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -54,8 +55,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/native.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -72,8 +74,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/modal.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -90,8 +93,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/cog.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

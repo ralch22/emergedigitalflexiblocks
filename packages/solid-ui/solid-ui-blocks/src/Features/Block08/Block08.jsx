@@ -31,7 +31,7 @@ const FeaturesBlock05 = ({ centernone, content: { text, collection } }) => (
     {collection && (
       <>
         <Divider />
-        <Grid columns={[1, 3]} gap={1} sx={{ flexWrap: `wrap` }} m={-3}>
+        <Grid columns={[1, 2, 2, 3]} gap={1} sx={{ flexWrap: `wrap` }} m={-3}>
           {collection.map(
             ({ text, icon, collection, buttons, container }, index) => (
               <Reveal

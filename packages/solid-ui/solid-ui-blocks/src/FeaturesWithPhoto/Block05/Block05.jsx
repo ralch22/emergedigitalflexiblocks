@@ -4,7 +4,6 @@ import Reveal from '@solid-ui-components/Reveal';
 import Divider from '@solid-ui-components/Divider';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
@@ -33,6 +32,7 @@ const textArray = [
 const FeaturesWithPhotoBlock05 = ({
   content: { text, images, collection, buttons },
   reverse,
+  mid,
   bottomText,
 }) => (
   <Container sx={{ position: `relative` }}>
@@ -40,6 +40,8 @@ const FeaturesWithPhotoBlock05 = ({
       sx={{
         alignItems: [null, `center`],
         flexDirection: [
+          reverse ? `column-reverse` : `column`,
+          reverse ? `column-reverse` : `column`,
           reverse ? `column-reverse` : `column`,
           reverse ? `row-reverse` : `row`,
         ],
@@ -50,7 +52,11 @@ const FeaturesWithPhotoBlock05 = ({
         <Box sx={{ textAlign: [`center`, `left`] }}>
           <ContentText content={text} />
         </Box>
-        <ContentImages content={{ images }} reverse={reverse} />
+        <ContentImages
+          sx={{ width: mid ? 300 : '' }}
+          content={{ images }}
+          reverse={reverse}
+        />
 
         {bottomText && <ContentText content={textArray} />}
       </FlexImage>
@@ -84,7 +90,6 @@ const FeaturesWithPhotoBlock05 = ({
         )}
       </FlexContent>
     </Flex>
-    <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>
 );
 

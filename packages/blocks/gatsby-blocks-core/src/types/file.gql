@@ -110,6 +110,7 @@ type BlockContentIcon {
   src: String @fileByRelativePath @proxyResolver(on: "File", to: "publicURL")
   color: String
   bg: String
+  gradient: String
   size: String
 }
 

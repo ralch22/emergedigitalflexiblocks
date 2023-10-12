@@ -58,15 +58,15 @@ const styles = {
     mr: [null, null, 3, 3],
   },
   desktopMenu: {
-    display: [`none`, null, `block`],
+    display: [`none`, 'none', `none`, `block`],
     minWidth: `auto`,
-    flexGrow: 1,
+    flexGrow: 3,
   },
   image: {
     width: 150,
   },
   mobileMenu: {
-    display: [`flex`, null, `none`],
+    display: [`flex`, 'flex', 'flex', `none`],
   },
 };
 
@@ -156,11 +156,10 @@ const HeaderBlock01 = ({
                       style={{ marginLeft: '1em' }}
                       onClick={() => setActiveModal('cart')}
                     />
+                    <Box sx={styles.searchContainer}>{<Search />}</Box>
                   </Box>
                 </>
               )}
-
-              <Box sx={styles.searchContainer}>{<Search />}</Box>
             </Flex>
           </Container>
         </Container>

@@ -14,8 +14,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -25,16 +26,16 @@
         },
         {
           "text": "Make your competitors look like amateurs. Bring in the sales. Unqualified leads, high CPCs, and poor performing ads are gone.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/cart-shopping.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -44,16 +45,16 @@
         },
         {
           "text": "Your sales goals can be crushed in record time with a bulletproof Google Shopping campaign.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-dollar-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -63,16 +64,16 @@
         },
         {
           "text": "Boost conversion rates with a Bing ads campaign that hunts down leads your competitors have overlooked.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/globe-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -82,8 +83,7 @@
         },
         {
           "text": "You can crush your competition with remarketing to stay top-of-mind and convert site visitors into customers.",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     }

@@ -2,7 +2,7 @@
   "text": [
     {
       "text": "We Are Here To Help You",
-      "color": "beta",
+      "color": "green",
       "variant": "h4"
     },
     {
@@ -41,7 +41,6 @@
           "text": "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular."
         }
       ],
-
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-mobile-alt.svg",
         "bg": "white",
@@ -74,7 +73,6 @@
           "text": "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular."
         }
       ],
-
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-directions.svg",
         "bg": "white",

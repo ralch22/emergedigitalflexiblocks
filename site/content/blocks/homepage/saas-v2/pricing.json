@@ -54,8 +54,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-1.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {
@@ -279,8 +280,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-3.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {

@@ -12,8 +12,8 @@ import Header from '@solid-ui-blocks/Header/Block01';
 import Hero from '@solid-ui-blocks/Hero/Block01';
 import Companies from '@solid-ui-blocks/Companies/Block01';
 import Services from '@solid-ui-blocks/Features/Block05';
+import WhyChooseUs from '@solid-ui-blocks/Features/Block05';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
-import WhyChooseUs from '@solid-ui-blocks/Features/Block01';
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block02';
 import Strategies from '@solid-ui-blocks/Stats/Block01';
 import Testimonials from '@solid-ui-blocks/Testimonials/Block01';
@@ -53,9 +53,9 @@ const IndexPage = props => {
       <FeatureThree reverseSm content={content['feature-one']} />
       <Divider space="5" />
       <Divider space="5" />
-      <Container variant="wide" sx={styles.whyChooseUsContainer}>
-        <WhyChooseUs content={content['why-choose-us']} />
-      </Container>
+
+      <WhyChooseUs content={content['why-choose-us']} />
+
       <Divider space="5" />
       <Divider space="5" />
       <Services content={content['services']} />

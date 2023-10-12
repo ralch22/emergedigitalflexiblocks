@@ -3,7 +3,6 @@ import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import ContentText from '@solid-ui-components/ContentText';
@@ -29,6 +28,8 @@ const FeaturesWithPhotoBlock01 = ({
         sx={{
           alignItems: [null, `center`],
           flexDirection: [
+            reverse || reverseSm ? `column-reverse` : `column`,
+            reverse || reverseSm ? `column-reverse` : `column`,
             reverse || reverseSm ? `column-reverse` : `column`,
             reverse
               ? `${column ? 'column-reverse' : 'row-reverse'}`
@@ -69,8 +70,6 @@ const FeaturesWithPhotoBlock01 = ({
           )}
         </FlexImage>
       </Flex>
-
-      <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
     </Container>
   </Box>
 );

@@ -6,8 +6,7 @@
     },
     {
       "text": "Emerge Digital offers a range of excellent advertising marketing services. As we are the best advertising agency in Dubai, we provide expert Paid Media services across all channels, including Programmatic, Paid Search, and Paid Social.",
-      "variant": "medium",
-      "color": "alpha"
+      "variant": "medium"
     }
   ],
   "collection": [
@@ -15,8 +14,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/layer-group-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -26,8 +26,7 @@
         },
         {
           "text": "Make sure you are spending your display advertising dollars in the right places.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -35,8 +34,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/photo-film-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -46,8 +46,7 @@
         },
         {
           "text": "With highly targeted programmatic video advertising, you will be able to reach your ideal audience.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -55,8 +54,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/maximize-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -66,8 +66,7 @@
         },
         {
           "text": "- Solution automation - Analyses driven by data - Review of competitors - Insights that are actionable",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -75,8 +74,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -86,8 +86,7 @@
         },
         {
           "text": "Find out what your audience is looking for as they actively search for your brand's products and services.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -95,8 +94,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/arrow-pointer-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -106,8 +106,7 @@
         },
         {
           "text": "Keep a close eye on your customer's purchase journey in order to ensure you are an integral part of it",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -115,8 +114,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/computer-mouse-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -126,8 +126,7 @@
         },
         {
           "text": "With a successful online advertising strategy, you'll be able to get ahead of the competition.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -135,8 +134,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/laptop-medical-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -146,8 +146,7 @@
         },
         {
           "text": "Using resolution as part of your native advertising campaign can help you maximize the effectiveness of your campaign.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -155,8 +154,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/database-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -166,8 +166,7 @@
         },
         {
           "text": "Do you use data and insights to guide your media buying decisions?",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -175,8 +174,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -186,8 +186,7 @@
         },
         {
           "text": "Performance eCommerce marketplace advertising on Amazon and eBay can help you sell more.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -195,8 +194,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/desktop-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -206,8 +206,7 @@
         },
         {
           "text": "Our market-leading paid performance team will help you dominate eCommerce advertising across all channels.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -215,8 +214,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/tachograph-digital-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -226,8 +226,7 @@
         },
         {
           "text": "You will be able to grow and sell more by adopting a thorough cross-channel digital media planning strategy.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -235,8 +234,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -246,8 +246,7 @@
         },
         {
           "text": "Efficiencies and incremental performance are delivered by an integrated SEO and SEM strategy.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -255,8 +254,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/gears-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -266,8 +266,7 @@
         },
         {
           "text": "Performance Media's data-driven and ROAS-oriented approach will help you achieve remarkable results from your paid media.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     }

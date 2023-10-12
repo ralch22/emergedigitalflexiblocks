@@ -15,8 +15,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/cloudsmith.svg",
         "alt": "Cloud Smith",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -40,8 +41,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/phone-volume-solid.svg",
         "alt": "Volume",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

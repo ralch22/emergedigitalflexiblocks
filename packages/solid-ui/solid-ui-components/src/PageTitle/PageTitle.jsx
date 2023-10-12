@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Badge, Heading, Text } from 'theme-ui';
+import { Badge, Flex, Heading, Text } from 'theme-ui';
 
 const styles = {
   count: {
@@ -21,14 +21,18 @@ const styles = {
 const PageTitle = ({ header, subheader, running, totalCount }) => {
   return (
     <div>
-      <Heading variant="h1" as="h1">
-        {header}
+      <Flex>
+        <Heading
+          dangerouslySetInnerHTML={{ __html: header }}
+          variant="h1"
+          as="h1"
+        />
         {totalCount && (
           <Badge variant="tag-white" sx={styles.count}>
             {totalCount}
           </Badge>
         )}
-      </Heading>
+      </Flex>
       {subheader && (
         <Text variant="h3" sx={styles.subheader}>
           {subheader}

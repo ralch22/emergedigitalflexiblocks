@@ -46,6 +46,8 @@ export default {
   text: colors.textColor,
   article: colors.headingColor,
   heading: colors.headingColor,
+  iconsBg: colors.gradiantIcons,
+  next: colors.gradiant,
 
   ...alpha,
   ...beta,
@@ -58,6 +60,7 @@ export default {
   success: colors.green[500],
   errorLight: colors.red[100],
   error: colors.red[500],
+  green: colors.green,
 
   white: colors.white,
   background: `#f8f8f8`,

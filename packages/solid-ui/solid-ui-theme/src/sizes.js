@@ -4,6 +4,7 @@ export default {
     sm: 32,
     md: 48,
     lg: 64,
+    xxs: 14,
   },
   container: 1240,
   narrow: 1000,

@@ -26,13 +26,14 @@ import {
   PostTagsShare,
 } from '@solid-ui-blocks/Post';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
+import { allRelatedPosts } from '@elegantstack/gatsby-theme-flexiblocks/src/utils/filter';
 
 export default function Post({
   data: {
     post,
     tagCategoryPosts,
     tagPosts,
-    categoryPosts,
+    allWpPost,
     previous,
     next,
     allBlockContent,
@@ -40,6 +41,7 @@ export default function Post({
   },
   ...props
 }) {
+  console.log('tags', allRelatedPosts(allWpPost.nodes, post));
   useEffect(() => {
     const removeComments = () => {
       const elementsToRemove = document.querySelector('.comment');
@@ -50,11 +52,7 @@ export default function Post({
     // Call the function when the component mounts (page loads)
     removeComments();
   }, []);
-  const relatedPosts = [
-    ...(tagCategoryPosts ? tagCategoryPosts.nodes : []),
-    ...(tagPosts ? tagPosts.nodes : []),
-    ...(categoryPosts ? categoryPosts.nodes : []),
-  ];
+  const relatedPosts = allRelatedPosts(allWpPost.nodes, post);
   const { pageContext: { services = {}, siteUrl } = {} } = props;
 
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);

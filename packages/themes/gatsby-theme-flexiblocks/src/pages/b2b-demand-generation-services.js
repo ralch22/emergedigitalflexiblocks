@@ -64,7 +64,13 @@ const SearchEngine = props => {
         sx={{ background: `linear-gradient(90deg, #336567 0%, #3F2B56 100%)` }}
       >
         <Container>
-          <Flex sx={{ flexDirection: [`column`, `row`], m: -3, py: 5 }}>
+          <Flex
+            sx={{
+              flexDirection: [`column`, `column`, `column`, `row`],
+              m: -3,
+              py: 5,
+            }}
+          >
             <Content8 content={content['do']} />
             <Divider
               space={5}
@@ -85,7 +91,13 @@ const SearchEngine = props => {
         }}
       >
         <Container>
-          <Flex sx={{ flexDirection: [`column`, `row`], m: -3, py: 5 }}>
+          <Flex
+            sx={{
+              flexDirection: [`column`, `column`, `column`, `row`],
+              m: -3,
+              py: 5,
+            }}
+          >
             <Content8 content={content['generation']} />
             <Divider
               space={5}

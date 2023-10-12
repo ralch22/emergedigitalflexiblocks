@@ -11,8 +11,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/code-solid.svg",
         "alt": "Code Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -31,8 +32,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/brain-solid.svg",
         "alt": "Brain Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -51,8 +53,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
         "alt": "Handshake Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -71,8 +74,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/file-invoice-dollar-solid.svg",
         "alt": "Invoice Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

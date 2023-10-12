@@ -16,8 +16,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -35,8 +36,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/blend.svg",
         "alt": "Search Ads Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -54,8 +56,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/search.svg",
         "alt": "Search Ads Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

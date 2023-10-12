@@ -2,7 +2,7 @@
   "text": [
     {
       "text": "Choose a plan that works for you and your team.",
-      "color": "beta",
+      "color": "green",
       "variant": "h4"
     },
     {
@@ -14,7 +14,10 @@
       "variant": "medium"
     },
     {
-      "textGroup": ["Monthly", "Annually (Save 10%)"]
+      "textGroup": [
+        "Monthly",
+        "Annually (Save 10%)"
+      ]
     }
   ],
   "collection": [
@@ -26,7 +29,10 @@
           "variant": "h3"
         },
         {
-          "textGroup": ["$29", "$25"],
+          "textGroup": [
+            "$29",
+            "$25"
+          ],
           "color": "omegaDarker",
           "variant": "h1"
         },
@@ -34,7 +40,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "For up to 10 customers and 1 agent"
@@ -42,8 +51,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-1.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {
@@ -63,7 +73,7 @@
           ],
           "icon": {
             "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-            "color": "beta"
+            "color": "green"
           }
         },
         {
@@ -75,7 +85,7 @@
           ],
           "icon": {
             "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-            "color": "beta"
+            "color": "green"
           }
         },
         {
@@ -87,7 +97,7 @@
           ],
           "icon": {
             "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-            "color": "beta"
+            "color": "green"
           }
         }
       ]
@@ -104,7 +114,10 @@
         },
         {
           "text": "$49",
-          "textGroup": ["$49", "$45"],
+          "textGroup": [
+            "$49",
+            "$45"
+          ],
           "color": "white",
           "variant": "h1"
         },
@@ -113,7 +126,10 @@
           "color": "white"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "For up to 100 customers and 10 agents",
@@ -123,7 +139,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-2.svg",
         "bg": "white",
-        "color": "beta"
+        "color": "green"
       },
       "buttons": [
         {
@@ -210,7 +226,10 @@
         },
         {
           "text": "$99",
-          "textGroup": ["$99", "$95"],
+          "textGroup": [
+            "$99",
+            "$95"
+          ],
           "color": "omegaDarker",
           "variant": "h1"
         },
@@ -218,7 +237,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "Unlimited customers and agents"
@@ -226,8 +248,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-3.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {
@@ -247,7 +270,7 @@
           ],
           "icon": {
             "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-            "color": "beta"
+            "color": "green"
           }
         },
         {
@@ -259,7 +282,7 @@
           ],
           "icon": {
             "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-            "color": "beta"
+            "color": "green"
           }
         },
         {
@@ -271,7 +294,7 @@
           ],
           "icon": {
             "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-            "color": "beta"
+            "color": "green"
           }
         }
       ]

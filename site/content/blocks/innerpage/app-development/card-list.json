@@ -4,8 +4,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/user-tie-solid.svg",
         "alt": "User Tie Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -24,8 +25,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/store-solid.svg",
         "alt": "Store Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -44,8 +46,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/building-solid.svg",
         "alt": "Building Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

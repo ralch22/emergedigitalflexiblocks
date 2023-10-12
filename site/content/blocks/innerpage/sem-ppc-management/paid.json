@@ -9,84 +9,84 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
           "text": "Enhance your search coverage with market-leading, proprietary keyword research tools",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
           "text": "Drive optimal efficiency and reduce budget waste with our integrated search approach",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
           "text": "Boost conversion rates with data-driven testing and expert insights",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
           "text": "Maintain a consistent presence in search results to build brand awareness",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
           "text": "Create an innovative, personalised search experience for relevant audiences",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
           "text": "We partner with all major SEM platforms to achieve the best results possible",
-          "variant": "medium",
-          "color": ""
+          "variant": "p"
         }
       ]
     }

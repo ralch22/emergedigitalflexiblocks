@@ -5,7 +5,6 @@ import Divider from '@solid-ui-components/Divider';
 import ListItem from '@solid-ui-components/ListItem';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
@@ -20,6 +19,8 @@ const FeaturesWithPhotoBlock02 = ({
       sx={{
         alignItems: [null, `center`],
         flexDirection: [
+          reverse ? `column-reverse` : `column`,
+          reverse ? `column-reverse` : `column`,
           reverse ? `column-reverse` : `column`,
           reverse ? `row-reverse` : `row`,
         ],
@@ -44,7 +45,7 @@ const FeaturesWithPhotoBlock02 = ({
                   key={`item-${index}`}
                   effect="fadeInPop"
                   delay={1 + 0.2 * (index + 1)}
-                  css={css({ flexBasis: [`1`, `1/2`] })}
+                  css={css({ flexBasis: [`1`, `1/3`, `1/3`, `1/2`] })}
                 >
                   <Box py="3" m="2" px="3">
                     <ListItem {...props} full compact middle p="2" />
@@ -62,7 +63,6 @@ const FeaturesWithPhotoBlock02 = ({
         )}
       </FlexContent>
     </Flex>
-    <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>
 );
 

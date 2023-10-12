@@ -15,8 +15,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
         "alt": "Chart Bar Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -34,8 +35,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -54,8 +56,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/network-wired-solid.svg",
         "alt": "Wired Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -74,8 +77,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/comments-dollar-solid.svg",
         "alt": "Comment Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -94,8 +98,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/file-lines-solid.svg",
         "alt": "File Lines Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -114,8 +119,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/square-poll-vertical-solid.svg",
         "alt": "Poll Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -134,8 +140,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/users-gear-solid.svg",
         "alt": "Cog Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

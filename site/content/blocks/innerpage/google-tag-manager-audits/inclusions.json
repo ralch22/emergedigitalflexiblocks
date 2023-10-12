@@ -21,7 +21,7 @@
         {
           "text": "01",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "GTM account inventory",
@@ -35,7 +35,7 @@
         {
           "text": "02",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "Event tracking",
@@ -49,7 +49,7 @@
         {
           "text": "03",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "Conversion triggers, tags, and variables",
@@ -63,7 +63,7 @@
         {
           "text": "04",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "Google Analytics integration",
@@ -77,7 +77,7 @@
         {
           "text": "05",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "Naming conventions",
@@ -91,7 +91,7 @@
         {
           "text": "06",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "Folder structure",
@@ -105,7 +105,7 @@
         {
           "text": "07",
           "variant": "h4",
-          "color": "beta"
+          "color": "green"
         },
         {
           "text": "The list goes on and on",

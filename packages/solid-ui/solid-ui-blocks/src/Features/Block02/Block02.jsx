@@ -30,7 +30,7 @@ const FeaturesBlock02 = ({
               <Box
                 key={`item-${index}`}
                 sx={{
-                  flexBasis: [`1`, null, double ? '1/2' : `1/3`],
+                  flexBasis: [`1`, '1/2', '1/2', double ? '1/2' : `1/3`],
                   textAlign: `left`,
                   p: 3,
                 }}

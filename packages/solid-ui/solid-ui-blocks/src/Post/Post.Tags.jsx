@@ -20,7 +20,7 @@ export const PostTags = ({ tags }) =>
       </Heading>
       <Box variant="lists.badges">
         {tags.node.map(({ id, name, slug }) => (
-          <Badge variant="tag" key={id}>
+          <Badge variant="tag-dark" key={id}>
             {name}
           </Badge>
         ))}

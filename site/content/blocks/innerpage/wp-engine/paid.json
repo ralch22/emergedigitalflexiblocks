@@ -19,8 +19,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/users.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -37,8 +38,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -55,8 +57,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

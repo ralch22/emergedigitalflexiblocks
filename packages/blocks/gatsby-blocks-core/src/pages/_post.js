@@ -26,6 +26,7 @@ module.exports = async (
             categories {
               nodes {
                 name
+                id
               }
             }
             author {
@@ -67,11 +68,10 @@ module.exports = async (
     const next = index === 0 ? null : posts[index - 1];
 
     //For querying related posts based on tags and category
-    const categoriesId =
-      categories && categories.nodes.map(category => category && category.id);
-    const tagsIds = tags && tags.nodes.map(tag => tag && tag.id);
+    const categoriesId = categories.nodes.map(category => category.id);
+    const tagsIds = tags.nodes.map(tag => tag.id);
     const hasTags = tagsIds.length > 0;
-
+    console.log('tags', categoriesId);
     createPage({
       path: slug,
       component: template,

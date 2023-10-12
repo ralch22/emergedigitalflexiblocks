@@ -8,7 +8,7 @@ import ModalWithTabs from '@solid-ui-blocks/Modal/Block01';
 import ModalSimple from '@solid-ui-blocks/Modal/Block02';
 import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
-import Contact from '@solid-ui-blocks/CallToAction/Block02';
+import Contact from '@solid-ui-blocks/CallToAction/Block01';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block10';
 import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block05';
 import FeatureFour from '@solid-ui-blocks/Features/Block10';
@@ -42,7 +42,7 @@ const AppDevelopment = props => {
       <Hero content={content['page-title']} />
       <Divider space="5" />
       <Container>
-        <Flex sx={{ flexDirection: [`column`, null, `row`], m: [0, -4] }}>
+        <Flex sx={{ flexDirection: [`column`, 'column', 'column', `row`] }}>
           <div style={{ flexBasis: '50%' }}>
             <FeatureThree content={content['feature-three']} />
           </div>
@@ -60,7 +60,7 @@ const AppDevelopment = props => {
           background: `linear-gradient(90deg, #336567 0%, #3F2B56 100%)`,
         }}
       >
-        <FeatureTwo content={content['feature-two']} />
+        <FeatureTwo content={content['feature-two']} mid />
       </Box>
       <Divider space="5" />
       <Industries content={content['industries']} />

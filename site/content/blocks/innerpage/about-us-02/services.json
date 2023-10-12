@@ -20,8 +20,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-brain.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -40,8 +41,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-message-detail.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -60,8 +62,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-rocket.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -80,8 +83,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-pen.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -100,8 +104,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bxl-shopify.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -120,8 +125,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-analyse.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -140,8 +146,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-planet.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -160,8 +167,9 @@
       },
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-phone.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

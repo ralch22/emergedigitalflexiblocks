@@ -14,8 +14,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/people-arrows-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -33,8 +34,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

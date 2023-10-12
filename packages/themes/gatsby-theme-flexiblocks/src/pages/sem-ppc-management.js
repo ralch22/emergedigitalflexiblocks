@@ -11,7 +11,7 @@ import Header from '@solid-ui-blocks/Header/Block01';
 import Content3 from '@solid-ui-blocks/Content/Block03';
 import Content4 from '@solid-ui-blocks/Content/Block04';
 import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
-import Contact from '@solid-ui-blocks/CallToAction/Block02';
+import Contact from '@solid-ui-blocks/CallToAction/Block01';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
 import Feature4 from '@solid-ui-blocks/FeaturesWithPhoto/Block09';
 import Capabilities from '@solid-ui-blocks/Features/Block08';

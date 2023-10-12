@@ -13,11 +13,11 @@ const styles = {
 export const PostHead = ({ title, author, date, timeToRead, categories }) => {
   const info = (
     <TextList>
-      {author && author.slug && (
+      {author && author.node.slug && (
         <Text sx={styles.item}>
           {`By `}
-          <Link variant="mute" as={GLink} to={author.slug}>
-            <strong dangerouslySetInnerHTML={{ __html: author.name }} />
+          <Link variant="mute" as={GLink} to={`/author/${author.node.slug}`}>
+            <strong dangerouslySetInnerHTML={{ __html: author.node.name }} />
           </Link>
         </Text>
       )}
@@ -28,7 +28,7 @@ export const PostHead = ({ title, author, date, timeToRead, categories }) => {
             {categories.nodes.map(({ name, slug }) => {
               return (
                 <Box sx={{ ml: 2 }}>
-                  <Badge variant="tag">{name}</Badge>
+                  <Badge variant="tag-dark">{name}</Badge>
                 </Box>
               );
             })}

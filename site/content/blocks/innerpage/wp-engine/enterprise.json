@@ -14,8 +14,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/ioxhost.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -33,8 +34,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/screwdriver-wrench-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -52,8 +54,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/wordpress-simple.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

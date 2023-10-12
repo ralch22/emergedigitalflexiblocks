@@ -20,8 +20,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
         "alt": "Analytics Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -39,8 +40,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
         "alt": "Analytics Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -58,8 +60,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
         "alt": "Analytics Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

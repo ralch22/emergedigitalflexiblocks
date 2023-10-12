@@ -18,7 +18,7 @@ const styles = {
     color: 'white',
   },
   footer: {
-    flexDirection: ['column', 'row'],
+    flexDirection: ['column', 'column', 'column', 'row'],
     width: '100%',
     py: 5,
   },

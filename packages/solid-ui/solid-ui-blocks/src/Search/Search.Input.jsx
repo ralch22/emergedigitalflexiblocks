@@ -17,7 +17,7 @@ const SearchInput = ({ isLoaded, focus, loadSearch, ...props }) => (
       onClick={loadSearch || props.onFocus}
       aria-label="Search"
     >
-      <FaSearch size={20} color="#2d3748" />
+      <FaSearch size={20} />
     </IconButton>
     <Box sx={styles.form({ focus })}>
       <FaSearch style={styles.searchIcon} />

@@ -14,8 +14,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/arrow-right-arrow-left-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -33,8 +34,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -52,8 +54,9 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/network-wired-solid.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

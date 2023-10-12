@@ -32,6 +32,13 @@ export const pageQuery = graphql`
       }
       categories {
         nodes {
+          id
+          name
+        }
+      }
+      tags {
+        nodes {
+          id
           name
         }
       }
@@ -44,6 +51,44 @@ export const pageQuery = graphql`
           }
           name
           description
+        }
+      }
+    }
+    tagCategoryPosts: allWpPost(
+      filter: {
+        tags: { nodes: { elemMatch: { id: { in: $tagsIds } } } }
+        categories: { nodes: { elemMatch: { id: { in: $categoriesId } } } }
+        id: { ne: $id }
+      }
+      sort: { date: DESC }
+      limit: 1000
+    ) @include(if: $hasTags) {
+      nodes {
+        id
+        title
+        slug
+        date(formatString: "MMMM DD, YYYY")
+        content
+        featuredImage {
+          node {
+            altText
+            id
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        author {
+          node {
+            id
+            avatar {
+              url
+            }
+            name
+          }
         }
       }
     }
@@ -84,14 +129,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    categoryPosts: allWpPost(
-      filter: {
-        categories: { nodes: { elemMatch: { id: { in: $categoriesId } } } }
-        id: { ne: $id }
-      }
-      sort: { date: DESC }
-      limit: 6
-    ) {
+    allWpPost(sort: { date: DESC }, limit: 1000) {
       nodes {
         id
         title
@@ -107,12 +145,20 @@ export const pageQuery = graphql`
         }
         categories {
           nodes {
+            id
+            name
+          }
+        }
+        tags {
+          nodes {
+            id
             name
           }
         }
         author {
           node {
             id
+            slug
             avatar {
               url
             }

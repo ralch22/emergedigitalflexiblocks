@@ -29,7 +29,7 @@ export default {
   },
   mobileTrigger: {
     display: [`block`],
-    ml: 5,
+    ml: [0, 0, 0, 5],
   },
   input: {
     ml: 1,

@@ -21,12 +21,14 @@
           "text": "Craft a unique marketing campaign that ‘gels’ with your ideal customer and turns their curiosity into bona-fide sales. "
         }
       ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-chat.svg",
-        "alt": "Chat",
-        "bg": "transparent",
-        "color": "beta"
-      }
+      "images": [
+        {
+          "src": "../../../assets/flexiblocks/homepage/marketing/curiosity.png",
+          "alt": "curiosity",
+          "width": "50px",
+          "height": "50px"
+        }
+      ]
     },
     {
       "text": [
@@ -38,12 +40,13 @@
           "text": "Takeout guesswork. Make informed choices about your digital marketing strategy with privacy-centric first-party data solutions."
         }
       ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-analyse.svg",
-        "alt": "Analyse",
-        "bg": "transparent",
-        "color": "beta"
-      }
+      "images": [
+        {
+          "src": "../../../assets/flexiblocks/homepage/marketing/driven.png",
+          "alt": "driven",
+          "width": "100px"
+        }
+      ]
     },
     {
       "text": [
@@ -55,12 +58,12 @@
           "text": "You are guided every step of the way. Our focus on maintaining a friendly rapport and keeping things transparent means you can relax knowing you are in good hands. "
         }
       ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-dna.svg",
-        "alt": "Dna",
-        "bg": "transparent",
-        "color": "beta"
-      }
+      "images": [
+        {
+          "src": "../../../assets/flexiblocks/homepage/marketing/trusted.png",
+          "alt": "trusted"
+        }
+      ]
     }
   ]
 }

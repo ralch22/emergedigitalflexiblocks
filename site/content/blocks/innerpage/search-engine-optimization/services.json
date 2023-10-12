@@ -15,8 +15,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -35,8 +36,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/file-signature-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -55,8 +57,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/searchengin.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -75,8 +78,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/map-location-dot-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -95,8 +99,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/head-side-virus-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -115,8 +120,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bullhorn-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -135,8 +141,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -155,8 +162,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/mobile-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -175,8 +183,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/app-store.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -195,8 +204,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/microphone-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -215,8 +225,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/building-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {
@@ -235,8 +246,9 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
         "alt": "SEO Icon",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "text": [
         {

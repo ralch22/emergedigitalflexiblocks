@@ -51,8 +51,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-user.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {
@@ -134,7 +135,7 @@
       "text": [
         {
           "text": "Professional",
-          "color": "beta",
+          "color": "green",
           "variant": "h3"
         },
         {
@@ -161,8 +162,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-rocket.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {
@@ -310,8 +312,9 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-meteor.svg",
-        "bg": "omegaLighter",
-        "color": "omegaDark"
+        "bg": "green",
+        "gradient": "true",
+        "color": "white"
       },
       "buttons": [
         {

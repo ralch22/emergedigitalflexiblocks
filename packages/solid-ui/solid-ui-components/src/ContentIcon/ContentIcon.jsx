@@ -43,4 +43,4 @@ ContentIcon.defaultProps = {
   round: false,
 };
 
-export default ContentIcon;
+export default ContentIcon
