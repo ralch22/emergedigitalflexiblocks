@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "OVER 15,000+ LEADS GENERATED",
-      "color": "omegaDark",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Get **More Conversions** With Our Services",
@@ -25,7 +25,10 @@
       "alt": "alt text",
       "radius": "lg",
       "shadow": "default",
-      "effects": ["fadeInRight", "float"],
+      "effects": [
+        "fadeInRight",
+        "float"
+      ],
       "position": {
         "top": "15%",
         "left": "-5%"

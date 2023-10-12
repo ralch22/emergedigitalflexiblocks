@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "GROW YOUR BUSINESS",
-      "color": "omegaDark",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Best Marketing Service for **Technological Era**",
@@ -25,7 +25,10 @@
       "alt": "alt text",
       "radius": "lg",
       "shadow": "default",
-      "effects": ["fadeInLeft", "float"],
+      "effects": [
+        "fadeInLeft",
+        "float"
+      ],
       "position": {
         "bottom": "15%",
         "right": "-5%"

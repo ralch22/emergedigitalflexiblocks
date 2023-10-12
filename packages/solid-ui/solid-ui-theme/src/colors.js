@@ -1,4 +1,4 @@
-import colors from './color-preset';
+import colors from './color-preset'
 
 //Primary
 const alpha = {
@@ -43,9 +43,9 @@ const omega = {
 };
 
 export default {
-  text: colors.blueGray[600],
-  article: colors.blueGray[700],
-  heading: colors.blueGray[800],
+  text: colors.textColor,
+  article: colors.headingColor,
+  heading: colors.headingColor,
 
   ...alpha,
   ...beta,

@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "404 Page Not Found",
-      "color": "omegaDark",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Sorry, this page isn't available.",

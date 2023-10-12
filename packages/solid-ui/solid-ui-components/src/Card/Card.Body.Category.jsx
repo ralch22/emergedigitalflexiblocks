@@ -17,7 +17,7 @@ const CardBodyCategory = ({ variant, categories, omitCategory }) => (
           css={css(styles.badge)}
           sx={{ variant: rv(variant, 'category'), mr: 2 }}
         >
-          <Badge variant="tag" as={Link} to={`/category/${slug}`}>
+          <Badge variant="tag-dark" as={Link} to={`/category/${slug}`}>
             {name}
           </Badge>
         </Box>

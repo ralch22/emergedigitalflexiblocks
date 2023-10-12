@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "Ready to start tracking your expenses?",
-      "color": "omegaDark",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Our Pricing Plans",
@@ -14,7 +14,10 @@
       "variant": "medium"
     },
     {
-      "textGroup": ["Monthly", "Annually (Save 10%)"]
+      "textGroup": [
+        "Monthly",
+        "Annually (Save 10%)"
+      ]
     }
   ],
   "collection": [
@@ -29,7 +32,10 @@
           "variant": "h5"
         },
         {
-          "textGroup": ["$29", "$25"],
+          "textGroup": [
+            "$29",
+            "$25"
+          ],
           "color": "omegaDarker",
           "variant": "h2"
         },
@@ -37,7 +43,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "For up to 10 customers and 1 agent"
@@ -125,7 +134,10 @@
           "variant": "h5"
         },
         {
-          "textGroup": ["$49", "$45"],
+          "textGroup": [
+            "$49",
+            "$45"
+          ],
           "color": "white",
           "variant": "h2"
         },
@@ -134,7 +146,10 @@
           "color": "omega"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "For up to 100 customers and 10 agent",
@@ -254,7 +269,10 @@
           "variant": "h5"
         },
         {
-          "textGroup": ["$99", "$95"],
+          "textGroup": [
+            "$99",
+            "$95"
+          ],
           "color": "omegaDarker",
           "variant": "h2"
         },
@@ -262,7 +280,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "Unlimited customers and agents"

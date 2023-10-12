@@ -60,7 +60,12 @@ export default function RenderPost({
                     nodes={group.nodes}
                     limit={3}
                     columns={[1, 1, 1, 3]}
-                    variant={['horizontal-md', 'horizontal']}
+                    variant={[
+                      'horizontal-md',
+                      'horizontal',
+                      'horizontal',
+                      'vertical',
+                    ]}
                   />
                   <Divider space={2} />
                   <CardList

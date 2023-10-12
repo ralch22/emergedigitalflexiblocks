@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "Established in 2017",
-      "color": "alpha",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Discover Our Story",
@@ -22,7 +22,9 @@
       "alt": "alt text",
       "radius": "lg",
       "shadow": "lg",
-      "effects": ["fadeInLeft"]
+      "effects": [
+        "fadeInLeft"
+      ]
     }
   ]
 }

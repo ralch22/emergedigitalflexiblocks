@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "GROW YOUR BUSINESS",
-      "color": "omegaDark",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "**Versatile System** for All Software Startups",
@@ -26,7 +26,10 @@
       "alt": "alt text",
       "radius": "lg",
       "shadow": "default",
-      "effects": ["fadeInDown", "float"],
+      "effects": [
+        "fadeInDown",
+        "float"
+      ],
       "position": {
         "top": "-35%",
         "left": "25%"

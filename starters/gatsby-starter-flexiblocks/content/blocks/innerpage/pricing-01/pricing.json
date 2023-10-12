@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "Cancel or Switch Plans Anytime",
-      "color": "alpha",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Our Pricing Plans",
@@ -14,7 +14,10 @@
       "variant": "medium"
     },
     {
-      "textGroup": ["Monthly", "Annually (Save 10%)"]
+      "textGroup": [
+        "Monthly",
+        "Annually (Save 10%)"
+      ]
     }
   ],
   "collection": [
@@ -26,7 +29,10 @@
           "variant": "h3"
         },
         {
-          "textGroup": ["$29", "$25"],
+          "textGroup": [
+            "$29",
+            "$25"
+          ],
           "color": "omegaDarker",
           "variant": "h1"
         },
@@ -34,7 +40,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "For up to 10 customers and 1 agent"
@@ -130,7 +139,10 @@
         },
         {
           "text": "$49",
-          "textGroup": ["$49", "$45"],
+          "textGroup": [
+            "$49",
+            "$45"
+          ],
           "color": "omegaDarker",
           "variant": "h1"
         },
@@ -138,7 +150,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "For up to 100 customers and 10 agents"
@@ -273,7 +288,10 @@
         },
         {
           "text": "$99",
-          "textGroup": ["$99", "$95"],
+          "textGroup": [
+            "$99",
+            "$95"
+          ],
           "color": "omegaDarker",
           "variant": "h1"
         },
@@ -281,7 +299,10 @@
           "text": "/month"
         },
         {
-          "textGroup": ["", "Save 10%"]
+          "textGroup": [
+            "",
+            "Save 10%"
+          ]
         },
         {
           "text": "Unlimited customers and agents"

@@ -37,21 +37,27 @@ export default {
     ...heading,
     fontSize: 2,
     mb: 0,
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
   },
   medium: {
     fontSize: 3,
     mb: 3,
+    color: 'text',
   },
   small: {
     fontSize: 1,
     m: 0,
+    color: 'text',
   },
   xsmall: {
     fontSize: 0,
     m: 0,
+    color: 'text',
   },
   p: {
     fontFamily: `body`,
     mb: 3,
+    color: 'text',
   },
 };

@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "Our Services",
-      "color": "alpha",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "We change the way you build Gatsby sites.",

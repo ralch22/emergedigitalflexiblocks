@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "Advanced Customer Service Platform",
-      "color": "alpha",
-      "variant": "h4"
+      "color": "omega",
+      "variant": "h6"
     },
     {
       "text": "Acquisition Panel Screenshot",
@@ -23,7 +23,9 @@
       "radius": "lg",
       "shadow": "default",
       "border": "lg",
-      "effects": ["fadeInDown"]
+      "effects": [
+        "fadeInDown"
+      ]
     }
   ]
 }
