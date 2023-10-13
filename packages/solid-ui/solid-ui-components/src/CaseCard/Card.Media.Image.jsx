@@ -19,9 +19,9 @@ const CardMediaImage = ({
         height: `full`,
         width: `100%`,
         verticalAlign: `middle`, //avoid baseline gap
-        img: {
-          bg: `omegaLighter`,
-        },
+
+        bg: `omegaLighter`,
+        objectFit: 'cover',
         variant: rv(variant, 'image'),
       })}
     />

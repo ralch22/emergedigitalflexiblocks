@@ -2,7 +2,7 @@
   "text": [
     {
       "text": "We Are Here To Help You",
-      "color": "green",
+      "color": "beta",
       "variant": "h4"
     },
     {
@@ -14,66 +14,68 @@
     {
       "text": [
         {
-          "text": "Which license do I need to use an item in a commercial?",
+          "text": "What is PPC advertising? ",
           "variant": "h5"
         },
         {
-          "text": "As an Internet marketing strategy, SEO considers how search engines work, the computer-programmed algorithms that dictate search engine behavior."
+          "text": "<div class=\"acc-content active\" style=\"display: block;\">\n\t\t\t\t\t<p>A pay-per-click ad, or PPC ad, is an online advertisement in which advertisers pay money every time an ad is clicked.</p><p>Search engine results pages, social media feeds, web pages and apps can all display PPC ads.&nbsp;</p><p>PPC advertising is primarily done through paid search ads. When a particular keyword is searched, they appear on the top and bottom of the first page of search engine results.</p><p>How do search engines choose which ads appear at the top of the results page? In the end, it comes down to an ad auction. To display ads, advertisers must bid on search terms (keywords).</p><p>In order to determine which ads are displayed, Google or another search engine uses your bid along with other criteria, such as the relevance of the ad.</p>\t\t\t\t</div>"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-phone.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     },
     {
       "text": [
         {
-          "text": "What do you mean by item and end product in license terms?",
+          "text": "How can PPC help my business? ",
           "variant": "h5"
         },
         {
-          "text": "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular."
+          "text": "<div class=\"acc-content active\" style=\"display: block;\">\n\t\t\t\t\t<p>It depends on the nature of your business. A powerful digital marketing strategy is PPC. SPEED is one of the most significant benefits.</p><p>With the right know-how, you can put hyper-targeted ads in front of your audience in just a few hours. It's perfect if your business is just starting and you want to get your brand noticed, or if you have a time-sensitive offer.</p><p>PPC advertising produces results quickly. It's like flipping a switch!</p><p>PPC marketing can put you on page 1 of Google in less than a day, while SEO and social media are great strategies for long-term growth. There is a price to pay, but if you want to drive qualified traffic to your website instantly, PPC is a great option.</p><p>The great thing about PPC is that you only pay when your content is seen.</p><p>It means you don't waste money on audiences who aren't interested in your products or services when you have a hyper-targeted strategy.</p>\t\t\t\t</div>"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-mobile-alt.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     },
     {
       "text": [
         {
-          "text": "What are some examples of permitted end products?",
+          "text": "CTR: what is a good one? ",
           "variant": "h5"
         },
         {
-          "text": "Content marketing is a form of marketing focused on creating, publishing, and distributing content for a targeted audience online."
+          "text": "<div class=\"acc-content active\" style=\"display: block;\">\n\t\t\t\t\t<p>There are different click-through rate benchmarks for different industries, so it's important to know what you should aim for.&nbsp;</p><p>Google Ads paid search ads have an average CTR of around 2% across industries. CTRs above 2% can be considered good.</p>\t\t\t\t</div>"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-mail-send.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
     },
     {
       "text": [
         {
-          "text": "Are item packs/bundles still limited to a single-end product?",
+          "text": "Is Emerge Digital the best agency for PPC management? ",
           "variant": "h5"
         },
         {
-          "text": "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular."
+          "text": "<div class=\"acc-content active\" style=\"display: block;\">\n\t\t\t\t\t<p>There are a lot of reasons why we're the best PPC management company. You're busy, so here are the three most important things: results, transparency, and experience. Now let's talk about the results.</p><p>Our goal is to get the best return on your PPC investment. To help you attract more of the website traffic you want (and less of the traffic you don't), we create hyper-targeted, cost-effective campaigns.</p><p>We never stop monitoring and fine-tuning your campaign to get the most out of your budget.</p><p>In contrast to many other PPC management agencies, we keep you informed every step of the way. The way we work is transparent: there are no hidden agendas or secret squirrel tactics.</p><p>We know our way gets results. We're an open book. What do we know? The experience.</p><p>We have years of experience delivering explosive revenue growth for businesses of all sizes and types. For even better results, we apply our learnings to your campaign.</p><p>&nbsp;</p>\t\t\t\t</div>"
         }
-      ],
-      "icon": {
-        "src": "../../../assets/flexiblocks/icons/bx-directions.svg",
-        "bg": "white",
-        "color": "alpha"
-      }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "How much will it cost per click? ",
+          "variant": "h5"
+        },
+        {
+          "text": "<div class=\"acc-content active\" style=\"display: block;\">\n\t\t\t\t\t<p>Depends. There is no easy answer that covers all businesses, and we know that's frustrating. PPC rewards businesses with high-quality ads through an auction system. The better your ad campaign, the lower your cost per click. According to Google Ads, the average cost per click on the search network is $1 - $2.</p><p>Google Ads' most expensive keywords cost upwards of $50 per click. These keywords are highly competitive in industries with high customer lifetime values, such as insurance and loans. It's all about balancing your budget with return on investment.&nbsp;</p><p>Budgets don't get out of control. Using PPC advertising gives you a great deal of control over how your budget is spent.</p>\t\t\t\t</div>"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "How can I make the most of my advertising budget? ",
+          "variant": "h5"
+        },
+        {
+          "text": "Our digital advertising agency is well-regarded by Dubai businesses, helping them penetrate the markets with their active efforts. Surpass your competition through successful ad campaign management. We're a team of professionals that monitor every aspect of marketing performance to boost ROI. Emerge Digital is an innovative and successful digital marketing agency delivering high quality ads for all campaigns. Get in touch."
+        }
+      ]
     }
   ]
 }

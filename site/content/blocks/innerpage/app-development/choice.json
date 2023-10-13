@@ -23,8 +23,7 @@
         },
         {
           "text": "The only limit to what you can build with us is your imagination. Just tell us your idea and we'll build it for you according to your exact specifications.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -44,8 +43,7 @@
         },
         {
           "text": "By automating manual processes, you'll get a quicker build, fewer errors, fewer developer mistakes, and better pricing based on the features you choose.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -65,8 +63,7 @@
         },
         {
           "text": "In addition to our AI, we have experts who guide you through the whole app building process. From the first call to delivery, they handle everything for you.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -86,8 +83,7 @@
         },
         {
           "text": "It is important that you know exactly what you are paying for and how long it will take before you start. You only pay for the features that you need.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     }

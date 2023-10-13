@@ -19,8 +19,14 @@ const CardBodyTitle = ({ variant, title, slug, link, single }) => {
       {...linkProps}
       dangerouslySetInnerHTML={{ __html: title }}
       variant="h4"
+      sx={{
+        fontWeight: `bold`,
+        strong: {
+          fontWeight: `bold`,
+        },
+      }}
     />
   );
 };
 
-export default CardBodyTitle;
+export default CardBodyTitle

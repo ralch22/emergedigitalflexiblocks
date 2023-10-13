@@ -97,7 +97,7 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
           <ModalContextProvider>
             <TabsContextProvider>
               <SEOContext.Provider value={{ global: seo }}>
-                <Flex variant="layout.layout">
+                <Flex variant="layout.layout" sx={{ overflowX: 'hidden' }}>
                   <Global styles={css(theme => theme.global)} />
                   <Box variant="layout.body">
                     {children}

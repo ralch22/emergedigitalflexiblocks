@@ -16,6 +16,7 @@ import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded';
 import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import { regexString } from '@elegantstack/gatsby-theme-flexiblocks/src/utils/filter';
+import BannerVertical from '@solid-ui-blocks/BannerVertical';
 
 export default function RenderPost({
   data: {
@@ -41,15 +42,36 @@ export default function RenderPost({
       <Seo post={post} />
       <Header search content={content['header']} />
       <Divider space="5" />
-      <Stack effectProps={{ effect: false }}>
-        {/* <Categories categories={categories} variant='horizontal' omitTitle /> */}
+
+      <Stack title={'Latest'}>
+        <Main>
+          {/* <CardList
+            nodes={featuredPosts.nodes}
+            limit={3}
+            variant='horizontal-cover'
+            slider
+            fade
+            controlPosition='over'
+            loading='eager'
+            omitCategory
+          /> */}
+
+          <CardList
+            nodes={recentPosts.nodes}
+            limit={4}
+            columns={[1, 1, 1, 2]}
+            variant="horizontal-aside"
+            loading="eager"
+            withModerate
+          />
+        </Main>
+        <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>
+          <BannerVertical content={content['posts']} />
+        </Box>
       </Stack>
+
       <Divider space={5} />
-      {/*<Flex>*/}
-      {/*  <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>*/}
-      {/*    <BannerVertical content={content['posts']} />*/}
-      {/*  </Box>*/}
-      {/*</Flex>*/}
+
       {posts.group.length &&
         posts.group.map((group, index) => (
           <React.Fragment key={`${group.categoryName}.list`}>

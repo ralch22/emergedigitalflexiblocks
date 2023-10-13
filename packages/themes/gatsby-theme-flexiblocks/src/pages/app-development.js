@@ -46,6 +46,7 @@ const AppDevelopment = props => {
           <div style={{ flexBasis: '50%' }}>
             <FeatureThree content={content['feature-three']} />
           </div>
+          <Divider space={3} />
           <div style={{ flexBasis: '50%' }}>
             <FeatureFour content={content['feature-four']} />
           </div>

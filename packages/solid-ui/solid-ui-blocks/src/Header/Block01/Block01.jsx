@@ -51,7 +51,7 @@ const styles = {
   searchContainer: {
     minWidth: `auto`,
     order: [3, null, `unset`],
-    mx: 1,
+    ml: 3,
   },
   logoContainer: {
     flexShrink: 0,
@@ -125,6 +125,7 @@ const HeaderBlock01 = ({
                               </Box>
                             ),
                         )}
+                        <Box sx={styles.searchContainer}>{<Search />}</Box>
                       </Flex>
                     </Reveal>
                   </Box>

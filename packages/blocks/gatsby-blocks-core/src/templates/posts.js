@@ -66,6 +66,7 @@ export const pageQuery = graphql`
           }
           author {
             node {
+              slug
               id
               avatar {
                 url

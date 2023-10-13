@@ -25,8 +25,7 @@
         },
         {
           "text": "Contact us to speak to a member of our team. We'll happily explain how B2B demand generation works and answer any questions.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -44,8 +43,7 @@
         },
         {
           "text": "Once we know more about your company and the products and services you offer, we'll start a review of your current content and strategy. This allows us to gauge how best to approach your campaign.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -63,8 +61,7 @@
         },
         {
           "text": "When we have all the information we need about your business, we will create a custom strategy tailored to your goals and budget. Once you're happy with everything, our B2B specialists will get to work on attracting more clients to your business.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -82,8 +79,7 @@
         },
         {
           "text": "Our marketing team will check your campaign results and provide you with regular reports. This is important as we need to know which pillars are working best. Once we have the data, we can adjust your custom strategy to perform optimally.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     }

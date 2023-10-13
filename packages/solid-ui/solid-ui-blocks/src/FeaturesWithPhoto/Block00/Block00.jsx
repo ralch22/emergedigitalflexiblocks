@@ -3,7 +3,6 @@ import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import ContentText from '@solid-ui-components/ContentText';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
@@ -40,7 +39,6 @@ const FeaturesWithPhotoBlock00 = ({
         <CardListSlider />
       </FlexImage>
     </Flex>
-    <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>
 );
 

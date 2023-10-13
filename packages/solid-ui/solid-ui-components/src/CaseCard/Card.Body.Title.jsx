@@ -16,7 +16,13 @@ const CardBodyTitle = ({ variant, title, slug, link }) => {
       <Heading
         {...linkProps}
         dangerouslySetInnerHTML={{ __html: titleWithExcerpt }}
-        sx={{ variant: rv(variant, 'title') }}
+        sx={{
+          fontWeight: `bold`,
+          strong: {
+            fontWeight: `bold`,
+          },
+        }}
+        variant="h4"
       />
     </>
   );

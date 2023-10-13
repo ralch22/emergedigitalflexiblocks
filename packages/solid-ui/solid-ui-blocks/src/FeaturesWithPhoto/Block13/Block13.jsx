@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import FlexContent from '@solid-ui-components/FlexContent';
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import ContentText from '@solid-ui-components/ContentText';
@@ -52,10 +51,8 @@ const FeaturesWithPhotoBlock01 = ({
           )}
         </FlexContent>
       </Flex>
-
-      <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
     </Container>
   </Box>
 );
 
-export default WithDefaultContent(FeaturesWithPhotoBlock01)
+export default WithDefaultContent(FeaturesWithPhotoBlock01);

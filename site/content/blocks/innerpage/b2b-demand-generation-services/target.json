@@ -32,8 +32,7 @@
         },
         {
           "text": "Producing engaging and informative content that attracts potential clients.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -53,8 +52,7 @@
         },
         {
           "text": "Ensuring your website ranks high in search engine results for relevant keywords.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -74,8 +72,7 @@
         },
         {
           "text": "Targeting email campaigns to promote your products and services.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -95,8 +92,7 @@
         },
         {
           "text": "Maintaining and growing your brand presence across social platforms.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -116,8 +112,7 @@
         },
         {
           "text": "Providing comprehensive reporting on your marketing and recommending improvements.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     }

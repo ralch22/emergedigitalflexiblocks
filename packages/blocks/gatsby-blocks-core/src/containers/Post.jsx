@@ -80,7 +80,13 @@ export default function Post({
             <PostFooter {...{ previous, next }} />
           </Card>
         </Main>
-        <Box sx={{ pl: `3`, flexBasis: `1/4`, display: ['none', `block`] }}>
+        <Box
+          sx={{
+            pl: `3`,
+            flexBasis: `1/4`,
+            display: ['none', `none`, `none`, `block`],
+          }}
+        >
           <AuthorCompact author={post.author.node} omitTitle />
           <Divider />
           <Sticky>
@@ -103,6 +109,25 @@ export default function Post({
           </Sticky>
         </Box>
       </Stack>
+      <Divider space="3" />
+      <Box
+        sx={{
+          pl: `3`,
+          flexBasis: `1/4`,
+          display: ['block', `block`, `block`, `none`],
+        }}
+      >
+        <CardList
+          title="Related Posts"
+          nodes={relatedPosts}
+          variant="horizontal-aside"
+          limit={6}
+          omitMedia
+          omitCategory
+          distinct
+          aside
+        />
+      </Box>
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>

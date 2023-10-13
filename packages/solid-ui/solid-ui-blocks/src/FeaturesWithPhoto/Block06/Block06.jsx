@@ -5,7 +5,6 @@ import ProgressBar from '@solid-ui-components/ProgressBar';
 import Counter from '@solid-ui-components/Counter';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
-import FlexOverlapFade from '@solid-ui-components/FlexOverlapFade';
 import ContentText from '@solid-ui-components/ContentText';
 import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
@@ -77,7 +76,6 @@ const FeaturesWithPhotoBlock06 = ({
         )}
       </FlexContent>
     </Flex>
-    <FlexOverlapFade direction={reverse ? 'ltr' : 'rtl'} />
   </Container>
 );
 

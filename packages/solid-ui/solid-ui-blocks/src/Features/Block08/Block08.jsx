@@ -24,7 +24,7 @@ const styles = {
 };
 
 const FeaturesBlock05 = ({ centernone, content: { text, collection } }) => (
-  <Container as={Reveal}>
+  <Container>
     <Box sx={{ textAlign: centernone ? `` : `center` }}>
       <ContentText content={text} />
     </Box>

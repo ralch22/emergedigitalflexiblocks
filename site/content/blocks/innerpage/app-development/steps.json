@@ -35,8 +35,7 @@
         },
         {
           "text": "Start by selecting an app template that is similar to your idea or our AI product manager",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -54,8 +53,7 @@
         },
         {
           "text": "Our AI assembles features (like Lego blocks) to form your app.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -73,8 +71,7 @@
         },
         {
           "text": "Determine the timeline and price for your project and how fast you want it delivered",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     },
@@ -92,8 +89,7 @@
         },
         {
           "text": "Dedicated specialists take care of everything from kick-off to delivery.",
-          "variant": "medium",
-          "color": "alpha"
+          "variant": "p"
         }
       ]
     }

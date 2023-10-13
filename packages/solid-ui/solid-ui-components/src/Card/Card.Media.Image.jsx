@@ -21,6 +21,7 @@ const CardMediaImage = ({
       height: `full`,
       width: `100%`,
       verticalAlign: `middle`, //avoid baseline gap
+      objectFit: 'cover',
       img: {
         bg: `omegaLighter`,
       },
@@ -32,4 +33,4 @@ CardMediaImage.defaultProps = {
   loading: 'lazy',
 };
 
-export default CardMediaImage;
+export default CardMediaImage

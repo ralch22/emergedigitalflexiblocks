@@ -1,16 +1,12 @@
 import React, { useEffect } from 'react';
 import Layout from '@solid-ui-layout/Layout';
-import Main from '@solid-ui-layout/Main/Main';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import Header from '@solid-ui-blocks/Header/Block01';
-import { useSelector, useDispatch } from 'react-redux';
-import { Box, Flex, Text, Heading, Card, Button } from 'theme-ui';
+import { useDispatch, useSelector } from 'react-redux';
+import { Box } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
-import { navigate, graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
-import { handleLogout } from '../utils/functions';
-import User from '@solid-ui-blocks/User/Block01/Block01';
-import CheckoutForm from '@solid-ui-blocks/Checkout/index';
 import Checkout from '@solid-ui-blocks/Checkout2/index';
 import { addLineItems } from '../store/ducks/checkoutSlice';
 
