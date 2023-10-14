@@ -10,8 +10,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/globe-solid.svg",
         "alt": "Globe",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -25,8 +24,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/laptop-code-solid.svg",
         "alt": "Laptop",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -40,8 +38,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/hand-point-right-solid.svg",
         "alt": "Hand Point",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -55,8 +52,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/clipboard-solid.svg",
         "alt": "Clipboard",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -70,8 +66,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/handshake-solid.svg",
         "alt": "Handshake",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

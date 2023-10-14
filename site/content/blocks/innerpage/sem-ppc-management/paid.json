@@ -9,8 +9,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -23,8 +22,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -37,8 +35,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -51,8 +48,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -65,8 +61,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -79,8 +74,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

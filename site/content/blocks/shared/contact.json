@@ -116,9 +116,9 @@
         {
           "text": [
             {
-              "text": "+123 (4567) 8910",
-              "color": "omegaDarker",
-              "variant": "h6"
+              "text": "(02) 9055 3835",
+              "variant": "h6",
+              "textTransform": "inherit"
             }
           ],
           "icon": {
@@ -131,13 +131,45 @@
         {
           "text": [
             {
-              "text": "hello@example.com",
+              "text": "hello@emergedigital.ae",
               "color": "omegaDarker",
-              "variant": "h6"
+              "variant": "h6",
+              "textTransform": "inherit"
             }
           ],
           "icon": {
             "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+            "alt": "Contact Icon",
+            "color": "alpha",
+            "bg": "transparent"
+          }
+        },
+        {
+          "text": [
+            {
+              "text": "Tower 1 L35/100 Barangaroo Ave, Barangaroo NSW 2000",
+              "color": "omegaDarker",
+              "variant": "h6",
+              "textTransform": "inherit"
+            }
+          ],
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bx-building-house.svg",
+            "alt": "Contact Icon",
+            "color": "alpha",
+            "bg": "transparent"
+          }
+        },
+        {
+          "text": [
+            {
+              "text": "+97145813606",
+              "variant": "h6",
+              "textTransform": "inherit"
+            }
+          ],
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bx-phone.svg",
             "alt": "Contact Icon",
             "color": "alpha",
             "bg": "transaprent"
@@ -146,16 +178,33 @@
         {
           "text": [
             {
-              "text": "120 Street Lorem Ipsum Sit Amet",
+              "text": "hello@emergedigital.ae",
               "color": "omegaDarker",
-              "variant": "h6"
+              "variant": "h6",
+              "textTransform": "inherit"
+            }
+          ],
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bx-envelope.svg",
+            "alt": "Contact Icon",
+            "color": "alpha",
+            "bg": "transparent"
+          }
+        },
+        {
+          "text": [
+            {
+              "text": "Levels 41 & 42, Emirates Towers - Sheikh Zayed Rd - Dubai - United Arab Emirates",
+              "color": "omegaDarker",
+              "variant": "h6",
+              "textTransform": "inherit"
             }
           ],
           "icon": {
             "src": "../../assets/flexiblocks/icons/bx-building-house.svg",
             "alt": "Contact Icon",
             "color": "alpha",
-            "bg": "transaprent"
+            "bg": "transparent"
           }
         }
       ]

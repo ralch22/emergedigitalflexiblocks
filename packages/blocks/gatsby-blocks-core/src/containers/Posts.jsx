@@ -13,7 +13,6 @@ import CardList from '@solid-ui-components/CardList';
 import Divider from '@solid-ui-components/Divider';
 import Seo from 'gatsby-plugin-wpgraphql-seo';
 import NewsletterExpanded from '@solid-ui-blocks/NewsletterExpanded';
-import BannerHorizontal from '@solid-ui-blocks/BannerHorizontal';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import { regexString } from '@elegantstack/gatsby-theme-flexiblocks/src/utils/filter';
 import BannerVertical from '@solid-ui-blocks/BannerVertical';
@@ -171,15 +170,15 @@ export default function RenderPost({
                 </Box>
               </Stack>
             )}
-            {index === 0 && (
-              <>
-                <Divider />
-                <Stack effectProps={{ effect: false }}>
-                  <BannerHorizontal />
-                </Stack>
-              </>
-            )}
-            {index !== posts.group.length - 1 && <Divider />}
+            {/*{index === 0 && (*/}
+            {/*  <>*/}
+            {/*    <Divider />*/}
+            {/*    <Stack effectProps={{ effect: false }}>*/}
+            {/*      <BannerHorizontal />*/}
+            {/*    </Stack>*/}
+            {/*  </>*/}
+            {/*)}*/}
+            {/*{index !== posts.group.length - 1 && <Divider />}*/}
           </React.Fragment>
         ))}
       <Stack>

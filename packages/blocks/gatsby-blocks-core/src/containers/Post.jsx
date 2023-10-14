@@ -14,7 +14,6 @@ import Divider from '@solid-ui-components/Divider';
 import Sticky from '@solid-ui-components/Sticky';
 import Seo from 'gatsby-plugin-wpgraphql-seo';
 import AuthorCompact from '@solid-ui-blocks/AuthorCompact';
-import TableOfContentsCompact from '@solid-ui-blocks/TableOfContentsCompact';
 import {
   PostBody,
   PostComments,
@@ -41,7 +40,6 @@ export default function Post({
   },
   ...props
 }) {
-  console.log('tags', allRelatedPosts(allWpPost.nodes, post));
   useEffect(() => {
     const removeComments = () => {
       const elementsToRemove = document.querySelector('.comment');
@@ -90,12 +88,6 @@ export default function Post({
           <AuthorCompact author={post.author.node} omitTitle />
           <Divider />
           <Sticky>
-            {post.tableOfContents?.items && (
-              <>
-                <TableOfContentsCompact {...post} />
-                <Divider />
-              </>
-            )}
             <CardList
               title="Related Posts"
               nodes={relatedPosts}
@@ -110,24 +102,24 @@ export default function Post({
         </Box>
       </Stack>
       <Divider space="3" />
-      <Box
-        sx={{
-          pl: `3`,
-          flexBasis: `1/4`,
-          display: ['block', `block`, `block`, `none`],
-        }}
-      >
-        <CardList
-          title="Related Posts"
-          nodes={relatedPosts}
-          variant="horizontal-aside"
-          limit={6}
-          omitMedia
-          omitCategory
-          distinct
-          aside
-        />
-      </Box>
+      <Container>
+        <Box
+          sx={{
+            display: ['block', `block`, `block`, `none`],
+          }}
+        >
+          <CardList
+            title="Related Posts"
+            nodes={relatedPosts}
+            variant="horizontal-aside"
+            limit={6}
+            omitMedia
+            omitCategory
+            distinct
+            aside
+          />
+        </Box>
+      </Container>
       <Divider space="5" />
       <Footer content={content['footer']} />
     </Layout>

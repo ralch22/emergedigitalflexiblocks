@@ -5,7 +5,6 @@ import baseTheme from '@solid-ui-theme';
 import { graphql, useStaticQuery } from 'gatsby';
 import pageContextProvider from '@helpers/pageContextProvider';
 import { FormContextProvider } from '@solid-ui-components/ContentForm';
-import ThreeCX from '@solid-ui-components/ThreeCX';
 import { ModalContextProvider } from '@solid-ui-components/Modal';
 import { TabsContextProvider } from '@solid-ui-components/Tabs';
 import { SEOContext } from 'gatsby-plugin-wpgraphql-seo';
@@ -97,11 +96,11 @@ const Layout = ({ children, pageContext = {}, location, theme = {} }) => {
           <ModalContextProvider>
             <TabsContextProvider>
               <SEOContext.Provider value={{ global: seo }}>
-                <Flex variant="layout.layout" sx={{ overflowX: 'hidden' }}>
+                <Flex variant="layout.layout">
                   <Global styles={css(theme => theme.global)} />
                   <Box variant="layout.body">
                     {children}
-                    <ThreeCX />
+                    {/*<ThreeCX />*/}
                   </Box>
                 </Flex>
               </SEOContext.Provider>

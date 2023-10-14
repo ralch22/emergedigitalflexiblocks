@@ -14,8 +14,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -54,8 +53,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/paintbrush-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -89,8 +87,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -124,8 +121,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/eye-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -159,8 +155,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/comment-dots-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

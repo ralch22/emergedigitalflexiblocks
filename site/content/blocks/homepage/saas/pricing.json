@@ -51,8 +51,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-user.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "buttons": [
@@ -165,8 +164,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-rocket.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "buttons": [
@@ -318,8 +316,7 @@
       ],
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-meteor.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "buttons": [

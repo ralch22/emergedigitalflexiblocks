@@ -36,6 +36,7 @@ type BlockContentText {
   textGroup: [String]
   color: String
   space: Int
+  textTransform: String
   variant: String
 }
 

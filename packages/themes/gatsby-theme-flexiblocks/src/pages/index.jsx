@@ -64,16 +64,17 @@ const IndexPage = props => {
       <FeatureTwo content={content['feature-two']} />
       <Divider space="5" />
       <Divider space="5" />
-      <NewsletterExpanded content={content['newsletter']} />
-      <Divider space="5" />
-      <Divider space="5" />
-      <Blog posts={posts} content={content['latest-blogs']} />
-      <Divider space="6" />
-      <Divider space="6" />
-      <Container variant="full" sx={styles.strategiesContainer}>
-        <Divider space={-6} />
-        <Strategies content={content['strategies']} />
+      <Container>
+        <NewsletterExpanded content={content['newsletter']} />
       </Container>
+      <Divider space="5" />
+      <Divider space="5" />
+      <Container>
+        <Blog posts={posts} content={content['latest-blogs']} />
+      </Container>
+      <Divider space="6" />
+      <Divider space="6" />
+      <Strategies content={content['strategies']} />
       <Divider space="5" />
       <Divider space="5" />
       <Testimonials content={content['testimonials']} />

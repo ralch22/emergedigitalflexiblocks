@@ -16,59 +16,53 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Drive Performance using Automation",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Drive performance for advertisers with automation and optimization. Implement automated bidding powered by machine learning to increase return on ad spend.",
-          "variant": "h4"
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/homepage/marketing/blend.svg",
+        "src": "../../../assets/flexiblocks/icons/blender-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Blend Data Sources",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Bring together your own business insights with external signals. Use them to optimize media across channels, improve ad management, and expand reporting capabilities.",
-          "variant": "h4"
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/homepage/marketing/search.svg",
+        "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Leverage Automation",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Centralize your search marketing with combined insights and reporting across multiple engines including Google, Bing, Baidu, and Yahoo! Japan, as well as search and social channels.",
-          "variant": "h4"
+          "variant": "p"
         }
       ]
     }

@@ -19,8 +19,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/homepage/marketing/users.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -38,8 +37,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/dollar-sign-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -57,8 +55,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

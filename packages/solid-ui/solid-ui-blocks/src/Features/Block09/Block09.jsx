@@ -1,52 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Box, Container, Flex } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 import FlexImage from '@solid-ui-components/FlexImage';
 import FlexContent from '@solid-ui-components/FlexContent';
 import ContentButtons from '@solid-ui-components/ContentButtons';
-import ContentCard from '@solid-ui-components/ContentCard';
 import ContentText from '@solid-ui-components/ContentText';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
+import CaseList from '@solid-ui-components/CaseList/ProductList';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCaseStudies } from '@elegantstack/gatsby-theme-flexiblocks/src/store/ducks/caseSlice';
 
 const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
-  const [post, setPost] = useState(null);
-  const [postImage, setPostImage] = useState(null);
+  const dispatch = useDispatch();
+  const { caseStudies, status, error } = useSelector(state => state.case);
+
   useEffect(() => {
-    fetchSingleCaseStudy('double-revenue-for-ecommerce-vision-eyecare-brand');
-  }, []);
-  const fetchSingleCaseStudy = async slug => {
-    try {
-      const response = await fetch(
-        `https://emergedigital.ae/wp-json/wp/v2/case-studies?slug=${slug}`,
-      );
-      const caseStudies = await response.json();
-
-      // Assuming there's only one case study with the provided slug
-
-      setPost(caseStudies[0]);
-
-      // fetchCaseImage(caseStudies[0].featured_media)
-    } catch (error) {
-      console.error('Error fetching case study:', error);
-      return null;
-    }
-  };
-
-  const fetchCaseImage = async id => {
-    try {
-      const response = await fetch(
-        `https://emergedigital.ae/wp-json/wp/v2/media/${id}`,
-      );
-      const caseImage = await response.json();
-
-      // Assuming there's only one case study with the provided slug
-
-      setPostImage(caseImage);
-    } catch (error) {
-      console.error('Error fetching case study:', error);
-      return null;
-    }
-  };
+    dispatch(fetchCaseStudies());
+  }, [dispatch]);
 
   return (
     <Container>
@@ -83,7 +53,19 @@ const FeaturesBlock06 = ({ content: { text, buttons, reverse } }) => {
           </FlexContent>
           <Divider space="5" />
           <FlexImage reverse={reverse}>
-            {post && <ContentCard post={post} />}
+            {caseStudies && (
+              <CaseList
+                nodes={caseStudies}
+                limit={1}
+                columns={[1, 1, 1, 3]}
+                variant={[
+                  'horizontal-md',
+                  'horizontal',
+                  'horizontal',
+                  'vertical',
+                ]}
+              />
+            )}
           </FlexImage>
         </Flex>
       </Box>

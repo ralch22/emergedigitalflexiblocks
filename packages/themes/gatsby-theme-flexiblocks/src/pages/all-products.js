@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../store/ducks/productSlice';
 import { normalizeBlockContentNodes } from '@blocks-helpers';
 import Hero from '@solid-ui-blocks/Hero/Block04';
+import { Container } from 'theme-ui';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -34,7 +35,9 @@ const RenderProduct = ({ data: { allBlockContent }, ...props }) => {
       <Header content={content['header']} />
       <Hero content={content['all-products']} />
       <Divider spaceY="5" />
-      <Products all products={products} content={content['title']} />
+      <Container>
+        <Products all products={products} content={content['title']} />
+      </Container>
 
       <Footer content={content['footer']} />
     </Layout>

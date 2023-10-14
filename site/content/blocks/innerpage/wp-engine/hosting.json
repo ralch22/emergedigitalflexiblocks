@@ -14,40 +14,34 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/people-arrows-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Manage your clients all in one place",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "You can manage your clients' sites in one place with Flywheel Growth Suite while generating recurring revenue.",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Use Instant Store Search to increase sales",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Provide customers with accurate search results. ElasticPress, the leader in WordPress search, powers Instant Store Search.",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     }

@@ -21,7 +21,9 @@ const ContentIcon = ({ content, round, p, ...props }) => {
         verticalAlign: `middle`,
         borderRadius: round ? `full` : `lg`,
         minWidth: `auto`,
-        bg: mergedProps.bg,
+        backgroundImage: t =>
+          mergedProps.bg === 'iconsBg' ? t.colors.iconsBg : null,
+        bg: mergedProps.bg !== 'iconsBg' ? mergedProps.bg : null,
       }}
       p={mergedProps.bg && p}
       {...props}

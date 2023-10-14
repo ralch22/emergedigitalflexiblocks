@@ -14,60 +14,51 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/ioxhost.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Developing WordPress locally has never been easier",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "With Local, you can quickly and easily create WordPress sites, speeding up your development process.",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/screwdriver-wrench-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Learn about site problems immediately and resolve them​",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "With Site Monitoring, you can rest assured that you will be notified immediately if there are any issues with uptime or errors.​",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/wordpress-simple.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "The complete Headless WordPress platform",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Headless websites can be built, deployed, and managed with Atlas using the best of WordPress and modern web development.",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     }

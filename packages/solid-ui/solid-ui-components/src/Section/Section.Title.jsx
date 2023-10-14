@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Heading, Badge, Flex } from 'theme-ui';
+import { Badge, Flex, Heading } from 'theme-ui';
 import Divider from '@solid-ui-components/Divider';
 
 const styles = {
@@ -28,7 +28,6 @@ const styles = {
   },
   //Section aside title
   'section-aside': {
-    color: `omegaDark`,
     mx: `auto`,
     mb: 0,
   },
@@ -63,4 +62,4 @@ const SectionTitle = ({ title, titleLink, omitTitle, variant }) => {
   ) : null;
 };
 
-export default SectionTitle;
+export default SectionTitle

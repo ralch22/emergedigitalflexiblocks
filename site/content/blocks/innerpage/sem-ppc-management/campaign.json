@@ -15,8 +15,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/horse-head-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -35,8 +34,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/puzzle-piece-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -55,8 +53,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/hourglass-end-solid.svg",
         "alt": "Search Ads Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

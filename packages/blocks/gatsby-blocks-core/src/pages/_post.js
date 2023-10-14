@@ -71,9 +71,8 @@ module.exports = async (
     const categoriesId = categories.nodes.map(category => category.id);
     const tagsIds = tags.nodes.map(tag => tag.id);
     const hasTags = tagsIds.length > 0;
-    console.log('tags', categoriesId);
     createPage({
-      path: slug,
+      path: `/${slug}`,
       component: template,
       context: {
         id,

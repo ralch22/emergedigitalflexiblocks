@@ -9,6 +9,7 @@ import ModalCart from '@solid-ui-blocks/Modal/Block03';
 import Header from '@solid-ui-blocks/Header/Block01';
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01';
 import FeatureTwo from '@solid-ui-blocks/Features/Block02';
+import FeatureFour from '@solid-ui-blocks/Features/Block05';
 import SingleText from '@solid-ui-blocks/Content/Block07';
 import Hero from '@solid-ui-blocks/Hero/Block04/Block04';
 import Footer from '@solid-ui-blocks/Footer/Block01';
@@ -75,17 +76,16 @@ const WpEngine = props => {
         <FeatureTwo content={content['developer']} />
       </Container>
       <Divider space="5" />
-      <Container>
-        <FeatureTwo content={content['enterprise']} />
-      </Container>
+
+      <FeatureFour content={content['enterprise']} />
       <Divider space="5" />
       <Container>
         <FeatureTwo double content={content['hosting']} />
       </Container>
       <Divider space="5" />
-      <Container>
-        <FeatureTwo double content={content['store']} />
-      </Container>
+
+      <FeatureFour double content={content['store']} />
+
       <Divider space="5" />
       <SingleText content={content['intro']} />
       <Divider space="5" />

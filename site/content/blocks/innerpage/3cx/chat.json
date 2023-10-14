@@ -31,8 +31,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/blender-solid.svg",
         "alt": "Blender",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -52,8 +51,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/headset-solid.svg",
         "alt": "Solid",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

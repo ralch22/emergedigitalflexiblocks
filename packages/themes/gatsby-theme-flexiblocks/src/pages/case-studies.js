@@ -5,6 +5,7 @@
 import React, { useEffect } from 'react';
 import Layout from '@solid-ui-layout/Layout';
 import { graphql } from 'gatsby';
+import { Container } from 'theme-ui';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import Header from '@solid-ui-blocks/Header/Block01';
 import Divider from '@solid-ui-components/Divider';
@@ -40,7 +41,6 @@ const CaseStudiesList = ({
     return page.uri === uri;
   });
   const post = filter[0];
-  console.log(allWpPage.nodes);
   return (
     <Layout {...props}>
       <Seo post={post} />
@@ -51,11 +51,13 @@ const CaseStudiesList = ({
       <ModalCart content={content['cart']} />
       <Hero content={content['page-title']} />
       <Divider spaceY="5" />
-      <Cases
-        cases={caseStudies}
-        status={status}
-        content={content['all-cases']}
-      />
+      <Container>
+        <Cases
+          cases={caseStudies}
+          status={status}
+          content={content['all-cases']}
+        />
+      </Container>
       <Divider spaceY="5" />
       <Footer content={content['footer']} />
     </Layout>

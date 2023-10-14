@@ -14,40 +14,34 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/gears-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Optimize your WooCommerce store to outperform your competitors",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Create new eCommerce landing pages and shopping experiences with our customizable themes and WooCommerce blocks.",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Get the best-in-class performance from your store",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "On the fastest WordPress host for WooCommerce stores, you will experience a dramatic increase in website speed.",
-          "variant": "medium",
-          "color": "omega"
+          "variant": "p"
         }
       ]
     }

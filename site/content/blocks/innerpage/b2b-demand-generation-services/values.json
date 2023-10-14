@@ -15,8 +15,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/award-solid.svg",
         "alt": "Award Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -35,8 +34,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-area-solid.svg",
         "alt": "Chart Area Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -55,8 +53,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/business-time-solid.svg",
         "alt": "Business Time Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

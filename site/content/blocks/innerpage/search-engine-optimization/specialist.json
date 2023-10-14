@@ -20,14 +20,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/thumbs-up-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "10 years+ of delivering remarkable SEO results",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -35,14 +34,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/face-laugh-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Experienced SEO team of 50+",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -50,14 +48,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/searchengin.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Platform for SEO reporting and insights",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -65,14 +62,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/flag-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "SEO methodology that leads the market",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -80,14 +76,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/pencil-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Audit & optimize the consumer experience",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -95,14 +90,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Performance & insights solution for SEO & SEM",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -110,14 +104,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/gear-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Solution for advanced SEO content strategy",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     },
@@ -125,14 +118,13 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/earth-americas-solid.svg",
         "alt": "Spetialist Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Clients with local and global SEO needs",
-          "variant": "p"
+          "variant": "h4"
         }
       ]
     }

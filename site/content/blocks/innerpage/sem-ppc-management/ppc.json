@@ -14,8 +14,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -32,9 +31,8 @@
     },
     {
       "icon": {
-        "src": "../../../assets/flexiblocks/icons/cart-shopping.svg",
-        "bg": "green",
-        "gradient": "true",
+        "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -52,8 +50,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-dollar-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -71,8 +68,7 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/globe-solid.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [

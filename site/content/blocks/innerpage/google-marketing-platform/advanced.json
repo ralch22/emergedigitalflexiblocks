@@ -42,8 +42,7 @@
         },
         {
           "text": "Predictive modeling is a process that uses data mining and probability to forecast outcomes. These techniques can be used to create highly specific customer identities from analyzing data in your Marketing Data Warehouse. Marketers can use these audiences to understand the effectiveness of their campaigns and enhance performance. Use Cases include Predicting Lifetime Value and Churn and Forecasting Impact of Marketing Objectives",
-          "variant": "medium",
-          "color": "alphaDark"
+          "variant": "p"
         }
       ]
     },
@@ -60,8 +59,7 @@
         },
         {
           "text": "Propensity modeling is an advanced analytical technique used to identify value-based audience segments. These high-value audience segments can be applied to marketing campaigns to increase efficiency. Machine learning models can be activated across different channels (Search, YouTube, display, discovery etc.) via Google Ads / Display & Video 360 and in the client's ecosystem using onsite banners, email, and SMS.",
-          "variant": "medium",
-          "color": "alphaDark"
+          "variant": "p"
         }
       ]
     },
@@ -78,8 +76,7 @@
         },
         {
           "text": "Execute on insights gleaned from campaign data by combining media delivery, purchase behavior, and CRM data. Use Cases include Reaching the Right Customers with the Right Messaging. Segmenting Audiences, Leverage Data Management Platform for Audience Creation and Segmenting Audiences Based on Customer Behavior",
-          "variant": "medium",
-          "color": "alphaDark"
+          "variant": "p"
         }
       ]
     },
@@ -96,8 +93,7 @@
         },
         {
           "text": "Marketers often have to deal with complex processes & numerous technologies in order to answer critical questions. Data analyses performed can inform marketers and partners to address those critical questions about the impact of advertising on in-store and online business results using Campaign Manager, Google Analytics, and even Marketing & Cloud. Use Cases include, Understanding Ad Delivery, Understanding Digital Response to Frequency and Understanding In-Store Response to Frequency",
-          "variant": "medium",
-          "color": "alphaDark"
+          "variant": "p"
         }
       ]
     }

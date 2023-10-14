@@ -10,7 +10,7 @@ import ContentImages from '@solid-ui-components/ContentImages';
 import ContentButtons from '@solid-ui-components/ContentButtons';
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 import { ModalContext } from '@solid-ui-components/Modal';
-import { FaCartArrowDown } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const auth =
   typeof window !== 'undefined' ? localStorage.getItem('auth') : null;
@@ -130,7 +130,9 @@ const HeaderBlock01 = ({
                     </Reveal>
                   </Box>
                   <Box sx={styles.mobileMenu}>
-                    <Drawer buttonStyle={{ svg: { size: 32 } }}>
+                    <Drawer
+                      buttonStyle={{ svg: { size: 32 }, color: '#2d3748' }}
+                    >
                       {collection.map(
                         ({ buttons }, index) =>
                           buttons && (
@@ -152,9 +154,10 @@ const HeaderBlock01 = ({
                           ),
                       )}
                     </Drawer>
-                    <FaCartArrowDown
+                    <FaShoppingCart
                       size={25}
                       style={{ marginLeft: '1em' }}
+                      color="#2d3748"
                       onClick={() => setActiveModal('cart')}
                     />
                     <Box sx={styles.searchContainer}>{<Search />}</Box>

@@ -35,9 +35,11 @@ export default {
     position: `relative`,
     '::before': {
       content: `" "`,
+
       width: `full`,
       height: `150%`,
       position: `absolute`,
+      overflowX: 'hidden',
       top: 0,
       left: 0,
       zIndex: -1,

@@ -20,19 +20,17 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/id-badge-solid.svg",
         "alt": "Analytics Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Create a Complete Picture & see which digital channels are performing best",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "Consolidate information about customer interactions in a single, easy-to-use tool. With Analytics 360, information about how customers interact with your site, app, or even offline sources is centralized in one place. If you’re using Google Ads or Google Marketing Platform, then seamless integrations allow you to pull in information from those products and create a single, complete source that consolidates all customer touchpoints. Analytics 360 features Data-Driven Attribution, which uses data from your account to assign the right value to your marketing touchpoints. The result? You get a complete, actionable view of what’s working — and what isn’t — along the customer journey.",
-          "variant": "h4"
+          "variant": "p"
         }
       ]
     },
@@ -40,19 +38,17 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-bar-solid.svg",
         "alt": "Analytics Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Advanced Reporting Capabalities",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "With Advanced Analysis in Analytics 360, you can access more detailed analysis techniques and deeper exploration capabilities, so you can improve your understanding of how people interact with your site. It's also easy to export data from Analytics 360 to BigQuery, unlocking a powerful set of tools for identifying insights.",
-          "variant": "h4"
+          "variant": "p"
         }
       ]
     },
@@ -60,19 +56,17 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/chart-line-solid.svg",
         "alt": "Analytics Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
         {
           "text": "Take action to drive better marketing results",
-          "variant": "h4",
-          "color": "alphaDark"
+          "variant": "h4"
         },
         {
           "text": "With all of this information in one place, you can immediately get a clear view of your customer. Easy-to-use yet powerful reporting and analysis capabilities help you understand customer behavior in a holistic way through demographics, devices, channels, and much more.",
-          "variant": "h4"
+          "variant": "p"
         }
       ]
     }

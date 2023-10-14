@@ -22,45 +22,42 @@
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white",
         "size": "icon.xxs"
       },
       "text": [
         {
           "text": "We can build more quickly and cost-effectively with AI",
-          "variant": "p"
+          "variant": "medium"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "size": "icon.xxs",
         "color": "white"
       },
       "text": [
         {
           "text": "Every step of the way, your Product Expert is with you",
-          "variant": "p"
+          "variant": "medium"
         }
       ]
     },
     {
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-check.svg",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "size": "icon.xxs",
         "color": "white"
       },
       "text": [
         {
           "text": "There is no need for technical knowledge",
-          "variant": "p"
+          "variant": "medium"
         }
       ]
     }

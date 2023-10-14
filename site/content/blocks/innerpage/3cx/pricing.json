@@ -55,8 +55,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-1.svg",
         "alt": "Dice 1",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "buttons": [
@@ -293,8 +292,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/bx-dice-3.svg",
         "alt": "Dice",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "buttons": [

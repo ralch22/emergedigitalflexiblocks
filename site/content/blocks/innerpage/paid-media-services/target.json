@@ -14,8 +14,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/layer-group-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -34,8 +33,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/photo-film-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -54,8 +52,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/maximize-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -74,8 +71,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-plus-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -94,8 +90,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/arrow-pointer-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -114,8 +109,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/computer-mouse-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -134,8 +128,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/laptop-medical-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -154,8 +147,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/database-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -174,8 +166,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/cart-shopping-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -194,8 +185,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/desktop-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -214,8 +204,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/tachograph-digital-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -234,8 +223,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/magnifying-glass-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
@@ -254,8 +242,7 @@
       "icon": {
         "src": "../../../assets/flexiblocks/icons/gears-solid.svg",
         "alt": "Paid Media Icon",
-        "bg": "green",
-        "gradient": "true",
+        "bg": "iconsBg",
         "color": "white"
       },
       "text": [
