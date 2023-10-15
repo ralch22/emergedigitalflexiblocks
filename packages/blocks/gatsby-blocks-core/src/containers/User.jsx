@@ -14,7 +14,7 @@ import { normalizeBlockContentNodes } from '@blocks-helpers';
 import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions';
 import SubsTable from '@solid-ui-blocks/SubsTable';
 import Address from '@solid-ui-blocks/Address/Block01';
-import { fetchSubs } from '../store/ducks/subsSlice';
+import { fetchSubs } from '../../../gatsby-theme-flexiblocks/src/store/ducks/subsSlice';
 import CustomTabSwitcher from '@solid-ui-blocks/Content/Tabs';
 
 const auth =
