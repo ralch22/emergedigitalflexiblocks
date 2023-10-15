@@ -30,7 +30,7 @@ const parsedData = JSON.parse(auth);
 //   }
 // `;
 
-function Profile() {
+function UserProfile() {
   return (
     <Box sx={{ flex: 1, p: 3 }}>
       {parsedData ? (
@@ -78,13 +78,13 @@ export default function Profile({ data: { allBlockContent }, ...props }) {
   const content = normalizeBlockContentNodes(allBlockContent?.nodes);
   //   const { data: userData } = userResult;
   const tabs = [
-    { title: 'UAE', content: <SubsTable subs={subs} /> },
-    { title: 'AUS', content: <OrdersTable orders={orders} /> },
+    { title: 'Profile', content: <UserProfile /> },
+    { title: 'Subscription', content: <SubsTable subs={subs} /> },
+    { title: 'Orders', content: <OrdersTable orders={orders} /> },
     {
-      title: 'AUS',
+      title: 'Address',
       content: <Address checkout content={content['address']} />,
     },
-    { title: 'AUS', content: <Profile /> },
   ];
   return (
     <Layout {...props}>
@@ -215,6 +215,12 @@ export default function Profile({ data: { allBlockContent }, ...props }) {
               >
                 <Box sx={{ display: [`block`, `none`] }}>
                   <CustomTabSwitcher tabs={tabs} />
+                  <Box
+                    style={{ cursor: 'pointer', mt: 3 }}
+                    onClick={handleLogout}
+                  >
+                    Logout
+                  </Box>
                 </Box>
               </Card>
             </Container>
