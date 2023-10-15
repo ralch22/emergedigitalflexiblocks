@@ -19,7 +19,7 @@ const auth =
 const parsedData = JSON.parse(auth);
 
 const buildLinkProps = ({
-  content: { type, link, target, variant },
+  content: { type, link, target, variant, text },
   setActiveModal,
   setActiveTab,
 }) => {
@@ -48,6 +48,16 @@ const buildLinkProps = ({
         href: '#',
       };
       break;
+    case 'AUTHMODAL':
+      linkProps = {
+        onClick: e => {
+          e.preventDefault();
+          setActiveModal(link);
+        },
+        href: '#',
+        sx: { display: !parsedData ? `block` : `none` },
+      };
+      break;
     case 'TAB':
       linkProps = {
         tabindex: '0',
@@ -64,7 +74,7 @@ const buildLinkProps = ({
     case 'AUTH':
       linkProps = {
         onClick: () => navigate('/dashboard'),
-        // sx: { display: parsedData ? `block` : `none` },
+        sx: { display: parsedData ? `block` : `none` },
       };
       break;
     case 'SUBMIT':

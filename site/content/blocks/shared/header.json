@@ -113,6 +113,12 @@
           "variant": "links.nav-dark"
         },
         {
+          "text": "Sign In",
+          "type": "AUTHMODAL",
+          "link": "authentication",
+          "variant": "links.nav-dark"
+        },
+        {
           "type": "MODAL",
           "link": "cart",
           "variant": "links.nav-dark",
@@ -133,14 +139,6 @@
           }
         }
       ]
-    }
-  ],
-  "buttons": [
-    {
-      "text": "Sign In",
-      "type": "MODAL",
-      "link": "authentication",
-      "variant": "links.nav-dark"
     }
   ]
 }

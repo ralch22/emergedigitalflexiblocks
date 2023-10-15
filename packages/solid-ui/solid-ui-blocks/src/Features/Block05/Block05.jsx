@@ -32,7 +32,7 @@ const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
     {collection && (
       <>
         <Divider />
-        <Grid columns={col2 ? [1, 2, 2, 2] : [1, 2, 2, 3]} gap={3}>
+        <Grid columns={col2 ? [1, 1, 1, 2] : [1, 2, 2, 3]} gap={3}>
           {collection.map(
             ({ text, images, icon, collection, buttons, container }, index) => (
               <Reveal

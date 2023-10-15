@@ -37,6 +37,7 @@ const PaidMediaPag = props => {
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
       <ModalCart content={content['cart']} />
+
       {/* Blocks */}
       <Header content={content['header']} />
       <Hero content={content['page-title']} />
@@ -58,7 +59,12 @@ const PaidMediaPag = props => {
       <SingleText content={content['intro']} />
       <Divider space="5" />
       <Container>
-        <Feature4 simpleImg dangerously content={content['feature-four']} />
+        <Feature4
+          simpleImg
+          dangerously
+          reverseSm
+          content={content['feature-four']}
+        />
       </Container>
       <Divider space="5" />
       <Container>

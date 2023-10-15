@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@solid-ui-layout/Layout';
 import Stack from '@solid-ui-layout/Stack/Stack';
 import Main from '@solid-ui-layout/Main/Main';
+import { Container } from 'theme-ui';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import Header from '@solid-ui-blocks/Header/Block01';
 import Divider from '@solid-ui-components/Divider';
@@ -32,7 +33,9 @@ const PageCollectionAuthors = ({
         <Main>
           <AuthorExpanded author={author} />
           <Divider />
-          <InfiniteLoopPagination data={author.posts.nodes} />
+          <Container>
+            <InfiniteLoopPagination data={author.posts.nodes} />
+          </Container>
         </Main>
       </Stack>
       <Divider />

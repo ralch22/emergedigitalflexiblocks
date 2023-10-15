@@ -2,8 +2,8 @@
   "text": [
     {
       "text": "Developer hosting for WordPress",
-      "variant": "h4",
-      "color": "alpha"
+      "variant": "h6",
+      "color": "omega"
     },
     {
       "text": "Faster build, test, and deploy with a hosting platform",

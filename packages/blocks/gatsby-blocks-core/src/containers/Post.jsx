@@ -3,7 +3,7 @@
  */
 
 import React, { useEffect } from 'react';
-import { Box, Card } from 'theme-ui';
+import { Box, Card, Container } from 'theme-ui';
 import Layout from '@solid-ui-layout/Layout';
 import Stack from '@solid-ui-layout/Stack/Stack';
 import Main from '@solid-ui-layout/Main/Main';
@@ -86,7 +86,6 @@ export default function Post({
           }}
         >
           <AuthorCompact author={post.author.node} omitTitle />
-          <Divider />
           <Sticky>
             <CardList
               title="Related Posts"

@@ -57,6 +57,7 @@ const FeaturesWithPhotoBlock01 = ({
             </Box>
           )}
         </FlexContent>
+        {reverseSm && <Divider />}
         <FlexImage reverse={reverse}>
           {!simpleImg && (
             <ContentImages content={{ images }} reverse={reverse} />

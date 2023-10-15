@@ -11,6 +11,8 @@ import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent';
 const FeaturesWithPhotoBlock01 = ({
   content: { text, images, simpleImg, collection, buttons, gradient },
   reverse,
+  column,
+  reverseSm,
 }) => (
   <Box
     sx={{
@@ -24,7 +26,14 @@ const FeaturesWithPhotoBlock01 = ({
       <Flex
         sx={{
           alignItems: [null, `center`],
-          flexDirection: 'column',
+          flexDirection: [
+            reverse || reverseSm ? `column-reverse` : `column`,
+            reverse || reverseSm ? `column-reverse` : `column`,
+            reverse || reverseSm ? `column-reverse` : `column`,
+            reverse
+              ? `${column ? 'column-reverse' : 'row-reverse'}`
+              : `${column ? 'column' : 'row'}`,
+          ],
           mx: [null, null, null, -4],
         }}
       >

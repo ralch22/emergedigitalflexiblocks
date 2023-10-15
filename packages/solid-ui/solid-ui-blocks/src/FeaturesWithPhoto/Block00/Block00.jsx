@@ -11,14 +11,20 @@ import CardListSlider from './CardList.Slider';
 const FeaturesWithPhotoBlock00 = ({
   content: { text, images, collection, buttons },
   reverse,
+  reverseSm,
+  column,
 }) => (
   <Container sx={{ position: `relative` }}>
     <Flex
       sx={{
         alignItems: [null, `center`],
         flexDirection: [
-          reverse ? `column-reverse` : `column`,
-          reverse ? `row-reverse` : `row`,
+          reverse || reverseSm ? `column-reverse` : `column`,
+          reverse || reverseSm ? `column-reverse` : `column`,
+          reverse || reverseSm ? `column-reverse` : `column`,
+          reverse
+            ? `${column ? 'column-reverse' : 'row-reverse'}`
+            : `${column ? 'column' : 'row'}`,
         ],
         mx: [null, null, null, -4],
       }}

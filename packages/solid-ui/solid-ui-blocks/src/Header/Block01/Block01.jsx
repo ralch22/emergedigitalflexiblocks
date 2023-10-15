@@ -121,7 +121,10 @@ const HeaderBlock01 = ({
                                   },
                                 }}
                               >
-                                <ContentButtons content={buttons} />
+                                <ContentButtons
+                                  wrapperStyles={{ display: 'flex' }}
+                                  content={buttons}
+                                />
                               </Box>
                             ),
                         )}

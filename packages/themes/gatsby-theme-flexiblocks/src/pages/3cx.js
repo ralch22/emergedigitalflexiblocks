@@ -11,7 +11,7 @@ import Header from '@solid-ui-blocks/Header/Block01';
 import SingleText from '@solid-ui-blocks/Content/Block07';
 import Content from '@solid-ui-blocks/Features/Block05';
 import Chat from '@solid-ui-blocks/Features/Block04';
-import Contact from '@solid-ui-blocks/CallToAction/Block02';
+import Contact from '@solid-ui-blocks/CallToAction/Block01';
 import Pricing from '@solid-ui-blocks/Pricing/Block01';
 import Faq from '@solid-ui-blocks/Faq/Block01';
 import Footer from '@solid-ui-blocks/Footer/Block01';

@@ -54,6 +54,7 @@ enum BlockContentButtonType {
   SUBMIT
   SUB
   AUTH
+  AUTHMODAL
 }
 
 type BlockContentButton {
