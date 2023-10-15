@@ -4,7 +4,7 @@ import Layout from '@solid-ui-layout/Layout';
 import Main from '@solid-ui-layout/Main/Main';
 import Footer from '@solid-ui-blocks/Footer/Block01';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchOrders } from '../../../gatsby-theme-flexiblocks/src/store/ducks/orderSlice';
+import { fetchOrders } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/orderSlice';
 import Header from '@solid-ui-blocks/Header/Block01';
 import OrdersTable from '@solid-ui-blocks/OrdersTable';
 import { Box, Card, Container, Flex, Heading, Text } from 'theme-ui';
@@ -14,7 +14,7 @@ import { normalizeBlockContentNodes } from '@blocks-helpers';
 import { handleLogout } from '../../../../themes/gatsby-theme-flexiblocks/src/utils/functions';
 import SubsTable from '@solid-ui-blocks/SubsTable';
 import Address from '@solid-ui-blocks/Address/Block01';
-import { fetchSubs } from '../../../gatsby-theme-flexiblocks/src/store/ducks/subsSlice';
+import { fetchSubs } from '../../../../themes/gatsby-theme-flexiblocks/src/store/ducks/subsSlice';
 import CustomTabSwitcher from '@solid-ui-blocks/Content/Tabs';
 
 const auth =
