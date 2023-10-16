@@ -17,14 +17,12 @@ const styles = {
   },
   inCard: {
     mt: -4,
-    mx: -4,
     img: {
       borderRadius: t => `${t.radii.lg} ${t.radii.lg} 0 0`,
     },
   },
   inCardLarge: {
     mt: [-4, -5],
-    mx: [-4, -5],
     img: {
       borderRadius: t => `${t.radii.lg} ${t.radii.lg} 0 0`,
     },

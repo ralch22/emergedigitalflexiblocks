@@ -59,7 +59,7 @@ export default function Post({
       <Seo post={wpPost} />
       <Header content={content['header']} />
       <Divider space="5" />
-
+      <Divider space={'3'} />
       <Stack effectProps={{ effect: 'fadeInDown' }}>
         <PostHead {...post} />
       </Stack>

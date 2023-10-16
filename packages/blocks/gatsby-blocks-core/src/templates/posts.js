@@ -26,6 +26,7 @@ export const pageQuery = graphql`
         }
         categories {
           nodes {
+            slug
             name
           }
         }

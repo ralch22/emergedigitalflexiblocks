@@ -21,9 +21,17 @@ const styles = {
 const PageTitle = ({ header, subheader, running, totalCount }) => {
   return (
     <div>
-      <Flex>
+      <Flex sx={{ alignItems: 'center' }}>
         <Heading
           dangerouslySetInnerHTML={{ __html: header }}
+          sx={{
+            fontWeight: `bold`,
+            mb: 0,
+            strong: {
+              fontWeight: `bold`,
+              mb: 0,
+            },
+          }}
           variant="h1"
           as="h1"
         />

@@ -96,6 +96,7 @@ export default function Case({
           />
           <Header case content={content['header']} />
           <Divider space="5" />
+          <Divider space={'3'} />
           <Stack effectProps={{ effect: 'fadeInDown' }}>
             <PostHead {...caseStudy} />
           </Stack>
