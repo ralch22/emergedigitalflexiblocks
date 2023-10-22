@@ -64,7 +64,6 @@ module.exports = async (
 
   const { allWpCategory } = result.data;
   const category = allWpCategory.nodes;
-  console.log('cat', category);
   category.forEach(({ id, slug, posts }, index) => {
     createPage({
       path: `/${slug}`,

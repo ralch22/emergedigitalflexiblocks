@@ -10,6 +10,39 @@ export const pageQuery = graphql`
         ...BlockContent
       }
     }
+    wpCategory(id: { eq: $id }) {
+      nodeType
+      slug
+      name
+      uri
+      seo {
+        title
+        metaDesc
+        focuskw
+        metaKeywords
+        metaRobotsNoindex
+        metaRobotsNofollow
+        opengraphTitle
+        opengraphDescription
+        opengraphImage {
+          altText
+          sourceUrl
+          srcSet
+        }
+        twitterTitle
+        twitterDescription
+        twitterImage {
+          altText
+          sourceUrl
+          srcSet
+        }
+        canonical
+        cornerstone
+        schema {
+          raw
+        }
+      }
+    }
     category: wpCategory(id: { eq: $id }) {
       name
       slug

@@ -52,7 +52,12 @@ const FeaturesBlock05 = ({ content: { text, collection, buttons }, col2 }) => (
                   }}
                 >
                   {images && (
-                    <ContentImages sx={{ width: 100 }} content={{ images }} />
+                    <>
+                      <ContentImages
+                        sx={{ width: 100, mb: '3' }}
+                        content={{ images }}
+                      />
+                    </>
                   )}
                   <Box>
                     <Icon content={icon} size="md" mr="3" mb="3" />

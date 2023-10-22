@@ -15,7 +15,7 @@ const styles = {
     py: 3,
   },
   icons: {
-    display: [`none`, null, `block`],
+    display: [`none`, 'none', 'none', `block`],
     position: `absolute`,
     top: `-3rem`,
     left: `5rem`,
