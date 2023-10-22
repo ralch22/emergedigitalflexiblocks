@@ -19,7 +19,7 @@ const PageCollection = ({
     <Layout {...props}>
       <Seo post={wpCategory} />
       <Header content={content['header']} />
-      <Divider />
+      <Divider space="5" />
       <Stack effectProps={{ effect: 'fadeInDown' }}>
         <PageTitle
           header={category.name}
